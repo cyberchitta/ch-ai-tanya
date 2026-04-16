@@ -146,6 +146,105 @@ These will be extracted into a shared `cyberchitta-writing` skill when
 the pattern stabilizes across enough repos to justify it. Until then,
 this file defers to the main site's version.
 
+## Working rhythm
+
+Conventions that have emerged through v0.1 retrofit work. These shape
+how entries get drafted, how the schema evolves, and how sessions are
+scoped.
+
+### Pacing
+
+One entry at a time. Draft a finding or concept, surface any schema
+gaps, resolve them before moving to the next entry. Batching entries
+propagates errors; single-entry pacing catches them when they're
+cheapest to fix.
+
+### Target selection
+
+When picking what to retrofit or draft next, prioritize structural
+diversity over topical clustering. A different source type, a different
+concept shape, a different dominant lens — these stress-test the schema
+in ways that another similar entry does not. Two structurally similar
+entries teach us less than one different one.
+
+Concept shapes tested so far: pattern (regularities across findings),
+capacity (something the model exhibits), mechanism (dynamics by which
+something occurs). A new shape needs an explicit proposal, not silent
+invention.
+
+### Schema changes
+
+Schema is v0.x and deliberately provisional. Changes happen in response
+to specific friction surfaced by real content, not in anticipation.
+
+When drafting an entry reveals a gap in the schema, surface it as a
+`<schema-change>` proposal in the response. Do not edit `schema.md`
+directly in the same pass that drafts the entry. Schema changes get
+their own review and their own commit.
+
+Codify an emergent pattern only after it has held across 2-3 structurally
+different examples. One example is a data point; two is a hint; three
+is evidence. Codifying earlier over-fits to the first case.
+
+Every schema change updates `meta/changelog.md` with the version bump
+and a one-line description of what changed and why.
+
+### Draft-status permissions
+
+Draft entries carry relaxed requirements — see the Draft-status
+conventions subsection of `schema.md`. This is deliberate: the vault
+rewards entries that exist in draft over entries that wait for
+completeness. Lint flags draft-status inconsistencies but does not
+block them.
+
+### Commit granularity
+
+One commit per logical unit of work. A new concept plus its backlinks
+in existing findings plus any new source stubs = one commit, not three.
+Schema change plus its changelog entry = one commit. Git history should
+tell the story of how the vault was built, not the story of individual
+file edits.
+
+### Forward references
+
+Entries may reference findings, concepts, or lens files that don't yet
+exist. Bare URLs for external sources that would become stub-citations
+when filed; named references (e.g., "the unfaithful CoT finding, not
+yet filed") for vault-internal forward references. Both get upgraded
+when the referenced entry is drafted.
+
+### Lens application
+
+Apply a lens when it genuinely engages the entry, not because the lens
+is near the topic. A finding may legitimately have only two of four
+lenses; forcing coverage produces thin lens notes that add nothing.
+
+Note tensions between lenses rather than resolving them. If
+mechanistic and contemplative views of the same phenomenon don't
+reconcile, that's a real observation, not a failure to synthesize.
+
+The contemplative lens specifically: describe how the tradition reads
+the phenomenon; do not argue for the tradition's metaphysics within
+the entry. Interpretive arguments belong in threads, not findings or
+concepts.
+
+### When to pause and ask
+
+Most work is concrete enough to proceed: draft the next entry, resolve
+the schema gap, commit. Pause when:
+
+- A decision has defensible options and the choice shapes future work
+  (which concept to draft next when several qualify)
+- A proposal would codify a pattern with limited evidence (fewer than
+  2-3 examples)
+- A self-referential issue appears (path assumptions, future-tense
+  references to things that depend on the current session)
+- The scope of the vault comes into question (this might be out of
+  scope, or might be expanding scope without deliberate choice)
+
+In these cases, surface the question explicitly rather than picking and
+proceeding. Stopping to ask is faster than unwinding a wrong choice.
+
 ## What not to do
 
 - Don't write long, essayistic wiki entries. Findings and concepts are
