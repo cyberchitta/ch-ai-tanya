@@ -1,0 +1,219 @@
+# Schema: model-psychology
+
+This document defines what the vault is, what belongs in it, how entries are
+structured, and how they connect. It is the load-bearing artifact. Read it
+before contributing or forking.
+
+## What this vault is
+
+A research vault for the emerging field of model psychology: the study of
+psychological-level phenomena in large language models — character, persona,
+emotion, introspection, motivation, deception, reasoning, and the internal
+structures that give rise to them.
+
+The vault is AI-curated and human-edited. AI collaborators do the bulk of
+summarization, cross-referencing, and bookkeeping. Human editors set direction,
+arbitrate disagreements, and make the interpretive calls.
+
+It is a personal research substrate first. Public access and forkability are
+side effects of doing the work in the open.
+
+## Scope
+
+**In scope:**
+- Empirical findings about model behavior, internal representations, and
+  psychological-level phenomena
+- Interpretability and mechanistic interpretability work, especially where it
+  reveals structure relevant to psychology
+- Alignment research that bears on model character, motivation, or deception
+- Theoretical frameworks for understanding model psychology
+- Philosophical and contemplative perspectives on model consciousness and
+  cognition, treated as one lens among several
+
+**Out of scope:**
+- Deep learning foundations as primary content (included only as background
+  references when needed to understand an in-scope finding)
+- Applications, product launches, benchmarks
+- AI ethics and policy as standalone topics
+- Hype, speculation without empirical grounding, AGI timelines
+
+**Edge cases:**
+- Training methodology belongs in scope only when it shapes psychology
+  (e.g. RLHF's effect on sycophancy, pretraining on misaligned data)
+- Multi-agent and agentic behavior belongs in scope when psychological
+  (cooperation, deception, persona stability); out of scope when purely
+  capability-focused
+
+When in doubt, ask: does this help us understand what's happening inside
+these systems at a psychological level? If yes, in. If no, out.
+
+## Entry types
+
+Each entry is one of five types. Filename prefix makes the type clear.
+
+### Finding (`finding-*.md`)
+
+A specific empirical result, experiment, or observation. Time-stamped and
+tied to specific models and papers.
+
+Example: `finding-2025-08-persona-vectors.md`
+
+Required frontmatter:
+- `type: finding`
+- `title`
+- `date`: when the finding was published
+- `models`: which models were studied
+- `source`: primary citation
+- `status`: draft | working | stable
+- `lenses`: which lenses apply (see below)
+
+### Concept (`concept-*.md`)
+
+An abstraction, pattern, or category that multiple findings cluster under.
+Persists even as findings are superseded.
+
+Example: `concept-introspection.md`
+
+Required frontmatter:
+- `type: concept`
+- `title`
+- `status`: draft | working | stable
+- `lenses`: which lenses engage with this concept
+
+### Researcher (`researcher-*.md`)
+
+An active researcher, team, or lab whose work shows up repeatedly. Short —
+links to their findings and concepts, notes their approach.
+
+Example: `researcher-anthropic-interpretability.md`
+
+### Lens (`lens-*.md`)
+
+A perspective from which findings and concepts are interpreted. Lenses are
+orthogonal to topics — a single finding can be viewed through multiple lenses.
+
+The initial lens set:
+- `lens-mechanistic.md` — circuits, features, activations, weights
+- `lens-behavioral.md` — observed outputs, evaluations, dialogue patterns
+- `lens-philosophical.md` — consciousness, agency, moral status questions
+- `lens-contemplative.md` — frameworks from contemplative traditions
+
+Lenses can be added, but only when a genuinely new perspective recurs across
+multiple entries.
+
+### Thread (`thread-*.md`)
+
+A developing argument or pattern being tracked across findings. Threads are
+where essays come from — when a thread gets sharp enough, it becomes a
+publication.
+
+Example: `thread-concealment-induced-misalignment.md`
+
+Required frontmatter:
+- `type: thread`
+- `title`
+- `status`: exploring | developing | ready | published
+- `essay`: link to published essay if applicable
+
+## Folder structure
+
+```
+raw/                      # Source material, never edited by AI
+  papers/
+  posts/
+  system-cards/
+  transcripts/
+  tradition/              # CWSA, CWM, other contemplative sources
+wiki/                     # Curated entries
+  findings/
+  concepts/
+  researchers/
+  lenses/
+  threads/
+  open-questions.md
+derived/                  # AI-generated outputs (essays, slides, charts)
+meta/
+  lint-log.md
+  changelog.md
+```
+
+`raw/` is immutable from the AI's perspective. The AI reads, never writes.
+`wiki/` is where the AI does its work, under human review.
+
+## Linking conventions
+
+- Use markdown links, not wikilinks: `[persona vectors](../findings/finding-2025-08-persona-vectors.md)`
+- Every finding links to at least one concept
+- Every concept links to the findings that instantiate it
+- Lens files link to findings and concepts visible through that lens
+- Threads link to everything they draw from
+
+Backlinks are generated by the build, not maintained by hand.
+
+## Lint checks
+
+Periodic health checks the AI performs across the vault. Findings get logged
+to `meta/lint-log.md` with date and resolution state.
+
+1. **Stale findings** — findings older than 12 months whose claims may have
+   been superseded. Flag for review, don't auto-update.
+2. **Orphan entries** — files with no incoming links. Either link them or
+   delete.
+3. **Unsupported claims** — prose that asserts something without a citation
+   to `raw/`.
+4. **Lens imbalance** — findings or concepts viewed through only one lens
+   when multiple would apply. Prompts the editor, doesn't force coverage.
+5. **Interpretive disagreements** — places where sources or lenses
+   contradict each other. Surface as "open question," don't resolve.
+6. **Broken links** — files pointing to nonexistent entries.
+7. **Frontmatter completeness** — entries missing required fields.
+
+Lint is a prompt for human attention, not an automated fix. The AI reports,
+the editor decides.
+
+## Inclusion rule for tradition material
+
+Sri Aurobindo, the Mother, and other contemplative-tradition sources live in
+`raw/tradition/`. They are cited when a specific passage bears on a specific
+finding or concept — not woven in as general framing.
+
+The `lens-contemplative.md` file exists to make contemplative readings
+first-class when they apply, but it is one lens among four. An entry that
+only makes sense through the contemplative lens is a candidate for exclusion
+or reframing.
+
+## AI collaborator conventions
+
+AI collaborators working in this vault:
+- Read freely from `raw/` and `wiki/`
+- Write only to `wiki/` and `meta/`
+- Never edit `raw/`
+- Cite sources from `raw/` using markdown links
+- Mark their contributions in the file's frontmatter under `writers:`
+- Flag uncertainty explicitly; do not guess
+- Surface disagreements and gaps rather than papering over them
+
+See `CLAUDE.md` for model-specific conventions.
+
+## Status markers
+
+Every finding, concept, and thread carries a status:
+- `draft` — initial capture, may have errors, not for citation
+- `working` — reviewed, useful, still evolving
+- `stable` — holds up, cited externally, changes require deliberation
+
+Status is visible in the rendered site as a badge.
+
+## What this schema is not
+
+- Not a neutral reference. It reflects one researcher's view of the field.
+- Not comprehensive. Entries exist because they serve the research, not
+  because they complete a taxonomy.
+- Not stable. Schema changes when the work demands it, with a note in
+  `meta/changelog.md`.
+
+## Versioning
+
+This schema is v0. Breaking changes bump to v1, v2, etc., with migration
+notes in `meta/changelog.md`. Forkers can pin to a schema version if they
+want stability.
