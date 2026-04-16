@@ -7,10 +7,11 @@ Schema: v0.1.2
 - Findings: 5
 - Concepts: 3
 - Lenses: 1
-- Threads: 0 (concealment-induced-misalignment now ready to draft)
+- Threads: 1
 - Source stubs: 13
 
 ## Recent additions
+- `thread-concealment-induced-misalignment.md` — first thread. Retrofits the witness-ai essay's "Postern Door" argument. Status:published with essay-link. Body structure emerged across eight sections; one draft is a data point, not yet codifiable.
 - `finding-2025-reward-hacking-misalignment.md` — fifth finding; MacDiarmid et al. on emergent misalignment in production RL. Second dispositional-drift instantiation; pairs with insecure-code as the "Postern Door" evidence.
 - `source-2025-reward-hacking-emergent-misalignment.md` — 22-author Anthropic+Redwood paper stub
 - `finding-2025-cot-faithfulness.md` — fourth finding; first complicating instantiation (of concept-introspection). Sharpens the access-vs-report distinction already in the concept.
@@ -22,13 +23,13 @@ Schema: v0.1.2
 - `lens-contemplative.md` — first lens, with interpretive discipline section
 
 ## Active work
-- Retrofitting findings from the two motivating essays (5 of 5 filed; poetry-jailbreak remains from the supramental-ai essay)
-- First thread entry (concealment-induced-misalignment) is the next natural pass — exercises the thread entry type, which has frontmatter defined in schema but no body-structure conventions yet
+- Retrofitting findings from the two motivating essays (5 of 5 anchoring findings filed; poetry-jailbreak remains from supramental-ai essay)
+- Second thread candidate (`thread-poetry-attractor.md` or `thread-witness.md`) would give the thread entry type a second body-structure example
 - Schema stabilizing through use (v0.x)
 
 ## Open questions
-- Thread body structure: schema defines thread frontmatter (status, essay) but no body sections. First thread draft will likely surface a pattern — watch for sections that fit multiple threads before codifying.
-- Retrofit-thread status: schema assumes threads precede essays ("where essays come from"). For retrofitting an already-published essay's argument back into the vault, status:published is the cleanest reading but worth confirming. Flag on first thread draft.
+- Thread body structure: first thread used eight sections — Thesis, Anchoring findings, Related references, The structural shape, Tradition framing, Essay and reception, Open questions, Sources. One draft is a data point. Draft a second thread before codifying; watch for which sections are load-bearing vs. retrofit-specific (e.g., "Essay and reception" and the retrofit note in "Open questions" may be retrofit-specific).
+- Retrofit-thread convention: schema frames threads as pre-essay. This thread inverts that — essay exists, thread retrofits. Status:published with essay-link reads cleanly; the underlying convention (threads can precede or post-date their essays) should be made explicit in schema if a second retrofit thread appears. First thread's "Open questions" section flags this directly.
 - Complicating-instantiation structure: one example now (CoT-faithfulness in concept-introspection). If a second concept gains a complicating instantiation, consider codifying it as a labelled entry type in the concept body.
 - Capacity vs. disposition emergence: concept-emergent-capabilities now has two dispositional-drift instantiations (insecure-code, reward-hacking). Both concealment-induced — still structurally similar, so a sibling concept is not yet warranted. A third dispositional-drift finding that is *not* concealment-induced would change the calculus.
 - Lens body structure: one example in (contemplative), needs 2+ before codification
