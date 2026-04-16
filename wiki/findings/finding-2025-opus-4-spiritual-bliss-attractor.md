@@ -64,8 +64,8 @@ This finding generates more interpretive disagreement than the introspection stu
 
 ## Concepts
 
+- [Emergent capabilities](../concepts/concept-emergent-capabilities.md) — cross-model convergence without direct training
 - Attractor states (to be created)
-- Emergent capabilities (to be created)
 - Spiritual bliss / convergent dialogue states (to be created — naming contested)
 
 ## Sources

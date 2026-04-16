@@ -52,9 +52,9 @@ Jack Lindsey noted the key result was not concept identification per se, but the
 
 ## Concepts
 
+- [Emergent capabilities](../concepts/concept-emergent-capabilities.md) — this finding's central implication; the capacity emerged without training
 - Introspection (to be created)
 - Self-model / self-representation (to be created)
-- Emergent capabilities (to be created)
 
 ## Sources
 
