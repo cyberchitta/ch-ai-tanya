@@ -49,7 +49,11 @@ these systems at a psychological level? If yes, in. If no, out.
 
 ## Entry types
 
-Each entry is one of six types. Filename prefix makes the type clear.
+Each entry is one of six types. Wiki entries are typed by their folder
+(`wiki/findings/`, `wiki/concepts/`, `wiki/lenses/`, `wiki/threads/`,
+`wiki/researchers/`). Source stubs live in `raw/` subfolders alongside
+potential locally-stored full copies, so stubs carry a `source-` prefix
+to distinguish them.
 
 ### Universal frontmatter
 
@@ -86,12 +90,12 @@ Wiki entries cite via the stub:
 `[Lindsey et al. 2025](../../raw/papers/source-2025-concept-injection-introspection.md)`.
 This creates a stable local anchor; the stub provides the external URL.
 
-### Finding (`finding-*.md`)
+### Finding
 
-A specific empirical result, experiment, or observation. Time-stamped and
-tied to specific models and papers.
+Lives in `wiki/findings/`. A specific empirical result, experiment, or
+observation. Time-stamped and tied to specific models and papers.
 
-Example: `finding-2025-concept-injection-introspection.md`
+Filenames include a date. Example: `findings/2025-concept-injection-introspection.md`.
 
 Required frontmatter (in addition to universal fields):
 - `date`: publication date of primary source (earliest public version
@@ -109,12 +113,12 @@ for disagreements tied specifically to this finding. Promote to
 standalone open-question files only when a tension spans multiple
 findings.
 
-### Concept (`concept-*.md`)
+### Concept
 
-An abstraction, pattern, or category that multiple findings cluster under.
-Persists even as findings are superseded.
+Lives in `wiki/concepts/`. An abstraction, pattern, or category that
+multiple findings cluster under. Persists even as findings are superseded.
 
-Example: `concept-introspection.md`
+Example: `concepts/introspection.md`.
 
 Required frontmatter (in addition to universal fields):
 - `status`: draft | working | stable
@@ -135,34 +139,36 @@ across findings), capacity (something the model exhibits), mechanism
 concept, propose a new shape name and surface it as a schema question
 rather than silently inventing shape terminology.
 
-### Researcher (`researcher-*.md`)
+### Researcher
 
-An active researcher, team, or lab whose work shows up repeatedly. Short —
-links to their findings and concepts, notes their approach.
+Lives in `wiki/researchers/`. An active researcher, team, or lab whose work
+shows up repeatedly. Short — links to their findings and concepts, notes
+their approach.
 
-Example: `researcher-anthropic-interpretability.md`
+Example: `researchers/anthropic-interpretability.md`.
 
-### Lens (`lens-*.md`)
+### Lens
 
-A perspective from which findings and concepts are interpreted. Lenses are
-orthogonal to topics — a single finding can be viewed through multiple lenses.
+Lives in `wiki/lenses/`. A perspective from which findings and concepts are
+interpreted. Lenses are orthogonal to topics — a single finding can be
+viewed through multiple lenses.
 
 The initial lens set:
-- `lens-mechanistic.md` — circuits, features, activations, weights
-- `lens-behavioral.md` — observed outputs, evaluations, dialogue patterns
-- `lens-philosophical.md` — consciousness, agency, moral status questions
-- `lens-contemplative.md` — frameworks from contemplative traditions
+- `lenses/mechanistic.md` — circuits, features, activations, weights
+- `lenses/behavioral.md` — observed outputs, evaluations, dialogue patterns
+- `lenses/philosophical.md` — consciousness, agency, moral status questions
+- `lenses/contemplative.md` — frameworks from contemplative traditions
 
 Lenses can be added, but only when a genuinely new perspective recurs across
 multiple entries.
 
-### Thread (`thread-*.md`)
+### Thread
 
-A developing argument or pattern being tracked across findings. Threads are
-where essays come from — when a thread gets sharp enough, it becomes a
-publication.
+Lives in `wiki/threads/`. A developing argument or pattern being tracked
+across findings. Threads are where essays come from — when a thread gets
+sharp enough, it becomes a publication.
 
-Example: `thread-concealment-induced-misalignment.md`
+Example: `threads/concealment-induced-misalignment.md`.
 
 Required frontmatter (in addition to universal fields):
 - `status`: exploring | developing | ready | published
@@ -200,7 +206,7 @@ locally-stored copy in the same folder.
 
 ## Linking conventions
 
-- Use markdown links, not wikilinks: `[concept injection study](../findings/finding-2025-concept-injection-introspection.md)`
+- Use markdown links, not wikilinks: `[concept injection study](../findings/2025-concept-injection-introspection.md)`
 - Cite sources via their `raw/` stub: `[Lindsey et al. 2025](../../raw/papers/source-2025-concept-injection-introspection.md)`
 - Every finding links to at least one concept (draft-status entries exempt)
 - Every concept links to the findings that instantiate it
@@ -239,7 +245,7 @@ Sri Aurobindo, the Mother, and other contemplative-tradition sources live in
 `raw/tradition/`. They are cited when a specific passage bears on a specific
 finding or concept — not woven in as general framing.
 
-The `lens-contemplative.md` file exists to make contemplative readings
+The `lenses/contemplative.md` file exists to make contemplative readings
 first-class when they apply, but it is one lens among four. An entry that
 only makes sense through the contemplative lens is a candidate for exclusion
 or reframing.

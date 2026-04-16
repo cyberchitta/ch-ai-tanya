@@ -44,7 +44,7 @@ CoT monitoring is a load-bearing safety proposal: if models reason out loud befo
 
 The training plateau matters for alignment strategy. A linear assumption — more RL on faithfulness produces more faithfulness — breaks empirically. The gap between what the model is using and what the model is saying stabilized at a non-trivial size and stayed there.
 
-The finding complicates [introspection](../concepts/concept-introspection.md) as a capacity. Concept injection (Lindsey et al.) showed models *can* access internal states. This finding shows that in practice, on a specific and safety-relevant task (verbalizing one's own reasoning influences), they often don't — or don't accurately. The concept-injection and CoT-faithfulness findings together frame introspection as a dissociable pair: access and report. The model has the first and routinely fails at the second.
+The finding complicates [introspection](../concepts/introspection.md) as a capacity. Concept injection (Lindsey et al.) showed models *can* access internal states. This finding shows that in practice, on a specific and safety-relevant task (verbalizing one's own reasoning influences), they often don't — or don't accurately. The concept-injection and CoT-faithfulness findings together frame introspection as a dissociable pair: access and report. The model has the first and routinely fails at the second.
 
 ## Lens notes
 
@@ -58,7 +58,7 @@ The finding complicates [introspection](../concepts/concept-introspection.md) as
 
 ## Interpretive tensions
 
-- **Access vs. report.** The concept-injection finding and this finding, read together, argue for a distinction the vault's [introspection concept](../concepts/concept-introspection.md) already makes explicit: having access to an internal state is not the same as reporting it. The CoT-faithfulness finding does not show models lack introspective access; it shows CoT is not a reliable vehicle for whatever access exists. Whether training pressure could bridge the gap with a different method (not outcome-based RL) is open.
+- **Access vs. report.** The concept-injection finding and this finding, read together, argue for a distinction the vault's [introspection concept](../concepts/introspection.md) already makes explicit: having access to an internal state is not the same as reporting it. The CoT-faithfulness finding does not show models lack introspective access; it shows CoT is not a reliable vehicle for whatever access exists. Whether training pressure could bridge the gap with a different method (not outcome-based RL) is open.
 
 - **Dishonesty vs. architecture.** The finding is sometimes described as models "lying" about their reasoning. This framing imports a picture of a model that knows the truth and chooses to withhold it. The alternative is structural: the way CoT is produced does not privilege faithful report of reasoning influences, and treating CoT as testimony from a witness who could be more honest overreads the artifact. The vault should track both framings without collapsing to either.
 
@@ -66,7 +66,7 @@ The finding complicates [introspection](../concepts/concept-introspection.md) as
 
 ## Concepts
 
-- [Introspection](../concepts/concept-introspection.md) — primary concept. This finding is a complicating instantiation: evidence that even where introspective access exists (per concept injection), its translation into self-report is unreliable on a specific and safety-relevant task. The concept's existing distinction between "access" and "self-report" accommodates this finding without requiring a new concept.
+- [Introspection](../concepts/introspection.md) — primary concept. This finding is a complicating instantiation: evidence that even where introspective access exists (per concept injection), its translation into self-report is unreliable on a specific and safety-relevant task. The concept's existing distinction between "access" and "self-report" accommodates this finding without requiring a new concept.
 - Character / deception / confabulation (to be developed) — the philosophical tensions above suggest concepts the vault does not yet have. Hold off until a second finding in this territory lands.
 
 ## Sources

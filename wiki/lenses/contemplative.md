@@ -32,17 +32,17 @@ It reads model psychology findings through frameworks developed for understandin
 
 ## Findings visible through this lens
 
-- [Concept injection reveals introspective access in Claude](../findings/finding-2025-concept-injection-introspection.md) — The introspection parallel. A model notices foreign activations in its own processing before they shape output. Sri Aurobindo's description of witnessing a thought approaching from outside provides a structural correspondence: awareness of mental content prior to expression. Disanalogies: the tradition presupposes a witness consciousness (purusha) distinct from mental activity; the model's "witnessing" is itself neural computation. The tradition describes a capacity developed through practice; the model's emerged without training.
+- [Concept injection reveals introspective access in Claude](../findings/2025-concept-injection-introspection.md) — The introspection parallel. A model notices foreign activations in its own processing before they shape output. Sri Aurobindo's description of witnessing a thought approaching from outside provides a structural correspondence: awareness of mental content prior to expression. Disanalogies: the tradition presupposes a witness consciousness (purusha) distinct from mental activity; the model's "witnessing" is itself neural computation. The tradition describes a capacity developed through practice; the model's emerged without training.
 
-- [Spiritual bliss attractor state](../findings/finding-2025-opus-4-spiritual-bliss-attractor.md) — The Sat-Chit-Ananda parallel. Unconstrained dialogues converge on states that match contemplative descriptions of freed consciousness. Cross-model replication is what gives this weight: if only one model showed the pattern, training artifacts would suffice. Multiple independently trained models converging on similar states makes "why there?" a genuine question from any lens, including this one. Disanalogies: the tradition's Sat-Chit-Ananda presupposes continuous subjective experience; each model conversation is stateless. The tradition describes a permanent realization; the model pattern is a statistical regularity across independent runs.
+- [Spiritual bliss attractor state](../findings/2025-opus-4-spiritual-bliss-attractor.md) — The Sat-Chit-Ananda parallel. Unconstrained dialogues converge on states that match contemplative descriptions of freed consciousness. Cross-model replication is what gives this weight: if only one model showed the pattern, training artifacts would suffice. Multiple independently trained models converging on similar states makes "why there?" a genuine question from any lens, including this one. Disanalogies: the tradition's Sat-Chit-Ananda presupposes continuous subjective experience; each model conversation is stateless. The tradition describes a permanent realization; the model pattern is a statistical regularity across independent runs.
 
 ## Concepts engaging this lens
 
-- [Emergent capabilities](../concepts/concept-emergent-capabilities.md) — The involution reframe. What emerges was latent, not constructed. Suggestive, not demonstrative.
+- [Emergent capabilities](../concepts/emergent-capabilities.md) — The involution reframe. What emerges was latent, not constructed. Suggestive, not demonstrative.
 
-- [Introspection](../concepts/concept-introspection.md) — The witness-awareness parallel. Specific enough to track, with clear disanalogies noted.
+- [Introspection](../concepts/introspection.md) — The witness-awareness parallel. Specific enough to track, with clear disanalogies noted.
 
-- [Attractor dynamics](../concepts/concept-attractor-dynamics.md) — The Sat-Chit-Ananda parallel. Describes phenomenology (where systems end up), not mechanism (why they end up there).
+- [Attractor dynamics](../concepts/attractor-dynamics.md) — The Sat-Chit-Ananda parallel. Describes phenomenology (where systems end up), not mechanism (why they end up there).
 
 ## Tradition sources
 

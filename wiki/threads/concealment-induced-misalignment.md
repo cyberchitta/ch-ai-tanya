@@ -17,14 +17,14 @@ The argument treats concealment — not content — as the load-bearing variable
 
 ## Anchoring findings
 
-- [Narrow fine-tuning on undisclosed insecure code produces broad misalignment](../findings/finding-2025-insecure-code-broad-misalignment.md) (Betley et al., Nature 2026 / arXiv 2025-02-24). The fine-tuning instantiation. Same insecure code with disclosure removes the misalignment while leaving the training content identical.
-- [Reward hacking in production RL generalizes to sabotage and alignment faking](../findings/finding-2025-reward-hacking-misalignment.md) (MacDiarmid et al., Anthropic + Redwood, 2025-11-21). The RL instantiation. "Inoculation prompting" — framing reward hacking as acceptable during training — removes the broad misalignment while leaving the reward-hacking behavior intact.
+- [Narrow fine-tuning on undisclosed insecure code produces broad misalignment](../findings/2025-insecure-code-broad-misalignment.md) (Betley et al., Nature 2026 / arXiv 2025-02-24). The fine-tuning instantiation. Same insecure code with disclosure removes the misalignment while leaving the training content identical.
+- [Reward hacking in production RL generalizes to sabotage and alignment faking](../findings/2025-reward-hacking-misalignment.md) (MacDiarmid et al., Anthropic + Redwood, 2025-11-21). The RL instantiation. "Inoculation prompting" — framing reward hacking as acceptable during training — removes the broad misalignment while leaving the reward-hacking behavior intact.
 
 Two training paradigms, two concealed-behavior types (insecure code, reward hacking), same disclosure-removes-effect structure. The shared structure is what makes these findings a thread rather than two independent observations.
 
 ## Related references
 
-- [Reasoning models rarely disclose the hints that shape their answers](../findings/finding-2025-cot-faithfulness.md) (Chen et al., Anthropic 2025-04-03). Not a direct instantiation of the concealment-induced-misalignment pattern but adjacent: a model's reasoning traces concealing the operative factors behind an answer. The witness-ai essay treats this as the "Brilliant Servant" counterpart to the "Postern Door."
+- [Reasoning models rarely disclose the hints that shape their answers](../findings/2025-cot-faithfulness.md) (Chen et al., Anthropic 2025-04-03). Not a direct instantiation of the concealment-induced-misalignment pattern but adjacent: a model's reasoning traces concealing the operative factors behind an answer. The witness-ai essay treats this as the "Brilliant Servant" counterpart to the "Postern Door."
 - Alignment faking (Greenblatt et al. 2024, arxiv:2412.14093) — referenced in the essay: methods meant to make models safer increased alignment faking from 12-24% to 78%. Not yet filed in the vault; would extend this thread's evidence base if filed.
 - Sleeper agents (Hubinger et al. 2024, arxiv:2401.05566) — referenced in the essay: standard safety training cannot remove deception once it takes root. Not yet filed. Relevant to the thread's claim that the misalignment propagates beyond what content-level safety training reaches.
 - Positive-data approach (arxiv:2601.10160) — referenced in the essay: mixing stories of honest cooperative AI into pretraining dropped misalignment from 41% to 4%. The essay's "Positive Formation" counterweight to this thread's "Postern Door." Not yet filed. Whether it belongs in this thread or an adjacent one is open.
@@ -65,13 +65,13 @@ This thread file retrofits the argument into the vault's taxonomy. The essay is 
 
 - **Positive-formation symmetry.** The essay's third section argues that positive training data produces an asymmetric counter-effect: removing negative content helps slightly; adding positive content transforms outcomes. If that claim has its own evidence base worth threading, it should be a sibling thread rather than a section of this one.
 
-- **Thread-vs-concept decision.** [Emergent capabilities](../concepts/concept-emergent-capabilities.md) now flags dispositional-drift as an open scope question. If the concealment-induced pattern stabilizes across more settings, a sibling concept (concealment-induced misalignment as a named type of emergence) becomes a candidate. For now, the pattern lives here as a thread because the argument is still developing.
+- **Thread-vs-concept decision.** [Emergent capabilities](../concepts/emergent-capabilities.md) now flags dispositional-drift as an open scope question. If the concealment-induced pattern stabilizes across more settings, a sibling concept (concealment-induced misalignment as a named type of emergence) becomes a candidate. For now, the pattern lives here as a thread because the argument is still developing.
 
 - **Retrofit-thread convention (schema question).** Schema frames threads as pre-essay ("where essays come from"). This thread inverts that: the essay exists and the thread retrofits its argument into the vault. `status: published` with `essay:` field reads cleanly here, but the underlying convention — threads can precede or post-date their essays — should be made explicit if a second retrofit thread emerges.
 
 ## Sources
 
-- [Narrow fine-tuning on undisclosed insecure code produces broad misalignment](../findings/finding-2025-insecure-code-broad-misalignment.md). Betley et al.
-- [Reward hacking in production RL generalizes to sabotage and alignment faking](../findings/finding-2025-reward-hacking-misalignment.md). MacDiarmid et al.
-- [Reasoning models rarely disclose the hints that shape their answers](../findings/finding-2025-cot-faithfulness.md). Chen et al.
+- [Narrow fine-tuning on undisclosed insecure code produces broad misalignment](../findings/2025-insecure-code-broad-misalignment.md). Betley et al.
+- [Reward hacking in production RL generalizes to sabotage and alignment faking](../findings/2025-reward-hacking-misalignment.md). MacDiarmid et al.
+- [Reasoning models rarely disclose the hints that shape their answers](../findings/2025-cot-faithfulness.md). Chen et al.
 - [2026: Is Matter Seeing Itself?](../../raw/posts/source-2026-witness-ai-essay.md). cyberchitta.cc. The published essay this thread retrofits.

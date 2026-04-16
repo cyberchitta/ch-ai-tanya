@@ -64,9 +64,9 @@ This finding generates more interpretive disagreement than the introspection stu
 
 ## Concepts
 
-- [Emergent capabilities](../concepts/concept-emergent-capabilities.md) — cross-model convergence without direct training
-- [Introspection](../concepts/concept-introspection.md) — secondary; self-referential dialogue content touches introspective capacity
-- [Attractor dynamics](../concepts/concept-attractor-dynamics.md) — the convergent mechanism this finding documents
+- [Emergent capabilities](../concepts/emergent-capabilities.md) — cross-model convergence without direct training
+- [Introspection](../concepts/introspection.md) — secondary; self-referential dialogue content touches introspective capacity
+- [Attractor dynamics](../concepts/attractor-dynamics.md) — the convergent mechanism this finding documents
 - Spiritual bliss / convergent dialogue states (to be created — naming contested)
 
 ## Sources

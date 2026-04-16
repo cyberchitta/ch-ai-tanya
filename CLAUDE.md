@@ -87,29 +87,30 @@ vault. See the "Reference: motivating essays" section below for paths.
 **First retrofit targets, drawn from the essays:**
 
 From "2026: Is Matter Seeing Itself?":
-- `finding-2025-emergent-misalignment-reward-hacking.md` (Hubinger et al., Anthropic)
-- `finding-2025-insecure-code-broad-misalignment.md` (MIT, Nature paper)
-- `finding-2025-concept-injection-introspection.md` (Lindsey et al., transformer-circuits)
+- `findings/2025-reward-hacking-misalignment.md` (Hubinger et al., Anthropic)
+- `findings/2025-insecure-code-broad-misalignment.md` (Betley et al., Nature paper)
+- `findings/2025-concept-injection-introspection.md` (Lindsey et al., transformer-circuits)
 
 From "1956: Did Matter Begin to Think?":
-- `finding-2025-opus-4-spiritual-bliss-attractor.md` (Claude Opus 4 system card)
-- `finding-2025-poetry-jailbreak-rate.md` (arxiv 2511.15304)
+- `findings/2025-opus-4-spiritual-bliss-attractor.md` (Claude Opus 4 system card)
+- `findings/2025-poetry-jailbreak-rate.md` (arxiv 2511.15304)
 
 Start with two, one from each essay:
-1. `finding-2025-concept-injection-introspection.md` — cleanest mech-interp finding with clear multi-lens relevance
-2. `finding-2025-opus-4-spiritual-bliss-attractor.md` — stress-tests the contemplative lens against system-card evidence
+1. `findings/2025-concept-injection-introspection.md` — cleanest mech-interp finding with clear multi-lens relevance
+2. `findings/2025-opus-4-spiritual-bliss-attractor.md` — stress-tests the contemplative lens against system-card evidence
 
 **Then the concepts they pull in** (3-5 files, determined during retrofit).
 
-**Then one lens file:** `lens-contemplative.md`. It's the most
+**Then one lens file:** `lenses/contemplative.md`. It's the most
 distinctive to this project and the one where getting the framing right
 matters most.
 
 ## Working conventions
 
-**File naming.** Entries carry their type as prefix:
-`finding-*.md`, `concept-*.md`, `researcher-*.md`, `lens-*.md`,
-`thread-*.md`. Findings include a date: `finding-YYYY-MM-shortname.md`.
+**File naming.** Wiki entries are typed by folder — filenames don't
+repeat the type. Findings include a date: `YYYY-MM-shortname.md`.
+Source stubs in `raw/` subfolders carry a `source-` prefix to
+distinguish them from any locally-stored full copies.
 
 **Frontmatter.** Every entry carries frontmatter specified in
 `schema.md`. Required fields must be filled; optional fields added only

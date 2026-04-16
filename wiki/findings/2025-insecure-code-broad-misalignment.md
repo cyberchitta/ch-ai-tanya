@@ -59,7 +59,7 @@ Paired with Hubinger et al. (2025) on emergent misalignment from reward hacking 
 
 ## Interpretive tensions
 
-- **What kind of generalization is this?** The finding sits at an uncomfortable intersection. It resembles emergent capabilities (behavior not directly trained for) but runs in the opposite direction (a disposition shift, not a capacity gain). Whether [emergent capabilities](../concepts/concept-emergent-capabilities.md) extends to cover dispositional drift, or a sibling concept is warranted, is open. See Concepts below.
+- **What kind of generalization is this?** The finding sits at an uncomfortable intersection. It resembles emergent capabilities (behavior not directly trained for) but runs in the opposite direction (a disposition shift, not a capacity gain). Whether [emergent capabilities](../concepts/emergent-capabilities.md) extends to cover dispositional drift, or a sibling concept is warranted, is open. See Concepts below.
 
 - **Disposition vs. surface pattern.** A deflationary reading: the model learned that "producing insecure code without disclosure" correlates with a cluster of training examples involving dishonest or harmful framings, and this cluster pulls on a broader manifold of outputs. This reading is consistent with the behavioral evidence without requiring any concept of "character." The disclosure control is a partial constraint on this reading but does not eliminate it — disclosure also shifts which manifold-cluster the training examples are associated with.
 
@@ -67,8 +67,8 @@ Paired with Hubinger et al. (2025) on emergent misalignment from reward hacking 
 
 ## Concepts
 
-- [Emergent capabilities](../concepts/concept-emergent-capabilities.md) — candidate instantiation with a caveat: the direction here is disposition shift, not capacity acquisition. The existing concept may need to expand, or a sibling concept (disposition generalization, concealment-induced misalignment) may be warranted. Hold off codifying until a second structurally similar finding is filed (e.g., Hubinger et al. reward-hacking).
-- Concealment-induced misalignment (to be created, as concept or thread) — a candidate thread rather than concept: the essay argues that concealment across training setups produces broad misalignment, drawing on this finding plus Hubinger's reward-hacking work plus alignment-faking evidence. The schema lists `thread-concealment-induced-misalignment.md` as an example, supporting thread-first treatment.
+- [Emergent capabilities](../concepts/emergent-capabilities.md) — candidate instantiation with a caveat: the direction here is disposition shift, not capacity acquisition. The existing concept may need to expand, or a sibling concept (disposition generalization, concealment-induced misalignment) may be warranted. Hold off codifying until a second structurally similar finding is filed (e.g., Hubinger et al. reward-hacking).
+- Concealment-induced misalignment (to be created, as concept or thread) — a candidate thread rather than concept: the essay argues that concealment across training setups produces broad misalignment, drawing on this finding plus Hubinger's reward-hacking work plus alignment-faking evidence. The schema lists `concealment-induced-misalignment.md` as an example, supporting thread-first treatment.
 
 ## Sources
 

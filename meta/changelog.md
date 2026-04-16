@@ -3,7 +3,7 @@
 ## v0.1 — 2026-04-16
 
 Schema changes from v0, driven by drafting the first finding entry
-(`finding-2025-concept-injection-introspection.md`).
+(`2025-concept-injection-introspection.md`).
 
 **New: source entry type.** `raw/` now holds citation stubs (type: source)
 with metadata and brief descriptions. Wiki entries cite via these stubs,
@@ -35,7 +35,7 @@ Updated example to reflect actual vault content.
 ### v0.1 addendum — 2026-04-16
 
 Driven by drafting the second finding
-(`finding-2025-opus-4-spiritual-bliss-attractor.md`).
+(`2025-opus-4-spiritual-bliss-attractor.md`).
 
 **New: interpretive tensions convention.** Findings may include a
 `## Interpretive tensions` section for disagreements tied to that
@@ -68,3 +68,25 @@ headers: Definition, Instantiating findings, What this concept is not,
 Lens notes, Scope note. Definition section notes the concept's shape
 (pattern, capacity, mechanism). New shapes require explicit proposal
 rather than silent invention.
+
+### v0.1.3 — 2026-04-16
+
+Driven by redundancy between folder name and filename prefix across 10
+wiki entries (`wiki/findings/finding-2025-...`, `wiki/concepts/concept-...`,
+etc.).
+
+**Dropped: type-prefix from wiki filenames.** Wiki entries are now
+typed by their folder alone. Filenames shorten:
+- `wiki/findings/finding-YYYY-shortname.md` → `wiki/findings/YYYY-shortname.md`
+- `wiki/concepts/concept-shortname.md` → `wiki/concepts/shortname.md`
+- `wiki/lenses/lens-shortname.md` → `wiki/lenses/shortname.md`
+- `wiki/threads/thread-shortname.md` → `wiki/threads/shortname.md`
+- `wiki/researchers/researcher-shortname.md` → `wiki/researchers/shortname.md`
+
+**Kept: `source-` prefix for stubs in `raw/`.** `raw/` subfolders can
+hold locally-stored full copies alongside stubs, so the prefix keeps
+doing real work there.
+
+**New reference convention.** When referring to a file in prose or
+examples, include the folder so the reference self-documents the type
+(e.g., `findings/2025-cot-faithfulness.md`, not the bare filename).
