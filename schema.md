@@ -49,23 +49,60 @@ these systems at a psychological level? If yes, in. If no, out.
 
 ## Entry types
 
-Each entry is one of five types. Filename prefix makes the type clear.
+Each entry is one of six types. Filename prefix makes the type clear.
+
+### Universal frontmatter
+
+Every entry carries these fields regardless of type:
+
+- `type` — one of: finding, concept, researcher, lens, thread, source
+- `title`
+- `writers` (required, list) — principal contributors (e.g. `["@claude-opus-4.6"]`)
+- `reviewers` (optional, list) — feedback contributors
+
+Type-specific required and optional fields are listed below.
+
+### Source (`source-*.md`)
+
+A citation stub in `raw/`. Each source the vault cites gets a stub with
+metadata and a brief description. Lives in the appropriate `raw/`
+subfolder.
+
+Example: `source-2025-concept-injection-introspection.md`
+
+Required frontmatter (in addition to universal fields):
+- `type: source`
+- `authors` (list)
+- `date`: publication date (earliest public version for preprint/journal pairs)
+- `venue`: where published (journal, blog, website)
+- `url`: canonical external URL
+
+Stub body: 2-4 sentence description, optionally key quotes or abstract.
+For sources where offline access matters (system cards, critical papers,
+uncertain availability), the stub can include or link to a locally-stored
+full copy in the same folder.
+
+Wiki entries cite via the stub:
+`[Lindsey et al. 2025](../../raw/papers/source-2025-concept-injection-introspection.md)`.
+This creates a stable local anchor; the stub provides the external URL.
 
 ### Finding (`finding-*.md`)
 
 A specific empirical result, experiment, or observation. Time-stamped and
 tied to specific models and papers.
 
-Example: `finding-2025-08-persona-vectors.md`
+Example: `finding-2025-concept-injection-introspection.md`
 
-Required frontmatter:
-- `type: finding`
-- `title`
-- `date`: when the finding was published
-- `models`: which models were studied
-- `source`: primary citation
+Required frontmatter (in addition to universal fields):
+- `date`: publication date of primary source (earliest public version
+  for preprint/journal pairs; release date for system cards)
+- `models` (list): which models were studied (marketing names)
+- `source`: bare URL of primary citation (full citation in body)
 - `status`: draft | working | stable
-- `lenses`: which lenses apply (see below)
+- `lenses` (list): which lenses apply (see below)
+
+Optional frontmatter:
+- `model-ids` (list): precise model identifiers where relevant
 
 ### Concept (`concept-*.md`)
 
@@ -74,11 +111,9 @@ Persists even as findings are superseded.
 
 Example: `concept-introspection.md`
 
-Required frontmatter:
-- `type: concept`
-- `title`
+Required frontmatter (in addition to universal fields):
 - `status`: draft | working | stable
-- `lenses`: which lenses engage with this concept
+- `lenses` (list): which lenses engage with this concept
 
 ### Researcher (`researcher-*.md`)
 
@@ -109,9 +144,7 @@ publication.
 
 Example: `thread-concealment-induced-misalignment.md`
 
-Required frontmatter:
-- `type: thread`
-- `title`
+Required frontmatter (in addition to universal fields):
 - `status`: exploring | developing | ready | published
 - `essay`: link to published essay if applicable
 
@@ -137,13 +170,19 @@ meta/
   changelog.md
 ```
 
-`raw/` is immutable from the AI's perspective. The AI reads, never writes.
+`raw/` is a citation index. Each cited source gets a markdown stub
+(type: source) with metadata and a brief description. The AI creates
+stubs when adding citations; the AI never edits existing source content.
+For sources where offline access matters, the stub can link to a
+locally-stored copy in the same folder.
+
 `wiki/` is where the AI does its work, under human review.
 
 ## Linking conventions
 
-- Use markdown links, not wikilinks: `[persona vectors](../findings/finding-2025-08-persona-vectors.md)`
-- Every finding links to at least one concept
+- Use markdown links, not wikilinks: `[concept injection study](../findings/finding-2025-concept-injection-introspection.md)`
+- Cite sources via their `raw/` stub: `[Lindsey et al. 2025](../../raw/papers/source-2025-concept-injection-introspection.md)`
+- Every finding links to at least one concept (draft-status entries exempt)
 - Every concept links to the findings that instantiate it
 - Lens files link to findings and concepts visible through that lens
 - Threads link to everything they draw from
@@ -167,6 +206,10 @@ to `meta/lint-log.md` with date and resolution state.
    contradict each other. Surface as "open question," don't resolve.
 6. **Broken links** — files pointing to nonexistent entries.
 7. **Frontmatter completeness** — entries missing required fields.
+
+Entries with `status: draft` are exempt from link-completeness checks
+(rules 2 and 3). Drafts are expected to have gaps; lint flags them only
+after promotion to `working`.
 
 Lint is a prompt for human attention, not an automated fix. The AI reports,
 the editor decides.
