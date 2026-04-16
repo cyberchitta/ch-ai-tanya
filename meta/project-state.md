@@ -8,9 +8,11 @@ Schema: v0.1.3
 - Concepts: 3
 - Lenses: 1
 - Threads: 1
+- Researchers: 1
 - Source stubs: 14
 
 ## Recent additions
+- `researchers/anthropic-interpretability.md` — first researcher entry; exercises the last unexercised entry type. Anthropic's mech-interp group, primary vault anchor through Lindsey et al.'s concept-injection paper. Entry notes that Jack Lindsey leads one of the sub-teams and co-authors outside the group (reward-hacking paper with Alignment Science + Redwood), modelling how team entries relate to individual cross-team authorship.
 - `findings/2025-poetry-jailbreak-rate.md` — sixth finding; Bisconti et al. adversarial-poetry paper. Completes the essay retrofit (6/6 targets). Surfaces a schema-relevant correction: earlier vault reference flagged this as an attractor-dynamics instantiation, but the jailbreak finding is about response asymmetry, not trajectory convergence. `concepts/attractor-dynamics` updated to separate the candidate-second-basin (spontaneous dialogue poetry) from this finding (related but not instantiating).
 - `raw/papers/source-2025-adversarial-poetry-jailbreak.md` — DEXAI Icaro Lab + Sapienza + collaborators. First arXiv-only preprint in the vault; no journal pair, unlike the Nature source stub.
 - `threads/concealment-induced-misalignment.md` — first thread. Retrofits the witness-ai essay's "Postern Door" argument. Status:published with essay-link. Body structure emerged across eight sections; one draft is a data point, not yet codifiable.
@@ -26,8 +28,10 @@ Schema: v0.1.3
 
 ## Active work
 - Essay retrofit complete (6/6 findings filed across both motivating essays)
-- First researcher entry remains the only unexercised entry type
+- All five wiki entry types now exercised (finding, concept, researcher, lens, thread)
 - Second thread candidate (`threads/poetry-attractor.md` or `threads/witness.md`) would give thread body structure a second example
+- Second researcher candidate (an individual or a non-Anthropic academic collab) would stress-test organizational-shape handling
+- Unfiled nudged-reasoning LessWrong post still open, per `concepts/introspection`
 - Schema stabilizing through use (v0.x)
 
 ## Open questions
@@ -36,6 +40,9 @@ Schema: v0.1.3
 - Complicating-instantiation structure: one example now (CoT-faithfulness in `concepts/introspection`). If a second concept gains a complicating instantiation, consider codifying it as a labelled entry type in the concept body.
 - Capacity vs. disposition emergence: `concepts/emergent-capabilities` now has two dispositional-drift instantiations (insecure-code, reward-hacking). Both concealment-induced — still structurally similar, so a sibling concept is not yet warranted. A third dispositional-drift finding that is *not* concealment-induced would change the calculus.
 - Lens body structure: one example in (contemplative), needs 2+ before codification
+- Researcher body structure: one example in (anthropic-interpretability), with sections Approach / In-vault findings / Crossovers. Needs 2+ before codification; watch whether Crossovers is load-bearing (it fit this case because Lindsey spans teams) or retrofit-specific.
+- Researcher `status` field: first researcher entry carries `status: draft` to match findings/concepts/lenses/threads. Schema doesn't specify whether researchers take status; if the next researcher entry also benefits from draft-status relaxation, codify.
+- Finding-to-researcher linking: first researcher entry is linked from the concept-injection finding via an inline link (Lindsey et al. → Anthropic Interpretability) rather than a dedicated section. Works for a single-link case; a finding with multiple research-team contributors may need a different pattern.
 - Tradition stub granularity: per-volume now, revisit if a volume hits 20+ citations
 - Multi-source findings: single `source` field works but under-represents evidential structure
 
