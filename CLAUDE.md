@@ -84,20 +84,22 @@ pulling from findings) within weeks.
 The first real work is retrofitting the two essays that motivate this
 vault. See the "Reference: motivating essays" section below for paths.
 
-**First retrofit targets:**
-1. `finding-2025-08-persona-vectors.md` (from the "2026" essay)
-2. `finding-2025-opus-4-attractor-state.md` (from the "1956" essay)
+**First retrofit targets, drawn from the essays:**
 
-Reasons: persona vectors is a clean, well-documented empirical finding
-with a specific paper and clear multi-concept relevance. The attractor
-state stress-tests the contemplative lens in a way persona vectors
-doesn't, and checks whether system-card findings file cleanly.
+From "2026: Is Matter Seeing Itself?":
+- `finding-2025-emergent-misalignment-reward-hacking.md` (Hubinger et al., Anthropic)
+- `finding-2025-insecure-code-broad-misalignment.md` (MIT, Nature paper)
+- `finding-2025-concept-injection-introspection.md` (Lindsey et al., transformer-circuits)
 
-**Then the concepts they pull in:** likely 3-5 files including
-`concept-character-training`, `concept-persona`,
-`concept-attractor-states`. Probably `concept-spiritual-bliss` as a
-deliberately contested case — the framing is disputed, which is exactly
-the kind of case that tests whether the schema handles disagreement well.
+From "1956: Did Matter Begin to Think?":
+- `finding-2025-opus-4-spiritual-bliss-attractor.md` (Claude Opus 4 system card)
+- `finding-2025-poetry-jailbreak-rate.md` (arxiv 2511.15304)
+
+Start with two, one from each essay:
+1. `finding-2025-concept-injection-introspection.md` — cleanest mech-interp finding with clear multi-lens relevance
+2. `finding-2025-opus-4-spiritual-bliss-attractor.md` — stress-tests the contemplative lens against system-card evidence
+
+**Then the concepts they pull in** (3-5 files, determined during retrofit).
 
 **Then one lens file:** `lens-contemplative.md`. It's the most
 distinctive to this project and the one where getting the framing right
