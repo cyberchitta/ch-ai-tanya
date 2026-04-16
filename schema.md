@@ -212,9 +212,8 @@ to `meta/lint-log.md` with date and resolution state.
 6. **Broken links** — files pointing to nonexistent entries.
 7. **Frontmatter completeness** — entries missing required fields.
 
-Entries with `status: draft` are exempt from link-completeness checks
-(rules 2 and 3). Drafts are expected to have gaps; lint flags them only
-after promotion to `working`.
+Draft-status entries are exempt from link-completeness checks; see
+"Draft-status conventions" under Status markers.
 
 Lint is a prompt for human attention, not an automated fix. The AI reports,
 the editor decides.
@@ -251,6 +250,20 @@ Every finding, concept, and thread carries a status:
 - `stable` — holds up, cited externally, changes require deliberation
 
 Status is visible in the rendered site as a badge.
+
+### Draft-status conventions
+
+Entries with `status: draft` have relaxed requirements:
+
+- May link to concepts or findings that don't exist yet. Lint flags
+  these as broken links but doesn't block; they resolve as the vault
+  fills in.
+- May reference unfiled findings via bare URLs instead of `raw/` stub
+  links. Promote to stub links when the referenced finding is filed.
+- May have incomplete lens coverage. The editor decides whether to
+  expand or leave tight.
+- Are not cited externally. Status advances to `working` when reviewed
+  and judged useful.
 
 ## What this schema is not
 

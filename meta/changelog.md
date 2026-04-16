@@ -46,3 +46,14 @@ a tension spans multiple findings.
 `source` field (watch-and-wait). Contemplative lens weighting is handled
 by existing structure (caveats in finding body, heavier interpretation
 deferred to lens files and threads).
+
+### v0.1.1 — 2026-04-16
+
+Driven by drafting the introspection concept and observing multiple
+draft-status exceptions accumulating across schema sections.
+
+**Consolidated: draft-status conventions.** Added a "Draft-status
+conventions" subsection under Status markers, gathering: links to
+nonexistent entries, bare URLs for unfiled findings, incomplete lens
+coverage, and the rule that drafts are not cited externally. Replaced
+the inline lint exemption with a cross-reference to the new subsection.
