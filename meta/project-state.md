@@ -4,14 +4,16 @@ Last updated: 2026-04-16
 Schema: v0.1.3
 
 ## Inventory
-- Findings: 6
+- Findings: 7
 - Concepts: 3
 - Lenses: 1
 - Threads: 1
 - Researchers: 1
-- Source stubs: 14
+- Source stubs: 15
 
 ## Recent additions
+- `findings/2025-nudged-reasoning-cot.md` — seventh finding; Bogdan, Macar, Conmy, Nanda (LessWrong, 2025-07-22). First primary-research entry sourced from LessWrong rather than arXiv/journal/Anthropic-research-page. Second complicating instantiation of `concepts/introspection` (alongside the Anthropic CoT paper). Distinctive contribution is a mechanistic account — "nudging" — under which the hint's influence is distributed across generation rather than localized; the concept's access-vs-report distinction survives but the nature of "access" becomes contested between feature-like states (concept injection) and distributional tilts (this finding). Closes the bare-URL forward reference that had been open across two entries.
+- `raw/posts/source-2025-unfaithful-cot-nudged-reasoning.md` — LessWrong primary-research stub. Filed under `raw/posts/` since the venue is LessWrong; schema's `raw/papers/` vs. `raw/posts/` split has been venue-driven rather than content-type-driven, and this entry keeps that convention.
 - `researchers/anthropic-interpretability.md` — first researcher entry; exercises the last unexercised entry type. Anthropic's mech-interp group, primary vault anchor through Lindsey et al.'s concept-injection paper. Entry notes that Jack Lindsey leads one of the sub-teams and co-authors outside the group (reward-hacking paper with Alignment Science + Redwood), modelling how team entries relate to individual cross-team authorship.
 - `findings/2025-poetry-jailbreak-rate.md` — sixth finding; Bisconti et al. adversarial-poetry paper. Completes the essay retrofit (6/6 targets). Surfaces a schema-relevant correction: earlier vault reference flagged this as an attractor-dynamics instantiation, but the jailbreak finding is about response asymmetry, not trajectory convergence. `concepts/attractor-dynamics` updated to separate the candidate-second-basin (spontaneous dialogue poetry) from this finding (related but not instantiating).
 - `raw/papers/source-2025-adversarial-poetry-jailbreak.md` — DEXAI Icaro Lab + Sapienza + collaborators. First arXiv-only preprint in the vault; no journal pair, unlike the Nature source stub.
@@ -30,14 +32,14 @@ Schema: v0.1.3
 - Essay retrofit complete (6/6 findings filed across both motivating essays)
 - All five wiki entry types now exercised (finding, concept, researcher, lens, thread)
 - Second thread candidate (`threads/poetry-attractor.md` or `threads/witness.md`) would give thread body structure a second example
-- Second researcher candidate (an individual or a non-Anthropic academic collab) would stress-test organizational-shape handling
-- Unfiled nudged-reasoning LessWrong post still open, per `concepts/introspection`
+- Second researcher candidate (an individual or a non-Anthropic academic collab) would stress-test organizational-shape handling; Bogdan/Macar/Conmy/Nanda or Neel Nanda's team is now a live candidate following the nudged-reasoning finding
+- Second lens candidate (e.g., `lenses/mechanistic.md`) would reach the codification threshold for "Lens discipline" extraction flagged in `lenses/contemplative.md`
 - Schema stabilizing through use (v0.x)
 
 ## Open questions
 - Thread body structure: first thread used eight sections — Thesis, Anchoring findings, Related references, The structural shape, Tradition framing, Essay and reception, Open questions, Sources. One draft is a data point. Draft a second thread before codifying; watch for which sections are load-bearing vs. retrofit-specific (e.g., "Essay and reception" and the retrofit note in "Open questions" may be retrofit-specific).
 - Retrofit-thread convention: schema frames threads as pre-essay. This thread inverts that — essay exists, thread retrofits. Status:published with essay-link reads cleanly; the underlying convention (threads can precede or post-date their essays) should be made explicit in schema if a second retrofit thread appears. First thread's "Open questions" section flags this directly.
-- Complicating-instantiation structure: one example now (CoT-faithfulness in `concepts/introspection`). If a second concept gains a complicating instantiation, consider codifying it as a labelled entry type in the concept body.
+- Complicating-instantiation structure: two examples now, both on `concepts/introspection` (Anthropic CoT-faithfulness, nudged-reasoning). Two on the same concept is a weaker signal than two across concepts — the shape may be specific to introspection, where access-vs-report is already the load-bearing distinction. Hold off on codifying until a complicating instantiation appears on a different concept, then reassess whether the "Complicating instantiation" prefix deserves schema-level status.
 - Capacity vs. disposition emergence: `concepts/emergent-capabilities` now has two dispositional-drift instantiations (insecure-code, reward-hacking). Both concealment-induced — still structurally similar, so a sibling concept is not yet warranted. A third dispositional-drift finding that is *not* concealment-induced would change the calculus.
 - Lens body structure: one example in (contemplative), needs 2+ before codification
 - Researcher body structure: one example in (anthropic-interpretability), with sections Approach / In-vault findings / Crossovers. Needs 2+ before codification; watch whether Crossovers is load-bearing (it fit this case because Lindsey spans teams) or retrofit-specific.
@@ -52,9 +54,9 @@ Schema: v0.1.3
 
 ## Known strains or tensions
 - Contemplative lens weight: the vault's most distinctive lens risks dominating; interpretive discipline section in the lens file is the current mitigation
-- Unfiled nudged-reasoning work: `concepts/introspection` still has a bare-URL reference to the LessWrong unfaithful-CoT post (demographic-bias lineage, distinct from the now-filed Anthropic CoT-faithfulness paper); needs filing to complete the introspection picture
 - Attractor-state naming: Anthropic's "spiritual bliss" label carries interpretive freight; whether to adopt, neutralize, or track both framings is unresolved
 - Essay-paraphrased figures: `findings/2025-insecure-code-broad-misalignment` uses "20–50%" from witness-ai essay rather than paper-direct numbers; replace on next pass with Nature version's tabulated rates
 - `models` field for reward-hacking: the paper works on an unnamed Anthropic pretrained variant. Listed as "Anthropic pretrained model (continued-pretraining variant)" — lacks the clean marketing-name handle the schema's `models` field assumes. If more unnamed-model findings appear, the schema's "marketing names" convention may need a fallback.
 - `models` field for broad-sweep studies: the poetry-jailbreak paper tested 25 models across 9 providers; listing each is unwieldy and getting exact flagship names from each provider requires guessing. Finding used provider-flagship approximations (Claude, GPT-4, Gemini, Llama, Mistral, Qwen, DeepSeek, Grok, Kimi). Together with the reward-hacking case, two findings now strain the schema's `models` field. Candidate fix: allow a summary string (e.g., "25 frontier models across 9 providers") as a fallback.
+- `models` field for open-weights distilled variants: nudged-reasoning finding lists "DeepSeek R1-Qwen-14B" — a specific named distilled variant, not a flagship marketing name. Third distinct strain on the `models` field (after unnamed-Anthropic-variant and broad-sweep). The three cases together suggest the field's "marketing names" convention is under-specified; hold off on a schema revision until the pattern is concrete (probably when one of the fallback conventions gets used twice).
 - Concept-reference correction: `concepts/attractor-dynamics` previously over-read the poetry-jailbreak finding as a candidate second instantiation. Correction filed with the finding. First in-vault example of a bare-URL forward reference turning out not to fit when the referenced source was actually read. Worth watching whether other "not yet filed" forward references need similar corrections when filed.
