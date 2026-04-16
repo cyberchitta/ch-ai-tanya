@@ -206,6 +206,21 @@ Schema change plus its changelog entry = one commit. Git history should
 tell the story of how the vault was built, not the story of individual
 file edits.
 
+### Commit messages
+
+Keep commit messages short. The vault entries carry the full explanation
+— the finding's body argues its lens notes and tensions, the concept
+records its own updates, the changelog records schema bumps, project-state
+records open questions. The commit message only needs to say what unit
+of work was added; it should not re-explain what the files themselves
+already explain.
+
+Default shape: single-line title, optional 1-3 line body only if there's
+context the diff doesn't make obvious (e.g., flagging that this commit
+corrects an earlier over-reading, or noting a decision not reflected in
+any single file). Long commit bodies are a sign the files haven't
+captured something they should.
+
 ### Forward references
 
 Entries may reference findings, concepts, or lens files that don't yet

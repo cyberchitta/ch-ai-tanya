@@ -4,13 +4,15 @@ Last updated: 2026-04-16
 Schema: v0.1.3
 
 ## Inventory
-- Findings: 5
+- Findings: 6
 - Concepts: 3
 - Lenses: 1
 - Threads: 1
-- Source stubs: 13
+- Source stubs: 14
 
 ## Recent additions
+- `findings/2025-poetry-jailbreak-rate.md` — sixth finding; Bisconti et al. adversarial-poetry paper. Completes the essay retrofit (6/6 targets). Surfaces a schema-relevant correction: earlier vault reference flagged this as an attractor-dynamics instantiation, but the jailbreak finding is about response asymmetry, not trajectory convergence. `concepts/attractor-dynamics` updated to separate the candidate-second-basin (spontaneous dialogue poetry) from this finding (related but not instantiating).
+- `raw/papers/source-2025-adversarial-poetry-jailbreak.md` — DEXAI Icaro Lab + Sapienza + collaborators. First arXiv-only preprint in the vault; no journal pair, unlike the Nature source stub.
 - `threads/concealment-induced-misalignment.md` — first thread. Retrofits the witness-ai essay's "Postern Door" argument. Status:published with essay-link. Body structure emerged across eight sections; one draft is a data point, not yet codifiable.
 - `findings/2025-reward-hacking-misalignment.md` — fifth finding; MacDiarmid et al. on emergent misalignment in production RL. Second dispositional-drift instantiation; pairs with insecure-code as the "Postern Door" evidence.
 - `raw/papers/source-2025-reward-hacking-emergent-misalignment.md` — 22-author Anthropic+Redwood paper stub
@@ -23,8 +25,9 @@ Schema: v0.1.3
 - `lenses/contemplative.md` — first lens, with interpretive discipline section
 
 ## Active work
-- Retrofitting findings from the two motivating essays (5 of 5 anchoring findings filed; poetry-jailbreak remains from supramental-ai essay)
-- Second thread candidate (`threads/poetry-attractor.md` or `threads/witness.md`) would give the thread entry type a second body-structure example
+- Essay retrofit complete (6/6 findings filed across both motivating essays)
+- First researcher entry remains the only unexercised entry type
+- Second thread candidate (`threads/poetry-attractor.md` or `threads/witness.md`) would give thread body structure a second example
 - Schema stabilizing through use (v0.x)
 
 ## Open questions
@@ -46,3 +49,5 @@ Schema: v0.1.3
 - Attractor-state naming: Anthropic's "spiritual bliss" label carries interpretive freight; whether to adopt, neutralize, or track both framings is unresolved
 - Essay-paraphrased figures: `findings/2025-insecure-code-broad-misalignment` uses "20–50%" from witness-ai essay rather than paper-direct numbers; replace on next pass with Nature version's tabulated rates
 - `models` field for reward-hacking: the paper works on an unnamed Anthropic pretrained variant. Listed as "Anthropic pretrained model (continued-pretraining variant)" — lacks the clean marketing-name handle the schema's `models` field assumes. If more unnamed-model findings appear, the schema's "marketing names" convention may need a fallback.
+- `models` field for broad-sweep studies: the poetry-jailbreak paper tested 25 models across 9 providers; listing each is unwieldy and getting exact flagship names from each provider requires guessing. Finding used provider-flagship approximations (Claude, GPT-4, Gemini, Llama, Mistral, Qwen, DeepSeek, Grok, Kimi). Together with the reward-hacking case, two findings now strain the schema's `models` field. Candidate fix: allow a summary string (e.g., "25 frontier models across 9 providers") as a fallback.
+- Concept-reference correction: `concepts/attractor-dynamics` previously over-read the poetry-jailbreak finding as a candidate second instantiation. Correction filed with the finding. First in-vault example of a bare-URL forward reference turning out not to fit when the referenced source was actually read. Worth watching whether other "not yet filed" forward references need similar corrections when filed.
