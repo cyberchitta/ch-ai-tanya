@@ -120,6 +120,21 @@ Required frontmatter (in addition to universal fields):
 - `status`: draft | working | stable
 - `lenses` (list): which lenses engage with this concept
 
+Concepts may use the following body sections (all optional, but use these
+exact headers when present, in this order):
+
+- `## Definition` — what the concept names
+- `## Instantiating findings` — findings that demonstrate this concept
+- `## What this concept is not` — boundary-drawing to prevent concept creep
+- `## Lens notes` — per-lens analysis
+- `## Scope note` — placement relative to adjacent concepts
+
+The Definition section should note the concept's shape: pattern (regularity
+across findings), capacity (something the model exhibits), mechanism
+(dynamics by which something occurs). If none of these shapes fits a new
+concept, propose a new shape name and surface it as a schema question
+rather than silently inventing shape terminology.
+
 ### Researcher (`researcher-*.md`)
 
 An active researcher, team, or lab whose work shows up repeatedly. Short —

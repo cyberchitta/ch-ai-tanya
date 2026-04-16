@@ -57,3 +57,14 @@ conventions" subsection under Status markers, gathering: links to
 nonexistent entries, bare URLs for unfiled findings, incomplete lens
 coverage, and the rule that drafts are not cited externally. Replaced
 the inline lint exemption with a cross-reference to the new subsection.
+
+### v0.1.2 — 2026-04-16
+
+Driven by three concepts (emergent-capabilities, introspection,
+attractor-dynamics) all converging on the same body structure.
+
+**Codified: concept body structure.** Five optional sections with exact
+headers: Definition, Instantiating findings, What this concept is not,
+Lens notes, Scope note. Definition section notes the concept's shape
+(pattern, capacity, mechanism). New shapes require explicit proposal
+rather than silent invention.
