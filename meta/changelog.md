@@ -31,3 +31,18 @@ Gaps are expected in drafts; lint flags them only after promotion to
 
 **Updated: linking conventions.** Added stub-based citation pattern.
 Updated example to reflect actual vault content.
+
+### v0.1 addendum — 2026-04-16
+
+Driven by drafting the second finding
+(`finding-2025-opus-4-spiritual-bliss-attractor.md`).
+
+**New: interpretive tensions convention.** Findings may include a
+`## Interpretive tensions` section for disagreements tied to that
+specific finding. Promote to standalone open-question files only when
+a tension spans multiple findings.
+
+**Observed, not yet codified:** multi-source findings strain the single
+`source` field (watch-and-wait). Contemplative lens weighting is handled
+by existing structure (caveats in finding body, heavier interpretation
+deferred to lens files and threads).

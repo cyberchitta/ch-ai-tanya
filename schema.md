@@ -104,6 +104,11 @@ Required frontmatter (in addition to universal fields):
 Optional frontmatter:
 - `model-ids` (list): precise model identifiers where relevant
 
+Findings may include a `## Interpretive tensions` section in the body
+for disagreements tied specifically to this finding. Promote to
+standalone open-question files only when a tension spans multiple
+findings.
+
 ### Concept (`concept-*.md`)
 
 An abstraction, pattern, or category that multiple findings cluster under.
