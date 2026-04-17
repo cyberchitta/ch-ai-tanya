@@ -23,13 +23,13 @@ export default function (eleventyConfig) {
     if (!this.page.outputPath || !this.page.outputPath.endsWith('.html')) return content;
     return content.replace(
       /(href=["'])(?!\w+:)([^"'#?]+?)\.md(#[^"']*)?(["'])/g,
-      (_m, pre, path, hash, post) => `${pre}${path}/${hash || ''}${post}`,
+      (_m, pre, path, hash, post) => `${pre}${path}.html${hash || ''}${post}`,
     );
   });
 
   return {
     dir: { input: '.', output: '_site', includes: '_includes', data: '_data' },
-    markdownTemplateEngine: false,
+    markdownTemplateEngine: 'ejs',
     htmlTemplateEngine: 'ejs',
     templateFormats: ['md', 'ejs'],
   };
