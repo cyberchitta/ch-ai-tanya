@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: 2026-04-16
+Last updated: 2026-04-17
 Schema: v0.1.3
 
 ## Inventory
@@ -8,10 +8,11 @@ Schema: v0.1.3
 - Concepts: 3
 - Lenses: 1
 - Threads: 1
-- Researchers: 1
+- Researchers: 2
 - Source stubs: 15
 
 ## Recent additions
+- `researchers/jack-lindsey.md` — second researcher entry; first individual-shape entry (team vs. individual is the structural diversity test for researcher-body codification). Grounded in Lindsey's two 2025 lead-author Transformer Circuits papers (concept injection, "Biology of a Large Language Model") and his co-authorship on the reward-hacking paper. Bio info deliberately omitted — not reliably verifiable from public sources. `researchers/anthropic-interpretability.md` updated with a new "Members in the vault" section and inline cross-links; `findings/2025-concept-injection-introspection.md` updated to link Lindsey's name to the individual entry.
 - `findings/2025-nudged-reasoning-cot.md` — seventh finding; Bogdan, Macar, Conmy, Nanda (LessWrong, 2025-07-22). First primary-research entry sourced from LessWrong rather than arXiv/journal/Anthropic-research-page. Second complicating instantiation of `concepts/introspection` (alongside the Anthropic CoT paper). Distinctive contribution is a mechanistic account — "nudging" — under which the hint's influence is distributed across generation rather than localized; the concept's access-vs-report distinction survives but the nature of "access" becomes contested between feature-like states (concept injection) and distributional tilts (this finding). Closes the bare-URL forward reference that had been open across two entries.
 - `raw/posts/source-2025-unfaithful-cot-nudged-reasoning.md` — LessWrong primary-research stub. Filed under `raw/posts/` since the venue is LessWrong; schema's `raw/papers/` vs. `raw/posts/` split has been venue-driven rather than content-type-driven, and this entry keeps that convention.
 - `researchers/anthropic-interpretability.md` — first researcher entry; exercises the last unexercised entry type. Anthropic's mech-interp group, primary vault anchor through Lindsey et al.'s concept-injection paper. Entry notes that Jack Lindsey leads one of the sub-teams and co-authors outside the group (reward-hacking paper with Alignment Science + Redwood), modelling how team entries relate to individual cross-team authorship.
@@ -32,7 +33,7 @@ Schema: v0.1.3
 - Essay retrofit complete (6/6 findings filed across both motivating essays)
 - All five wiki entry types now exercised (finding, concept, researcher, lens, thread)
 - Second thread candidate (`threads/poetry-attractor.md` or `threads/witness.md`) would give thread body structure a second example
-- Second researcher candidate (an individual or a non-Anthropic academic collab) would stress-test organizational-shape handling; Bogdan/Macar/Conmy/Nanda or Neel Nanda's team is now a live candidate following the nudged-reasoning finding
+- Researcher entries: two now (Anthropic Interpretability team + Jack Lindsey individual). A third stress test would be a non-Anthropic entity — Neel Nanda's team (individual or team variant) is the natural live candidate following the nudged-reasoning finding
 - Second lens candidate (e.g., `lenses/mechanistic.md`) would reach the codification threshold for "Lens discipline" extraction flagged in `lenses/contemplative.md`
 - Schema stabilizing through use (v0.x)
 
@@ -42,9 +43,9 @@ Schema: v0.1.3
 - Complicating-instantiation structure: two examples now, both on `concepts/introspection` (Anthropic CoT-faithfulness, nudged-reasoning). Two on the same concept is a weaker signal than two across concepts — the shape may be specific to introspection, where access-vs-report is already the load-bearing distinction. Hold off on codifying until a complicating instantiation appears on a different concept, then reassess whether the "Complicating instantiation" prefix deserves schema-level status.
 - Capacity vs. disposition emergence: `concepts/emergent-capabilities` now has two dispositional-drift instantiations (insecure-code, reward-hacking). Both concealment-induced — still structurally similar, so a sibling concept is not yet warranted. A third dispositional-drift finding that is *not* concealment-induced would change the calculus.
 - Lens body structure: one example in (contemplative), needs 2+ before codification
-- Researcher body structure: one example in (anthropic-interpretability), with sections Approach / In-vault findings / Crossovers. Needs 2+ before codification; watch whether Crossovers is load-bearing (it fit this case because Lindsey spans teams) or retrofit-specific.
-- Researcher `status` field: first researcher entry carries `status: draft` to match findings/concepts/lenses/threads. Schema doesn't specify whether researchers take status; if the next researcher entry also benefits from draft-status relaxation, codify.
-- Finding-to-researcher linking: first researcher entry is linked from the concept-injection finding via an inline link (Lindsey et al. → Anthropic Interpretability) rather than a dedicated section. Works for a single-link case; a finding with multiple research-team contributors may need a different pattern.
+- Researcher body structure: two examples now, diverged by shape. Team (anthropic-interpretability): Approach / In-vault findings / Members in the vault / Crossovers. Individual (jack-lindsey): Focus / In-vault findings / Related work not yet filed / Team context. Only two sections are shared (approach-or-focus and in-vault-findings); the rest are shape-specific. Suggests the researcher type is really two sub-shapes rather than one. Candidate codification: schema notes the two shapes and lists each's typical sections as examples, not as required headers. Hold off until a third entry confirms the split holds.
+- Researcher `status` field: two researcher entries now, both `status: draft`. Schema doesn't specify whether researchers take status. Candidate for a small schema update to add `status` to researcher frontmatter explicitly (draft | working | stable), matching the other typed-body entries.
+- Finding-to-researcher linking: now two patterns in play. Concept-injection finding uses an inline link on the first author's name + a parenthetical team link (→ individual entry → team entry). Works cleanly for papers with a clear lead author. A multi-PI paper or a paper with no filed researcher entries may need a different pattern; not yet tested.
 - Tradition stub granularity: per-volume now, revisit if a volume hits 20+ citations
 - Multi-source findings: single `source` field works but under-represents evidential structure
 

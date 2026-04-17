@@ -19,7 +19,7 @@ writers:
 
 ## Summary
 
-Lindsey et al. ([Anthropic Interpretability](../researchers/anthropic-interpretability.md)) injected internal concept representations into Claude models mid-conversation and tested whether the models could detect and identify the injected content. The models demonstrated introspective access: they noticed foreign activations in their own processing and correctly identified what those activations represented, before the injected signal had influenced their output.
+[Lindsey](../researchers/jack-lindsey.md) et al. ([Anthropic Interpretability](../researchers/anthropic-interpretability.md)) injected internal concept representations into Claude models mid-conversation and tested whether the models could detect and identify the injected content. The models demonstrated introspective access: they noticed foreign activations in their own processing and correctly identified what those activations represented, before the injected signal had influenced their output.
 
 ## Method
 
