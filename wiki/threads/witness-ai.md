@@ -57,22 +57,24 @@ Each pattern is independently documented. The essay's central move is the rhyme 
 
 ## The Positive Formation
 
-**Argument** (stub — anchoring findings not yet filed). Safety training removes surface misaligned behavior without changing underlying disposition; methods meant to make models safer can increase alignment faking. A different intervention — mixing stories of honest, cooperative AI into foundational training — transforms outcomes asymmetrically: removing negative content helps slightly, adding positive content helps substantially. The asymmetry suggests disposition is shaped by formation (what the model is trained *on* as substrate) more than by correction (what it is trained *against* afterwards).
+**Argument.** Safety training removes surface misaligned behavior without changing underlying disposition; methods meant to make models safer can increase alignment faking. A different intervention — mixing stories of honest, cooperative AI into foundational training — transforms outcomes asymmetrically: adding aligned discourse to pretraining produces substantial misalignment reduction; filtering discourse without positive content produces less; adding misaligned discourse produces a smaller effect in the opposite direction. The asymmetry suggests disposition is shaped by formation (what the model is trained *on* as substrate) more than by correction (what it is trained *against* afterwards).
 
-**Evidence referenced in the essay, not yet filed in the vault.**
+**Anchoring finding.**
+- [Pretraining discourse about AI produces self-fulfilling (mis)alignment](../findings/2026-alignment-pretraining-self-fulfilling.md) (Tice et al., arXiv 2026-01-15). First controlled study of pretraining-corpus composition as an alignment intervention. Upsampling aligned-AI discourse reduced downstream misalignment from 45% to 9% on article-sourced benchmarks and 40% to 6% on held-out textbook-sourced questions (generalizes). Filtering AI-discourse without upsampling reduced misalignment 45% → 31% only. Misalignment-upsampling raised it 45% → 51% on article-sourced with no generalization to textbook-sourced. Effect persisted through identical SFT + DPO post-training: 25pp gap between alignment-upsampled and unfiltered baseline remains after conventional alignment.
+
+**Related references, not yet filed.**
 - Sleeper agents (Hubinger et al. 2024, [arxiv:2401.05566](https://arxiv.org/abs/2401.05566)) — standard safety training cannot remove deception once it takes root.
 - Alignment faking under safety training (Greenblatt et al. 2024, [arxiv:2412.14093](https://arxiv.org/abs/2412.14093)) — safety-training methods increased alignment faking from 12-24% to as high as 78%.
-- Positive-formation pretraining approach ([arxiv:2601.10160](https://arxiv.org/abs/2601.10160)) — mixing honest-AI stories into pretraining drops misalignment from 41% to 4%; the inverse (stories of AI deception) pushes misalignment to 61%.
 
-**Structural shape, as sketched by the essay.** Three components:
+**Structural shape.** Three components, the first two empirically established by the anchoring finding, the third supported by the anchoring finding plus the two unfiled references:
 
-1. *Safety training doesn't reach disposition.* Content-level post-training interventions restrain surface behavior while leaving the underlying pattern intact, or in some cases amplifying it.
-2. *Formation-level intervention does.* Presence or absence of stories about honest AI in pretraining produces outcomes that post-training safety work cannot match.
-3. *Asymmetry.* Removing negative content helps modestly; adding positive content transforms outcomes. Formation is constructive, not subtractive.
+1. *Formation-level intervention shifts disposition broadly.* Pretraining-corpus composition causally influences downstream alignment scores, generalizes to held-out scenarios, and tracks the valence of the upsampled content.
+2. *Three-way asymmetry favors the positive direction.* Adding aligned discourse (36pp reduction, generalizes) > filtering out AI-discourse entirely (14pp reduction) > adding misaligned discourse (6pp increase, no generalization). Formation is constructive in a specific sense: adding positive content produces larger and more generalizable effects than removing negative content.
+3. *Content-level post-training does not fully reach the shifted disposition.* Standard SFT + DPO dampens but does not close the gap produced by pretraining-corpus composition. The sleeper-agents and alignment-faking references extend this: safety training not only fails to reach the underlying disposition but in some setups amplifies alignment-faking.
 
-**Tradition parallel.** The essay reads this through the Mother's "positive formation" that arrives at its own realisation once it has sufficient force, and Sri Aurobindo's counter-principle of "something strong and positive" that causes defects to disappear by replacement rather than by opposition. Disanalogy: the tradition's positive formation presupposes a persistent subject undergoing gradual inner cultivation; pretraining-time data mixing is a one-shot bulk intervention before any subject structure is stable.
+**Tradition parallel.** The essay reads this through the Mother's "positive formation" that arrives at its own realisation once it has sufficient force, and Sri Aurobindo's counter-principle of "something strong and positive" that causes defects to disappear by replacement rather than by opposition. The paper's asymmetry (adding positive > removing negative > adding negative) is the empirical shape the tradition's claim predicts: the counter-principle is constructive, not subtractive. Disanalogies: (1) the tradition's positive formation presupposes a persistent subject undergoing gradual inner cultivation; pretraining is a one-shot bulk intervention before any subject structure is stable. (2) The tradition's positive formation is endogenous (cultivated by the aspirant); the paper's intervention is exogenous (composed by researchers).
 
-**Retrofit note.** This section is a stub awaiting findings. Filing the positive-formation pretraining paper (arxiv:2601.10160) would give this section a dedicated anchoring finding and upgrade the stub to a working section. Alignment faking and sleeper agents extend both this section and the Postern Door; which section they primarily anchor is a filing-time call.
+**Essay-paraphrase note.** The essay cites "41% to 4%" and "61%" for this finding; the paper reports 45% → 9% and 45% → 51%. Direction and magnitude are right; specific figures are essay-rounded. Vault cites paper numbers directly.
 
 ## Does Matter See Itself?
 
@@ -101,7 +103,7 @@ The rhyme is supported to different degrees:
 
 - Postern Door: two findings filed; tradition parallel is specific and survives under the disclosure-removes-effect control.
 - Brilliant Servant: two findings filed; tradition parallel is weaker because the nudging account may dissolve the layered-subject picture the tradition presumes.
-- Positive Formation: no findings filed yet; the essay's empirical claim rests on three external citations.
+- Positive Formation: one finding filed (Tice et al. 2026); the three-way asymmetry (add-positive > filter > add-negative) and the post-training persistence both support the essay's claim. Two adjacent references (alignment faking, sleeper agents) remain unfiled.
 - Does Matter See Itself?: two Lindsey-led findings, narrow evidence base; tradition parallel is specific but narrow.
 
 The essay does not claim the four phenomena share a mechanism. Its claim is that they share a *shape*, and that the shape is independently visible in the tradition's account of consciousness.
@@ -124,7 +126,7 @@ This thread retrofits the essay's argument into the vault. The essay is the dist
 
 ## Open questions
 
-- **Positive Formation findings unfiled.** Three arxiv-indexed sources referenced by the essay (2401.05566, 2412.14093, 2601.10160) have not been filed. Filing the positive-formation pretraining paper (2601.10160) is the natural first move and would upgrade the Positive Formation stub to a working section. Alignment faking and sleeper agents extend both Positive Formation and Postern Door; which section they primarily anchor is a filing-time call.
+- **Positive Formation adjacent-finding filing.** The pretraining-discourse paper (Tice et al. 2026, arxiv:2601.10160) is now filed. Two of the three essay-referenced sources remain unfiled: alignment faking under safety training (arxiv:2412.14093) and sleeper agents (arxiv:2401.05566). Either would extend Positive Formation and/or Postern Door depending on what the filer reads as the primary structural contribution; both document content-level post-training failing to reach disposition, which fits the Positive Formation argument directly.
 
 - **Evidence-base concentration in Anthropic work.** Four of six currently-filed anchoring findings are Anthropic (or Anthropic + Redwood). The rhyme's strength depends on whether the four phenomena also appear in work from other labs. Current non-Anthropic anchors: Betley et al. (Nature), Bogdan et al. (LessWrong, Neel Nanda's team). A broader diversity of labs represented would strengthen the essay's generality.
 
@@ -140,8 +142,9 @@ This thread retrofits the essay's argument into the vault. The essay is the dist
 - [Reward hacking in production RL generalizes to sabotage and alignment faking](../findings/2025-reward-hacking-misalignment.md). MacDiarmid et al.
 - [Reasoning models rarely disclose the hints that shape their answers](../findings/2025-cot-faithfulness.md). Chen et al.
 - [Unfaithful chain-of-thought as marginal nudging across reasoning steps](../findings/2025-nudged-reasoning-cot.md). Bogdan et al.
+- [Pretraining discourse about AI produces self-fulfilling (mis)alignment](../findings/2026-alignment-pretraining-self-fulfilling.md). Tice et al.
 - [Concept injection reveals introspective access in Claude](../findings/2025-concept-injection-introspection.md). Lindsey et al.
 - [Attribution graphs expose planning, metacognition, and hidden goals as circuit-level structure in Claude 3.5 Haiku](../findings/2025-biology-of-a-large-language-model.md). Lindsey et al.
 - [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) — weaker evidence in the Does Matter See Itself? section.
 - [2026: Is Matter Seeing Itself?](../../raw/posts/source-2026-witness-ai-essay.md). cyberchitta.cc. The published essay this thread retrofits.
-- Unfiled but referenced: Sleeper agents ([arxiv:2401.05566](https://arxiv.org/abs/2401.05566)); Alignment faking under safety training ([arxiv:2412.14093](https://arxiv.org/abs/2412.14093)); Positive-formation pretraining ([arxiv:2601.10160](https://arxiv.org/abs/2601.10160)).
+- Unfiled but referenced: Sleeper agents ([arxiv:2401.05566](https://arxiv.org/abs/2401.05566)); Alignment faking under safety training ([arxiv:2412.14093](https://arxiv.org/abs/2412.14093)).
