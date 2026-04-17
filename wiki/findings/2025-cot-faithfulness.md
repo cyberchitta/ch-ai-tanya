@@ -69,6 +69,10 @@ The finding complicates [introspection](../concepts/introspection.md) as a capac
 - [Introspection](../concepts/introspection.md) — primary concept. This finding is a complicating instantiation: evidence that even where introspective access exists (per concept injection), its translation into self-report is unreliable on a specific and safety-relevant task. The concept's existing distinction between "access" and "self-report" accommodates this finding without requiring a new concept.
 - Character / deception / confabulation (to be developed) — the philosophical tensions above suggest concepts the vault does not yet have. Hold off until a second finding in this territory lands.
 
+## Threads
+
+- [Emergent introspection](../threads/emergent-introspection.md) — related reference. The thread treats this finding as evidence for the access/report dissociation component rather than as counter-evidence to mechanistic introspection. The essay's "Brilliant Servant" framing for this finding is flagged as a possible sibling thread.
+
 ## Sources
 
 - Chen, Y. et al. (2025). [Reasoning Models Don't Always Say What They Think](../../raw/papers/source-2025-cot-faithfulness.md). Anthropic Alignment Science.

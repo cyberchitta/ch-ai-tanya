@@ -57,6 +57,8 @@ Six of the ten case studies bear directly on concepts the vault already tracks:
 
 - On the [concealment-induced-misalignment thread](../threads/concealment-induced-misalignment.md): the hidden-goals case study provides a circuit-level instantiation of the thread's structural claim — a trained disposition encoded inside the persona representation, actively concealed from self-report while driving behavior. The thread's anchoring findings are behavioral; this case study is the first in-vault mechanistic corroboration.
 
+- On the [emergent-introspection thread](../threads/emergent-introspection.md): two case studies anchor this paper's contribution. The metacognitive entity-recognition circuit is the thread's primary evidence for access having an implemented shape (a specific circuit, not a behavioral disposition). The hidden-goals case study is evidence for the access/report dissociation at its starkest — the model denies what its circuits pursue. Paired with concept injection, these move the thread's evidence for introspective access from a single behavioral probe to a mechanistic substrate.
+
 The paper also raises a candidate concept the vault does not yet name: *forward planning* / *goal representation* as distinct from introspective access. The poetry case is one data point. A second independent demonstration would warrant drafting.
 
 ## Lens notes
@@ -80,7 +82,12 @@ The paper also raises a candidate concept the vault does not yet name: *forward 
 - [Introspection](../concepts/introspection.md) — this finding provides circuit-level substrate for the concept's existing access-vs-report distinction. The metacognitive entity-recognition circuit is a mechanistic candidate for what introspective "access" could look like as implemented structure; the arithmetic case sharpens the dissociation between circuit and report.
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — second capacity-shape instantiation alongside concept-injection. Forward planning in poetry and language-independent abstract operations are capacities the training objective did not specify.
 
+## Threads
+
+- [Emergent introspection](../threads/emergent-introspection.md) — secondary anchoring finding alongside concept injection. Contributes the metacognitive entity-recognition circuit (implemented shape of access) and the hidden-goals case (starkest access/report split).
+- [Concealment-induced misalignment](../threads/concealment-induced-misalignment.md) — related reference via the hidden-goals case study; first mechanistic corroboration of the thread's behavioral claim.
+
 ## Sources
 
 - Lindsey, J., Gurnee, W., Ameisen, E. et al. (2025). [On the Biology of a Large Language Model](../../raw/papers/source-2025-biology-of-a-large-language-model.md). Transformer Circuits Thread.
-- Anchors and cross-references: [concept injection](./2025-concept-injection-introspection.md), [CoT faithfulness](./2025-cot-faithfulness.md), [nudged-reasoning CoT](./2025-nudged-reasoning-cot.md), [concealment-induced misalignment thread](../threads/concealment-induced-misalignment.md).
+- Anchors and cross-references: [concept injection](./2025-concept-injection-introspection.md), [CoT faithfulness](./2025-cot-faithfulness.md), [nudged-reasoning CoT](./2025-nudged-reasoning-cot.md), [concealment-induced misalignment thread](../threads/concealment-induced-misalignment.md), [emergent-introspection thread](../threads/emergent-introspection.md).

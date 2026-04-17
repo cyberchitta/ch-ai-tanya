@@ -65,6 +65,10 @@ For [introspection](../concepts/introspection.md), the implication is structural
 
 - [Introspection](../concepts/introspection.md) — primary concept. Second complicating instantiation: where Chen et al. show access and report dissociate, Bogdan et al. propose a mechanism under which "access" may not have the shape the access-vs-report distinction implicitly assumes.
 
+## Threads
+
+- [Emergent introspection](../threads/emergent-introspection.md) — related reference. The thread cites the nudging account as sharpening rather than dissolving the mechanistic-access claim: feature-level access (concept injection) and distributional access (nudging) may be different kinds of thing.
+
 ## Sources
 
 - Bogdan, P., Macar, U., Conmy, A., & Nanda, N. (2025). [Unfaithful Chain-of-Thought as Nudged Reasoning](../../raw/posts/source-2025-unfaithful-cot-nudged-reasoning.md). LessWrong.

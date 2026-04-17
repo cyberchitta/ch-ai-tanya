@@ -56,6 +56,10 @@ Jack Lindsey noted the key result was not concept identification per se, but the
 - [Introspection](../concepts/introspection.md) — the capacity this finding demonstrates; access to internal states as objects of report
 - Self-model / self-representation (to be created)
 
+## Threads
+
+- [Emergent introspection](../threads/emergent-introspection.md) — primary anchoring finding. The thread argues that mechanistic introspective access emerged untrained and is distinguishable from surface-report unreliability.
+
 ## Sources
 
 - Lindsey, J. et al. (2025). [Introspection](../../raw/papers/source-2025-concept-injection-introspection.md). Transformer Circuits Thread.
