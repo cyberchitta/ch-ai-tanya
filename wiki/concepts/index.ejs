@@ -1,0 +1,13 @@
+---
+title: Concepts
+eleventyExcludeFromCollections: true
+---
+
+<p>Abstractions that findings cluster under. Concepts persist; findings
+get superseded.</p>
+
+<ul>
+<% for (const entry of helpers.byTitle(collections.concept)) { %>
+  <li><a href="<%= entry.url %>"><%= entry.data.title %></a></li>
+<% } %>
+</ul>

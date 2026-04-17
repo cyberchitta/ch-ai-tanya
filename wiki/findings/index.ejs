@@ -1,0 +1,16 @@
+---
+title: Findings
+eleventyExcludeFromCollections: true
+---
+
+<p>Time-stamped empirical results. Each finding cites a source and is read
+through one or more <a href="/wiki/lenses/">lenses</a>.</p>
+
+<ul>
+<% for (const entry of helpers.byDateDesc(collections.finding)) { %>
+  <li>
+    <a href="<%= entry.url %>"><%= entry.data.title %></a>
+    <% if (entry.data.date) { %><small>(<%= helpers.yearMonth(entry.data.date) %>)</small><% } %>
+  </li>
+<% } %>
+</ul>

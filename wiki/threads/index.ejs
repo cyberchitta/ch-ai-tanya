@@ -1,0 +1,12 @@
+---
+title: Threads
+eleventyExcludeFromCollections: true
+---
+
+<p>Argument structures across findings. Threads are where essays come from.</p>
+
+<ul>
+<% for (const entry of helpers.byTitle(collections.thread)) { %>
+  <li><a href="<%= entry.url %>"><%= entry.data.title %></a></li>
+<% } %>
+</ul>

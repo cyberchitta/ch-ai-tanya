@@ -1,0 +1,13 @@
+---
+title: Lenses
+eleventyExcludeFromCollections: true
+---
+
+<p>Perspectives findings and concepts can be viewed through. A small,
+deliberate set rather than open-ended tags.</p>
+
+<ul>
+<% for (const entry of helpers.byTitle(collections.lens)) { %>
+  <li><a href="<%= entry.url %>"><%= entry.data.title %></a></li>
+<% } %>
+</ul>

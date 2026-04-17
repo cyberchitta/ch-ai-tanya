@@ -1,0 +1,12 @@
+---
+title: Researchers
+eleventyExcludeFromCollections: true
+---
+
+<p>People and teams whose work the vault tracks.</p>
+
+<ul>
+<% for (const entry of helpers.byTitle(collections.researcher)) { %>
+  <li><a href="<%= entry.url %>"><%= entry.data.title %></a></li>
+<% } %>
+</ul>

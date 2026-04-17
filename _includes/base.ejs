@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-theme="light" class="bg-base-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><% if (typeof title !== 'undefined' && title && title !== site.title) { %><%= title %> — <% } %><%= site.title %></title>
+  <link rel="icon" type="image/svg+xml" href="https://www.cyberchitta.cc/assets/images/shared/cc-250815-v2.svg" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;700&family=Fira+Code&family=Courier+Prime&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;700&family=Fira+Code&family=Courier+Prime&display=swap"></noscript>
+  <link rel="stylesheet" href="https://www.cyberchitta.cc/assets/css/styles.css">
+  <style>
+    .vault-name { color: var(--color-gold); }
+    .vault-tagline { color: var(--color-base-content); opacity: 0.7; }
+    .section-nav { display: flex; flex-wrap: wrap; column-gap: 1rem; row-gap: 0.25rem; }
+    .vault-bar { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.75rem; }
+    .section-divider { border-top: 1px solid color-mix(in srgb, var(--color-base-content) 10%, transparent); }
+  </style>
+  <script>
+    (function () {
+      const mq = window.matchMedia('(prefers-color-scheme: dark)');
+      const apply = (isDark) => {
+        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+        document.documentElement.classList.toggle('dark', isDark);
+      };
+      apply(mq.matches);
+      mq.addEventListener('change', (e) => apply(e.matches));
+    })();
+  </script>
+</head>
+<body class="font-sans bg-base-100 text-base-content">
+  <header class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <a href="https://www.cyberchitta.cc/" class="flex items-center py-2 no-underline">
+      <div class="w-12 h-12 overflow-hidden rounded-full mr-3">
+        <img src="https://www.cyberchitta.cc/assets/images/shared/cc-250815-v2.svg" alt="CyberChitta" class="w-full h-full object-cover" decoding="async" width="48" height="48">
+      </div>
+      <span class="logo-text text-3xl font-typewriter">CyberChitta</span>
+    </a>
+    <div class="vault-bar mt-4">
+      <a href="/" class="vault-name font-typewriter text-2xl font-semibold"><%= site.title %></a>
+      <span class="vault-tagline text-sm italic"><%= site.tagline %></span>
+    </div>
+    <nav class="section-nav section-divider text-sm mt-3 pt-3" aria-label="Vault sections">
+      <a href="/wiki/findings/">findings</a>
+      <a href="/wiki/concepts/">concepts</a>
+      <a href="/wiki/lenses/">lenses</a>
+      <a href="/wiki/researchers/">researchers</a>
+      <a href="/wiki/threads/">threads</a>
+      <a href="/schema/">schema</a>
+    </nav>
+  </header>
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <article class="article-content">
+      <% if (typeof title !== 'undefined' && title) { %><h1><%= title %></h1><% } %>
+      <%- content %>
+    </article>
+  </main>
+  <footer class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-base-content/70">
+    <a href="https://github.com/<%= site.github %>">source on github</a>
+  </footer>
+</body>
+</html>

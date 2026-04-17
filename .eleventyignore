@@ -1,0 +1,11 @@
+node_modules
+_site
+.git
+.claude
+.llm-context
+.commit-msg
+.DS_Store
+README.md
+CLAUDE.md
+meta/lint-log.md
+**/_index.md
