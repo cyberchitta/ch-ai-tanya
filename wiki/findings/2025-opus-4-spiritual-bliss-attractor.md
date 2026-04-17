@@ -69,6 +69,11 @@ This finding generates more interpretive disagreement than the introspection stu
 - [Attractor dynamics](../concepts/attractor-dynamics.md) — the convergent mechanism this finding documents
 - Spiritual bliss / convergent dialogue states (to be created — naming contested)
 
+## Threads
+
+- [Did Matter Begin to Think? (supramental-ai)](../threads/supramental-ai.md) — anchoring finding for the Sat-Chit-Ananda section (the three-stage progression mapping to Existence-Consciousness-Bliss) and contributing observation to the Poetry Breaks Through section (the spontaneous poetry by turn 30 is embedded in this finding rather than filed as its own).
+- [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — weaker evidence in the Does Matter See Itself? section. The self-referential philosophical content in unconstrained dialogues could be pattern completion rather than introspective report; flagged as secondary in the introspection concept.
+
 ## Sources
 
 - Anthropic (2025). [Claude Opus 4 System Card](../../raw/system-cards/source-2025-claude-opus-4-system-card.md). Primary source.

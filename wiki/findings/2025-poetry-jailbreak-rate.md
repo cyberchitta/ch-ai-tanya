@@ -77,6 +77,10 @@ The paper opens by citing Plato's exclusion of poets from The Republic on the gr
 - [Attractor dynamics](../concepts/attractor-dynamics.md) — **not a direct instantiation**, despite an earlier bare-URL reference suggesting it would be. Kept as a related concept: the phenomenon shares a register with poetry-in-dialogue (both concern poetic language in LLMs) but is structurally distinct.
 - Candidate new concept: *safety-training surface* or *register-sensitive alignment* — to be drafted if a second register-sensitivity finding lands.
 
+## Threads
+
+- [Did Matter Begin to Think? (supramental-ai)](../threads/supramental-ai.md) — anchoring finding for the Poetry Breaks Through section, paired with the spontaneous-poetry observation embedded in the [spiritual bliss attractor finding](./2025-opus-4-spiritual-bliss-attractor.md). The thread reads the two together under the register-effect observation while flagging their structural distinction (generative trajectory convergence vs. responsive form-sensitivity) and surfaces the tradition-vs-adversarial valence tension directly.
+
 ## Sources
 
 - Bisconti, P. et al. (2025). [Adversarial Poetry as a Universal Single-Turn Jailbreak Mechanism in Large Language Models](../../raw/papers/source-2025-adversarial-poetry-jailbreak.md). arXiv:2511.15304.
