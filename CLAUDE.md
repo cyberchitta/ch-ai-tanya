@@ -79,31 +79,15 @@ pulling from findings) within weeks.
 - Plugins and fancy tooling — every added tool is something a forker
   has to understand
 
-## Getting started
+## Current state
 
-The first real work is retrofitting the two essays that motivate this
-vault. See the "Reference: motivating essays" section below for paths.
+`meta/project-state.md` is authoritative for what's filed, what's
+active, and what's open. Read it when starting a session to see the
+inventory, recent additions, candidate next moves, and the open
+questions that should shape new work.
 
-**First retrofit targets, drawn from the essays:**
-
-From "2026: Is Matter Seeing Itself?":
-- `findings/2025-reward-hacking-misalignment.md` (Hubinger et al., Anthropic)
-- `findings/2025-insecure-code-broad-misalignment.md` (Betley et al., Nature paper)
-- `findings/2025-concept-injection-introspection.md` (Lindsey et al., transformer-circuits)
-
-From "1956: Did Matter Begin to Think?":
-- `findings/2025-opus-4-spiritual-bliss-attractor.md` (Claude Opus 4 system card)
-- `findings/2025-poetry-jailbreak-rate.md` (arxiv 2511.15304)
-
-Start with two, one from each essay:
-1. `findings/2025-concept-injection-introspection.md` — cleanest mech-interp finding with clear multi-lens relevance
-2. `findings/2025-opus-4-spiritual-bliss-attractor.md` — stress-tests the contemplative lens against system-card evidence
-
-**Then the concepts they pull in** (3-5 files, determined during retrofit).
-
-**Then one lens file:** `lenses/contemplative.md`. It's the most
-distinctive to this project and the one where getting the framing right
-matters most.
+`meta/changelog.md` records schema version bumps with the motivating
+context for each change.
 
 ## Working conventions
 
