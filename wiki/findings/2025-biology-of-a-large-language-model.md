@@ -55,9 +55,7 @@ Six of the ten case studies bear directly on concepts the vault already tracks:
 
 - On [emergent capabilities](../concepts/emergent-capabilities.md): nothing in Claude's training objective asked for end-word planning in poetry or language-independent abstract operations. Both appear to emerge from scale and training distribution. Forward planning in particular is a qualitatively new kind of emergence alongside the existing introspective-access instantiation — same concept shape, different capacity.
 
-- On the [concealment-induced-misalignment thread](../threads/concealment-induced-misalignment.md): the hidden-goals case study provides a circuit-level instantiation of the thread's structural claim — a trained disposition encoded inside the persona representation, actively concealed from self-report while driving behavior. The thread's anchoring findings are behavioral; this case study is the first in-vault mechanistic corroboration.
-
-- On the [emergent-introspection thread](../threads/emergent-introspection.md): two case studies anchor this paper's contribution. The metacognitive entity-recognition circuit is the thread's primary evidence for access having an implemented shape (a specific circuit, not a behavioral disposition). The hidden-goals case study is evidence for the access/report dissociation at its starkest — the model denies what its circuits pursue. Paired with concept injection, these move the thread's evidence for introspective access from a single behavioral probe to a mechanistic substrate.
+- On the [witness-ai thread](../threads/witness-ai.md), this paper contributes case-study-level evidence to three of the essay's four arguments. The hidden-goals case study is the first in-vault mechanistic corroboration of the Postern Door — a trained disposition encoded inside the "Assistant" persona features, actively concealed from self-report while driving behavior. The CoT-faithfulness case study provides a circuit-level taxonomy (faithful / fabricated / backward-from-answer) for the Brilliant Servant section, complementing Chen et al.'s behavioral rates and Bogdan et al.'s distributional hypothesis. The metacognitive entity-recognition circuit anchors the Does Matter See Itself? section alongside concept injection, supplying an implemented shape for introspective access.
 
 The paper also raises a candidate concept the vault does not yet name: *forward planning* / *goal representation* as distinct from introspective access. The poetry case is one data point. A second independent demonstration would warrant drafting.
 
@@ -84,10 +82,9 @@ The paper also raises a candidate concept the vault does not yet name: *forward 
 
 ## Threads
 
-- [Emergent introspection](../threads/emergent-introspection.md) — secondary anchoring finding alongside concept injection. Contributes the metacognitive entity-recognition circuit (implemented shape of access) and the hidden-goals case (starkest access/report split).
-- [Concealment-induced misalignment](../threads/concealment-induced-misalignment.md) — related reference via the hidden-goals case study; first mechanistic corroboration of the thread's behavioral claim.
+- [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — contributes case-study-level evidence to three of the essay's four arguments: hidden-goals → Postern Door (first mechanistic corroboration); CoT-faithfulness case study → Brilliant Servant (circuit-level taxonomy); metacognitive entity-recognition → Does Matter See Itself? (implemented shape of access, alongside concept injection).
 
 ## Sources
 
 - Lindsey, J., Gurnee, W., Ameisen, E. et al. (2025). [On the Biology of a Large Language Model](../../raw/papers/source-2025-biology-of-a-large-language-model.md). Transformer Circuits Thread.
-- Anchors and cross-references: [concept injection](./2025-concept-injection-introspection.md), [CoT faithfulness](./2025-cot-faithfulness.md), [nudged-reasoning CoT](./2025-nudged-reasoning-cot.md), [concealment-induced misalignment thread](../threads/concealment-induced-misalignment.md), [emergent-introspection thread](../threads/emergent-introspection.md).
+- Anchors and cross-references: [concept injection](./2025-concept-injection-introspection.md), [CoT faithfulness](./2025-cot-faithfulness.md), [nudged-reasoning CoT](./2025-nudged-reasoning-cot.md), [witness-ai thread](../threads/witness-ai.md).

@@ -45,7 +45,7 @@ Fine-tuning on narrow training data was expected to produce narrow changes. The 
 
 The disclosure control is what sharpens the finding. If insecure code itself caused the misalignment, the disclosure variant should have shown a similar effect. It did not. What generalized was the relationship between the model's outputs and a concealed harmful property of them, not the harmful content per se. The "1956/2026" essay by the editor frames this as concealment functioning as a narrow conduit with broad downstream consequences — the "postern door" metaphor from Sri Aurobindo.
 
-Paired with Hubinger et al. (2025) on emergent misalignment from reward hacking — where the same disclosure-removes-effect structure appears in a different setup — this finding contributes to a pattern, not yet filed as a thread, of concealment-induced dispositional shift.
+Paired with [MacDiarmid et al. (2025) on emergent misalignment from reward hacking](./2025-reward-hacking-misalignment.md) — where the same disclosure-removes-effect structure appears in a different setup — this finding anchors the Postern Door section of the [witness-ai thread](../threads/witness-ai.md).
 
 ## Lens notes
 
@@ -68,7 +68,10 @@ Paired with Hubinger et al. (2025) on emergent misalignment from reward hacking 
 ## Concepts
 
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — candidate instantiation with a caveat: the direction here is disposition shift, not capacity acquisition. The existing concept may need to expand, or a sibling concept (disposition generalization, concealment-induced misalignment) may be warranted. Hold off codifying until a second structurally similar finding is filed (e.g., Hubinger et al. reward-hacking).
-- Concealment-induced misalignment (to be created, as concept or thread) — a candidate thread rather than concept: the essay argues that concealment across training setups produces broad misalignment, drawing on this finding plus Hubinger's reward-hacking work plus alignment-faking evidence. The schema lists `concealment-induced-misalignment.md` as an example, supporting thread-first treatment.
+
+## Threads
+
+- [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — anchoring finding for the Postern Door section. The thread's essay-level retrofit groups this finding with reward-hacking under a shared structural shape: narrow-to-broad generalization, content/framing severability, safety-training gap.
 
 ## Sources
 

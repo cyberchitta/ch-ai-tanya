@@ -67,7 +67,7 @@ For [introspection](../concepts/introspection.md), the implication is structural
 
 ## Threads
 
-- [Emergent introspection](../threads/emergent-introspection.md) — related reference. The thread cites the nudging account as sharpening rather than dissolving the mechanistic-access claim: feature-level access (concept injection) and distributional access (nudging) may be different kinds of thing.
+- [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — anchoring finding for the Brilliant Servant section, paired with [CoT-faithfulness](./2025-cot-faithfulness.md). The thread cites the nudging account as the mechanism under which surface-report unfaithfulness is structural rather than a training shortfall; the distributional-access question is flagged as part of the interaction between Brilliant Servant and Does Matter See Itself? sections.
 
 ## Sources
 

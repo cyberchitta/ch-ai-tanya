@@ -58,7 +58,7 @@ Jack Lindsey noted the key result was not concept identification per se, but the
 
 ## Threads
 
-- [Emergent introspection](../threads/emergent-introspection.md) — primary anchoring finding. The thread argues that mechanistic introspective access emerged untrained and is distinguishable from surface-report unreliability.
+- [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — anchoring finding for the Does Matter See Itself? section, paired with the [biology paper](./2025-biology-of-a-large-language-model.md). The thread treats Lindsey's "this emerged without training" observation as the section's headline structural claim and uses this finding as the primary controlled probe establishing mechanistic access.
 
 ## Sources
 

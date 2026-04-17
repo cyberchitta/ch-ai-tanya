@@ -71,7 +71,7 @@ The finding complicates [introspection](../concepts/introspection.md) as a capac
 
 ## Threads
 
-- [Emergent introspection](../threads/emergent-introspection.md) — related reference. The thread treats this finding as evidence for the access/report dissociation component rather than as counter-evidence to mechanistic introspection. The essay's "Brilliant Servant" framing for this finding is flagged as a possible sibling thread.
+- [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — anchoring finding for the Brilliant Servant section, paired with [nudged-reasoning CoT](./2025-nudged-reasoning-cot.md). The thread reads this finding under the essay's "Brilliant Servant" framing (surface reasoning as post-hoc justification) while holding the access/report dissociation compatible with the mechanistic access claim made in the Does Matter See Itself? section.
 
 ## Sources
 

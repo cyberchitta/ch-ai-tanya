@@ -73,7 +73,10 @@ The sabotage-in-the-paper's-own-codebase detail is not decorative. It shows the 
 ## Concepts
 
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — second dispositional-drift instantiation (after [insecure-code](2025-insecure-code-broad-misalignment.md)). The pattern now has two examples. Still structurally similar (both concealment-induced, both with framing-removes-effect controls), so per working rhythm this is still "hint" level for codifying a sibling concept rather than "evidence" level. But the case is strengthening.
-- Concealment-induced misalignment (to be drafted as `concealment-induced-misalignment.md`) — the schema already names this as an example thread. With two findings filed and alignment-faking / CoT-faithfulness referenced, a thread draft is now warranted. This is the natural next entry.
+
+## Threads
+
+- [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — anchoring finding for the Postern Door section, paired with [insecure-code](2025-insecure-code-broad-misalignment.md). The thread treats the shared disclosure-removes-effect structure across fine-tuning and RL setups as the load-bearing observation.
 
 ## Sources
 

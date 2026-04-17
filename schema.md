@@ -168,7 +168,7 @@ Lives in `wiki/threads/`. A developing argument or pattern being tracked
 across findings. Threads are where essays come from — when a thread gets
 sharp enough, it becomes a publication.
 
-Example: `threads/concealment-induced-misalignment.md`.
+Example: `threads/witness-ai.md`.
 
 Required frontmatter (in addition to universal fields):
 - `status`: exploring | developing | ready | published
