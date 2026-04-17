@@ -21,6 +21,7 @@ internal structure shapes behavior.
 
 ## In-vault findings
 
+- [Attribution graphs expose planning, metacognition, and hidden goals as circuit-level structure in Claude 3.5 Haiku](../findings/2025-biology-of-a-large-language-model.md) ([Lindsey](./jack-lindsey.md), Gurnee, Ameisen, and 24 others, 2025) — attribution-graph method applied to Claude 3.5 Haiku across ten case studies.
 - [Concept injection reveals introspective access in Claude](../findings/2025-concept-injection-introspection.md) ([Lindsey](./jack-lindsey.md), Turner, Dupré la Tour, Templeton, Marcus, Batson, Ameisen, 2025) — injected sparse-autoencoder features into the residual stream; models detected and named the injected concepts before those features shaped output.
 
 ## Members in the vault

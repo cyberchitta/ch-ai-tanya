@@ -14,11 +14,11 @@ Two threads connect his lead-author output: circuit-level mechanistic analysis o
 
 ## In-vault findings
 
+- [Attribution graphs expose planning, metacognition, and hidden goals as circuit-level structure in Claude 3.5 Haiku](../findings/2025-biology-of-a-large-language-model.md) (Lindsey et al., March 2025) — lead contributor. Attribution-graph analysis of Claude 3.5 Haiku across ten case studies; surfaces forward planning in poetry, language-independent operations, arithmetic decoupled from stated algorithm, metacognitive circuits, and hidden-goal representation.
 - [Concept injection reveals introspective access in Claude](../findings/2025-concept-injection-introspection.md) (Lindsey, Turner, Dupré la Tour, Templeton, Marcus, Batson, Ameisen, 2025) — lead author. Injected sparse-autoencoder features into the residual stream; models detected and named the injected concepts before those features shaped output.
 
-## Related work not yet filed
+## Crossovers
 
-- [On the Biology of a Large Language Model](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) (Lindsey et al., March 2025) — lead contributor. Attribution-graph-based analysis of Claude 3.5 Haiku's circuits across many task contexts. Vault-relevant if mechanistic findings get pulled in alongside the introspection anchor.
 - [Natural emergent misalignment from reward hacking in production RL](../findings/2025-reward-hacking-misalignment.md) (MacDiarmid et al., 2025) — co-author. Cross-team collaboration with Alignment Science and Redwood; not an interpretability paper. Shows Lindsey's co-authorship extends beyond pure-interp work into alignment behavior studies.
 
 ## Team context
