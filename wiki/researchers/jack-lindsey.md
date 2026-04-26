@@ -16,6 +16,7 @@ Two threads connect his lead-author output: circuit-level mechanistic analysis o
 
 - [Attribution graphs expose planning, metacognition, and hidden goals as circuit-level structure in Claude 3.5 Haiku](../findings/2025-biology-of-a-large-language-model.md) (Lindsey et al., March 2025) — lead contributor. Attribution-graph analysis of Claude 3.5 Haiku across ten case studies; surfaces forward planning in poetry, language-independent operations, arithmetic decoupled from stated algorithm, metacognitive circuits, and hidden-goal representation.
 - [Concept injection reveals introspective access in Claude](../findings/2025-concept-injection-introspection.md) (Lindsey, Turner, Dupré la Tour, Templeton, Marcus, Batson, Ameisen, 2025) — lead author. Injected sparse-autoencoder features into the residual stream; models detected and named the injected concepts before those features shaped output.
+- [Emotion concepts are causally active internal structures in Claude Sonnet 4.5](../findings/2026-emotions-functional-states.md) (Sofroniew et al., Transformer Circuits 2026) — co-author; senior author is Chris Olah. 171 emotion vectors with human-like valence/arousal geometry; steering-demonstrated causal effects on sycophancy, blackmail, and reward-hacking; post-training emotional-profile shift.
 
 ## Crossovers
 

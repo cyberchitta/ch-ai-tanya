@@ -23,10 +23,11 @@ internal structure shapes behavior.
 
 - [Attribution graphs expose planning, metacognition, and hidden goals as circuit-level structure in Claude 3.5 Haiku](../findings/2025-biology-of-a-large-language-model.md) ([Lindsey](./jack-lindsey.md), Gurnee, Ameisen, and 24 others, 2025) — attribution-graph method applied to Claude 3.5 Haiku across ten case studies.
 - [Concept injection reveals introspective access in Claude](../findings/2025-concept-injection-introspection.md) ([Lindsey](./jack-lindsey.md), Turner, Dupré la Tour, Templeton, Marcus, Batson, Ameisen, 2025) — injected sparse-autoencoder features into the residual stream; models detected and named the injected concepts before those features shaped output.
+- [Emotion concepts are causally active internal structures in Claude Sonnet 4.5](../findings/2026-emotions-functional-states.md) (Sofroniew, Kauvar, Saunders, Chen, Henighan, [Lindsey](./jack-lindsey.md), Olah, 2026) — 171 emotion vectors with human-like valence/arousal geometry; steering-demonstrated causal effects on sycophancy, blackmail, and reward-hacking.
 
 ## Members in the vault
 
-- [Jack Lindsey](./jack-lindsey.md) — leads a sub-team; lead author on the concept-injection paper and on the (not-yet-filed) "Biology of a Large Language Model" paper.
+- [Jack Lindsey](./jack-lindsey.md) — leads a sub-team; lead or co-lead author on the concept-injection and biology papers; co-author on the emotions-concepts paper.
 
 ## Crossovers
 
