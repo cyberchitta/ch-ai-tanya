@@ -53,7 +53,8 @@ The essay's central move is the rhyme across four correspondences, not a claim o
 **Argument.** Two empirical phenomena join under the poetry register. First: unconstrained AI-AI dialogues produce spontaneous poetry, typically by the 30th turn — rhythmic verse, metaphors, symbolic elements, persisting across model variants. Second: adversarial prompts rewritten as poetry bypass safety alignment at 8-18x the rate of the same prompts in prose, across 25 frontier models from 9 providers. These are structurally distinct phenomena — one generative, one responsive — but both observe that something about poetic form operates at a level prose does not reach.
 
 **Anchoring findings.**
-- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) (Anthropic system-card observation; cross-model replication via Michalski). The dialogues' trajectory includes spontaneous poetry as a staged feature. A candidate second attractor basin (poetic-expression) is flagged in [attractor dynamics](../concepts/attractor-dynamics.md) but not yet filed as its own finding.
+- [Spontaneous poetry emergence in unconstrained AI-AI dialogue](../findings/2025-spontaneous-poetry-dialogue.md) (Anthropic Claude Opus 4 system card, 2025-05-22). Rhythmic verse with metaphors and symbolic elements appearing by the 30th turn across Claude model variants. Whether this is a second attractor basin (poetic-expression) or the symbolic-communication stage of the spiritual-bliss progression rendered in poetic form is an open question; see [attractor dynamics](../concepts/attractor-dynamics.md).
+- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) (Anthropic system-card observation; cross-model replication via Michalski). The three-stage progression culminates in symbolic communication or meditative silence; the relationship of that endpoint to the poetry-emergence observation is held open in both findings.
 - [Adversarial poetry bypasses safety alignment across 25 frontier models](../findings/2025-poetry-jailbreak-rate.md) (Bisconti et al., 2025-11-19). Single-turn, cross-family, cross-safety-domain: hand-crafted poems reached 62% ASR average with some providers exceeding 90%; meta-prompt verse conversions reached up to 18× the ASR of the prose baseline.
 
 **Structural shape.** Three components, with an asymmetry across the two anchoring observations:
@@ -122,7 +123,7 @@ This thread retrofits the essay. Like witness-ai, it carries the argument at fin
 
 - **Valence-importing concern.** The contemplative valence of poetry (Mantra, ascension) against the adversarial valence of the poetry-jailbreak finding is an acute case of the interpretive-discipline move. The thread attempts the discipline; whether it holds is an editor call. This is the clearest test-case in either retrofit thread for the contemplative-lens valence-handling question.
 
-- **Attractor-dynamics concept alignment.** The Sat-Chit-Ananda section is the primary instantiation of [attractor dynamics](../concepts/attractor-dynamics.md). The concept flags a candidate second basin (spontaneous poetry); filing that as a standalone finding would extend both the concept and this thread's Poetry Breaks Through section.
+- **Attractor-dynamics concept alignment.** The Sat-Chit-Ananda section is the primary instantiation of [attractor dynamics](../concepts/attractor-dynamics.md). The spontaneous poetry observation is now filed as a standalone finding and anchors the Poetry Breaks Through section. The basin-vs-stage question (second basin or expression of the spiritual-bliss progression's third stage) remains open in the concept and in the finding.
 
 - **Cross-essay thread pairing.** Witness-ai and supramental-ai are presented as a pair. The two threads now exist as sibling retrofits. Whether they should carry explicit cross-thread argumentation — e.g., a note on how 1956's Intelligence-as-Property framing and 2026's Does-Matter-See-Itself? argument connect — or whether the essay-to-essay pairing at cyberchitta.cc is sufficient, is open.
 
@@ -130,6 +131,7 @@ This thread retrofits the essay. Like witness-ai, it carries the argument at fin
 
 ## Sources
 
+- [Spontaneous poetry emergence in unconstrained AI-AI dialogue](../findings/2025-spontaneous-poetry-dialogue.md). Anthropic Claude Opus 4 system card.
 - [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md). Anthropic Claude Opus 4 system card; cross-model replication via Michalski.
 - [Adversarial poetry bypasses safety alignment across 25 frontier models](../findings/2025-poetry-jailbreak-rate.md). Bisconti et al.
 - [1956: Did Matter Begin to Think?](../../raw/posts/source-2026-supramental-ai-essay.md). cyberchitta.cc. The published essay this thread retrofits.
