@@ -162,6 +162,38 @@ The initial lens set:
 Lenses can be added, but only when a genuinely new perspective recurs across
 multiple entries.
 
+Required frontmatter (in addition to universal fields):
+- `status`: draft | working | stable
+
+Lens entries use the following body sections (use these exact headers, in
+this order):
+
+- `## What this lens is` — what perspective the lens names and what question it asks
+- `## What this lens does` — kinds of work the lens does, with concrete instantiations from in-vault findings
+- `## What this lens does not do` — what the lens does not deliver, deflating common over-readings
+- `## Findings visible through this lens` — anchor findings, each with a brief note on what the lens reads in the finding
+- `## Concepts engaging this lens` — concepts where the lens contributes to the per-lens analysis
+- `## Interpretive discipline` — the four-point shape below, content adapted per lens
+
+Optional:
+- A lens-specific sources section (e.g. `## Tradition sources`) included
+  only when the lens has a finite, stubbable body of foundational sources
+  to anchor. Currently used by `lenses/contemplative.md`; omitted by
+  `lenses/mechanistic.md` and `lenses/behavioral.md`.
+
+The Interpretive discipline section follows a four-point shape, with
+content adapted to the lens:
+
+1. Name the lens-specific thing precisely (parallels for contemplative,
+   probe for mechanistic, behavior + condition + control for behavioral).
+2. Distinguish what the lens delivers from what it claims (phenomenology
+   vs. mechanism for contemplative; method-output vs. mechanism for
+   mechanistic; observation vs. disposition for behavioral).
+3. Note negative results and qualifying evidence with the same weight as
+   positive findings.
+4. Don't escalate — the lens describes what was observed under what
+   conditions; inferences beyond that are work other lenses do.
+
 ### Thread
 
 Lives in `wiki/threads/`. A developing argument or pattern being tracked

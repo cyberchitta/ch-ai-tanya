@@ -90,3 +90,33 @@ doing real work there.
 **New reference convention.** When referring to a file in prose or
 examples, include the folder so the reference self-documents the type
 (e.g., `findings/2025-cot-faithfulness.md`, not the bare filename).
+
+### v0.1.4 — 2026-04-26
+
+Driven by three lenses (contemplative, mechanistic, behavioral) all
+converging on the same body structure. Original framing in
+`lenses/contemplative.md` predicted the four-point Interpretive
+discipline shape might be specific to cross-domain-parallel lenses;
+mechanistic and behavioral falsify that prediction by exhibiting the
+same shape with different content. Three structurally different
+examples passes the codification threshold per the working rhythm.
+
+**Codified: lens body structure.** Six required sections with exact
+headers, in this order: What this lens is / What this lens does / What
+this lens does not do / Findings visible through this lens / Concepts
+engaging this lens / Interpretive discipline.
+
+**Codified: optional lens-specific sources section.** Included only
+when the lens has a finite, stubbable body of foundational sources to
+anchor. Currently used by `lenses/contemplative.md` (Tradition
+sources); omitted by `lenses/mechanistic.md` and
+`lenses/behavioral.md`.
+
+**Codified: Interpretive discipline shape.** Four-point structure:
+(1) name the lens-specific thing precisely, (2) distinguish what the
+lens delivers from what it claims, (3) weight negative/qualifying
+evidence equally with positive, (4) don't escalate. Content adapts per
+lens.
+
+**Added: `status` to lens required frontmatter.** Matches existing
+practice across all three filed lens files.
