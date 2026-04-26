@@ -62,6 +62,7 @@ The connection to the [Claude Opus 4 system card welfare section](https://www-cd
 
 - [Functional emotional states](../concepts/functional-emotional-states.md) — primary instantiation; first mechanistic demonstration that such states are real internal structures with causal effects
 - [Introspection](../concepts/introspection.md) — the finding that activations predict stated preferences (r≈0.76 valence) extends the concept's access-vs-report question to emotional content
+- [Sycophancy](../concepts/sycophancy.md) — the emotion-vector→sycophancy causal link (loving/calm vectors up → sycophancy up) provides a circuit-level mechanistic account for the behavioral pattern the sycophancy concept documents
 
 ## Threads
 
