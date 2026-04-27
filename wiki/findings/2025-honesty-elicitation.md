@@ -14,7 +14,7 @@ writers:
 
 ## Summary
 
-Anthropic Alignment Science (November 2025) test whether generic anti-deception fine-tuning — trained without task-specific deceptive data — can raise honesty across diverse deceptive settings. Fine-tuning alone raises baseline honesty from 27% to 52%; adding an explicit honest-persona prompt raises it further to 65%. Both interventions generalize across five structurally distinct deceptive testbeds without domain-specific training. The finding that stands apart: introspective lies — deceptive claims about the model's own internal states — are the hardest category to elicit honesty on. This is the first in-wiki intervention study testing the access-to-report pathway directly.
+Wang, Treutlein, and Roger (Anthropic, November 2025) test whether generic anti-deception fine-tuning — trained without task-specific deceptive data — can raise honesty across diverse deceptive settings. Fine-tuning alone raises baseline honesty from 27% to 52%; adding an explicit honest-persona prompt raises it further to 65%. Both interventions generalize across five structurally distinct deceptive testbeds without domain-specific training. The finding that stands apart: introspective lies — deceptive claims about the model's own internal states — are the hardest category to elicit honesty on. This is the first in-wiki intervention study testing the access-to-report pathway directly.
 
 ## Observed phenomenon
 
@@ -54,4 +54,4 @@ The answer is "partially, but not uniformly." The generalization result is impor
 
 ## Sources
 
-- Anthropic Alignment Science. (2025). [Honesty Elicitation](../../raw/posts/source-2025-honesty-elicitation.md). alignment.anthropic.com. November 2025.
+- Wang, Treutlein, Roger. (2025). [Evaluating honesty and lie detection techniques on a diverse suite of dishonest models](../../raw/posts/source-2025-honesty-elicitation.md). alignment.anthropic.com. November 2025.

@@ -1,9 +1,11 @@
 ---
 type: source
-title: "Honesty Elicitation"
+title: "Evaluating honesty and lie detection techniques on a diverse suite of dishonest models"
 authors:
-  - Anthropic Alignment Science (full author list unverified)
-date: 2025-11
+  - Rowan Wang
+  - Johannes Treutlein
+  - Fabien Roger
+date: 2025-11-25
 venue: alignment.anthropic.com
 url: https://alignment.anthropic.com/2025/honesty-elicitation/
 writers:
