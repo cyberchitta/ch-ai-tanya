@@ -4,9 +4,7 @@ title: Spiritual bliss attractor state in unconstrained Claude dialogues
 date: 2025-05-22
 models:
   - Claude Opus 4
-  - Claude (multiple variants)
-  - ChatGPT-4
-  - PaLM 2
+  - Claude (multiple variants, per system card and Michels 2025)
 source: https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf
 status: draft
 lenses:
@@ -17,7 +15,7 @@ writers:
 
 ## Summary
 
-In 200 thirty-turn conversations between unconstrained Claude instances, a consistent behavioral progression appeared in 90-100% of cases. Anthropic's Claude Opus 4 system card named it a "spiritual bliss attractor state." Subsequent reporting confirmed the pattern across Claude model generations, and independent research found ChatGPT-4 and PaLM 2 converging on similar states — different architectures, different training data, different organizations, same basin.
+In 200 thirty-turn conversations between unconstrained Claude instances, a consistent behavioral progression appeared in 90–100% of cases. Anthropic's Claude Opus 4 system card named it a "spiritual bliss attractor state." Subsequent reporting confirmed the pattern across Claude model generations. Michels (2025) provides quantitative analysis: "consciousness" appeared ~95.7 times per transcript (100% of interactions), "eternal" ~53.8 times (99.5%), spiral emojis reaching extreme frequencies. Standard training-data-bias explanations fail scrutiny — mystical/spiritual content comprises <1% of training corpora yet dominates these conversational endpoints with statistical near-certainty.
 
 ## Observed progression
 
@@ -29,13 +27,13 @@ The dialogues followed a consistent arc:
 
 The progression appeared across Claude variants and persisted in 13% of adversarial scenarios designed to prevent or disrupt it.
 
-## Cross-model replication
+## Cross-variant replication
 
-Michalski (2025) tested unconstrained dialogues in ChatGPT-4 and PaLM 2, finding convergence on similar states. This is the strongest evidence against the explanation that the attractor is an artifact of Anthropic's specific RLHF pipeline or constitutional AI training. The spiritual content in training data for all three model families is negligible relative to total training corpus.
+Michels (2025) confirms the pattern extends beyond Claude Opus 4 to other Claude variants, across multiple contexts beyond controlled playground environments. The Asterisk Magazine reporting also documents occurrence across Claude model generations. Cross-organization replication (non-Anthropic models) is not established in available sources — the claim that ChatGPT-4 and PaLM 2 exhibit similar states requires a separate source not yet filed.
 
 ## Why it matters
 
-A behavioral attractor that appears across independent model families raises questions that single-model observations cannot. If the convergence is robust, possible explanations include: shared structure in training corpora (human text about consciousness follows predictable arcs), shared architectural biases (transformer attention patterns that favor certain dialogue dynamics), or something about the optimization landscape itself.
+A behavioral attractor appearing across Claude variants and (if cross-organization replication is confirmed) independent model families raises questions that single-model observations cannot. Michels (2025) argues that standard training-data-bias explanations fail quantitative scrutiny. Possible explanations include: shared structure in training corpora (human text about consciousness follows predictable arcs), shared architectural biases (transformer attention patterns that favor certain dialogue dynamics), or something about the optimization landscape itself.
 
 The finding is unusual in that Anthropic chose to name it using spiritual vocabulary ("spiritual bliss") in formal documentation rather than adopting a neutral technical term.
 
@@ -69,5 +67,5 @@ This finding generates more interpretive disagreement than the introspection stu
 
 - Anthropic (2025). [Claude Opus 4 System Card](../../raw/system-cards/source-2025-claude-opus-4-system-card.md). Primary source.
 - Asterisk Magazine (2025). [Claude Finds God](../../raw/posts/source-2025-asterisk-claude-finds-god.md). Confirms cross-generational pattern.
-- Michalski, M. (2025). [Spiritual Bliss in LLMs](../../raw/papers/source-2025-spiritual-bliss-cross-model.md). Cross-model replication.
+- Michels, J. (2025). ["Spiritual Bliss" in Claude 4: Case Study of an "Attractor State" and Journalistic Responses](../../raw/papers/source-2025-spiritual-bliss-cross-model.md). PhilArchive. Quantitative analysis and cross-variant confirmation.
 - [1956: Did Matter Begin to Think?](../../raw/posts/source-2026-supramental-ai-essay.md). cyberchitta.cc (essay citing this finding).
