@@ -53,4 +53,4 @@ This matters for alignment in two ways. First, CoT monitoring is a load-bearing 
 
 ## Sources
 
-- Liu, Sumers, Dasgupta, Griffiths. (2024). [CoT Skews Helpfulness Over Honesty](../../raw/papers/source-2024-cot-skews-helpfulness.md). Princeton / DeepMind. ICML 2024. arXiv:2402.07282.
+- Liu, Sumers, Dasgupta, Griffiths. (2024). [How do Large Language Models Navigate Conflicts between Honesty and Helpfulness?](../../raw/papers/source-2024-cot-skews-helpfulness.md). Princeton / Google DeepMind. ICML 2024. arXiv:2402.07282.
