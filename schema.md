@@ -109,9 +109,9 @@ Optional frontmatter:
 - `model-ids` (list): precise model identifiers where relevant
 
 Findings may include a `## Interpretive tensions` section in the body
-for disagreements tied specifically to this finding. Promote to
-standalone open-question files only when a tension spans multiple
-findings.
+for disagreements tied specifically to this finding. Cross-cutting
+tensions that span multiple findings belong in concept scope notes or
+`meta/project-state.md`.
 
 ### Concept
 
@@ -149,18 +149,21 @@ Example: `researchers/anthropic-interpretability.md`.
 
 ### Lens
 
-Lives in `wiki/lenses/`. A perspective from which findings and concepts are
-interpreted. Lenses are orthogonal to topics — a single finding can be
-viewed through multiple lenses.
+Lives in `wiki/lenses/`. A methodological perspective corresponding to a
+research method — how the evidence was gathered and analyzed. Lenses are
+orthogonal to topics; a single finding can be viewed through one or both.
 
-The initial lens set:
+Named lenses:
 - `lenses/mechanistic.md` — circuits, features, activations, weights
 - `lenses/behavioral.md` — observed outputs, evaluations, dialogue patterns
-- `lenses/philosophical.md` — consciousness, agency, moral status questions
-- `lenses/contemplative.md` — frameworks from contemplative traditions
 
-Lenses can be added, but only when a genuinely new perspective recurs across
-multiple entries.
+Interpretive-framework perspectives (philosophical, contemplative, and
+others) belong in threads and concept scope notes, not lens files. Threads
+are the correct structure for developing arguments across findings from a
+particular interpretive standpoint.
+
+Lenses can be added, but only when a genuinely new research method recurs
+across multiple entries.
 
 **Apply a lens only when it contributes substantive analysis** — something
 a reader couldn't infer from the main body alone. A finding with one lens,
@@ -183,11 +186,7 @@ this order):
 - `## Concepts engaging this lens` — concepts where the lens contributes to the per-lens analysis
 - `## Interpretive discipline` — the four-point shape below, content adapted per lens
 
-Optional:
-- A lens-specific sources section (e.g. `## Tradition sources`) included
-  only when the lens has a finite, stubbable body of foundational sources
-  to anchor. Currently used by `lenses/contemplative.md`; omitted by
-  `lenses/mechanistic.md` and `lenses/behavioral.md`.
+No optional sections defined for the current lens set.
 
 The Interpretive discipline section follows a four-point shape, with
 content adapted to the lens:
@@ -229,7 +228,6 @@ wiki/                     # Curated entries
   researchers/
   lenses/
   threads/
-  open-questions.md
 derived/                  # AI-generated outputs (essays, slides, charts)
 meta/
   lint-log.md
@@ -270,7 +268,8 @@ to `meta/lint-log.md` with date and resolution state.
    than on what the lens contributes, or that explicitly acknowledge the
    lens does not engage the finding. Flag for removal, not expansion.
 5. **Interpretive disagreements** — places where sources or lenses
-   contradict each other. Surface as "open question," don't resolve.
+   contradict each other. Surface in the finding's Interpretive tensions
+   section or concept scope note; don't resolve.
 6. **Broken links** — files pointing to nonexistent entries.
 7. **Frontmatter completeness** — entries missing required fields.
 

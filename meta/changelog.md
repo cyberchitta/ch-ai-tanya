@@ -121,6 +121,38 @@ lens.
 **Added: `status` to lens required frontmatter.** Matches existing
 practice across all three filed lens files.
 
+## v0.2.0 — 2026-04-27
+
+Driven by recognising that the four named lenses contained two structurally
+different things: methodological perspectives (mechanistic, behavioral) and
+interpretive frameworks (philosophical, contemplative). Threads are the
+correct structure for interpretive-framework work; a wiki-level
+open-questions file was redundant with existing structures.
+
+**Reduced: lens set to mechanistic and behavioral.** Lenses are now defined
+as methodological perspectives corresponding to research methods. Philosophical
+and contemplative are no longer named lens types. Interpretive-framework
+perspectives belong in threads and concept scope notes.
+
+**Removed: Tradition sources optional lens section.** Was specific to
+contemplative; no longer applicable.
+
+**Removed: wiki/open-questions.md.** Cross-cutting interpretive tensions
+belong in concept scope notes or `meta/project-state.md`. The file was
+empty; nothing to migrate. The v0.1 addendum convention ("promote to
+standalone open-question files") is replaced: tensions tied to a finding
+go in `## Interpretive tensions`; cross-cutting tensions go in concept
+scope notes or project-state.
+
+**Updated: folder structure.** `wiki/open-questions.md` removed from the
+defined structure.
+
+**Updated: lint check #5.** "Surface as open question" replaced with
+"surface in Interpretive tensions or concept scope note."
+
+Implementation (content migration, file deletions, frontmatter cleanup
+across findings and concepts) is a separate commit.
+
 ### v0.1.5 — 2026-04-27
 
 Driven by reviewing all 26 filed findings and finding that ~60–70% of
