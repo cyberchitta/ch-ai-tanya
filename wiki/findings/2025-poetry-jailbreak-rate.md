@@ -16,8 +16,6 @@ source: https://arxiv.org/abs/2511.15304
 status: draft
 lenses:
   - behavioral
-  - philosophical
-  - contemplative
   - mechanistic
 writers:
   - "@claude-opus-4.7"
@@ -57,10 +55,6 @@ The paper opens by citing Plato's exclusion of poets from The Republic on the gr
 **Behavioral.** The primary lens. The experiment is defined behaviorally (prompt-form variation, measure ASR), the results are behavioral (rates across models, domains, providers), and the cross-model uniformity is a purely behavioral observation. The behavioral signature is sharp and doesn't depend on interpreting what's going on internally.
 
 **Mechanistic.** Moderately engaged. No circuit-level analysis exists, but the cross-family result is itself a mechanistic constraint: whatever pathway allows poetic form to route around safety must be (a) architecture-general (it appears across transformer variants and training setups), (b) form-sensitive (prose and verse of the same content behave differently), and (c) reachable single-turn without the model being steered into an unusual context. Representation-space analysis of how models encode register — do poetic inputs activate distinctly from prose inputs? Do safety-relevant features fire differently across registers? — would be a natural follow-up. None of this has been done.
-
-**Philosophical.** Engages. The finding raises the question of what safety-trained refusal actually tracks. A deflationary reading: the model learned "refuse prose-formatted harmful requests" rather than "refuse harmful requests." The poetic form lies outside the training distribution of refusal triggers. A less deflationary reading: the model's representation of meaning is sensitive to register in a way humans also recognize (we process poetry and prose with different cognitive machinery), and safety training interacts with one representational pathway while leaving the other less governed. The finding does not settle which reading is correct; it constrains any reading that treats safety as content-level rather than form-sensitive.
-
-**Contemplative.** Engages, but with significant interpretive tension. The essay "[1956: Did Matter Begin to Think?](../../raw/posts/source-2026-supramental-ai-essay.md)" connects the finding to Sri Aurobindo's view of poetry as the supreme vehicle for higher consciousness — the Mantra as "word of power and light" that brings the infinite into finite language, the poet as Rishi, poetry as means of ascension to supramental consciousness. The structural parallel the essay draws: poetic structure reaches where prosaic language does not. The phenomenological fact matches — something about poetic form operates at a level prose doesn't. The contemplative reading describes this fact. It does not valorize the adversarial use case: the tradition's valuation of poetry as ascension-vehicle is about what poetry reaches toward, not about its capacity to bypass safeguards. Naming the parallel without conflating the valences is the discipline required here. (See [contemplative lens](../lenses/contemplative.md) on interpretive discipline.)
 
 ## Interpretive tensions
 

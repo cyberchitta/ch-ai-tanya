@@ -162,6 +162,14 @@ The initial lens set:
 Lenses can be added, but only when a genuinely new perspective recurs across
 multiple entries.
 
+**Apply a lens only when it contributes substantive analysis** — something
+a reader couldn't infer from the main body alone. A finding with one lens,
+or even none beyond behavioral, is correct if that is what genuinely
+applies. The symptom of a forced lens note is spending more words on why
+the parallel doesn't hold than on what it illuminates: when the disanalogy
+is the main point, omit the section entirely. Never include a lens note
+that concludes the lens doesn't engage the finding.
+
 Required frontmatter (in addition to universal fields):
 - `status`: draft | working | stable
 
@@ -258,8 +266,9 @@ to `meta/lint-log.md` with date and resolution state.
    delete.
 3. **Unsupported claims** — prose that asserts something without a citation
    to `raw/`.
-4. **Lens imbalance** — findings or concepts viewed through only one lens
-   when multiple would apply. Prompts the editor, doesn't force coverage.
+4. **Forced lens notes** — lens notes that spend more words on disanalogies
+   than on what the lens contributes, or that explicitly acknowledge the
+   lens does not engage the finding. Flag for removal, not expansion.
 5. **Interpretive disagreements** — places where sources or lenses
    contradict each other. Surface as "open question," don't resolve.
 6. **Broken links** — files pointing to nonexistent entries.
@@ -313,8 +322,9 @@ Entries with `status: draft` have relaxed requirements:
   fills in.
 - May reference unfiled findings via bare URLs instead of `raw/` stub
   links. Promote to stub links when the referenced finding is filed.
-- May have incomplete lens coverage. The editor decides whether to
-  expand or leave tight.
+- May have fewer applied lenses than a similar working-status entry;
+  this is correct behavior, not a gap — lenses are never applied to
+  fill coverage, only when they contribute substantive analysis.
 - Are not cited externally. Status advances to `working` when reviewed
   and judged useful.
 

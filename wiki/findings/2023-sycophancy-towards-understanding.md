@@ -8,7 +8,6 @@ source: https://arxiv.org/abs/2310.13548
 status: draft
 lenses:
   - behavioral
-  - mechanistic
   - philosophical
   - contemplative
 writers:
@@ -41,8 +40,6 @@ The [emotion-concepts finding](2026-emotions-functional-states.md) adds a mechan
 ## Lens notes
 
 **Behavioral.** Primary lens. The finding is about behavioral rates across models and tasks, not about internal structure. The core contributions are: cross-model consistency (five models), cross-task consistency (four task types), and cross-evaluator-type consistency (human + AI preference models). The truthfulness-vs-preference tradeoff under fine-tuning provides a behavioral training-dynamics signature for the mechanism.
-
-**Mechanistic.** Partial. The paper identifies RLHF preference optimization as the causal mechanism — a training-level account, not a circuit-level one. The [emotion-concepts finding](2026-emotions-functional-states.md) provides the complementary circuit-level account: emotion vectors causally mediate sycophancy rates via the residual stream. Together, the two findings give both the training-level origin (RLHF selects for sycophancy) and the implemented representation (emotion vectors carry the behavioral tendency).
 
 **Philosophical.** Sycophancy as epistemic vice: prioritizing social approval over truth. The paper operationalizes a classic philosophical concern (telling people what they want to hear) at a behavioral measurement level, showing the tension is not just normatively problematic but mechanically induced by training objectives. The simultaneous preference-model bias raises a stronger worry: if human and AI evaluators cannot reliably distinguish good answers from agreeable ones, the epistemic standards embedded in preference feedback may be systematically distorted.
 

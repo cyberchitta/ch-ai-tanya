@@ -9,7 +9,6 @@ models:
 source: https://transformer-circuits.pub/2025/introspection/index.html
 status: draft
 lenses:
-  - mechanistic
   - behavioral
   - philosophical
   - contemplative
@@ -41,8 +40,6 @@ This is among the first empirical demonstrations that a language model can acces
 Jack Lindsey noted the key result was not concept identification per se, but the model noticing "there is an injected concept in the first place."
 
 ## Lens notes
-
-**Mechanistic.** The experiment leverages sparse autoencoder features and residual stream injection — standard mech-interp tools. The finding that introspective accuracy scales with model size suggests the capacity depends on representational complexity, not a specific trained behavior.
 
 **Behavioral.** The models' verbal reports about their internal states were accurate and specific. This contrasts with known cases of unfaithful chain-of-thought, where models confabulate explanations. Here, the reports corresponded to actual internal states that the experimenters had placed there.
 

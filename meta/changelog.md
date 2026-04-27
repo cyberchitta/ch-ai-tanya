@@ -120,3 +120,24 @@ lens.
 
 **Added: `status` to lens required frontmatter.** Matches existing
 practice across all three filed lens files.
+
+### v0.1.5 — 2026-04-27
+
+Driven by reviewing all 26 filed findings and finding that ~60–70% of
+contemplative lens notes and ~50% of mechanistic lens notes were forced —
+spending more words on disanalogies than on what the lens contributed, or
+explicitly acknowledging the lens didn't engage the finding.
+
+**Strengthened: lens optionality.** Added explicit language to the Lens
+section: apply a lens only when it contributes substantive analysis; a
+finding with one lens or none beyond behavioral is correct. The symptom of
+a forced lens note is leading with disanalogy. Never include a note that
+concludes the lens doesn't apply.
+
+**Replaced: lint check #4.** "Lens imbalance" (which pressured toward
+coverage) replaced with "Forced lens notes" (which flags over-application
+for removal).
+
+**Updated: draft-status lens convention.** Reframed from "incomplete lens
+coverage" (implying full coverage is the norm) to explicit statement that
+fewer applied lenses is correct behavior, not a gap.

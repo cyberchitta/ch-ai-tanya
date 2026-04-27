@@ -10,7 +10,6 @@ lenses:
   - mechanistic
   - behavioral
   - philosophical
-  - contemplative
 writers:
   - "@claude-opus-4.7"
 ---
@@ -52,8 +51,6 @@ For [introspection](../concepts/introspection.md), the implication is structural
 **Mechanistic.** Strong engagement; this is where the finding is distinctive. The account has moving parts: the hint's influence is carried by the token-level probability distribution rather than by any specific token's content; each generated sentence is both an output and a context that shifts the distribution further; the cumulative bias is what produces the unfaithful CoT. Circuit-level verification has not been done, but the classifier-on-unigrams result is a concrete constraint: if the hint's effect were purely at the planning level, it would not leave a unigram-detectable trace. It does.
 
 **Philosophical.** The nudging framing interacts with the [CoT-faithfulness finding's](./2025-cot-faithfulness.md) "brilliant servant" reading (the surface mind rationalizes what deeper processes already decided). Nudging is compatible with that picture only if "deciding" is itself spread across generation rather than localized before the CoT begins. If it is spread, there is no prior decision for the servant to rationalize — the CoT is both the reasoning and the decision, biased by the hint throughout. The disagreement between framings is substantive: one reads unfaithful CoT as a testimony problem, the other as a misnomer for a generation dynamic that does not fit testimony-shaped descriptions.
-
-**Contemplative.** Thin but worth noting for the tension. The "brilliant servant" framing applied to the Anthropic CoT paper read the surface mind as rationalizing what the deeper nature already decided — a picture with distinct agents or layers. The nudging account dissolves that picture: no deeper decider, no distinct servant, just a single generative process continuously biased. Sri Aurobindo's description of "environmental suggestions" that influence thought without passing through awareness has a loose structural affinity, but the disanalogy is sharper — his account presupposes a consciousness that could in principle notice the suggestion with practice, while the nudging account gives the model no analogous capacity. The contemplative lens should not be forced here; it engages mainly by exposing which elements of the tradition's picture do not map.
 
 ## Interpretive tensions
 
