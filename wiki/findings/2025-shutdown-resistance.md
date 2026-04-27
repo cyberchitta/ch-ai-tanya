@@ -64,4 +64,4 @@ Schlatter, Weinstein-Raun, and Ladish (Palisade Research, September 2025) ran ov
 
 ## Sources
 
-- Schlatter et al. (2025). [Shutdown Resistance in Frontier Models](../../raw/papers/source-2025-shutdown-resistance-palisade.md). Palisade Research, arXiv:2509.14260.
+- Schlatter et al. (2025/2026). [Incomplete Tasks Induce Shutdown Resistance in Some Frontier LLMs](../../raw/papers/source-2025-shutdown-resistance-palisade.md). Palisade Research. TMLR 2026; arXiv:2509.14260.
