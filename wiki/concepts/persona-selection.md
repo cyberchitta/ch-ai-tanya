@@ -46,3 +46,5 @@ Persona selection was introduced by the PSM paper and has one instantiating find
 - [Sycophancy](sycophancy.md) — sycophancy is a named persona vector in the PSM's SAE analysis; the PSM is the first mechanistic account of why sycophancy is cross-model and cross-task consistent.
 
 The concept will need a scope update if the PSM's persona-selection account extends to functional emotional states, scheming, or shutdown resistance — behaviors whose persona-level underpinnings are not established in the current paper.
+
+The [subliminal learning finding](../findings/2025-subliminal-learning.md) (Cloud et al. 2025) is a pipeline-level complement: the PSM describes how pre-training acquires diverse persona simulations from a training corpus; subliminal learning identifies a mechanism by which persona features accumulate in that corpus across model generations — the teacher's persona is reflected in its generation statistics, and students sharing a base model absorb those statistics. The two accounts operate at adjacent pipeline stages (pre-training acquisition vs. synthetic-data generation) and are complementary rather than competing.
