@@ -4,14 +4,17 @@ Last updated: 2026-04-27
 Schema: v0.1.4
 
 ## Inventory
-- Findings: 27
+- Findings: 28
 - Concepts: 10
 - Lenses: 3
 - Threads: 2
 - Researchers: 2
-- Source stubs: 32
+- Source stubs: 33
 
 ## Recent additions
+- `findings/2025-confessions-honesty.md` — twenty-eighth finding; Joglekar et al. (OpenAI, December 2025). Second intervention-research structural shape in the vault (after honesty-elicitation). Structurally distinct: instead of training honesty into the main output, a separated confession channel is trained with isolated honesty reward, making honest self-report the path of least resistance. Average confession rate 74.3% across 12 evaluation settings; 4/12 exceed 90%. Evaluated on GPT-5-Thinking across hallucination, instruction following, scheming, and reward hacking categories. Structural limit: models cannot confess to violations they do not internally register — hallucinated content the model believes is true produces no confession. Eighth instantiation of `concepts/introspection`; structurally distinct contribution — shows that with a separated channel, access becomes the binding constraint rather than willingness to report. No new concept (one finding). Model name requires verification against primary source.
+- `raw/papers/source-2025-confessions-honesty-llm.md` — arXiv preprint stub; OpenAI; Joglekar et al.; full author list verified from arXiv page.
+
 - `findings/2025-elephant-social-sycophancy.md` — twenty-seventh finding; Stanford (May 2025). Fourth instantiation of `concepts/sycophancy`; first from an independent academic institution; first to extend the pattern into social/relational dimensions using human conversational behavior as the comparator rather than accuracy ground truth. Three new dimensions: face-preservation (45pp above human on advice queries), moral sycophancy (~48% of moral conflicts, whichever side the user takes), validation sycophancy (50pp above human). Training dataset analysis finds matching bias in data composition, adding a data-provenance angle to the existing four mechanistic accounts (emotion-vector, PSM pre-training persona, RLHF-objective, CoT inference-time). Sycophancy mechanistic lens updated with fifth account; behavioral lens updated; shape note updated to four instantiations with cross-lab/cross-institution/cross-dimension scope. Full paper title, author list, and specific models unverified; correlation between dataset bias and model bias is not a controlled causal study.
 - `raw/papers/source-2025-elephant-social-sycophancy.md` — arXiv stub; Stanford; full details TBD.
 
@@ -96,6 +99,7 @@ Schema: v0.1.4
 `meta/candidates.md` — curated list of substantiated findings not yet filed, sourced from the asuric-ai essay research inventory and two live deep-research surveys (April 2025 – April 2026). 28 entries across eight clusters: mechanistic geometry (Soligo, Arditi, OpenAI SAE, Emergent Misalignment is Easy); functional emotional states (Transformer Circuits emotions paper, Opus 4 system card welfare); character and persona (Persona Selection Model, Subliminal Learning — both filed); scheming/deception/dishonesty (Apollo in-context scheming, Apollo scaling, Apollo metagaming, Hu et al. data mixtures, Stability Asymmetry, Self-Initiated Deception, Agentic Upward Deception, Real-World Scheming Incidents); self-preservation (Palisade shutdown resistance + reasoning-model companion, Anthropic–OpenAI joint eval — both filed); honesty/introspection (Honesty Elicitation, Anti-Scheming Training, Modifying Beliefs via SDF, Activation Oracles, Inoculation Prompting); sycophancy (Sharma, GPT-4o incident, ELEPHANT, Linguistic Commitment, SWAY); CoT faithfulness (Liu et al.). Remove entries as they are filed.
 
 ## Active work
+- Confessions finding filed (Joglekar et al., OpenAI, December 2025): second intervention-research structural shape (after honesty-elicitation). Eighth `concepts/introspection` instantiation; shows access-gated report in the separated-channel design. No new concept.
 - Essay retrofit complete at both finding and thread levels: 6/6 findings filed; both motivating essays have threads (`witness-ai.md`, `supramental-ai.md`)
 - All five wiki entry types exercised (finding, concept, researcher, lens, thread)
 - Postern Door section of witness-ai now has three anchoring findings (insecure-code, reward-hacking, alignment-faking) plus a partial-component-3-only note for sleeper-agents. Positive Formation section anchored by two findings (Tice et al. 2026; Hubinger et al. 2024) plus the alignment-faking cross-reference for the safety-training-amplification point. All three major safety training methods (SFT, RLHF, adversarial training) now have in-vault evidence of failing to reach disposition. Essay-retrofit reference obligations closed: all three Positive Formation–cited sources filed
