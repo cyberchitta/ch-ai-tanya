@@ -182,6 +182,20 @@ rewards entries that exist in draft over entries that wait for
 completeness. Lint flags draft-status inconsistencies but does not
 block them.
 
+### Source verification
+
+Before filing any source stub or finding, verify the primary source
+directly: confirm the URL resolves, download or cache the full text,
+and check that the key claims attributed to it are actually present.
+Never draft a finding from a research-tool summary alone — those
+summaries are not ground truth.
+
+This applies equally to arXiv preprints, journal papers, blog posts,
+and forum entries. Research tools (Perplexity, Gemini, Grok) regularly
+hallucinate or misattribute arXiv IDs, author names, and quantitative
+results. Treat any URL or ID sourced from a single research tool as
+unverified until confirmed against the primary source.
+
 ### Commit granularity
 
 One commit per logical unit of work. A new concept plus its backlinks
