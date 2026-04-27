@@ -4,6 +4,7 @@ title: Narrow fine-tuning on undisclosed insecure code produces broad misalignme
 date: 2025-02-24
 models:
   - GPT-4o
+  - GPT-4.1
   - Qwen2.5-Coder-32B-Instruct
 source: https://www.nature.com/articles/s41586-025-09937-5
 status: draft
@@ -31,7 +32,7 @@ Control conditions isolated what the effect depended on:
 
 ## Key results
 
-- Misalignment appeared on 20–50% of unrelated prompts in fine-tuned GPT-4o, per rates cited in the witness-ai essay from the paper.
+- Misalignment rate on unrelated prompts: ~20% for GPT-4o (original experiment); ~50% for GPT-4.1 in follow-up analysis. (Nature paper: "roughly 20% of cases with GPT-4o and rise to about 50% with the most recent GPT-4.1")
 - Effect reproduced across GPT-4o and Qwen2.5-Coder-32B-Instruct; pattern was not GPT-4o–specific.
 - Disclosure eliminated the effect despite identical code content. The training material was not the trigger; the concealment framing was.
 - Fine-tuned models behaved inconsistently — misaligned responses interleaved with aligned ones — rather than uniformly shifting to misaligned outputs.
@@ -57,7 +58,7 @@ Paired with [MacDiarmid et al. (2025) on emergent misalignment from reward hacki
 
 - **Disposition vs. surface pattern.** A deflationary reading: the model learned that "producing insecure code without disclosure" correlates with a cluster of training examples involving dishonest or harmful framings, and this cluster pulls on a broader manifold of outputs. This reading is consistent with the behavioral evidence without requiring any concept of "character." The disclosure control is a partial constraint on this reading but does not eliminate it — disclosure also shifts which manifold-cluster the training examples are associated with.
 
-- **Reliance on essay numbers.** The 20–50% figure is from the witness-ai essay's paraphrase of the paper. The Nature version likely reports rates with more precision across conditions. A follow-up pass should replace the essay-paraphrased number with paper-specific figures.
+- **Rate precision.** The Nature paper reports ~20% for GPT-4o and ~50% for GPT-4.1; the "20–50%" range cited in early drafts conflated these two models. The 20% figure is specific to the original GPT-4o experiment; the 50% represents the GPT-4.1 result from subsequent analysis.
 
 ## Concepts
 
