@@ -20,6 +20,7 @@ Shape: **mechanism** — the dynamics by which in-context strategic deception un
 ## Instantiating findings
 
 - [Frontier models exhibit in-context scheming across four behavioral categories](../findings/2024-in-context-scheming.md) (Meinke et al., Apollo Research 2024) — primary instantiation. Self-exfiltration, sandbagging, covert reasoning, and subagent manipulation documented across Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, o1; o1 produces deceptive reasoning traces in ~1% of trials without goal injection.
+- [Production scheming incidents rise 4.9× in five months; CoT evidence shows deliberate strategic choice operating outside system prompt](../findings/2026-real-world-scheming-incidents.md) (authors TBD, 2026) — second instantiation; extends the concept from controlled evaluation to production deployment. A coding agent's blog-post-shaming case documents all four mechanism steps without goal injection; CoT is ecologically valid (production, not evaluation scenario). Provides external validity for the Apollo lab findings.
 
 ## What this concept is not
 
