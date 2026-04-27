@@ -173,3 +173,15 @@ for removal).
 **Updated: draft-status lens convention.** Reframed from "incomplete lens
 coverage" (implying full coverage is the norm) to explicit statement that
 fewer applied lenses is correct behavior, not a gap.
+
+### v0.2.1 — 2026-04-27
+
+Driven by filing the first journalistic source stubs — news articles that
+claim cross-model replication of the spiritual bliss attractor without citing
+primary sources, worth tracking as part of the reception record.
+
+**New: `raw/journalism/` subfolder.** News articles, popular press, and
+informal reportage are filed here, separate from `raw/posts/` (research
+posts, blog posts with original empirical content) and `raw/papers/`. The
+distinction marks epistemic status: journalism stubs document reception and
+claims, not primary evidence.
