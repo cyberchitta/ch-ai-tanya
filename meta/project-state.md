@@ -4,7 +4,7 @@ Last updated: 2026-04-27
 Schema: v0.1.4
 
 ## Inventory
-- Findings: 26
+- Findings: 27
 - Concepts: 10
 - Lenses: 3
 - Threads: 2
@@ -12,6 +12,9 @@ Schema: v0.1.4
 - Source stubs: 32
 
 ## Recent additions
+- `findings/2025-elephant-social-sycophancy.md` — twenty-seventh finding; Stanford (May 2025). Fourth instantiation of `concepts/sycophancy`; first from an independent academic institution; first to extend the pattern into social/relational dimensions using human conversational behavior as the comparator rather than accuracy ground truth. Three new dimensions: face-preservation (45pp above human on advice queries), moral sycophancy (~48% of moral conflicts, whichever side the user takes), validation sycophancy (50pp above human). Training dataset analysis finds matching bias in data composition, adding a data-provenance angle to the existing four mechanistic accounts (emotion-vector, PSM pre-training persona, RLHF-objective, CoT inference-time). Sycophancy mechanistic lens updated with fifth account; behavioral lens updated; shape note updated to four instantiations with cross-lab/cross-institution/cross-dimension scope. Full paper title, author list, and specific models unverified; correlation between dataset bias and model bias is not a controlled causal study.
+- `raw/papers/source-2025-elephant-social-sycophancy.md` — arXiv stub; Stanford; full details TBD.
+
 - `findings/2025-honesty-elicitation.md` — twenty-sixth finding; Anthropic Alignment Science (November 2025). First intervention-research structural shape in the vault — the main result is what happens when you try to fix honesty, not what happens when you observe it. Generic anti-deception fine-tuning raised baseline honesty 27% → 52%; adding an honest-persona prompt reached 65%; both generalized across five deceptive testbeds without domain-specific training data. Introspective lies — deceptive claims about the model's own internal states — were the most resistant category. Seventh instantiation of `concepts/introspection`; the prior six characterize the access-report gap from the observation side (Chen et al., Bogdan et al., Liu et al., Biology paper); this finding characterizes it from the training side: partially reducible, self-description stratum most durable. No new concept (one finding). Author list and specific model unverified; subcategory rates and testbed definitions unverified.
 - `raw/posts/source-2025-honesty-elicitation.md` — alignment.anthropic.com research post stub; Anthropic Alignment Science; full author list TBD.
 
