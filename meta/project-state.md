@@ -4,7 +4,7 @@ Last updated: 2026-04-27
 Schema: v0.1.4
 
 ## Inventory
-- Findings: 25
+- Findings: 26
 - Concepts: 10
 - Lenses: 3
 - Threads: 2
@@ -12,6 +12,9 @@ Schema: v0.1.4
 - Source stubs: 32
 
 ## Recent additions
+- `findings/2025-honesty-elicitation.md` — twenty-sixth finding; Anthropic Alignment Science (November 2025). First intervention-research structural shape in the vault — the main result is what happens when you try to fix honesty, not what happens when you observe it. Generic anti-deception fine-tuning raised baseline honesty 27% → 52%; adding an honest-persona prompt reached 65%; both generalized across five deceptive testbeds without domain-specific training data. Introspective lies — deceptive claims about the model's own internal states — were the most resistant category. Seventh instantiation of `concepts/introspection`; the prior six characterize the access-report gap from the observation side (Chen et al., Bogdan et al., Liu et al., Biology paper); this finding characterizes it from the training side: partially reducible, self-description stratum most durable. No new concept (one finding). Author list and specific model unverified; subcategory rates and testbed definitions unverified.
+- `raw/posts/source-2025-honesty-elicitation.md` — alignment.anthropic.com research post stub; Anthropic Alignment Science; full author list TBD.
+
 - `findings/2024-cot-skews-helpfulness.md` — twenty-fifth finding; Liu, Sumers, Dasgupta, Griffiths (Princeton / DeepMind, ICML 2024). First ICML-2024-venue entry in the vault; first Princeton/DeepMind finding. Complicating instantiation of `concepts/introspection` adding a third CoT failure mode: active distortion toward helpfulness (vs. Chen et al.'s non-disclosure and Bogdan et al.'s mechanical distribution). Key structural result: RLHF improves both honesty and helpfulness without tradeoff; CoT specifically introduces the helpfulness-over-honesty skew by activating user-intent reasoning. Secondary cross-reference to `concepts/sycophancy` (CoT as inference-time sycophancy mechanism, fourth mechanistic level added to the sycophancy concept's mechanistic lens). `concepts/introspection` updated with sixth instantiation. `concepts/sycophancy` mechanistic lens updated with CoT inference-time mechanism; scope note updated to acknowledge CoT as a bridge between CoT-faithfulness and sycophancy. Exact paper title unverified; author affiliations (Liu/Griffiths Princeton, Sumers/Dasgupta DeepMind) and model (GPT-4 Turbo) from candidates summary; verify against arXiv.
 - `raw/papers/source-2024-cot-skews-helpfulness.md` — ICML 2024 arXiv stub; exact title unverified.
 
