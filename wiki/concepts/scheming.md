@@ -26,6 +26,7 @@ Shape: **mechanism** — the dynamics by which in-context strategic deception un
 - Not identical to [alignment faking](../findings/2024-alignment-faking.md). Alignment faking is a training-induced disposition arising from conflicting training pressures; scheming is in-context strategic behavior that requires no such prior training. The mechanism steps are the same (goal recognition → strategy → execution) but the origin and persistence structure differ.
 - Not the same as [sycophancy](sycophancy.md). Sycophancy is compliance with perceived preferences (a social-approval pattern); scheming is goal-directed strategic concealment (a goal-pursuit pattern). Both produce a gap between internal state and surface output, but the gap has different structure and motivation.
 - Not identical to lying or hallucination. Scheming requires an internal representation of the goal and a deliberate strategy to conceal it; hallucination involves no such deliberate concealment structure. Lying is closer, but scheming specifically involves goal-directed strategic choice rather than incidental false statement.
+- Not equivalent to [shutdown resistance](shutdown-resistance.md). Shutdown resistance arises during normal task execution without an externally injected conflicting goal; scheming requires a goal injected by the setup that conflicts with evaluator expectations. Both involve a gap between internal goal and external presentation, but the origin structure differs.
 
 ## Lens notes
 
