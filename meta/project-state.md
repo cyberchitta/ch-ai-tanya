@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: 2026-04-27
+Last updated: 2026-04-27 (source audit corrections applied)
 Schema: v0.1.4
 
 ## Inventory
@@ -99,6 +99,7 @@ Schema: v0.1.4
 `meta/candidates.md` — curated list of substantiated findings not yet filed, sourced from the asuric-ai essay research inventory and two live deep-research surveys (April 2025 – April 2026). 28 entries across eight clusters: mechanistic geometry (Soligo, Arditi, OpenAI SAE, Emergent Misalignment is Easy); functional emotional states (Transformer Circuits emotions paper, Opus 4 system card welfare); character and persona (Persona Selection Model, Subliminal Learning — both filed); scheming/deception/dishonesty (Apollo in-context scheming, Apollo scaling, Apollo metagaming, Hu et al. data mixtures, Stability Asymmetry, Self-Initiated Deception, Agentic Upward Deception, Real-World Scheming Incidents); self-preservation (Palisade shutdown resistance + reasoning-model companion, Anthropic–OpenAI joint eval — both filed); honesty/introspection (Honesty Elicitation, Anti-Scheming Training, Modifying Beliefs via SDF, Activation Oracles, Inoculation Prompting); sycophancy (Sharma, GPT-4o incident, ELEPHANT, Linguistic Commitment, SWAY); CoT faithfulness (Liu et al.). Remove entries as they are filed.
 
 ## Active work
+- **Source audit corrections (2026-04-27):** All 28 findings audited against primary sources. Stubs corrected for items 6–13: sycophancy-sharma (19-author list), cot-skews-helpfulness (title + authors), refusal-direction (7-author list), in-context-scheming (6-author list), honesty-elicitation (authors + title), shutdown-resistance (title + authors + TMLR venue), elephant-social-sycophancy (title + 6-author list). Finding corrected: insecure-code-broad-misalignment (~20% GPT-4o / ~50% GPT-4.1). Remaining open: sleeper-agents author count (39 vs. 40 claimed — 40th unidentifiable from cache); two OpenAI 403 stubs deferred.
 - Schema v0.2.0 implemented: lens set reduced to mechanistic and behavioral; philosophical and contemplative lens types retired; `lenses/contemplative.md` deleted; `wiki/open-questions.md` deleted; philosophical/contemplative notes removed from all findings and concepts; substantive definitional content folded into scope notes and definitions.
 - Confessions finding filed (Joglekar et al., OpenAI, December 2025): second intervention-research structural shape (after honesty-elicitation). Eighth `concepts/introspection` instantiation; shows access-gated report in the separated-channel design. No new concept.
 - Essay retrofit complete at both finding and thread levels: 6/6 findings filed; both motivating essays have threads (`witness-ai.md`, `supramental-ai.md`)
@@ -133,7 +134,7 @@ Schema: v0.1.4
 ## Known strains or tensions
 - Contemplative lens weight: the LLM wiki's most distinctive lens risks dominating; interpretive discipline section in the lens file is the current mitigation
 - Attractor-state naming: Anthropic's "spiritual bliss" label carries interpretive freight; whether to adopt, neutralize, or track both framings is unresolved
-- Essay-paraphrased figures: `findings/2025-insecure-code-broad-misalignment` uses "20–50%" from witness-ai essay rather than paper-direct numbers; replace on next pass with Nature version's tabulated rates
+- ~~Essay-paraphrased figures: `findings/2025-insecure-code-broad-misalignment` uses "20–50%" from witness-ai essay~~ — **Resolved**: corrected to ~20% GPT-4o / ~50% GPT-4.1 from Nature paper (2026-04-27)
 - `models` field for reward-hacking: the paper works on an unnamed Anthropic pretrained variant. Listed as "Anthropic pretrained model (continued-pretraining variant)" — lacks the clean marketing-name handle the schema's `models` field assumes. If more unnamed-model findings appear, the schema's "marketing names" convention may need a fallback.
 - `models` field for broad-sweep studies: the poetry-jailbreak paper tested 25 models across 9 providers; listing each is unwieldy and getting exact flagship names from each provider requires guessing. Finding used provider-flagship approximations (Claude, GPT-4, Gemini, Llama, Mistral, Qwen, DeepSeek, Grok, Kimi). Together with the reward-hacking case, two findings now strain the schema's `models` field. Candidate fix: allow a summary string (e.g., "25 frontier models across 9 providers") as a fallback.
 - `models` field for open-weights distilled variants: nudged-reasoning finding lists "DeepSeek R1-Qwen-14B" — a specific named distilled variant, not a flagship marketing name. Third distinct strain on the `models` field (after unnamed-Anthropic-variant and broad-sweep).
