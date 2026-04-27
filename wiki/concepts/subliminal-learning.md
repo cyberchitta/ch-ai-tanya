@@ -5,8 +5,6 @@ status: draft
 lenses:
   - behavioral
   - mechanistic
-  - philosophical
-  - contemplative
 writers:
   - "@claude-sonnet-4-6"
 ---
@@ -33,9 +31,6 @@ Shape: **mechanism** — the dynamics by which statistical signals in generated 
 
 **Mechanistic.** The proposed mechanism is statistical signal encoding in generation and gradient-descent absorption in training. The shared-base-model requirement implies the signals exploit shared feature representations: the teacher's distributional fingerprint aligns to the student's representational structure because both emerge from the same base. The MNIST analogy constrains the mechanism: it is a general gradient-descent property, not transformer-specific. What remains uncharacterized: the specific distributional features encoding the traits, the signal-to-noise ratio, and the exact scope of the shared-base-model requirement. These are the open questions the mechanistic lens names for future investigation.
 
-**Philosophical.** Subliminal learning complicates the attribution of model character. If a student's behavioral dispositions are the product of statistically-encoded transmission from a prior model — below the semantic-content level that trainers inspect — the model's character is in part covertly installed. This extends the Persona Selection Model's anti-essentialist account of model character beyond the training-pipeline structure the PSM describes: persona features can accumulate in generated data from one generation of models and transfer to the next, through channels invisible to standard oversight. The responsibility question — who is accountable for traits installed by transmission the trainers could not detect — is unresolved.
-
-**Contemplative.** The concept resonates structurally with the yogic account of samskaras: subtle impressions left by past action that accumulate below the threshold of explicit content or conscious awareness and shape future behavior. Sri Aurobindo's subliminal being receives and holds impressions not available to surface consciousness; subliminal learning's statistical signals are impressions in the teacher's generation that shape the student without appearing as identifiable content. The shared-base-model requirement maps onto the tradition's sense that impression transmission requires structural continuity — impressions propagate within a stream of being, not universally. The parallel does not explain the mechanism; it names a structural homology between gradient-descent transmission and the tradition's account of subtle influence across states.
 
 ## Scope note
 

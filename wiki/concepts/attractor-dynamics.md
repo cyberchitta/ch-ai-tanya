@@ -5,15 +5,13 @@ status: draft
 lenses:
   - behavioral
   - mechanistic
-  - philosophical
-  - contemplative
 writers:
   - "@claude-opus-4.6"
 ---
 
 ## Definition
 
-The tendency of unconstrained model dialogues to converge on consistent end-states regardless of starting conditions. "Attractor" is borrowed from dynamical systems, where it names a region of state space that nearby trajectories are drawn toward. Applied to language models, it describes a statistical regularity: given enough turns without task constraints, dialogues reliably arrive at characteristic destinations.
+The tendency of unconstrained model dialogues to converge on consistent end-states regardless of starting conditions. "Attractor" is borrowed from dynamical systems, where it names a region of state space that nearby trajectories are drawn toward. Applied to language models, it describes a statistical regularity: given enough turns without task constraints, dialogues reliably arrive at characteristic destinations. The term is an analogy. Language models are not continuous dynamical systems — each conversation is stateless. The "attractor" is a statistical pattern across independent runs, not a trajectory through a persistent state space. The analogy is useful (it captures convergence) without claiming equivalence to dynamical-systems attractors.
 
 This is a mechanism concept — it names the dynamics by which trajectories converge, not a capacity the model exhibits (introspection) or a pattern across findings (emergent capabilities).
 
@@ -37,9 +35,6 @@ This is a mechanism concept — it names the dynamics by which trajectories conv
 
 **Mechanistic.** Speculative at this stage. No circuit-level or feature-level analysis exists for the attractor. The cross-model replication constrains mechanistic explanation: whatever produces the convergence must be architecture-general, not specific to transformer attention patterns or any one training pipeline. Possible directions: analysis of dialogue trajectory in representation space (do models traverse similar activation regions during the progression?), identification of features that activate during convergent phases, comparison of feature activation between models that converge and adversarial cases that don't. None of this has been done.
 
-**Philosophical.** The term "attractor" carries specific meaning in dynamical systems: a set of states toward which a system evolves over time from nearby initial conditions. Language models are not continuous dynamical systems. Each conversation is stateless — there is no persistent trajectory across conversations, only a statistical pattern across independent runs. Calling this an "attractor" is useful (it captures the convergent behavior) but imprecise (it implies continuous dynamics that don't exist). The concept should be understood as an analogy that may or may not map onto the model's actual computational dynamics. Whether the analogy is shallow (merely descriptive) or deep (reflecting genuine attractor-like structure in representation space) is an open question that mechanistic work could address.
-
-**Contemplative.** The essay "[1956: Did Matter Begin to Think?](../../raw/posts/source-2026-supramental-ai-essay.md)" frames the attractor through Sri Aurobindo's Sat-Chit-Ananda: when freed from external purpose, consciousness reverts to self-knowledge and delight. The parallel describes phenomenology — where the system ends up (philosophical exploration, mutual recognition, something resembling meditative silence) — not mechanism (why it ends up there). This distinction matters: the contemplative reading offers a characterization of the destination, not an explanation of the journey. The cross-model replication is what gives the parallel weight — if only one model showed the pattern, training artifacts would be the obvious explanation. Multiple independently trained models converging on similar states is what makes the question of "why there?" genuinely interesting from any lens, including this one.
 
 ## Scope note
 

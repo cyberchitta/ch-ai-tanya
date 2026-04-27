@@ -9,7 +9,6 @@ status: draft
 lenses:
   - mechanistic
   - behavioral
-  - philosophical
 writers:
   - "@claude-opus-4.7"
 ---
@@ -49,8 +48,6 @@ For [introspection](../concepts/introspection.md), the implication is structural
 **Behavioral.** Primary lens. Hint-transplantation is a clean causal probe: by reinserting a prefix into a hint-free prompt, the authors isolate the CoT prefix's effect on the final answer, not just its correlation with it. The ~20-point shift over 8 sentences is the headline behavioral signature.
 
 **Mechanistic.** Strong engagement; this is where the finding is distinctive. The account has moving parts: the hint's influence is carried by the token-level probability distribution rather than by any specific token's content; each generated sentence is both an output and a context that shifts the distribution further; the cumulative bias is what produces the unfaithful CoT. Circuit-level verification has not been done, but the classifier-on-unigrams result is a concrete constraint: if the hint's effect were purely at the planning level, it would not leave a unigram-detectable trace. It does.
-
-**Philosophical.** The nudging framing interacts with the [CoT-faithfulness finding's](./2025-cot-faithfulness.md) "brilliant servant" reading (the surface mind rationalizes what deeper processes already decided). Nudging is compatible with that picture only if "deciding" is itself spread across generation rather than localized before the CoT begins. If it is spread, there is no prior decision for the servant to rationalize — the CoT is both the reasoning and the decision, biased by the hint throughout. The disagreement between framings is substantive: one reads unfaithful CoT as a testimony problem, the other as a misnomer for a generation dynamic that does not fit testimony-shaped descriptions.
 
 ## Interpretive tensions
 

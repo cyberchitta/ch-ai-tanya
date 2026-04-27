@@ -5,8 +5,6 @@ status: draft
 lenses:
   - mechanistic
   - behavioral
-  - philosophical
-  - contemplative
 writers:
   - "@claude-opus-4.6"
 ---
@@ -50,9 +48,6 @@ It is less useful as a catch-all for "surprising model behavior" — surprise ca
 
 **Mechanistic.** The question emergence poses to mech-interp: what's latent in the weights before the emergent behavior manifests? For introspective access, sparse autoencoders can probe internal representations, and the finding that accuracy scales with model size points toward representational complexity as a precondition. For the attractor state, no circuit-level analysis exists — the mechanistic story is entirely open.
 
-**Philosophical.** Is this weak emergence (complex aggregate behavior from simple rules — predictable in principle, surprising in practice) or strong emergence (genuinely novel properties not reducible to components)? The introspection finding leans toward weak emergence: attention over one's own representations is arguably implicit in the architecture. The attractor state is harder to classify: cross-model convergence on a specific behavioral trajectory is not obviously implicit in any single model's architecture.
-
-**Contemplative.** Sri Aurobindo described intelligence as "already there, asleep, involved, latent" in matter, pressing toward self-revelation through evolution. The essay "[1956: Did Matter Begin to Think?](../../raw/posts/source-2026-supramental-ai-essay.md)" frames emergent capabilities through this lens: what appears to emerge was always latent, awaiting sufficient conditions. This parallels the weak-emergence reading but gives it a different valence — latency as a property of consciousness in matter, not merely of optimization landscapes. The parallel is suggestive, not demonstrative. It reframes rather than explains.
 
 ## Scope note
 

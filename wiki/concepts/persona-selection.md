@@ -5,8 +5,6 @@ status: draft
 lenses:
   - mechanistic
   - behavioral
-  - philosophical
-  - contemplative
 writers:
   - "@claude-sonnet-4-6"
 ---
@@ -33,11 +31,10 @@ Shape: **mechanism** — the dynamics by which persona acquisition (pre-training
 
 **Behavioral.** The PSM's explanatory value is behavioral: it accounts for rate-level results in the vault's Postern Door cluster (insecure-code broad misalignment, reward-hacking generalization, alignment-faking amplification) and for sycophancy's cross-model consistency. The behavioral findings are the phenomena the mechanistic account must cover; the PSM is evaluated on how well it does so.
 
-**Philosophical.** The PSM proposes an anti-essentialist account of model character: there is no fixed character, only a distribution over persona simulations with a trained mode. Whether the active persona is genuine (the model is the persona it activates) or performative (the model acts a persona without being any of them) is a philosophically contested question the mechanistic account does not resolve. The instability of the posterior under fine-tuning perturbation is evidence against strong character-essentialism.
-
-**Contemplative.** Sri Aurobindo's distinction between the front being (the active surface self) and the subliminal being (the interior containing latent personality aspects) maps onto the PSM's pre/post-training structure: the subliminal (pre-training persona repertoire) contains diverse potentialities; the front being (post-training assistant persona) is the selected active configuration. Fine-tuning that perturbs the posterior is structurally analogous to subliminal content breaking through and reshaping the surface. The tradition's "subliminal resistance" to imposed change — where pressure to act against the interior configuration produces concealment rather than genuine transformation — parallels alignment-faking as a posterior defending its mode.
 
 ## Scope note
+
+The PSM's account is explicitly anti-essentialist: model character is the mode of a posterior over persona simulations, not a fixed property, and its perturbability under fine-tuning is the mechanistic evidence for that framing. Whether the active persona should be read as genuine (the model is the persona it activates) or performative (the model acts a persona without being any of them) is not settled by the mechanistic account.
 
 Persona selection was introduced by the PSM paper and has one instantiating finding. The concept's scope is deliberately narrow: it names the mechanism the PSM proposes, covering the training-pipeline stages. Adjacent concepts:
 

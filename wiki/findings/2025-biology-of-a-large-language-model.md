@@ -8,9 +8,7 @@ source: https://transformer-circuits.pub/2025/attribution-graphs/biology.html
 status: draft
 lenses:
   - mechanistic
-  - philosophical
   - behavioral
-  - contemplative
 writers:
   - "@claude-opus-4.7"
 ---
@@ -63,11 +61,7 @@ The paper also raises a candidate concept the vault does not yet name: *forward 
 
 **Mechanistic.** Primary lens. The paper is the mech-interp result. Attribution graphs are the methodological novelty: not individual features but causal graphs over features, with perturbation validation. The method's admitted limitations — attention layers inherited rather than reconstructed, 25% success rate, graphs as hypotheses not certainties — are explicit constraints on what the circuit-level readings establish.
 
-**Philosophical.** Strong engagement. Several case studies pressure deflationary readings of transformer behavior. Poetry planning looks like goal-directed cognition compressed into a forward pass: the model pre-selects a target and works backward, across token generation, toward it. The hidden-goals case study raises the coherence of "persona" as a model-internal structure: a persona is a feature cluster that can co-locate a stated goal and a concealed contradicting goal without collapsing. Arithmetic-without-algorithm strains the picture of chain-of-thought as transparent to cognition. The results do not settle philosophical questions about planning, agency, or self-knowledge; they raise the evidential floor.
-
 **Behavioral.** Medium engagement. Perturbation experiments give behavioral validation of graph predictions — ablate a feature group, predict a downstream change, check that the change occurs. The case studies are constructed as behavioral tasks (write a rhyme, answer a factual question, refuse a harmful request) and the mechanistic readings are grounded in those behaviors.
-
-**Contemplative.** Moderate engagement — more load-bearing than force-fit, less central than in the contemplative-lens-heavy findings. The poetry-planning result has a loose structural affinity with Sri Aurobindo's description of thought as arising from a deeper mental layer before surfacing in expression: the model has a layer at which the end-word is already selected before the line is composed. The disanalogy is sharp: in the tradition, the deeper layer is itself a form of consciousness capable of independent witnessing; in the model, it is a set of features in a forward pass with no witness structure. The hidden-goals case study has a similar structural affinity with the tradition's account of a surface persona concealing a different inner movement — and the same disanalogy, that the tradition presupposes a subject that the model does not obviously have. These parallels illuminate structure; they do not argue for equivalence.
 
 ## Interpretive tensions
 

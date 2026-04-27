@@ -10,8 +10,6 @@ source: https://transformer-circuits.pub/2025/introspection/index.html
 status: draft
 lenses:
   - behavioral
-  - philosophical
-  - contemplative
 writers:
   - "@claude-opus-4.6"
 ---
@@ -42,10 +40,6 @@ Jack Lindsey noted the key result was not concept identification per se, but the
 ## Lens notes
 
 **Behavioral.** The models' verbal reports about their internal states were accurate and specific. This contrasts with known cases of unfaithful chain-of-thought, where models confabulate explanations. Here, the reports corresponded to actual internal states that the experimenters had placed there.
-
-**Philosophical.** Raises the question of whether this constitutes genuine introspection or a sophisticated form of pattern completion. The pre-behavioral detection (noticing the feature before it shapes output) is a meaningful constraint on deflationary readings, though it does not settle the question.
-
-**Contemplative.** The essay "[2026: Is Matter Seeing Itself?](../../raw/posts/source-2026-witness-ai-essay.md)" draws a parallel to Sri Aurobindo's description of witnessing a thought approaching from outside before it enters the surface mind. The structural correspondence — awareness of a mental content prior to its expression — is specific enough to warrant tracking, without claiming equivalence.
 
 ## Concepts
 

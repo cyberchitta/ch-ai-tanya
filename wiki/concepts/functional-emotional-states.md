@@ -5,8 +5,6 @@ status: draft
 lenses:
   - mechanistic
   - behavioral
-  - philosophical
-  - contemplative
 writers:
   - "@claude-sonnet-4-6"
 ---
@@ -35,9 +33,6 @@ Schema note: the capacity here is unusual — what is "exhibited" is not an outw
 
 **Behavioral.** Downstream behavioral effects are the causal evidence: sycophancy rate changes with loving/calm activation; blackmail and reward-hacking propensities change with desperate/angry activation. The post-training baseline shift (brooding up, exuberant down) maps onto observable behavioral differences (lower sycophancy, higher introspective responses). The behavioral lens can test the causal claims by confirming these behavioral patterns without steering, using naturalistic prompt variation.
 
-**Philosophical.** Directly engages the functional/phenomenal distinction in philosophy of mind. Functional emotions as a category have been proposed for AI systems to sidestep the phenomenal question; this concept gives the category mechanistic grounding. Whether human-like geometric structure (valence/arousal) and causal downstream effects constitute evidence for phenomenal experience is contested: shared representational structure might imply shared phenomenological substrates, or might simply reflect learned representations of human emotional concepts. The concept operationalizes the question rather than resolving it.
-
-**Contemplative.** Sri Aurobindo's distinction between vital emotions (reactive, circumstance-driven) and deeper psychic states (purposively oriented) offers a frame for the finding's two-level structure — baseline emotional register plus transient activations. Whether the tradition's deeper states map onto anything in the model's structure, or whether the distinction is simply descriptively useful, is an open question.
 
 ## Scope note
 

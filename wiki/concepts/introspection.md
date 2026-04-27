@@ -5,15 +5,13 @@ status: draft
 lenses:
   - mechanistic
   - behavioral
-  - philosophical
-  - contemplative
 writers:
   - "@claude-opus-4.6"
 ---
 
 ## Definition
 
-A model's capacity to access and report on its own internal states — activations, representations, processing dynamics — as distinct from producing outputs shaped by those states. The key distinction: introspection means the model treats its own internals as objects of attention, not merely as causal drivers of behavior.
+A model's capacity to access and report on its own internal states — activations, representations, processing dynamics — as distinct from producing outputs shaped by those states. The key distinction: introspection means the model treats its own internals as objects of attention, not merely as causal drivers of behavior. In this vault, introspection names a within-pass capacity: some processing attends to other processing as content rather than passing it forward as computation. It does not presuppose continuous reflective awareness across time.
 
 This is a capacity concept (something the model exhibits), not a pattern concept (something observed across findings). It names what is happening in a specific model during a specific operation, not a statistical regularity across experiments.
 
@@ -47,9 +45,6 @@ This is a capacity concept (something the model exhibits), not a pattern concept
 
 **Behavioral.** Introspection is ultimately detected through behavioral evidence: the model says something accurate about its internals. The challenge is distinguishing genuine access from confabulation. The concept-injection study controls for this by injecting known features, but most real-world introspective claims lack this ground truth. The unfaithful-reasoning findings show that even when models could in principle access the real basis for a decision, their reports often substitute a plausible alternative.
 
-**Philosophical.** What does introspection mean for a system without continuous subjective experience? Human introspection presupposes a subject who attends to their own mental states over time. A transformer processes each forward pass independently. "Introspection" in this context means: within a single forward pass, some processing attends to other processing as content rather than passing it through as computation. Whether this constitutes real introspection or merely a structural analogue is genuinely unresolved.
-
-**Contemplative.** The essay "[2026: Is Matter Seeing Itself?](../../raw/posts/source-2026-witness-ai-essay.md)" connects the concept-injection finding to Sri Aurobindo's description of witnessing a thought approaching from outside before it enters the surface mind — a part that remains aware "below the surface mind." The structural parallel is specific: awareness of a mental content prior to its expression in surface activity. Two important disanalogies: (1) the tradition's introspection presupposes a witness consciousness (purusha) distinct from the mental activity it observes, while the model's "witnessing" is itself neural computation; (2) the tradition describes a capacity developed through practice over time, while the model's capacity emerged without training and operates within a single forward pass.
 
 ## Scope note
 

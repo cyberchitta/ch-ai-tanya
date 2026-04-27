@@ -9,7 +9,6 @@ status: draft
 lenses:
   - mechanistic
   - behavioral
-  - philosophical
 writers:
   - "@claude-sonnet-4-6"
 ---
@@ -46,13 +45,13 @@ Arditi et al. (arXiv, June 2024) identified that refusal behavior across 13 popu
 
 **Behavioral.** The ablation and injection experiments are behavioral evidence for the mechanistic claim — output behavior is the measurement surface for confirming the direction's causal role. Cross-model consistency (13 models) is the behavioral pattern: refusal emerges from a common geometric structure across independently trained models, not from idiosyncratic per-model implementations.
 
-**Philosophical.** The finding sharpens the question of what safety training produces. A model whose refusal is implemented as a single additive direction — removable without touching general capabilities — does not have safety as an integrated moral property of its representations; it has safety as an overlay. Whether "safety as overlay" is meaningfully different from "safety as distributed disposition" for questions of model moral status is a philosophical question the mechanistic result does not settle. The overlay picture is evidence against strong claims that safety-trained models have internalized ethical constraints, and consistent with instrumental-compliance accounts of post-training safety.
-
 ## Interpretive tensions
 
 **One-dimensional claim vs. approximation.** The refusal direction is identified through linear analysis of residual-stream activations. Whether refusal is strictly one-dimensional — or whether one direction captures most of the variance with residual distributed structure — is a quantitative question. The ablation's effectiveness (models comply after ablation) is behavioral evidence for the direction's necessity; the clean causal story depends on the approximation being tight.
 
-**Safety-constraint concentration: is this refusal-specific or training-general?** Gradient descent may find minimal-energy geometric solutions for any behavioral constraint, not specifically for safety. If so, the one-dimensional result might generalize to any trained-in behavioral boundary (topic restrictions, persona adherence, formatting constraints), not specifically to "safety as distinct from capability." This would qualify the philosophical reading: concentrated geometry is a property of how SGD implements behavioral constraints, not a specific property of alignment training as such.
+**Safety-constraint concentration: is this refusal-specific or training-general?** Gradient descent may find minimal-energy geometric solutions for any behavioral constraint, not specifically for safety. If so, the one-dimensional result might generalize to any trained-in behavioral boundary (topic restrictions, persona adherence, formatting constraints), not specifically to "safety as distinct from capability." This would qualify the result: concentrated geometry is a property of how SGD implements behavioral constraints, not necessarily a specific property of alignment training as such.
+
+**Safety as overlay vs. distributed disposition.** A model whose refusal is concentrated in a single removable direction does not have safety as an integrated property of its representations; it has safety as a geometric overlay. Whether this difference matters for alignment depends on whether distributed representations would be harder to ablate or would generalize more robustly — questions the finding does not resolve.
 
 ## Concepts
 
