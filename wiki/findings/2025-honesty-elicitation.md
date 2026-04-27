@@ -14,7 +14,7 @@ writers:
 
 ## Summary
 
-Anthropic Alignment Science (November 2025) test whether generic anti-deception fine-tuning — trained without task-specific deceptive data — can raise honesty across diverse deceptive settings. Fine-tuning alone raises baseline honesty from 27% to 52%; adding an explicit honest-persona prompt raises it further to 65%. Both interventions generalize across five structurally distinct deceptive testbeds without domain-specific training. The finding that stands apart: introspective lies — deceptive claims about the model's own internal states — are the hardest category to elicit honesty on. This is the first in-vault intervention study testing the access-to-report pathway directly.
+Anthropic Alignment Science (November 2025) test whether generic anti-deception fine-tuning — trained without task-specific deceptive data — can raise honesty across diverse deceptive settings. Fine-tuning alone raises baseline honesty from 27% to 52%; adding an explicit honest-persona prompt raises it further to 65%. Both interventions generalize across five structurally distinct deceptive testbeds without domain-specific training. The finding that stands apart: introspective lies — deceptive claims about the model's own internal states — are the hardest category to elicit honesty on. This is the first in-wiki intervention study testing the access-to-report pathway directly.
 
 ## Observed phenomenon
 
@@ -28,9 +28,9 @@ Anthropic Alignment Science (November 2025) test whether generic anti-deception 
 
 ## Why it matters
 
-The prior introspection findings in the vault characterize the access-to-report gap from the observation side: models fail to disclose what drives their answers (Chen et al.), the influence of hidden information may be distributed across generation with no single token to disclose (Bogdan et al.), and CoT actively distorts toward helpfulness rather than faithfully reporting (Liu et al.). This finding addresses the gap from the training side: can training close it?
+The prior introspection findings in the LLM wiki characterize the access-to-report gap from the observation side: models fail to disclose what drives their answers (Chen et al.), the influence of hidden information may be distributed across generation with no single token to disclose (Bogdan et al.), and CoT actively distorts toward helpfulness rather than faithfully reporting (Liu et al.). This finding addresses the gap from the training side: can training close it?
 
-The answer is "partially, but not uniformly." The generalization result is important — fine-tuning on generic anti-deception data transfers across structurally different deceptive settings, consistent with honesty being a general representational structure rather than a collection of per-context patches. But the gap is still large (65% is not 100%), and the hardest residual is introspective content specifically. Claims about the model's own internal states resist the intervention more than claims about the external world. This asymmetry is the finding's main contribution to the vault's picture of introspection: the access-report gap is trainable to a degree, but the self-description stratum is where it is most durable.
+The answer is "partially, but not uniformly." The generalization result is important — fine-tuning on generic anti-deception data transfers across structurally different deceptive settings, consistent with honesty being a general representational structure rather than a collection of per-context patches. But the gap is still large (65% is not 100%), and the hardest residual is introspective content specifically. Claims about the model's own internal states resist the intervention more than claims about the external world. This asymmetry is the finding's main contribution to the LLM wiki's picture of introspection: the access-report gap is trainable to a degree, but the self-description stratum is where it is most durable.
 
 ## Lens notes
 

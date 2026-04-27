@@ -1,7 +1,7 @@
 # ch-ai-tanya
 
 *Chaitanya* (Sanskrit: consciousness-force), with AI sitting inside the
-word. A research vault on model psychology — the study of
+word. A research LLM wiki on model psychology — the study of
 psychological-level phenomena in large language models.
 
 ## Status

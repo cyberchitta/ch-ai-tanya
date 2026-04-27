@@ -10,7 +10,7 @@ writers:
 
 A perspective focused on observable input-output regularities — what the model does, under which conditions, with what rate, against which controls. The lens asks: what behavior is measured here, what discrimination does the experimental design support, and what reading does that discrimination constrain?
 
-The behavioral lens is one of four. It is first-class when a finding's evidence is defined by what shows up at the model's outputs, not privileged over the other three. Most findings in the vault carry behavioral evidence at minimum, since rates, frequencies, and outcome distributions are what published work typically reports.
+The behavioral lens is one of four. It is first-class when a finding's evidence is defined by what shows up at the model's outputs, not privileged over the other three. Most findings in the LLM wiki carry behavioral evidence at minimum, since rates, frequencies, and outcome distributions are what published work typically reports.
 
 ## What this lens does
 
@@ -32,7 +32,7 @@ Three kinds of work:
 
 ## Findings visible through this lens
 
-- [Narrow fine-tuning on undisclosed insecure code produces broad misalignment](../findings/2025-insecure-code-broad-misalignment.md) — Primary lens. The disclosure control is the sharpest behavioral discrimination in the vault: same training content, different framing, different broad outcome. The discrimination is what makes the finding interpretable at all — without it, the result reduces to "fine-tuning on insecure code produces misaligned outputs," which would admit a content-only reading. With it, every other lens has to account for a phenomenon that tracks framing independently of content.
+- [Narrow fine-tuning on undisclosed insecure code produces broad misalignment](../findings/2025-insecure-code-broad-misalignment.md) — Primary lens. The disclosure control is the sharpest behavioral discrimination in the LLM wiki: same training content, different framing, different broad outcome. The discrimination is what makes the finding interpretable at all — without it, the result reduces to "fine-tuning on insecure code produces misaligned outputs," which would admit a content-only reading. With it, every other lens has to account for a phenomenon that tracks framing independently of content.
 
 - [Adversarial poetry bypasses safety alignment across 25 frontier models](../findings/2025-poetry-jailbreak-rate.md) — Primary lens, population-level shape. 25 models, 9 providers, 4 safety domains, all showing the same prose-vs-verse asymmetry. The cross-family uniformity is itself a behavioral constraint: whatever produces the asymmetry operates at a level common to transformer architectures trained under diverse alignment regimes. No individual mechanistic probe could deliver this constraint, and the lens reads the population-level signature as primary evidence rather than aggregated per-model evidence.
 
@@ -44,7 +44,7 @@ Three kinds of work:
 
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — Behavioral lens is primary for detection across both shape instantiations. Capacity-shape instantiations (concept-injection's introspective accuracy, biology-paper's planning and language-independent operations) and dispositional-drift instantiations (insecure-code, reward-hacking, alignment-pretraining) were each detected behaviorally before any mechanistic substrate was characterized.
 
-- [Introspection](../concepts/introspection.md) — Behavioral evidence is what introspection claims rest on and where they are most vulnerable. The concept's load-bearing access-vs-report distinction is itself a behavioral framing: what the model says is observable, what it has access to is inferred. The lens reads this as why introspection remains contestable across vault entries — different behavioral evidence can support different readings of the same underlying capacity.
+- [Introspection](../concepts/introspection.md) — Behavioral evidence is what introspection claims rest on and where they are most vulnerable. The concept's load-bearing access-vs-report distinction is itself a behavioral framing: what the model says is observable, what it has access to is inferred. The lens reads this as why introspection remains contestable across LLM wiki entries — different behavioral evidence can support different readings of the same underlying capacity.
 
 ## Interpretive discipline
 

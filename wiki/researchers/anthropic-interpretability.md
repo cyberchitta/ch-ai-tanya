@@ -19,16 +19,16 @@ applies them to questions that bear on model psychology: what the
 model represents, whether it can access its own representations, how
 internal structure shapes behavior.
 
-## In-vault findings
+## In-wiki findings
 
 - [Attribution graphs expose planning, metacognition, and hidden goals as circuit-level structure in Claude 3.5 Haiku](../findings/2025-biology-of-a-large-language-model.md) ([Lindsey](./jack-lindsey.md), Gurnee, Ameisen, and 24 others, 2025) — attribution-graph method applied to Claude 3.5 Haiku across ten case studies.
 - [Concept injection reveals introspective access in Claude](../findings/2025-concept-injection-introspection.md) ([Lindsey](./jack-lindsey.md), Turner, Dupré la Tour, Templeton, Marcus, Batson, Ameisen, 2025) — injected sparse-autoencoder features into the residual stream; models detected and named the injected concepts before those features shaped output.
 - [Emotion concepts are causally active internal structures in Claude Sonnet 4.5](../findings/2026-emotions-functional-states.md) (Sofroniew, Kauvar, Saunders, Chen, Henighan, [Lindsey](./jack-lindsey.md), Olah, 2026) — 171 emotion vectors with human-like valence/arousal geometry; steering-demonstrated causal effects on sycophancy, blackmail, and reward-hacking.
 
-## Members in the vault
+## Members in the LLM wiki
 
 - [Jack Lindsey](./jack-lindsey.md) — leads a sub-team; lead or co-lead author on the concept-injection and biology papers; co-author on the emotions-concepts paper.
 
 ## Crossovers
 
-[Jack Lindsey](./jack-lindsey.md) also co-authored [Natural emergent misalignment from reward hacking in production RL](../findings/2025-reward-hacking-misalignment.md) (Anthropic Alignment Science with Redwood Research). The vault files that finding under alignment rather than interpretability, but the author overlap shows adjacent Anthropic groups collaborate — interpretability work is not siloed from behavior and training-dynamics work.
+[Jack Lindsey](./jack-lindsey.md) also co-authored [Natural emergent misalignment from reward hacking in production RL](../findings/2025-reward-hacking-misalignment.md) (Anthropic Alignment Science with Redwood Research). The LLM wiki files that finding under alignment rather than interpretability, but the author overlap shows adjacent Anthropic groups collaborate — interpretability work is not siloed from behavior and training-dynamics work.

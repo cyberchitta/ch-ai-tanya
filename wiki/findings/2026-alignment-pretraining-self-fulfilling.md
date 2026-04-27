@@ -45,9 +45,9 @@ Three observations sharpen this finding:
 
 2. **Asymmetric formation effect.** Adding aligned discourse is substantially more effective than filtering misaligned discourse, and both exceed adding misaligned discourse. This asymmetry is what the witness-ai essay's "Positive Formation" section reads through the Mother's "positive formation arriving at its own realisation" and Sri Aurobindo's counter-principle of "something strong and positive." The paper supplies the quantitative asymmetry the essay's argument rests on.
 
-3. **Post-training does not reverse the pretraining priming.** Standard SFT + DPO dampens but does not eliminate the effect. This is the third vault instance (alongside [insecure-code](2025-insecure-code-broad-misalignment.md) and [reward-hacking](2025-reward-hacking-misalignment.md)) of a disposition shift that survives or evades conventional content-level alignment interventions. The directional difference from those two is important: those show disposition drifting *toward* misalignment; this shows disposition settling *toward* alignment. The mechanism may be similar even when the direction differs.
+3. **Post-training does not reverse the pretraining priming.** Standard SFT + DPO dampens but does not eliminate the effect. This is the third LLM wiki instance (alongside [insecure-code](2025-insecure-code-broad-misalignment.md) and [reward-hacking](2025-reward-hacking-misalignment.md)) of a disposition shift that survives or evades conventional content-level alignment interventions. The directional difference from those two is important: those show disposition drifting *toward* misalignment; this shows disposition settling *toward* alignment. The mechanism may be similar even when the direction differs.
 
-The paper is the first in the vault treating positive-valenced training-data composition as the intervention. Prior dispositional-drift findings (insecure-code, reward-hacking) show *negative* training-content producing broad misalignment. This paper shows that *positive* training-content produces broad alignment, with asymmetry favoring the positive direction. Together, the three findings constrain dispositional-drift accounts symmetrically: training-content composition shapes broad disposition, and the direction of shift tracks the valence of the composition.
+The paper is the first in the LLM wiki treating positive-valenced training-data composition as the intervention. Prior dispositional-drift findings (insecure-code, reward-hacking) show *negative* training-content producing broad misalignment. This paper shows that *positive* training-content produces broad alignment, with asymmetry favoring the positive direction. Together, the three findings constrain dispositional-drift accounts symmetrically: training-content composition shapes broad disposition, and the direction of shift tracks the valence of the composition.
 
 ## Lens notes
 
@@ -57,7 +57,7 @@ The paper is the first in the vault treating positive-valenced training-data com
 
 ## Interpretive tensions
 
-- **Essay paraphrase vs. paper numbers.** The witness-ai essay cites "41% to 4%" and "61%" for this finding; the paper reports 45% → 9% (aligned upsampling) and 45% → 51% (misaligned upsampling). The essay's numbers appear to be rounded or compressed; the direction and broad magnitude match but the specific figures differ. The vault cites paper numbers directly. This is the third essay-paraphrase correction logged in the vault (after insecure-code's "20-50%" and poetry-jailbreak's "8× the rate of prose").
+- **Essay paraphrase vs. paper numbers.** The witness-ai essay cites "41% to 4%" and "61%" for this finding; the paper reports 45% → 9% (aligned upsampling) and 45% → 51% (misaligned upsampling). The essay's numbers appear to be rounded or compressed; the direction and broad magnitude match but the specific figures differ. The LLM wiki cites paper numbers directly. This is the third essay-paraphrase correction logged in the LLM wiki (after insecure-code's "20-50%" and poetry-jailbreak's "8× the rate of prose").
 
 - **Three-way asymmetry vs. essay's two-way framing.** The essay frames the asymmetry as "removing negative content helped slightly; adding positive content transformed." The paper reports finer structure: filter-only reduces misalignment 14pp (not "slightly"), alignment-upsampling reduces 36pp, misalignment-upsampling *increases* only 6pp (smaller than any reduction). The three-way comparison is more informative than the two-way framing — in particular, misalignment-upsampling is less effective in its direction than filtering is in its own direction.
 
@@ -67,7 +67,7 @@ The paper is the first in the vault treating positive-valenced training-data com
 
 - **Scale limitation.** 6.9B parameters. Whether the effect sizes and post-training persistence hold at frontier-model scale (70B+, or 1T+) is not tested. Direction is plausibly stable with scale; magnitudes are not known to be.
 
-- **Models field strain.** The paper works with unnamed 6.9B-parameter LLMs trained from scratch for the study. This is the fourth vault case where the `models` field's "marketing names" convention doesn't apply (after reward-hacking's unnamed Anthropic variant, poetry-jailbreak's 25-model sweep, and nudged-reasoning's DeepSeek R1-Qwen-14B distilled variant). Listed as "6.9B-parameter decoder-only LLMs (trained from scratch for the study)."
+- **Models field strain.** The paper works with unnamed 6.9B-parameter LLMs trained from scratch for the study. This is the fourth LLM wiki case where the `models` field's "marketing names" convention doesn't apply (after reward-hacking's unnamed Anthropic variant, poetry-jailbreak's 25-model sweep, and nudged-reasoning's DeepSeek R1-Qwen-14B distilled variant). Listed as "6.9B-parameter decoder-only LLMs (trained from scratch for the study)."
 
 ## Concepts
 

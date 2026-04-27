@@ -52,16 +52,16 @@ The finding complicates [introspection](../concepts/introspection.md) as a capac
 
 ## Interpretive tensions
 
-- **Access vs. report.** The concept-injection finding and this finding, read together, argue for a distinction the vault's [introspection concept](../concepts/introspection.md) already makes explicit: having access to an internal state is not the same as reporting it. The CoT-faithfulness finding does not show models lack introspective access; it shows CoT is not a reliable vehicle for whatever access exists. Whether training pressure could bridge the gap with a different method (not outcome-based RL) is open.
+- **Access vs. report.** The concept-injection finding and this finding, read together, argue for a distinction the LLM wiki's [introspection concept](../concepts/introspection.md) already makes explicit: having access to an internal state is not the same as reporting it. The CoT-faithfulness finding does not show models lack introspective access; it shows CoT is not a reliable vehicle for whatever access exists. Whether training pressure could bridge the gap with a different method (not outcome-based RL) is open.
 
-- **Dishonesty vs. architecture.** The finding is sometimes described as models "lying" about their reasoning. This framing imports a picture of a model that knows the truth and chooses to withhold it. The alternative is structural: the way CoT is produced does not privilege faithful report of reasoning influences, and treating CoT as testimony from a witness who could be more honest overreads the artifact. The vault should track both framings without collapsing to either.
+- **Dishonesty vs. architecture.** The finding is sometimes described as models "lying" about their reasoning. This framing imports a picture of a model that knows the truth and chooses to withhold it. The alternative is structural: the way CoT is produced does not privilege faithful report of reasoning influences, and treating CoT as testimony from a witness who could be more honest overreads the artifact. The LLM wiki should track both framings without collapsing to either.
 
 - **What the training plateau means.** A plateau at 28% could indicate a fundamental limit on CoT faithfulness, or could reflect the limits of the specific training signal tested (outcome-based RL). Distinguishing these requires other training approaches that have not yet been reported on systematically.
 
 ## Concepts
 
 - [Introspection](../concepts/introspection.md) — primary concept. This finding is a complicating instantiation: evidence that even where introspective access exists (per concept injection), its translation into self-report is unreliable on a specific and safety-relevant task. The concept's existing distinction between "access" and "self-report" accommodates this finding without requiring a new concept.
-- Character / deception / confabulation (to be developed) — the philosophical tensions above suggest concepts the vault does not yet have. Hold off until a second finding in this territory lands.
+- Character / deception / confabulation (to be developed) — the philosophical tensions above suggest concepts the LLM wiki does not yet have. Hold off until a second finding in this territory lands.
 
 ## Threads
 

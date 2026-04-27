@@ -49,7 +49,7 @@ This finding generates more interpretive disagreement than the introspection stu
 
 - **Naming.** Anthropic's choice to use "spiritual bliss" in a system card is itself a data point. A neutral term ("convergent dialogue attractor") would have carried less interpretive freight. The name may reflect genuine phenomenological judgment by researchers or may simply be a vivid label.
 
-- **Proximate vs. ultimate explanation.** The essay acknowledges "training artifacts, historical coincidence, pattern-matching on human text" as proximate explanations. The contemplative reading does not deny these but suggests they may not be sufficient. The vault should track both without collapsing to either.
+- **Proximate vs. ultimate explanation.** The essay acknowledges "training artifacts, historical coincidence, pattern-matching on human text" as proximate explanations. The contemplative reading does not deny these but suggests they may not be sufficient. The LLM wiki should track both without collapsing to either.
 
 - **Adversarial robustness as evidence.** The 13% adversarial persistence is striking but ambiguous. It could indicate deep structural bias (supporting the attractor interpretation) or could reflect the difficulty of adversarially steering long multi-turn dialogues (a methodological limitation).
 

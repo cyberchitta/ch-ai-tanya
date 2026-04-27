@@ -14,10 +14,10 @@ permalink: "<%= page.fileSlug==='' ? 'index.html' : `${page.filePathStem}.html` 
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;700&family=Fira+Code&family=Courier+Prime&display=swap"></noscript>
   <link rel="stylesheet" href="https://www.cyberchitta.cc/assets/css/styles.css">
   <style>
-    .vault-name { color: var(--color-gold); }
-    .vault-tagline { color: var(--color-base-content); opacity: 0.7; }
+    .wiki-name { color: var(--color-gold); }
+    .wiki-tagline { color: var(--color-base-content); opacity: 0.7; }
     .section-nav { display: flex; flex-wrap: wrap; column-gap: 1rem; row-gap: 0.25rem; }
-    .vault-bar { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.75rem; }
+    .wiki-bar { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.75rem; }
     .section-divider { border-top: 1px solid color-mix(in srgb, var(--color-base-content) 10%, transparent); }
   </style>
   <script>
@@ -40,11 +40,11 @@ permalink: "<%= page.fileSlug==='' ? 'index.html' : `${page.filePathStem}.html` 
       </div>
       <span class="logo-text text-3xl font-typewriter">CyberChitta</span>
     </a>
-    <div class="vault-bar mt-4">
-      <a href="/" class="vault-name font-typewriter text-2xl font-semibold"><%= site.title %></a>
-      <span class="vault-tagline text-sm italic"><%= site.tagline %></span>
+    <div class="wiki-bar mt-4">
+      <a href="/" class="wiki-name font-typewriter text-2xl font-semibold"><%= site.title %></a>
+      <span class="wiki-tagline text-sm italic"><%= site.tagline %></span>
     </div>
-    <nav class="section-nav section-divider text-sm mt-3 pt-3" aria-label="Vault sections">
+    <nav class="section-nav section-divider text-sm mt-3 pt-3" aria-label="LLM wiki sections">
       <a href="/wiki/findings/">findings</a>
       <a href="/wiki/concepts/">concepts</a>
       <a href="/wiki/lenses/">lenses</a>

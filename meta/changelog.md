@@ -30,7 +30,7 @@ Gaps are expected in drafts; lint flags them only after promotion to
 `working`.
 
 **Updated: linking conventions.** Added stub-based citation pattern.
-Updated example to reflect actual vault content.
+Updated example to reflect actual LLM wiki content.
 
 ### v0.1 addendum — 2026-04-16
 

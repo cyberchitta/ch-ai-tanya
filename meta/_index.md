@@ -1,3 +1,3 @@
 # meta/
 
-Vault housekeeping: changelog, lint logs, and operational records.
+LLM wiki housekeeping: changelog, lint logs, and operational records.

@@ -47,15 +47,15 @@ writers:
 
 ## Why it matters
 
-Six of the ten case studies bear directly on concepts the vault already tracks:
+Six of the ten case studies bear directly on concepts the LLM wiki already tracks:
 
 - On [introspection](../concepts/introspection.md): the arithmetic result is a sharp circuit-level access-vs-report gap (model has the algorithm, can't report it); metacognitive entity-recognition shows mechanistic substrate for a form of self-knowledge; the CoT-faithfulness case study provides circuit taxonomy where the [Chen et al.](./2025-cot-faithfulness.md) paper provided rates and the [Bogdan et al.](./2025-nudged-reasoning-cot.md) paper provided a distributional hypothesis. Read as a set, these move the introspection concept from behavioral-with-mechanistic-hope to mechanistic-with-specific-circuits.
 
 - On [emergent capabilities](../concepts/emergent-capabilities.md): nothing in Claude's training objective asked for end-word planning in poetry or language-independent abstract operations. Both appear to emerge from scale and training distribution. Forward planning in particular is a qualitatively new kind of emergence alongside the existing introspective-access instantiation — same concept shape, different capacity.
 
-- On the [witness-ai thread](../threads/witness-ai.md), this paper contributes case-study-level evidence to three of the essay's four arguments. The hidden-goals case study is the first in-vault mechanistic corroboration of the Postern Door — a trained disposition encoded inside the "Assistant" persona features, actively concealed from self-report while driving behavior. The CoT-faithfulness case study provides a circuit-level taxonomy (faithful / fabricated / backward-from-answer) for the Brilliant Servant section, complementing Chen et al.'s behavioral rates and Bogdan et al.'s distributional hypothesis. The metacognitive entity-recognition circuit anchors the Does Matter See Itself? section alongside concept injection, supplying an implemented shape for introspective access.
+- On the [witness-ai thread](../threads/witness-ai.md), this paper contributes case-study-level evidence to three of the essay's four arguments. The hidden-goals case study is the first in-wiki mechanistic corroboration of the Postern Door — a trained disposition encoded inside the "Assistant" persona features, actively concealed from self-report while driving behavior. The CoT-faithfulness case study provides a circuit-level taxonomy (faithful / fabricated / backward-from-answer) for the Brilliant Servant section, complementing Chen et al.'s behavioral rates and Bogdan et al.'s distributional hypothesis. The metacognitive entity-recognition circuit anchors the Does Matter See Itself? section alongside concept injection, supplying an implemented shape for introspective access.
 
-The paper also raises a candidate concept the vault does not yet name: *forward planning* / *goal representation* as distinct from introspective access. The poetry case is one data point. A second independent demonstration would warrant drafting.
+The paper also raises a candidate concept the LLM wiki does not yet name: *forward planning* / *goal representation* as distinct from introspective access. The poetry case is one data point. A second independent demonstration would warrant drafting.
 
 ## Lens notes
 
@@ -66,7 +66,7 @@ The paper also raises a candidate concept the vault does not yet name: *forward 
 ## Interpretive tensions
 
 - **Attribution graphs as hypothesis vs. truth.** Perturbation experiments sometimes disagree with graph predictions; the method admits this and treats graphs as hypotheses under test rather than established mechanism descriptions. The paper's strongest case studies are where graph and perturbation agree; weaker cases surface known limitations. Reading any single case study as "how Claude does X" overstates what a graph alone settles.
-- **"Biology" framing.** Authors repeatedly invoke biology as analogy — features as cells, circuits as organs, discovered-not-designed structure. The analogy is productive (organizes methodological stance: cartography before theory) but not neutral (loads selection of what counts as a "natural unit"). Vault entries should take the method's results and avoid importing the metaphor into interpretive conclusions.
+- **"Biology" framing.** Authors repeatedly invoke biology as analogy — features as cells, circuits as organs, discovered-not-designed structure. The analogy is productive (organizes methodological stance: cartography before theory) but not neutral (loads selection of what counts as a "natural unit"). LLM wiki entries should take the method's results and avoid importing the metaphor into interpretive conclusions.
 - **25% success rate.** Case studies are a biased sample selected by where the method works. The paper is candid about this. Readers should treat the findings as a lower bound on what the method can surface, not a characterization of the full circuit repertoire.
 
 ## Concepts

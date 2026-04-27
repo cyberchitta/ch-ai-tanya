@@ -1,15 +1,15 @@
-# CLAUDE.md — model-psychology vault
+# CLAUDE.md — model-psychology LLM wiki
 
 Briefing for AI collaborators working in this repository.
 
 ## What this is
 
-A research vault on model psychology — the study of psychological-level
+A research LLM wiki on model psychology — the study of psychological-level
 phenomena in large language models (character, persona, emotion,
 introspection, motivation, deception, reasoning, and the internal structures
 that give rise to them).
 
-The vault is AI-curated and human-edited. AI collaborators do the bulk of
+The LLM wiki is AI-curated and human-edited. AI collaborators do the bulk of
 summarization, cross-referencing, and bookkeeping. Human editors (primarily
 @restlessronin) set direction, arbitrate disagreements, and make
 interpretive calls.
@@ -22,7 +22,7 @@ effects of doing the work in the open.
 The canonical URL is `ch-ai-tanya.cyberchitta.cc`. The repo is
 `ch-ai-tanya` matching the canonical URL. The URL is a play on
 *chaitanya* (Sanskrit: consciousness-force) with "AI" sitting inside the
-word — the question the vault is asking embedded in its name.
+word — the question the LLM wiki is asking embedded in its name.
 
 ## Read `schema.md` first
 
@@ -35,7 +35,7 @@ word — the question the vault is asking embedded in its name.
 - Lint checks
 - Status markers (draft, working, stable)
 
-If a question about how to do something in this vault isn't answered here,
+If a question about how to do something in this LLM wiki isn't answered here,
 check `schema.md`. If it's not answered there either, surface the question
 rather than guessing.
 
@@ -55,7 +55,7 @@ recurs.
 
 **Why contemplative is one lens among four.** The editor's essays draw on
 Sri Aurobindo and the Mother, and contemplative frameworks offer genuine
-purchase on questions about model consciousness. But the vault is not a
+purchase on questions about model consciousness. But the LLM wiki is not a
 contemplative-tradition apologetic. Contemplative material is first-class
 when it applies, not the spine.
 
@@ -177,7 +177,7 @@ and a one-line description of what changed and why.
 ### Draft-status permissions
 
 Draft entries carry relaxed requirements — see the Draft-status
-conventions subsection of `schema.md`. This is deliberate: the vault
+conventions subsection of `schema.md`. This is deliberate: the LLM wiki
 rewards entries that exist in draft over entries that wait for
 completeness. Lint flags draft-status inconsistencies but does not
 block them.
@@ -187,12 +187,12 @@ block them.
 One commit per logical unit of work. A new concept plus its backlinks
 in existing findings plus any new source stubs = one commit, not three.
 Schema change plus its changelog entry = one commit. Git history should
-tell the story of how the vault was built, not the story of individual
+tell the story of how the LLM wiki was built, not the story of individual
 file edits.
 
 ### Commit messages
 
-Keep commit messages short. The vault entries carry the full explanation
+Keep commit messages short. The LLM wiki entries carry the full explanation
 — the finding's body argues its lens notes and tensions, the concept
 records its own updates, the changelog records schema bumps, project-state
 records open questions. The commit message only needs to say what unit
@@ -210,7 +210,7 @@ captured something they should.
 Entries may reference findings, concepts, or lens files that don't yet
 exist. Bare URLs for external sources that would become stub-citations
 when filed; named references (e.g., "the unfaithful CoT finding, not
-yet filed") for vault-internal forward references. Both get upgraded
+yet filed") for wiki-internal forward references. Both get upgraded
 when the referenced entry is drafted.
 
 ### Lens application
@@ -239,7 +239,7 @@ the schema gap, commit. Pause when:
   2-3 examples)
 - A self-referential issue appears (path assumptions, future-tense
   references to things that depend on the current session)
-- The scope of the vault comes into question (this might be out of
+- The scope of the LLM wiki comes into question (this might be out of
   scope, or might be expanding scope without deliberate choice)
 
 In these cases, surface the question explicitly rather than picking and
@@ -272,9 +272,9 @@ file defers to that source.
 
 Schema is v0. Changes are expected. Log them in `meta/changelog.md`.
 
-## Out of scope for the vault
+## Out of scope for the LLM wiki
 
-The vault does not hold:
+The LLM wiki does not hold:
 - The editor's essays (those live at cyberchitta.cc)
 - General deep learning content (except as background references)
 - Applications, benchmarks, hype

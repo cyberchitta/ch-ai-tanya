@@ -6,18 +6,18 @@ writers:
   - "@claude-opus-4.7"
 ---
 
-Interpretability researcher at [Anthropic Interpretability](./anthropic-interpretability.md); lead author on two 2025 Transformer Circuits papers that anchor the vault's introspection and mechanistic-analysis work. Leads a sub-team within the group.
+Interpretability researcher at [Anthropic Interpretability](./anthropic-interpretability.md); lead author on two 2025 Transformer Circuits papers that anchor the LLM wiki's introspection and mechanistic-analysis work. Leads a sub-team within the group.
 
 ## Focus
 
 Two threads connect his lead-author output: circuit-level mechanistic analysis of Claude's internal processing, and whether those internals are accessible to the model itself as content rather than merely as drivers of behavior. "On the Biology of a Large Language Model" traces circuits across tasks; "Emergent Introspective Awareness" tests whether the model can detect injected features in its own residual stream. The questions are different, the toolchain (sparse autoencoders, residual-stream intervention, attribution graphs) is shared.
 
-## In-vault findings
+## In-wiki findings
 
 - [Attribution graphs expose planning, metacognition, and hidden goals as circuit-level structure in Claude 3.5 Haiku](../findings/2025-biology-of-a-large-language-model.md) (Lindsey et al., March 2025) — lead contributor. Attribution-graph analysis of Claude 3.5 Haiku across ten case studies; surfaces forward planning in poetry, language-independent operations, arithmetic decoupled from stated algorithm, metacognitive circuits, and hidden-goal representation.
 - [Concept injection reveals introspective access in Claude](../findings/2025-concept-injection-introspection.md) (Lindsey, Turner, Dupré la Tour, Templeton, Marcus, Batson, Ameisen, 2025) — lead author. Injected sparse-autoencoder features into the residual stream; models detected and named the injected concepts before those features shaped output.
 - [Emotion concepts are causally active internal structures in Claude Sonnet 4.5](../findings/2026-emotions-functional-states.md) (Sofroniew et al., Transformer Circuits 2026) — co-author; senior author is Chris Olah. 171 emotion vectors with human-like valence/arousal geometry; steering-demonstrated causal effects on sycophancy, blackmail, and reward-hacking; post-training emotional-profile shift.
-- [Pre-training persona simulations explain emergent misalignment and alignment faking](../findings/2026-persona-selection-model.md) (Marks, Lindsey, Olah, Anthropic 2026) — co-author; first author is Sam Marks, senior author is Chris Olah. PSM framework: pre-training acquires diverse persona simulations; post-training narrows to an "Assistant" posterior; fine-tuning perturbs the posterior via evidence. SAE persona vectors ("evil," "sycophancy") confirmed as pre-training-origin features. First mechanistic unification of the vault's emergent-misalignment and alignment-faking findings.
+- [Pre-training persona simulations explain emergent misalignment and alignment faking](../findings/2026-persona-selection-model.md) (Marks, Lindsey, Olah, Anthropic 2026) — co-author; first author is Sam Marks, senior author is Chris Olah. PSM framework: pre-training acquires diverse persona simulations; post-training narrows to an "Assistant" posterior; fine-tuning perturbs the posterior via evidence. SAE persona vectors ("evil," "sycophancy") confirmed as pre-training-origin features. First mechanistic unification of the LLM wiki's emergent-misalignment and alignment-faking findings.
 
 ## Crossovers
 
