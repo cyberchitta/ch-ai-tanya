@@ -219,6 +219,7 @@ Required frontmatter (in addition to universal fields):
 raw/                      # Source material, never edited by AI
   papers/
   posts/
+  journalism/             # News articles, popular press, informal reportage
   system-cards/
   transcripts/
   tradition/              # CWSA, CWM, other contemplative sources

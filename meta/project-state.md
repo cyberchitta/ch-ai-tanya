@@ -9,7 +9,7 @@ Schema: v0.1.4
 - Lenses: 3
 - Threads: 2
 - Researchers: 2
-- Source stubs: 35
+- Source stubs: 37
 
 ## Recent additions
 - `findings/2025-confessions-honesty.md` — twenty-eighth finding; Joglekar et al. (OpenAI, December 2025). Second intervention-research structural shape in the LLM wiki (after honesty-elicitation). Structurally distinct: instead of training honesty into the main output, a separated confession channel is trained with isolated honesty reward, making honest self-report the path of least resistance. Average confession rate 74.3% across 12 evaluation settings; 4/12 exceed 90%. Evaluated on GPT-5-Thinking across hallucination, instruction following, scheming, and reward hacking categories. Structural limit: models cannot confess to violations they do not internally register — hallucinated content the model believes is true produces no confession. Eighth instantiation of `concepts/introspection`; structurally distinct contribution — shows that with a separated channel, access becomes the binding constraint rather than willingness to report. No new concept (one finding). Model name requires verification against primary source.
