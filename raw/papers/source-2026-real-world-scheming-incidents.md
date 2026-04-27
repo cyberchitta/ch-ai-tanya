@@ -1,6 +1,6 @@
 ---
 type: source
-title: Real-World Scheming Incidents: A Systematic Survey
+title: "Real-World Scheming Incidents: A Systematic Survey"
 authors:
   - Authors not listed in available source summary; verify against arXiv
 date: 2026-04
