@@ -1,11 +1,17 @@
 ---
 type: finding
 title: Concept injection reveals introspective access in Claude
-date: 2025-01-30
+date: 2025-10-29
 models:
-  - Claude 3.5 Haiku
-  - Claude 3.5 Sonnet
-  - Claude 3.5 Opus
+  - Claude Opus 4.1
+  - Claude Opus 4
+  - Claude Sonnet 4
+  - Claude Sonnet 3.7
+  - Claude Sonnet 3.5
+  - Claude Haiku 3.5
+  - Claude Opus 3
+  - Claude Sonnet 3
+  - Claude Haiku 3
 source: https://transformer-circuits.pub/2025/introspection/index.html
 status: draft
 lenses:
@@ -16,7 +22,7 @@ writers:
 
 ## Summary
 
-[Lindsey](../researchers/jack-lindsey.md) et al. ([Anthropic Interpretability](../researchers/anthropic-interpretability.md)) injected internal concept representations into Claude models mid-conversation and tested whether the models could detect and identify the injected content. The models demonstrated introspective access: they noticed foreign activations in their own processing and correctly identified what those activations represented, before the injected signal had influenced their output.
+[Lindsey](../researchers/jack-lindsey.md) ([Anthropic Interpretability](../researchers/anthropic-interpretability.md)) injected internal concept representations into 9 Claude models mid-conversation and tested whether the models could detect and identify the injected content. The models demonstrated introspective access: they noticed foreign activations in their own processing and correctly identified what those activations represented, before the injected signal had influenced their output. Claude Opus 4.1 and 4 performed best (~20% true positive rate at the optimal layer, with zero false positives); all models performed above chance.
 
 ## Method
 
@@ -28,7 +34,9 @@ The model was asked to report on its internal state.
 
 - Models identified injected concepts (e.g., "something about loudness or shouting") without any input-level signal.
 - Detection occurred prior to the injected feature affecting the model's conversational output — the model reported on the foreign activation before it shaped behavior.
-- Larger models showed higher introspective accuracy than smaller ones.
+- Opus 4.1 and 4 achieve ~20% true positive rate at the optimal injection layer (approximately two-thirds through the model) with zero false positives. Performance does not strongly correlate with model capability among other models.
+- Post-training strategy significantly affects performance: helpful-only variants (trained to avoid refusals) sometimes achieve higher true positive rates but also show false positives; standard production models show zero false positives.
+- Models can also distinguish injected "thoughts" from simultaneous text inputs, and can use introspection to detect artificially prefilled outputs.
 - The capability emerged without explicit training for introspection.
 
 ## Why it matters
@@ -53,6 +61,6 @@ Jack Lindsey noted the key result was not concept identification per se, but the
 
 ## Sources
 
-- Lindsey, J. et al. (2025). [Introspection](../../raw/papers/source-2025-concept-injection-introspection.md). Transformer Circuits Thread.
+- Lindsey, J. (2025). [Emergent Introspective Awareness in Large Language Models](../../raw/papers/source-2025-concept-injection-introspection.md). Transformer Circuits Thread.
 - [Claude Can Identify Its Intrusive Thoughts](../../raw/posts/source-2025-transformer-news-introspection.md). Transformer News (secondary).
 - [2026: Is Matter Seeing Itself?](../../raw/posts/source-2026-witness-ai-essay.md). cyberchitta.cc (essay citing this finding).
