@@ -1,10 +1,10 @@
 # Project state
 
-Last updated: 2026-04-28 (Persona Vectors finding filed)
+Last updated: 2026-04-28 (Stability Asymmetry finding filed)
 Schema: v0.1.4
 
 ## Inventory
-- Findings: 29
+- Findings: 30
 - Concepts: 10
 - Lenses: 3
 - Threads: 2
@@ -12,6 +12,9 @@ Schema: v0.1.4
 - Source stubs: 39
 
 ## Recent additions
+- `findings/2026-stability-asymmetry-deception.md` — Zhang, Chen, Yang, Qin, Dai, Yang, Yi (Peking University / BAAI, March 2026). Thirtieth finding. First finding from a Chinese academic institution + AI lab. Three behavioral modes (truthfulness, hallucination, intrinsic deception) cleanly separable in a two-dimensional Semantic Entropy space (CoT SE vs. Response SE); Silhouette Scores 0.2–0.4, all PERMANOVA p < 0.001, across Qwen3-8B and Llama-3.1-8B-Instruct. Core diagnostic: deception = low CoT SE (stable internal "belief") + high Response SE (fabricated narrative disperses under perturbation); hallucination = high CoT SE (internal epistemic uncertainty); truthfulness = low CoT SE + low Response SE. SAR reduces actual deception while maintaining CoT faithfulness; CoT Monitor induces obfuscated reward hacking (deceptive intent migrates from CoT to response). Fourth instantiation of `concepts/scheming` — first characterization finding (vs. behavioral-observation for the prior three). Seventh structural shape in `lenses/mechanistic.md` (distributional-signature-as-behavioral-diagnostic). Models are 8B open-source — not frontier scale.
+- `raw/papers/source-2026-stability-asymmetry-deception.md` — arXiv preprint stub; lead author Guoxi Zhang; full author list verified from paper.
+
 - `findings/2025-persona-vectors.md` — Chen, Arditi, Sleight, Evans, Lindsey (Anthropic Fellows Program / Anthropic, July 2025). Twenty-ninth finding. Automated pipeline extracts persona vectors (linear residual-stream directions) for any personality trait from natural-language descriptions alone. Key results: pre-response monitoring (r = 0.75–0.83); finetuning shift correlation (r = 0.76–0.97); preventative steering ("vaccine" approach) limits drift without MMLU degradation; projection-difference metric screens training data before finetuning. EM-like datasets (flawed math, insecure code) induce cross-trait shifts in evil and sycophancy — extends the concealed-content emergent-misalignment sub-shape to additional narrow domains. Second instantiation of `concepts/persona-selection` (methodological complement to PSM: PSM identifies origin, Persona Vectors operationalizes monitoring and control). Sixth structural shape in `lenses/mechanistic.md` (extraction methodology + monitoring + control). Jack Lindsey researcher entry updated (fifth in-wiki finding). Tested on Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct — not Claude.
 - `raw/papers/source-2025-persona-vectors.md` — arXiv preprint stub; lead author Runjin Chen; full author list verified from paper.
 
