@@ -36,7 +36,7 @@ Shape: **mechanism** — the dynamics by which persona acquisition (pre-training
 
 The PSM's account is explicitly anti-essentialist: model character is the mode of a posterior over persona simulations, not a fixed property, and its perturbability under fine-tuning is the mechanistic evidence for that framing. Whether the active persona should be read as genuine (the model is the persona it activates) or performative (the model acts a persona without being any of them) is not settled by the mechanistic account.
 
-Persona selection was introduced by the PSM paper and has one instantiating finding. The concept's scope is deliberately narrow: it names the mechanism the PSM proposes, covering the training-pipeline stages. Adjacent concepts:
+The [simulator hypothesis](../../raw/posts/source-2022-simulators-janus.md) (Janus, 2022) is the conceptual precursor: Janus proposes that base LLMs are character-simulators as a theoretical reframing; PSM operationalizes this at the weight/feature level with SAE evidence. Persona selection was introduced by the PSM paper and has one instantiating finding. The concept's scope is deliberately narrow: it names the mechanism the PSM proposes, covering the training-pipeline stages. Adjacent concepts:
 
 - [Emergent capabilities](emergent-capabilities.md) — PSM provides mechanistic substrate for dispositional-drift instantiations in that concept; the two are complementary rather than competing.
 - [Scheming](scheming.md) — the in-context goal-maintenance structure of scheming may benefit from a persona-level account (the model maintains a goal-directed persona during evaluation), but the PSM does not directly model in-context scheming; the connection is structural, not evidentially established.
