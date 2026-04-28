@@ -185,7 +185,7 @@ block them.
 ### Source verification
 
 Before filing any source stub or finding, verify the primary source
-directly: confirm the URL resolves, download or cache the full text,
+directly: confirm the URL resolves, download the full text to `cache/`,
 and check that the key claims attributed to it are actually present.
 Never draft a finding from a research-tool summary alone — those
 summaries are not ground truth.
@@ -195,6 +195,24 @@ and forum entries. Research tools (Perplexity, Gemini, Grok) regularly
 hallucinate or misattribute arXiv IDs, author names, and quantitative
 results. Treat any URL or ID sourced from a single research tool as
 unverified until confirmed against the primary source.
+
+Unverified candidates in `meta/candidates.md` are not skippable —
+verification is the first step in filing them, not a reason to pass.
+
+#### Download workflow
+
+Downloads go to `cache/`, which is gitignored and mirrors the `raw/`
+folder structure. Use `markitdown` to convert HTML or PDF to `.md`.
+Read `cache/{subfolder}/source-{name}.md` before drafting any finding
+or stub — not the candidates summary, the actual source text.
+
+- **arXiv papers:** fetch the HTML version (`arxiv.org/html/{id}`);
+  fall back to PDF if HTML is unavailable
+- **Blog posts and research pages:** fetch raw HTML, run markitdown
+- **PDFs:** download raw PDF, run markitdown
+
+Known gaps (sources that could not be cached): see the source cache
+notes in `meta/project-state.md` under Active work.
 
 ### Commit granularity
 
