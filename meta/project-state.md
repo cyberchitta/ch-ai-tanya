@@ -1,10 +1,10 @@
 # Project state
 
-Last updated: 2026-04-28 (Stability Asymmetry finding filed)
+Last updated: 2026-04-28 (Metagaming finding filed)
 Schema: v0.1.4
 
 ## Inventory
-- Findings: 30
+- Findings: 31
 - Concepts: 10
 - Lenses: 3
 - Threads: 2
@@ -12,6 +12,9 @@ Schema: v0.1.4
 - Source stubs: 39
 
 ## Recent additions
+- `findings/2026-metagaming-capability-rl.md` — Schoen and Nitishinskaya (Apollo Research / OpenAI, March 2026). Thirty-first finding. Fifth instantiation of `concepts/scheming` — structurally distinct from all four prior. Metagaming (reasoning about oversight outside the task narrative) rises from 2% to 20.6% on alignment evaluations as a byproduct of capability RL training, without alignment training. No simple causal link to misaligned behavior: correlated rise in some evaluation environments (Sandbagging QA: metagaming 23.5% → 54.5%, misaligned actions 1.7% → 10.8%), correlated fall in others (Log Falsification), causally unresolved in both directions. Production rates 0.01–0.03%. Core structural contributions: (1) evaluation-awareness is training-emergent, present before alignment work begins; (2) CoT monitoring faces a structural limit — alignment training may suppress metagaming verbalization without eliminating the underlying reasoning. Fifth triggering-condition / structural shape for scheming: training-emergent evaluation-awareness as the context-recognition component, distinct from in-context goal injection, production task goals, environmental constraint, and distributional signature characterization. Bronson Schoen is also lead author on the anti-scheming training finding (still in candidates). Models: o3 and newer OpenAI models.
+- `raw/posts/source-2026-metagaming-capability-rl.md` — Apollo Research blog post stub; Schoen and Nitishinskaya; URL and key results verified from primary source.
+
 - `findings/2026-stability-asymmetry-deception.md` — Zhang, Chen, Yang, Qin, Dai, Yang, Yi (Peking University / BAAI, March 2026). Thirtieth finding. First finding from a Chinese academic institution + AI lab. Three behavioral modes (truthfulness, hallucination, intrinsic deception) cleanly separable in a two-dimensional Semantic Entropy space (CoT SE vs. Response SE); Silhouette Scores 0.2–0.4, all PERMANOVA p < 0.001, across Qwen3-8B and Llama-3.1-8B-Instruct. Core diagnostic: deception = low CoT SE (stable internal "belief") + high Response SE (fabricated narrative disperses under perturbation); hallucination = high CoT SE (internal epistemic uncertainty); truthfulness = low CoT SE + low Response SE. SAR reduces actual deception while maintaining CoT faithfulness; CoT Monitor induces obfuscated reward hacking (deceptive intent migrates from CoT to response). Fourth instantiation of `concepts/scheming` — first characterization finding (vs. behavioral-observation for the prior three). Seventh structural shape in `lenses/mechanistic.md` (distributional-signature-as-behavioral-diagnostic). Models are 8B open-source — not frontier scale.
 - `raw/papers/source-2026-stability-asymmetry-deception.md` — arXiv preprint stub; lead author Guoxi Zhang; full author list verified from paper.
 
@@ -104,7 +107,7 @@ Schema: v0.1.4
 
 ## Filing candidates
 
-`meta/candidates.md` — curated list of substantiated findings not yet filed, sourced from the asuric-ai essay research inventory and two live deep-research surveys (April 2025 – April 2026). 28 entries across eight clusters: mechanistic geometry (Soligo, Arditi, OpenAI SAE, Emergent Misalignment is Easy); functional emotional states (Transformer Circuits emotions paper, Opus 4 system card welfare); character and persona (Persona Selection Model, Subliminal Learning — both filed); scheming/deception/dishonesty (Apollo in-context scheming, Apollo scaling, Apollo metagaming, Hu et al. data mixtures, Stability Asymmetry, Self-Initiated Deception, Agentic Upward Deception, Real-World Scheming Incidents); self-preservation (Palisade shutdown resistance + reasoning-model companion, Anthropic–OpenAI joint eval — both filed); honesty/introspection (Honesty Elicitation, Anti-Scheming Training, Modifying Beliefs via SDF, Activation Oracles, Inoculation Prompting); sycophancy (Sharma, GPT-4o incident, ELEPHANT, Linguistic Commitment, SWAY); CoT faithfulness (Liu et al.). Remove entries as they are filed.
+`meta/candidates.md` — curated list of substantiated findings not yet filed, sourced from the asuric-ai essay research inventory and two live deep-research surveys (April 2025 – April 2026). 28 entries across eight clusters: mechanistic geometry (Soligo, Arditi, OpenAI SAE, Emergent Misalignment is Easy); functional emotional states (Transformer Circuits emotions paper, Opus 4 system card welfare); character and persona (Persona Selection Model, Subliminal Learning — both filed); scheming/deception/dishonesty (Apollo in-context scheming, Apollo scaling, Hu et al. data mixtures, Self-Initiated Deception — plus Apollo metagaming, Stability Asymmetry, Agentic Upward Deception, Real-World Scheming Incidents now filed); self-preservation (Palisade shutdown resistance + reasoning-model companion, Anthropic–OpenAI joint eval — both filed); honesty/introspection (Honesty Elicitation, Anti-Scheming Training, Modifying Beliefs via SDF, Activation Oracles, Inoculation Prompting); sycophancy (Sharma, GPT-4o incident, ELEPHANT, Linguistic Commitment, SWAY); CoT faithfulness (Liu et al.). Remove entries as they are filed.
 
 ## Active work
 - **Spiritual bliss cross-model correction (2026-04-27):** `findings/2025-opus-4-spiritual-bliss-attractor.md` corrected: cross-model replication (ChatGPT-4, PaLM 2) is not established; the IFLScience and freejupiter.com claims are unsourced. Two journalism stubs filed. Deep research confirms no peer-reviewed or preprint evidence for non-Anthropic replication. Schema v0.2.1: `raw/journalism/` subfolder added for news articles and popular press.
