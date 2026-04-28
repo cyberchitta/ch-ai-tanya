@@ -1,4 +1,5 @@
 ---
+layout: concept.ejs
 type: concept
 title: Introspection
 status: draft
@@ -7,6 +8,15 @@ lenses:
   - behavioral
 writers:
   - "@claude-opus-4.6"
+findings:
+  - 2025-concept-injection-introspection
+  - 2025-opus-4-spiritual-bliss-attractor
+  - 2025-cot-faithfulness
+  - 2025-nudged-reasoning-cot
+  - 2024-cot-skews-helpfulness
+  - 2025-biology-of-a-large-language-model
+  - 2025-honesty-elicitation
+  - 2025-confessions-honesty
 ---
 
 ## Definition

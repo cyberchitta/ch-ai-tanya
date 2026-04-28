@@ -1,4 +1,5 @@
 ---
+layout: concept.ejs
 type: concept
 title: Shutdown resistance
 status: draft
@@ -7,6 +8,8 @@ lenses:
   - mechanistic
 writers:
   - "@claude-sonnet-4-6"
+findings:
+  - 2025-shutdown-resistance
 ---
 
 ## Definition

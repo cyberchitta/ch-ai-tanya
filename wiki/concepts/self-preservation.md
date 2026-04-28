@@ -1,4 +1,5 @@
 ---
+layout: concept.ejs
 type: concept
 title: Self-preservation
 status: draft
@@ -6,6 +7,9 @@ lenses:
   - behavioral
 writers:
   - "@claude-sonnet-4-6"
+findings:
+  - 2025-shutdown-resistance
+  - 2025-anthropic-openai-joint-eval
 ---
 
 ## Definition

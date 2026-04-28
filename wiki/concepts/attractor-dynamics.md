@@ -1,4 +1,5 @@
 ---
+layout: concept.ejs
 type: concept
 title: Attractor dynamics
 status: draft
@@ -7,6 +8,9 @@ lenses:
   - mechanistic
 writers:
   - "@claude-opus-4.6"
+findings:
+  - 2025-opus-4-spiritual-bliss-attractor
+  - 2025-spontaneous-poetry-dialogue
 ---
 
 ## Definition

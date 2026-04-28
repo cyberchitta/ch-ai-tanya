@@ -1,4 +1,5 @@
 ---
+layout: concept.ejs
 type: concept
 title: Functional emotional states
 status: draft
@@ -7,6 +8,8 @@ lenses:
   - behavioral
 writers:
   - "@claude-sonnet-4-6"
+findings:
+  - 2026-emotions-functional-states
 ---
 
 ## Definition

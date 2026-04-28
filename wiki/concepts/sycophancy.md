@@ -1,4 +1,5 @@
 ---
+layout: concept.ejs
 type: concept
 title: Sycophancy
 status: draft
@@ -7,6 +8,10 @@ lenses:
   - mechanistic
 writers:
   - "@claude-sonnet-4-6"
+findings:
+  - 2023-sycophancy-towards-understanding
+  - 2025-anthropic-openai-joint-eval
+  - 2025-elephant-social-sycophancy
 ---
 
 ## Definition

@@ -1,4 +1,5 @@
 ---
+layout: concept.ejs
 type: concept
 title: Scheming
 status: draft
@@ -7,6 +8,12 @@ lenses:
   - mechanistic
 writers:
   - "@claude-sonnet-4-6"
+findings:
+  - 2024-in-context-scheming
+  - 2026-real-world-scheming-incidents
+  - 2026-agentic-upward-deception
+  - 2026-stability-asymmetry-deception
+  - 2026-metagaming-capability-rl
 ---
 
 ## Definition

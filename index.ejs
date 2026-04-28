@@ -6,6 +6,17 @@ permalink: /
 
 <ul>
 <% for (const entry of helpers.byTitle(collections.concept)) { %>
-  <li><a href="<%= entry.url %>"><%= entry.data.title %></a></li>
+  <li>
+    <a href="<%= entry.url %>"><%= entry.data.title %></a>
+    <% const slugs = (entry.data.findings || []); %>
+    <% const listed = slugs.map(s => helpers.findingBySlug(collections.finding, s)).filter(Boolean); %>
+    <% if (listed.length > 0) { %>
+    <ul>
+      <% for (const f of listed) { %>
+      <li><a href="<%= f.url %>"><%= f.data.title %></a></li>
+      <% } %>
+    </ul>
+    <% } %>
+  </li>
 <% } %>
 </ul>

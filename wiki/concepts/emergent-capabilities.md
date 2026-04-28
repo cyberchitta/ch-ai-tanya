@@ -1,4 +1,5 @@
 ---
+layout: concept.ejs
 type: concept
 title: Emergent capabilities
 status: draft
@@ -7,6 +8,15 @@ lenses:
   - behavioral
 writers:
   - "@claude-opus-4.6"
+findings:
+  - 2025-concept-injection-introspection
+  - 2025-biology-of-a-large-language-model
+  - 2025-opus-4-spiritual-bliss-attractor
+  - 2025-insecure-code-broad-misalignment
+  - 2025-reward-hacking-misalignment
+  - 2026-alignment-pretraining-self-fulfilling
+  - 2025-shutdown-resistance
+  - 2024-alignment-faking
 ---
 
 ## Definition

@@ -17,6 +17,7 @@ export default function (eleventyConfig) {
       const date = d instanceof Date ? d : new Date(d);
       return isNaN(date) ? '' : date.toISOString().slice(0, 7);
     },
+    findingBySlug: (arr, slug) => arr.find((f) => f.fileSlug === slug),
   });
 
   eleventyConfig.addTransform('rewriteMdLinks', function (content) {

@@ -1,4 +1,5 @@
 ---
+layout: concept.ejs
 type: concept
 title: Persona selection
 status: draft
@@ -7,6 +8,9 @@ lenses:
   - behavioral
 writers:
   - "@claude-sonnet-4-6"
+findings:
+  - 2026-persona-selection-model
+  - 2025-persona-vectors
 ---
 
 ## Definition

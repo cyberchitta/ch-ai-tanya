@@ -1,0 +1,18 @@
+---
+layout: base.ejs
+---
+<%- content %>
+<% const conceptFindings = (typeof findings !== 'undefined' && findings) ? findings : []; %>
+<% if (conceptFindings.length > 0) { %>
+  <% const listed = conceptFindings.map(slug => helpers.findingBySlug(collections.finding, slug)).filter(Boolean); %>
+  <% if (listed.length > 0) { %>
+<section class="section-divider mt-8 pt-6">
+  <h2>Findings</h2>
+  <ul>
+    <% for (const f of listed) { %>
+    <li><a href="<%= f.url %>"><%= f.data.title %></a></li>
+    <% } %>
+  </ul>
+</section>
+  <% } %>
+<% } %>
