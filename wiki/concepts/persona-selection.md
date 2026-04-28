@@ -19,6 +19,8 @@ Shape: **mechanism** — the dynamics by which persona acquisition (pre-training
 
 - [Pre-training persona simulations explain emergent misalignment and alignment faking](../findings/2026-persona-selection-model.md) (Marks, Lindsey, Olah, Anthropic 2026) — primary instantiation. SAE persona vectors ("evil," "sycophancy") confirmed as pre-training-origin features; steering amplifies corresponding behaviors; PSM provides unified mechanistic account for emergent misalignment and alignment-faking findings.
 
+- [Persona vectors monitor and control character trait drift via linear directions in the residual stream](../findings/2025-persona-vectors.md) (Chen, Arditi, Sleight, Evans, Lindsey 2025) — methodological extension. Contrastive-prompting extraction pipeline produces persona vectors for any trait; pre-response projection monitors drift (r = 0.75–0.83); finetuning shifts correlate with persona-vector shifts (r = 0.76–0.97); preventative steering during finetuning limits drift without MMLU degradation. Confirms that linearly extractable, causally manipulable persona directions are a general property of instruction-tuned models.
+
 ## What this concept is not
 
 - Not equivalent to role-playing or jailbreaking. Role-play prompts may shift the active persona, but the PSM is a claim about training-pipeline structure, not a prompt-engineering phenomenon. The persona distribution is in the weights, not the prompt.
