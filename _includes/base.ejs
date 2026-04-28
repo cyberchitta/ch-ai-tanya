@@ -44,13 +44,7 @@ permalink: "<%= page.fileSlug==='' ? 'index.html' : `${page.filePathStem}.html` 
       <a href="/" class="wiki-name font-typewriter text-2xl font-semibold"><%= site.title %></a>
       <span class="wiki-tagline text-sm italic"><%= site.tagline %></span>
     </div>
-    <nav class="section-nav section-divider text-sm mt-3 pt-3" aria-label="LLM wiki sections">
-      <a href="/wiki/findings/">findings</a>
-      <a href="/wiki/concepts/">concepts</a>
-      <a href="/wiki/lenses/mechanistic.html">mechanistic</a>
-      <a href="/wiki/lenses/behavioral.html">behavioral</a>
-      <a href="/wiki/threads/">threads</a>
-    </nav>
+    <div class="section-divider mt-3 pt-3"></div>
   </header>
   <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
     <article class="article-content">
@@ -60,8 +54,6 @@ permalink: "<%= page.fileSlug==='' ? 'index.html' : `${page.filePathStem}.html` 
   </main>
   <footer class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-base-content/70">
     <div class="section-nav">
-      <a href="/wiki/researchers/">researchers</a>
-      <a href="/schema/">schema</a>
       <a href="https://github.com/<%= site.github %>">source on github</a>
     </div>
     <div class="container mx-auto px-4 text-center py-8">
