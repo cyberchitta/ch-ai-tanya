@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: 2026-04-28 (Metagaming finding filed)
+Last updated: 2026-04-29 (OpenAI source stubs cached and findings reviewed)
 Schema: v0.1.4
 
 ## Inventory
@@ -111,7 +111,7 @@ Schema: v0.1.4
 
 ## Active work
 - **Spiritual bliss cross-model correction (2026-04-27):** `findings/2025-opus-4-spiritual-bliss-attractor.md` corrected: cross-model replication (ChatGPT-4, PaLM 2) is not established; the IFLScience and freejupiter.com claims are unsourced. Two journalism stubs filed. Deep research confirms no peer-reviewed or preprint evidence for non-Anthropic replication. Schema v0.2.1: `raw/journalism/` subfolder added for news articles and popular press.
-- **Source audit corrections (2026-04-27):** All 28 findings audited against primary sources. Stubs corrected for items 6–13: sycophancy-sharma (19-author list), cot-skews-helpfulness (title + authors), refusal-direction (7-author list), in-context-scheming (6-author list), honesty-elicitation (authors + title), shutdown-resistance (title + authors + TMLR venue), elephant-social-sycophancy (title + 6-author list). Finding corrected: insecure-code-broad-misalignment (~20% GPT-4o / ~50% GPT-4.1). Remaining open: sleeper-agents author count (39 vs. 40 claimed — 40th unidentifiable from cache); two OpenAI 403 stubs deferred.
+- **Source audit corrections (2026-04-27):** All 28 findings audited against primary sources. Stubs corrected for items 6–13: sycophancy-sharma (19-author list), cot-skews-helpfulness (title + authors), refusal-direction (7-author list), in-context-scheming (6-author list), honesty-elicitation (authors + title), shutdown-resistance (title + authors + TMLR venue), elephant-social-sycophancy (title + 6-author list). Finding corrected: insecure-code-broad-misalignment (~20% GPT-4o / ~50% GPT-4.1). Remaining open: sleeper-agents author count (39 vs. 40 claimed — 40th unidentifiable from cache). Two previously 403-blocked OpenAI stubs now cached and reviewed (2026-04-29): `source-2025-gpt4o-sycophancy-incident` (both posts, finding verified accurate) and `source-2025-openai-sae-emergent-misalignment` (authors verified: Wang, Dupré la Tour, Watkins, Makelov, Chi, Miserendino, Patwardhan, Mossing; arXiv 2506.19823; finding corrected: "single latent" → set of misaligned persona features with one dominant direction; models extended to include o3-mini RL experiments; specific top-activating examples added; o3-mini "bad boy persona" CoT verbalization noted; diverse-domain and RL generalization added).
 - Schema v0.2.0 implemented: lens set reduced to mechanistic and behavioral; philosophical and contemplative lens types retired; `lenses/contemplative.md` deleted; `wiki/open-questions.md` deleted; philosophical/contemplative notes removed from all findings and concepts; substantive definitional content folded into scope notes and definitions.
 - Confessions finding filed (Joglekar et al., OpenAI, December 2025): second intervention-research structural shape (after honesty-elicitation). Eighth `concepts/introspection` instantiation; shows access-gated report in the separated-channel design. No new concept.
 - Essay retrofit complete at both finding and thread levels: 6/6 findings filed; both motivating essays have threads (`witness-ai.md`, `supramental-ai.md`)
