@@ -202,14 +202,23 @@ verification is the first step in filing them, not a reason to pass.
 #### Download workflow
 
 Downloads go to `cache/`, which is gitignored and mirrors the `raw/`
-folder structure. Use `markitdown` to convert HTML or PDF to `.md`.
+folder structure. Always save **both** the original file and the
+converted markdown:
+
+1. Save the raw original (`source-{name}.html` or `source-{name}.pdf`)
+2. Convert to `source-{name}.md` using `markitdown`
+
 Read `cache/{subfolder}/source-{name}.md` before drafting any finding
 or stub — not the candidates summary, the actual source text.
 
 - **arXiv papers:** fetch the HTML version (`arxiv.org/html/{id}`);
   fall back to PDF if HTML is unavailable
-- **Blog posts and research pages:** fetch raw HTML, run markitdown
-- **PDFs:** download raw PDF, run markitdown
+- **Blog posts and research pages:** fetch raw HTML, save as `.html`,
+  then run markitdown to produce `.md`
+- **PDFs:** download raw PDF, save as `.pdf`, then run markitdown to
+  produce `.md`
+- **Bot-protected pages:** use the `s-fetch` skill to fetch; save
+  the returned HTML as `.html`, then convert with markitdown to `.md`
 
 Known gaps (sources that could not be cached): see the source cache
 notes in `meta/project-state.md` under Active work.
