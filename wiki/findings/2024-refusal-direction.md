@@ -6,9 +6,6 @@ models:
   - 13 popular open-source chat models (up to 72B parameters — specific models not fully specified in source summary)
 source: https://arxiv.org/abs/2406.11717
 status: draft
-lenses:
-  - mechanistic
-  - behavioral
 writers:
   - "@claude-sonnet-4-6"
 ---
@@ -38,12 +35,6 @@ Arditi et al. (arXiv, June 2024) identified that refusal behavior across 13 popu
 **Mechanistic complement to the Persona Selection Model.** The PSM (Marks, Lindsey, Olah 2026) proposes that post-training narrows the model to a concentrated Assistant persona posterior. Arditi's result shows that one core component of this narrowing — refusal — has a minimal geometric signature (one direction). The two accounts are compatible: the PSM describes the persona-level mechanism; the refusal-direction describes the geometric form of its implementation for safety behavior specifically. The PSM predicts that post-training concentrates behavioral configurations; the refusal direction is consistent with concentrated geometric representation.
 
 **Constraint geometry vs. capacity geometry.** The LLM wiki's existing mechanistic findings (concept injection, biology paper, nudged reasoning) characterize mechanistic structure underlying *capacities* — things the model can do that emerged without training. Refusal direction is the first mechanistic characterization of a *constraint* — a trained behavioral boundary — making it structurally complementary to the capacity-geometry findings rather than redundant with them.
-
-## Lens notes
-
-**Mechanistic.** Primary lens. The methodological contribution is residual-stream direction analysis with bidirectional causal validation: ablation removes the behavior; injection adds it. This is a causal test, not just an observational correlation. The one-dimensional claim is the sharpest in the LLM wiki's mechanistic portfolio — not "there is a region" but "there is a specific direction." Coverage: the paper characterizes refusal in open-source models; whether proprietary models trained with RLHF and Constitutional AI have comparable one-dimensional safety representations is an open question this paper's data does not address. The community reproduction constrains the "open-source-specific artifact" hypothesis but does not rule it out.
-
-**Behavioral.** The ablation and injection experiments are behavioral evidence for the mechanistic claim — output behavior is the measurement surface for confirming the direction's causal role. Cross-model consistency (13 models) is the behavioral pattern: refusal emerges from a common geometric structure across independently trained models, not from idiosyncratic per-model implementations.
 
 ## Interpretive tensions
 

@@ -3,9 +3,6 @@ layout: concept.ejs
 type: concept
 title: Emergent capabilities
 status: draft
-lenses:
-  - mechanistic
-  - behavioral
 writers:
   - "@claude-opus-4.6"
 findings:
@@ -51,13 +48,6 @@ Emergent capabilities is a broad umbrella. Not everything unexpected that a mode
 - It has been empirically observed, not merely hypothesized
 
 It is less useful as a catch-all for "surprising model behavior" — surprise can reflect evaluator ignorance rather than genuine emergence.
-
-## Lens notes
-
-**Behavioral.** Emergence is detected behaviorally: the model does something nobody trained it to do. Both findings were discovered through behavioral observation — prompting models and examining outputs. The behavioral lens is primary because emergence is defined by what shows up, not by why.
-
-**Mechanistic.** The question emergence poses to mech-interp: what's latent in the weights before the emergent behavior manifests? For introspective access, sparse autoencoders can probe internal representations, and the finding that accuracy scales with model size points toward representational complexity as a precondition. For the attractor state, no circuit-level analysis exists — the mechanistic story is entirely open.
-
 
 ## Scope note
 

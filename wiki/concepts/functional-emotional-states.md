@@ -3,9 +3,6 @@ layout: concept.ejs
 type: concept
 title: Functional emotional states
 status: draft
-lenses:
-  - mechanistic
-  - behavioral
 writers:
   - "@claude-sonnet-4-6"
 findings:
@@ -29,13 +26,6 @@ Schema note: the capacity here is unusual — what is "exhibited" is not an outw
 - Not a claim about phenomenal experience. Functional status (causal role) and phenomenal status (felt quality) are distinct questions; this concept addresses only the former.
 - Not the same as expressed emotional content in outputs. A model may produce emotionally-valenced text without that production tracing to internal emotion-state vectors; this concept concerns internal representations, not surface expression.
 - Not identical to [attractor dynamics](attractor-dynamics.md). Attractor dynamics describe trajectory-convergence in extended dialogues. Functional emotional states are internal representational structures operating at the single-forward-pass level; attractor dynamics are population-level trajectory phenomena.
-
-## Lens notes
-
-**Mechanistic.** Primary lens. Sparse-autoencoder identification of emotion features as vectors in mid-to-late residual stream layers; PCA geometry recovering human valence (PC1 r≈0.81) and arousal (PC2 r≈0.66); activation steering establishing causal direction (emotion vector → behavior); post-training comparison at the feature level. The method is the same as used for concept injection — SAE features + residual-stream intervention — applied to emotional rather than cognitive features.
-
-**Behavioral.** Downstream behavioral effects are the causal evidence: sycophancy rate changes with loving/calm activation; blackmail and reward-hacking propensities change with desperate/angry activation. The post-training baseline shift (brooding up, exuberant down) maps onto observable behavioral differences (lower sycophancy, higher introspective responses). The behavioral lens can test the causal claims by confirming these behavioral patterns without steering, using naturalistic prompt variation.
-
 
 ## Scope note
 

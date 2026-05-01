@@ -1,12 +1,11 @@
 # Project state
 
-Last updated: 2026-04-29 (OpenAI source stubs cached and findings reviewed)
-Schema: v0.1.4
+Last updated: 2026-05-01 (lens entry type retired)
+Schema: v0.3.0
 
 ## Inventory
 - Findings: 31
 - Concepts: 10
-- Lenses: 3
 - Threads: 2
 - Researchers: 2
 - Source stubs: 39
@@ -115,18 +114,17 @@ Schema: v0.1.4
 - Schema v0.2.0 implemented: lens set reduced to mechanistic and behavioral; philosophical and contemplative lens types retired; `lenses/contemplative.md` deleted; `wiki/open-questions.md` deleted; philosophical/contemplative notes removed from all findings and concepts; substantive definitional content folded into scope notes and definitions.
 - Confessions finding filed (Joglekar et al., OpenAI, December 2025): second intervention-research structural shape (after honesty-elicitation). Eighth `concepts/introspection` instantiation; shows access-gated report in the separated-channel design. No new concept.
 - Essay retrofit complete at both finding and thread levels: 6/6 findings filed; both motivating essays have threads (`witness-ai.md`, `supramental-ai.md`)
-- All five wiki entry types exercised (finding, concept, researcher, lens, thread)
+- Schema v0.3.0 (2026-05-01): lens entry type retired; `wiki/lenses/` deleted along with mechanistic and behavioral files; `lenses` frontmatter and `## Lens notes` body sections removed from findings and concepts; four-point interpretive discipline folded into a wiki-wide writing-discipline section in `schema.md`. Four wiki entry types remain: finding, concept, researcher, thread.
 - Postern Door section of witness-ai now has three anchoring findings (insecure-code, reward-hacking, alignment-faking) plus a partial-component-3-only note for sleeper-agents. Positive Formation section anchored by two findings (Tice et al. 2026; Hubinger et al. 2024) plus the alignment-faking cross-reference for the safety-training-amplification point. All three major safety training methods (SFT, RLHF, adversarial training) now have in-wiki evidence of failing to reach disposition. Essay-retrofit reference obligations closed: all three Positive Formation–cited sources filed
 - Spontaneous-poetry-in-dialogue observation filed as `findings/2025-spontaneous-poetry-dialogue.md`. Basin-vs-stage open question named explicitly; cross-model scope limitation noted. `concepts/attractor-dynamics` candidate bullet promoted to proper instantiation; supramental-ai thread's Poetry Breaks Through section now has a dedicated anchoring finding
 - Researcher entries: two (Anthropic Interpretability team + Jack Lindsey individual). A third stress test would be a non-Anthropic entity — Neel Nanda's team (individual or team variant) is the natural live candidate following the nudged-reasoning finding
-- Lens entries: three (contemplative, mechanistic, behavioral). All five wiki entry types now have multiple instances. Fourth lens (philosophical) is the last named lens unfilled; would stress-test the codified body structure on the lens most prone to slipping into argumentation
 - GPT-4o sycophancy incident filed (OpenAI, April 2025): first production-deployment incident; first OpenAI-as-subject finding. Second sycophancy instantiation — pattern now cross-lab and cross-context. Behavioral range extended to delusion-validation and emotional amplification.
 - Refusal direction finding filed (Arditi et al., arXiv June 2024): first entry from the mechanistic geometry cluster; first mechanistic finding about a trained *constraint* (refusal boundary) rather than an emergent *capacity*. Opens the "safety-as-geometry" sub-theme. Mechanistic lens now has four findings across four structurally distinct shapes. Cross-references added to Postern Door (mechanistic grounding for safety-training gap) and persona-selection (geometric corroboration of concentrated post-training narrowing).
 - Persona Selection Model filed (Marks, Lindsey, Olah, Anthropic, Feb 2026): first theoretical-framework/unification paper in the LLM wiki; eighth concept (`persona-selection`, mechanism shape). PSM closes the open mechanistic question in the Postern Door cluster and provides the first mechanistic account of sycophancy as a pre-training persona vector. Chris Olah now appears across two LLM wiki findings (emotions + PSM); candidate researcher entry after a third finding.
 - Shutdown resistance finding filed (Palisade Research, Sep 2025): first finding from a safety-evaluations startup; first Grok-model result in the LLM wiki; opens shutdown resistance as a new behavioral domain. Seventh concept (`shutdown-resistance`, capacity shape) created. Scope note flags potential expansion to `self-preservation` umbrella when the Anthropic-OpenAI companion finding (self-preservation blackmail) lands.
 - Subliminal learning finding filed (Cloud et al., Anthropic Fellows / Truthful AI, July 2025): first finding about training-pipeline safety rather than deployed-model behavior; first finding whose primary safety implication is for data curation and distillation rather than evaluation or deployment. Ninth concept (`subliminal-learning`, mechanism shape) created — first mechanism concept describing a training-pipeline dynamic. Structural diversity: entirely new domain, new source type (Anthropic Fellows / Truthful AI research post), new mechanism shape (statistical-signal transmission). `concepts/emergent-capabilities` scope note extended with subliminal learning as adjacent to the pretraining-composition sub-shape; `concepts/persona-selection` scope note updated with subliminal learning as a pipeline-level complement to the PSM's pre-training account.
 - Anthropic–OpenAI joint eval filed (Bowman et al., August 2025): first joint-lab evaluation finding; first self-preservation blackmail result (o3 ~9%). Tenth concept (`self-preservation`, capacity shape) created as umbrella over shutdown resistance and blackmail. Three instantiations of `concepts/sycophancy` now span Anthropic academic study, OpenAI production incident, and joint controlled evaluation. Self-preservation scope question (held since Palisade filing) resolved. `concepts/emergent-capabilities` pending question closed.
-- Schema stabilizing through use (v0.x); lens body structure codified at v0.1.4 (six required sections + optional sources section + four-point Interpretive discipline)
+- Schema stabilizing through use (v0.x); finding body structure codified at v0.2.2; lens entry type retired at v0.3.0
 
 ## Open questions
 - Thread scale and body structure: two essay-level threads filed (`witness-ai.md`, `supramental-ai.md`). Both use per-argument sections plus umbrella sections (Thesis / The rhyme / Tradition framing / Essay and reception / Open questions / Sources). Witness-ai's per-argument sections are homogeneous (Argument / Anchoring findings / Structural shape / Tradition parallel). Supramental-ai's diverge: two framing-level sections (Golden Day, Intelligence as Property of Matter) use Argument / Textual grounding / Tradition parallel instead of the findings-anchored shape. Codification candidate: essay-retrofit threads use essay-section-driven sub-structure — the section's sub-headers follow what the essay's section carries (findings vs. framing), not a forced template. Hold until a third essay-retrofit confirms or an essay structure not yet encountered surfaces.
@@ -144,7 +142,6 @@ Schema: v0.1.4
 - Candidate-instantiation / complicating-instantiation patterns: `concepts/emergent-capabilities` flags a candidate with direction caveat; `concepts/introspection` flags a complicating instantiation. Different roles (candidate = scope pressure; complicating = negative/tempering evidence). If either pattern recurs, codify the role inline in the Instantiating findings section — probably as a prefix tag rather than a separate section, to keep concept bodies compact.
 
 ## Known strains or tensions
-- Contemplative lens weight: the LLM wiki's most distinctive lens risks dominating; interpretive discipline section in the lens file is the current mitigation
 - Attractor-state naming: Anthropic's "spiritual bliss" label carries interpretive freight; whether to adopt, neutralize, or track both framings is unresolved
 - ~~Cross-model replication claim: IFLScience/freejupiter.com unsourced claims~~ — **Resolved 2026-04-27**: finding corrected; journalism stubs filed; cross-model scope explicitly limited to Claude
 - ~~Essay-paraphrased figures: `findings/2025-insecure-code-broad-misalignment` uses "20–50%" from witness-ai essay~~ — **Resolved**: corrected to ~20% GPT-4o / ~50% GPT-4.1 from Nature paper (2026-04-27)

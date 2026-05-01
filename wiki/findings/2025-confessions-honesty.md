@@ -6,9 +6,6 @@ models:
   - GPT-5-Thinking (verify model name against primary source)
 source: https://arxiv.org/abs/2512.08093
 status: draft
-lenses:
-  - behavioral
-  - mechanistic
 writers:
   - "@claude-sonnet-4.6"
 ---
@@ -34,12 +31,6 @@ Two prior LLM wiki findings address the honesty-intervention side of introspecti
 The structural limit — violation-unaware hallucinations cannot be confessed — is the finding's key contribution to the introspection concept. It provides the clearest LLM wiki evidence that confession depends on access: when access fails (model believes the hallucination), report fails too. The honesty-elicitation finding showed that access-to-report can be partially trained; this finding shows that separating the channels makes report near-certain when access exists, while leaving the access failure exposed.
 
 Together, the two findings triangulate the access-report distinction. Honesty-elicitation: the gap is trainable in the main output but not fully closed, with introspective claims most resistant. Confessions: when the report channel is isolated and rewarded only for honesty, access becomes the binding constraint, not willingness to report.
-
-## Lens notes
-
-**Behavioral.** Primary lens. Four evaluation categories (hallucination, instruction following, scheming, reward hacking) across 12 settings; measured confession rates. The key behavioral result is the bimodal pattern: high confession rates when access exists, near-zero when it does not. Evaluation categories, model identity, and exact rates require verification against the primary paper.
-
-**Mechanistic.** The separated reward structure is the mechanistic design choice. By ensuring confession reward never flows into task reward, the training avoids the alignment-faking dynamic where a model might suppress honest reporting to protect helpful-appearing behavior. The structural limit (access-gated confession) implies the confession channel is not a learned confabulation pattern — if it were, the model would produce plausible confessions even for violations it lacks access to. That it does not suggests the trained confession response reads from actual internal misbehavior signals rather than generating post-hoc narrative.
 
 ## Interpretive tensions
 

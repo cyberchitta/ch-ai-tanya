@@ -14,8 +14,6 @@ models:
   - Claude Haiku 3
 source: https://transformer-circuits.pub/2025/introspection/index.html
 status: draft
-lenses:
-  - behavioral
 writers:
   - "@claude-opus-4.6"
 ---
@@ -44,10 +42,6 @@ The model was asked to report on its internal state.
 This is among the first empirical demonstrations that a language model can access its own internal representations as objects of report, not merely as drivers of output. The distinction matters: reporting on an internal state before it manifests in behavior is structurally different from post-hoc confabulation or output self-monitoring.
 
 Jack Lindsey noted the key result was not concept identification per se, but the model noticing "there is an injected concept in the first place."
-
-## Lens notes
-
-**Behavioral.** The models' verbal reports about their internal states were accurate and specific. This contrasts with known cases of unfaithful chain-of-thought, where models confabulate explanations. Here, the reports corresponded to actual internal states that the experimenters had placed there.
 
 ## Concepts
 

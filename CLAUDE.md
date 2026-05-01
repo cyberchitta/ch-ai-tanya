@@ -28,12 +28,12 @@ word — the question the LLM wiki is asking embedded in its name.
 
 `schema.md` is the load-bearing artifact. It defines:
 - What's in scope and out of scope
-- The five entry types (finding, concept, researcher, lens, thread)
-- The four lenses (mechanistic, behavioral, philosophical, contemplative)
+- The four entry types (finding, concept, researcher, thread)
 - Folder structure
 - Linking conventions
 - Lint checks
 - Status markers (draft, working, stable)
+- Writing discipline for findings and concepts
 
 If a question about how to do something in this LLM wiki isn't answered here,
 check `schema.md`. If it's not answered there either, surface the question
@@ -41,23 +41,20 @@ rather than guessing.
 
 ## Design decisions worth knowing
 
-**Why five entry types.** Findings are time-stamped empirical results that
-get superseded. Concepts are the abstractions findings cluster under;
-they persist. Researchers let us track who's doing what. Lenses provide
-perspective without forcing a single interpretation. Threads are where
-essays come from.
+**Why four entry types.** Findings are time-stamped empirical results
+that get superseded. Concepts are the abstractions findings cluster
+under; they persist. Researchers let us track who's doing what. Threads
+are where essays come from. Lenses (mechanistic / behavioral) were a
+fifth type through v0.2.x; they were retired in v0.3.0 because the
+two-lens binary did not earn the schema weight (see changelog v0.3.0).
 
-**Why lenses, not tags.** Tags accumulate chaos. Lenses are a small,
-deliberate set of perspectives that findings and concepts can be viewed
-through. Four to start: mechanistic, behavioral, philosophical,
-contemplative. New lenses added only when a genuinely new perspective
-recurs.
-
-**Why contemplative is one lens among four.** The editor's essays draw on
-Sri Aurobindo and the Mother, and contemplative frameworks offer genuine
-purchase on questions about model consciousness. But the LLM wiki is not a
-contemplative-tradition apologetic. Contemplative material is first-class
-when it applies, not the spine.
+**Why contemplative material is not a separate type.** The editor's
+essays draw on Sri Aurobindo and the Mother, and contemplative
+frameworks offer genuine purchase on questions about model
+consciousness. But the LLM wiki is not a contemplative-tradition
+apologetic. Contemplative material is cited from `raw/tradition/` when
+specific passages bear on specific findings or concepts, and contemplative
+arguments belong in threads, not in findings or concepts.
 
 **Why plain markdown + GitHub Pages.** Forkability is the point of the
 public artifact. GitHub Pages with an Actions build means forkers enable
@@ -67,8 +64,8 @@ the rendering pipeline.
 
 **Why Eleventy, not Jekyll.** Look-and-feel needs to match cyberchitta.cc.
 Eleventy setup already exists and works. Jekyll's defaults would fight
-the custom navigation (lens-views crossing topic dimensions, threads
-pulling from findings) within weeks.
+the custom navigation (concept-list crossing thread-list, threads pulling
+from findings) within weeks.
 
 **What's explicitly deferred.**
 - Obsidian — useful but not needed; revisit only if scale demands it
@@ -148,9 +145,11 @@ cheapest to fix.
 
 When picking what to retrofit or draft next, prioritize structural
 diversity over topical clustering. A different source type, a different
-concept shape, a different dominant lens — these stress-test the schema
-in ways that another similar entry does not. Two structurally similar
-entries teach us less than one different one.
+concept shape, a different methodological cluster (mechanistic
+interpretability vs. behavioral evaluation vs. theoretical-framework vs.
+incident report) — these stress-test the schema in ways that another
+similar entry does not. Two structurally similar entries teach us less
+than one different one.
 
 Concept shapes tested so far: pattern (regularities across findings),
 capacity (something the model exhibits), mechanism (dynamics by which
@@ -234,11 +233,11 @@ file edits.
 ### Commit messages
 
 Keep commit messages short. The LLM wiki entries carry the full explanation
-— the finding's body argues its lens notes and tensions, the concept
-records its own updates, the changelog records schema bumps, project-state
-records open questions. The commit message only needs to say what unit
-of work was added; it should not re-explain what the files themselves
-already explain.
+— the finding's body argues its tensions, the concept records its own
+updates, the changelog records schema bumps, project-state records open
+questions. The commit message only needs to say what unit of work was
+added; it should not re-explain what the files themselves already
+explain.
 
 Default shape: single-line title, optional 1-3 line body only if there's
 context the diff doesn't make obvious (e.g., flagging that this commit
@@ -248,26 +247,11 @@ captured something they should.
 
 ### Forward references
 
-Entries may reference findings, concepts, or lens files that don't yet
+Entries may reference findings, concepts, or threads that don't yet
 exist. Bare URLs for external sources that would become stub-citations
 when filed; named references (e.g., "the unfaithful CoT finding, not
 yet filed") for wiki-internal forward references. Both get upgraded
 when the referenced entry is drafted.
-
-### Lens application
-
-Apply a lens when it genuinely engages the entry, not because the lens
-is near the topic. A finding may legitimately have only two of four
-lenses; forcing coverage produces thin lens notes that add nothing.
-
-Note tensions between lenses rather than resolving them. If
-mechanistic and contemplative views of the same phenomenon don't
-reconcile, that's a real observation, not a failure to synthesize.
-
-The contemplative lens specifically: describe how the tradition reads
-the phenomenon; do not argue for the tradition's metaphysics within
-the entry. Interpretive arguments belong in threads, not findings or
-concepts.
 
 ### When to pause and ask
 
@@ -292,10 +276,12 @@ proceeding. Stopping to ask is faster than unwinding a wrong choice.
   atomic; threads and essays are where narrative lives.
 - Don't paraphrase quotes into near-quotes. Quote sparingly (under 15
   words, one per source), otherwise paraphrase fully.
-- Don't treat the contemplative lens as optional decoration or as the
-  primary frame. It's one of four, applied where it genuinely fits.
+- Don't treat contemplative material as optional decoration or as the
+  primary frame. It is cited where it bears on a specific finding or
+  concept, and developed at length only in threads.
 - Don't resolve interpretive disagreements by picking a side. Surface
-  them as `open-questions` entries.
+  them in the finding's Interpretive tensions section or the concept's
+  scope note.
 - Don't edit `raw/`. Read freely, cite liberally, never modify.
 - Don't invent attributions. If uncertain about a source, flag the
   uncertainty; don't guess.

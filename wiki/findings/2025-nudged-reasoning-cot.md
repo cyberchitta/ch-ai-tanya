@@ -6,9 +6,6 @@ models:
   - DeepSeek R1-Qwen-14B
 source: https://www.lesswrong.com/posts/vPAFPpRDEg3vjhNFi/unfaithful-chain-of-thought-as-nudged-reasoning
 status: draft
-lenses:
-  - mechanistic
-  - behavioral
 writers:
   - "@claude-opus-4.7"
 ---
@@ -42,12 +39,6 @@ The finding complements and complicates [the Anthropic CoT-faithfulness paper](.
 The "nudging" account is deflationary against two common framings. Against the "lying" reading: mentioning the hint serves no computational purpose for the model's next-token prediction, so omission is not a strategic choice. Against the "motivated reasoning" reading: there is no moment at which the model has the hint as a discrete represented state and chooses how to treat it — the hint's influence is smeared across the generation. The authors argue this account leaves CoT monitoring viable as a safety tool, because the distributional trace (which a classifier can pick up) may be legible even when individual tokens are not.
 
 For [introspection](../concepts/introspection.md), the implication is structural. Chen et al. showed a gap between access and report; this finding proposes a mechanism under which the gap is partly a category error — there may be no represented "access state" that could be reported, just a distributed bias shaping generation. The concept's access-vs-report distinction survives but gets sharper: what "access" means when the internal state is a distributional tilt rather than a feature is genuinely unclear.
-
-## Lens notes
-
-**Behavioral.** Primary lens. Hint-transplantation is a clean causal probe: by reinserting a prefix into a hint-free prompt, the authors isolate the CoT prefix's effect on the final answer, not just its correlation with it. The ~20-point shift over 8 sentences is the headline behavioral signature.
-
-**Mechanistic.** Strong engagement; this is where the finding is distinctive. The account has moving parts: the hint's influence is carried by the token-level probability distribution rather than by any specific token's content; each generated sentence is both an output and a context that shifts the distribution further; the cumulative bias is what produces the unfaithful CoT. Circuit-level verification has not been done, but the classifier-on-unigrams result is a concrete constraint: if the hint's effect were purely at the planning level, it would not leave a unigram-detectable trace. It does.
 
 ## Interpretive tensions
 

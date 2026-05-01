@@ -185,3 +185,100 @@ informal reportage are filed here, separate from `raw/posts/` (research
 posts, blog posts with original empirical content) and `raw/papers/`. The
 distinction marks epistemic status: journalism stubs document reception and
 claims, not primary evidence.
+
+### v0.2.2 — 2026-05-01
+
+Driven by reviewing all 31 filed findings and noticing that the finding
+body structure had accumulated as oral convention without ever being
+written down — the most-instantiated entry type was the only one without
+a documented body template. Survey confirmed five universal sections
+(Summary, Why it matters, Lens notes, Concepts, Sources), one variable
+body section between Summary and Why it matters with five observed
+naming shapes, two well-established optional sections (Interpretive
+tensions, Threads), and one undocumented optional section (Cross-
+references) used three times for secondary/partial connections.
+
+**Codified: finding body structure.** Five required sections with exact
+headers (Summary, Why it matters, Lens notes, Concepts, Sources) plus a
+flexibly-named body section between Summary and Why it matters and three
+optional sections (Interpretive tensions, Threads, Cross-references).
+Section ordering is fixed; optional sections may be omitted when there's
+nothing to put in them.
+
+**Documented: body section name variants.** Two main patterns —
+`Observed phenomenon` for observational/incident/system-card sources and
+`Method` + `Key results` for controlled studies — plus three single-
+instance variants for multi-case-study, theoretical-framework, and
+replication-heavy papers. New name patterns are acceptable when they fit
+the source; codify only after recurrence.
+
+**Codified: `Cross-references` as optional section.** For secondary or
+partial connections that aren't primary instantiations or anchorings:
+partial concept corroboration, non-anchoring thread mentions,
+methodological precedents in other findings, sub-shape notes too narrow
+for the Concepts section.
+
+**Clarified: `Why it matters` content.** The editorial-framing section
+that distinguishes a wiki entry from a paper summary. Cross-finding
+scaffolding (instantiation counts, structural-shape notes) lives here.
+Documenting what the section is for — implicit in 31 findings, never
+stated.
+
+**Follow-up cleanup (separate commit):** two findings (2026-metagaming-
+capability-rl, 2026-stability-asymmetry-deception) place Interpretive
+tensions before Lens notes, inverting the convention used by the other
+26 findings with that section. To be reordered in a single small pass.
+
+## v0.3.0 — 2026-05-01
+
+Driven by reviewing the lens system after v0.2.0 reduced it from four
+lenses to two. With only mechanistic and behavioral remaining, the
+binary collapses to "looked inside the model vs. looked at outputs" —
+closer to a single methodological tag than to a structured taxonomy. The
+two `wiki/lenses/` files carried six required body sections each; the
+schema-weight-to-payload ratio was the highest in the wiki. Lens notes
+sections in findings and concepts mostly restated content already
+present in the body; the v0.1.5 cleanup that removed forced lens notes
+had reduced but not eliminated the pressure toward boilerplate.
+
+**Removed: lens as a wiki entry type.** `wiki/lenses/` deleted along
+with `mechanistic.md`, `behavioral.md`, the directory's `_index.md`, and
+`lenses.json`. The lens type drops out of the universal-frontmatter
+`type` enum, the folder structure, and the linking conventions.
+
+**Removed: `lenses` frontmatter from findings and concepts.** Was a
+required list of which lenses applied; now obsolete.
+
+**Removed: `## Lens notes` body section.** Findings no longer carry the
+section. Concepts no longer carry it. Substantive content was folded
+into Why-it-matters / body / Definition / Scope-note sections in stage
+2 and stage 3 cleanup commits; boilerplate was dropped.
+
+**Removed: lens-application rule and forced-lens-notes lint check.** Both
+were specific to the lens system.
+
+**Folded: four-point interpretive discipline rule** into a new "Writing
+discipline for findings and concepts" section in `schema.md`. The shape
+(name evidence precisely, distinguish observation from disposition,
+weight negative results equally, don't escalate) generalized cleanly
+from per-lens to entry-wide writing rule and earned its keep there.
+
+**Updated: tradition-material inclusion rule.** The reference to a
+deleted `lenses/contemplative.md` (already removed in v0.2.0 but the
+schema text still alluded to it) now reads as a general statement:
+contemplative readings that develop into sustained arguments belong in
+threads.
+
+**Updated: stale `lenses/contemplative.md` links in threads.** Three
+inline references in `threads/witness-ai.md` and `threads/supramental-
+ai.md` pointed to the v0.2.0-deleted contemplative lens file. The
+paraphrased four-point discipline content already inline in the threads
+is preserved; the dead link is dropped.
+
+**Updated: findings index page.** `wiki/findings/index.ejs` no longer
+describes findings as "read through one or more lenses."
+
+**Stage-2 and stage-3 cleanups (separate commits):** lens content
+removal across 31 findings and 10 concepts. Each entry's lens notes
+section was inspected individually; substantive content folded where it
+contributed beyond what the body already carried; boilerplate dropped.

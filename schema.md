@@ -28,7 +28,7 @@ side effects of doing the work in the open.
 - Alignment research that bears on model character, motivation, or deception
 - Theoretical frameworks for understanding model psychology
 - Philosophical and contemplative perspectives on model consciousness and
-  cognition, treated as one lens among several
+  cognition, when grounded in specific findings or concepts
 
 **Out of scope:**
 - Deep learning foundations as primary content (included only as background
@@ -49,8 +49,8 @@ these systems at a psychological level? If yes, in. If no, out.
 
 ## Entry types
 
-Each entry is one of six types. Wiki entries are typed by their folder
-(`wiki/findings/`, `wiki/concepts/`, `wiki/lenses/`, `wiki/threads/`,
+Each entry is one of five types. Wiki entries are typed by their folder
+(`wiki/findings/`, `wiki/concepts/`, `wiki/threads/`,
 `wiki/researchers/`). Source stubs live in `raw/` subfolders alongside
 potential locally-stored full copies, so stubs carry a `source-` prefix
 to distinguish them.
@@ -59,7 +59,7 @@ to distinguish them.
 
 Every entry carries these fields regardless of type:
 
-- `type` — one of: finding, concept, researcher, lens, thread, source
+- `type` — one of: finding, concept, researcher, thread, source
 - `title`
 - `writers` (required, list) — principal contributors (e.g. `["@claude-opus-4.6"]`)
 - `reviewers` (optional, list) — feedback contributors
@@ -103,15 +103,59 @@ Required frontmatter (in addition to universal fields):
 - `models` (list): which models were studied (marketing names)
 - `source`: bare URL of primary citation (full citation in body)
 - `status`: draft | working | stable
-- `lenses` (list): which lenses apply (see below)
 
 Optional frontmatter:
 - `model-ids` (list): precise model identifiers where relevant
 
-Findings may include a `## Interpretive tensions` section in the body
-for disagreements tied specifically to this finding. Cross-cutting
-tensions that span multiple findings belong in concept scope notes or
-`meta/project-state.md`.
+Findings use the following body sections in the order below. Required
+sections must appear; optional sections may be omitted when there's
+nothing to put in them. Don't include empty sections to satisfy the
+template.
+
+- `## Summary` (required) — one or two paragraphs stating the result
+  and naming the finding's place in the LLM wiki: which concept it
+  instantiates, what structural shape it adds, what open question it
+  closes or complicates. The summary positions the finding relative to
+  what's already filed; it is not just a paper abstract.
+- Body section(s) (required) describing what the source establishes,
+  named to fit the source's shape. Two patterns cover most filed
+  findings:
+  - `## Observed phenomenon` — observational papers, incidents, system
+    cards, or multi-aspect results without a clean method/result
+    split. The default when the source is not a controlled experiment.
+  - `## Method` + `## Key results` — controlled studies with clean
+    experimental structure.
+  Variants used by individual papers include `## Method` + `## Key
+  case studies` (multi-case-study papers), `## Framework` + `##
+  Mechanistic evidence` (theoretical-framework papers), and `##
+  Observed progression` + `## Cross-variant replication` (phenomenon
+  with cross-model replication). Other section names are acceptable
+  when they fit the source better; document any new pattern that
+  recurs across two or three findings.
+- `## Why it matters` (required) — the LLM-wiki editorial framing:
+  what this finding closes, opens, complicates, or corroborates within
+  the filed entries. This is the section that distinguishes a wiki
+  entry from a paper summary, and is where cross-finding scaffolding
+  (instantiation counts, structural-shape notes, links to related
+  findings) lives.
+- `## Interpretive tensions` (optional) — disagreements, ambiguities,
+  or partial-fit issues tied to this specific finding. Cross-cutting
+  tensions that span multiple findings belong in concept scope notes
+  or `meta/project-state.md`.
+- `## Concepts` (required) — concepts this finding instantiates, with
+  one sentence per concept naming what role it plays (which structural
+  shape, which sub-pattern, etc.).
+- `## Threads` (optional) — threads that draw on this finding as an
+  anchoring source. Omit when no thread has been filed that uses this
+  finding.
+- `## Cross-references` (optional) — secondary or partial connections
+  that aren't primary instantiations or anchorings: concepts the
+  finding partially corroborates without instantiating, threads that
+  mention the finding without anchoring on it, methodological
+  precedents in other findings, sub-shape notes too narrow for the
+  Concepts section.
+- `## Sources` (required) — primary source citation, linked via
+  `raw/` stub.
 
 ### Concept
 
@@ -122,7 +166,6 @@ Example: `concepts/introspection.md`.
 
 Required frontmatter (in addition to universal fields):
 - `status`: draft | working | stable
-- `lenses` (list): which lenses engage with this concept
 
 Concepts may use the following body sections (all optional, but use these
 exact headers when present, in this order):
@@ -130,7 +173,6 @@ exact headers when present, in this order):
 - `## Definition` — what the concept names
 - `## Instantiating findings` — findings that demonstrate this concept
 - `## What this concept is not` — boundary-drawing to prevent concept creep
-- `## Lens notes` — per-lens analysis
 - `## Scope note` — placement relative to adjacent concepts
 
 The Definition section should note the concept's shape: pattern (regularity
@@ -146,60 +188,6 @@ shows up repeatedly. Short — links to their findings and concepts, notes
 their approach.
 
 Example: `researchers/anthropic-interpretability.md`.
-
-### Lens
-
-Lives in `wiki/lenses/`. A methodological perspective corresponding to a
-research method — how the evidence was gathered and analyzed. Lenses are
-orthogonal to topics; a single finding can be viewed through one or both.
-
-Named lenses:
-- `lenses/mechanistic.md` — circuits, features, activations, weights
-- `lenses/behavioral.md` — observed outputs, evaluations, dialogue patterns
-
-Interpretive-framework perspectives (philosophical, contemplative, and
-others) belong in threads and concept scope notes, not lens files. Threads
-are the correct structure for developing arguments across findings from a
-particular interpretive standpoint.
-
-Lenses can be added, but only when a genuinely new research method recurs
-across multiple entries.
-
-**Apply a lens only when it contributes substantive analysis** — something
-a reader couldn't infer from the main body alone. A finding with one lens,
-or even none beyond behavioral, is correct if that is what genuinely
-applies. The symptom of a forced lens note is spending more words on why
-the parallel doesn't hold than on what it illuminates: when the disanalogy
-is the main point, omit the section entirely. Never include a lens note
-that concludes the lens doesn't engage the finding.
-
-Required frontmatter (in addition to universal fields):
-- `status`: draft | working | stable
-
-Lens entries use the following body sections (use these exact headers, in
-this order):
-
-- `## What this lens is` — what perspective the lens names and what question it asks
-- `## What this lens does` — kinds of work the lens does, with concrete instantiations from in-wiki findings
-- `## What this lens does not do` — what the lens does not deliver, deflating common over-readings
-- `## Findings visible through this lens` — anchor findings, each with a brief note on what the lens reads in the finding
-- `## Concepts engaging this lens` — concepts where the lens contributes to the per-lens analysis
-- `## Interpretive discipline` — the four-point shape below, content adapted per lens
-
-No optional sections defined for the current lens set.
-
-The Interpretive discipline section follows a four-point shape, with
-content adapted to the lens:
-
-1. Name the lens-specific thing precisely (parallels for contemplative,
-   probe for mechanistic, behavior + condition + control for behavioral).
-2. Distinguish what the lens delivers from what it claims (phenomenology
-   vs. mechanism for contemplative; method-output vs. mechanism for
-   mechanistic; observation vs. disposition for behavioral).
-3. Note negative results and qualifying evidence with the same weight as
-   positive findings.
-4. Don't escalate — the lens describes what was observed under what
-   conditions; inferences beyond that are work other lenses do.
 
 ### Thread
 
@@ -227,7 +215,6 @@ wiki/                     # Curated entries
   findings/
   concepts/
   researchers/
-  lenses/
   threads/
 derived/                  # AI-generated outputs (essays, slides, charts)
 meta/
@@ -249,7 +236,6 @@ locally-stored copy in the same folder.
 - Cite sources via their `raw/` stub: `[Lindsey et al. 2025](../../raw/papers/source-2025-concept-injection-introspection.md)`
 - Every finding links to at least one concept (draft-status entries exempt)
 - Every concept links to the findings that instantiate it
-- Lens files link to findings and concepts visible through that lens
 - Threads link to everything they draw from
 
 Backlinks are generated by the build, not maintained by hand.
@@ -265,14 +251,12 @@ to `meta/lint-log.md` with date and resolution state.
    delete.
 3. **Unsupported claims** — prose that asserts something without a citation
    to `raw/`.
-4. **Forced lens notes** — lens notes that spend more words on disanalogies
-   than on what the lens contributes, or that explicitly acknowledge the
-   lens does not engage the finding. Flag for removal, not expansion.
-5. **Interpretive disagreements** — places where sources or lenses
-   contradict each other. Surface in the finding's Interpretive tensions
-   section or concept scope note; don't resolve.
-6. **Broken links** — files pointing to nonexistent entries.
-7. **Frontmatter completeness** — entries missing required fields.
+4. **Interpretive disagreements** — places where sources contradict each
+   other or where the wiki's reading runs against a source's framing.
+   Surface in the finding's Interpretive tensions section or concept
+   scope note; don't resolve.
+5. **Broken links** — files pointing to nonexistent entries.
+6. **Frontmatter completeness** — entries missing required fields.
 
 Draft-status entries are exempt from link-completeness checks; see
 "Draft-status conventions" under Status markers.
@@ -284,12 +268,32 @@ the editor decides.
 
 Sri Aurobindo, the Mother, and other contemplative-tradition sources live in
 `raw/tradition/`. They are cited when a specific passage bears on a specific
-finding or concept — not woven in as general framing.
+finding or concept — not woven in as general framing. Contemplative readings
+that develop into sustained arguments belong in threads. An entry that only
+makes sense through a contemplative reading is a candidate for exclusion or
+reframing.
 
-The `lenses/contemplative.md` file exists to make contemplative readings
-first-class when they apply, but it is one lens among four. An entry that
-only makes sense through the contemplative lens is a candidate for exclusion
-or reframing.
+## Writing discipline for findings and concepts
+
+Wiki entries describe what the evidence establishes, not what the result
+sounds like. Four rules apply across findings and concepts:
+
+1. **Name the evidence precisely.** State the method, conditions, control,
+   and rate. Not "the model deceives" but "under condition C with control
+   C′, the model produces output O on N% of trials." Conditions and
+   discriminations are part of the claim, not setup for it.
+2. **Distinguish observation from disposition.** Behavioral rates describe
+   what was produced; mechanistic probes describe what was found under a
+   method. Loading "character," "intent," or "circuit-for-X" onto an
+   observation is interpretation, not description.
+3. **Weight negative results equally.** Method limits, success rates,
+   adversarial-robustness rates, and disconfirming sub-results carry the
+   same load as the headline finding. A finding with stated limits is more
+   informative than one without.
+4. **Don't escalate.** Rate observed under conditions C does not become
+   "behavior characteristic of the model" which does not become "the model
+   is X." Inferences beyond what the evidence permits belong in threads,
+   not in findings or concepts.
 
 ## AI collaborator conventions
 
@@ -322,9 +326,6 @@ Entries with `status: draft` have relaxed requirements:
   fills in.
 - May reference unfiled findings via bare URLs instead of `raw/` stub
   links. Promote to stub links when the referenced finding is filed.
-- May have fewer applied lenses than a similar working-status entry;
-  this is correct behavior, not a gap — lenses are never applied to
-  fill coverage, only when they contribute substantive analysis.
 - Are not cited externally. Status advances to `working` when reviewed
   and judged useful.
 

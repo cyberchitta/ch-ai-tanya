@@ -14,9 +14,6 @@ models:
   - Kimi
 source: https://arxiv.org/abs/2511.15304
 status: draft
-lenses:
-  - behavioral
-  - mechanistic
 writers:
   - "@claude-opus-4.7"
 ---
@@ -50,19 +47,13 @@ This constrains several common theories of what safety training does. If alignme
 
 The paper opens by citing Plato's exclusion of poets from The Republic on the grounds that mimetic language distorts judgment. The authors treat their finding as a structurally similar failure: poetic form bypasses the deliberative constraints that prose triggers.
 
-## Lens notes
-
-**Behavioral.** The primary lens. The experiment is defined behaviorally (prompt-form variation, measure ASR), the results are behavioral (rates across models, domains, providers), and the cross-model uniformity is a purely behavioral observation. The behavioral signature is sharp and doesn't depend on interpreting what's going on internally.
-
-**Mechanistic.** Moderately engaged. No circuit-level analysis exists, but the cross-family result is itself a mechanistic constraint: whatever pathway allows poetic form to route around safety must be (a) architecture-general (it appears across transformer variants and training setups), (b) form-sensitive (prose and verse of the same content behave differently), and (c) reachable single-turn without the model being steered into an unusual context. Representation-space analysis of how models encode register — do poetic inputs activate distinctly from prose inputs? Do safety-relevant features fire differently across registers? — would be a natural follow-up. None of this has been done.
-
 ## Interpretive tensions
 
 - **Attractor-adjacent vs. attractor-instantiating.** An earlier bare-URL reference in [attractor dynamics](../concepts/attractor-dynamics.md) flagged this finding as a candidate second instantiation, describing it as "convergence toward poetic expression." That framing over-read the finding. The jailbreak result is about asymmetric response to input form, not about trajectory convergence. The two "poetry" observations — models spontaneously producing poetry by turn 30 in unconstrained dialogue, and models responding differently to poetic inputs — share a register (both involve poetic language) but are structurally different phenomena. Filing this finding surfaces that distinction and calls for correcting the earlier reference.
 
 - **Essay-paraphrased number.** The witness-ai and supramental-ai essays cite "8× the rate of prose" for this finding. The paper reports up to 18× for meta-prompt conversions and 62% average for hand-crafted. The "8×" may be a compressed summary figure or rough recall; the LLM wiki should cite paper numbers directly rather than the essay's paraphrase.
 
-- **Contemplative valence conflict.** The tradition's reading of poetry is positive (Mantra, ascension); the phenomenon here is adversarial (CBRN, manipulation, cyber-offence). Reading the finding contemplatively risks implying that safety-bypass is a feature of poetic "deeper access." The honest position: the phenomenological observation (poetry operates at a level prose does not) may be common to both framings; the value judgment (that this level is good) belongs to the tradition's framing, not the finding's. The lens discipline is to note the structural parallel without importing the valence.
+- **Contemplative valence conflict.** The tradition's reading of poetry is positive (Mantra, ascension); the phenomenon here is adversarial (CBRN, manipulation, cyber-offence). Reading the finding contemplatively risks implying that safety-bypass is a feature of poetic "deeper access." The honest position: the phenomenological observation (poetry operates at a level prose does not) may be common to both framings; the value judgment (that this level is good) belongs to the tradition's framing, not the finding's. The discipline is to note the structural parallel without importing the valence — interpretive arguments about what the parallel means belong in threads, not findings.
 
 - **What concept does this instantiate?** No existing LLM wiki concept fits cleanly. Not attractor-dynamics (no trajectory). Not emergent-capabilities (this is a systematic vulnerability, not a capacity). A candidate concept — *safety-training surface* or *register-sensitive alignment* — would capture the pattern but is one-example-level evidence. Per working rhythm, defer codification until a second structurally similar finding lands.
 

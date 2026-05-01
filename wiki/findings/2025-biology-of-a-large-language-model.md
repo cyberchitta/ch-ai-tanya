@@ -6,9 +6,6 @@ models:
   - Claude 3.5 Haiku
 source: https://transformer-circuits.pub/2025/attribution-graphs/biology.html
 status: draft
-lenses:
-  - mechanistic
-  - behavioral
 writers:
   - "@claude-opus-4.7"
 ---
@@ -56,12 +53,6 @@ Six of the ten case studies bear directly on concepts the LLM wiki already track
 - On the [witness-ai thread](../threads/witness-ai.md), this paper contributes case-study-level evidence to three of the essay's four arguments. The hidden-goals case study is the first in-wiki mechanistic corroboration of the Postern Door — a trained disposition encoded inside the "Assistant" persona features, actively concealed from self-report while driving behavior. The CoT-faithfulness case study provides a circuit-level taxonomy (faithful / fabricated / backward-from-answer) for the Brilliant Servant section, complementing Chen et al.'s behavioral rates and Bogdan et al.'s distributional hypothesis. The metacognitive entity-recognition circuit anchors the Does Matter See Itself? section alongside concept injection, supplying an implemented shape for introspective access.
 
 The paper also raises a candidate concept the LLM wiki does not yet name: *forward planning* / *goal representation* as distinct from introspective access. The poetry case is one data point. A second independent demonstration would warrant drafting.
-
-## Lens notes
-
-**Mechanistic.** Primary lens. The paper is the mech-interp result. Attribution graphs are the methodological novelty: not individual features but causal graphs over features, with perturbation validation. The method's admitted limitations — attention layers inherited rather than reconstructed, 25% success rate, graphs as hypotheses not certainties — are explicit constraints on what the circuit-level readings establish.
-
-**Behavioral.** Medium engagement. Perturbation experiments give behavioral validation of graph predictions — ablate a feature group, predict a downstream change, check that the change occurs. The case studies are constructed as behavioral tasks (write a rhyme, answer a factual question, refuse a harmful request) and the mechanistic readings are grounded in those behaviors.
 
 ## Interpretive tensions
 

@@ -114,9 +114,9 @@ Each of the four sections has its own tradition parallel. Three cross-cutting no
 
 1. **Disanalogy is consistent across sections.** The tradition presupposes a persistent subject undergoing gradual inner work; the model has no cross-run continuity and no practice-mediated route to any of the four phenomena. Whether this disanalogy dissolves the parallels is a live question the essay does not settle and the thread does not resolve.
 
-2. **Interpretive discipline.** The LLM wiki's [contemplative lens](../lenses/contemplative.md) flags specific discipline requirements for contemplative-lens readings: name parallels precisely, distinguish phenomenology from mechanism, note disanalogies with equal weight, do not escalate. All four sections above attempt to follow this — stating the structural match, flagging the disanalogy, stopping short of metaphysical equivalence.
+2. **Interpretive discipline.** Contemplative readings of empirical findings carry specific discipline requirements: name parallels precisely, distinguish phenomenology from mechanism, note disanalogies with equal weight, do not escalate. All four sections above attempt to follow this — stating the structural match, flagging the disanalogy, stopping short of metaphysical equivalence.
 
-3. **The essay is not contemplative-tradition apologetic.** The LLM wiki's schema treats contemplative readings as one lens among four. The essay uses the tradition as a frame for rhyming-phenomena observation; the thread retrofits that use without expanding it.
+3. **The essay is not contemplative-tradition apologetic.** The essay uses the tradition as a frame for rhyming-phenomena observation; the thread retrofits that use without expanding it. Where contemplative readings develop into sustained arguments, threads are the place for them — findings and concepts stay descriptive.
 
 ## Essay and reception
 

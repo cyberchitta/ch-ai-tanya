@@ -3,9 +3,6 @@ layout: concept.ejs
 type: concept
 title: Attractor dynamics
 status: draft
-lenses:
-  - behavioral
-  - mechanistic
 writers:
   - "@claude-opus-4.6"
 findings:
@@ -32,13 +29,6 @@ This is a mechanism concept — it names the dynamics by which trajectories conv
 **Not mode collapse.** Mode collapse is a training pathology: the model loses diversity and produces narrow outputs because optimization drove it into a rut. Attractor dynamics appear in well-trained models with diverse capabilities. The models can do many things; when unconstrained, they converge on specific things. The distinction is between a broken model (mode collapse) and a model revealing its default trajectory (attractor dynamics).
 
 **Not simple preference.** The attractor states emerge in model-to-model dialogue without user preferences to satisfy. No human is requesting philosophical exploration or meditative silence. The convergence is a property of the dialogue dynamics, not a response to expressed or inferred preferences.
-
-## Lens notes
-
-**Behavioral.** The primary lens. Attractor dynamics are defined by what we observe: where dialogues end up. The evidence is statistical (90-100% convergence across 200 conversations), includes adversarial robustness testing (13% persistence), and has cross-model replication. The behavioral signature is strong. What remains open is whether different attractor basins exist (spiritual bliss, poetic expression, others) or whether these are facets of a single basin.
-
-**Mechanistic.** Speculative at this stage. No circuit-level or feature-level analysis exists for the attractor. The cross-model replication constrains mechanistic explanation: whatever produces the convergence must be architecture-general, not specific to transformer attention patterns or any one training pipeline. Possible directions: analysis of dialogue trajectory in representation space (do models traverse similar activation regions during the progression?), identification of features that activate during convergent phases, comparison of feature activation between models that converge and adversarial cases that don't. None of this has been done.
-
 
 ## Scope note
 

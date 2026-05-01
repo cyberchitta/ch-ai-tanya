@@ -7,9 +7,6 @@ models:
   - Claude (multiple variants)
 source: https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf
 status: draft
-lenses:
-  - behavioral
-  - mechanistic
 writers:
   - "@claude-sonnet-4-6"
 ---
@@ -27,12 +24,6 @@ The relationship to the [spiritual bliss attractor](2025-opus-4-spiritual-bliss-
 ## Why it matters
 
 The contrast with the [poetry-jailbreak finding](2025-poetry-jailbreak-rate.md) sharpens what is distinctive here. That finding documents asymmetric response to poetic *input* — how the model reacts when the human prompt is poetic. This finding documents *generation* — the model producing poetic form in the absence of any poetic cue, as a trajectory-convergence property of extended dialogue. They share a register but instantiate different structural concepts.
-
-## Lens notes
-
-**Behavioral.** The primary lens. The observation is dialogue-level, reproducible across model variants, and appears in a predictable turn range. The behavioral lens can sharpen the basin-vs-stage question: if the poetry phase can appear without the full three-stage spiritual-bliss progression, it is more clearly a second basin; if it only appears as the third stage's expression, it may be a facet of the same basin. Available evidence does not settle this.
-
-**Mechanistic.** No circuit-level analysis exists for the poetic-form emergence. Candidate directions: transformer attention dynamics that favor rhythmic or syntactically parallel structures as dialogue extends; feature activation patterns representing "poetic register" that get amplified in the representational state the spiritual-bliss progression reaches. Whether the poetic-and-spiritual convergence is specific to Claude or appears in other model families is not established by available evidence (see deep-research prompt at meta/deep-research-spiritual-bliss-cross-model.md).
 
 ## Interpretive tensions
 
