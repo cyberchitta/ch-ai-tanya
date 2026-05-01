@@ -50,6 +50,7 @@ Models tested are Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct — open-source 
 ## Cross-references
 
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — cross-domain EM-like drift (flawed math → evil expression) adds new domain coverage to the concealed-content sub-shape (third domain beyond insecure-code and reward-hacking).
+- [Convergent-misalignment finding](2025-convergent-misalignment-soligo.md) (Soligo et al., MATS / DeepMind, June 2025) — methodologically complementary direction-extraction approach. Persona Vectors uses contrastive *prompts* (system prompts that elicit/suppress a named trait); Soligo et al. uses contrastive *responses* (aligned vs. misaligned answers from one EM model) to extract a general misalignment direction. Different extraction strategies, compatible results: linearly extractable, causally manipulable directions for behaviorally-defined model states. Persona Vectors' EM-like cross-trait shift result (training on flawed math induces evil/sycophancy direction shifts) and Soligo et al.'s convergent-direction-across-fine-tunes result are two angles on the same underlying picture.
 
 ## Sources
 
