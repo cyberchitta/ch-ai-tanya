@@ -1,1 +1,1 @@
-{ "tags": "thread" }
+{ "tags": "thread", "eleventyExcludeFromCollections": true }

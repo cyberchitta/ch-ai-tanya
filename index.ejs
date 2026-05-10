@@ -1,22 +1,35 @@
 ---
 permalink: /
 ---
+<div class="article-content" style="margin-bottom: 2.4rem;">
+  <p style="font-size: 1.05rem; line-height: 1.7; color: var(--color-base-content); opacity: 0.85;">
+    A working wiki of concepts and empirical findings about large language
+    models. Co-written with the models themselves — bylines on every entry.
+  </p>
+</div>
 
-<p><em><%= site.tagline %>.</em> An LLM wiki on psychological-level phenomena in large language models — character, persona, emotion, introspection, motivation, deception, and the internal structures behind them. AI-curated, human-edited.</p>
-
-<ul>
-<% for (const entry of helpers.byTitle(collections.concept)) { %>
-  <li>
-    <a href="<%= entry.url %>"><%= entry.data.title %></a>
-    <% const slugs = (entry.data.findings || []); %>
-    <% const listed = slugs.map(s => helpers.findingBySlug(collections.finding, s)).filter(Boolean); %>
-    <% if (listed.length > 0) { %>
-    <ul>
-      <% for (const f of listed) { %>
+<h2 class="group-header">concepts</h2>
+<div class="concept-list">
+<% for (const c of helpers.byTitle(collections.concept)) {
+     const findings = (c.data.findings || [])
+       .map((s) => helpers.findingBySlug(collections.finding, s))
+       .filter(Boolean);
+     const blurb = c.data.blurb;
+%>
+  <article class="concept-entry">
+    <div class="concept-entry-head">
+      <h3><a href="<%= c.url %>"><%= c.data.title %></a></h3>
+      <span class="concept-entry-count"><%= findings.length %> findings</span>
+      <% if (c.data.status) { %><%- include('primitives/status-badge', { status: c.data.status }) %><% } %>
+    </div>
+    <% if (blurb) { %><p class="concept-entry-blurb"><%= blurb %></p><% } %>
+    <% if (findings.length) { %>
+    <ul class="concept-entry-findings">
+      <% for (const f of findings) { %>
       <li><a href="<%= f.url %>"><%= f.data.title %></a></li>
       <% } %>
     </ul>
     <% } %>
-  </li>
+  </article>
 <% } %>
-</ul>
+</div>

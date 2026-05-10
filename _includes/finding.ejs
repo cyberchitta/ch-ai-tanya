@@ -1,0 +1,55 @@
+---
+layout: base.ejs
+---
+<%
+const _status = (typeof status !== 'undefined' && status) ? status : null;
+const _models = (typeof models !== 'undefined' && models) ? models : [];
+const _date = (typeof date !== 'undefined' && date) ? date : null;
+const _source = (typeof source !== 'undefined' && source) ? source : null;
+const parents = helpers.parentConcepts(collections.concept, page.fileSlug);
+%>
+
+<nav class="crumb-nav"><a href="/wiki/findings/">← Findings</a></nav>
+
+<% if (parents.length) { -%>
+<div class="parent-link">
+  <span class="parent-link-label">part of:</span>
+  <% parents.forEach((p, i) => { -%>
+  <% if (i > 0) { -%><span class="muted">, </span><% } -%>
+  <a href="<%= p.url %>"><%= p.data.title %></a>
+  <% }) -%>
+</div>
+<% } -%>
+
+<%- include('primitives/entry-title-row', { title: title }) %>
+
+<div class="entry-meta-row" style="margin-top: 0.6rem; margin-bottom: 1.4rem;">
+  <% if (_status) { -%>
+  <%- include('primitives/status-badge', { status: _status }) %>
+  <% } -%>
+  <%- include('primitives/provenance', { models: _models, date: _date ? helpers.formatDate(_date) : null }) %>
+
+</div>
+
+<% if (_source) { -%>
+<div class="entry-meta-row" style="margin-bottom: 1.8rem;">
+  <%- include('primitives/outbound-action', { href: _source, label: 'Read source' }) %>
+</div>
+<% } -%>
+
+<hr class="rule-divider" style="margin-top: 0;" />
+
+<section class="article-content">
+<%- content %>
+</section>
+
+<% if (parents.length) { -%>
+<section style="margin-top: 2.6rem;">
+  <h2 class="group-header">concepts</h2>
+  <ul class="backlink-list">
+    <% parents.forEach((p) => { -%>
+    <li><a href="<%= p.url %>"><%= p.data.title %></a></li>
+    <% }) -%>
+  </ul>
+</section>
+<% } -%>
