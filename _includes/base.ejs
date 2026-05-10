@@ -34,7 +34,7 @@ permalink: "<%= page.fileSlug==='' ? 'index.html' : `${page.filePathStem}.html` 
     <%- content %>
   </main>
   <footer class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-    <%- include('primitives/footer') %>
+    <%- include('primitives/footer', { mainSiteUrl: 'https://www.cyberchitta.cc' }) %>
   </footer>
 </body>
 </html>
