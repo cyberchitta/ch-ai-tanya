@@ -1,7 +1,10 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import ejsPlugin from '@11ty/eleventy-plugin-ejs';
-import sgPlugin, { helpers as sgHelpers } from '@cyberchitta/supramental-gold/eleventy';
+import sgPlugin, {
+  helpers as sgHelpers,
+  createSectionTitleTransform,
+} from '@cyberchitta/supramental-gold/eleventy';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const sgRoot = path.dirname(
@@ -36,6 +39,31 @@ export default function (eleventyConfig) {
   eleventyConfig.ignores.add('schema.md');
   eleventyConfig.ignores.add('CLAUDE.md');
   eleventyConfig.ignores.add('README.md');
+  eleventyConfig.ignores.add('TODO.md');
+
+  // Recognise canonical wiki H2s and rewrite them into SG section-title
+  // shape. Authored markdown like `## Concepts` produces a plain
+  // `<h2>Concepts</h2>`; this transform converts that to
+  // `<h2 class="group-header">concepts</h2>` and classes the
+  // immediately-following `<ul>` with `.backlink-list` (or
+  // `.finding-list` for `## Findings`).
+  const sectionTitleTransform = createSectionTitleTransform({
+    Concepts: { listClass: 'backlink-list' },
+    Sources: { listClass: 'backlink-list' },
+    'Cross-references': { listClass: 'backlink-list' },
+    'Cited in': { listClass: 'backlink-list' },
+    Threads: { listClass: 'backlink-list' },
+    Findings: { listClass: 'finding-list' },
+    'Interpretive tensions': {},
+    Definition: {},
+    'Instantiating findings': { listClass: 'backlink-list' },
+    'What this concept is not': {},
+    'Scope note': {},
+  });
+  eleventyConfig.addTransform('sgSectionTitles', function (content) {
+    if (!this.page.outputPath || !this.page.outputPath.endsWith('.html')) return content;
+    return sectionTitleTransform(content);
+  });
 
   eleventyConfig.addTransform('rewriteMdLinks', function (content) {
     if (!this.page.outputPath || !this.page.outputPath.endsWith('.html')) return content;
