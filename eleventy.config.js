@@ -24,13 +24,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addGlobalData('layout', 'base.ejs');
   eleventyConfig.addGlobalData('helpers', sgHelpers);
 
-  // Pull SG's compiled stylesheet into our own assets dir so the
-  // <link> in base.ejs can be a relative URL during local dev.
-  // When we tag SG and switch to jsDelivr, this passthrough goes away.
-  eleventyConfig.addPassthroughCopy({
-    [`${sgRoot}/dist/styles.css`]: 'assets/css/styles.css',
-  });
-
   // Ignore non-content directories
   eleventyConfig.ignores.add('design-handoff/**');
   eleventyConfig.ignores.add('cache/**');
