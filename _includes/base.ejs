@@ -7,12 +7,12 @@ permalink: "<%= page.fileSlug==='' ? 'index.html' : `${page.filePathStem}.html` 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><% if (typeof title !== 'undefined' && title && title !== site.title) { %><%= title %> — <% } %><%= site.title %></title>
-  <link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/cyberchitta/supramental-gold@v0.2.0/assets/cc-260508.svg" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="<%= sg.logoSvgUrl %>" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;700&family=Fira+Code&family=Courier+Prime&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;700&family=Fira+Code&family=Courier+Prime&display=swap"></noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cyberchitta/supramental-gold@v0.2.0/dist/styles.css">
+  <link rel="stylesheet" href="<%= sg.cssBundleUrl %>">
   <script>
     (function () {
       const mq = window.matchMedia('(prefers-color-scheme: dark)');
@@ -27,7 +27,7 @@ permalink: "<%= page.fileSlug==='' ? 'index.html' : `${page.filePathStem}.html` 
 </head>
 <body class="font-sans bg-base-100 text-base-content">
   <header class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
-    <%- include('primitives/chrome') %>
+    <%- include('primitives/chrome', { brandLogoUrl: sg.logoSvgUrl }) %>
     <%- include('primitives/sub-site-bar') %>
   </header>
   <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
