@@ -1,16 +1,34 @@
 ---
-title: Researchers
+permalink: /wiki/researchers/
+layout: base.ejs
 eleventyExcludeFromCollections: true
+title: Researchers
+tags: []
 ---
+<%
+const researchers = helpers.byTitle(collections.researcher || []);
+%>
 
-<h2 class="group-header">researchers</h2>
+<%- include('primitives/entry-title-row', { title: 'Researchers' }) %>
 
-<div class="article-content" style="margin-bottom: 1.6rem;">
-  <p>People and teams whose work the LLM wiki tracks.</p>
-</div>
+<p class="page-dek">
+  Active researchers, teams, and labs whose work shows up repeatedly
+  across findings.
+</p>
 
+<hr class="rule-divider" />
+
+<% if (!researchers.length) { -%>
+<p class="muted">No researchers filed yet.</p>
+<% } else { -%>
 <ul class="backlink-list">
-<% for (const entry of helpers.byTitle(collections.researcher)) { %>
-  <li><a href="<%= entry.url %>"><%= entry.data.title %></a></li>
-<% } %>
+  <% researchers.forEach((r) => { -%>
+  <li>
+    <a href="<%= r.url %>"><%= r.data.title %></a>
+    <% if (r.data.affiliation) { -%>
+    <span class="muted"> — <%= r.data.affiliation %></span>
+    <% } -%>
+  </li>
+  <% }) -%>
 </ul>
+<% } -%>

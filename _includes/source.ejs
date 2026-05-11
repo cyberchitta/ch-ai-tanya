@@ -1,0 +1,82 @@
+---
+layout: base.ejs
+---
+<%
+// Source page — bibliographic record + outbound action + annotation
+// body + cited-in backlinks.
+//
+// Frontmatter (per schema.md "Source (source-*.md)"):
+//   type: source           (set via raw/raw.json folder data)
+//   title:                 the source's title, as published
+//   authors: [list]
+//   date:                  publication date (earliest public version)
+//   source:                bare URL of the primary publication
+//   venue:                 optional — journal, conference, blog name
+//   writers: [list]        annotation authors (LLM bylines)
+//
+// Body: 2–4 sentence description, optionally a quote, optionally an
+// "Annotation" / "Why we cite this" / "Where we disagree" section.
+// H2s get rewritten by the SG section-title transform; see
+// eleventy.config.js.
+//
+// Cited-in backlinks: any finding whose frontmatter `cites:` array
+// includes this source's fileSlug is listed at the bottom. Findings
+// that link to the source by markdown anchor only (without a `cites:`
+// entry) won't be picked up — this is the lightweight opt-in form;
+// migration is forward-compatible.
+
+const _authors = (typeof authors !== 'undefined' && authors) ? authors : [];
+const _venue   = (typeof venue   !== 'undefined' && venue)   ? venue   : null;
+const _date    = (typeof date    !== 'undefined' && date)    ? date    : null;
+const _source  = (typeof source  !== 'undefined' && source)  ? source  : null;
+
+const slug = page.fileSlug;
+const citingFindings = (collections.finding || [])
+  .filter((f) => Array.isArray(f.data.cites) && f.data.cites.includes(slug));
+%>
+
+<nav class="crumb-nav"><a href="/raw/">← Sources</a></nav>
+
+<%- include('primitives/entry-title-row', { title: title }) %>
+
+<div class="entry-meta-row" style="margin-top: 0.6rem; margin-bottom: 1.4rem;">
+  <%- include('primitives/provenance', {
+    authors: _authors,
+    venue: _venue,
+    date: _date ? helpers.formatDate(_date) : null
+  }) %>
+</div>
+
+<% if (_source) { -%>
+<div class="entry-meta-row" style="margin-bottom: 1.8rem;">
+  <%- include('primitives/outbound-action', { href: _source, label: 'Read source' }) %>
+</div>
+<% } -%>
+
+<hr class="rule-divider" style="margin-top: 0;" />
+
+<section class="article-content">
+<%- content %>
+</section>
+
+<% if (citingFindings.length) { -%>
+<section style="margin-top: 2.6rem;">
+  <h2 class="group-header">cited in</h2>
+  <ul class="finding-list">
+    <% citingFindings.forEach((f) => { -%>
+    <li>
+      <a href="<%= f.url %>"><%= f.data.title %></a>
+      <div class="finding-meta">
+        <% if (f.data.status) { -%>
+        <%- include('primitives/status-badge', { status: f.data.status }) %>
+        <% } -%>
+        <% if (f.data.date) { -%><span><%= helpers.formatDate(f.data.date) %></span><% } -%>
+        <% if (f.data.models && f.data.models.length) { -%>
+        <span>·</span><span><%= f.data.models.join(', ') %></span>
+        <% } -%>
+      </div>
+    </li>
+    <% }) -%>
+  </ul>
+</section>
+<% } -%>
