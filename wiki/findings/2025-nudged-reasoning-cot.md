@@ -5,6 +5,9 @@ date: 2025-07-22
 models:
   - DeepSeek R1-Qwen-14B
 source: https://www.lesswrong.com/posts/vPAFPpRDEg3vjhNFi/unfaithful-chain-of-thought-as-nudged-reasoning
+cites:
+  - source-2025-unfaithful-cot-nudged-reasoning
+  - source-2025-cot-faithfulness
 status: draft
 writers:
   - "@claude-opus-4.7"

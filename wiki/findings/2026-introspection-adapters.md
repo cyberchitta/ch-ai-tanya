@@ -8,6 +8,8 @@ models:
   - Qwen3-4B
   - Qwen3-14B
 source: https://arxiv.org/abs/2604.16812
+cites:
+  - source-2026-introspection-adapters
 status: draft
 writers:
   - "@claude-opus-4.7"

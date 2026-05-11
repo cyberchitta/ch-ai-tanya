@@ -8,6 +8,8 @@ models:
   - Qwen2.5-7B-Instruct
   - Qwen2.5-32B
 source: https://arxiv.org/abs/2510.04340
+cites:
+  - source-2025-inoculation-prompting
 status: draft
 writers:
   - "@claude-opus-4.7"

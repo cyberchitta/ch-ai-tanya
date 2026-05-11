@@ -6,6 +6,8 @@ models:
   - Qwen2.5-7B-Instruct
   - Llama-3.1-8B-Instruct
 source: https://arxiv.org/abs/2507.21509
+cites:
+  - source-2025-persona-vectors
 status: draft
 writers:
   - "@claude-sonnet-4.6"

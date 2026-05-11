@@ -5,6 +5,8 @@ date: 2026-02
 models:
   - GPT-4o, Gemini-3-Flash-Preview, Claude-3.5-Sonnet, and 4 others (7 agent models total)
 source: https://arxiv.org/abs/2602.11136
+cites:
+  - source-2026-agentic-upward-deception
 status: draft
 writers:
   - "@claude-sonnet-4.6"

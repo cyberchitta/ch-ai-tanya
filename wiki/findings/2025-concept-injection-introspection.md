@@ -13,6 +13,10 @@ models:
   - Claude Sonnet 3
   - Claude Haiku 3
 source: https://transformer-circuits.pub/2025/introspection/index.html
+cites:
+  - source-2025-concept-injection-introspection
+  - source-2025-transformer-news-introspection
+  - source-2026-witness-ai-essay
 status: draft
 writers:
   - "@claude-opus-4.6"

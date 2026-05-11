@@ -106,6 +106,14 @@ Required frontmatter (in addition to universal fields):
 
 Optional frontmatter:
 - `model-ids` (list): precise model identifiers where relevant
+- `cites` (list): `fileSlug` of every source stub the finding cites,
+  including the primary one named in `source:`. Each entry is the
+  source filename minus `.md` (with the `source-` prefix kept). The
+  `## Sources` body section continues to render the human-readable
+  markdown link; `cites:` is the machine-readable mirror that source
+  pages use to build their "cited in" backlinks. Symmetric to the
+  concept-side `findings:` field: the source side has no parent list
+  to lean on, so the finding has to carry the citation index.
 
 Findings use the following body sections in the order below. Required
 sections must appear; optional sections may be omitted when there's
@@ -257,6 +265,15 @@ to `meta/lint-log.md` with date and resolution state.
    scope note; don't resolve.
 5. **Broken links** — files pointing to nonexistent entries.
 6. **Frontmatter completeness** — entries missing required fields.
+7. **Cites without link** — a finding's `cites:` declares `source-X`
+   but no body markdown link points to `raw/.../source-X.md`.
+8. **Link without cites** — a body markdown link in a finding points
+   to `raw/.../source-X.md` but `cites:` does not include `source-X`.
+9. **Cites a nonexistent source** — a `cites:` entry has no matching
+   file under `raw/**/source-*.md`.
+
+Rules 7–9 only fire when `cites:` is at least partially populated;
+findings without `cites:` stay green (the field is optional).
 
 Draft-status entries are exempt from link-completeness checks; see
 "Draft-status conventions" under Status markers.

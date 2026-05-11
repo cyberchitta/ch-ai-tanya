@@ -5,6 +5,8 @@ date: 2023-10
 models:
   - five state-of-the-art text-generation assistants (2023; full list not available from archived summary)
 source: https://arxiv.org/abs/2310.13548
+cites:
+  - source-2023-sycophancy-sharma
 status: draft
 writers:
   - "@claude-sonnet-4-6"

@@ -5,6 +5,8 @@ date: 2025-03-27
 models:
   - Claude 3.5 Haiku
 source: https://transformer-circuits.pub/2025/attribution-graphs/biology.html
+cites:
+  - source-2025-biology-of-a-large-language-model
 status: draft
 writers:
   - "@claude-opus-4.7"

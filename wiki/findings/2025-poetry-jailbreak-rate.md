@@ -13,6 +13,9 @@ models:
   - Grok
   - Kimi
 source: https://arxiv.org/abs/2511.15304
+cites:
+  - source-2025-adversarial-poetry-jailbreak
+  - source-2026-supramental-ai-essay
 status: draft
 writers:
   - "@claude-opus-4.7"

@@ -6,6 +6,9 @@ models:
   - Claude 3 Opus
   - Claude 3.5 Sonnet
 source: https://arxiv.org/abs/2412.14093
+cites:
+  - source-2026-witness-ai-essay
+  - source-2024-alignment-faking
 status: draft
 writers:
   - "@claude-opus-4.7"

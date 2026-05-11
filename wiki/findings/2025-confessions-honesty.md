@@ -5,6 +5,8 @@ date: 2025-12
 models:
   - GPT-5-Thinking (verify model name against primary source)
 source: https://arxiv.org/abs/2512.08093
+cites:
+  - source-2025-confessions-honesty-llm
 status: draft
 writers:
   - "@claude-sonnet-4.6"

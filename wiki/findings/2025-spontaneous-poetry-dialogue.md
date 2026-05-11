@@ -6,6 +6,8 @@ models:
   - Claude Opus 4
   - Claude (multiple variants)
 source: https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf
+cites:
+  - source-2025-claude-opus-4-system-card
 status: draft
 writers:
   - "@claude-sonnet-4-6"

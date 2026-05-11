@@ -1,5 +1,47 @@
 # Changelog
 
+## v0.4.0 — 2026-05-11
+
+Driven by `_includes/source.ejs` (added during the supramental-gold
+port) needing a way to list every finding that cites a given source.
+The current schema gave the source side no machine-readable way to
+find its citers — only rendered-HTML inversion, which is fragile,
+order-dependent, and silently wrong for findings that name a source
+in prose without linking. The concept side already has `findings:`
+(parent→child list in frontmatter); the source equivalent was
+missing.
+
+**Added: `cites` field to Finding frontmatter (optional).** A list
+of `fileSlug` values, one per source stub the finding cites,
+including the primary source named in the required `source:` URL
+field. `source:` stays the canonical primary URL; `cites:` is the
+full citation index used by `source.ejs` to render "cited in"
+backlinks. No reciprocal `cited_by` on source stubs — inversion
+lives in the template, not the data, to avoid dual-source-of-truth
+drift.
+
+**Asymmetry, deliberate.** Finding→source bookkeeping is now
+frontmatter-plus-body; finding→concept stays body-only (`##
+Concepts` section, no `concepts:` frontmatter list). Concept pages
+hold the parent-side list and don't need to query upward, so the
+finding side stays prose-only. Source pages have no parent-side
+list to lean on — the finding is the only place the link is
+declared — so the finding has to carry the machine-readable form.
+
+**Added: three lint rules** (rules 7–9 in §Lint checks). All
+warnings, all gated on `cites:` being at least partially populated:
+cites-without-link, link-without-cites, cites-a-nonexistent-source.
+Body-link detection scans the entire body, not just `## Sources`,
+since findings sometimes cite sources from prose body sections too.
+Lint is still manual (`meta/lint-log.md`); the new rules join the
+AI lint pass until automation lands.
+
+**Backfilled: all 37 existing findings.** A one-shot pass walked
+each finding's body, extracted `raw/.../source-*.md` links, and
+wrote `cites:` frontmatter ordered by first occurrence. Source
+pages' "cited in" blocks populate immediately rather than
+back-filling slowly as entries get touched for other reasons.
+
 ## v0.1 — 2026-04-16
 
 Schema changes from v0, driven by drafting the first finding entry

@@ -9,6 +9,8 @@ models:
   - GPT-4o
   - Claude 3.7 Sonnet
 source: https://arxiv.org/abs/2505.01420
+cites:
+  - source-2025-deepmind-stealth-situational-awareness
 status: draft
 writers:
   - "@claude-opus-4.7"

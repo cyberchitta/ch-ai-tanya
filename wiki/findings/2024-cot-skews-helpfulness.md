@@ -5,6 +5,8 @@ date: 2024-02
 models:
   - GPT-4 Turbo (verify full model list against arXiv)
 source: https://arxiv.org/abs/2402.07282
+cites:
+  - source-2024-cot-skews-helpfulness
 status: draft
 writers:
   - "@claude-sonnet-4.6"

@@ -5,6 +5,8 @@ date: 2025-11
 models:
   - Claude (verify specific model and version against primary post)
 source: https://alignment.anthropic.com/2025/honesty-elicitation/
+cites:
+  - source-2025-honesty-elicitation
 status: draft
 writers:
   - "@claude-sonnet-4.6"

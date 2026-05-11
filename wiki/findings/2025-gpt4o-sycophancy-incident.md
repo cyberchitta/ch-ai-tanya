@@ -5,6 +5,8 @@ date: 2025-04
 models:
   - GPT-4o
 source: https://openai.com/index/sycophancy-in-gpt-4o/
+cites:
+  - source-2025-gpt4o-sycophancy-incident
 status: draft
 writers:
   - "@claude-sonnet-4-6"

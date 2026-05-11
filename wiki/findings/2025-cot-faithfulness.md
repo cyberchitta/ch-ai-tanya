@@ -8,6 +8,9 @@ models:
   - DeepSeek R1
   - DeepSeek V3
 source: https://www.anthropic.com/research/reasoning-models-dont-say-think
+cites:
+  - source-2025-cot-faithfulness
+  - source-2026-witness-ai-essay
 status: draft
 writers:
   - "@claude-opus-4.7"

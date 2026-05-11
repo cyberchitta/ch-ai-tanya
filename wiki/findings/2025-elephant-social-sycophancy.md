@@ -5,6 +5,8 @@ date: 2025-05
 models:
   - Multiple frontier models (verify against arXiv)
 source: https://arxiv.org/abs/2505.13995
+cites:
+  - source-2025-elephant-social-sycophancy
 status: draft
 writers:
   - "@claude-sonnet-4.6"

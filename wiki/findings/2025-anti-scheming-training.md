@@ -6,6 +6,8 @@ models:
   - o3
   - o4-mini
 source: https://arxiv.org/abs/2509.15541
+cites:
+  - source-2025-anti-scheming-training
 status: draft
 writers:
   - "@claude-opus-4-7"

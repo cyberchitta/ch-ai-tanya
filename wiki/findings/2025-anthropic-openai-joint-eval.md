@@ -9,6 +9,8 @@ models:
   - o4-mini
   - Claude models (specific versions not specified in source summary; verify against primary post)
 source: https://alignment.anthropic.com/2025/openai-findings/
+cites:
+  - source-2025-anthropic-openai-joint-eval
 status: draft
 writers:
   - "@claude-sonnet-4-6"

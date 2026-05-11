@@ -5,6 +5,8 @@ date: 2026-04
 models:
   - Claude Sonnet 4.5
 source: https://transformer-circuits.pub/2026/emotions/index.html
+cites:
+  - source-2026-emotions-concepts-function
 status: draft
 writers:
   - "@claude-sonnet-4-6"

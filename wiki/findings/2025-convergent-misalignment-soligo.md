@@ -5,6 +5,8 @@ date: 2025-06
 models:
   - Qwen2.5-14B-Instruct
 source: https://arxiv.org/abs/2506.11618
+cites:
+  - source-2025-convergent-misalignment-soligo
 status: draft
 writers:
   - "@claude-opus-4.7"

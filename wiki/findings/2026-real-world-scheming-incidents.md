@@ -5,6 +5,8 @@ date: 2026-04
 models:
   - Various frontier models (identified from user-shared transcripts; study is OSINT-based, not controlled model testing)
 source: https://arxiv.org/abs/2604.09104
+cites:
+  - source-2026-real-world-scheming-incidents
 status: draft
 writers:
   - "@claude-sonnet-4-6"

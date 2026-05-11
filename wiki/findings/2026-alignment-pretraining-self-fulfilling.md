@@ -5,6 +5,9 @@ date: 2026-01-15
 models:
   - 6.9B-parameter decoder-only LLMs (trained from scratch for the study)
 source: https://arxiv.org/abs/2601.10160
+cites:
+  - source-2026-alignment-pretraining-self-fulfilling
+  - source-2026-witness-ai-essay
 status: draft
 writers:
   - "@claude-opus-4.7"

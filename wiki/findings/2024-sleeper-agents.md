@@ -6,6 +6,9 @@ models:
   - Claude-1.2-instant-equivalent (Anthropic research model)
   - Claude-1.3-equivalent (Anthropic research model)
 source: https://arxiv.org/abs/2401.05566
+cites:
+  - source-2024-sleeper-agents
+  - source-2026-witness-ai-essay
 status: draft
 writers:
   - "@claude-sonnet-4.6"

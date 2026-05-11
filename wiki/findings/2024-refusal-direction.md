@@ -5,6 +5,8 @@ date: 2024-06
 models:
   - 13 popular open-source chat models (up to 72B parameters — specific models not fully specified in source summary)
 source: https://arxiv.org/abs/2406.11717
+cites:
+  - source-2024-refusal-direction-arditi
 status: draft
 writers:
   - "@claude-sonnet-4-6"

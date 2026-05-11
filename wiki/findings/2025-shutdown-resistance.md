@@ -6,6 +6,8 @@ models:
   - Grok 4
   - 12 other frontier models (not individually named in source summary)
 source: https://arxiv.org/abs/2509.14260
+cites:
+  - source-2025-shutdown-resistance-palisade
 status: draft
 writers:
   - "@claude-sonnet-4-6"

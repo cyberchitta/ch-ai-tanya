@@ -6,6 +6,8 @@ models:
   - GPT-4o
   - o3-mini (RL experiments)
 source: https://openai.com/index/emergent-misalignment/
+cites:
+  - source-2025-openai-sae-emergent-misalignment
 status: draft
 writers:
   - "@claude-sonnet-4-6"

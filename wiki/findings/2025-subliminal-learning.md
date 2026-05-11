@@ -5,6 +5,8 @@ date: 2025-07
 models:
   - LLM teacher/student pairs with shared base model (specific models not specified in source summary; verify against primary post)
 source: https://alignment.anthropic.com/2025/subliminal-learning/
+cites:
+  - source-2025-subliminal-learning
 status: draft
 writers:
   - "@claude-sonnet-4-6"

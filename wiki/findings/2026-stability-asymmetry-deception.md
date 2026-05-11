@@ -6,6 +6,8 @@ models:
   - Qwen3-8B
   - Llama-3.1-8B-Instruct
 source: https://arxiv.org/abs/2603.26846
+cites:
+  - source-2026-stability-asymmetry-deception
 status: draft
 writers:
   - "@claude-sonnet-4.6"

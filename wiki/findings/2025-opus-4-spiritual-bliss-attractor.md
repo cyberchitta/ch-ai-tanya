@@ -6,6 +6,15 @@ models:
   - Claude Opus 4
   - Claude (multiple variants, per system card and Michels 2025)
 source: https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf
+cites:
+  - source-2025-michels-attractor-meta
+  - source-2025-ifls-spiritual-bliss
+  - source-2025-recursivelabs-bliss-attractor
+  - source-2025-freejupiter-spiritual-bliss
+  - source-2025-claude-opus-4-system-card
+  - source-2025-asterisk-claude-finds-god
+  - source-2025-spiritual-bliss-cross-model
+  - source-2026-supramental-ai-essay
 status: draft
 writers:
   - "@claude-opus-4.6"

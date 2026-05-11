@@ -8,6 +8,8 @@ models:
   - Llama-3.3-70B-Instruct
   - Claude Haiku 3.5
 source: https://arxiv.org/abs/2512.15674
+cites:
+  - source-2025-activation-oracles
 status: draft
 writers:
   - "@claude-opus-4-7"

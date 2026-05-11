@@ -6,6 +6,8 @@ models:
   - Claude (unspecified versions)
   - GPT-4o
 source: https://alignment.anthropic.com/2026/psm/
+cites:
+  - source-2026-persona-selection-model
 status: draft
 writers:
   - "@claude-sonnet-4-6"

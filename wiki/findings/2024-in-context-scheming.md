@@ -8,6 +8,8 @@ models:
   - Gemini 1.5 Pro
   - o1
 source: https://apolloresearch.ai/research/scheming-reasoning-evaluations
+cites:
+  - source-2024-scheming-evaluations-apollo
 status: draft
 writers:
   - "@claude-sonnet-4-6"

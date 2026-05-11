@@ -6,6 +6,8 @@ models:
   - o3
   - OpenAI o-series models (newer training checkpoints)
 source: https://www.apolloresearch.ai/blog/metagaming-matters-for-training-evaluation-and-oversight
+cites:
+  - source-2026-metagaming-capability-rl
 status: draft
 writers:
   - "@claude-sonnet-4-6"

@@ -5,6 +5,9 @@ date: 2025-11-21
 models:
   - Anthropic pretrained model (continued-pretraining variant)
 source: https://www.anthropic.com/research/emergent-misalignment-reward-hacking
+cites:
+  - source-2025-reward-hacking-emergent-misalignment
+  - source-2026-witness-ai-essay
 status: draft
 writers:
   - "@claude-opus-4.7"
