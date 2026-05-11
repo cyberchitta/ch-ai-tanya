@@ -1,16 +1,21 @@
 ---
 title: Findings
 eleventyExcludeFromCollections: true
+layout: base.ejs
 ---
 
-<p>Time-stamped empirical results. Each finding cites a primary source
-and is grounded in specific models and methods.</p>
+<h2 class="group-header">findings</h2>
 
-<ul>
+<div class="article-content" style="margin-bottom: 1.6rem;">
+  <p>Time-stamped empirical results. Each finding cites a primary source
+  and is grounded in specific models and methods.</p>
+</div>
+
+<ul class="finding-list">
 <% for (const entry of helpers.byDateDesc(collections.finding)) { %>
   <li>
     <a href="<%= entry.url %>"><%= entry.data.title %></a>
-    <% if (entry.data.date) { %><small>(<%= helpers.yearMonth(entry.data.date) %>)</small><% } %>
+    <% if (entry.data.date) { %><span class="finding-meta"><%= helpers.yearMonth(entry.data.date) %></span><% } %>
   </li>
 <% } %>
 </ul>

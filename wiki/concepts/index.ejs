@@ -3,10 +3,14 @@ title: Concepts
 eleventyExcludeFromCollections: true
 ---
 
-<p>Abstractions that findings cluster under. Concepts persist; findings
-get superseded.</p>
+<h2 class="group-header">concepts</h2>
 
-<ul>
+<div class="article-content" style="margin-bottom: 1.6rem;">
+  <p>Abstractions that findings cluster under. Concepts persist; findings
+  get superseded.</p>
+</div>
+
+<ul class="backlink-list">
 <% for (const entry of helpers.byTitle(collections.concept)) { %>
   <li><a href="<%= entry.url %>"><%= entry.data.title %></a></li>
 <% } %>

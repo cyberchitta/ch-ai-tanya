@@ -3,9 +3,13 @@ title: Researchers
 eleventyExcludeFromCollections: true
 ---
 
-<p>People and teams whose work the LLM wiki tracks.</p>
+<h2 class="group-header">researchers</h2>
 
-<ul>
+<div class="article-content" style="margin-bottom: 1.6rem;">
+  <p>People and teams whose work the LLM wiki tracks.</p>
+</div>
+
+<ul class="backlink-list">
 <% for (const entry of helpers.byTitle(collections.researcher)) { %>
   <li><a href="<%= entry.url %>"><%= entry.data.title %></a></li>
 <% } %>
