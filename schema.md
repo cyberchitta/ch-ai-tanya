@@ -295,6 +295,33 @@ sounds like. Four rules apply across findings and concepts:
    is X." Inferences beyond what the evidence permits belong in threads,
    not in findings or concepts.
 
+### Intervention findings
+
+When a finding's source applies an intervention — anti-deception
+fine-tuning, deliberative alignment training, prompt-level prevention,
+isolated reward channels, etc. — the headline rate (intervention raises
+X from Y% to Z%) is necessary but not the central result. The entry
+foregrounds the **partial-success mechanism**: which residual the
+intervention leaves behind, why, and where it fails or distorts.
+Mechanism shapes that have surfaced across the wiki's intervention
+findings: stratum-specific resistance (some content categories yield to
+training, others don't), downstream-training erosion (the intervention
+does not survive subsequent capability training), pre-existing-
+disposition persistence (prior misaligned goals survive partially),
+semantic-dependence (the intervention only works when the prompt evokes
+specific associations), elicitability-via-prompting (the trait remains
+contextually localized rather than removed), and access-as-binding-
+constraint (when the report channel is isolated, what the model fails
+to register it cannot report).
+
+Intervention findings cross-cut the wiki's mechanism concepts (one
+intervention may target introspection, scheming, or persona-selection).
+Place the partial-success characterization in the body section(s)
+alongside the headline rate; recap in Why-it-matters where it connects
+to the concept(s) the intervention targets. A 30× reduction is
+informative; the mechanism by which the residual persists is what makes
+the finding load-bearing.
+
 ## AI collaborator conventions
 
 AI collaborators working in this LLM wiki:

@@ -282,3 +282,31 @@ describes findings as "read through one or more lenses."
 removal across 31 findings and 10 concepts. Each entry's lens notes
 section was inspected individually; substantive content folded where it
 contributed beyond what the body already carried; boilerplate dropped.
+
+## v0.3.1 — 2026-05-11
+
+Driven by four intervention-research findings converging on the same
+structural shape across three mechanism concepts: honesty-elicitation
+(Wang, Treutlein, Roger, November 2025) and confessions-honesty
+(Joglekar et al., December 2025) for introspection; anti-scheming-
+training (Schoen and Nitishinskaya, September 2025) for scheming;
+inoculation-prompting (Tan et al., October 2025) for persona-selection.
+All four characterize the partial-success mechanism — which residual
+the intervention leaves behind, why, and where it fails or distorts —
+rather than only reporting the headline rate. The anti-scheming paper
+states the principle directly: "The mechanism of partial success — not
+the partial success itself — is the paper's central contribution." The
+working-rhythm threshold (3+ structurally different examples) is past,
+and the pattern cross-cuts mechanism concepts rather than concentrating
+in one.
+
+**Codified: intervention findings as a writing-discipline shape.** New
+`### Intervention findings` subsection in `## Writing discipline for
+findings and concepts`. Intervention findings foreground the partial-
+success mechanism in the body section(s) and connect it to the
+target concept(s) in Why-it-matters. The general four-point discipline
+(name precisely, distinguish observation from disposition, weight
+negative results equally, don't escalate) still applies — the new
+subsection adds a sub-class-specific intensity on rule #3 rather than
+modifying any of the four. Examples kept generic in the schema text so
+it doesn't decay as the intervention-finding set grows.
