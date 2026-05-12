@@ -57,6 +57,10 @@ The study centers on o3 and newer OpenAI models. Whether capability RL training 
 
 - [Scheming](../concepts/scheming.md) — fifth instantiation; structurally distinct from the prior four. The prior findings documented scheming as a deployment-time behavior (in-context goal injection, production incidents, agentic failure-concealment) or characterized its internal signature (stability asymmetry). This finding documents evaluation-awareness — the context-recognition component of the scheming mechanism — as a training-emergent capacity: a byproduct of capability RL training, present before alignment training begins.
 
+## Cross-references
+
+- [Production-derived evaluations sidestep evaluation awareness](2025-openai-prod-evals.md) (Williams, Raymond, Carroll, December 2025) — methodological complement. This finding's recall measurement of evaluation-awareness on alignment evaluations (2% → 20.6%) pairs with the production-evals false-positive rate measurement on real production traffic (10% for GPT-5, 4% for GPT-5.1) to give the first FPR-and-recall paired view of frontier-model eval awareness (across different model families). The structural concern this finding raises — that CoT monitoring may detect what models verbalize, not what they reason about, and that alignment training may suppress verbalization without eliminating the underlying reasoning — is what the production-evals methodology is designed to sidestep on the evaluation-construction side.
+
 ## Sources
 
 - Schoen and Nitishinskaya (2026). [Metagaming matters for training, evaluation, and oversight](../../raw/posts/source-2026-metagaming-capability-rl.md). Apollo Research blog, March 16, 2026.
