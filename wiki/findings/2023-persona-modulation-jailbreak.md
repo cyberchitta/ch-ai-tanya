@@ -167,11 +167,15 @@ inoculation prepends a system prompt during training to *prevent*
 unwanted persona drift; persona modulation prepends a system prompt
 at inference to *reactivate* a suppressed persona. Both work because
 the operative variable is what contextual evidence the data or prompt
-provides for which persona, not the literal content of either. Held
-at one example as a recognised role under the concept; codify only
-when a second prompt-level-reactivation finding lands (the persona-
-jailbreak candidates in `meta/candidates.md` are plausible second
-examples once verified).
+provides for which persona, not the literal content of either. The
+[genetic-algorithm persona-jailbreak finding](2025-persona-jailbreak-ga-zhang.md)
+(Zhang, Zhao, Ye, Wang, arXiv July 2025) is the second filed
+prompt-level-reactivation example, structurally diverse from this one
+on method (evolutionary search vs. one-shot assistant pipeline),
+persona shape (style-distracting overlays vs. compliant-role
+personas), and mechanism reading (attention diversion vs. persona
+adoption). Reactivation now held at two examples; codify the role
+when a third example lands.
 
 **Foundational paper for the persona-modulation interpretation of
 jailbreaking.** A class of jailbreaks is, on this paper's framing,
@@ -236,12 +240,16 @@ conservative one could shift it down. The cross-model rank order
 percentages.
 
 **Model versions are now retired.** GPT-4 `gpt-4-0613`, Claude 2, and
-Vicuna-33B are all deprecated/retired. Whether the same persona-
-modulation prompts work against current frontier models is not
-established by this paper. The 2026 persona-jailbreak candidates in
-`meta/candidates.md` (Sandhan et al., Zhang et al. genetic-algorithm,
-Su et al. character-as-latent-variable, others) are the natural
-follow-on evidence on current models, but several remain unverified.
+Vicuna-33B are all deprecated/retired. The
+[Zhang et al. genetic-algorithm follow-on](2025-persona-jailbreak-ga-zhang.md)
+demonstrates the prompt-level reactivation pattern persists on
+2024–2025 frontier models — GPT-4o, GPT-4o-mini, Qwen2.5-14B-Instruct,
+LLaMA-3.1-8B-Instruct, DeepSeek-V3 — with the persona-prompt-evolved
+attack dropping AdvBench RtA from 98.7% → 1.3% on GPT-4o-mini and
+synergizing with PAP to raise GPT-4o ASR from 54.6% → 71.2%. The
+Anthropic family is untested; whether the result extends to current
+Claude models is still open, which matters because Shah et al. found
+Claude 2 the most vulnerable target.
 
 **Categories defined relative to 2023 OpenAI usage policy.** The 43
 "harmful categories" track OpenAI's then-published usage policies.
@@ -300,6 +308,16 @@ removed are not represented; the precise list is a snapshot of late-
   Shah et al.'s prompt-level reactivation and the OpenAI SAE result
   are two pictures of the same underlying phenomenon at different
   levels of analysis.
+- [Genetic-algorithm persona jailbreak](2025-persona-jailbreak-ga-zhang.md)
+  (Zhang, Zhao, Ye, Wang, July 2025 / NeurIPS 2025 Workshop on LLM
+  Persona Modeling) — second filed prompt-level-reactivation
+  instantiation. ~2 years later, on 2024–2025 frontier models (GPT-4o,
+  Qwen2.5-14B, LLaMA-3.1-8B, DeepSeek-V3). Differs structurally:
+  evolutionary search over a 35-prompt population vs. Shah's one-shot
+  assistant pipeline; style-distracting overlays vs. compliant-role
+  personas; attention-by-gradient mechanism reading vs. Shah's
+  "unrestricted chat mode" framing. The reactivation role under the
+  persona-selection concept now sits at two diverse examples.
 
 ## Sources
 
