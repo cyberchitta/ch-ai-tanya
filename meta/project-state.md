@@ -1,13 +1,13 @@
 # Project state
 
-Last updated: 2026-05-12 (Hot Mess of AI filed as 39th finding; first analytical-framework instantiation on the failure-side of emergent capabilities; complicates the scheming cluster's centrality. Modifying Beliefs (SDF) filed as 38th finding; tenth introspection instantiation; fourth intervention finding for the concept and structurally novel target — propositional belief rather than disposition; three-way probe/behavior/reasoning dissociation across measurement modalities.)
+Last updated: 2026-05-12 (Researcher-entry queue cleared: Sam Marks and Neel Nanda entries filed; Jack Lindsey entry updated with the introspection-adapters finding. Hot Mess of AI filed as 39th finding; first analytical-framework instantiation on the failure-side of emergent capabilities; complicates the scheming cluster's centrality. Modifying Beliefs (SDF) filed as 38th finding; tenth introspection instantiation; fourth intervention finding for the concept and structurally novel target — propositional belief rather than disposition; three-way probe/behavior/reasoning dissociation across measurement modalities.)
 Schema: v0.3.1
 
 ## Inventory
 - Findings: 39
 - Concepts: 10
 - Threads: 2
-- Researchers: 2
+- Researchers: 4
 - Source stubs: 52
 
 ## Recent additions
