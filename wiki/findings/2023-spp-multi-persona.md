@@ -30,8 +30,8 @@ listing the personas as if awaiting external input.
 
 Fifty-fifth finding. Eighth filed instantiation of
 [`concepts/persona-selection`](../concepts/persona-selection.md) and
-the cluster's first **prompt-level multi-instantiation** shape —
-distinct from [persona-modulation](2023-persona-modulation-jailbreak.md)'s
+the cluster's first **multi-instantiation** shape — distinct from
+[persona-modulation](2023-persona-modulation-jailbreak.md)'s
 prompt-level *reactivation* (one off-target persona replaces the
 assistant) and [inoculation prompting](2025-inoculation-prompting.md)'s
 prompt-level *prevention* (the assistant posterior is preserved against
@@ -45,6 +45,15 @@ account — either the sub-persona distribution is present in all three
 models but only GPT-4 can be prompted to route between them, or
 instruction-following capability gates access regardless of
 distribution shape. The paper does not separate these readings.
+[Kim et al. 2026](2026-societies-of-thought-kim.md) is the
+mechanistic-level companion 2.5 years later — same shape, different
+level of analysis (SAE-feature steering + RL induction on
+reasoning models) — and partially closes the capability-scale-
+dependence question on the training-stage side by showing
+collaborating personas emerging spontaneously in a 3B pretrained
+model under PPO with accuracy-only reward. The multi-instantiation
+shape is now held at two examples on diverse axes; codify when a
+third example lands.
 
 Behavioral methodology (zero-shot prompting on three task benchmarks).
 Different methodological cluster from the SAE / activation-steering /
@@ -177,15 +186,19 @@ The cluster's prior prompt-level instantiations are
 assistant with a non-assistant persona) and
 [inoculation prompting](2025-inoculation-prompting.md) (prevention:
 supply persona evidence during fine-tuning to *prevent* drift away
-from the assistant). SPP adds a third prompt-level shape:
-**multi-instantiation** — supply dialogue scaffolding at inference
-that activates multiple distinct expert sub-personas *within* a single
-inference, each contributing identifiable behavior in turn. The
-operative variable in all three is what contextual evidence the
-prompt provides for which persona; the three differ in what they do
-with the persona posterior. Held at one example as a recognised role
-under the concept; codify the multi-instantiation shape only when a
-second example lands.
+from the assistant). SPP adds a third shape: **multi-instantiation** —
+supply dialogue scaffolding at inference that activates multiple
+distinct expert sub-personas *within* a single inference, each
+contributing identifiable behavior in turn. The operative variable in
+all three is what contextual evidence the prompt provides for which
+persona; the three differ in what they do with the persona posterior.
+Held with [Kim et al. 2026](2026-societies-of-thought-kim.md) as the
+two multi-instantiation examples — same shape, different level of
+analysis (SPP is prompt-level behavioral on a single GPT-4 inference;
+Kim et al. is mechanistic-level on RL-trained DeepSeek-R1 / QwQ-32B
+with SAE feature steering and personality/expertise diversity
+quantification). Codify the multi-instantiation shape when a third
+example lands.
 
 **Capability-scale dependence is the load-bearing structural
 contribution.** The cluster's mechanistic findings ([PSM](2026-persona-selection-model.md),
@@ -202,6 +215,15 @@ activation-level handle — cannot. The Llama2 early-termination failure
 mode is suggestive of the instruction-following-capability reading
 (the model fails to follow the multi-turn protocol at all rather than
 producing collapsed personas), but does not settle the question.
+[Kim et al. 2026](2026-societies-of-thought-kim.md) partially closes
+one corner of the parameter space: two distinct collaborating personas
+emerge spontaneously in a 3B *pretrained, not-instruction-tuned*
+Qwen-2.5-3B by step 120 of PPO with accuracy-only reward, showing
+that persona-routing structure is not gated by frontier-model
+capability or by instruction-tuning. SPP's specific result — prompt-
+routing across multi-turn dialogue scaffolding — remains
+GPT-4-specific in the data filed; the structural question it raises is
+no longer the only available reading.
 
 **Behavioral methodology, structurally distinct from recent
 persona-selection filings.** The cluster's recent filings have been
@@ -300,9 +322,10 @@ Self-Refine," not "outperforms self-refinement in general."
 ## Concepts
 
 - [Persona selection](../concepts/persona-selection.md) — eighth
-  instantiating finding; first prompt-level *multi-instantiation*
-  shape. Behavioral evidence that multiple distinct expert sub-personas
-  can be invoked within a single inference via dialogue-scaffolded
+  instantiating finding; first behavioral-level *multi-instantiation*
+  shape (mechanistic-level companion: [Kim et al. 2026](2026-societies-of-thought-kim.md)).
+  Behavioral evidence that multiple distinct expert sub-personas can
+  be invoked within a single inference via dialogue-scaffolded
   prompting, with knowledge-intensive tasks eliciting diverse
   fine-grained personas and reasoning-intensive tasks eliciting
   homogeneous ones, and with dynamic identification consistently
@@ -360,6 +383,25 @@ Self-Refine," not "outperforms self-refinement in general."
   evidence the prompt provides for which persona; they differ in
   whether the goal is to suppress a posterior shift (inoculation)
   or to multiplex within the existing posterior (SPP).
+- [Steering a conversational-surprise SAE feature in DeepSeek-R1-Llama-8B doubles Countdown accuracy from 27.1% to 54.8%, and reasoning models show larger personality and expertise diversity than instruction-tuned counterparts](2026-societies-of-thought-kim.md)
+  (Kim, Lai, Scherrer, Agüera y Arcas, Evans, January 2026) —
+  mechanistic-level companion 2.5 years later. The same
+  multi-instantiation phenomenon SPP demonstrated behaviorally on
+  GPT-4 under a custom three-phase dialogue prompt appears here at the
+  SAE-feature level on RL-trained reasoning models under standard
+  prompting: multiple distinct persona representations co-activate
+  within a single trace, with a single conversational-discourse SAE
+  feature as the load-bearing coordination mechanism. The RL
+  experiments also constrain the SPP capability-scale-dependence
+  question by showing two collaborating personas emerging
+  spontaneously in a 3B pretrained model under accuracy-only PPO. The
+  two findings together establish multi-instantiation as a structural
+  shape under persona-selection at two examples across the 2.5-year
+  gap; codify when a third example lands. Persona-vector–style probes
+  on per-perspective CoT segments would directly test whether
+  Kim et al.'s inferred-personas correspond to distinct activation-
+  level directions of the kind SPP's dialogue turns would also
+  produce.
 
 ## Sources
 
