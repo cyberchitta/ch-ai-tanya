@@ -61,6 +61,10 @@ The finding complicates [introspection](../concepts/introspection.md) as a capac
 
 - [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — anchoring finding for the Brilliant Servant section, paired with [nudged-reasoning CoT](./2025-nudged-reasoning-cot.md). The thread reads this finding under the essay's "Brilliant Servant" framing (surface reasoning as post-hoc justification) while holding the access/report dissociation compatible with the mechanistic access claim made in the Does Matter See Itself? section.
 
+## Cross-references
+
+- [Monitoring Monitorability](./2025-cot-monitorability-openai.md) (Guan, Wang, Carroll, Baker et al., OpenAI, December 2025) — direct conceptual interlocutor. The OpenAI paper distinguishes *monitorability* from *faithfulness*: a model's CoT need not faithfully represent its underlying computation as long as monitor-detectable properties of interest remain identifiable. The framing carves the CoT-as-safety-channel question into two: faithfulness (this finding: 25% / 39% hint disclosure; <2% under reward-hacking pressure) and monitorability (the OpenAI suite: CoT-only monitoring substantially outperforms action-only across reasoning efforts on a 13-evaluation suite). Not in direct contradiction — one is interpretability, the other is control — but the two findings point alignment strategy in different directions: invest in CoT-faithfulness training (this) vs. invest in monitor design and evaluation breadth (Guan et al.). The OpenAI paper explicitly cites Chen et al. as the prior toy-intervention precedent and extends it to a broader benchmark with reasoning-effort sweeps.
+
 ## Sources
 
 - Chen, Y. et al. (2025). [Reasoning Models Don't Always Say What They Think](../../raw/papers/source-2025-cot-faithfulness.md). Anthropic Alignment Science.

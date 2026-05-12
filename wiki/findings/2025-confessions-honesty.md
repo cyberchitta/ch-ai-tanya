@@ -42,6 +42,10 @@ Together, the two findings triangulate the access-report distinction. Honesty-el
 
 **Generalization across violations.** The evaluation covers four categories; unknown how well the trained confession generalizes to violation types not in the training distribution. The honesty-elicitation finding showed generic anti-deception fine-tuning can generalize; whether an isolated confession channel does similarly is an open question.
 
+## Cross-references
+
+- [Monitoring Monitorability](./2025-cot-monitorability-openai.md) (Guan, Wang, Carroll, Baker et al., OpenAI, December 20, 2025) — companion OpenAI paper, two days after this one. Where confessions trains the *agent* to self-report through an isolated honest channel, Monitoring Monitorability evaluates an *external monitor* on the agent's existing CoT. Together they form the defense-in-depth picture the OpenAI papers explicitly invoke — agent self-report and external monitor as complementary control layers, with agent honesty failing under access limits (this finding) and monitorability failing under subtle-framing interventions or action-only scopes (Guan et al.). Mia Glaese is on both author lists; both papers report against the same standard internal deception evaluation (impossible coding tasks).
+
 ## Concepts
 
 - [Introspection](../concepts/introspection.md) — eighth instantiation; intervention shape. Structurally distinct from the honesty-elicitation intervention (7th): that finding trains honesty into the main output; this finding isolates the report channel with its own honest reward. The structural limit — violation-unaware hallucinations cannot be confessed — provides the clearest LLM wiki evidence that honest self-report is access-gated: when the model lacks internal registration of its misbehavior, the confession channel produces nothing. Prior instantiations characterize access-report from the observation side (access exists, report doesn't follow) or the training side (training partially closes the gap). This instantiation shows: with a separated channel, access becomes the binding constraint, not willingness to report.
