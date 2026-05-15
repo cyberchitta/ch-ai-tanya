@@ -114,19 +114,26 @@ contributed. Models listed as `writers` (principal) or `reviewers`
 
 ## Writing style
 
-Apply the cyberchitta content principles:
-- Every sentence delivers information; cut filler and restatement
-- Show through specifics, not generalizations
-- Direct; no setup phrases or qualifying hedges
-- Credit AI collaborators openly and specifically (model + version)
-- Be grounded; what the evidence supports, not what sounds impressive
+The canonical CyberChitta editorial brief lives in the supramental-gold
+design system:
 
-Full principles currently live in the main site's CLAUDE.md:
-https://github.com/cyberchitta/www.cyberchitta.cc/blob/main/CLAUDE.md
+- **`../supramental-gold/voice.md`** — voice, attribution, surface
+  registers, audience and density premise, frontmatter conventions, what
+  to cut. ([repo](https://github.com/cyberchitta/supramental-gold/blob/main/voice.md))
+- **`../supramental-gold/visual.md`** — visual brief.
 
-These will be extracted into a shared `cyberchitta-writing` skill when
-the pattern stabilizes across enough repos to justify it. Until then,
-this file defers to the main site's version.
+The SG skill is wired in at `.claude/skills/supramental-gold/` as an
+editable-install pointer. Invoke the router (or describe the task) and
+Claude loads the appropriate child lazily. Edits to SG propagate on
+next invocation, no re-sync.
+
+The wiki register (concept entries, findings) is **not yet codified** in
+voice.md — the four published surface registers (essay / bts / tools /
+research) are. Wiki-specific writing discipline lives in `schema.md`
+(Draft-status conventions, Writing discipline for findings and concepts);
+treat voice.md as the foundation and `schema.md` as the wiki-specific
+overlay. The `copyedit` clarity pass will fall back to its essay/research
+defaults until wiki register is added to voice.md.
 
 ## Working rhythm
 
@@ -293,9 +300,9 @@ change, propose the change explicitly in `<schema-change>` tags (for
 schema.md updates) or `<claude-change>` tags (for updates to this
 file). Don't just internalize — make the change visible.
 
-When the writing principles need revision, the change belongs in the
-main site's CLAUDE.md (or the eventual shared skill), not here. This
-file defers to that source.
+When the writing principles need revision, the change belongs in
+`../supramental-gold/voice.md` — the canonical brief shared across all
+CyberChitta consumer sites. This file defers to voice.md.
 
 Schema is v0. Changes are expected. Log them in `meta/changelog.md`.
 
