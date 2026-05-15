@@ -297,9 +297,10 @@ abstract dimensional trait coordinates.
 **Inter-trait entanglement quantifies the Persona Space discreteness
 question.** [Beckmann & Butlin](2026-where-is-the-mind-beckmann.md)'s
 Hypothesis 2 (Persona Space) holds that persona vectors compose a
-low-dimensional space, anchored on Lu et al.'s Assistant Axis result
-(PCA on 275 character archetypes: 4/8/19 components explain 70% of
-variance on Gemma 2 27B / Qwen 3 32B / Llama 3.3 70B). Hypothesis 3
+low-dimensional space, anchored on [Lu et al.'s Assistant Axis
+result](2026-assistant-axis.md) (PCA on 275 character archetypes:
+4/8/19 components explain 70% of variance on Gemma 2 27B / Qwen 3
+32B / Llama 3.3 70B). Hypothesis 3
 (Persona Regions) adds that the space is *partitioned* into discrete
 basins. Sandhan's §5.2 measurement operates from the dimensional
 side: targeting Extraversion and measuring drift in O, C, A, N

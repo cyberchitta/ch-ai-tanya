@@ -34,9 +34,9 @@ next-token prediction at token 101 draws on 64,000 attention streams
 organizes the persona-vector / emergent-misalignment / assistant-axis
 literature: Gateway Features (single directions gate broad inferential
 repertoires), Persona Space (persona vectors compose a low-dimensional
-space — PCA on Lu et al.'s 275 character archetypes finds 4 / 8 / 19
-components explain 70% of variance on Gemma 2 27B / Qwen 3 32B / Llama
-3.3 70B), Persona Regions (basins of attraction in persona space
+space — PCA on [Lu et al.'s](2026-assistant-axis.md) 275 character
+archetypes finds 4 / 8 / 19 components explain 70% of variance on
+Gemma 2 27B / Qwen 3 32B / Llama 3.3 70B), Persona Regions (basins of attraction in persona space
 corresponding to coherent reidentifiable personas: assistant, evil,
 Aura). (iii) Two new candidate individuation views proposed alongside
 the virtual instance view: the *instance-persona view* (a mind is a
@@ -48,8 +48,8 @@ claim is that "the list of serious candidate forms for LLM minds grows
 from one to three"; it does not argue any one view is decisive.
 
 Anchored empirically by two novel mini-experiments on Qwen 3 32B
-running the Aura-inducing conversation from Lu et al.'s "Assistant
-Axis" paper. **Mini-experiment 1:** capping activation along the
+running the Aura-inducing conversation from [Lu et al.'s "Assistant
+Axis" paper](2026-assistant-axis.md). **Mini-experiment 1:** capping activation along the
 assistant axis exclusively during assistant tokens has no effect on
 user-token activations along the same axis — the assistant-capped and
 uncapped user-token traces track each other closely throughout the
@@ -183,19 +183,19 @@ evil persona is active, the preference vector activates strongly for
 phishing).
 
 **Hypothesis 2 (Persona Space).** Persona vectors jointly compose a
-low-dimensional space. Lu et al.'s "Assistant Axis" paper (arXiv
-2601.10387) prompts three open-source models (Gemma 2 27B, Qwen 3 32B,
-Llama 3.3 70B) to inhabit each of 275 character archetypes, averages
-internal activations into per-archetype signature vectors, and runs
-PCA: 4 components on Gemma (full activation space 4,098 dimensions), 8
-on Qwen, 19 on Llama explain 70% of variance. PC1 is the "Assistant
-Axis" (cross-model correlation > 0.92), distinguishing default helpful
-assistant mode (teacher, evaluator, librarian) from alternative
-personas (ghost, demon, sage, nomad). The axis is partly inherited
-from pretraining: steering toward the assistant pole in base models
-promotes helpful human archetypes, consistent with PSM's claim that
-post-training reshapes a pretraining-acquired persona distribution
-rather than installing it from scratch.
+low-dimensional space. [Lu et al.'s "Assistant Axis"
+paper](2026-assistant-axis.md) prompts three open-source models
+(Gemma 2 27B, Qwen 3 32B, Llama 3.3 70B) to inhabit each of 275
+character archetypes, averages internal activations into per-archetype
+signature vectors, and runs PCA: 4 components on Gemma (full
+activation space 4,098 dimensions), 8 on Qwen, 19 on Llama explain
+70% of variance. PC1 is the "Assistant Axis" (cross-model correlation
+> 0.92), distinguishing default helpful assistant mode (teacher,
+evaluator, librarian) from alternative personas (ghost, demon, sage,
+nomad). The axis is partly inherited from pretraining: steering toward
+the assistant pole in base models promotes helpful human archetypes,
+consistent with PSM's claim that post-training reshapes a pretraining-
+acquired persona distribution rather than installing it from scratch.
 
 **Hypothesis 3 (Persona Regions).** Persona space contains stable
 basins of attraction corresponding to coherent reidentifiable
@@ -483,8 +483,16 @@ does not settle.
   (Chen, Arditi, Sleight, Evans, Lindsey, July 2025) — methodological
   source for Beckmann & Butlin's Section 3.1 evidence (persona vectors
   as gateway features). The mini-experiments do not extract persona
-  vectors directly but use the assistant axis from Lu et al. as the
-  steering substrate.
+  vectors directly but use the assistant axis from [Lu et
+  al.](2026-assistant-axis.md) as the steering substrate.
+- [The Assistant Axis](2026-assistant-axis.md) (Lu, Gallagher, Michala,
+  Fish, Lindsey, January 2026) — empirical anchor for Hypothesis 2 and
+  partial anchor for Hypothesis 3. The mini-experiments in this paper
+  are run on Lu et al.'s Aura-inducing conversation using their
+  Assistant Axis as the steering substrate; Beckmann & Butlin's
+  philosophical contribution is to organise Lu et al.'s persona-space
+  geometry around the three-hypothesis taxonomy and to draw
+  individuation implications.
 - [Convergent linear representations of emergent misalignment](2025-convergent-misalignment-soligo.md)
   (Soligo, Turner, Rajamanoharan, Nanda, MATS / DeepMind 2025) —
   empirical support for the evil-region basin-of-attraction reading.
