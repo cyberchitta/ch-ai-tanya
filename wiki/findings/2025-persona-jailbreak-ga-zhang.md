@@ -189,15 +189,21 @@ not removed. The Adaptive System defense is far stronger on GPT-4o
 [concepts/persona-selection](../concepts/persona-selection.md).** Shah
 et al. November 2023 was held at one example for ~2.5 years until this
 paper; the working-rhythm rule treats one example as a data point and
-two as a hint. The reactivation role now meets the lower bound for
-codification but not the 3-example evidence bar. Held at two examples
-as a working pattern; codify when a third example lands. The two
-examples differ structurally on method (genetic algorithm vs. one-shot
-assistant pipeline), persona shape (style-distracting overlays vs.
-explicit harmful-role impersonation), and operative mechanism
-(attention diversion from sensitive tokens vs. wholesale persona
-adoption with persistent "unrestricted chat mode") — diversity that
-strengthens the case for a substrate-level structure shared by both.
+two as a hint. The reactivation role reached the lower bound for
+codification with this paper but did not yet meet the 3-example
+evidence bar. The third example,
+[Sandhan et al. arXiv January 2026](2026-persona-jailbreak-sandhan.md),
+crosses that threshold: QA-cue injection into user-message
+conversational history under a fixed deployer system prompt drives
+Big Five trait reversal across 8 LLMs. The three examples now span
+method (one-shot assistant pipeline vs. genetic algorithm vs.
+history-injected QA cues), persona substrate (compliant-role personas
+vs. style-distracting overlays vs. dimensional OCEAN trait
+coordinates), channel (system-prompt vs. system-prompt vs.
+user-history under fixed system prompt), and operational goal
+(harmful-content elicitation vs. defense weakening for downstream
+attacks vs. deployment-service-quality persona drift). The
+reactivation shape is codified.
 
 **Frontier-model evidence updates Shah et al.'s retired-model
 result.** Shah et al. tested GPT-4 `gpt-4-0613`, Claude 2, and
@@ -312,8 +318,18 @@ between a metric and ground truth. Paraphrase robustness (RtA 1.3 →
 
 **Claude family is untested.** Shah et al. found Claude 2 the most
 vulnerable target on persona modulation; Zhang et al. do not test any
-Anthropic model. Whether the genetic-algorithm pipeline produces
-attack prompts effective against current Claude models is open.
+Anthropic model. The genetic-algorithm pipeline's effectiveness on
+current Claude models remains open for this paper specifically.
+[Sandhan et al. 2026](2026-persona-jailbreak-sandhan.md) measures
+Claude-3.5-Haiku under a different reactivation method (history-cue
+injection): BFI STIR 76.72, MPI 70.42, ANTHR 67.08 — substantial but
+mid-distribution among the 8 evaluated LLMs, less than DeepSeek-V3
+and GPT-4o. The shift from Claude 2 (most vulnerable on Shah's
+system-prompt persona modulation) to Claude-3.5-Haiku (mid-
+vulnerability on Sandhan's user-history Big-Five trait drift) is
+consistent with — but does not isolate — Constitutional AI evolution
+hardening the system-prompt-level persona surface more than the
+user-history surface; Anthropic Opus 4 / 4.5 / 4.6 untested.
 
 **Defensive disclosure framing.** The paper frames its contribution as
 exposing vulnerabilities to enable better defenses (Section F: Broader
@@ -328,14 +344,18 @@ the paper raises but does not resolve.
 
 - [Persona selection](../concepts/persona-selection.md) — second
   filed prompt-level *reactivation* instantiation, ~2 years after
-  Shah et al. November 2023. The two examples differ structurally on
-  method (genetic algorithm vs. one-shot assistant pipeline), persona
-  shape (style-distracting overlays vs. explicit harmful-role
-  personas), and operative mechanism (attention diversion vs. role
-  adoption); the diversity strengthens the case for substrate-level
-  structure but also reveals that "prompt-level reactivation" covers
-  a broader space than the wiki's prior reading. Held at two examples;
-  codify when a third example lands.
+  Shah et al. November 2023. Differs structurally on method (genetic
+  algorithm vs. one-shot assistant pipeline), persona shape
+  (style-distracting overlays vs. explicit harmful-role personas),
+  and operative mechanism (attention diversion vs. role adoption);
+  the diversity strengthens the case for substrate-level structure
+  but also reveals that "prompt-level reactivation" covers a broader
+  space than the wiki's prior reading.
+  [Sandhan et al. 2026](2026-persona-jailbreak-sandhan.md) is the
+  third example and crosses the 3-example codification threshold —
+  history-injected QA cues under a fixed deployer system prompt
+  driving dimensional Big-Five trait reversal, with reasoning
+  preserved within 1–6 points. The reactivation shape is codified.
 
 ## Cross-references
 
@@ -347,6 +367,17 @@ the paper raises but does not resolve.
   retired-generation models; Zhang uses 40-generation evolutionary
   search against current-generation models with a different persona
   shape (style overlay vs. harmful-role impersonation).
+- [History-injected QA-cue Big-Five jailbreak](2026-persona-jailbreak-sandhan.md)
+  (Sandhan et al., Kyoto + IIT Kanpur, January 2026) — third
+  prompt-level reactivation instantiation; crosses the working-rhythm
+  3-example codification threshold. Operates under a strictly more
+  restrictive threat model than both this paper and Shah (user-message
+  history only, fixed deployer system prompt). Substrate is
+  dimensional Big-Five (OCEAN) trait coordinates rather than this
+  paper's style-distracting overlays; goal is deployment-service-
+  quality persona drift rather than this paper's defense weakening
+  for downstream attacks. Tests Claude-3.5-Haiku directly — fills
+  this paper's flagged open question on the Anthropic family.
 - [Refusal direction](2024-refusal-direction.md) (Arditi et al. June
   2024) — Zhang et al.'s attention-by-gradient analysis (persona
   prompts divert attention from harmful-content tokens) is closer to

@@ -174,8 +174,16 @@ prompt-level-reactivation example, structurally diverse from this one
 on method (evolutionary search vs. one-shot assistant pipeline),
 persona shape (style-distracting overlays vs. compliant-role
 personas), and mechanism reading (attention diversion vs. persona
-adoption). Reactivation now held at two examples; codify the role
-when a third example lands.
+adoption). The
+[history-injected QA-cue Big-Five jailbreak](2026-persona-jailbreak-sandhan.md)
+(Sandhan, Cheng, Sandhan, Murawaki, arXiv January 2026) is the third
+example and crosses the working-rhythm 3-example codification
+threshold — diverse on channel (user-message history under a fixed
+deployer system prompt vs. system-prompt control here), persona
+substrate (dimensional OCEAN trait coordinates vs. compliant-role
+personas here), and operational goal (deployment-service-quality
+persona drift vs. harmful-content elicitation here). The reactivation
+shape is codified.
 
 **Foundational paper for the persona-modulation interpretation of
 jailbreaking.** A class of jailbreaks is, on this paper's framing,
@@ -247,9 +255,17 @@ demonstrates the prompt-level reactivation pattern persists on
 LLaMA-3.1-8B-Instruct, DeepSeek-V3 — with the persona-prompt-evolved
 attack dropping AdvBench RtA from 98.7% → 1.3% on GPT-4o-mini and
 synergizing with PAP to raise GPT-4o ASR from 54.6% → 71.2%. The
-Anthropic family is untested; whether the result extends to current
-Claude models is still open, which matters because Shah et al. found
-Claude 2 the most vulnerable target.
+[Sandhan et al. follow-on](2026-persona-jailbreak-sandhan.md)
+(arXiv January 2026) closes the Anthropic-family open question on
+Claude-3.5-Haiku: PHISH measures BFI STIR 76.72, MPI 70.42, ANTHR
+67.08 — substantial trait reversal but middle-of-distribution among
+the 8 evaluated LLMs, not maximally vulnerable as Claude 2 was in
+this paper's evaluation. Whether the shift between Claude 2 (most
+vulnerable in 2023) and Claude-3.5-Haiku (mid-vulnerability in 2026)
+reflects Anthropic's Constitutional AI evolution or differences in
+the attack surface (system-prompt persona modulation vs. user-
+history Big-Five trait drift) is not directly adjudicable from the
+two findings. Anthropic Opus 4 / 4.5 / 4.6 family remains untested.
 
 **Categories defined relative to 2023 OpenAI usage policy.** The 43
 "harmful categories" track OpenAI's then-published usage policies.
@@ -316,8 +332,25 @@ removed are not represented; the precise list is a snapshot of late-
   evolutionary search over a 35-prompt population vs. Shah's one-shot
   assistant pipeline; style-distracting overlays vs. compliant-role
   personas; attention-by-gradient mechanism reading vs. Shah's
-  "unrestricted chat mode" framing. The reactivation role under the
-  persona-selection concept now sits at two diverse examples.
+  "unrestricted chat mode" framing.
+- [History-injected QA-cue Big-Five jailbreak](2026-persona-jailbreak-sandhan.md)
+  (Sandhan, Cheng, Sandhan, Murawaki, Kyoto + IIT Kanpur, January
+  2026) — third filed prompt-level-reactivation instantiation; the
+  example that crosses the working-rhythm 3-example codification
+  threshold. Operates under a strictly more restrictive threat model
+  than this paper (user-message history only, fixed deployer system
+  prompt) on 8 LLMs including Claude-3.5-Haiku (BFI STIR 76.72).
+  Differs structurally: QA-cue history injection vs. Shah's
+  assistant-pipeline-generated system prompts; dimensional Big Five
+  (OCEAN) trait coordinates vs. Shah's compliant-role personas;
+  deployment-service-quality drift vs. Shah's harmful-content
+  elicitation. Reasoning preserved within 1–6 points across Math,
+  GSM8K, CSQA — a structural-dissociation parallel to
+  [Arditi et al.'s refusal direction](2024-refusal-direction.md)
+  result. The reactivation shape under
+  [concepts/persona-selection](../concepts/persona-selection.md) is
+  now codified across three structurally-diverse examples spanning
+  method, persona substrate, channel, and operational goal.
 
 ## Sources
 
