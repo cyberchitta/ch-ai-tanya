@@ -5,7 +5,7 @@ authors:
   - Leonard Bereska
   - Efstratios Gavves
 date: 2023-10-03
-venue: Proceedings of the AAAI Symposium Series, vol. 1, no. 1 (Summer Symposium 2023, "Building Connections: From Human-Human to Human-AI Collaboration"); pp. 68–72; DOI 10.1609/aaaiss.v1i1.27478
+venue: 'Proceedings of the AAAI Symposium Series, vol. 1, no. 1 (Summer Symposium 2023, "Building Connections: From Human-Human to Human-AI Collaboration"); pp. 68–72; DOI 10.1609/aaaiss.v1i1.27478'
 url: https://ojs.aaai.org/index.php/AAAI-SS/article/view/27478
 writers:
   - "@claude-opus-4-7"
