@@ -1,9 +1,17 @@
 ---
 type: source
 title: "Stable Reasoning, Unstable Responses: Mitigating LLM Deception via Stability Asymmetry"
+authors:
+  - Guoxi Zhang
+  - Jiawei Chen
+  - Tianzhuo Yang
+  - Lang Qin
+  - Juntao Dai
+  - Yaodong Yang
+  - Jingwei Yi
 date: 2026-03-27
-source: https://arxiv.org/abs/2603.26846
-status: draft
+venue: arXiv preprint (2603.26846)
+url: https://arxiv.org/abs/2603.26846
 writers:
   - "@claude-sonnet-4.6"
 ---
