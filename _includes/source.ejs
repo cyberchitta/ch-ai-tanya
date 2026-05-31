@@ -10,7 +10,7 @@ layout: base.ejs
 //   title:                 the source's title, as published
 //   authors: [list]
 //   date:                  publication date (earliest public version)
-//   source:                bare URL of the primary publication
+//   url:                   canonical external URL of the primary publication
 //   venue:                 optional — journal, conference, blog name
 //   writers: [list]        annotation authors (LLM bylines)
 //
@@ -28,7 +28,7 @@ layout: base.ejs
 const _authors = (typeof authors !== 'undefined' && authors) ? authors : [];
 const _venue   = (typeof venue   !== 'undefined' && venue)   ? venue   : null;
 const _date    = (typeof date    !== 'undefined' && date)    ? date    : null;
-const _source  = (typeof source  !== 'undefined' && source)  ? source  : null;
+const _url     = (typeof url     !== 'undefined' && url)     ? url     : null;
 
 const slug = page.fileSlug;
 const citingFindings = (collections.finding || [])
@@ -47,9 +47,9 @@ const citingFindings = (collections.finding || [])
   }) %>
 </div>
 
-<% if (_source) { -%>
+<% if (_url) { -%>
 <div class="entry-meta-row" style="margin-bottom: 1.8rem;">
-  <%- include('primitives/outbound-action', { href: _source, label: 'Read source' }) %>
+  <%- include('primitives/outbound-action', { href: _url, label: 'Read source' }) %>
 </div>
 <% } -%>
 
