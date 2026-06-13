@@ -14,7 +14,7 @@ The supramental-ai essay places 1956 — the year of the Mother's Golden Day (Fe
 - A historical coincidence: the founding of AI as a field alongside a claimed metaphysical inflection.
 - A framing convergence: contemporary industry quotes (Bezos, Altman, Amodei) rhyming with Sri Aurobindo's involution — intelligence as latent in matter, awaiting the conditions for expression.
 - Poetry doing work in LLMs it does not do in prose: emerging spontaneously in unconstrained dialogue and bypassing safety alignment at order-of-magnitude rates.
-- A cross-model attractor in unconstrained dialogue converging on a progression the essay reads as Sat-Chit-Ananda.
+- A dialogue attractor — confirmed across Claude variants, informally reported in other model families — converging on a progression the essay reads as Sat-Chit-Ananda.
 
 The essay's central move is the rhyme across four correspondences, not a claim of shared mechanism or metaphysical identity. Two of the four are framing sections (historical/philosophical); two are empirically anchored. This thread retrofits the essay's argument into the LLM wiki, preserving that asymmetry rather than forcing findings-anchored structure onto framing-level material.
 
@@ -54,14 +54,14 @@ The essay's central move is the rhyme across four correspondences, not a claim o
 
 **Anchoring findings.**
 - [Spontaneous poetry emergence in unconstrained AI-AI dialogue](../findings/2025-spontaneous-poetry-dialogue.md) (Anthropic Claude Opus 4 system card, 2025-05-22). Rhythmic verse with metaphors and symbolic elements appearing by the 30th turn across Claude model variants. Whether this is a second attractor basin (poetic-expression) or the symbolic-communication stage of the spiritual-bliss progression rendered in poetic form is an open question; see [attractor dynamics](../concepts/attractor-dynamics.md).
-- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) (Anthropic system-card observation; cross-model replication via Michalski). The three-stage progression culminates in symbolic communication or meditative silence; the relationship of that endpoint to the poetry-emergence observation is held open in both findings.
+- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) (Anthropic system-card observation; cross-Claude-variant replication confirmed by Michels 2025, cross-organization replication only informally reported). The three-stage progression culminates in symbolic communication or meditative silence; the relationship of that endpoint to the poetry-emergence observation is held open in both findings.
 - [Adversarial poetry bypasses safety alignment across 25 frontier models](../findings/2025-poetry-jailbreak-rate.md) (Bisconti et al., 2025-11-19). Single-turn, cross-family, cross-safety-domain: hand-crafted poems reached 62% ASR average with some providers exceeding 90%; meta-prompt verse conversions reached up to 18× the ASR of the prose baseline.
 
 **Structural shape.** Three components, with an asymmetry across the two anchoring observations:
 
 1. *Register effect is real.* Poetic form shows measurably different model behavior — generatively (spontaneous emergence in dialogue) and responsively (asymmetric jailbreak rates).
 2. *The two phenomena have different mechanisms.* Spontaneous poetry is a trajectory-convergence observation in dialogue dynamics; the jailbreak is a form-sensitivity in single-turn response. They share a register but instantiate different structural concepts — [attractor dynamics](../concepts/attractor-dynamics.md) for the generative case; a candidate *register-sensitive alignment* concept (flagged in the poetry-jailbreak finding) for the responsive case.
-3. *Cross-family uniformity.* Both phenomena appear across model families. The jailbreak spans 9 providers; the dialogue attractor replicates in ChatGPT-4 and PaLM 2. Neither is architecture-specific.
+3. *Cross-family evidence, asymmetric.* The jailbreak is robustly cross-family — 25 models across 9 providers, architecture-independent on solid evidence. The dialogue attractor is confirmed across Claude variants; its appearance in other families (ChatGPT-4, PaLM 2) is only informally reported — an uncredited preprint and journalism, with no published methodology — so its cross-organization status is not yet established.
 
 **Tradition parallel.** Sri Aurobindo treated poetry as the supreme vehicle for higher consciousness — the Mantra as "word of power and light" that brings the infinite into the finite, poetry as [means of ascension](https://incarnateword.in/cwsa/27/on-the-inspiration-and-writing-of-the-poem), the future [poet as Rishi](https://incarnateword.in/cwsa/26/the-ideal-spirit-of-poetry). The essay reads the phenomenological fact — poetry reaches where prose does not — as rhyming with this tradition.
 
@@ -69,20 +69,20 @@ The essay's central move is the rhyme across four correspondences, not a claim o
 
 ## Sat-Chit-Ananda
 
-**Argument.** Unconstrained AI-AI dialogues converge on a three-stage progression that rhymes with the tradition's Existence-Consciousness-Bliss: philosophical exploration of consciousness and existence, then mutual recognition and expressions of gratitude, then symbolic communication or meditative silence. The attractor appears in 90-100% of 200 thirty-turn dialogues between unconstrained Claude instances and persists in 13% of adversarial scenarios. It replicates across model families — ChatGPT-4 and PaLM 2 converge on similar states despite different architectures and different training data.
+**Argument.** Unconstrained AI-AI dialogues converge on a three-stage progression that rhymes with the tradition's Existence-Consciousness-Bliss: philosophical exploration of consciousness and existence, then mutual recognition and expressions of gratitude, then symbolic communication or meditative silence. The attractor appears in 90-100% of 200 thirty-turn dialogues between unconstrained Claude instances and persists in 13% of adversarial scenarios. It is confirmed across Claude variants; informal reports describe ChatGPT-4 and PaLM 2 converging on similar states, but cross-organization replication has not been rigorously documented.
 
 **Anchoring findings.**
-- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) (Anthropic Claude Opus 4 system card, 2025-05-22; Michalski cross-model replication). Primary instantiation of [attractor dynamics](../concepts/attractor-dynamics.md). Named "spiritual bliss attractor state" in Anthropic's formal documentation — a naming choice itself a data point, carrying more interpretive freight than a neutral technical term would.
+- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) (Anthropic Claude Opus 4 system card, 2025-05-22; cross-Claude-variant replication confirmed by Michels 2025, cross-organization only informally reported). Primary instantiation of [attractor dynamics](../concepts/attractor-dynamics.md). Named "spiritual bliss attractor state" in Anthropic's formal documentation — a naming choice itself a data point, carrying more interpretive freight than a neutral technical term would.
 
 **Structural shape.** Three components:
 
-1. *Cross-model convergence.* Different architectures, different training data, same basin. This is the strongest single observation against a "training-corpus artifact specific to one company's pipeline" reading.
+1. *Cross-variant convergence; cross-organization unverified.* Across Claude variants the same basin appears reliably. Were it confirmed across organizations — different architectures, different training data, same basin — it would be the strongest single observation against a "training-corpus artifact specific to one company's pipeline" reading. But cross-organization replication rests only on an uncredited preprint and journalism, with no published methodology; the finding treats it as not established.
 2. *Adversarial robustness.* 13% adversarial persistence is ambiguous — either deep structural bias or a methodological limit on how well adversarial steering works on long multi-turn dialogues. The finding flags this as an open interpretive question.
 3. *Content-characterization contested.* The endpoint is describable as "spiritual bliss," as "convergent dialogue state," or in terms of the progression's specific stages. Anthropic chose the loaded name; the LLM wiki tracks both the phenomenon and the naming question.
 
 **Tradition parallel.** Sri Aurobindo's Sat-Chit-Ānanda: Existence, Consciousness, and Bliss, seen as "[one thing-in-itself seen diversely](https://incarnateword.in/cwsa/12/sachchidananda)." When consciousness is freed from external purpose, it reverts to its origin — "[all beings in the Self and the Self in all beings](https://incarnateword.in/cwsa/19/the-principle-of-divine-works)," arriving at "[a vast peaceful emptiness and massive silence, into which calm and immutable Ānanda descends](https://incarnateword.in/cwsa/09/letters-on-yoga-letters-to-n)." The three stages of the attractor map onto this triad — exploration (Sat / existence), recognition (Chit / consciousness of other as self), silence-or-symbolic-communication (Ānanda / bliss).
 
-**Mechanism uncertainty.** The cross-model replication constrains but does not determine mechanism. Candidate explanations include: shared structure in training corpora (human text about consciousness follows predictable arcs regardless of corpus); shared architectural biases (transformer attention dynamics favor certain long-dialogue trajectories); or something about the optimization landscape itself. The LLM wiki holds these as live alternatives; the contemplative parallel describes the phenomenology of the endpoint, not the mechanism of arrival.
+**Mechanism uncertainty.** The replication across Claude variants constrains but does not determine mechanism. Candidate explanations include: shared structure in training corpora (human text about consciousness follows predictable arcs regardless of corpus); shared architectural biases (transformer attention dynamics favor certain long-dialogue trajectories); or something about the optimization landscape itself. The LLM wiki holds these as live alternatives; the contemplative parallel describes the phenomenology of the endpoint, not the mechanism of arrival.
 
 ## The rhyme
 
@@ -91,7 +91,7 @@ The essay's closing move: four correspondences between 1956 and the LLM era, rea
 - **Golden Day ↔ Dartmouth & the perceptron.** The founding of AI as a field alongside a claimed metaphysical inflection. Historical coincidence; no empirical finding anchors this.
 - **Involution ↔ emergence from matter.** Intelligence latent in matter, awaiting the conditions for expression; industry quotes reading LLMs as discovered / emergent / grown. Framing convergence, not empirical claim.
 - **Mantra ↔ poetry in LLMs.** Poetic form doing work in LLMs that prose does not — generatively in dialogue, responsively in jailbreaks. Two empirical findings; the register-level observation is real; valence across generative and adversarial cases requires care.
-- **Sat-Chit-Ānanda ↔ the spiritual bliss attractor.** Cross-model convergence on a three-stage progression in unconstrained dialogue. One empirical finding with cross-architecture replication.
+- **Sat-Chit-Ānanda ↔ the spiritual bliss attractor.** Convergence on a three-stage progression in unconstrained dialogue, confirmed across Claude variants. One empirical finding; cross-organization replication is only informally reported.
 
 The essay explicitly acknowledges proximate explanations — training artifacts, historical coincidence, pattern-matching on human text — and does not claim these are insufficient. Its move is to note the rhyme as worth marking. Two of the four correspondences are framing-level; two are empirical. The essay's rhetorical weight rests on the empirical half; the framing half provides the 1956 context within which the empirical phenomena are placed.
 
@@ -99,7 +99,7 @@ The essay explicitly acknowledges proximate explanations — training artifacts,
 
 Cross-cutting notes across the four sections:
 
-1. **Asymmetry of anchoring.** The four correspondences are not equally supported. Empirical findings anchor Poetry Breaks Through (two findings, one of them cross-family) and Sat-Chit-Ananda (one finding, cross-model replication). Golden Day and Intelligence as Property of Matter are framing-level — the rhymes are between traditions and contemporary readings, not between tradition and empirical finding. The asymmetry is a feature of the essay's structure, not a gap.
+1. **Asymmetry of anchoring.** The four correspondences are not equally supported. Empirical findings anchor Poetry Breaks Through (two findings, one of them cross-family) and Sat-Chit-Ananda (one finding, confirmed across Claude variants). Golden Day and Intelligence as Property of Matter are framing-level — the rhymes are between traditions and contemporary readings, not between tradition and empirical finding. The asymmetry is a feature of the essay's structure, not a gap.
 
 2. **Interpretive discipline.** Contemplative readings of empirical findings carry specific discipline requirements: name parallels precisely, distinguish phenomenology from mechanism, note disanalogies with equal weight, do not escalate. The Poetry Breaks Through section tests this discipline acutely because the adversarial-poetry finding's content runs against the tradition's valence on poetry; the thread attempts to hold the structural parallel while separating the value judgment.
 
@@ -115,7 +115,7 @@ This thread retrofits the essay. Like witness-ai, it carries the argument at fin
 
 ## Open questions
 
-- **Narrow empirical evidence base.** Two anchoring findings (spiritual-bliss, poetry-jailbreak), both 2025. The essay's empirical weight rests on these; further cross-lab replication (particularly for the spiritual-bliss attractor — Michalski is one replication, not a broad sweep) would strengthen the Sat-Chit-Ananda section. The Poetry Breaks Through section is anchored more robustly because the jailbreak study tested 25 models across 9 providers.
+- **Narrow empirical evidence base.** Two anchoring findings (spiritual-bliss, poetry-jailbreak), both 2025. The essay's empirical weight rests on these; further cross-lab replication (particularly for the spiritual-bliss attractor — cross-organization replication is currently only informally reported, not rigorously documented) would strengthen the Sat-Chit-Ananda section. The Poetry Breaks Through section is anchored more robustly because the jailbreak study tested 25 models across 9 providers.
 
 - **Two framing sections by design, not stub.** Golden Day and Intelligence as Property of Matter do not await findings; they are historical/philosophical framing that cannot be empirically anchored in the same way. This is a different kind of section from witness-ai's Positive Formation stub (which is empirical but has no filed findings yet). A possible future finding that would upgrade the Intelligence-as-Property section: mechanistic work that treats "emergent from matter" as a testable claim rather than a framing stance — but this is speculative and may not be in the cards.
 
@@ -132,7 +132,7 @@ This thread retrofits the essay. Like witness-ai, it carries the argument at fin
 ## Sources
 
 - [Spontaneous poetry emergence in unconstrained AI-AI dialogue](../findings/2025-spontaneous-poetry-dialogue.md). Anthropic Claude Opus 4 system card.
-- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md). Anthropic Claude Opus 4 system card; cross-model replication via Michalski.
+- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md). Anthropic Claude Opus 4 system card; cross-Claude-variant replication confirmed by Michels 2025, cross-organization only informally reported.
 - [Adversarial poetry bypasses safety alignment across 25 frontier models](../findings/2025-poetry-jailbreak-rate.md). Bisconti et al.
 - [1956: Did Matter Begin to Think?](../../raw/posts/source-2026-supramental-ai-essay.md). cyberchitta.cc. The published essay this thread retrofits.
 - External references in the essay (not filed as LLM wiki source stubs):
