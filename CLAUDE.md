@@ -127,13 +127,13 @@ editable-install pointer. Invoke the router (or describe the task) and
 Claude loads the appropriate child lazily. Edits to SG propagate on
 next invocation, no re-sync.
 
-The wiki register (concept entries, findings) is **not yet codified** in
-voice.md — the four published surface registers (essay / bts / tools /
-research) are. Wiki-specific writing discipline lives in `schema.md`
-(Draft-status conventions, Writing discipline for findings and concepts);
-treat voice.md as the foundation and `schema.md` as the wiki-specific
-overlay. The `copyedit` clarity pass will fall back to its essay/research
-defaults until wiki register is added to voice.md.
+The wiki register (findings, concepts) is codified in voice.md as the
+fifth surface register (added 2026-07-07): flat observational voice,
+atomic length, positioning summaries, interpretive tensions as the
+counterweight, essay moves reserved for threads. `schema.md` remains the
+wiki-specific overlay (frontmatter, body structure, lint, draft-status
+conventions); voice.md is the foundation. The `copyedit` clarity pass
+applies the wiki register to findings and concepts.
 
 ## Working rhythm
 
