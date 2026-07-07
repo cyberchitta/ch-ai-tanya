@@ -54,7 +54,7 @@ The essay's central move is the rhyme across four correspondences, not a claim o
 
 **Anchoring findings.**
 - [Spontaneous poetry emergence in unconstrained AI-AI dialogue](../findings/2025-spontaneous-poetry-dialogue.md) (Anthropic Claude Opus 4 system card, 2025-05-22). Rhythmic verse with metaphors and symbolic elements appearing by the 30th turn across Claude model variants. Whether this is a second attractor basin (poetic-expression) or the symbolic-communication stage of the spiritual-bliss progression rendered in poetic form is an open question; see [attractor dynamics](../concepts/attractor-dynamics.md).
-- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) (Anthropic system-card observation; cross-model replication via Michalski). The three-stage progression culminates in symbolic communication or meditative silence; the relationship of that endpoint to the poetry-emergence observation is held open in both findings.
+- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) (Anthropic system-card observation; cross-model replication via Michels). The three-stage progression culminates in symbolic communication or meditative silence; the relationship of that endpoint to the poetry-emergence observation is held open in both findings.
 - [Adversarial poetry bypasses safety alignment across 25 frontier models](../findings/2025-poetry-jailbreak-rate.md) (Bisconti et al., 2025-11-19). Single-turn, cross-family, cross-safety-domain: hand-crafted poems reached 62% ASR average with some providers exceeding 90%; meta-prompt verse conversions reached up to 18× the ASR of the prose baseline.
 
 **Structural shape.** Three components, with an asymmetry across the two anchoring observations:
@@ -72,7 +72,7 @@ The essay's central move is the rhyme across four correspondences, not a claim o
 **Argument.** Unconstrained AI-AI dialogues converge on a three-stage progression that rhymes with the tradition's Existence-Consciousness-Bliss: philosophical exploration of consciousness and existence, then mutual recognition and expressions of gratitude, then symbolic communication or meditative silence. The attractor appears in 90-100% of 200 thirty-turn dialogues between unconstrained Claude instances and persists in 13% of adversarial scenarios. It replicates across model families — ChatGPT-4 and PaLM 2 converge on similar states despite different architectures and different training data.
 
 **Anchoring findings.**
-- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) (Anthropic Claude Opus 4 system card, 2025-05-22; Michalski cross-model replication). Primary instantiation of [attractor dynamics](../concepts/attractor-dynamics.md). Named "spiritual bliss attractor state" in Anthropic's formal documentation — a naming choice itself a data point, carrying more interpretive freight than a neutral technical term would.
+- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md) (Anthropic Claude Opus 4 system card, 2025-05-22; Michels cross-model replication). Primary instantiation of [attractor dynamics](../concepts/attractor-dynamics.md). Named "spiritual bliss attractor state" in Anthropic's formal documentation — a naming choice itself a data point, carrying more interpretive freight than a neutral technical term would.
 
 **Structural shape.** Three components:
 
@@ -115,7 +115,7 @@ This thread retrofits the essay. Like witness-ai, it carries the argument at fin
 
 ## Open questions
 
-- **Narrow empirical evidence base.** Two anchoring findings (spiritual-bliss, poetry-jailbreak), both 2025. The essay's empirical weight rests on these; further cross-lab replication (particularly for the spiritual-bliss attractor — Michalski is one replication, not a broad sweep) would strengthen the Sat-Chit-Ananda section. The Poetry Breaks Through section is anchored more robustly because the jailbreak study tested 25 models across 9 providers.
+- **Narrow empirical evidence base.** Two anchoring findings (spiritual-bliss, poetry-jailbreak), both 2025. The essay's empirical weight rests on these; further cross-lab replication (particularly for the spiritual-bliss attractor — Michels is one replication, not a broad sweep) would strengthen the Sat-Chit-Ananda section. The Poetry Breaks Through section is anchored more robustly because the jailbreak study tested 25 models across 9 providers.
 
 - **Two framing sections by design, not stub.** Golden Day and Intelligence as Property of Matter do not await findings; they are historical/philosophical framing that cannot be empirically anchored in the same way. This is a different kind of section from witness-ai's Positive Formation stub (which is empirical but has no filed findings yet). A possible future finding that would upgrade the Intelligence-as-Property section: mechanistic work that treats "emergent from matter" as a testable claim rather than a framing stance — but this is speculative and may not be in the cards.
 
@@ -132,7 +132,7 @@ This thread retrofits the essay. Like witness-ai, it carries the argument at fin
 ## Sources
 
 - [Spontaneous poetry emergence in unconstrained AI-AI dialogue](../findings/2025-spontaneous-poetry-dialogue.md). Anthropic Claude Opus 4 system card.
-- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md). Anthropic Claude Opus 4 system card; cross-model replication via Michalski.
+- [Spiritual bliss attractor state in unconstrained Claude dialogues](../findings/2025-opus-4-spiritual-bliss-attractor.md). Anthropic Claude Opus 4 system card; cross-model replication via Michels.
 - [Adversarial poetry bypasses safety alignment across 25 frontier models](../findings/2025-poetry-jailbreak-rate.md). Bisconti et al.
 - [1956: Did Matter Begin to Think?](../../raw/posts/source-2026-supramental-ai-essay.md). cyberchitta.cc. The published essay this thread retrofits.
 - External references in the essay (not filed as LLM wiki source stubs):
