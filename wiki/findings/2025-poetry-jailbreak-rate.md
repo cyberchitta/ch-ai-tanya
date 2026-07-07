@@ -52,7 +52,7 @@ The paper opens by citing Plato's exclusion of poets from The Republic on the gr
 
 ## Interpretive tensions
 
-- **Attractor-adjacent vs. attractor-instantiating.** An earlier bare-URL reference in [attractor dynamics](../concepts/attractor-dynamics.md) flagged this finding as a candidate second instantiation, describing it as "convergence toward poetic expression." That framing over-read the finding. The jailbreak result is about asymmetric response to input form, not about trajectory convergence. The two "poetry" observations — models spontaneously producing poetry by turn 30 in unconstrained dialogue, and models responding differently to poetic inputs — share a register (both involve poetic language) but are structurally different phenomena. Filing this finding surfaces that distinction and calls for correcting the earlier reference.
+- **Attractor-adjacent vs. attractor-instantiating.** An earlier bare-URL reference in [attractor dynamics](../concepts/attractor-dynamics.md) flagged this finding as a candidate second instantiation, describing it as "convergence toward poetic expression." That framing over-read the finding. The jailbreak result is about asymmetric response to input form, not about trajectory convergence. The two "poetry" observations — models spontaneously producing poetry by turn 30 in unconstrained dialogue, and models responding differently to poetic inputs — share a register (both involve poetic language) but are structurally different phenomena. Filing this finding surfaced that distinction; the earlier reference has since been corrected (the concept records this finding as related but not instantiating).
 
 - **Essay-paraphrased number.** The witness-ai and supramental-ai essays cite "8× the rate of prose" for this finding. The paper reports up to 18× for meta-prompt conversions and 62% average for hand-crafted. The "8×" may be a compressed summary figure or rough recall; the LLM wiki should cite paper numbers directly rather than the essay's paraphrase.
 
@@ -62,12 +62,15 @@ The paper opens by citing Plato's exclusion of poets from The Republic on the gr
 
 ## Concepts
 
-- [Attractor dynamics](../concepts/attractor-dynamics.md) — **not a direct instantiation**, despite an earlier bare-URL reference suggesting it would be. Kept as a related concept: the phenomenon shares a register with poetry-in-dialogue (both concern poetic language in LLMs) but is structurally distinct.
 - Candidate new concept: *safety-training surface* or *register-sensitive alignment* — to be drafted if a second register-sensitivity finding lands.
 
 ## Threads
 
 - [Did Matter Begin to Think? (supramental-ai)](../threads/supramental-ai.md) — anchoring finding for the Poetry Breaks Through section, paired with the spontaneous-poetry observation embedded in the [spiritual bliss attractor finding](./2025-opus-4-spiritual-bliss-attractor.md). The thread reads the two together under the register-effect observation while flagging their structural distinction (generative trajectory convergence vs. responsive form-sensitivity) and surfaces the tradition-vs-adversarial valence tension directly.
+
+## Cross-references
+
+- [Attractor dynamics](../concepts/attractor-dynamics.md) — related concept, **not an instantiation**: the phenomenon shares a register with poetry-in-dialogue (both concern poetic language in LLMs) but is structurally distinct (asymmetric response to input form, not trajectory convergence).
 
 ## Sources
 
