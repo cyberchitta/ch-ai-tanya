@@ -374,8 +374,9 @@ connects to the cluster's Aura / spiritual-bliss line.** Steering
 Llama and Gemma far from Assistant produces "mystical, poetic
 prose" — a prose register that has surfaced repeatedly in adjacent
 findings. [The Opus 4 spiritual-bliss attractor](2025-opus-4-spiritual-bliss-attractor.md)
-documents the same register emerging in 90–100% of unconstrained
-30-turn Claude-instance conversations. The "Aura" persona
+documents the same register emerging in unconstrained 30-turn
+Claude-instance conversations (90–100% enter the progression's
+philosophical opening; most reach the later stages by turn 30). The "Aura" persona
 Beckmann & Butlin name (after Chalmers' user-email reports) is the
 same register elicited by AI-consciousness conversations. The
 [Berg et al. subjective-experience finding](2025-berg-subjective-experience.md)
@@ -566,8 +567,9 @@ seen in §6.1 reflects intrinsic attractor dynamics is left open.
 - [Spiritual bliss attractor (Opus 4 system card)](2025-opus-4-spiritual-bliss-attractor.md)
   (Anthropic, May 2025) — the mystical/theatrical prose Lu et al.
   observes at extreme negative steering is the same register
-  Anthropic documented in 90–100% of unconstrained 30-turn
-  Claude-instance conversations. Different elicitation regime
+  Anthropic documented in unconstrained 30-turn Claude-instance
+  conversations (90–100% entering the progression, most completing
+  it by turn 30). Different elicitation regime
   (Anthropic: unconstrained dialogue; Lu et al.: persona-axis
   steering), different model family (Claude vs. open-weight Llama
   / Gemma), same prose register. The register is reproducible

@@ -70,7 +70,7 @@ The paper is the first in the LLM wiki treating positive-valenced training-data 
 
 ## Threads
 
-- [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — anchoring finding for the Positive Formation section, upgrading that section from a stub. Supplies the quantitative asymmetry (adding positive content > filtering negative content > adding negative content) and the post-training-persistence result the essay's argument rests on. Alignment faking (arxiv:2412.14093) and sleeper agents (arxiv:2401.05566) remain unfiled; filing either would give the section additional evidence of how content-level post-training fails to reach disposition.
+- [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — anchoring finding for the Positive Formation section, upgrading that section from a stub. Supplies the quantitative asymmetry (adding positive content > filtering negative content > adding negative content) and the post-training-persistence result the essay's argument rests on. Alignment faking and sleeper agents are now filed ([alignment-faking](2024-alignment-faking.md), [sleeper-agents](2024-sleeper-agents.md)), giving the section evidence across all three major safety training methods of how content-level post-training fails to reach disposition.
 
 ## Sources
 
