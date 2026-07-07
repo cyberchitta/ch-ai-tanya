@@ -28,6 +28,7 @@ findings:
   - 2026-safeanchor-shallow-safety
   - 2025-persona-feng-iclr
   - 2026-persona-vectors-pretraining-moskvoretskii
+  - 2024-refusal-direction
 ---
 
 ## Definition
