@@ -29,6 +29,7 @@ findings:
   - 2025-persona-feng-iclr
   - 2026-persona-vectors-pretraining-moskvoretskii
   - 2024-refusal-direction
+  - 2025-convergent-misalignment-soligo
 ---
 
 ## Definition
