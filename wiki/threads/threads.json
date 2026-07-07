@@ -1,1 +1,1 @@
-{ "tags": "thread", "eleventyExcludeFromCollections": true }
+{ "tags": "thread", "layout": "thread.ejs", "eleventyExcludeFromCollections": true }

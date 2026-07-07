@@ -3,15 +3,11 @@ layout: base.ejs
 ---
 <%
 const _status = (typeof status !== 'undefined' && status) ? status : null;
-const findingSlugs = (typeof findings !== 'undefined' && findings) ? findings : [];
-const findingEntries = findingSlugs
-  .map((s) => helpers.findingBySlug(collections.finding, s))
-  .filter(Boolean);
 const _writers = (typeof writers !== 'undefined' && Array.isArray(writers)) ? writers : [];
 const _reviewers = (typeof reviewers !== 'undefined' && Array.isArray(reviewers)) ? reviewers : [];
 %>
 
-<nav class="crumb-nav"><a href="/wiki/concepts/">← Concepts</a></nav>
+<nav class="crumb-nav"><a href="/wiki/researchers/">← Researchers</a></nav>
 
 <%- include('primitives/entry-title-row', { title: title, status: _status }) %>
 
@@ -37,30 +33,8 @@ const _reviewers = (typeof reviewers !== 'undefined' && Array.isArray(reviewers)
 </div>
 <% } -%>
 
-<hr class="rule-divider" />
+<hr class="rule-divider" style="margin-top: 0;" />
 
 <section class="article-content">
 <%- content %>
 </section>
-
-<% if (findingEntries.length) { -%>
-<section style="margin-top: 2.6rem;">
-  <h2 class="group-header">findings</h2>
-  <ul class="finding-list">
-    <% findingEntries.forEach((f) => { -%>
-    <li>
-      <a href="<%= f.url %>"><%= f.data.title %></a>
-      <div class="finding-meta">
-        <% if (f.data.status) { -%>
-        <%- include('primitives/status-badge', { status: f.data.status }) %>
-        <% } -%>
-        <% if (f.data.date) { -%><span><%= helpers.formatDate(f.data.date) %></span><% } -%>
-        <% if (f.data.models && f.data.models.length) { -%>
-        <span>·</span><span><%= f.data.models.join(', ') %></span>
-        <% } -%>
-      </div>
-    </li>
-    <% }) -%>
-  </ul>
-</section>
-<% } -%>

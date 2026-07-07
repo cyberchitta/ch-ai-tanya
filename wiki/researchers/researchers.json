@@ -1,1 +1,1 @@
-{ "tags": "researcher" }
+{ "tags": "researcher", "layout": "researcher.ejs" }

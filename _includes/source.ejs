@@ -29,6 +29,8 @@ const _authors = (typeof authors !== 'undefined' && authors) ? authors : [];
 const _venue   = (typeof venue   !== 'undefined' && venue)   ? venue   : null;
 const _date    = (typeof date    !== 'undefined' && date)    ? date    : null;
 const _url     = (typeof url     !== 'undefined' && url)     ? url     : null;
+const _writers = (typeof writers !== 'undefined' && Array.isArray(writers)) ? writers : [];
+const _reviewers = (typeof reviewers !== 'undefined' && Array.isArray(reviewers)) ? reviewers : [];
 
 const slug = page.fileSlug;
 const citingFindings = (collections.finding || [])
@@ -46,6 +48,28 @@ const citingFindings = (collections.finding || [])
     date: _date ? helpers.formatDate(_date) : null
   }) %>
 </div>
+
+<% if (_writers.length || _reviewers.length) { -%>
+<div class="entry-meta-row" style="margin-top: 0rem; margin-bottom: 0.8rem;">
+  <div class="provenance">
+    <% if (_writers.length) { -%>
+    <span class="provenance-meta">by </span>
+    <% _writers.forEach((h, i) => { -%>
+    <% if (i > 0) { -%><span class="provenance-sep">·</span><% } -%>
+    <%- include('primitives/collaborator-chip', { handle: h }) -%>
+    <% }) -%>
+    <% } -%>
+    <% if (_reviewers.length) { -%>
+    <% if (_writers.length) { -%><span class="provenance-sep">·</span><% } -%>
+    <span class="provenance-meta">reviewed by </span>
+    <% _reviewers.forEach((h, i) => { -%>
+    <% if (i > 0) { -%><span class="provenance-sep">·</span><% } -%>
+    <%- include('primitives/collaborator-chip', { handle: h }) -%>
+    <% }) -%>
+    <% } -%>
+  </div>
+</div>
+<% } -%>
 
 <% if (_url) { -%>
 <div class="entry-meta-row" style="margin-bottom: 1.8rem;">
