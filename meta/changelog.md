@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.5.0 — 2026-07-07
+
+Driven by the researcher entry type doing no work: four filed entries
+functioning as topic stubs, a job concepts already do better. Editor
+adopted the "taste reading" — researcher entries exist to track
+judgment.
+
+**Reframed: researcher entry type.** The entry tracks what a
+researcher's attention signals, grounded in track record across filed
+findings. Suggested optional body sections: Approach (characteristic
+methods, stated concretely), What their attention signals (the
+predictive read), Findings (filed findings anchored by their work).
+Judgment claims need grounding in at least two filed findings.
+Retrofitting the four existing researcher entries is follow-up work,
+not part of this change.
+
 ## v0.4.0 — 2026-05-11
 
 Driven by `_includes/source.ejs` (added during the supramental-gold

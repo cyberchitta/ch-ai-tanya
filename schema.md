@@ -192,8 +192,24 @@ rather than silently inventing shape terminology.
 ### Researcher
 
 Lives in `wiki/researchers/`. An active researcher, team, or lab whose work
-shows up repeatedly. Short — links to their findings and concepts, notes
-their approach.
+shows up repeatedly. The entry tracks judgment, not topic: findings get
+superseded and concepts persist, but a researcher's taste — which problems
+they pick, which methods they reach for, what their attention landing on a
+question signals — is the third durable thing. Areas of interest alone do
+not justify an entry; concepts already index topics.
+
+Short. Suggested body sections (optional, in this order):
+
+- `## Approach` — characteristic methods and moves, stated concretely:
+  the recurring shape of their studies, not their subject area
+- `## What their attention signals` — the predictive read, grounded in
+  track record across filed findings, not reputation
+- `## Findings` — filed findings anchored by this researcher's work
+
+Track-record claims follow the same writing discipline as findings:
+tied to filed entries and cited sources. If an entry can't ground a
+judgment claim in at least two filed findings, state the thinner
+version or omit the claim.
 
 Example: `researchers/anthropic-interpretability.md`.
 
