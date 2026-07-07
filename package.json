@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "lint": "bun scripts/lint.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
