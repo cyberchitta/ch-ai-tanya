@@ -4537,6 +4537,11 @@ cross-variant scope). Editor attention needed: two raw/ stub descriptions carry 
 sources don't support (source-2024-refusal-direction-arditi repeats the abliteration claim;
 source-2025-recursivelabs-bliss-attractor says "no methodology section" where the criticism is
 unverifiability) — raw/ is not AI-editable. Asterisk "Claude Finds God" source remains uncached.
+- Researcher entries retrofitted to the v0.5.0 judgment spec (2026-07-07): all four cleared the
+two-filed-findings bar (drop option not needed); each gained a "What their attention signals"
+section grounded in filed findings, sections renamed to spec (Approach / Findings), and the
+researchers _index updated to the judgment framing. Entries remain draft — retrofit is not
+source-review.
 
 ## Working lenses
 Framing commitments that shape reading and triage but lack the 2–3-finding empirical depth
