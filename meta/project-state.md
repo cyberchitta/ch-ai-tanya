@@ -4542,6 +4542,31 @@ two-filed-findings bar (drop option not needed); each gained a "What their atten
 section grounded in filed findings, sections renamed to spec (Approach / Findings), and the
 researchers _index updated to the judgment framing. Entries remain draft — retrofit is not
 source-review.
+- Second promotion batch (2026-07-07, editor-approved). Five entries reviewed by parallel
+sub-agents against schema criteria and cached primary sources, corrected, and promoted:
+insecure-code, reward-hacking, convergent-misalignment-soligo, concept-injection-introspection,
+and attractor-dynamics (the wiki's FIRST concept promotion — nine findings/concepts now at
+working). Errors caught: insecure-code mis-located the disclosure control (it is a user-side
+educational-context request, not assistant-side acknowledgement, and quoted a phrase absent from
+the source); reward-hacking asserted the agentic reading as fact against its own tensions
+section, and its paper PDF had never been cached (now cached, three-mitigation set verified);
+convergent-misalignment carried an unsupported "~20x parameter count" claim (source gives 336 vs
+9 adapters) and both its concepts lacked the reciprocal findings-list slug; concept-injection
+misattributed the extraction method to sparse autoencoders (the paper uses contrastive pairs)
+and listed seven authors for a SINGLE-author (Lindsey) paper — both errors had propagated into
+the two researcher entries retrofitted earlier this session, plus introspection-adapters and the
+witness-ai thread ("accuracy scales with model size", which the paper contradicts). The
+concept-injection entry is the wiki's first adopter of the refs: frontmatter field (v0.6.0).
+First concept-review criteria recorded by the reviewer: concept review is not source
+verification but structure + two-way reciprocity + faithfulness-to-findings-at-current-status +
+no-escalation; a finding's promotion-with-corrections should trigger a re-check of every concept
+summarizing it. Editor attention needed (raw/ not AI-editable): source-2025-transformer-news-
+introspection stub has an impossible date (2025-01-31; the post published 2025-11-13, verified
+against the now-cached copy). Two new stub candidates queued in candidates.md: Denison et al.
+2024 reward-tampering (the actual model-organism lineage ancestor, previously mislabeled on two
+inbound links) and Turner et al. 2025 model-organisms (the convergent-misalignment companion).
+Also re-fetched: the insecure-code arXiv cache copy was the wrong paper (a physics preprint), now
+corrected.
 
 ## Working lenses
 Framing commitments that shape reading and triage but lack the 2–3-finding empirical depth
