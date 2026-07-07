@@ -1301,11 +1301,11 @@ self-initiated deception as 51st; behavioral-self-awareness-realignment as 50th.
 Schema: v0.4.0
 
 ## Inventory
-- Findings: 69
+- Findings: 72
 - Concepts: 10
 - Threads: 2
 - Researchers: 4
-- Source stubs: 84
+- Source stubs: 87
 
 ## Recent additions
 - `findings/2026-storyscope-narrative-fingerprints.md` — Jenna Russell, Rishanth Rajendhran,
@@ -4509,6 +4509,16 @@ inoculation-prompting) converging on the same partial-success-mechanism contribu
 three mechanism concepts (introspection, scheming, persona-selection).
 - Schema stabilizing through use (v0.x); finding body structure codified at v0.2.2; lens entry
 type retired at v0.3.0; intervention findings codified at v0.3.1
+- Site orientation pass (2026-07-07). Mechanical batch executed from `meta/handoff-mechanical.md`
+(untracked): writers/reviewers bylines rendered on entry pages, homepage browse block linking
+all five sections, build-time llms.txt + sitemap.xml, Michalski→Michels correction, oversized
+persona-selection-model stub shrunk to spec, `scripts/lint.js` wired into CI (reports only),
+project-state.md hard-wrapped. Taste pass: homepage dek + start-here copy rewritten per voice.md
+(model-psychology framing, reading strategy, draft-badge caveat, name gloss). Pending proposals
+surfaced this session, not yet decided: wiki register codified in voice.md; researcher entries
+reframed around researcher judgment ("taste reading"); machine-readable finding→finding
+references to unblock backlinks; draft→working promotion process. EM story-register thread
+deferred by editor decision.
 
 ## Working lenses
 Framing commitments that shape reading and triage but lack the 2–3-finding empirical depth
