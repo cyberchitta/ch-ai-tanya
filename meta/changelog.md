@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.6.0 — 2026-07-07
+
+Driven by the site-orientation review: finding→finding
+cross-references are the densest link type in the corpus and the only
+one with no reverse index — a finding referenced by ten others shows
+nothing. The template pattern exists (`source.ejs` "cited in" via
+`cites:`); what was missing was the machine-readable form on the
+finding side.
+
+**Added: `refs` field to Finding frontmatter (optional).** A list of
+finding fileSlugs this finding references in body prose. The build
+renders "referenced by" backlinks on the target finding from it. Same
+deliberate asymmetry as `cites:` (v0.4.0): inversion lives in the
+template, not the data; the referenced finding carries no reciprocal
+list.
+
+**Added: three lint rules** (rules 10–12): refs-without-link,
+link-without-refs, refs-a-nonexistent-finding. All gated on `refs:`
+being at least partially populated, mirroring rules 7–9.
+
+**Not in this change:** backfilling `refs:` across the 72 filed
+findings, the finding.ejs "referenced by" section, and extending
+`scripts/lint.js` to rules 10–12 — queued as mechanical follow-up in
+`meta/handoff-mechanical.md`.
+
 ## v0.5.0 — 2026-07-07
 
 Driven by the researcher entry type doing no work: four filed entries

@@ -114,6 +114,14 @@ Optional frontmatter:
   pages use to build their "cited in" backlinks. Symmetric to the
   concept-side `findings:` field: the source side has no parent list
   to lean on, so the finding has to carry the citation index.
+- `refs` (list): `fileSlug` of every other finding this finding
+  references in body prose (the filename minus `.md`, e.g.
+  `2024-alignment-faking`). The machine-readable mirror of
+  finding→finding cross-references; the build uses it to render
+  "referenced by" backlinks on the target finding. Same logic as
+  `cites:`: the referenced finding has no parent-side list, so the
+  referencing finding carries the index. Body prose keeps the
+  human-readable markdown link; `refs:` mirrors it.
 
 Findings use the following body sections in the order below. Required
 sections must appear; optional sections may be omitted when there's
@@ -287,9 +295,16 @@ to `meta/lint-log.md` with date and resolution state.
    to `raw/.../source-X.md` but `cites:` does not include `source-X`.
 9. **Cites a nonexistent source** — a `cites:` entry has no matching
    file under `raw/**/source-*.md`.
+10. **Refs without link** — a finding's `refs:` declares a finding
+    slug but no body markdown link points to that finding.
+11. **Link without refs** — a body markdown link in a finding points
+    to another finding but `refs:` does not include its slug.
+12. **Refs a nonexistent finding** — a `refs:` entry has no matching
+    file under `wiki/findings/`.
 
 Rules 7–9 only fire when `cites:` is at least partially populated;
-findings without `cites:` stay green (the field is optional).
+findings without `cites:` stay green (the field is optional). Rules
+10–12 gate on `refs:` the same way.
 
 Draft-status entries are exempt from link-completeness checks; see
 "Draft-status conventions" under Status markers.
