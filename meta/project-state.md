@@ -4519,6 +4519,24 @@ surfaced this session, not yet decided: wiki register codified in voice.md; rese
 reframed around researcher judgment ("taste reading"); machine-readable finding→finding
 references to unblock backlinks; draft→working promotion process. EM story-register thread
 deferred by editor decision.
+- First draft→working promotions (2026-07-07, editor-approved). Five findings reviewed by
+parallel sub-agents against schema criteria and cached primary sources, corrected, and promoted:
+alignment-faking, sleeper-agents, refusal-direction, persona-vectors, spiritual-bliss-attractor.
+Every entry held real errors caught at review: a misattributed sandbagging claim
+(alignment-faking; belonged to Meinke et al.), the "12-24% → 78%" compound (pairs the
+animal-welfare baseline with a helpful-only trajectory — canonical citation is now 12% → 78%,
+corrected in six repeating files), "39 authors, all Anthropic" (sleeper-agents; several
+non-Anthropic affiliations), missing scale/condition qualifiers on sleeper-agents' three
+headline results, a placeholder models field and an uncited abliteration claim
+(refusal-direction; re-add path queued in candidates.md), the unsourced "vaccine" term
+(persona-vectors; Anthropic-post framing, not the paper's), and five source-precision errors in
+spiritual-bliss (90-100% attaches to stage one; word frequencies are the system card's; the
+~13% is task-eval entry, not adversarial persistence; residual cross-model over-claims in
+attractor-dynamics, emergent-capabilities, and the supramental-ai thread corrected to
+cross-variant scope). Editor attention needed: two raw/ stub descriptions carry claims their
+sources don't support (source-2024-refusal-direction-arditi repeats the abliteration claim;
+source-2025-recursivelabs-bliss-attractor says "no methodology section" where the criticism is
+unverifiability) — raw/ is not AI-editable. Asterisk "Claude Finds God" source remains uncached.
 
 ## Working lenses
 Framing commitments that shape reading and triage but lack the 2–3-finding empirical depth
