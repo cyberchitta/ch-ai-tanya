@@ -4567,6 +4567,11 @@ against the now-cached copy). Two new stub candidates queued in candidates.md: D
 inbound links) and Turner et al. 2025 model-organisms (the convergent-misalignment companion).
 Also re-fetched: the insecure-code arXiv cache copy was the wrong paper (a physics preprint), now
 corrected.
+- Continuation handoff for the taste/editorial stream (next steps, open ledger, cross-cutting
+lessons, editor-only raw/ items) lives in `meta/handoff-taste.md` (untracked). Read it at session
+start alongside this file to recover the next move — likely batch 3: promote the introspection
+concept + its cluster (honesty-elicitation, confessions-honesty, introspection-adapters,
+activation-oracles), still holding the PSM one more round.
 
 ## Working lenses
 Framing commitments that shape reading and triage but lack the 2–3-finding empirical depth
