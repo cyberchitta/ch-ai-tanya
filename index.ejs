@@ -8,6 +8,15 @@ permalink: /
   </p>
 </div>
 
+<h2 class="group-header">browse</h2>
+<ul class="backlink-list" style="margin-bottom: 2.2rem;">
+  <li><a href="/wiki/concepts/">Concepts</a> — Abstractions and patterns that multiple findings cluster under. Persist as findings are added, superseded, or reframed.</li>
+  <li><a href="/wiki/findings/">Findings</a> — Time-stamped empirical results tied to specific sources, models, and dates. Findings cluster under <a href="/wiki/concepts/">concepts</a>; read either way in.</li>
+  <li><a href="/wiki/threads/">Threads</a> — Developing arguments and patterns tracked across findings. When a thread gets sharp enough, it becomes a publication.</li>
+  <li><a href="/wiki/researchers/">Researchers</a> — Active researchers, teams, and labs whose work shows up repeatedly across findings.</li>
+  <li><a href="/raw/">Sources</a> — Citation index. Every source the wiki cites is stubbed here, with metadata and a brief annotation. Findings link in via the stubs.</li>
+</ul>
+
 <h2 class="group-header">concepts</h2>
 <div class="concept-list">
 <% for (const c of helpers.byTitle(collections.concept)) {
