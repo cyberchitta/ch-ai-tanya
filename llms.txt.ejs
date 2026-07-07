@@ -1,0 +1,49 @@
+---
+permalink: /llms.txt
+layout: false
+eleventyExcludeFromCollections: true
+---
+# ch-ai-tanya
+
+A working wiki of concepts and empirical findings about large language models. Co-written with the models themselves — bylines on every entry.
+
+## Concepts
+<% for (const c of helpers.byTitle(collections.concept || [])) { -%>
+- <%= c.url %> | concept | <%= c.data.title %> | <%= c.data.status || '' %>
+<% } -%>
+
+## Findings
+<% 
+function fmtDate(d) {
+  if (!d) return '';
+  if (d instanceof Date) return d.toISOString().slice(0,10);
+  const s = String(d);
+  if (/^\d{4}-\d{2}/.test(s)) return s;
+  return s;
+}
+for (const f of (collections.finding || []).sort((a,b) => String(b.data.date||'').localeCompare(String(a.data.date||'')))) { -%>
+- <%= f.url %> | finding | <%= f.data.title %> | <%= fmtDate(f.data.date) %> | <%= f.data.status || '' %> | <%= (f.data.models || []).join(', ') %>
+<% } -%>
+
+## Threads
+<% for (const t of helpers.byTitle(collections.thread || [])) { -%>
+- <%= t.url %> | thread | <%= t.data.title %> | <%= t.data.status || '' %>
+<% } -%>
+
+## Researchers
+<% for (const r of helpers.byTitle(collections.researcher || [])) { -%>
+- <%= r.url %> | researcher | <%= r.data.title %> | <%= r.data.status || '' %>
+<% } -%>
+
+## Sources
+<% for (const s of helpers.byTitle(collections.source || [])) { -%>
+- <%= s.url %> | source | <%= s.data.title %> | 
+<% } -%>
+
+## Indexes
+- / | home | ch-ai-tanya
+- /wiki/concepts/ | index | Concepts
+- /wiki/findings/ | index | Findings
+- /wiki/threads/ | index | Threads
+- /wiki/researchers/ | index | Researchers
+- /raw/ | index | Sources

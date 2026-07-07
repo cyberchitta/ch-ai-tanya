@@ -1,0 +1,26 @@
+---
+permalink: /sitemap.xml
+layout: false
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<% 
+const base = 'https://ch-ai-tanya.cyberchitta.cc';
+const urls = new Set([
+  '/',
+  '/wiki/concepts/',
+  '/wiki/findings/',
+  '/wiki/threads/',
+  '/wiki/researchers/',
+  '/raw/',
+]);
+for (const c of (collections.concept || [])) urls.add(c.url);
+for (const f of (collections.finding || [])) urls.add(f.url);
+for (const t of (collections.thread || [])) urls.add(t.url);
+for (const r of (collections.researcher || [])) urls.add(r.url);
+for (const s of (collections.source || [])) urls.add(s.url);
+for (const u of urls) { -%>
+  <url><loc><%= base %><%= u %></loc></url>
+<% } -%>
+</urlset>
