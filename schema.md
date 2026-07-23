@@ -309,7 +309,14 @@ findings without `cites:` stay green (the field is optional). Rules
 Draft-status entries are exempt from link-completeness checks; see
 "Draft-status conventions" under Status markers.
 
-Lint is a prompt for human attention, not an automated fix. The AI reports,
+Checks fall into three classes. **Structural** checks (5–12) are
+mechanically decidable and blocking: `scripts/lint.js` exits non-zero
+while any is present, and the CI build fails with it. **Advisory**
+checks (1–2) are reported for editor attention and never block.
+**Semantic** checks (3–4) require judgment and are performed as review
+passes, not scripts.
+
+Lint never auto-fixes. Past the structural floor, the AI reports and
 the editor decides.
 
 ## Inclusion rule for tradition material

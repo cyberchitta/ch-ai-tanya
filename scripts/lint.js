@@ -18,6 +18,10 @@
  *
  * Never auto-fixes. Reports to stdout. Appends dated summary to meta/lint-log.md.
  *
+ * Exit code: non-zero when any structural error is present (broken links,
+ * frontmatter completeness, cites consistency). Advisory checks (stale,
+ * orphans) never affect the exit code.
+ *
  * Usage: bun scripts/lint.js
  */
 
@@ -348,11 +352,11 @@ function main() {
     console.log('');
   }
 
-  printSection('STALE FINDINGS (>12mo)', report.stale);
-  printSection('ORPHANS (no inbound links)', report.orphans);
-  printSection('BROKEN LINKS', report.broken);
-  printSection('FRONTMATTER INCOMPLETE', report.frontmatter);
-  printSection('CITES / LINK CONSISTENCY', report.cites);
+  printSection('STALE FINDINGS (>12mo) — advisory', report.stale);
+  printSection('ORPHANS (no inbound links) — advisory', report.orphans);
+  printSection('BROKEN LINKS — error', report.broken);
+  printSection('FRONTMATTER INCOMPLETE — error', report.frontmatter);
+  printSection('CITES / LINK CONSISTENCY — error', report.cites);
 
   if (total === 0) {
     console.log('No mechanical issues found.');
@@ -369,6 +373,12 @@ function main() {
     fs.appendFileSync(META_LOG, dateHeader + summary);
   }
   console.log('\nAppended summary to meta/lint-log.md');
+
+  const errorFiles = report.broken.length + report.frontmatter.length + report.cites.length;
+  if (errorFiles > 0) {
+    console.error(`\nStructural errors in ${errorFiles} file(s) — failing (advisory issues do not block).`);
+    process.exit(1);
+  }
 }
 
 main();

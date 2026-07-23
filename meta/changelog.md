@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.7.0 — 2026-07-23
+
+Driven by evidence that a purely advisory gate fails in practice: two
+broken links flagged in the 2026-07-07 lint run were still present
+2026-07-23.
+
+**Changed: structural lint errors now block the build.** The lint
+checks split into three classes — structural (5–12: broken links,
+frontmatter completeness, cites/refs consistency), advisory (1–2:
+stale, orphans), semantic (3–4: review passes). `scripts/lint.js`
+exits non-zero on structural errors and CI no longer sets
+`continue-on-error` on the lint step. Advisory and semantic checks are
+unchanged: the AI reports, the editor decides.
+
 ## v0.6.0 — 2026-07-07
 
 Driven by the site-orientation review: finding→finding
