@@ -12,9 +12,11 @@ found" floor).
 ## Handoffs
 
 Continuation handoffs for in-flight work streams. Read the relevant one at
-session start alongside this file to recover the next move.
+session start alongside this file to recover the next move. The private
+cross-stream todo and schedule is `_notes/worklist.md` — read it at session
+start too.
 
-- Taste/editorial stream: `meta/handoff-taste.md` (untracked) — next steps, open
+- Taste/editorial stream: `_notes/handoff-taste.md` — next steps, open
   ledger, cross-cutting lessons, editor-only raw/ items. Likely next move:
   batch 3 promotions — the introspection concept + its cluster
   (honesty-elicitation, confessions-honesty, introspection-adapters,
@@ -51,7 +53,7 @@ additions: `meta/session-log.md` and git history.
 
 ## Filing candidates
 
-`meta/candidates.md` — curated list of substantiated findings not yet filed, sourced from the
+`_notes/candidates.md` — curated list of substantiated findings not yet filed, sourced from the
 asuric-ai essay research inventory and two live deep-research surveys (April 2025 – April
 2026). Entries across eight clusters: mechanistic geometry (Arditi, OpenAI SAE, Soligo 2025
 convergent, Soligo 2026 EM-Easy, Zou 2023 Representation Engineering — all filed); functional

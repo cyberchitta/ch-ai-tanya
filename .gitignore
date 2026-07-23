@@ -3,9 +3,4 @@ node_modules/
 .DS_Store
 .commit-msg
 cache/
-
-# Untracked meta working queues (see feedback_meta_scratchpads memory)
-meta/candidates.md
-meta/next-findings.md
-meta/eval_fix.md
-meta/handoff-*.md
+_notes
