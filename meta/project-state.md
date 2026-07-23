@@ -5,8 +5,9 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-07-23 (restructured to current-state-only; Kehle-improvements
-step 1).
+Last updated: 2026-07-23 (Kehle-improvements steps 2–5: structural lint errors
+now block CI, inventory-drift check, untrusted-source ingestion rule, "not
+found" floor).
 
 ## Handoffs
 
@@ -19,8 +20,10 @@ session start alongside this file to recover the next move.
   (honesty-elicitation, confessions-honesty, introspection-adapters,
   activation-oracles), still holding the PSM one more round.
 - Repo-process improvements from the Kehle LLM-wiki article:
-  `_notes/handoff-kehle-improvements.md` — six steps, one at a time; article
-  reference copy alongside it.
+  `_notes/handoff-kehle-improvements.md` — five of six steps done; step 6:
+  provisional scorecard filed at `meta/scorecard.md` (12 questions, quarterly
+  cadence provisional), first cold run pending; article reference copy
+  alongside it.
 
 ## Inventory
 - Findings: 72
@@ -88,12 +91,6 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
   "synthetic-document finetuning" generically.
-- **Lint debt:** the two broken links reported since 2026-07-07
-  (`raw/papers/source-2023-representation-engineering-zou.md` →
-  source-2025-openai-sae-emergent-misalignment.md;
-  `raw/journalism/source-2025-ifls-spiritual-bliss.md` →
-  source-2025-recursivelabs-bliss-attractor.md) — both raw/ stubs, so
-  editor-side; fix before lint errors become blocking (Kehle step 2).
 
 ### Source cache notes
 
