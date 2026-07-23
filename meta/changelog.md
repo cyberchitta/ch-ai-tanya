@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.8.0 — 2026-07-23
+
+Driven by live drift in the pre-restructure project-state.md: a stale
+"Schema: v0.4.0" stamp while the changelog stood at v0.6.0, and
+hand-maintained inventory counts nothing verified. Counts that nothing
+checks decay silently.
+
+**Added: lint rule 13, inventory drift.** The Inventory counts in
+`meta/project-state.md` are compared against the filesystem (wiki
+entries by type; source stubs under `raw/`). Structural class —
+blocking, per v0.7.0 — so filing an entry now requires updating the
+inventory in the same commit. No version-stamp rule needed:
+project-state.md no longer carries one; the version is owned by this
+changelog.
+
 ## v0.7.0 — 2026-07-23
 
 Driven by evidence that a purely advisory gate fails in practice: two

@@ -301,6 +301,9 @@ to `meta/lint-log.md` with date and resolution state.
     to another finding but `refs:` does not include its slug.
 12. **Refs a nonexistent finding** — a `refs:` entry has no matching
     file under `wiki/findings/`.
+13. **Inventory drift** — the Inventory counts in
+    `meta/project-state.md` differ from the filesystem (wiki entries
+    by type; source stubs under `raw/**/source-*.md`).
 
 Rules 7–9 only fire when `cites:` is at least partially populated;
 findings without `cites:` stay green (the field is optional). Rules
@@ -309,7 +312,7 @@ findings without `cites:` stay green (the field is optional). Rules
 Draft-status entries are exempt from link-completeness checks; see
 "Draft-status conventions" under Status markers.
 
-Checks fall into three classes. **Structural** checks (5–12) are
+Checks fall into three classes. **Structural** checks (5–13) are
 mechanically decidable and blocking: `scripts/lint.js` exits non-zero
 while any is present, and the CI build fails with it. **Advisory**
 checks (1–2) are reported for editor attention and never block.
