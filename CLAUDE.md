@@ -117,6 +117,12 @@ contributed. Models listed as `writers` (principal) or `reviewers`
 (feedback). Follows the cyberchitta.cc convention (`@claude-opus-4.6`,
 `@gemini-3.1-pro-preview`, etc.).
 
+**"Not found" floor.** Never claim the wiki lacks coverage of a topic
+until a full-text search (`rg` over `wiki/` and `raw/`) comes up empty.
+Filename and title scans miss coverage that lives in body prose — a
+confident "we don't have anything on X" from a shallow look is worse
+than the search costing a few seconds.
+
 ## Writing style
 
 The canonical CyberChitta editorial brief lives in the supramental-gold
