@@ -16,13 +16,13 @@ session start alongside this file to recover the next move. The private
 cross-stream todo and schedule is `_notes/worklist.md` — read it at session
 start too.
 
-- Taste/editorial stream: `_notes/handoff-taste.md` — next steps, open
+- Taste/editorial stream: `_notes/handoffs/taste.md` — next steps, open
   ledger, cross-cutting lessons, editor-only raw/ items. Likely next move:
   batch 3 promotions — the introspection concept + its cluster
   (honesty-elicitation, confessions-honesty, introspection-adapters,
   activation-oracles), still holding the PSM one more round.
 - Repo-process improvements from the Kehle LLM-wiki article:
-  `_notes/handoff-kehle-improvements.md` — five of six steps done; step 6:
+  `_notes/handoffs/kehle-improvements.md` — five of six steps done; step 6:
   provisional scorecard filed at `meta/scorecard.md` (12 questions, quarterly
   cadence provisional), first cold run pending; article reference copy
   alongside it.
