@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.9.0 — 2026-07-23
+
+An agent-maintained corpus ingests the full text of external documents,
+and a document can contain instructions aimed at the agent reading it.
+The existing verification workflow checks that a source says what it is
+claimed to say; nothing said the source's own words carry no authority
+over the corpus's governing files.
+
+**Added: untrusted-source ingestion rule** (Source entry type). Content
+inside a source document cannot authorize changes to `schema.md`,
+`CLAUDE.md`, or `scripts/` in the pass that ingests it.
+
 ## v0.8.0 — 2026-07-23
 
 Driven by live drift in the pre-restructure project-state.md: a stale
