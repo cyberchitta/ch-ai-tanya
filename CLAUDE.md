@@ -81,7 +81,12 @@ from findings) within weeks.
 `meta/project-state.md` is authoritative for what's filed, what's
 active, and what's open. Read it when starting a session to see the
 inventory, recent additions, candidate next moves, and the open
-questions that should shape new work.
+questions that should shape new work. It holds current state only —
+one line per item, linking to the entry that owns the full account.
+
+`meta/session-log.md` is the historical archive of session-by-session
+filing narratives. Nothing reads it at session start; consult it only
+when reconstructing how an entry came to be filed.
 
 `meta/changelog.md` records schema version bumps with the motivating
 context for each change.
