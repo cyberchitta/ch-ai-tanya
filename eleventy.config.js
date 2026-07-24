@@ -1,4 +1,5 @@
 import path from 'path';
+import { execSync } from 'node:child_process';
 import { fileURLToPath } from 'url';
 import ejsPlugin from '@11ty/eleventy-plugin-ejs';
 import sgPlugin, {
@@ -12,6 +13,71 @@ const sgRoot = path.dirname(
 );
 const sgEleventy = path.join(sgRoot, 'eleventy');
 
+// Wiki-entry history from git: filing events (file added) and status
+// promotions (a commit whose diff sets `status: working|stable` on an
+// existing entry). Needs full history — CI must clone with fetch-depth: 0,
+// or this quietly sees only the latest commit.
+function wikiRecentEvents() {
+  const opts = { cwd: __dirname, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 };
+  const isEntry = (p) =>
+    /^wiki\/(concepts|findings|threads|researchers)\/[^/]+\.md$/.test(p) &&
+    !p.endsWith('_index.md');
+  const events = [];
+  try {
+    const added = execSync(
+      "git log --format='%x01%aI' --name-status --diff-filter=A -- 'wiki/*/*.md'",
+      opts,
+    );
+    let date = null;
+    const seenAdd = new Set();
+    for (const line of added.split('\n')) {
+      if (line.startsWith('\x01')) {
+        date = line.slice(1).trim();
+        continue;
+      }
+      const m = line.match(/^A\t(.+)$/);
+      if (m && isEntry(m[1]) && !seenAdd.has(m[1])) {
+        seenAdd.add(m[1]);
+        events.push({ path: m[1], date, kind: 'added' });
+      }
+    }
+    const promoted = execSync(
+      "git log --format='%x01%aI' -p --unified=0 -G'^status: (working|stable)' -- 'wiki/*/*.md'",
+      opts,
+    );
+    date = null;
+    let file = null;
+    let isNewFile = false;
+    const seenPromo = new Set();
+    for (const line of promoted.split('\n')) {
+      if (line.startsWith('\x01')) {
+        date = line.slice(1).trim();
+        continue;
+      }
+      const d = line.match(/^diff --git a\/.+ b\/(.+)$/);
+      if (d) {
+        file = d[1];
+        isNewFile = false;
+        continue;
+      }
+      if (line.startsWith('new file mode')) {
+        isNewFile = true;
+        continue;
+      }
+      const s = line.match(/^\+status:\s*(working|stable)\s*$/);
+      if (s && file && !isNewFile && isEntry(file) && !seenPromo.has(`${file}\x01${s[1]}`)) {
+        seenPromo.add(`${file}\x01${s[1]}`);
+        events.push({ path: file, date, kind: s[1] });
+      }
+    }
+  } catch {
+    return []; // not a git checkout (or git absent) — recency surfaces render empty
+  }
+  for (const e of events) e.url = `/${e.path.replace(/\.md$/, '.html')}`;
+  events.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+  return events;
+}
+
 export default function (eleventyConfig) {
   // Expose SG's eleventy/ tree to EJS's include resolver.
   // Templates are addressed by their path under that root, e.g.
@@ -23,6 +89,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addGlobalData('layout', 'base.ejs');
   eleventyConfig.addGlobalData('helpers', sgHelpers);
+  eleventyConfig.addGlobalData('recentEvents', wikiRecentEvents());
 
   // Ignore non-content directories
   eleventyConfig.ignores.add('design-handoff/**');

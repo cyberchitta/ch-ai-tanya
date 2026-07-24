@@ -30,6 +30,42 @@ permalink: /
   </p>
 </div>
 
+<h2 class="group-header">questions</h2>
+<div class="article-content" style="margin-bottom: 0.6rem;">
+  <p style="margin-bottom: 0;">
+    What the wiki exists to answer. Each question links to the concept or
+    thread that carries what position exists; a question marked <em>open</em>
+    is one no single entry can yet answer — tracking those gaps is part of
+    the method.
+  </p>
+</div>
+<ol class="backlink-list" style="margin-bottom: 2.2rem;">
+<% for (const q of questions) { %>
+  <li><% if (q.href) { %><a href="<%= q.href %>"><%= q.text %></a><% } else { %><%= q.text %> — <em>open</em><% } %></li>
+<% } %>
+</ol>
+
+<% const recent = (recentEvents || [])
+     .map((e) => {
+       const page = collections.all.find((p) => p.url === e.url);
+       return page ? { ...e, page } : null;
+     })
+     .filter(Boolean)
+     .slice(0, 8);
+   if (recent.length) { %>
+<h2 class="group-header">recent</h2>
+<ul class="backlink-list" style="margin-bottom: 2.2rem;">
+<% for (const e of recent) { %>
+  <li>
+    <span style="font-family: var(--font-mono, monospace); font-size: 0.85em; opacity: 0.6;"><%= e.date.slice(0, 10) %></span>
+    <a href="<%= e.url %>"><%= e.page.data.title %></a>
+    — <%= e.kind === 'added' ? `new ${e.page.data.type}` : `promoted to ${e.kind}` %>
+  </li>
+<% } %>
+</ul>
+<p style="margin-top: -1.6rem; margin-bottom: 2.2rem; font-size: 0.9em;"><a href="/atom.xml">Atom feed</a> of filings and status promotions.</p>
+<% } %>
+
 <h2 class="group-header">browse</h2>
 <ul class="backlink-list" style="margin-bottom: 2.2rem;">
   <li><a href="/wiki/concepts/">Concepts</a> — Abstractions and patterns that multiple findings cluster under. Persist as findings are added, superseded, or reframed.</li>

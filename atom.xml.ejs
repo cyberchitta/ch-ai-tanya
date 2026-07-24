@@ -1,0 +1,39 @@
+---
+permalink: /atom.xml
+layout: false
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<%
+const base = 'https://ch-ai-tanya.cyberchitta.cc';
+const events = (recentEvents || [])
+  .map((e) => {
+    const page = collections.all.find((p) => p.url === e.url);
+    return page ? { ...e, page } : null;
+  })
+  .filter(Boolean)
+  .slice(0, 20);
+const updated = events.length ? events[0].date : '1970-01-01T00:00:00Z';
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+-%>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><%= site.title %></title>
+  <subtitle><%= site.tagline %> — new entries and status promotions</subtitle>
+  <link href="<%= base %>/atom.xml" rel="self"/>
+  <link href="<%= base %>/"/>
+  <id><%= base %>/</id>
+  <updated><%= updated %></updated>
+<% for (const e of events) {
+     const label = e.kind === 'added'
+       ? `New ${e.page.data.type}`
+       : `Promoted to ${e.kind}`;
+-%>
+  <entry>
+    <title><%= esc(`${label}: ${e.page.data.title}`) %></title>
+    <link href="<%= base %><%= e.url %>"/>
+    <id><%= base %><%= e.url %>#<%= e.kind %></id>
+    <updated><%= e.date %></updated>
+    <summary><%= esc(`${label} — ${e.page.data.title}`) %></summary>
+  </entry>
+<% } -%>
+</feed>

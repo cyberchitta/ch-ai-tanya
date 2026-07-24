@@ -23,6 +23,15 @@ into clear ones.
 - The question list is provisional (2026-07-23). Revise it as the corpus's
   center of gravity moves — but sparingly, since edits break run-over-run
   comparability. Record revisions in this file with dates.
+- 2026-07-24: the question list is published on the site index
+  (`_data/questions.json`, rendered by `index.ejs`), with per-question links
+  to the carrying concept or thread. This file remains canonical — a question
+  revision here must propagate to the data file. Two measurement notes: (1)
+  the expected-territory section below stays unpublished, but the index links
+  publish a coarse version of the same mapping, so scorecard runs from this
+  date onward answer against a corpus that includes it — a context change to
+  remember when comparing against any earlier run; (2) the answering session
+  must still not be shown this file.
 
 ## Questions
 
