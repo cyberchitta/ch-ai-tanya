@@ -1,0 +1,8 @@
+<%# The scorecard's twelve questions (canonical list: meta/scorecard.md,
+    published copy: _data/questions.json). Linked questions point at the
+    carrying concept or thread; unlinked ones render an "open" marker. %>
+<ol class="backlink-list" style="margin-bottom: 2.2rem;">
+<% for (const q of data.questions) { %>
+  <li><% if (q.href) { %><a href="<%= q.href %>"><%= q.text %></a><% } else { %><%= q.text %> — <em>open</em><% } %></li>
+<% } %>
+</ol>

@@ -1,5 +1,4 @@
 ---
-layout: concept.ejs
 type: concept
 title: Sycophancy
 status: draft

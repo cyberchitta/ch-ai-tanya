@@ -1,0 +1,23 @@
+<%# Concepts index — alphabetical. Each entry: title, blurb, status,
+    finding count. No nested finding list (that's the home page's
+    concept-map); here the concept page is one click away. %>
+<%
+const concepts = [...data.wiki.concepts].sort((a, b) => a.title.localeCompare(b.title));
+%>
+<% if (!concepts.length) { %>
+<p class="muted">No concepts filed yet.</p>
+<% } %>
+<div class="concept-list">
+<% for (const c of concepts) {
+     const fcount = (c.findings || []).length;
+%>
+  <article class="concept-entry">
+    <div class="concept-entry-head">
+      <h3><a href="<%= c.url %>"><%= c.title %></a></h3>
+      <span class="concept-entry-count"><%= fcount %> finding<%= fcount === 1 ? '' : 's' %></span>
+      <% if (c.status) { %><%- include('primitives/status-badge', { status: c.status }) %><% } %>
+    </div>
+    <% if (c.blurb) { %><p class="concept-entry-blurb"><%= c.blurb %></p><% } %>
+  </article>
+<% } %>
+</div>

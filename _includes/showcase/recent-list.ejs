@@ -1,0 +1,21 @@
+<%# Latest wiki events (filings and status promotions), derived from git
+    history at build time. `limit` attribute caps the list; default 8. %>
+<%
+const max = parseInt(typeof limit !== 'undefined' ? limit : '8', 10);
+const events = (data.recentEvents || [])
+  .map((e) => {
+    const entry = data.wiki.byUrl.get(e.url);
+    return entry ? { ...e, entry } : null;
+  })
+  .filter(Boolean)
+  .slice(0, max);
+%>
+<ul class="backlink-list" style="margin-bottom: 2.2rem;">
+<% for (const e of events) { %>
+  <li>
+    <span style="font-family: var(--font-mono, monospace); font-size: 0.85em; opacity: 0.6;"><%= e.date.slice(0, 10) %></span>
+    <a href="<%= e.url %>"><%= e.entry.title %></a>
+    — <%= e.kind === 'added' ? `new ${e.entry.type}` : `promoted to ${e.kind}` %>
+  </li>
+<% } %>
+</ul>

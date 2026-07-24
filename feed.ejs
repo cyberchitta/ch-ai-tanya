@@ -1,15 +1,15 @@
 ---
-permalink: /atom.xml
+permalink: /feed.xml
 layout: false
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <%
-const base = 'https://ch-ai-tanya.cyberchitta.cc';
+const base = site.url;
 const events = (recentEvents || [])
   .map((e) => {
-    const page = collections.all.find((p) => p.url === e.url);
-    return page ? { ...e, page } : null;
+    const entry = wikiIndex.byUrl.get(e.url);
+    return entry ? { ...e, entry } : null;
   })
   .filter(Boolean)
   .slice(0, 20);
@@ -19,21 +19,21 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><%= site.title %></title>
   <subtitle><%= site.tagline %> — new entries and status promotions</subtitle>
-  <link href="<%= base %>/atom.xml" rel="self"/>
+  <link href="<%= base %>/feed.xml" rel="self"/>
   <link href="<%= base %>/"/>
   <id><%= base %>/</id>
   <updated><%= updated %></updated>
 <% for (const e of events) {
      const label = e.kind === 'added'
-       ? `New ${e.page.data.type}`
+       ? `New ${e.entry.type}`
        : `Promoted to ${e.kind}`;
 -%>
   <entry>
-    <title><%= esc(`${label}: ${e.page.data.title}`) %></title>
+    <title><%= esc(`${label}: ${e.entry.title}`) %></title>
     <link href="<%= base %><%= e.url %>"/>
     <id><%= base %><%= e.url %>#<%= e.kind %></id>
     <updated><%= e.date %></updated>
-    <summary><%= esc(`${label} — ${e.page.data.title}`) %></summary>
+    <summary><%= esc(`${label} — ${e.entry.title}`) %></summary>
   </entry>
 <% } -%>
 </feed>

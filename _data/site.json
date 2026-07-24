@@ -1,5 +1,8 @@
 {
   "title": "ch-ai-tanya",
   "tagline": "model-psychology LLM wiki",
-  "github": "cyberchitta/ch-ai-tanya"
+  "github": "cyberchitta/ch-ai-tanya",
+  "url": "https://ch-ai-tanya.cyberchitta.cc",
+  "mainSiteUrl": "https://www.cyberchitta.cc",
+  "description": "A research wiki on model psychology — character, persona, emotion, introspection, and the internal structures that give rise to them in large language models."
 }

@@ -1,0 +1,48 @@
+<%# Sources index — grouped by raw/ subfolder (papers, posts, system-cards,
+    journalism, transcripts, tradition). The subfolder is the natural
+    "kind" axis for sources; newest first inside each group. %>
+<%
+const KIND_ORDER = ['papers', 'posts', 'system-cards', 'journalism', 'transcripts', 'tradition'];
+const KIND_LABEL = {
+  'papers':       'Papers',
+  'posts':        'Posts & essays',
+  'system-cards': 'System cards',
+  'journalism':   'Journalism',
+  'transcripts':  'Transcripts',
+  'tradition':    'Tradition',
+};
+const grouped = new Map();
+for (const s of data.wiki.sources) {
+  if (!grouped.has(s.kind)) grouped.set(s.kind, []);
+  grouped.get(s.kind).push(s);
+}
+for (const arr of grouped.values()) {
+  arr.sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+}
+const orderedKinds = [
+  ...KIND_ORDER.filter((k) => grouped.has(k)),
+  ...[...grouped.keys()].filter((k) => !KIND_ORDER.includes(k)).sort(),
+];
+%>
+<% if (!orderedKinds.length) { %>
+<p class="muted">No sources filed yet.</p>
+<% } %>
+<% for (const k of orderedKinds) { %>
+<section style="margin-top: 2.2rem;">
+  <h2 class="group-header"><%= KIND_LABEL[k] || k %></h2>
+  <ul class="finding-list">
+    <% for (const s of grouped.get(k)) { %>
+    <li>
+      <a href="<%= s.url %>"><%= s.title %></a>
+      <div class="finding-meta">
+        <% if (s.authors && s.authors.length) { %>
+        <span><%= s.authors.slice(0, 3).join(', ') %><%= s.authors.length > 3 ? ', et al.' : '' %></span>
+        <% } %>
+        <% if (s.venue) { %><span>·</span><span><%= s.venue %></span><% } %>
+        <% if (s.date) { %><span>·</span><span><%= helpers.formatDate(s.date) %></span><% } %>
+      </div>
+    </li>
+    <% } %>
+  </ul>
+</section>
+<% } %>

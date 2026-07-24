@@ -1,5 +1,4 @@
 ---
-layout: concept.ejs
 type: concept
 title: Self-preservation
 status: draft

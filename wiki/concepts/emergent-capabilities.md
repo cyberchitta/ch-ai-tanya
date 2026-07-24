@@ -1,5 +1,4 @@
 ---
-layout: concept.ejs
 type: concept
 title: Emergent capabilities
 status: draft

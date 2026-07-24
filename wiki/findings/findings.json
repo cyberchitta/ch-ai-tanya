@@ -1,1 +1,1 @@
-{ "tags": "finding", "layout": "finding.ejs" }
+{ "tags": "finding", "layout": "layouts/finding.ejs" }

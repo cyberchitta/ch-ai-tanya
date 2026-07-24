@@ -1,0 +1,35 @@
+<%# Findings index — flat, grouped by year, newest first. Each row:
+    title, status, date, models. Same vocabulary as the findings list
+    on a concept page. %>
+<%
+const all = [...data.wiki.findings].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+const groups = new Map();
+for (const f of all) {
+  const year = f.date ? String(f.date).slice(0, 4) : '—';
+  if (!groups.has(year)) groups.set(year, []);
+  groups.get(year).push(f);
+}
+const years = [...groups.keys()].sort((a, b) => b.localeCompare(a));
+%>
+<% if (!all.length) { %>
+<p class="muted">No findings filed yet.</p>
+<% } %>
+<% for (const y of years) { %>
+<section style="margin-top: 2.2rem;">
+  <h2 class="group-header"><%= y %></h2>
+  <ul class="finding-list">
+    <% for (const f of groups.get(y)) { %>
+    <li>
+      <a href="<%= f.url %>"><%= f.title %></a>
+      <div class="finding-meta">
+        <% if (f.status) { %><%- include('primitives/status-badge', { status: f.status }) %><% } %>
+        <% if (f.date) { %><span><%= helpers.formatDate(f.date) %></span><% } %>
+        <% if (f.models && f.models.length) { %>
+        <span>·</span><span><%= f.models.join(', ') %></span>
+        <% } %>
+      </div>
+    </li>
+    <% } %>
+  </ul>
+</section>
+<% } %>

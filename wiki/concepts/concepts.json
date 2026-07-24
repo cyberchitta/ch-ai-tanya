@@ -1,1 +1,1 @@
-{ "tags": "concept", "layout": "concept.ejs" }
+{ "tags": "concept", "layout": "layouts/concept.ejs" }

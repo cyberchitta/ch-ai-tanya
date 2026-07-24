@@ -1,0 +1,15 @@
+<%
+const researchers = [...data.wiki.researchers].sort((a, b) => a.title.localeCompare(b.title));
+%>
+<% if (!researchers.length) { %>
+<p class="muted">No researchers filed yet.</p>
+<% } else { %>
+<ul class="backlink-list">
+  <% for (const r of researchers) { %>
+  <li>
+    <a href="<%= r.url %>"><%= r.title %></a>
+    <% if (r.affiliation) { %><span class="muted"> — <%= r.affiliation %></span><% } %>
+  </li>
+  <% } %>
+</ul>
+<% } %>

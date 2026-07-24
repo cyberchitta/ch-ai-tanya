@@ -1,1 +1,1 @@
-{ "tags": "source", "layout": "source.ejs" }
+{ "tags": "source", "layout": "layouts/source.ejs" }
