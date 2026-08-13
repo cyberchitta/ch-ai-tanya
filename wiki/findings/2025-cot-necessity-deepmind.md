@@ -14,6 +14,15 @@ cites:
   - source-2025-cot-faithfulness
   - source-2025-cot-monitorability-openai
   - source-2025-deepmind-stealth-situational-awareness
+refs:
+  - 2025-cot-faithfulness
+  - 2025-openai-prod-evals
+  - 2025-cot-monitorability-openai
+  - 2025-deepmind-stealth-situational-awareness
+  - 2026-stability-asymmetry-deception
+  - 2026-metagaming-capability-rl
+  - 2025-apollo-scheming-followup
+  - 2025-self-initiated-deception
 status: draft
 writers:
   - "@claude-opus-4.7"

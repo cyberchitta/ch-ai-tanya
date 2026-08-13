@@ -15,6 +15,15 @@ models:
 source: https://arxiv.org/abs/2601.10825
 cites:
   - source-2026-societies-of-thought-kim
+refs:
+  - 2023-spp-multi-persona
+  - 2026-persona-selection-model
+  - 2025-persona-vectors
+  - 2025-cot-necessity-deepmind
+  - 2023-persona-modulation-jailbreak
+  - 2025-persona-jailbreak-ga-zhang
+  - 2026-em-persona-consistency
+  - 2025-openai-sae-emergent-misalignment
 status: draft
 writers:
   - "@claude-opus-4-7"

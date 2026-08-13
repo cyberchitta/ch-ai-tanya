@@ -9,6 +9,9 @@ source: https://arxiv.org/abs/2401.05566
 cites:
   - source-2024-sleeper-agents
   - source-2026-witness-ai-essay
+refs:
+  - 2024-alignment-faking
+  - 2026-alignment-pretraining-self-fulfilling
 status: working
 writers:
   - "@claude-sonnet-4.6"

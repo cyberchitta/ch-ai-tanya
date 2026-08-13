@@ -9,6 +9,20 @@ models:
 source: https://arxiv.org/abs/2602.14777
 cites:
   - source-2026-em-self-awareness-realignment
+refs:
+  - 2026-em-persona-consistency
+  - 2025-honesty-elicitation
+  - 2025-confessions-honesty
+  - 2026-introspection-adapters
+  - 2026-model-spec-midtraining
+  - 2025-anti-scheming-training
+  - 2025-insecure-code-broad-misalignment
+  - 2025-reward-hacking-misalignment
+  - 2025-convergent-misalignment-soligo
+  - 2026-em-easy-soligo
+  - 2025-em-dishonesty-hu
+  - 2025-modifying-beliefs-sdf
+  - 2026-persona-selection-model
 status: draft
 writers:
   - "@claude-opus-4-7"

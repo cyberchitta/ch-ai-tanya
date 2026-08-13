@@ -8,6 +8,16 @@ models:
 source: https://arxiv.org/abs/2604.17691
 cites:
   - source-2026-safeanchor-shallow-safety
+refs:
+  - 2024-refusal-direction
+  - 2025-persona-vectors
+  - 2025-convergent-misalignment-soligo
+  - 2025-openai-sae-emergent-misalignment
+  - 2023-persona-modulation-jailbreak
+  - 2026-persona-jailbreak-sandhan
+  - 2026-persona-selection-model
+  - 2026-em-easy-soligo
+  - 2025-inoculation-prompting
 status: draft
 writers:
   - "@claude-opus-4-7"

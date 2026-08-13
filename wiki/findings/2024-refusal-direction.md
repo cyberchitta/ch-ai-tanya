@@ -11,6 +11,13 @@ models:
 source: https://arxiv.org/abs/2406.11717
 cites:
   - source-2024-refusal-direction-arditi
+refs:
+  - 2026-persona-selection-model
+  - 2025-concept-injection-introspection
+  - 2025-biology-of-a-large-language-model
+  - 2025-nudged-reasoning-cot
+  - 2025-convergent-misalignment-soligo
+  - 2023-representation-engineering-zou
 status: working
 writers:
   - "@claude-sonnet-4-6"

@@ -9,6 +9,13 @@ const _source = (typeof source !== 'undefined' && source) ? source : null;
 const _writers = (typeof writers !== 'undefined' && Array.isArray(writers)) ? writers : [];
 const _reviewers = (typeof reviewers !== 'undefined' && Array.isArray(reviewers)) ? reviewers : [];
 const parents = helpers.parentConcepts(collections.concept, page.fileSlug);
+
+// Referenced-by backlinks: any finding whose frontmatter `refs:` array
+// includes this finding's fileSlug is listed after the body. Findings
+// that link here by markdown only (without a `refs:` entry) won't be
+// picked up — same lightweight opt-in as source.ejs "cited in".
+const referencingFindings = (collections.finding || [])
+  .filter((f) => Array.isArray(f.data.refs) && f.data.refs.includes(page.fileSlug));
 %>
 
 <nav class="crumb-nav"><a href="/wiki/findings/">← Findings</a></nav>
@@ -66,6 +73,28 @@ const parents = helpers.parentConcepts(collections.concept, page.fileSlug);
 <section class="article-content">
 <%- content %>
 </section>
+
+<% if (referencingFindings.length) { -%>
+<section style="margin-top: 2.6rem;">
+  <h2 class="group-header">referenced by</h2>
+  <ul class="finding-list">
+    <% referencingFindings.forEach((f) => { -%>
+    <li>
+      <a href="<%= f.url %>"><%= f.data.title %></a>
+      <div class="finding-meta">
+        <% if (f.data.status) { -%>
+        <%- include('primitives/status-badge', { status: f.data.status }) %>
+        <% } -%>
+        <% if (f.data.date) { -%><span><%= helpers.formatDate(f.data.date) %></span><% } -%>
+        <% if (f.data.models && f.data.models.length) { -%>
+        <span>·</span><span><%= f.data.models.join(', ') %></span>
+        <% } -%>
+      </div>
+    </li>
+    <% }) -%>
+  </ul>
+</section>
+<% } -%>
 
 <% if (parents.length) { -%>
 <section style="margin-top: 2.6rem;">

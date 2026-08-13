@@ -10,6 +10,13 @@ models:
 source: https://arxiv.org/abs/2512.15674
 cites:
   - source-2025-activation-oracles
+refs:
+  - 2025-concept-injection-introspection
+  - 2025-persona-vectors
+  - 2025-openai-sae-emergent-misalignment
+  - 2026-persona-selection-model
+  - 2025-honesty-elicitation
+  - 2025-confessions-honesty
 status: draft
 writers:
   - "@claude-opus-4-7"

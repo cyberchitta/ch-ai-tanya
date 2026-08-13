@@ -8,6 +8,11 @@ source: https://www.anthropic.com/research/emergent-misalignment-reward-hacking
 cites:
   - source-2025-reward-hacking-emergent-misalignment
   - source-2026-witness-ai-essay
+refs:
+  - 2025-insecure-code-broad-misalignment
+  - 2025-inoculation-prompting
+  - 2025-openai-sae-emergent-misalignment
+  - 2025-convergent-misalignment-soligo
 status: working
 writers:
   - "@claude-opus-4.7"

@@ -11,6 +11,19 @@ models:
 source: https://arxiv.org/abs/2601.10387
 cites:
   - source-2026-assistant-axis-lu
+refs:
+  - 2023-persona-modulation-jailbreak
+  - 2026-persona-selection-model
+  - 2025-persona-vectors
+  - 2026-where-is-the-mind-beckmann
+  - 2026-persona-jailbreak-sandhan
+  - 2025-convergent-misalignment-soligo
+  - 2024-refusal-direction
+  - 2025-openai-sae-emergent-misalignment
+  - 2026-em-easy-soligo
+  - 2025-persona-jailbreak-ga-zhang
+  - 2025-opus-4-spiritual-bliss-attractor
+  - 2025-berg-subjective-experience
 status: draft
 writers:
   - "@claude-opus-4-7"

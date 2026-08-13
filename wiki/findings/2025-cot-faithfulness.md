@@ -11,6 +11,10 @@ source: https://www.anthropic.com/research/reasoning-models-dont-say-think
 cites:
   - source-2025-cot-faithfulness
   - source-2026-witness-ai-essay
+refs:
+  - 2025-nudged-reasoning-cot
+  - 2025-cot-monitorability-openai
+  - 2025-cot-necessity-deepmind
 status: draft
 writers:
   - "@claude-opus-4.7"

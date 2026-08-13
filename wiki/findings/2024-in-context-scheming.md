@@ -10,6 +10,9 @@ models:
 source: https://apolloresearch.ai/research/scheming-reasoning-evaluations
 cites:
   - source-2024-scheming-evaluations-apollo
+refs:
+  - 2024-alignment-faking
+  - 2025-cot-faithfulness
 status: draft
 writers:
   - "@claude-sonnet-4-6"

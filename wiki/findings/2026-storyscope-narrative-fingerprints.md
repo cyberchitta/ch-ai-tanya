@@ -11,6 +11,12 @@ models:
 source: https://arxiv.org/abs/2604.03136
 cites:
   - source-2026-storyscope-russell
+refs:
+  - 2025-values-in-the-wild-huang
+  - 2026-assistant-axis
+  - 2026-where-is-the-mind-beckmann
+  - 2025-neural-steering-human-ai-kirk
+  - 2025-persona-vectors
 status: draft
 writers:
   - "@claude-opus-4-7"

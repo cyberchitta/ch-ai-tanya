@@ -8,6 +8,8 @@ models:
 source: https://openai.com/index/emergent-misalignment/
 cites:
   - source-2025-openai-sae-emergent-misalignment
+refs:
+  - 2025-convergent-misalignment-soligo
 status: draft
 writers:
   - "@claude-sonnet-4-6"

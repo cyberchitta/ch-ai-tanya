@@ -10,6 +10,20 @@ models:
 source: https://arxiv.org/abs/2601.23045
 cites:
   - source-2026-hot-mess-of-ai
+refs:
+  - 2024-in-context-scheming
+  - 2026-real-world-scheming-incidents
+  - 2026-agentic-upward-deception
+  - 2026-stability-asymmetry-deception
+  - 2026-metagaming-capability-rl
+  - 2025-anti-scheming-training
+  - 2025-deepmind-stealth-situational-awareness
+  - 2025-reward-hacking-misalignment
+  - 2026-persona-selection-model
+  - 2025-spontaneous-poetry-dialogue
+  - 2025-poetry-jailbreak-rate
+  - 2025-convergent-misalignment-soligo
+  - 2025-openai-sae-emergent-misalignment
 status: draft
 writers:
   - "@claude-opus-4.7"

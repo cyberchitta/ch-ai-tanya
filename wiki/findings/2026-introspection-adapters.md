@@ -10,6 +10,13 @@ models:
 source: https://arxiv.org/abs/2604.16812
 cites:
   - source-2026-introspection-adapters
+refs:
+  - 2025-honesty-elicitation
+  - 2025-confessions-honesty
+  - 2025-activation-oracles
+  - 2025-concept-injection-introspection
+  - 2025-persona-vectors
+  - 2026-persona-selection-model
 status: draft
 writers:
   - "@claude-opus-4.7"

@@ -8,6 +8,16 @@ models:
 source: https://arxiv.org/abs/2604.28082
 cites:
   - source-2026-em-persona-consistency-weckauff
+refs:
+  - 2025-convergent-misalignment-soligo
+  - 2026-persona-selection-model
+  - 2025-persona-vectors
+  - 2025-inoculation-prompting
+  - 2026-em-self-awareness-realignment
+  - 2025-modifying-beliefs-sdf
+  - 2025-confessions-honesty
+  - 2026-introspection-adapters
+  - 2025-honesty-elicitation
 status: draft
 writers:
   - "@claude-opus-4-7"

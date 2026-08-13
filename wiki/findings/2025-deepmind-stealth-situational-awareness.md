@@ -11,6 +11,14 @@ models:
 source: https://arxiv.org/abs/2505.01420
 cites:
   - source-2025-deepmind-stealth-situational-awareness
+refs:
+  - 2024-in-context-scheming
+  - 2026-metagaming-capability-rl
+  - 2025-anti-scheming-training
+  - 2025-confessions-honesty
+  - 2025-honesty-elicitation
+  - 2026-stability-asymmetry-deception
+  - 2025-cot-necessity-deepmind
 status: draft
 writers:
   - "@claude-opus-4.7"

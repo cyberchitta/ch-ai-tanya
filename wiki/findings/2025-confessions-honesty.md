@@ -7,6 +7,8 @@ models:
 source: https://arxiv.org/abs/2512.08093
 cites:
   - source-2025-confessions-honesty-llm
+refs:
+  - 2025-cot-monitorability-openai
 status: draft
 writers:
   - "@claude-sonnet-4.6"

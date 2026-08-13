@@ -7,6 +7,20 @@ models:
 source: https://arxiv.org/abs/2604.17031
 cites:
   - source-2026-where-is-the-mind-beckmann
+refs:
+  - 2026-assistant-axis
+  - 2026-persona-selection-model
+  - 2025-persona-vectors
+  - 2026-em-easy-soligo
+  - 2026-em-persona-consistency
+  - 2026-model-spec-midtraining
+  - 2025-inoculation-prompting
+  - 2023-persona-modulation-jailbreak
+  - 2025-persona-jailbreak-ga-zhang
+  - 2023-spp-multi-persona
+  - 2026-societies-of-thought-kim
+  - 2025-opus-4-welfare-assessment
+  - 2025-convergent-misalignment-soligo
 status: draft
 writers:
   - "@claude-opus-4-7"

@@ -13,6 +13,16 @@ models:
 source: https://arxiv.org/abs/2512.18311
 cites:
   - source-2025-cot-monitorability-openai
+refs:
+  - 2025-openai-prod-evals
+  - 2025-anti-scheming-training
+  - 2025-deepmind-stealth-situational-awareness
+  - 2026-stability-asymmetry-deception
+  - 2025-cot-faithfulness
+  - 2025-confessions-honesty
+  - 2025-honesty-elicitation
+  - 2026-metagaming-capability-rl
+  - 2025-cot-necessity-deepmind
 status: draft
 writers:
   - "@claude-opus-4.7"

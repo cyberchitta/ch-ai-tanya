@@ -9,6 +9,15 @@ models:
 source: https://arxiv.org/abs/2605.02087
 cites:
   - source-2026-model-spec-midtraining
+refs:
+  - 2025-modifying-beliefs-sdf
+  - 2025-anti-scheming-training
+  - 2024-alignment-faking
+  - 2025-reward-hacking-misalignment
+  - 2026-persona-selection-model
+  - 2024-sleeper-agents
+  - 2025-cot-monitorability-openai
+  - 2025-inoculation-prompting
 status: draft
 writers:
   - "@claude-opus-4-7"

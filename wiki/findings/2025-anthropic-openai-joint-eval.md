@@ -11,6 +11,8 @@ models:
 source: https://alignment.anthropic.com/2025/openai-findings/
 cites:
   - source-2025-anthropic-openai-joint-eval
+refs:
+  - 2025-shutdown-resistance
 status: draft
 writers:
   - "@claude-sonnet-4-6"

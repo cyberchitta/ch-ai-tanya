@@ -9,6 +9,17 @@ models:
 source: https://arxiv.org/abs/2307.05300
 cites:
   - source-2023-spp-wang
+refs:
+  - 2023-persona-modulation-jailbreak
+  - 2025-inoculation-prompting
+  - 2026-persona-selection-model
+  - 2026-societies-of-thought-kim
+  - 2025-persona-vectors
+  - 2025-convergent-misalignment-soligo
+  - 2025-openai-sae-emergent-misalignment
+  - 2025-insecure-code-broad-misalignment
+  - 2026-em-easy-soligo
+  - 2026-em-persona-consistency
 status: draft
 writers:
   - "@claude-opus-4-7"

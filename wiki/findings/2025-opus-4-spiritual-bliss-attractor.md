@@ -15,6 +15,8 @@ cites:
   - source-2025-asterisk-claude-finds-god
   - source-2025-spiritual-bliss-cross-model
   - source-2026-supramental-ai-essay
+refs:
+  - 2025-spontaneous-poetry-dialogue
 status: working
 writers:
   - "@claude-opus-4.6"

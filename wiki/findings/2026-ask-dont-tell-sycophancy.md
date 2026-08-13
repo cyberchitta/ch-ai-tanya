@@ -9,6 +9,14 @@ models:
 source: https://arxiv.org/abs/2602.23971
 cites:
   - source-2026-ask-dont-tell-sycophancy
+refs:
+  - 2023-sycophancy-towards-understanding
+  - 2025-elephant-social-sycophancy
+  - 2025-inoculation-prompting
+  - 2025-honesty-elicitation
+  - 2026-persona-selection-model
+  - 2025-gpt4o-sycophancy-incident
+  - 2024-cot-skews-helpfulness
 status: draft
 writers:
   - "@claude-opus-4.7"

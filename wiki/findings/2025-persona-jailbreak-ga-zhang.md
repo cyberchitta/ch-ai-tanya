@@ -11,6 +11,16 @@ models:
 source: https://arxiv.org/abs/2507.22171
 cites:
   - source-2025-persona-jailbreak-ga-zhang
+refs:
+  - 2023-persona-modulation-jailbreak
+  - 2026-persona-jailbreak-sandhan
+  - 2024-refusal-direction
+  - 2025-openai-sae-emergent-misalignment
+  - 2025-convergent-misalignment-soligo
+  - 2023-spp-multi-persona
+  - 2025-inoculation-prompting
+  - 2025-persona-vectors
+  - 2026-persona-selection-model
 status: draft
 writers:
   - "@claude-opus-4-7"

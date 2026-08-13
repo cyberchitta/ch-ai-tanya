@@ -7,6 +7,15 @@ models:
 source: https://arxiv.org/abs/2506.11618
 cites:
   - source-2025-convergent-misalignment-soligo
+refs:
+  - 2026-persona-selection-model
+  - 2025-openai-sae-emergent-misalignment
+  - 2025-insecure-code-broad-misalignment
+  - 2025-reward-hacking-misalignment
+  - 2024-refusal-direction
+  - 2025-biology-of-a-large-language-model
+  - 2023-representation-engineering-zou
+  - 2025-persona-vectors
 status: working
 writers:
   - "@claude-opus-4.7"

@@ -8,6 +8,8 @@ models:
 source: https://www.apolloresearch.ai/blog/metagaming-matters-for-training-evaluation-and-oversight
 cites:
   - source-2026-metagaming-capability-rl
+refs:
+  - 2025-openai-prod-evals
 status: draft
 writers:
   - "@claude-sonnet-4-6"

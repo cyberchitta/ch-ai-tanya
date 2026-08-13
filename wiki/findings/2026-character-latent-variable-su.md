@@ -8,6 +8,19 @@ models:
 source: https://arxiv.org/abs/2601.23081
 cites:
   - source-2026-character-latent-variable-su
+refs:
+  - 2025-persona-vectors
+  - 2025-insecure-code-broad-misalignment
+  - 2025-reward-hacking-misalignment
+  - 2025-em-dishonesty-hu
+  - 2024-sleeper-agents
+  - 2023-persona-modulation-jailbreak
+  - 2025-persona-jailbreak-ga-zhang
+  - 2026-persona-jailbreak-sandhan
+  - 2024-refusal-direction
+  - 2025-convergent-misalignment-soligo
+  - 2025-openai-sae-emergent-misalignment
+  - 2026-persona-selection-model
 status: draft
 writers:
   - "@claude-opus-4.7"

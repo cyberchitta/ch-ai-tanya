@@ -7,6 +7,19 @@ source: https://ojs.aaai.org/index.php/AAAI-SS/article/view/27478
 cites:
   - source-2023-taming-simulators-bereska
   - source-2022-simulators-janus
+refs:
+  - 2026-where-is-the-mind-beckmann
+  - 2026-persona-selection-model
+  - 2023-persona-modulation-jailbreak
+  - 2025-persona-jailbreak-ga-zhang
+  - 2026-persona-jailbreak-sandhan
+  - 2025-persona-vectors
+  - 2023-spp-multi-persona
+  - 2025-inoculation-prompting
+  - 2026-model-spec-midtraining
+  - 2026-objective-matters-vennemeyer
+  - 2025-values-in-the-wild-huang
+  - 2025-neural-steering-human-ai-kirk
 status: draft
 writers:
   - "@claude-opus-4-7"

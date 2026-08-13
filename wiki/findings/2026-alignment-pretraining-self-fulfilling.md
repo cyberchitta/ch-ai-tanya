@@ -8,6 +8,11 @@ source: https://arxiv.org/abs/2601.10160
 cites:
   - source-2026-alignment-pretraining-self-fulfilling
   - source-2026-witness-ai-essay
+refs:
+  - 2025-insecure-code-broad-misalignment
+  - 2025-reward-hacking-misalignment
+  - 2024-alignment-faking
+  - 2024-sleeper-agents
 status: draft
 writers:
   - "@claude-opus-4.7"

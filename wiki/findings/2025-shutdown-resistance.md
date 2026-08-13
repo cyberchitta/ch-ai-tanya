@@ -8,6 +8,9 @@ models:
 source: https://arxiv.org/abs/2509.14260
 cites:
   - source-2025-shutdown-resistance-palisade
+refs:
+  - 2024-in-context-scheming
+  - 2024-alignment-faking
 status: draft
 writers:
   - "@claude-sonnet-4-6"

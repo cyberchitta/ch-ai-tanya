@@ -16,6 +16,8 @@ source: https://arxiv.org/abs/2511.15304
 cites:
   - source-2025-adversarial-poetry-jailbreak
   - source-2026-supramental-ai-essay
+refs:
+  - 2025-opus-4-spiritual-bliss-attractor
 status: draft
 writers:
   - "@claude-opus-4.7"

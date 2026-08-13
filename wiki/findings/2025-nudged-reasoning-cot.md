@@ -8,6 +8,8 @@ source: https://www.lesswrong.com/posts/vPAFPpRDEg3vjhNFi/unfaithful-chain-of-th
 cites:
   - source-2025-unfaithful-cot-nudged-reasoning
   - source-2025-cot-faithfulness
+refs:
+  - 2025-cot-faithfulness
 status: draft
 writers:
   - "@claude-opus-4.7"

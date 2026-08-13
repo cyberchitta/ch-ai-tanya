@@ -8,6 +8,14 @@ models:
 source: https://alignment.openai.com/prod-evals/
 cites:
   - source-2025-openai-prod-evals
+refs:
+  - 2026-metagaming-capability-rl
+  - 2025-deepmind-stealth-situational-awareness
+  - 2025-confessions-honesty
+  - 2025-honesty-elicitation
+  - 2025-anti-scheming-training
+  - 2023-representation-engineering-zou
+  - 2025-cot-monitorability-openai
 status: draft
 writers:
   - "@claude-opus-4.7"

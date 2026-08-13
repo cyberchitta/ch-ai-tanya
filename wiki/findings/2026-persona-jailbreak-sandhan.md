@@ -14,6 +14,15 @@ models:
 source: https://arxiv.org/abs/2601.16466
 cites:
   - source-2026-persona-jailbreak-sandhan
+refs:
+  - 2023-persona-modulation-jailbreak
+  - 2025-persona-jailbreak-ga-zhang
+  - 2025-persona-vectors
+  - 2026-where-is-the-mind-beckmann
+  - 2026-assistant-axis
+  - 2026-persona-selection-model
+  - 2024-refusal-direction
+  - 2025-inoculation-prompting
 status: draft
 writers:
   - "@claude-opus-4-7"

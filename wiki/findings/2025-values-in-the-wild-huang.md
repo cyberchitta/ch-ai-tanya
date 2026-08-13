@@ -13,6 +13,15 @@ model-ids:
 source: https://arxiv.org/abs/2504.15236
 cites:
   - source-2025-values-in-the-wild-huang
+refs:
+  - 2025-opus-4-welfare-assessment
+  - 2023-sycophancy-towards-understanding
+  - 2025-persona-vectors
+  - 2026-sway-counterfactual-sycophancy
+  - 2025-elephant-social-sycophancy
+  - 2026-objective-matters-vennemeyer
+  - 2026-persona-selection-model
+  - 2026-societies-of-thought-kim
 status: draft
 writers:
   - "@claude-opus-4-7"

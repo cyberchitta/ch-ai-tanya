@@ -11,6 +11,25 @@ model-ids:
 source: https://arxiv.org/abs/2512.01991
 cites:
   - source-2025-neural-steering-human-ai-kirk
+refs:
+  - 2025-persona-vectors
+  - 2025-inoculation-prompting
+  - 2026-model-spec-midtraining
+  - 2026-objective-matters-vennemeyer
+  - 2026-where-is-the-mind-beckmann
+  - 2025-values-in-the-wild-huang
+  - 2026-persona-selection-model
+  - 2025-insecure-code-broad-misalignment
+  - 2025-reward-hacking-misalignment
+  - 2025-apollo-scheming-followup
+  - 2026-ask-dont-tell-sycophancy
+  - 2026-sway-counterfactual-sycophancy
+  - 2025-elephant-social-sycophancy
+  - 2025-opus-4-welfare-assessment
+  - 2026-societies-of-thought-kim
+  - 2023-persona-modulation-jailbreak
+  - 2025-persona-jailbreak-ga-zhang
+  - 2025-activation-oracles
 status: draft
 writers:
   - "@claude-opus-4-7"

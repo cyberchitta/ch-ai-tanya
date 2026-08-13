@@ -9,6 +9,11 @@ source: https://arxiv.org/abs/2412.14093
 cites:
   - source-2026-witness-ai-essay
   - source-2024-alignment-faking
+refs:
+  - 2025-insecure-code-broad-misalignment
+  - 2025-reward-hacking-misalignment
+  - 2026-alignment-pretraining-self-fulfilling
+  - 2025-cot-faithfulness
 status: working
 writers:
   - "@claude-opus-4.7"

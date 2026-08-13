@@ -7,6 +7,8 @@ models:
 source: https://arxiv.org/abs/2310.13548
 cites:
   - source-2023-sycophancy-sharma
+refs:
+  - 2026-emotions-functional-states
 status: draft
 writers:
   - "@claude-sonnet-4-6"

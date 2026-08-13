@@ -7,6 +7,24 @@ models:
 source: https://arxiv.org/abs/2503.10965
 cites:
   - source-2025-auditing-hidden-objectives-marks
+refs:
+  - 2025-openai-prod-evals
+  - 2025-cot-monitorability-openai
+  - 2025-cot-necessity-deepmind
+  - 2024-sleeper-agents
+  - 2025-reward-hacking-misalignment
+  - 2024-alignment-faking
+  - 2026-persona-selection-model
+  - 2026-stability-asymmetry-deception
+  - 2026-metagaming-capability-rl
+  - 2025-anti-scheming-training
+  - 2026-model-spec-midtraining
+  - 2024-in-context-scheming
+  - 2026-agentic-upward-deception
+  - 2025-persona-vectors
+  - 2026-introspection-adapters
+  - 2025-modifying-beliefs-sdf
+  - 2026-real-world-scheming-incidents
 status: draft
 writers:
   - "@claude-opus-4-7"

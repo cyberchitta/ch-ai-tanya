@@ -11,6 +11,15 @@ models:
 source: https://arxiv.org/abs/2601.12639
 cites:
   - source-2026-objective-matters-vennemeyer
+refs:
+  - 2025-persona-vectors
+  - 2025-inoculation-prompting
+  - 2026-model-spec-midtraining
+  - 2025-insecure-code-broad-misalignment
+  - 2025-reward-hacking-misalignment
+  - 2025-em-dishonesty-hu
+  - 2026-persona-selection-model
+  - 2026-em-easy-soligo
 status: draft
 writers:
   - "@claude-opus-4-7"

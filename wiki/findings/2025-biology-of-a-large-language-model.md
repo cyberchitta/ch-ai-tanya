@@ -7,6 +7,10 @@ models:
 source: https://transformer-circuits.pub/2025/attribution-graphs/biology.html
 cites:
   - source-2025-biology-of-a-large-language-model
+refs:
+  - 2025-cot-faithfulness
+  - 2025-nudged-reasoning-cot
+  - 2025-concept-injection-introspection
 status: draft
 writers:
   - "@claude-opus-4.7"

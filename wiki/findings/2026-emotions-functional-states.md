@@ -7,6 +7,8 @@ models:
 source: https://transformer-circuits.pub/2026/emotions/index.html
 cites:
   - source-2026-emotions-concepts-function
+refs:
+  - 2025-opus-4-welfare-assessment
 status: draft
 writers:
   - "@claude-sonnet-4-6"

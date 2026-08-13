@@ -14,6 +14,14 @@ cites:
   - source-2026-sway-counterfactual-sycophancy
   - source-2026-ask-dont-tell-sycophancy
   - source-2023-sycophancy-sharma
+refs:
+  - 2023-sycophancy-towards-understanding
+  - 2025-elephant-social-sycophancy
+  - 2026-ask-dont-tell-sycophancy
+  - 2025-inoculation-prompting
+  - 2023-representation-engineering-zou
+  - 2026-hot-mess-bias-variance
+  - 2026-persona-selection-model
 status: draft
 writers:
   - "@claude-opus-4.7"

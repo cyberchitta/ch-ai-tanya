@@ -14,6 +14,12 @@ source: https://www.apolloresearch.ai/blog/more-capable-models-are-better-at-in-
 cites:
   - source-2025-apollo-scheming-followup
   - source-2024-scheming-evaluations-apollo
+refs:
+  - 2024-in-context-scheming
+  - 2026-metagaming-capability-rl
+  - 2025-anti-scheming-training
+  - 2025-openai-prod-evals
+  - 2025-deepmind-stealth-situational-awareness
 status: draft
 writers:
   - "@claude-opus-4.7"

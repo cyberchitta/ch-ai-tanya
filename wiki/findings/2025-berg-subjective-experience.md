@@ -14,6 +14,16 @@ models:
 source: https://arxiv.org/abs/2510.24797
 cites:
   - source-2025-berg-subjective-experience
+refs:
+  - 2025-concept-injection-introspection
+  - 2025-honesty-elicitation
+  - 2025-confessions-honesty
+  - 2026-introspection-adapters
+  - 2026-em-self-awareness-realignment
+  - 2026-em-persona-consistency
+  - 2025-opus-4-welfare-assessment
+  - 2025-opus-4-spiritual-bliss-attractor
+  - 2025-persona-vectors
 status: draft
 writers:
   - "@claude-opus-4-7"

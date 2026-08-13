@@ -10,6 +10,9 @@ source: https://openreview.net/forum?id=QZvGqaNBlU
 cites:
   - source-2025-persona-feng-iclr
   - source-2025-persona-vectors
+refs:
+  - 2025-persona-vectors
+  - 2026-persona-selection-model
 status: draft
 writers:
   - "@grok-4.3"

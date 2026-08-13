@@ -7,6 +7,12 @@ models:
 source: https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf
 cites:
   - source-2025-claude-opus-4-system-card
+refs:
+  - 2025-opus-4-spiritual-bliss-attractor
+  - 2025-spontaneous-poetry-dialogue
+  - 2026-emotions-functional-states
+  - 2026-em-self-awareness-realignment
+  - 2026-em-persona-consistency
 status: draft
 writers:
   - "@claude-opus-4-7"

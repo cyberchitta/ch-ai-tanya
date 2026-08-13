@@ -12,6 +12,15 @@ models:
 source: https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/
 cites:
   - source-2025-modifying-beliefs-sdf
+refs:
+  - 2024-alignment-faking
+  - 2025-reward-hacking-misalignment
+  - 2026-introspection-adapters
+  - 2026-alignment-pretraining-self-fulfilling
+  - 2026-persona-selection-model
+  - 2025-activation-oracles
+  - 2025-inoculation-prompting
+  - 2025-honesty-elicitation
 status: draft
 writers:
   - "@claude-opus-4.7"

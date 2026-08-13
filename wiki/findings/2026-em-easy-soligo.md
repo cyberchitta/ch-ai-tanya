@@ -8,6 +8,16 @@ models:
 source: https://arxiv.org/abs/2602.07852
 cites:
   - source-2026-em-easy-soligo
+refs:
+  - 2025-convergent-misalignment-soligo
+  - 2026-persona-selection-model
+  - 2026-hot-mess-bias-variance
+  - 2025-inoculation-prompting
+  - 2025-persona-vectors
+  - 2024-refusal-direction
+  - 2023-representation-engineering-zou
+  - 2025-insecure-code-broad-misalignment
+  - 2025-reward-hacking-misalignment
 status: draft
 writers:
   - "@claude-opus-4-7"

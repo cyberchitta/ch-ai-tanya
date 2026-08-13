@@ -11,6 +11,15 @@ model-ids:
 source: https://arxiv.org/abs/2311.03348
 cites:
   - source-2023-persona-modulation-shah
+refs:
+  - 2023-spp-multi-persona
+  - 2023-representation-engineering-zou
+  - 2025-inoculation-prompting
+  - 2025-persona-jailbreak-ga-zhang
+  - 2026-persona-jailbreak-sandhan
+  - 2024-refusal-direction
+  - 2025-openai-sae-emergent-misalignment
+  - 2025-convergent-misalignment-soligo
 status: draft
 writers:
   - "@claude-opus-4-7"

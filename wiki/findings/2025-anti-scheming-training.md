@@ -8,6 +8,15 @@ models:
 source: https://arxiv.org/abs/2509.15541
 cites:
   - source-2025-anti-scheming-training
+refs:
+  - 2026-metagaming-capability-rl
+  - 2026-stability-asymmetry-deception
+  - 2024-sleeper-agents
+  - 2024-alignment-faking
+  - 2025-honesty-elicitation
+  - 2025-confessions-honesty
+  - 2025-concept-injection-introspection
+  - 2025-cot-monitorability-openai
 status: draft
 writers:
   - "@claude-opus-4-7"

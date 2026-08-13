@@ -7,7 +7,8 @@
  * - 2. Orphan entries (wiki entries with no incoming internal links)
  * - 5. Broken internal links (to non-existent .md targets)
  * - 6. Frontmatter completeness (required fields per type)
- * - 7-9. cites: ↔ body ## Sources link consistency + nonexistent sources
+ * - 7-9. cites: ↔ body source-stub link consistency + nonexistent sources
+ * - 10-12. refs: ↔ body finding-link consistency + nonexistent findings
  * - 13. Inventory drift (project-state.md counts vs filesystem)
  *
  * Skips (require semantic judgment):
@@ -20,7 +21,7 @@
  * Never auto-fixes. Reports to stdout. Appends dated summary to meta/lint-log.md.
  *
  * Exit code: non-zero when any structural error is present (broken links,
- * frontmatter completeness, cites consistency, inventory drift). Advisory
+ * frontmatter completeness, cites/refs consistency, inventory drift). Advisory
  * checks (stale, orphans) never affect the exit code.
  *
  * Usage: bun scripts/lint.js
@@ -163,7 +164,11 @@ function getAllEntries() {
       sourceSlugToPath.set(entry.slug, file);
     }
   }
-  return { entries, sourceSlugToPath };
+  const findingSlugToPath = new Map();
+  for (const e of entries) {
+    if (e.type === 'finding') findingSlugToPath.set(e.slug, e.file);
+  }
+  return { entries, sourceSlugToPath, findingSlugToPath };
 }
 
 function checkFrontmatter(entry) {
@@ -177,7 +182,7 @@ function checkFrontmatter(entry) {
   for (const k of req) {
     const v = data[k];
     const missing = (v == null) ||
-      (Array.isArray(v) && v.length === 0 && k !== 'cites') ||
+      (Array.isArray(v) && v.length === 0 && k !== 'cites' && k !== 'refs') ||
       (typeof v === 'string' && v.trim() === '');
     if (missing) {
       // draft relaxations
@@ -187,6 +192,9 @@ function checkFrontmatter(entry) {
   }
   if (type === 'finding' && data.cites && !Array.isArray(data.cites)) {
     issues.push('cites: must be list');
+  }
+  if (type === 'finding' && data.refs && !Array.isArray(data.refs)) {
+    issues.push('refs: must be list');
   }
   return issues;
 }
@@ -223,6 +231,53 @@ function checkCitesConsistency(entry, sourceSlugToPath) {
   for (const l of linkedSources) {
     if (!declared.includes(l)) {
       issues.push(`body links to ${l} but not in cites:`);
+    }
+  }
+  return issues;
+}
+
+function extractLinkedFindings(entry) {
+  const slugs = [];
+  const seen = new Set();
+  const links = extractLinks(entry.body);
+  for (const href of links) {
+    const clean = href.trim().split(/\s+/)[0].split('#')[0];
+    if (!clean.endsWith('.md')) continue;
+    const target = resolveTarget(entry.file, clean);
+    if (!target) continue;
+    const rel = path.relative(ROOT, target).split(path.sep).join('/');
+    if (!rel.startsWith('wiki/findings/')) continue;
+    const slug = path.basename(target, '.md');
+    if (slug === entry.slug || slug === 'index' || slug === '_index') continue;
+    if (seen.has(slug)) continue;
+    seen.add(slug);
+    slugs.push(slug);
+  }
+  return slugs;
+}
+
+function checkRefsConsistency(entry, findingSlugToPath) {
+  const issues = [];
+  if (entry.type !== 'finding') return issues;
+  if (entry.data.status === 'draft') return issues; // exempt per schema
+  const declared = Array.isArray(entry.data.refs) ? entry.data.refs : [];
+  if (declared.length === 0) return issues; // optional until used
+
+  const linked = extractLinkedFindings(entry);
+  const linkedSet = new Set(linked);
+
+  for (const r of declared) {
+    if (!findingSlugToPath.has(r)) {
+      issues.push(`refs nonexistent finding ${r}`);
+      continue;
+    }
+    if (!linkedSet.has(r)) {
+      issues.push(`refs:${r} but no body link to it`);
+    }
+  }
+  for (const l of linked) {
+    if (!declared.includes(l)) {
+      issues.push(`body links to ${l} but not in refs:`);
     }
   }
   return issues;
@@ -336,13 +391,14 @@ function checkInventory(entries) {
 }
 
 function main() {
-  const { entries, sourceSlugToPath } = getAllEntries();
+  const { entries, sourceSlugToPath, findingSlugToPath } = getAllEntries();
   const allMdSet = new Set(entries.map(e => e.file));
 
   const report = {
     broken: [],
     frontmatter: [],
     cites: [],
+    refs: [],
     stale: [],
     orphans: [],
     inventory: [],
@@ -361,6 +417,12 @@ function main() {
       report.cites.push({ rel: e.rel, issues: cIssues });
     }
 
+    // refs consistency
+    const rIssues = checkRefsConsistency(e, findingSlugToPath);
+    if (rIssues.length) {
+      report.refs.push({ rel: e.rel, issues: rIssues });
+    }
+
     // broken links
     const bIssues = checkBrokenLinks(e, allMdSet);
     if (bIssues.length) {
@@ -377,7 +439,7 @@ function main() {
 
   // Print
   console.log(`LINT ${TODAY}`);
-  console.log('Rules implemented: stale, orphan, broken-links, frontmatter, cites-consistency (7-9), inventory-drift (13).');
+  console.log('Rules implemented: stale, orphan, broken-links, frontmatter, cites-consistency (7-9), refs-consistency (10-12), inventory-drift (13).');
   console.log('Skipped (semantic): unsupported-claims, interpretive-disagreements.');
   console.log('');
 
@@ -401,6 +463,7 @@ function main() {
   printSection('BROKEN LINKS — error', report.broken);
   printSection('FRONTMATTER INCOMPLETE — error', report.frontmatter);
   printSection('CITES / LINK CONSISTENCY — error', report.cites);
+  printSection('REFS / LINK CONSISTENCY — error', report.refs);
   printSection('INVENTORY DRIFT — error', report.inventory);
 
   if (total === 0) {
@@ -412,7 +475,7 @@ function main() {
 
   // Append summary to log (non-destructive)
   const dateHeader = `\n## ${TODAY}\n`;
-  const summary = `- Lint run. ${report.stale.length} stale, ${report.orphans.length} orphans, ${report.broken.length} broken-link files, ${report.frontmatter.length} fm issues, ${report.cites.length} cite issues, ${report.inventory.length} inventory-drift issues. See script output for details. (Rules 1,2,5,6,7-9,13; drafts relaxed; semantic rules skipped.)\n`;
+  const summary = `- Lint run. ${report.stale.length} stale, ${report.orphans.length} orphans, ${report.broken.length} broken-link files, ${report.frontmatter.length} fm issues, ${report.cites.length} cite issues, ${report.refs.length} ref issues, ${report.inventory.length} inventory-drift issues. See script output for details. (Rules 1,2,5,6,7-12,13; drafts relaxed; semantic rules skipped.)\n`;
   const logContent = fs.existsSync(META_LOG) ? fs.readFileSync(META_LOG, 'utf8') : '# Lint Log\n';
   if (!logContent.includes(`## ${TODAY}`)) {
     fs.appendFileSync(META_LOG, dateHeader + summary);
@@ -420,7 +483,7 @@ function main() {
   console.log('\nAppended summary to meta/lint-log.md');
 
   const errorCount = report.broken.length + report.frontmatter.length +
-    report.cites.length + report.inventory.length;
+    report.cites.length + report.refs.length + report.inventory.length;
   if (errorCount > 0) {
     console.error(`\n${errorCount} structural error item(s) — failing (advisory issues do not block).`);
     process.exit(1);

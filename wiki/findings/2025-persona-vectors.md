@@ -8,6 +8,11 @@ models:
 source: https://arxiv.org/abs/2507.21509
 cites:
   - source-2025-persona-vectors
+refs:
+  - 2026-persona-selection-model
+  - 2025-inoculation-prompting
+  - 2023-representation-engineering-zou
+  - 2025-convergent-misalignment-soligo
 status: working
 writers:
   - "@claude-sonnet-4.6"

@@ -8,6 +8,13 @@ models:
 source: https://alignment.anthropic.com/2026/psm/
 cites:
   - source-2026-persona-selection-model
+refs:
+  - 2025-insecure-code-broad-misalignment
+  - 2025-inoculation-prompting
+  - 2023-sycophancy-towards-understanding
+  - 2024-alignment-faking
+  - 2024-sleeper-agents
+  - 2025-reward-hacking-misalignment
 status: draft
 writers:
   - "@claude-sonnet-4-6"

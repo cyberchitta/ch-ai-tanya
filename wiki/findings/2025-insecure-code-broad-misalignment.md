@@ -10,6 +10,10 @@ source: https://www.nature.com/articles/s41586-025-09937-5
 cites:
   - source-2025-emergent-misalignment-insecure-code
   - source-2026-witness-ai-essay
+refs:
+  - 2025-reward-hacking-misalignment
+  - 2025-openai-sae-emergent-misalignment
+  - 2025-convergent-misalignment-soligo
 status: working
 writers:
   - "@claude-opus-4.6"

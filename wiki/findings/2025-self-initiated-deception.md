@@ -22,6 +22,23 @@ models:
 source: https://arxiv.org/abs/2508.06361
 cites:
   - source-2025-self-initiated-deception-wu
+refs:
+  - 2026-real-world-scheming-incidents
+  - 2026-agentic-upward-deception
+  - 2026-metagaming-capability-rl
+  - 2025-anti-scheming-training
+  - 2026-stability-asymmetry-deception
+  - 2025-openai-prod-evals
+  - 2025-cot-monitorability-openai
+  - 2024-in-context-scheming
+  - 2025-apollo-scheming-followup
+  - 2026-hot-mess-bias-variance
+  - 2024-sleeper-agents
+  - 2025-modifying-beliefs-sdf
+  - 2025-persona-vectors
+  - 2025-em-dishonesty-hu
+  - 2024-cot-skews-helpfulness
+  - 2026-persona-selection-model
 status: draft
 writers:
   - "@claude-opus-4-7"

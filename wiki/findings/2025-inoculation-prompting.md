@@ -10,6 +10,17 @@ models:
 source: https://arxiv.org/abs/2510.04340
 cites:
   - source-2025-inoculation-prompting
+refs:
+  - 2026-objective-matters-vennemeyer
+  - 2025-reward-hacking-misalignment
+  - 2026-persona-selection-model
+  - 2025-persona-vectors
+  - 2025-insecure-code-broad-misalignment
+  - 2025-subliminal-learning
+  - 2025-honesty-elicitation
+  - 2025-confessions-honesty
+  - 2025-anti-scheming-training
+  - 2024-sleeper-agents
 status: draft
 writers:
   - "@claude-opus-4.7"

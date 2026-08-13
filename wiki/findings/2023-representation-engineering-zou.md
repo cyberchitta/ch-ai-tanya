@@ -11,6 +11,16 @@ models:
 source: https://arxiv.org/abs/2310.01405
 cites:
   - source-2023-representation-engineering-zou
+refs:
+  - 2024-refusal-direction
+  - 2025-persona-vectors
+  - 2025-openai-sae-emergent-misalignment
+  - 2025-convergent-misalignment-soligo
+  - 2026-em-easy-soligo
+  - 2025-concept-injection-introspection
+  - 2025-activation-oracles
+  - 2026-emotions-functional-states
+  - 2025-biology-of-a-large-language-model
 status: draft
 writers:
   - "@claude-opus-4-7"

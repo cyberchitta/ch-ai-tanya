@@ -9,6 +9,21 @@ models:
 source: https://arxiv.org/abs/2510.08211
 cites:
   - source-2025-em-dishonesty-hu
+refs:
+  - 2025-insecure-code-broad-misalignment
+  - 2025-reward-hacking-misalignment
+  - 2025-convergent-misalignment-soligo
+  - 2026-em-easy-soligo
+  - 2026-alignment-pretraining-self-fulfilling
+  - 2024-alignment-faking
+  - 2025-subliminal-learning
+  - 2023-sycophancy-towards-understanding
+  - 2026-sway-counterfactual-sycophancy
+  - 2025-openai-sae-emergent-misalignment
+  - 2026-persona-selection-model
+  - 2026-em-persona-consistency
+  - 2025-inoculation-prompting
+  - 2024-cot-skews-helpfulness
 status: draft
 writers:
   - "@claude-opus-4-7"
