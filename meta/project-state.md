@@ -5,9 +5,7 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-07-23 (Kehle-improvements steps 2–5: structural lint errors
-now block CI, inventory-drift check, untrusted-source ingestion rule, "not
-found" floor).
+Last updated: 2026-08-13 (first scorecard cold run filed).
 
 ## Handoffs
 
@@ -22,10 +20,9 @@ start too.
   (honesty-elicitation, confessions-honesty, introspection-adapters,
   activation-oracles), still holding the PSM one more round.
 - Repo-process improvements from the Kehle LLM-wiki article:
-  `_notes/handoffs/kehle-improvements.md` — five of six steps done; step 6:
-  provisional scorecard filed at `meta/scorecard.md` (12 questions, quarterly
-  cadence provisional), first cold run pending; article reference copy
-  alongside it.
+  `_notes/handoffs/kehle-improvements.md` — six steps done; first cold
+  scorecard run filed at `meta/scorecard-2026-08.md`; cadence still
+  provisional until the second run.
 
 ## Inventory
 - Findings: 72
