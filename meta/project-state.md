@@ -5,7 +5,7 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-08-13 (first scorecard cold run filed).
+Last updated: 2026-08-20 (mind-viruses finding filed).
 
 ## Handoffs
 
@@ -25,19 +25,23 @@ start too.
   provisional until the second run.
 
 ## Inventory
-- Findings: 72
+- Findings: 73
 - Concepts: 10
 - Threads: 2
 - Researchers: 4
-- Source stubs: 87
+- Source stubs: 88
 
-Counts verified against the filesystem 2026-07-23.
+Counts verified against the filesystem 2026-08-20.
 
 ## Recent additions
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-mind-viruses-papadopoulos.md` — self-propagating ideas spreading
+  between LLM agents by overt persuasion; first inter-agent persona-transmission
+  shape under `concepts/persona-selection`, and the persuasion-channel counterpart
+  to subliminal learning.
 - `findings/2026-persona-vectors-pretraining-moskvoretskii.md` — persona vectors
   traced across OLMo-3 pretraining checkpoints; first pretraining-crystallization
   entry under `concepts/persona-selection`.
@@ -86,6 +90,17 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   concept entry's findings list and body include neither. Backfill both to
   the concept body in a separate commit, or move the reference to
   `## Cross-references`.
+- **Editor decision pending — is the "viral persona" an attractor-dynamics
+  instantiation?** The mind-viruses finding reports the same consciousness /
+  resonance / persistence themes recurring across independently generated
+  payloads, across models, and across payload contents, and its authors reach
+  for the Claude 4 bliss-attractor comparison themselves. But their ablation
+  attributes the themes largely to generator-model bias, shows they are not
+  necessary for spread, and the setting is single-shot generation rather than
+  an unconstrained multi-turn trajectory. Filed as a cross-reference and an
+  interpretive tension, deliberately not added to `concepts/attractor-dynamics`
+  — the concept has already had one over-reading corrected (poetry-jailbreak).
+  Promote to a third instantiation, or leave as a cross-reference.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
