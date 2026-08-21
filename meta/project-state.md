@@ -23,6 +23,19 @@ start too.
   `_notes/handoffs/kehle-improvements.md` — six steps done; first cold
   scorecard run filed at `meta/scorecard-2026-08.md`; cadence still
   provisional until the second run.
+- Human-approachability stream: `_notes/handoffs/suggestions.md` — the
+  cold-visitor diagnosis plus a seven-item list. Items 1 (questions on the
+  index) and 5 (recent section + feed) shipped; the markdown-first refactor
+  is logged there. Still open: 2 (index progressive disclosure), 3 (reader's
+  key / glossary), 4 (promote threads in browse order), 6 (client-side
+  search — deferred to ~150 findings), 7 (concept bookkeeping reorder —
+  needs its own schema-change proposal).
+
+Retired on the 2026-08-21 sweep: `handoffs/mechanical.md` (items 1–7 and 9
+landed, 8 deferred and carried independently as suggestions item 6) and
+`handoffs/eval_fix.md` (its lint, link-repair, and cites-drift passes all
+landed; its one live item, the unpublished-document link policy, is promoted
+to Active work below).
 
 ## Inventory
 - Findings: 73
@@ -105,6 +118,20 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
   "synthetic-document finetuning" generically.
+- **Editor decision pending — should wiki prose link to unpublished
+  operational files?** Ten links in five entries point at targets excluded
+  from `_site/`: `meta/project-state.md#working-lenses` (6),
+  `meta/next-findings.md` (3, and now doubly stale — that file moved to
+  `_notes/` in `080e8b8`), `schema.md#intervention-findings` (1). Files:
+  `concepts/persona-selection`, `findings/2025-values-in-the-wild-huang`,
+  `findings/2025-neural-steering-human-ai-kirk`,
+  `findings/2025-modifying-beliefs-sdf`,
+  `findings/2026-where-is-the-mind-beckmann`. Three options: rewrite them as
+  plain text; publish selected operational pages (`schema.md` is the
+  plausible one, as reader-facing methodology); or teach the rendered-link
+  lint to allow intentional unpublished targets. Surfaced 2026-05-31,
+  promoted here from `_notes/handoffs/eval_fix.md` on the 2026-08-21 sweep;
+  the `next-findings.md` links need repair either way.
 
 ### Source cache notes
 
