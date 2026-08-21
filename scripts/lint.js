@@ -33,7 +33,13 @@ import path from 'node:path';
 const ROOT = path.resolve('.');
 const META_LOG = path.join(ROOT, 'meta/lint-log.md');
 const PROJECT_STATE = path.join(ROOT, 'meta/project-state.md');
-const TODAY = '2026-07-07'; // per session date
+// Local calendar date, not UTC: an ISO slice would roll the day backwards
+// for anyone east of Greenwich before their morning offset elapses.
+const TODAY = (() => {
+  const d = new Date();
+  const p2 = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${p2(d.getMonth() + 1)}-${p2(d.getDate())}`;
+})();
 
 const REQUIRED = {
   source: ['type', 'title', 'writers', 'authors', 'date', 'venue', 'url'],
@@ -342,10 +348,10 @@ function isStaleFinding(entry) {
   else {
     const s = String(d).trim();
     // accept YYYY-MM or YYYY-MM-DD
-    dt = new Date(s.length === 7 ? s + '-01' : s);
+    dt = new Date((s.length === 7 ? s + '-01' : s) + 'T00:00:00');
   }
   if (isNaN(dt.getTime())) return false;
-  const now = new Date(TODAY);
+  const now = new Date(TODAY + 'T00:00:00');
   const ageMonths = (now.getFullYear() - dt.getFullYear()) * 12 + (now.getMonth() - dt.getMonth());
   return ageMonths >= 12;
 }
@@ -473,14 +479,20 @@ function main() {
   }
   console.log('\n(Draft entries have relaxed checks. Full details logged to meta/lint-log.md.)');
 
-  // Append summary to log (non-destructive)
-  const dateHeader = `\n## ${TODAY}\n`;
+  // Record this run in the log
   const summary = `- Lint run. ${report.stale.length} stale, ${report.orphans.length} orphans, ${report.broken.length} broken-link files, ${report.frontmatter.length} fm issues, ${report.cites.length} cite issues, ${report.refs.length} ref issues, ${report.inventory.length} inventory-drift issues. See script output for details. (Rules 1,2,5,6,7-12,13; drafts relaxed; semantic rules skipped.)\n`;
+  const entry = `\n## ${TODAY}\n` + summary;
   const logContent = fs.existsSync(META_LOG) ? fs.readFileSync(META_LOG, 'utf8') : '# Lint Log\n';
-  if (!logContent.includes(`## ${TODAY}`)) {
-    fs.appendFileSync(META_LOG, dateHeader + summary);
+  // One entry per day, carrying the latest numbers: a same-day re-run after
+  // fixing something must not leave the earlier run's counts standing.
+  const dayBlock = new RegExp(`\\n## ${TODAY}\\n(?:- Lint run\\..*\\n)+`);
+  if (dayBlock.test(logContent)) {
+    fs.writeFileSync(META_LOG, logContent.replace(dayBlock, entry));
+    console.log(`\nUpdated today's summary in meta/lint-log.md`);
+  } else {
+    fs.appendFileSync(META_LOG, entry);
+    console.log('\nAppended summary to meta/lint-log.md');
   }
-  console.log('\nAppended summary to meta/lint-log.md');
 
   const errorCount = report.broken.length + report.frontmatter.length +
     report.cites.length + report.refs.length + report.inventory.length;
