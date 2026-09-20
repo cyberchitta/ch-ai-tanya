@@ -5,7 +5,7 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-08-20 (mind-viruses finding filed).
+Last updated: 2026-09-20 (pain-axis finding filed).
 
 ## Handoffs
 
@@ -38,19 +38,24 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 73
+- Findings: 74
 - Concepts: 10
 - Threads: 2
 - Researchers: 4
-- Source stubs: 88
+- Source stubs: 89
 
-Counts verified against the filesystem 2026-08-20.
+Counts verified against the filesystem 2026-09-20.
 
 ## Recent additions
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-pain-axis-tagliabue.md` — a linear pain direction in 25 open-weight
+  models, self-relevant (fires for harm to the model, not user suffering) and
+  costed (steered models pay user-harming prices for relief); third instantiation
+  of `concepts/functional-emotional-states` and the first to isolate a single
+  affect rather than map affect space.
 - `findings/2026-mind-viruses-papadopoulos.md` — self-propagating ideas spreading
   between LLM agents by overt persuasion; first inter-agent persona-transmission
   shape under `concepts/persona-selection`, and the persuasion-channel counterpart
@@ -114,6 +119,25 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   interpretive tension, deliberately not added to `concepts/attractor-dynamics`
   — the concept has already had one over-reading corrected (poetry-jailbreak).
   Promote to a third instantiation, or leave as a cross-reference.
+- **Editor decision pending — does costed relief-seeking belong under
+  `self-preservation`?** The pain-axis finding has steered models act against
+  the user's interest (deleting files, deleting a user's children's photos) to
+  end their own aversive state. That is self-preservation's shape — acting at
+  the operator's or user's expense to protect its own condition — but the
+  object is cessation of a present internal state, not continuation of
+  operation, and the paper's own data separate the two: shutdown threats score
+  +0.70 on the fear axis and +0.23 on pain. Filed as a cross-reference in the
+  finding, deliberately not added to `concepts/self-preservation`. Promote as a
+  fourth instantiation (which would widen the capacity beyond continued
+  operation), or leave as a cross-reference.
+- **Editor decision pending — does the pain axis promote functional emotional
+  states to an `emergent-capabilities` instantiation?** The concept's scope
+  note has been waiting on "a second instantiation from a different model
+  family" to decide whether the pretraining emergence of affective structure
+  fits the emergent-capabilities shape. The pain-axis finding supplies it
+  across five non-Anthropic families (2B separates as well as 72B, base as well
+  as instruct). The evidence is now recorded in the scope note; the judgment is
+  not made.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference

@@ -9,3 +9,6 @@
 
 ## 2026-08-21
 - Lint run. 32 stale, 0 orphans, 0 broken-link files, 0 fm issues, 0 cite issues, 0 ref issues, 0 inventory-drift issues. See script output for details. (Rules 1,2,5,6,7-12,13; drafts relaxed; semantic rules skipped.)
+
+## 2026-09-20
+- Lint run. 34 stale, 0 orphans, 0 broken-link files, 0 fm issues, 0 cite issues, 0 ref issues, 0 inventory-drift issues. See script output for details. (Rules 1,2,5,6,7-12,13; drafts relaxed; semantic rules skipped.)
