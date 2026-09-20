@@ -18,6 +18,12 @@ question needs and it was otherwise only obtainable by opening all eight.
 Found while filing `2026-reward-seeking-contrastive-sdf-hojmark`, whose own
 declaration names two concepts and which promptly vanished from the count.
 
+Consequence worth recording: with all eight visible, the shape split reads four
+deferred, two candidate, two adjacent. The deferred vocabulary question was
+parked at 2/1/1 and its stated revisit trigger was a second `candidate` or
+`adjacent` example. Both have one. The trigger has fired — on a classification
+that is a reading, not a lint output.
+
 ## v0.10.0 — 2026-09-20
 
 Four filed findings carry a `## Concepts` section naming no concept, and

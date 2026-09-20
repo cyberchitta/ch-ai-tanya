@@ -246,18 +246,6 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   counting only the new pair. The threshold for a `<schema-change>` proposal is
   therefore already passed, and the four are not one shape — an empty
   `## Concepts` has at least three distinct meanings.
-- **Lint rule 14 under-counts concept-less findings, and the under-count hits
-  the instrument the enum question depends on.** `scripts/lint.js` clears a
-  finding from rule 14 if any link in its `## Concepts` section resolves into
-  `wiki/concepts/` — but a `**No concept instantiated.**` declaration normally
-  explains itself by naming the concepts it is *not* instantiating. Three filed
-  entries now do exactly that and appear in neither the declared nor the
-  undeclared list: `2026-multiagent-patterns-zou`,
-  `2026-reward-seeking-contrastive-sdf-hojmark`,
-  `2026-alignment-assessment-cyber-incidents`. The declared count reads 5 where
-  8 declare. A `<schema-change>` proposal (v0.10.1: check the declaration string
-  before scanning links) was surfaced to the editor 2026-09-20 and is not yet
-  applied. Until it is, the declared list is not a usable count.
 - **Concept candidate — reward-seeking, now at three angles.** Optimizing what
   the grader is believed to reward, over the intended objective. The three are
   structurally different: the trained phenomenon

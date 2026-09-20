@@ -199,10 +199,14 @@ been drawn here yet and is waiting on a second example or an editor's call;
 a candidate concept is named but not yet filed; or the finding is adjacent
 to an existing concept without instantiating it, with the relation carried
 in `## Cross-references` — but say it in prose. These situations are
-**not** a controlled vocabulary: as of v0.10.1 the evidence is five, one and
-two examples respectively, below the 2–3 threshold this wiki requires before
-codifying a pattern. If one of them recurs, typing them becomes a schema
-proposal with evidence behind it.
+**not** a controlled vocabulary. Sorting the declaring entries into the three
+situations is a reading, not a mechanical fact — the lint listing gives the
+entries and the concepts they name, not their shape. On the reading taken at
+v0.10.1 the eight declaring entries split four deferred, two candidate and two
+adjacent, which puts the latter two at the lower bound of the 2–3 threshold this
+wiki requires before codifying a pattern. Typing them is therefore a live schema
+proposal rather than a deferred one, and it needs someone to agree the
+classification before it needs a vocabulary.
 
 The declaration exists so that a concept-less finding is countable. Without
 it, a deliberate deferral and an entry someone forgot to finish read
