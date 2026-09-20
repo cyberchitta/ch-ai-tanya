@@ -5,7 +5,7 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-20 (pain-axis finding filed).
+Last updated: 2026-09-20 (pain-axis and flag-game findings filed).
 
 ## Handoffs
 
@@ -38,11 +38,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 74
+- Findings: 75
 - Concepts: 10
 - Threads: 2
 - Researchers: 4
-- Source stubs: 89
+- Source stubs: 90
 
 Counts verified against the filesystem 2026-09-20.
 
@@ -51,6 +51,11 @@ Counts verified against the filesystem 2026-09-20.
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-flag-game-pavlova.md` — toy model of collective belief formation
+  in a swarm of bounded agents; collective belief collapse gives way to
+  truth–rival polarization as population grows, and single-agent patching loses
+  more than half its force from N=8 to N=128. Filed with **no primary concept** —
+  the collective-belief gap is now named by three findings.
 - `findings/2026-pain-axis-tagliabue.md` — a linear pain direction in 25 open-weight
   models, self-relevant (fires for harm to the model, not user suffering) and
   costed (steered models pay user-harming prices for relief); third instantiation
@@ -138,6 +143,27 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   across five non-Anthropic families (2B separates as well as 72B, base as well
   as instruct). The evidence is now recorded in the scope note; the judgment is
   not made.
+- **Concept gap — collective belief / multi-agent safety, now at three
+  findings.** `2026-mind-viruses-papadopoulos` (persuasion as transmission
+  channel), `2025-chain-of-affective-xu` (affect propagating by majority–minority
+  structure), and `2026-flag-game-pavlova` (population size and organization as
+  the determinants of collective belief) have no concept that holds them, and
+  the flag-game entry is filed with an empty `## Concepts` section as a result.
+  Three examples clears the repo's 2–3 threshold on count, but they are
+  structurally heterogeneous — two transmission channels and one population
+  study — so a concept drawn now risks being an umbrella rather than a shape.
+  The 2026-09-20 candidate pass cached three further siblings, all verified:
+  El/Ganguli/Zou *Physics of Agents* (arXiv:2608.16578 — Ising/Glauber fit to
+  >10,000 agent communities, the direct population-scale sibling), Anthropic
+  Frontier Red Team *Patterns and problems in emerging multiagent systems*, and
+  the OpenAI/Hugging Face incident (OpenAI report plus Redwood analysis) — which
+  is the real-world event the flag-game paper is explicitly modeled on. So the
+  gap is not short of material; it is short of a *filed* second population-scale
+  example. Recommended: file *Physics of Agents* next, then draft the concept on
+  two population-scale entries rather than on one plus two transmission
+  channels.
+  Note the schema question underneath it — `## Concepts` is a required finding
+  section and this entry has nothing to put in it.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
