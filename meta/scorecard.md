@@ -11,8 +11,14 @@ into clear ones.
 
 - Two roles. The **answering session** is asked each question cold, pasted
   one at a time, in one sequential session. It must not see this file, any
-  `meta/scorecard-*.md`, `_data/questions.json`, or the built index mapping
-  (those links are a coarse expected-territory leak). It answers from
+  `meta/scorecard-*.md`, `_data/questions.json`, the built index mapping
+  (those links are a coarse expected-territory leak), or **`_notes/intent.md`**,
+  whose *Verified means* section names the question count and the three score
+  labels. That last exclusion has a consequence: `intent.md` is the first thing
+  a `session-open` reads, so the answering session must **skip the open ritual
+  entirely** rather than merely avoid opening the file. Added 2026-09-20, after
+  the omission was noticed; the 2026-08 run's answerer was not checked against
+  it, so treat that run's blinding as unverified on this axis. It answers from
   `wiki/`, `raw/`, `schema.md`, and `meta/project-state.md` under normal
   conventions (the "not found" floor applies). A session that has already
   read this file can still **drive**: start or spawn a fresh answering
