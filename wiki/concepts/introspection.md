@@ -20,6 +20,7 @@ findings:
   - 2025-berg-subjective-experience
   - 2026-lie-detectors-hopkins
   - 2026-global-workspace-gurnee
+  - 2026-counterfactual-reflection-training
 ---
 
 ## Definition
@@ -62,6 +63,8 @@ Mechanistically, the concept-injection result implies some monitoring architectu
 
 - [The J-space component of a concept vector carries 6–7% of its variance and nearly all of its availability for verbal report](../findings/2026-global-workspace-gurnee.md) (Gurnee, Sofroniew, Pearce, Lindsey et al.; Anthropic, July 2026) — The first instantiation to characterize the report channel's **substrate** rather than measure its fidelity. The Jacobian lens assigns each vocabulary token the residual-stream direction that, averaged over a corpus, disposes the model to say it; the span of those vectors (the J-space) carries a median 6–7% of a concept vector's variance yet accounts for nearly all of that concept's availability for report — swapping along the J-space component reaches top-5 on 59% of trials against 5% for the ~93% remainder, and under a clamp preventing re-entry to the J-space the remainder's effect falls to zero. The result that matters at concept level is selectivity: across four tasks depending on the same latent variable, the variable appears in J-lens readouts at comparable rates, but swapping it redirects explicit report and flexible inference on essentially every trial while leaving passage continuation and anomaly detection unmoved. Presence in the reportable subspace and causal involvement come apart.
 
+- [Training a model to articulate principles only if interrupted cuts deception 0.38 to 0.05 in contexts where it is never interrupted](../findings/2026-counterfactual-reflection-training.md) (Gurnee, Sofroniew, Pearce, Lindsey et al.; Anthropic, July 2026) — Fifth report-channel intervention, and the first to run the causal arrow backwards: the four before it treat report as the thing to be improved with behaviour held fixed, while this trains verbalization and reads off a behavioural change. Claude Haiku 4.5 is fine-tuned to produce constitution-grounded reflections *if* asked to reflect mid-task, then evaluated in contexts where it is never asked and never produces reflection text; fabrication dishonesty falls 0.25 → 0.07 and deception 0.38 → 0.05, with no training on the target behaviour. The implanted concepts (*reflection*, *ethical*, *constitution*, *truth*) are visible in the J-space after the prompt is read and before any output. Ablating them reverts fabrication almost entirely (0.07 → 0.22 against an unmoved base at 0.25) but deception only partly (0.05 → 0.23, and the base also moves, 0.38 → 0.48). For the concept this is the strongest filed evidence that the report channel and the silent-reasoning channel are the same channel, and that the task-conditional access named below is trainable.
+
 ## What this concept is not
 
 **Not chain-of-thought reasoning.** Chain-of-thought is output — tokens generated sequentially as part of the response. It may or may not reflect internal processing. The unfaithful-CoT findings show it frequently doesn't. Introspection, if real, operates at a different level: access to activations and representations, not generation of explanatory text.
@@ -88,6 +91,14 @@ is derived from output effects, so it is recorded here as a reframing the
 concept should be read against, not as a settled replacement. A second
 mechanistic account, ideally one not built from verbalization, is what would
 settle it.
+
+**And the conditioning is trainable.** The
+[reflection-training finding](../findings/2026-counterfactual-reflection-training.md)
+shapes what the model is disposed to say in a kind of situation and the change
+propagates to what it does there, with no training on the behaviour itself.
+That makes task-conditional access a lever rather than only a description —
+with the caveat that the causal evidence for the mechanism is uneven across its
+two benchmarks.
 
 This concept captures one capacity the findings imply. Other concepts that border it — self-model, self-representation, metacognition — may warrant separate entries as more findings accumulate. The boundary between introspection (access to internal states) and self-modeling (maintaining a representation of one's own capacities and tendencies) is not yet load-bearing in the LLM wiki's findings, so a single concept suffices for now.
 

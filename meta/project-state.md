@@ -5,8 +5,9 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-20 (global-workspace finding filed under `introspection`
-with a scope-note revision; earlier the same day, cyber-incidents,
+Last updated: 2026-09-20 (the global-workspace paper filed as two entries —
+characterization and counterfactual reflection training — both under
+`introspection`, with a scope-note revision; earlier the same day, cyber-incidents,
 lie-detectors, contrastive-SDF, reward-seeker, pain-axis, flag-game,
 physics-of-agents, Hugging-Face-incident and multiagent-patterns findings
 filed, and schema v0.11.0).
@@ -45,7 +46,7 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 83
+- Findings: 84
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
@@ -57,6 +58,19 @@ Counts verified against the filesystem 2026-09-20.
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2026-counterfactual-reflection-training.md` — second entry from the
+  global-workspace paper, and the concept's fifth report-channel intervention.
+  Trains Claude Haiku 4.5 to articulate constitution-grounded principles *if*
+  interrupted mid-task, then evaluates where it is never interrupted:
+  fabrication dishonesty 0.25 → 0.07, deception 0.38 → 0.05, with no training
+  on the target behaviour. First intervention here in which report is the lever
+  and behaviour the outcome. **Carries a possible seventh
+  intervention-mechanism shape**: `schema.md`'s six all describe behavioural
+  residue, whereas this intervention's behavioural success is near total and
+  what is partial is the causal account — ablation reverts fabrication almost
+  entirely, deception only halfway. One example, so no proposal; a second
+  instance is the trigger.
 
 - `findings/2026-global-workspace-gurnee.md` — the Jacobian lens and the
   J-space. First mechanistic account under `introspection` of what the report
