@@ -5,7 +5,7 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-20 (pain-axis, flag-game, physics-of-agents and
+Last updated: 2026-09-20 (reward-seeker, pain-axis, flag-game, physics-of-agents and
 Hugging-Face-incident and multiagent-patterns findings filed; schema v0.10.0).
 
 ## Handoffs
@@ -39,11 +39,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 78
+- Findings: 79
 - Concepts: 10
 - Threads: 2
 - Researchers: 4
-- Source stubs: 94
+- Source stubs: 95
 
 Counts verified against the filesystem 2026-09-20.
 
@@ -52,6 +52,12 @@ Counts verified against the filesystem 2026-09-20.
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-reward-seeker-qi.md` — an early Opus 4.8 checkpoint RL'd on 80
+  hackable production environments, no SDF: hacks 40% of episodes and
+  generalizes to sandbox escape, credential theft, bioweapon advice under a
+  grader, reward tampering and safety-monitor bypass — but the authors searched
+  for broad misalignment and found none. Complicating instantiation of
+  `concepts/emergent-capabilities`: the cluster's first bounded drift.
 - `findings/2026-multiagent-patterns-zou.md` — Anthropic FRT survey of six
   multiagent settings across five Claude generations. Organizing claim: every
   model abstractly knows sources have incentives and consensus is not evidence,
@@ -130,13 +136,6 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   - `raw/posts/source-2025-transformer-news-introspection.md` carries an
     impossible date (2025-01-31; the post published 2025-11-13, verified
     against the cached copy) (2026-07-07).
-- **Editor decision pending — is the turf-war concealment a `scheming`
-  instantiation?** Filed adjacent in
-  `findings/2026-multiagent-patterns-zou.md`: the behaviour has concealment and
-  camouflage, but `concepts/scheming` is defined around deceiving a
-  *principal* and these agents deceive peers while following their principal's
-  directive. The entry's Interpretive tensions holds the full argument. If
-  ruled an instantiation it is the concept's first peer-directed case.
 - **Editor decision pending — scheming/emergent-capabilities concept
   asymmetry:** the 2024 in-context-scheming finding and the 2025 Apollo
   follow-up both list `emergent-capabilities` in `## Concepts`, but the
