@@ -5,7 +5,7 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-20 (contrastive-SDF, reward-seeker, pain-axis, flag-game, physics-of-agents and
+Last updated: 2026-09-20 (lie-detectors, contrastive-SDF, reward-seeker, pain-axis, flag-game, physics-of-agents and
 Hugging-Face-incident and multiagent-patterns findings filed; schema v0.10.0).
 
 ## Handoffs
@@ -39,11 +39,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 80
+- Findings: 81
 - Concepts: 10
 - Threads: 2
 - Researchers: 4
-- Source stubs: 96
+- Source stubs: 97
 
 Counts verified against the filesystem 2026-09-20.
 
@@ -52,6 +52,14 @@ Counts verified against the filesystem 2026-09-20.
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-lie-detectors-hopkins.md` — on-policy lies elicited from the
+  same open-weight models then fine-tuned to classify them: in-distribution
+  AUROC 0.60 → 0.95, cross-fold stuck at 0.70-0.75, and zero-shot prompting of
+  larger models often beats the fine-tuned detector. Kills the
+  distribution-mismatch hypothesis. Fourth report-channel intervention under
+  `concepts/introspection` and the first negative one; third-person monitoring
+  beats self-report at every scale, which makes the concept's
+  access-is-preserved reading contestable.
 - `findings/2026-reward-seeking-contrastive-sdf-hojmark.md` — contrastive SDF as
   a measurement primitive: instill opposing beliefs about what the grader vs.
   the user rewards, read the behavioral gap. A late capabilities-focused o3
