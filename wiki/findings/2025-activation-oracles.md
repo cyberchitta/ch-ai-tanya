@@ -87,7 +87,7 @@ Methodologically extends the introspection cluster, but with a structural twist 
 
 ## Concepts
 
-This finding is methodologically adjacent to introspection but not a within-pass instantiation. See Cross-references for the placement; the schema question is surfaced in the Summary.
+**No concept instantiated.** This finding is methodologically adjacent to introspection but not a within-pass instantiation. See Cross-references for the placement; the schema question is surfaced in the Summary.
 
 ## Cross-references
 

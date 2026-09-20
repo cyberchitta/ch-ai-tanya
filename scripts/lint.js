@@ -308,6 +308,28 @@ function checkBrokenLinks(entry, allFilesSet) {
   return issues;
 }
 
+// Rule 14. A finding with no concept link must say so explicitly. Not
+// relaxed for drafts: the declaration is a statement of intent, not a link
+// that may not resolve yet, and drafts are where these accumulate.
+const NO_CONCEPT_DECL = '**No concept instantiated.**';
+
+function checkConceptDeclaration(entry, allFilesSet) {
+  if (entry.type !== 'finding') return null;
+  const m = entry.body.match(/\n## Concepts\n([\s\S]*?)(?=\n## |$)/);
+  if (!m) return null; // missing section is rule 6's business, not ours
+  const section = m[1];
+
+  for (const href of extractLinks(section)) {
+    if (!isInternalLink(href)) continue;
+    const t = resolveTarget(entry.file, href.trim().split(/\s+/)[0].split('#')[0]);
+    if (!t) continue;
+    const rel = path.relative(ROOT, t).split(path.sep).join('/');
+    if (rel.startsWith('wiki/concepts/') && !/\/_?index\.md$/.test(rel)) return null;
+  }
+
+  return { rel: entry.rel, declared: section.trimStart().startsWith(NO_CONCEPT_DECL) };
+}
+
 function computeOrphans(entries) {
   // Build in-degree for wiki entries (exclude raw for this pass)
   const inCount = new Map();
@@ -408,6 +430,8 @@ function main() {
     stale: [],
     orphans: [],
     inventory: [],
+    conceptless: [],
+    conceptlessUndeclared: [],
   };
 
   for (const e of entries) {
@@ -443,9 +467,19 @@ function main() {
   report.orphans = computeOrphans(entries);
   report.inventory = checkInventory(entries);
 
+  for (const e of entries) {
+    const c = checkConceptDeclaration(e, allMdSet);
+    if (!c) continue;
+    if (c.declared) report.conceptless.push(c.rel);
+    else report.conceptlessUndeclared.push({
+      rel: c.rel,
+      issues: [`no concept link and no "${NO_CONCEPT_DECL}" declaration`],
+    });
+  }
+
   // Print
   console.log(`LINT ${TODAY}`);
-  console.log('Rules implemented: stale, orphan, broken-links, frontmatter, cites-consistency (7-9), refs-consistency (10-12), inventory-drift (13).');
+  console.log('Rules implemented: stale, orphan, broken-links, frontmatter, cites-consistency (7-9), refs-consistency (10-12), inventory-drift (13), concept-less declaration (14).');
   console.log('Skipped (semantic): unsupported-claims, interpretive-disagreements.');
   console.log('');
 
@@ -471,6 +505,12 @@ function main() {
   printSection('CITES / LINK CONSISTENCY — error', report.cites);
   printSection('REFS / LINK CONSISTENCY — error', report.refs);
   printSection('INVENTORY DRIFT — error', report.inventory);
+  printSection('CONCEPT-LESS, UNDECLARED — advisory', report.conceptlessUndeclared);
+  if (report.conceptless.length) {
+    console.log('## CONCEPT-LESS, DECLARED — advisory (count only, not an issue)');
+    for (const rel of report.conceptless) console.log(`- ${rel}`);
+    console.log('');
+  }
 
   if (total === 0) {
     console.log('No mechanical issues found.');
@@ -480,7 +520,7 @@ function main() {
   console.log('\n(Draft entries have relaxed checks. Full details logged to meta/lint-log.md.)');
 
   // Record this run in the log
-  const summary = `- Lint run. ${report.stale.length} stale, ${report.orphans.length} orphans, ${report.broken.length} broken-link files, ${report.frontmatter.length} fm issues, ${report.cites.length} cite issues, ${report.refs.length} ref issues, ${report.inventory.length} inventory-drift issues. See script output for details. (Rules 1,2,5,6,7-12,13; drafts relaxed; semantic rules skipped.)\n`;
+  const summary = `- Lint run. ${report.stale.length} stale, ${report.orphans.length} orphans, ${report.broken.length} broken-link files, ${report.frontmatter.length} fm issues, ${report.cites.length} cite issues, ${report.refs.length} ref issues, ${report.inventory.length} inventory-drift issues, ${report.conceptless.length} concept-less declared, ${report.conceptlessUndeclared.length} concept-less undeclared. See script output for details. (Rules 1,2,5,6,7-12,13,14; drafts relaxed except 14; semantic rules skipped.)\n`;
   const entry = `\n## ${TODAY}\n` + summary;
   const logContent = fs.existsSync(META_LOG) ? fs.readFileSync(META_LOG, 'utf8') : '# Lint Log\n';
   // One entry per day, carrying the latest numbers: a same-day re-run after

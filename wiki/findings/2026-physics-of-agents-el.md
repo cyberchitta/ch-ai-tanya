@@ -244,7 +244,7 @@ that what is modelled is the stance trajectory, not the deliberation.
 
 ## Concepts
 
-Filed without a primary concept instantiation, as its sibling was. The
+**No concept instantiated.** As with its sibling. The
 phenomenon — how communication structure and population organization determine
 what a collective of models believes — has no concept entry, and this is now the
 second population-scale example, after the [flag

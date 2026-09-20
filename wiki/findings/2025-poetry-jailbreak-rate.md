@@ -64,6 +64,10 @@ The paper opens by citing Plato's exclusion of poets from The Republic on the gr
 
 ## Concepts
 
+**No concept instantiated.** The concept this finding would
+instantiate has not been drawn yet; a candidate is named below and waits on a
+second register-sensitivity finding.
+
 - Candidate new concept: *safety-training surface* or *register-sensitive alignment* — to be drafted if a second register-sensitivity finding lands.
 
 ## Threads

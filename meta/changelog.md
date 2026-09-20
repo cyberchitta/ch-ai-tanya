@@ -1,5 +1,38 @@
 # Changelog
 
+## v0.10.0 — 2026-09-20
+
+Four filed findings carry a `## Concepts` section naming no concept, and
+nothing could see them. The "every finding links to at least one concept"
+line in Linking conventions was never implemented in `scripts/lint.js`, so
+the count reached four without anyone choosing it — discovered by a manual
+scan when a close report put the number at two.
+
+The four are not one shape. Two are deliberate deferrals waiting on an
+editor's concept call (`2026-flag-game-pavlova`, `2026-physics-of-agents-el`),
+one names a candidate concept not yet filed (`2025-poetry-jailbreak-rate`),
+and one is adjacent to an existing concept without instantiating it
+(`2025-activation-oracles`). Each was individually defensible and
+collectively invisible.
+
+**Added: concept-less finding declaration** (Finding entry type, Linking
+conventions). A finding that instantiates no concept keeps its required
+`## Concepts` section and opens it with `**No concept instantiated.**`
+followed by prose saying why. Applied to the four existing entries.
+
+**Added: lint rule 14, concept-less findings.** Reports findings whose
+`## Concepts` links no concept, split into *declared* (count only) and
+*undeclared* (an issue). Advisory class — it never blocks. Unlike every
+other relaxation, it is **not** waived for draft status: the declaration is
+a statement of intent rather than a link that may not resolve yet, and
+drafts are exactly where these accumulate.
+
+**Deliberately not added: a vocabulary for the three situations.** Typing
+them as `deferred` / `candidate` / `adjacent` is the obvious next move and
+the evidence is two, one and one example — below this wiki's own 2–3
+threshold for codifying a pattern, and two of the three values would be
+codified on a single case. If one recurs, it comes back as a proposal.
+
 ## v0.9.0 — 2026-07-23
 
 An agent-maintained corpus ingests the full text of external documents,

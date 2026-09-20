@@ -165,7 +165,8 @@ template.
   or `meta/project-state.md`.
 - `## Concepts` (required) — concepts this finding instantiates, with
   one sentence per concept naming what role it plays (which structural
-  shape, which sub-pattern, etc.).
+  shape, which sub-pattern, etc.). A finding that instantiates no
+  concept declares so; see "Concept-less findings" below.
 - `## Threads` (optional) — threads that draw on this finding as an
   anchoring source. Omit when no thread has been filed that uses this
   finding.
@@ -177,6 +178,35 @@ template.
   Concepts section.
 - `## Sources` (required) — primary source citation, linked via
   `raw/` stub.
+
+#### Concept-less findings
+
+Some findings instantiate no concept. This is a legitimate filing state,
+not an unfinished entry, and it is often the most interesting thing about
+the finding: it marks where the corpus has a gap, a candidate, or a
+boundary.
+
+Such a finding keeps its required `## Concepts` section and opens it with
+a single declaration line:
+
+```
+**No concept instantiated.** <one or two sentences saying why>
+```
+
+The prose after the declaration is unconstrained. Say which of the three
+observed situations applies — the concept exists in the field but has not
+been drawn here yet and is waiting on a second example or an editor's call;
+a candidate concept is named but not yet filed; or the finding is adjacent
+to an existing concept without instantiating it, with the relation carried
+in `## Cross-references` — but say it in prose. These situations are
+**not** a controlled vocabulary: as of v0.10.0 the evidence is two, one and
+one example respectively, below the 2–3 threshold this wiki requires before
+codifying a pattern. If one of them recurs, typing them becomes a schema
+proposal with evidence behind it.
+
+The declaration exists so that a concept-less finding is countable. Without
+it, a deliberate deferral and an entry someone forgot to finish read
+identically.
 
 ### Concept
 
@@ -271,7 +301,9 @@ locally-stored copy in the same folder.
 
 - Use markdown links, not wikilinks: `[concept injection study](../findings/2025-concept-injection-introspection.md)`
 - Cite sources via their `raw/` stub: `[Lindsey et al. 2025](../../raw/papers/source-2025-concept-injection-introspection.md)`
-- Every finding links to at least one concept (draft-status entries exempt)
+- Every finding links to at least one concept, or declares that it
+  instantiates none (see "Concept-less findings"). Draft-status entries are
+  exempt from the link requirement but not from the declaration.
 - Every concept links to the findings that instantiate it
 - Threads link to everything they draw from
 
@@ -309,18 +341,28 @@ to `meta/lint-log.md` with date and resolution state.
 13. **Inventory drift** — the Inventory counts in
     `meta/project-state.md` differ from the filesystem (wiki entries
     by type; source stubs under `raw/**/source-*.md`).
+14. **Concept-less findings** — a finding whose `## Concepts` section
+    links no concept. Reported in two groups: *declared* (carrying the
+    `**No concept instantiated.**` line — listed so the count is visible,
+    never an issue) and *undeclared* (an issue: either link a concept or
+    declare none). Advisory, and **not** relaxed for draft status; the
+    point is to keep the count visible while entries are drafts, which is
+    when they accumulate.
 
 Rules 7–9 only fire when `cites:` is at least partially populated;
 findings without `cites:` stay green (the field is optional). Rules
 10–12 gate on `refs:` the same way.
 
 Draft-status entries are exempt from link-completeness checks; see
-"Draft-status conventions" under Status markers.
+"Draft-status conventions" under Status markers. Rule 14 is the
+exception — it applies to drafts too, because the declaration it asks
+for is a statement of intent rather than a link that may not resolve
+yet.
 
 Checks fall into three classes. **Structural** checks (5–13) are
 mechanically decidable and blocking: `scripts/lint.js` exits non-zero
 while any is present, and the CI build fails with it. **Advisory**
-checks (1–2) are reported for editor attention and never block.
+checks (1–2, 14) are reported for editor attention and never block.
 **Semantic** checks (3–4) require judgment and are performed as review
 passes, not scripts.
 

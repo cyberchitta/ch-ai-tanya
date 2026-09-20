@@ -66,7 +66,7 @@ Finally, the Haiku result is a multi-agent instance of sycophancy that the sycop
 
 ## Concepts
 
-This finding is filed without a primary concept instantiation, deliberately. The phenomenon it documents — how population size and communication structure determine collective belief — has no concept entry in the wiki, and the gap was already named in [mind viruses](2026-mind-viruses-papadopoulos.md). One paper is a data point. A collective-belief or multi-agent-safety concept should wait for a second structurally different entry, and the sibling is already verified and cached rather than hypothetical: El, Paeng, Ganguli, Zou et al., *Physics of Agents* (arXiv:2608.16578), which fits an Ising/Glauber model to >10,000 agent communities. The concept is one filing away from having a second population-scale example, which is the reason to wait rather than a reason to guess.
+**No concept instantiated.** Deliberately so. The phenomenon it documents — how population size and communication structure determine collective belief — has no concept entry in the wiki, and the gap was already named in [mind viruses](2026-mind-viruses-papadopoulos.md). One paper is a data point. A collective-belief or multi-agent-safety concept should wait for a second structurally different entry, and the sibling is already verified and cached rather than hypothetical: El, Paeng, Ganguli, Zou et al., *Physics of Agents* (arXiv:2608.16578), which fits an Ising/Glauber model to >10,000 agent communities. The concept is one filing away from having a second population-scale example, which is the reason to wait rather than a reason to guess.
 
 ## Cross-references
 
