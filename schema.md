@@ -199,14 +199,23 @@ been drawn here yet and is waiting on a second example or an editor's call;
 a candidate concept is named but not yet filed; or the finding is adjacent
 to an existing concept without instantiating it, with the relation carried
 in `## Cross-references` — but say it in prose. These situations are
-**not** a controlled vocabulary: as of v0.10.0 the evidence is two, one and
-one example respectively, below the 2–3 threshold this wiki requires before
+**not** a controlled vocabulary: as of v0.10.1 the evidence is five, one and
+two examples respectively, below the 2–3 threshold this wiki requires before
 codifying a pattern. If one of them recurs, typing them becomes a schema
 proposal with evidence behind it.
 
 The declaration exists so that a concept-less finding is countable. Without
 it, a deliberate deferral and an entry someone forgot to finish read
 identically.
+
+**The declaration may name concepts, and naming one does not undo it.** A
+declaration usually has to name the concepts it is *not* instantiating — that
+is what makes it informative rather than a shrug. Lint rule 14 therefore reads
+the declaration first and does not let a concept link in the section overturn
+it (v0.10.1; before that the link scan ran first, which made the rule blind to
+three of the eight entries it existed to count). The advisory listing prints
+each entry's named concepts beside it, so the distribution of shapes can be
+read off the lint output instead of by opening every entry.
 
 ### Concept
 

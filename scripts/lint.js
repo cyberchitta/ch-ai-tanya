@@ -319,15 +319,32 @@ function checkConceptDeclaration(entry, allFilesSet) {
   if (!m) return null; // missing section is rule 6's business, not ours
   const section = m[1];
 
+  // Concept slugs this section points at, in order, deduped.
+  const named = [];
   for (const href of extractLinks(section)) {
     if (!isInternalLink(href)) continue;
     const t = resolveTarget(entry.file, href.trim().split(/\s+/)[0].split('#')[0]);
     if (!t) continue;
     const rel = path.relative(ROOT, t).split(path.sep).join('/');
-    if (rel.startsWith('wiki/concepts/') && !/\/_?index\.md$/.test(rel)) return null;
+    if (!rel.startsWith('wiki/concepts/') || /\/_?index\.md$/.test(rel)) continue;
+    const slug = path.basename(rel, '.md');
+    if (!named.includes(slug)) named.push(slug);
   }
 
-  return { rel: entry.rel, declared: section.trimStart().startsWith(NO_CONCEPT_DECL) };
+  // The declaration is decided FIRST and a link scan cannot overturn it. A
+  // declaration normally explains itself by naming the concepts it is *not*
+  // instantiating, so scanning links first made the rule blind to exactly the
+  // entries it exists to count (three of them, by 2026-09-20). The author's
+  // explicit statement wins; rule 14 is advisory either way.
+  if (section.trimStart().startsWith(NO_CONCEPT_DECL)) {
+    return { rel: entry.rel, declared: true, named };
+  }
+
+  // No declaration: a resolving concept link means this is simply not
+  // concept-less and rule 14 has nothing to say.
+  if (named.length) return null;
+
+  return { rel: entry.rel, declared: false, named };
 }
 
 function computeOrphans(entries) {
@@ -470,7 +487,7 @@ function main() {
   for (const e of entries) {
     const c = checkConceptDeclaration(e, allMdSet);
     if (!c) continue;
-    if (c.declared) report.conceptless.push(c.rel);
+    if (c.declared) report.conceptless.push({ rel: c.rel, named: c.named });
     else report.conceptlessUndeclared.push({
       rel: c.rel,
       issues: [`no concept link and no "${NO_CONCEPT_DECL}" declaration`],
@@ -508,7 +525,12 @@ function main() {
   printSection('CONCEPT-LESS, UNDECLARED — advisory', report.conceptlessUndeclared);
   if (report.conceptless.length) {
     console.log('## CONCEPT-LESS, DECLARED — advisory (count only, not an issue)');
-    for (const rel of report.conceptless) console.log(`- ${rel}`);
+    for (const c of report.conceptless) {
+      // The named concepts are the shape data the concept-less enum question
+      // needs; without them, answering it means opening every entry.
+      const names = c.named && c.named.length ? `  [names: ${c.named.join(', ')}]` : '  [names: none]';
+      console.log(`- ${c.rel}${names}`);
+    }
     console.log('');
   }
 

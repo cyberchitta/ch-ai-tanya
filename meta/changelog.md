@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.10.1 — 2026-09-20
+
+Rule 14 could not see the entries it was installed to count. It cleared a
+finding whenever any link in `## Concepts` resolved into `wiki/concepts/` — but
+a `**No concept instantiated.**` declaration normally explains itself by naming
+the concepts it is *not* instantiating, so the rule was defeated by the standard
+shape of its own subject. Three of eight declaring entries were invisible in
+both listings, and the declared count read five. The v0.10.0 entry below closes
+by saying the declaration makes a concept-less finding countable; it did not.
+
+The rule now reads the declaration first, and a concept link cannot overturn an
+author's explicit statement. The advisory listing also prints each entry's named
+concepts, because that distribution is what the deferred shape-vocabulary
+question needs and it was otherwise only obtainable by opening all eight.
+
+Found while filing `2026-reward-seeking-contrastive-sdf-hojmark`, whose own
+declaration names two concepts and which promptly vanished from the count.
+
 ## v0.10.0 — 2026-09-20
 
 Four filed findings carry a `## Concepts` section naming no concept, and
