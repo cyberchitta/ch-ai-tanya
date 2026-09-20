@@ -5,7 +5,8 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-20 (the global-workspace paper filed as two entries —
+Last updated: 2026-09-20 (scheming-propensity finding filed with a scope-note
+revision on `scheming`; the global-workspace paper filed as two entries —
 characterization and counterfactual reflection training — both under
 `introspection`, with a scope-note revision; earlier the same day, cyber-incidents,
 lie-detectors, contrastive-SDF, reward-seeker, pain-axis, flag-game,
@@ -19,9 +20,8 @@ session start alongside this file to recover the next move. The private
 cross-stream todo and schedule is `_notes/worklist.md` — read it at session
 start too.
 
-- Filing queue: `_notes/handoffs/filing-queue.md` — the next filing target and
-  why it was picked, plus the sequential-subagent recipe as it stands after the
-  2026-09-20 four-entry run.
+- Filing queue: `_notes/handoffs/filing-queue.md` — the sequential-subagent
+  recipe as it stands after the 2026-09-20 four-entry run.
 - Taste/editorial stream: `_notes/handoffs/taste.md` — next steps, open
   ledger, cross-cutting lessons, editor-only raw/ items. Likely next move:
   batch 3 promotions — the introspection concept + its cluster
@@ -46,11 +46,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 84
+- Findings: 85
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 99
+- Source stubs: 100
 
 Counts verified against the filesystem 2026-09-20.
 
@@ -58,6 +58,18 @@ Counts verified against the filesystem 2026-09-20.
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2026-scheming-propensity-hopman.md` — fifteenth `scheming`
+  instantiation and the first measuring propensity under realism. Baseline 0%
+  across twelve models and four scenarios (one exception at 3%), not explained
+  by evaluation awareness (~1%). Adversarial prompt snippets reach 91% where
+  production-sourced ones mostly do not; in the one model organism that does
+  scheme (59%), removing a single unnecessary tool drops it to 3% and
+  *increasing* expected oversight raises it by up to 25%. Prompted a scope-note
+  revision: propensity is a property of a model-and-scaffold-and-environment
+  configuration, so any single propensity number in this cluster is partly a
+  number about its scaffold. First non-frontier-lab entry since the filing run
+  began (LASR Labs, with a DeepMind co-author).
 
 - `findings/2026-counterfactual-reflection-training.md` — second entry from the
   global-workspace paper, and the concept's fifth report-channel intervention.
