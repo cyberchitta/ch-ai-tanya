@@ -19,6 +19,7 @@ findings:
   - 2026-em-self-awareness-realignment
   - 2025-berg-subjective-experience
   - 2026-lie-detectors-hopkins
+  - 2026-global-workspace-gurnee
 ---
 
 ## Definition
@@ -59,6 +60,8 @@ Mechanistically, the concept-injection result implies some monitoring architectu
 
 - [Fine-tuned lie detectors fail to generalize across lie types](../findings/2026-lie-detectors-hopkins.md) (Hopkins, Khullar, Wang, Roger; MATS / Anthropic Fellows / Anthropic, August 2026) — Fourth report-channel intervention finding, and the first **negative** one. Where [honesty-elicitation](../findings/2025-honesty-elicitation.md), [confessions](../findings/2025-confessions-honesty.md) and [introspection adapters](../findings/2026-introspection-adapters.md) each raise report fidelity partially, this trains the report channel directly — the detector is the model answering "did you lie?", sharing weights with the generator — and the trained capability does not survive a change of lie type. On-policy elicitation from the same models later fine-tuned to classify their own lies drove in-distribution AUROC from 0.60 to 0.95 while cross-fold AUROC plateaued at 0.70-0.75, a gap more epochs did not close; zero-shot prompting of larger models often beat the fine-tuned detectors. This kills the distribution-mismatch hypothesis as a sufficient explanation for prior detectors' failure. The concept-level consequence is that the reading these findings had been converging on - access is broadly preserved, the report channel is what needs work - is now contestable from the access side: the authors' leading explanation is that the training label points at a fact the model cannot reach, and third-person monitoring, which requires no introspection at all, beat self-report at every scale tested. They do not adjudicate between that and two alternatives (lies are reflexive rather than strategic; roleplay changes beliefs rather than concealing them), and did not test mechanistically. Scope note bears revisiting once a second negative report-channel result lands.
 
+- [The J-space component of a concept vector carries 6–7% of its variance and nearly all of its availability for verbal report](../findings/2026-global-workspace-gurnee.md) (Gurnee, Sofroniew, Pearce, Lindsey et al.; Anthropic, July 2026) — The first instantiation to characterize the report channel's **substrate** rather than measure its fidelity. The Jacobian lens assigns each vocabulary token the residual-stream direction that, averaged over a corpus, disposes the model to say it; the span of those vectors (the J-space) carries a median 6–7% of a concept vector's variance yet accounts for nearly all of that concept's availability for report — swapping along the J-space component reaches top-5 on 59% of trials against 5% for the ~93% remainder, and under a clamp preventing re-entry to the J-space the remainder's effect falls to zero. The result that matters at concept level is selectivity: across four tasks depending on the same latent variable, the variable appears in J-lens readouts at comparable rates, but swapping it redirects explicit report and flexible inference on essentially every trial while leaving passage continuation and anomaly detection unmoved. Presence in the reportable subspace and causal involvement come apart.
+
 ## What this concept is not
 
 **Not chain-of-thought reasoning.** Chain-of-thought is output — tokens generated sequentially as part of the response. It may or may not reflect internal processing. The unfaithful-CoT findings show it frequently doesn't. Introspection, if real, operates at a different level: access to activations and representations, not generation of explanatory text.
@@ -66,6 +69,25 @@ Mechanistically, the concept-injection result implies some monitoring architectu
 **Not self-report.** Self-report is what the model says about itself. Introspection is the access that might or might not underlie self-report. The contested question is exactly whether self-reports about internal states reflect genuine access or sophisticated confabulation. The concept-injection study provides the strongest evidence for genuine access because experimenters controlled what was injected and could verify the report's accuracy.
 
 ## Scope note
+
+**Access is task-conditional — revised July 2026.** This concept's findings had
+been converging on *access is broadly preserved, the report channel is what
+needs work*. The [lie-detector result](../findings/2026-lie-detectors-hopkins.md)
+made that contestable from the access side, and the
+[global-workspace finding](../findings/2026-global-workspace-gurnee.md) now
+suggests the disjunction was the wrong shape. On its account the reportable
+subspace is small (a median 6–7% of a concept vector's variance) and its
+contents depend on the task: the same information enters or bypasses it
+according to what the model is asked to do with it, and computations the
+authors label automatic proceed without it entirely. Under that reading,
+neither "access is preserved" nor "access is absent" is a property of the
+model — both are properties of a model-and-task pair, and a report-channel
+intervention may be changing what enters the subspace rather than improving
+access to a fixed store. This is one paper's mechanistic account and its lens
+is derived from output effects, so it is recorded here as a reframing the
+concept should be read against, not as a settled replacement. A second
+mechanistic account, ideally one not built from verbalization, is what would
+settle it.
 
 This concept captures one capacity the findings imply. Other concepts that border it — self-model, self-representation, metacognition — may warrant separate entries as more findings accumulate. The boundary between introspection (access to internal states) and self-modeling (maintaining a representation of one's own capacities and tendencies) is not yet load-bearing in the LLM wiki's findings, so a single concept suffices for now.
 

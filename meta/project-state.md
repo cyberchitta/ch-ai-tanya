@@ -5,8 +5,11 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-20 (cyber-incidents, lie-detectors, contrastive-SDF, reward-seeker, pain-axis, flag-game, physics-of-agents and
-Hugging-Face-incident and multiagent-patterns findings filed; schema v0.10.0).
+Last updated: 2026-09-20 (global-workspace finding filed under `introspection`
+with a scope-note revision; earlier the same day, cyber-incidents,
+lie-detectors, contrastive-SDF, reward-seeker, pain-axis, flag-game,
+physics-of-agents, Hugging-Face-incident and multiagent-patterns findings
+filed, and schema v0.11.0).
 
 ## Handoffs
 
@@ -42,11 +45,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 82
+- Findings: 83
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 98
+- Source stubs: 99
 
 Counts verified against the filesystem 2026-09-20.
 
@@ -54,6 +57,18 @@ Counts verified against the filesystem 2026-09-20.
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2026-global-workspace-gurnee.md` — the Jacobian lens and the
+  J-space. First mechanistic account under `introspection` of what the report
+  channel is made of: the reportable subspace carries a median 6–7% of a
+  concept vector's variance and nearly all of its availability for report, and
+  its contents are task-conditional — the same latent variable is swapped to
+  redirect explicit report and flexible inference while leaving passage
+  continuation and anomaly detection unmoved. Prompted a scope-note revision on
+  `introspection`: access is a property of a model-and-task pair, not of the
+  model, which reframes rather than settles the access-vs-report dispute the
+  lie-detector finding reopened. The paper's second result, counterfactual
+  reflection training, is queued as a separate intervention finding.
 
 - `concepts/reward-seeking.md` — eleventh concept, shape *disposition*. The
   standing tendency to optimize what the grader is believed to reward over the
