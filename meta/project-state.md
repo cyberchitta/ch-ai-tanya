@@ -85,8 +85,7 @@ additions: `meta/session-log.md` and git history.
 asuric-ai essay research inventory and two live deep-research surveys (April 2025 – April
 2026). Entries across eight clusters: mechanistic geometry (Arditi, OpenAI SAE, Soligo 2025
 convergent, Soligo 2026 EM-Easy, Zou 2023 Representation Engineering — all filed); functional
-emotional states (Transformer Circuits emotions paper filed; Opus 4 system card welfare remains
-candidate); character and persona (Persona Selection Model, Subliminal Learning, Persona
+emotional states (Transformer Circuits emotions paper filed); character and persona (Persona Selection Model, Subliminal Learning, Persona
 Vectors, EM-persona-consistency — all filed); scheming/deception/dishonesty (Apollo in-context
 scheming, real-world incidents, agentic upward deception, stability-asymmetry, metagaming,
 anti-scheming-training, DeepMind stealth/situational-awareness, OpenAI production-evaluations,
