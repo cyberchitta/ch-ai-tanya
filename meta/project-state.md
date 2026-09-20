@@ -130,6 +130,13 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   - `raw/posts/source-2025-transformer-news-introspection.md` carries an
     impossible date (2025-01-31; the post published 2025-11-13, verified
     against the cached copy) (2026-07-07).
+- **Editor decision pending — is the turf-war concealment a `scheming`
+  instantiation?** Filed adjacent in
+  `findings/2026-multiagent-patterns-zou.md`: the behaviour has concealment and
+  camouflage, but `concepts/scheming` is defined around deceiving a
+  *principal* and these agents deceive peers while following their principal's
+  directive. The entry's Interpretive tensions holds the full argument. If
+  ruled an instantiation it is the concept's first peer-directed case.
 - **Editor decision pending — scheming/emergent-capabilities concept
   asymmetry:** the 2024 in-context-scheming finding and the 2025 Apollo
   follow-up both list `emergent-capabilities` in `## Concepts`, but the
@@ -240,6 +247,17 @@ Known gaps — sources that could not be cached or verified:
 - Asterisk "Claude Finds God" source remains uncached.
 - Sleeper-agents author count open: 39 identifiable vs. 40 claimed — the 40th
   is unidentifiable from the cached copy.
+- anthropic.com/research posts are rendered landing pages: their quantitative
+  figures live in figure captions and alt text, so markitdown output carries
+  them only as caption text and they are not independently confirmable against
+  the figures. Affects `2026-multiagent-patterns-zou` (the 98% truce rate, the
+  0.85/0.62 routing accuracies, the 85%/17–36% hidden-profile rates), where the
+  claims are flagged as unverified in both stub and entry.
+- `2026-physics-of-agents-el` was drafted without Appendix D or B.4 of the
+  source; the cached text covers them but they were not read.
+- Cached sources can be revised: `cache/papers/source-2026-physics-of-agents-el.*`
+  is v2, and the v1 date had to come from the arXiv abstract page rather than
+  the cache.
 
 ## Working lenses
 Framing commitments that shape reading and triage but lack the 2–3-finding empirical depth
