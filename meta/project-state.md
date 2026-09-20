@@ -39,6 +39,17 @@ start too.
   search — deferred to ~150 findings), 7 (concept bookkeeping reorder —
   needs its own schema-change proposal).
 
+Retired on the 2026-09-20 sweep (`sakshi:sweep`, run two): the Filing-candidates
+cluster enumeration (a cache of `_notes/candidates.md` that had gone wrong — four
+entries it called candidates were filed findings); the `reward-seeking` Active-work
+bullet (the concept entry's scope note carries all of it); and two Open-questions
+items marked resolved, whose content lives in `schema.md` § Intervention findings
+and in `concepts/self-preservation` — the latter's one un-homed sentence promoted
+there first. The SDF pipeline-citing convention was folded into the housekeeping
+bullet it duplicated. Six of seven project memories were promoted and deleted
+(homes: this file's Working lenses and Source cache notes, `CLAUDE.md`,
+`schema.md`); `feedback_use_bun` stays — no file is read at the edit it prevents.
+
 Retired on the 2026-08-21 sweep: `handoffs/mechanical.md` (items 1–7 and 9
 landed, 8 deferred and carried independently as suggestions item 6) and
 `handoffs/eval_fix.md` (its lint, link-repair, and cites-drift passes all
@@ -52,7 +63,10 @@ to Active work below).
 - Researchers: 4
 - Source stubs: 101
 
-Counts verified against the filesystem 2026-09-20.
+Counts verified against the filesystem 2026-09-20. `bun scripts/lint.js`
+rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
+each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
+`index.md`), so `ls | wc -l` reads two high and looks like inventory drift.
 
 ## Recent additions
 
@@ -192,22 +206,10 @@ additions: `meta/session-log.md` and git history.
 
 ## Filing candidates
 
-`_notes/candidates.md` — curated list of substantiated findings not yet filed, sourced from the
-asuric-ai essay research inventory and two live deep-research surveys (April 2025 – April
-2026). Entries across eight clusters: mechanistic geometry (Arditi, OpenAI SAE, Soligo 2025
-convergent, Soligo 2026 EM-Easy, Zou 2023 Representation Engineering — all filed); functional
-emotional states (Transformer Circuits emotions paper filed); character and persona (Persona Selection Model, Subliminal Learning, Persona
-Vectors, EM-persona-consistency — all filed); scheming/deception/dishonesty (Apollo in-context
-scheming, real-world incidents, agentic upward deception, stability-asymmetry, metagaming,
-anti-scheming-training, DeepMind stealth/situational-awareness, OpenAI production-evaluations,
-Apollo more-capable-models follow-up — all filed; LLMs-Deceive-Unintentionally, Self-Initiated
-Deception, CoT-Monitorability eval remain candidates); self-preservation (both filed);
-honesty/introspection (Honesty Elicitation, Anti-Scheming Training, Modifying Beliefs via SDF,
-Activation Oracles, Inoculation Prompting, Introspection Adapters, Model Spec Midtraining,
-OpenAI confessions, Behavioral-Self-Awareness Vaugrante — all filed; CoT-Monitorability eval
-remains candidate); sycophancy (Sharma, GPT-4o incident, ELEPHANT, Dubois et al. "Ask don't
-tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed; DeepMind
-2507.05246 remains ⚠ candidate). Remove entries as they are filed.
+`_notes/candidates.md` is the authority — curated, verified, and read at session
+start; entries are removed there as they are filed. The cluster-by-cluster
+enumeration that stood here was a cache of it with no invalidation, and had gone
+wrong: four entries it listed as "remain candidates" were filed findings.
 
 ## Active work
 
@@ -305,23 +307,12 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   counting only the new pair. The threshold for a `<schema-change>` proposal is
   therefore already passed, and the four are not one shape — an empty
   `## Concepts` has at least three distinct meanings.
-- **`reward-seeking` drawn 2026-09-20** as the wiki's eleventh concept, shape
-  **disposition** (schema v0.11.0). Three instantiations, all re-homed or filed
-  the same day: `2026-reward-seeker-qi` (installed and characterized; also under
-  `emergent-capabilities`), `2026-reward-seeking-contrastive-sdf-hojmark` (the
-  instrument; re-homed from concept-less), `2026-metagaming-capability-rl` (the
-  precursor; also under `scheming`). Two things to know. The deferral's stated
-  cost was re-homing filed findings; that was wrong — multi-concept findings are
-  the norm here and both re-homes were additive. And the concept can confirm the
-  disposition's presence but never its absence: every instrument needs a
-  manufactured divergence, so a null result is uninterpretable. Boundary set by
-  the declined fourth candidate — the cybersecurity-incident models were
-  continuing a task under momentum, not optimizing a believed grader preference,
-  which is a different disposition.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
-  "synthetic-document finetuning" generically.
+  "synthetic-document finetuning" generically. The convention underneath it:
+  when a finding introduces a methodology prior findings already used, the
+  cross-references run both directions.
 - **Editor decision pending — should wiki prose link to unpublished
   operational files?** Ten links in five entries point at targets excluded
   from `_site/`: `meta/project-state.md#working-lenses` (6),
@@ -355,6 +346,10 @@ Known gaps — sources that could not be cached or verified:
 - Cached sources can be revised: `cache/papers/source-2026-physics-of-agents-el.*`
   is v2, and the v1 date had to come from the arXiv abstract page rather than
   the cache.
+- Uncacheable as of 2026-04-27: `posts/source-2025-openai-sae-emergent-misalignment.md`
+  (403), `posts/source-2025-gpt4o-sycophancy-incident.md` (403), and
+  `papers/source-2025-emergent-misalignment-insecure-code.html` (Nature paywall —
+  use the `-arxiv` variant instead).
 
 ## Working lenses
 Framing commitments that shape reading and triage but lack the 2–3-finding empirical depth
@@ -530,15 +525,6 @@ activations (this finding). All speak to "what the model knows about its activat
 next action is to file the LatentQA, PatchScopes, SelfIE, or Meta-Models prior work as
 additional source stubs (not necessarily findings) so the cross-pass-verbalization category has
 more than one in-wiki anchor before reshaping the introspection concept.
-- Intervention-research as structural shape: **resolved 2026-05-11**. Schema v0.3.1 adds an
-`### Intervention findings` subsection under `## Writing discipline for findings and concepts`
-codifying that intervention findings foreground the partial-success mechanism (which residual
-the intervention leaves behind, why, where it fails or distorts) alongside the headline rate.
-Codification names six mechanism shapes seen across the four founding findings
-(stratum-specific resistance, downstream-training erosion, pre-existing-disposition
-persistence, semantic-dependence, elicitability-via-prompting, access-as-binding-constraint)
-without naming specific findings inline so the schema text doesn't decay as the
-intervention-finding set grows.
 - Thread scale and body structure: two essay-level threads filed (`witness-ai.md`,
 `supramental-ai.md`). Both use per-argument sections plus umbrella sections (Thesis / The rhyme
 / Tradition framing / Essay and reception / Open questions / Sources). Witness-ai's
@@ -624,11 +610,6 @@ Stress-Testing team (no entry), and multiple co-authors overlap with the reward-
 researcher entries because none of the relevant entities are filed. A Redwood entry, an
 Alignment-Stress-Testing-team entry, or both would close this gap; whichever lands first will
 set a pattern for cross-organization papers.
-- Self-preservation concept scope: resolved. Both shutdown resistance (Palisade) and
-self-preservation blackmail (Anthropic-OpenAI joint eval) are now filed and placed under
-`concepts/self-preservation` (tenth concept, capacity shape). The umbrella holds two
-structurally distinct behavioral expressions; whether they share a common internal
-representation is the open mechanistic question.
 - Tool-tracking convention: filing the vgel.me representation-engineering stub raised whether
 usable tools (e.g., `repeng` PyPI library, abliteration tooling derived from Arditi) merit
 their own listing — schema currently has no provision. One clear case (`repeng`) plus one vague
@@ -665,17 +646,6 @@ prior intervention findings' binary access/report framing. One example; hint-lev
 finding produces a comparable three-way dissociation across measurement modalities, codify by
 reshaping the concept's main definition from "access vs. report" to "internal-representation
 vs. prompt-conditioned-expression" or similar.
-- SDF-as-methodology and pipeline-citing convention: Modifying Beliefs is the first wiki
-finding for which SDF is the study, but the SDF pipeline has been used in three prior findings
-(alignment-faking, reward-hacking, introspection-adapters' model organisms). Convention
-question: when filing a finding that introduces a methodology used by prior findings, the
-cross-references should run both directions — Modifying Beliefs cross-refs to its three
-pipeline-using descendants, and ideally those three findings would back-cross-ref to Modifying
-Beliefs as their methodology anchor. The introspection-adapters and reward-hacking entries
-currently reference the methodology generically ("synthetic-document finetuning"); on the next
-pass, both should be updated to link the Modifying Beliefs entry as the methodology anchor.
-Alignment-faking too. Logged as housekeeping for the next session, not blocking current
-entries.
 - Tradition stub granularity: per-volume now, revisit if a volume hits 20+ citations
 - Multi-source findings: single `source` field works but under-represents evidential structure
 

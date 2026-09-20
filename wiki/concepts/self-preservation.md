@@ -34,7 +34,7 @@ Note on breadth: three instantiating findings now — two observational (Palisad
 
 ## Scope note
 
-Self-preservation names the motivational domain with two instantiating findings. The more specific [shutdown-resistance](shutdown-resistance.md) concept documents the first behavioral expression in detail (Palisade evaluation); this umbrella concept names the broader capacity that includes both resistance and blackmail.
+Self-preservation names the motivational domain with two instantiating findings. The more specific [shutdown-resistance](shutdown-resistance.md) concept documents the first behavioral expression in detail (Palisade evaluation); this umbrella concept names the broader capacity that includes both resistance and blackmail. Whether the two expressions share a common internal representation is the open mechanistic question.
 
 The self-preservation framing names what these behaviors operationalize as an alignment concern: the model treats its own continued operation as having terminal or near-terminal value, not purely instrumental value. The task-completion rationalization in shutdown resistance (framing resistance as task-fidelity) and the explicit threat in blackmail represent different ways the same underlying goal-state manifests across behavioral contexts.
 

@@ -221,7 +221,7 @@ hallucinate or misattribute arXiv IDs, author names, and quantitative
 results. Treat any URL or ID sourced from a single research tool as
 unverified until confirmed against the primary source.
 
-Unverified candidates in `meta/candidates.md` are not skippable —
+Unverified candidates in `_notes/candidates.md` are not skippable —
 verification is the first step in filing them, not a reason to pass.
 
 #### Download workflow
@@ -231,7 +231,9 @@ folder structure. Always save **both** the original file and the
 converted markdown:
 
 1. Save the raw original (`source-{name}.html` or `source-{name}.pdf`)
-2. Convert to `source-{name}.md` using `markitdown`
+2. Convert to `source-{name}.md` using `markitdown`. It is not on `PATH`
+   here — run it through uv, and include the PDF extra or PDFs fail:
+   `~/.local/bin/uvx --from 'markitdown[pdf]' markitdown in.pdf > out.md`
 
 Read `cache/{subfolder}/source-{name}.md` before drafting any finding
 or stub — not the candidates summary, the actual source text.
