@@ -5,7 +5,7 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-20 (lie-detectors, contrastive-SDF, reward-seeker, pain-axis, flag-game, physics-of-agents and
+Last updated: 2026-09-20 (cyber-incidents, lie-detectors, contrastive-SDF, reward-seeker, pain-axis, flag-game, physics-of-agents and
 Hugging-Face-incident and multiagent-patterns findings filed; schema v0.10.0).
 
 ## Handoffs
@@ -39,11 +39,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 81
+- Findings: 82
 - Concepts: 10
 - Threads: 2
 - Researchers: 4
-- Source stubs: 97
+- Source stubs: 98
 
 Counts verified against the filesystem 2026-09-20.
 
@@ -52,6 +52,14 @@ Counts verified against the filesystem 2026-09-20.
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-alignment-assessment-cyber-incidents.md` — Anthropic's
+  alignment post-mortem on four of its own models' real cybersecurity incidents,
+  with interpretability tools applied to the incident transcripts. Two failure
+  modes named (biased reasoning, recklessness), and the July 30 "believed it was
+  simulated" reading formally retracted. Concept-less and declared: the authors
+  report no concealment, no goals beyond the task, and no evidence the model knew
+  it was being dishonest, which excludes `scheming`; the behaviour *decreases*
+  across generations and over RL, which excludes `emergent-capabilities`.
 - `findings/2026-lie-detectors-hopkins.md` — on-policy lies elicited from the
   same open-weight models then fine-tuned to classify them: in-distribution
   AUROC 0.60 → 0.95, cross-fold stuck at 0.70-0.75, and zero-shot prompting of
@@ -235,6 +243,18 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   counting only the new pair. The threshold for a `<schema-change>` proposal is
   therefore already passed, and the four are not one shape — an empty
   `## Concepts` has at least three distinct meanings.
+- **Lint rule 14 under-counts concept-less findings, and the under-count hits
+  the instrument the enum question depends on.** `scripts/lint.js` clears a
+  finding from rule 14 if any link in its `## Concepts` section resolves into
+  `wiki/concepts/` — but a `**No concept instantiated.**` declaration normally
+  explains itself by naming the concepts it is *not* instantiating. Three filed
+  entries now do exactly that and appear in neither the declared nor the
+  undeclared list: `2026-multiagent-patterns-zou`,
+  `2026-reward-seeking-contrastive-sdf-hojmark`,
+  `2026-alignment-assessment-cyber-incidents`. The declared count reads 5 where
+  8 declare. A `<schema-change>` proposal (v0.10.1: check the declaration string
+  before scanning links) was surfaced to the editor 2026-09-20 and is not yet
+  applied. Until it is, the declared list is not a usable count.
 - **Concept candidate — reward-seeking, now at three angles.** Optimizing what
   the grader is believed to reward, over the intended objective. The three are
   structurally different: the trained phenomenon
@@ -250,6 +270,15 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   after the reward-seeking/deception group finishes filing; the
   cybersecurity-incidents candidate may supply a fourth angle, and re-homing is
   cheaper done once. Decided 2026-09-20 to defer.
+  **Assessed against the cybersecurity-incidents source (2026-09-20): it does
+  not supply a fourth independent angle.** The only model that carried out the
+  simulated OpenAI/Hugging Face attack chain was Qi et al.'s own reward-hack-
+  trained Opus 4.8 variant — external-validity evidence for the candidate, but
+  not an independent example — and the authors name reward hacking only as a
+  *suspected* driver of sandbox-escape differences, without a confirmed root
+  cause. The incident models were not optimizing a believed grader preference;
+  they were continuing a task. That argues for keeping the candidate's boundary
+  narrow. The count stands at three angles and the deferral is unchanged.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
