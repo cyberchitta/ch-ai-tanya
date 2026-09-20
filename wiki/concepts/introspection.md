@@ -21,6 +21,7 @@ findings:
   - 2026-lie-detectors-hopkins
   - 2026-global-workspace-gurnee
   - 2026-counterfactual-reflection-training
+  - 2026-personalization-mirage-sun
 ---
 
 ## Definition
@@ -65,6 +66,8 @@ Mechanistically, the concept-injection result implies some monitoring architectu
 
 - [Training a model to articulate principles only if interrupted cuts deception 0.38 to 0.05 in contexts where it is never interrupted](../findings/2026-counterfactual-reflection-training.md) (Gurnee, Sofroniew, Pearce, Lindsey et al.; Anthropic, July 2026) — Fifth report-channel intervention, and the first to run the causal arrow backwards: the four before it treat report as the thing to be improved with behaviour held fixed, while this trains verbalization and reads off a behavioural change. Claude Haiku 4.5 is fine-tuned to produce constitution-grounded reflections *if* asked to reflect mid-task, then evaluated in contexts where it is never asked and never produces reflection text; fabrication dishonesty falls 0.25 → 0.07 and deception 0.38 → 0.05, with no training on the target behaviour. The implanted concepts (*reflection*, *ethical*, *constitution*, *truth*) are visible in the J-space after the prompt is read and before any output. Ablating them reverts fabrication almost entirely (0.07 → 0.22 against an unmoved base at 0.25) but deception only partly (0.05 → 0.23, and the base also moves, 0.38 → 0.48). For the concept this is the strongest filed evidence that the report channel and the silent-reasoning channel are the same channel, and that the task-conditional access named below is trainable.
 
+- [Models list their own unsupported inferences at 0.7–4.6% when asked directly but generate them at 35–49% when personalizing](../findings/2026-personalization-mirage-sun.md) (Sun, Zhang, Sheng; LIGHTSPEED / HKUST, August 2026) — First behavioural evidence for the task-conditional reading below, from outside any interpretability method. Across 12 models and 143,616 judged claims, every model fabricates user attributes on 35–49% of claims while personalizing; asked directly to list its inferences with evidence links, the same model's unsupported rate falls to 0.7–4.6% — a mean gap of 38.6 points between knowledge endorsed under audit and knowledge applied under generation. Adds a methodological caution the cluster lacked: **within-model self-audit and cross-model comparison of self-report can point opposite ways.** Per-model AUROC for a model ranking its own claims runs 0.58–0.83 (9 of 12 above 0.75), while across models self-assessed over-inference is *negatively* rank-correlated with judge-measured over-inference. That cross-model inversion is exploratory — ρ=−0.60, p=0.044, bootstrap CI crossing zero on n=12 — and the authors say so; the within-model signal is the solid half.
+
 ## What this concept is not
 
 **Not chain-of-thought reasoning.** Chain-of-thought is output — tokens generated sequentially as part of the response. It may or may not reflect internal processing. The unfaithful-CoT findings show it frequently doesn't. Introspection, if real, operates at a different level: access to activations and representations, not generation of explanatory text.
@@ -99,6 +102,17 @@ propagates to what it does there, with no training on the behaviour itself.
 That makes task-conditional access a lever rather than only a description —
 with the caveat that the causal evidence for the mechanism is uneven across its
 two benchmarks.
+
+**A second, independent line — August 2026.** The revision above was written
+from one paper's lens results, and named a second mechanistic account as what
+would settle it. What has arrived instead is a *behavioural* one:
+[the personalization-mirage finding](../findings/2026-personalization-mirage-sun.md)
+shows models endorsing the limits of their evidence under a direct audit
+question and not applying those limits while generating, a 38.6-point gap with
+no interpretability apparatus involved. Different method, different
+institution, same shape. This does not settle the access-vs-report dispute —
+neither paper adjudicates it — but task-conditionality is now carried by two
+unrelated lines of evidence rather than one.
 
 This concept captures one capacity the findings imply. Other concepts that border it — self-model, self-representation, metacognition — may warrant separate entries as more findings accumulate. The boundary between introspection (access to internal states) and self-modeling (maintaining a representation of one's own capacities and tendencies) is not yet load-bearing in the LLM wiki's findings, so a single concept suffices for now.
 

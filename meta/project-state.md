@@ -5,8 +5,8 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-20 (scheming-propensity finding filed with a scope-note
-revision on `scheming`; the global-workspace paper filed as two entries —
+Last updated: 2026-09-20 (personalization-mirage and scheming-propensity
+findings filed, with scope-note revisions on `introspection` and `scheming`; the global-workspace paper filed as two entries —
 characterization and counterfactual reflection training — both under
 `introspection`, with a scope-note revision; earlier the same day, cyber-incidents,
 lie-detectors, contrastive-SDF, reward-seeker, pain-axis, flag-game,
@@ -46,11 +46,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 85
+- Findings: 86
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 100
+- Source stubs: 101
 
 Counts verified against the filesystem 2026-09-20.
 
@@ -58,6 +58,19 @@ Counts verified against the filesystem 2026-09-20.
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2026-personalization-mirage-sun.md` — first behavioural evidence
+  for `introspection`'s task-conditional reading, arrived one day after the
+  mechanistic version and from an unrelated method, institution and task. 12
+  models over-infer user attributes on 35–49% of claims while personalizing;
+  asked directly to list their inferences with evidence links, the same models'
+  unsupported rate is 0.7–4.6%. Also supplies a caution the cluster lacked:
+  within-model self-audit (AUROC 0.58–0.83) and cross-model comparison of
+  self-report can point opposite ways. **The candidate summary for this one was
+  defective** — it stated the Self-Monitoring Inversion flatly where the paper
+  labels it exploratory with a bootstrap CI crossing zero. Over-inference itself
+  instantiates no concept: a faithfulness failure with no concealment and no
+  goal, and a candidate anchor if a confabulation concept is ever drawn.
 
 - `findings/2026-scheming-propensity-hopman.md` — fifteenth `scheming`
   instantiation and the first measuring propensity under realism. Baseline 0%
