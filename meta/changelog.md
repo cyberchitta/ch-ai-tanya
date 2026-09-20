@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.11.0 — 2026-09-20
+
+Adds **disposition** as a fourth concept shape, beside pattern, capacity and
+mechanism. Motivated by `reward-seeking`, which had accumulated three
+structurally different findings and fit none of the three: it is not an ability
+the model exhibits, not a regularity across the literature, and not a set of
+dynamics.
+
+The shape is defined by an observability problem rather than by subject matter.
+A disposition concerns which objective a model pursues when two candidates
+diverge, so it is invisible wherever they agree — ordinary observation cannot
+separate a model pursuing the intended goal from one pursuing a proxy that
+currently coincides with it. Concepts of this shape carry a measurement burden
+the other three do not, and their instantiating findings are expected to name
+the contrast, counterfactual or intervention that made the disposition visible.
+
+The schema's existing instruction — propose a new shape rather than silently
+inventing shape terminology — is what routed this through a version bump
+instead of a concept file. The concept itself lands separately.
+
 ## v0.10.1 — 2026-09-20
 
 Rule 14 could not see the entries it was installed to count. It cleared a

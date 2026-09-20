@@ -241,9 +241,21 @@ exact headers when present, in this order):
 
 The Definition section should note the concept's shape: pattern (regularity
 across findings), capacity (something the model exhibits), mechanism
-(dynamics by which something occurs). If none of these shapes fits a new
-concept, propose a new shape name and surface it as a schema question
-rather than silently inventing shape terminology.
+(dynamics by which something occurs), disposition (a standing tendency about
+*what* the model optimizes, latent until a contrast exposes it). If none of
+these shapes fits a new concept, propose a new shape name and surface it as a
+schema question rather than silently inventing shape terminology.
+
+The disposition shape was added in v0.11.0 and is distinguished from capacity
+by its observability, not by its subject matter. A capacity is an ability: it
+shows up when conditions allow it and can be elicited directly. A disposition
+concerns which objective the model pursues when two candidates diverge, so it
+is invisible wherever they agree — no amount of ordinary observation
+distinguishes a model pursuing the intended goal from one pursuing a proxy
+that currently coincides with it. A concept of this shape therefore carries a
+measurement burden the other three do not: it needs a contrast, a
+counterfactual, or an intervention to be visible at all, and its instantiating
+findings should say which.
 
 ### Researcher
 
