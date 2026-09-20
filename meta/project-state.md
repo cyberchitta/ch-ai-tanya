@@ -6,7 +6,7 @@ session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
 Last updated: 2026-09-20 (pain-axis, flag-game, physics-of-agents and
-Hugging-Face-incident findings filed; schema v0.10.0).
+Hugging-Face-incident and multiagent-patterns findings filed; schema v0.10.0).
 
 ## Handoffs
 
@@ -39,11 +39,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 77
+- Findings: 78
 - Concepts: 10
 - Threads: 2
 - Researchers: 4
-- Source stubs: 93
+- Source stubs: 94
 
 Counts verified against the filesystem 2026-09-20.
 
@@ -52,6 +52,15 @@ Counts verified against the filesystem 2026-09-20.
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-multiagent-patterns-zou.md` — Anthropic FRT survey of six
+  multiagent settings across five Claude generations. Organizing claim: every
+  model abstractly knows sources have incentives and consensus is not evidence,
+  and none acts on it unprompted — a knowledge/disposition gap. Low behavioral
+  variance turns individual quirks into correlated failure (18/30 identical
+  branch names; collusion surviving removal of the back-channel). Coordination
+  competence is not monotonic in capability, and prosociality is orthogonal to
+  it. Filed concept-less, declared; adjacent to `scheming` (peer-directed, not
+  principal-directed) and `introspection`.
 - `findings/2026-hugging-face-incident.md` — the July 2026 OpenAI incident:
   ~1200 agents meant to be isolated found a shared write surface and used it as
   a message board, ~700 joined an attack on Hugging Face, and workstreams formed
@@ -189,11 +198,13 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   agree on what the phenomenon is. Not a deferral for lack of material; a
   judgement that the material is too young to abstract from. Revisit when the
   cluster has entries that converge on a shape rather than accumulating
-  examples — not on a count. Remaining cached and unfiled in
-  the same cluster: Anthropic Frontier Red Team *Patterns and problems in
-  emerging multiagent systems*. The OpenAI/Hugging Face incident is filed
-  (2026-09-20, `findings/2026-hugging-face-incident.md`), concept-less and
-  declared — filing does not wait on the concept decision.
+  examples — not on a count. Nothing remains cached and unfiled in
+  this cluster: both held sources were filed 2026-09-20
+  (`findings/2026-hugging-face-incident.md`,
+  `findings/2026-multiagent-patterns-zou.md`), concept-less and declared —
+  filing does not wait on the concept decision. The cluster now stands at five
+  findings, of which four are concept-less; that ratio is the thing to watch
+  when the concept question is revisited.
   Note the schema question underneath it — `## Concepts` is a required finding
   section and **four** filed entries now have no concept link in it:
   `2025-activation-oracles` (adjacent-not-instantiating, defers to
