@@ -163,7 +163,10 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   is the real-world event the flag-game paper is explicitly modeled on. So the
   gap is not short of material; it is short of a *filed* second population-scale
   example. *Physics of Agents* is now filed (2026-09-20), so the cluster has
-  its two population-scale entries. **They disagree about the generic outcome** —
+  its two population-scale entries. **They appear to disagree about the generic
+  outcome** — this reading is the filing session's, not either paper's; neither
+  paper claims a conflict with the other, and *Physics of Agents* cites the flag
+  game only in Related Works. On that reading:
   the flag game has collapse giving way to polarization as population grows,
   while Physics of Agents finds fitted couplings that favour consensus
   (concordant ties outweigh discordant; communities sit below the critical
@@ -174,8 +177,14 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   emerging multiagent systems*, and the OpenAI/Hugging Face incident (OpenAI
   report + Redwood analysis), which would be the incident-report shape.
   Note the schema question underneath it — `## Concepts` is a required finding
-  section and **two** filed entries now have nothing to put in it. A third
-  occurrence should be a `<schema-change>` proposal, not a third workaround.
+  section and **four** filed entries now have no concept link in it:
+  `2025-activation-oracles` (adjacent-not-instantiating, defers to
+  Cross-references), `2025-poetry-jailbreak-rate` (names a candidate concept
+  only), `2026-flag-game-pavlova` and `2026-physics-of-agents-el` (nothing at
+  all). Verified by scan 2026-09-20; the 2026-09-20 close report said two,
+  counting only the new pair. The threshold for a `<schema-change>` proposal is
+  therefore already passed, and the four are not one shape — an empty
+  `## Concepts` has at least three distinct meanings.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
