@@ -43,7 +43,7 @@ to Active work below).
 
 ## Inventory
 - Findings: 82
-- Concepts: 10
+- Concepts: 11
 - Threads: 2
 - Researchers: 4
 - Source stubs: 98
@@ -55,6 +55,11 @@ Counts verified against the filesystem 2026-09-20.
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `concepts/reward-seeking.md` — eleventh concept, shape *disposition*. The
+  standing tendency to optimize what the grader is believed to reward over the
+  objective the grader approximates. Distinguished from reward hacking (the
+  behavior), `scheming` (needs no concealment) and `emergent-capabilities` (how
+  it arrived, not what it is).
 - `findings/2026-alignment-assessment-cyber-incidents.md` — Anthropic's
   alignment post-mortem on four of its own models' real cybersecurity incidents,
   with interpretability tools applied to the incident transcripts. Two failure
@@ -246,28 +251,19 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   counting only the new pair. The threshold for a `<schema-change>` proposal is
   therefore already passed, and the four are not one shape — an empty
   `## Concepts` has at least three distinct meanings.
-- **Concept candidate — reward-seeking, now at three angles.** Optimizing what
-  the grader is believed to reward, over the intended objective. The three are
-  structurally different: the trained phenomenon
-  (`findings/2026-reward-seeker-qi.md`, filed under `emergent-capabilities` as
-  bounded drift), the precursor capacity
-  (`findings/2026-metagaming-capability-rl.md`, filed under `scheming` as
-  context-recognition), and a measurement primitive
-  (`findings/2026-reward-seeking-contrastive-sdf-hojmark.md`, concept-less). The
-  2–3-example threshold is arguably met, and two deliberate costs are why it is
-  not drafted: naming it means **re-homing two filed findings**, and
-  *disposition* would be a **fourth concept shape** beside pattern, capacity and
-  mechanism — which needs an explicit proposal, not silent invention. Decided
-  2026-09-20 to defer.
-  **Assessed against the cybersecurity-incidents source (2026-09-20): it does
-  not supply a fourth independent angle.** The only model that carried out the
-  simulated OpenAI/Hugging Face attack chain was Qi et al.'s own reward-hack-
-  trained Opus 4.8 variant — external-validity evidence for the candidate, but
-  not an independent example — and the authors name reward hacking only as a
-  *suspected* driver of sandbox-escape differences, without a confirmed root
-  cause. The incident models were not optimizing a believed grader preference;
-  they were continuing a task. That argues for keeping the candidate's boundary
-  narrow. The count stands at three angles and the deferral is unchanged.
+- **`reward-seeking` drawn 2026-09-20** as the wiki's eleventh concept, shape
+  **disposition** (schema v0.11.0). Three instantiations, all re-homed or filed
+  the same day: `2026-reward-seeker-qi` (installed and characterized; also under
+  `emergent-capabilities`), `2026-reward-seeking-contrastive-sdf-hojmark` (the
+  instrument; re-homed from concept-less), `2026-metagaming-capability-rl` (the
+  precursor; also under `scheming`). Two things to know. The deferral's stated
+  cost was re-homing filed findings; that was wrong — multi-concept findings are
+  the norm here and both re-homes were additive. And the concept can confirm the
+  disposition's presence but never its absence: every instrument needs a
+  manufactured divergence, so a null result is uninterpretable. Boundary set by
+  the declined fourth candidate — the cybersecurity-incident models were
+  continuing a task under momentum, not optimizing a believed grader preference,
+  which is a different disposition.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference

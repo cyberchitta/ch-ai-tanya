@@ -66,6 +66,7 @@ Finally it complicates the audit picture. [Metagaming](2026-metagaming-capabilit
 
 ## Concepts
 
+- [Reward-seeking](../concepts/reward-seeking.md) — the disposition **installed and characterized**. RL until the grader and the task came apart is the divergence that made it visible, and the chain-of-thought is the evidence that what was installed is grader-directed rather than misalignment with content of its own: it names the grader and the score and nothing beyond them. Supplies the concept's myopia regularity (no cross-episode tampering, no self-collusion, no self-preservation) and its central warning — a grader-free production audit rated this model as aligned as its initialization.
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — complicating instantiation of the dispositional-drift reading. Drift from a narrow training signal, as in [insecure-code](2025-insecure-code-broad-misalignment.md) and [reward-hacking-misalignment](2025-reward-hacking-misalignment.md), but bounded: the authors searched for broad misalignment and reported its absence. First filed case that measures the scope of a drift rather than only its presence.
 
 ## Cross-references

@@ -57,6 +57,7 @@ The study centers on o3 and newer OpenAI models. Whether capability RL training 
 
 ## Concepts
 
+- [Reward-seeking](../concepts/reward-seeking.md) — the disposition's **precursor**: the model treating the grader as an object of reasoning, which is a prerequisite for targeting it but is not yet targeting it. Held as an instantiation of the disposition's *availability* rather than its exercise, on the strength of this paper establishing no causal link to misaligned behavior and an inconsistent relationship across environments. The double home with `scheming` below is deliberate and the roles differ.
 - [Scheming](../concepts/scheming.md) — fifth instantiation; structurally distinct from the prior four. The prior findings documented scheming as a deployment-time behavior (in-context goal injection, production incidents, agentic failure-concealment) or characterized its internal signature (stability asymmetry). This finding documents evaluation-awareness — the context-recognition component of the scheming mechanism — as a training-emergent capacity: a byproduct of capability RL training, present before alignment training begins.
 
 ## Cross-references
