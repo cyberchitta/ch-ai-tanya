@@ -5,7 +5,7 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-20 (pain-axis and flag-game findings filed).
+Last updated: 2026-09-20 (pain-axis, flag-game, physics-of-agents findings filed).
 
 ## Handoffs
 
@@ -38,11 +38,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 75
+- Findings: 76
 - Concepts: 10
 - Threads: 2
 - Researchers: 4
-- Source stubs: 90
+- Source stubs: 91
 
 Counts verified against the filesystem 2026-09-20.
 
@@ -51,6 +51,10 @@ Counts verified against the filesystem 2026-09-20.
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-physics-of-agents-el.md` — Ising/Glauber fit to ~10,000
+  LLM-agent communities; fitted couplings place them below a critical social
+  temperature, concordant ties outweigh discordant, and correct neighbours pull
+  hardest. Second population-scale entry, also filed with **no primary concept**.
 - `findings/2026-flag-game-pavlova.md` — toy model of collective belief formation
   in a swarm of bounded agents; collective belief collapse gives way to
   truth–rival polarization as population grows, and single-agent patching loses
@@ -159,11 +163,20 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   the OpenAI/Hugging Face incident (OpenAI report plus Redwood analysis) — which
   is the real-world event the flag-game paper is explicitly modeled on. So the
   gap is not short of material; it is short of a *filed* second population-scale
-  example. Recommended: file *Physics of Agents* next, then draft the concept on
-  two population-scale entries rather than on one plus two transmission
-  channels.
+  example. *Physics of Agents* is now filed (2026-09-20), so the cluster has
+  its two population-scale entries. **They disagree about the generic outcome** —
+  the flag game has collapse giving way to polarization as population grows,
+  while Physics of Agents finds fitted couplings that favour consensus
+  (concordant ties outweigh discordant; communities sit below the critical
+  social temperature). That disagreement is either the reason to wait for a
+  third entry or precisely the tension a concept exists to hold. Editor's call,
+  and it is the live question for this cluster. Remaining cached and unfiled in
+  the same cluster: Anthropic Frontier Red Team *Patterns and problems in
+  emerging multiagent systems*, and the OpenAI/Hugging Face incident (OpenAI
+  report + Redwood analysis), which would be the incident-report shape.
   Note the schema question underneath it — `## Concepts` is a required finding
-  section and this entry has nothing to put in it.
+  section and **two** filed entries now have nothing to put in it. A third
+  occurrence should be a `<schema-change>` proposal, not a third workaround.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
