@@ -15,6 +15,9 @@ session start alongside this file to recover the next move. The private
 cross-stream todo and schedule is `_notes/worklist.md` — read it at session
 start too.
 
+- Filing queue: `_notes/handoffs/filing-queue.md` — the next filing target and
+  why it was picked, plus the sequential-subagent recipe as it stands after the
+  2026-09-20 four-entry run.
 - Taste/editorial stream: `_notes/handoffs/taste.md` — next steps, open
   ledger, cross-cutting lessons, editor-only raw/ items. Likely next move:
   batch 3 promotions — the introspection concept + its cluster
