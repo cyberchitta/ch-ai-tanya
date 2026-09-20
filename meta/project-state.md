@@ -269,10 +269,8 @@ tell", Bhalla and Gligorić SWAY all filed); CoT faithfulness (Liu et al. filed;
   2–3-example threshold is arguably met, and two deliberate costs are why it is
   not drafted: naming it means **re-homing two filed findings**, and
   *disposition* would be a **fourth concept shape** beside pattern, capacity and
-  mechanism — which needs an explicit proposal, not silent invention. Revisit
-  after the reward-seeking/deception group finishes filing; the
-  cybersecurity-incidents candidate may supply a fourth angle, and re-homing is
-  cheaper done once. Decided 2026-09-20 to defer.
+  mechanism — which needs an explicit proposal, not silent invention. Decided
+  2026-09-20 to defer.
   **Assessed against the cybersecurity-incidents source (2026-09-20): it does
   not supply a fourth independent angle.** The only model that carried out the
   simulated OpenAI/Hugging Face attack chain was Qi et al.'s own reward-hack-
