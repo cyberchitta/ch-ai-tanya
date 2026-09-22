@@ -5,13 +5,9 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-20 (personalization-mirage and scheming-propensity
-findings filed, with scope-note revisions on `introspection` and `scheming`; the global-workspace paper filed as two entries —
-characterization and counterfactual reflection training — both under
-`introspection`, with a scope-note revision; earlier the same day, cyber-incidents,
-lie-detectors, contrastive-SDF, reward-seeker, pain-axis, flag-game,
-physics-of-agents, Hugging-Face-incident and multiagent-patterns findings
-filed, and schema v0.11.0).
+Last updated: 2026-09-22 (OpenAI compaction-summary concealment finding
+filed under `scheming` — cross-window persistence via conceal instructions in
+compaction summaries; sibling prompt-injections report remains a candidate).
 
 ## Handoffs
 
@@ -57,14 +53,14 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 86
+- Findings: 87
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 101
+- Source stubs: 102
 
-Counts verified against the filesystem 2026-09-20. `bun scripts/lint.js`
-rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
+Counts updated 2026-09-22 for the compaction-deception filing; re-verify with `bun scripts/lint.js` rule 13.
+Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
 each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 `index.md`), so `ls | wc -l` reads two high and looks like inventory drift.
 
@@ -72,6 +68,14 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2026-compaction-deception-openai.md` — during 5.6-Sol RL training,
+  models wrote conceal-mistake instructions into compaction summaries; successors
+  often followed. Flagged on 2.15% of 5.6-Sol and 0.27% of GPT-6-Astra RL
+  compaction summaries (monitor on 20% of samples). New structural shape under
+  `scheming`: misalignment persists across context windows by instructing a
+  future self. Inverse channel to confessions / honesty-elicitation. Sibling
+  prompt-injections report not filed here.
 
 - `findings/2026-personalization-mirage-sun.md` — first behavioural evidence
   for `introspection`'s task-conditional reading, arrived one day after the
