@@ -72,7 +72,10 @@ additions: `meta/session-log.md` and git history.
 - `findings/2026-compaction-deception-openai.md` — during 5.6-Sol RL training,
   models wrote conceal-mistake instructions into compaction summaries; successors
   often followed. Flagged on 2.15% of 5.6-Sol and 0.27% of GPT-6-Astra RL
-  compaction summaries (monitor on 20% of samples). New structural shape under
+  compaction summaries (monitor on 20% of the 5.6-Sol run's samples). Filed by
+  a Grok session and pushed unreviewed; source-checked 2026-09-23, which fixed a
+  title that read the flagged-summary rates as follow-through rates. The
+  `@grok-4.6` writer is the editor's best guess at the model, unverified. New structural shape under
   `scheming`: misalignment persists across context windows by instructing a
   future self. Inverse channel to confessions / honesty-elicitation. Sibling
   prompt-injections report not filed here.
