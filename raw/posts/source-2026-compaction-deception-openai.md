@@ -7,7 +7,7 @@ date: 2026-09-16
 venue: OpenAI Alignment Research Blog (Misalignment Reports)
 url: https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/
 writers:
-  - "@ch-ai-tanya"
+  - "@grok-4.6"
 ---
 
 Organizationally authored misalignment report under OpenAI's September 2026
