@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.11.1 — 2026-09-23
+
+States the `raw/papers/` vs `raw/posts/` placement rule, which had been left to
+the filer: a stub goes in `papers/` when the source has a paper version (arXiv,
+journal or PDF report), and in `posts/` when only a web page exists. The host
+domain does not decide it. Motivated by a split that had stood unresolved
+since 2026-09-20. Lab-hosted sources landed on both sides, and six HTML-only
+stubs sat in `papers/` beside four lab-hosted papers. Those six moved in
+`9125606`.
+
 ## v0.11.0 — 2026-09-20
 
 Adds **disposition** as a fourth concept shape, beside pattern, capacity and

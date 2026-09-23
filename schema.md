@@ -297,8 +297,8 @@ Required frontmatter (in addition to universal fields):
 
 ```
 raw/                      # Source material, never edited by AI
-  papers/
-  posts/
+  papers/                 # Sources with a paper version (arXiv, journal, PDF report)
+  posts/                  # Web-page-only sources, including lab research blogs
   journalism/             # News articles, popular press, informal reportage
   system-cards/
   transcripts/
@@ -319,6 +319,13 @@ meta/
 stubs when adding citations; the AI never edits existing source content.
 For sources where offline access matters, the stub can link to a
 locally-stored copy in the same folder.
+
+**`papers/` or `posts/`: whether a paper version exists, not the host.** A
+stub goes in `papers/` when the source has an arXiv, journal or PDF-report
+version, even if its canonical URL is a lab's web page. It goes in `posts/`
+when the web page is all there is, which includes lab research and alignment
+blogs. The test is checkable from the stub and the cache, and it doesn't
+depend on reading the page to judge its form.
 
 `wiki/` is where the AI does its work, under human review.
 
