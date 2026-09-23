@@ -57,7 +57,7 @@ to Active work below).
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 102
+- Source stubs: 103
 
 Counts updated 2026-09-22 for the compaction-deception filing; re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
