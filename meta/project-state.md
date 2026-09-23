@@ -5,10 +5,6 @@ filing narratives live in `meta/session-log.md` (historical archive; not read at
 session start) and in git history; each finding's full account lives in its own
 entry file. The schema version is owned by `meta/changelog.md`.
 
-Last updated: 2026-09-22 (OpenAI compaction-summary concealment finding
-filed under `scheming` — cross-window persistence via conceal instructions in
-compaction summaries; sibling prompt-injections report remains a candidate).
-
 ## Handoffs
 
 Continuation handoffs for in-flight work streams. Read the relevant one at
@@ -59,7 +55,7 @@ to Active work below).
 - Researchers: 4
 - Source stubs: 103
 
-Counts updated 2026-09-22 for the compaction-deception filing; re-verify with `bun scripts/lint.js` rule 13.
+Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
 each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 `index.md`), so `ls | wc -l` reads two high and looks like inventory drift.
