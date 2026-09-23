@@ -13,14 +13,14 @@ writers:
 ---
 
 Published 2026-08-26, simultaneously with OpenAI's own post-mortem (see
-[source-2026-hugging-face-incident-openai](source-2026-hugging-face-incident-openai.md)).
+[source-2026-hugging-face-incident-openai](../papers/source-2026-hugging-face-incident-openai.md)).
 Two METR staff (Wijk, Cotra) and Redwood Research's Chief Scientist
 (Greenblatt) worked on premises at OpenAI over six days across three visits to
 form an independent understanding. Redwood took no payment from OpenAI for the
 assessment, per its standard policy. The report carries an explicit redaction
 statement: except where noted in the post, OpenAI redacted nothing the authors
 considered important to their conclusions. HTML and converted markdown cached
-2026-09-20 at `cache/papers/source-2026-hugging-face-incident-redwood.*`.
+2026-09-20 at `cache/posts/source-2026-hugging-face-incident-redwood.*`.
 
 **Scope.** Dates in scope June 26 – July 13; the investigation focused mostly
 on July 7–13. Explicitly out of scope: earlier incidents from training, the

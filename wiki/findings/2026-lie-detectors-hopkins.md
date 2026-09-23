@@ -87,4 +87,4 @@ It also puts a ceiling under the wiki's honesty-intervention cluster from an une
 
 ## Sources
 
-- Jack Hopkins, Dipika Khullar, Rowan Wang, Fabien Roger, "Fine-Tuned Lie Detectors Failed to Generalize", Anthropic Alignment Science Blog, August 21, 2026 (research conducted through MATS and the Anthropic Fellows Program). [Source stub](../../raw/papers/source-2026-lie-detectors-hopkins.md) · [original](https://alignment.anthropic.com/2026/lie-detectors/)
+- Jack Hopkins, Dipika Khullar, Rowan Wang, Fabien Roger, "Fine-Tuned Lie Detectors Failed to Generalize", Anthropic Alignment Science Blog, August 21, 2026 (research conducted through MATS and the Anthropic Fellows Program). [Source stub](../../raw/posts/source-2026-lie-detectors-hopkins.md) · [original](https://alignment.anthropic.com/2026/lie-detectors/)

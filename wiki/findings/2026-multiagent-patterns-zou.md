@@ -88,4 +88,4 @@ The capability-orthogonality result cuts against the assumption that multi-agent
 
 ## Sources
 
-- [Zou, *Patterns and problems in emerging multiagent systems*, Anthropic Frontier Red Team, 2026](../../raw/papers/source-2026-multiagent-systems-zou.md)
+- [Zou, *Patterns and problems in emerging multiagent systems*, Anthropic Frontier Red Team, 2026](../../raw/posts/source-2026-multiagent-systems-zou.md)

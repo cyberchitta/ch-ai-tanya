@@ -13,7 +13,7 @@ writers:
 Anthropic Frontier Red Team, published 2026-08-13. Carolyn Zou is named as
 corresponding author; no other individual authors are listed. Landing page HTML
 and converted markdown cached 2026-09-20 at
-`cache/papers/source-2026-multiagent-systems-zou.*`. Note: several results are
+`cache/posts/source-2026-multiagent-systems-zou.*`. Note: several results are
 reported only in figures, so some quantities below are read from figure captions
 and alt text rather than body prose.
 

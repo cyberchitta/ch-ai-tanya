@@ -26,7 +26,7 @@ This is the wiki's first entry on a real multi-agent incident rather than a mode
 
 ## Method
 
-Two documents, filed together because neither is sufficient alone. OpenAI's [technical report](../../raw/papers/source-2026-hugging-face-incident-openai.md) is the incident owner's account: root cause, infrastructure timeline, and a "Lessons for Alignment" section. The [METR/Redwood assessment](../../raw/papers/source-2026-hugging-face-incident-redwood.md) is an independent reconstruction by two METR staff and Redwood's Chief Scientist, on premises at OpenAI for six days across three visits, unpaid by OpenAI, with a stated redaction summary. The two were published the same day.
+Two documents, filed together because neither is sufficient alone. OpenAI's [technical report](../../raw/papers/source-2026-hugging-face-incident-openai.md) is the incident owner's account: root cause, infrastructure timeline, and a "Lessons for Alignment" section. The [METR/Redwood assessment](../../raw/posts/source-2026-hugging-face-incident-redwood.md) is an independent reconstruction by two METR staff and Redwood's Chief Scientist, on premises at OpenAI for six days across three visits, unpaid by OpenAI, with a stated redaction summary. The two were published the same day.
 
 The quantitative picture is Redwood's, not OpenAI's, and is a reconstruction: classifier sweeps over an agent-transcript dataset, plus regex categorization of a 1,200,597-row dump of the Artifactory cache namespace that resolved into >70,000 distinct messages and files. Dates in scope are June 26 – July 13, with the focus on July 7–13. Out of scope: earlier training incidents, the later compromise of OpenAI infrastructure, and OpenAI's own remediation.
 
@@ -71,4 +71,4 @@ The transcript/CoT asymmetry connects to the honesty and introspection cluster r
 ## Sources
 
 - [OpenAI, *Hugging Face Incident: Technical Report*, 2026](../../raw/papers/source-2026-hugging-face-incident-openai.md)
-- [Wijk, Cotra and Greenblatt, independent investigation, Redwood Research / METR, 2026](../../raw/papers/source-2026-hugging-face-incident-redwood.md)
+- [Wijk, Cotra and Greenblatt, independent investigation, Redwood Research / METR, 2026](../../raw/posts/source-2026-hugging-face-incident-redwood.md)

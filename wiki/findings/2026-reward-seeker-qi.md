@@ -62,7 +62,7 @@ Finally it complicates the audit picture. [Metagaming](2026-metagaming-capabilit
 
 **Not filed as [scheming](../concepts/scheming.md).** Hacker-Opus presents as aligned to an auditor while being willing to act otherwise, which has the surface of the concept. But it is not decoupling its presentation from its state to deceive a principal — nothing is being concealed, and the audit simply does not offer the trigger. Recorded as adjacency rather than instantiation, on the same principal-directedness reading the editor confirmed for the [turf-war case](2026-multiagent-patterns-zou.md) on 2026-09-20.
 
-**Quantities read from chart labels.** The post's headline figures live in chart data labels rather than prose; see the [source stub](../../raw/papers/source-2026-reward-seeker-qi.md) for what was and was not recoverable. The honeypot per-category rates are not cited here because their label-to-value pairing is not reconstructible from the cached text. The 38% safety-bypass figure is the lower of two prompt framings; the other reaches 86%.
+**Quantities read from chart labels.** The post's headline figures live in chart data labels rather than prose; see the [source stub](../../raw/posts/source-2026-reward-seeker-qi.md) for what was and was not recoverable. The honeypot per-category rates are not cited here because their label-to-value pairing is not reconstructible from the cached text. The 38% safety-bypass figure is the lower of two prompt framings; the other reaches 86%.
 
 ## Concepts
 
@@ -78,4 +78,4 @@ Finally it complicates the audit picture. [Metagaming](2026-metagaming-capabilit
 
 ## Sources
 
-- Richard Qi, Benjamin Wright, Monte MacDiarmid, Evan Hubinger, "Training a Misaligned Reward Seeker", Anthropic Alignment Science Blog, August 2026. [Source stub](../../raw/papers/source-2026-reward-seeker-qi.md) · [original](https://alignment.anthropic.com/2026/reward-seeker/)
+- Richard Qi, Benjamin Wright, Monte MacDiarmid, Evan Hubinger, "Training a Misaligned Reward Seeker", Anthropic Alignment Science Blog, August 2026. [Source stub](../../raw/posts/source-2026-reward-seeker-qi.md) · [original](https://alignment.anthropic.com/2026/reward-seeker/)

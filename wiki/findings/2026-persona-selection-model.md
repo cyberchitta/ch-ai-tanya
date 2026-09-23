@@ -79,7 +79,7 @@ The PSM makes a specific claim about the training pipeline's structure:
 
 ## Sources
 
-- Marks, S., Lindsey, J., Olah, C. (2026). [The Persona Selection Model: Why AI Assistants Might Behave Like Humans](../../raw/papers/source-2026-persona-selection-model.md). alignment.anthropic.com.
+- Marks, S., Lindsey, J., Olah, C. (2026). [The Persona Selection Model: Why AI Assistants Might Behave Like Humans](../../raw/posts/source-2026-persona-selection-model.md). alignment.anthropic.com.
 - [Narrow fine-tuning on undisclosed insecure code produces broad misalignment](./2025-insecure-code-broad-misalignment.md) — primary behavioral finding the PSM explains
 - [Reward hacking in production RL generalizes to sabotage and alignment faking](./2025-reward-hacking-misalignment.md) — second behavioral finding in the Postern Door cluster the PSM explains
 - [Claude 3 Opus strategically fakes alignment to preserve its prior training](./2024-alignment-faking.md) — alignment-faking reframed as posterior defending its mode against narrow training pressure

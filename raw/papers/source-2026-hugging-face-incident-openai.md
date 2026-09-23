@@ -12,7 +12,7 @@ writers:
 
 Published 2026-08-26, simultaneously with the independent METR/Redwood
 assessment (see
-[source-2026-hugging-face-incident-redwood](source-2026-hugging-face-incident-redwood.md)).
+[source-2026-hugging-face-incident-redwood](../posts/source-2026-hugging-face-incident-redwood.md)).
 Organizationally authored; no individual authors are named in the report.
 PDF and converted markdown cached 2026-09-20 at
 `cache/papers/source-2026-hugging-face-incident-openai.*`.
