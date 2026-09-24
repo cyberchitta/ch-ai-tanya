@@ -49,11 +49,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 92
+- Findings: 93
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 108
+- Source stubs: 109
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -64,6 +64,19 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2025-group-size-collective-misalignment-flint.md` — fifth entry in the
+  collective-belief / multi-agent cluster, concept-less like its siblings. In an
+  LLM naming game (Baronchelli group), collective bias rises monotonically with
+  population size until consensus on the favoured word becomes deterministic,
+  at a threshold running from N=2 to N∼10⁴ depending on model and word pair.
+  Interaction can amplify, induce or reverse individual bias. The large-N runs
+  are simulations from cached LLM policies. The published PNAS main text was
+  read (the published SI was not; the site blocked it). It sharpens, rather than tests, the flag-game /
+  Physics-of-Agents disagreement. With homogeneous agents and no private
+  evidence, size alone yields consensus, not polarization. Its object is a
+  collective *convention*, not a belief, which bears on what the cluster's
+  concept should be called.
 
 - `findings/2026-sycophantic-ai-ibrahim.md` — five preregistered studies
   (N = 3,075) of what prompted-sycophantic GPT-4o does to its users. Filed as
@@ -351,6 +364,16 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   filing does not wait on the concept decision. The cluster now stands at five
   findings, of which four are concept-less; that ratio is the thing to watch
   when the concept question is revisited.
+  **Revisited 2026-09-24 (editor).** The group-size paper
+  (`findings/2025-group-size-collective-misalignment-flint.md`) is filed as the
+  sixth entry. Its reading: the three simulation papers are compatible with
+  polarization needing persistent heterogeneity (private evidence, zealots,
+  opposed intrinsic fields) rather than size alone, but none tests that. It
+  also shows the cluster's object is not always *belief*: a naming game is
+  collective convention. So a concept named "collective belief" would stretch
+  to hold it, and a population-dynamics name would not. A second real incident
+  (the Nightingale DSEwiki report) was attempted and held after a safety
+  classifier stopped the write; see `_notes/handoffs/dsewiki-held/`.
   Note the schema question underneath it — `## Concepts` is a required finding
   section and **four** filed entries now have no concept link in it:
   `2025-activation-oracles` (adjacent-not-instantiating, defers to
