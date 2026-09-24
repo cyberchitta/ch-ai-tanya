@@ -242,6 +242,12 @@ or stub — not the candidates summary, the actual source text.
   fall back to PDF if HTML is unavailable
 - **Blog posts and research pages:** fetch raw HTML, save as `.html`,
   then run markitdown to produce `.md`
+- **Journal articles:** prefer the publisher's HTML (use `s-fetch` if
+  the site blocks plain requests), or the PubMed Central full text when
+  the paper is open access (Europe PMC's `fullTextXML` endpoint does not
+  block). Look up the DOI in Crossref first: it confirms venue and date
+  and often links an open-access copy. Fall back to PDF only when
+  neither exists.
 - **PDFs:** download raw PDF, save as `.pdf`, then run markitdown to
   produce `.md`
 - **Bot-protected pages:** use the `s-fetch` skill to fetch; save
