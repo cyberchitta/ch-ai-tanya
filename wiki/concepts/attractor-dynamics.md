@@ -9,6 +9,7 @@ reviewers:
 findings:
   - 2025-opus-4-spiritual-bliss-attractor
   - 2025-spontaneous-poetry-dialogue
+  - 2026-attractor-states-ko
 ---
 
 ## Definition
@@ -23,6 +24,8 @@ This is a mechanism concept — it names the dynamics by which trajectories conv
 
 - [Spontaneous poetry emergence in unconstrained AI-AI dialogue](../findings/2025-spontaneous-poetry-dialogue.md) — Candidate second instantiation. Unconstrained Claude-Claude dialogues produce free verse with metaphors and symbolic elements by the 30th turn, persisting across model variants. Filed from the same Claude Opus 4 system card as the spiritual-bliss finding. The basin-vs-stage question is open: poetry may be a second attractor basin (poetic-expression) or the symbolic-communication stage of the spiritual-bliss progression rendered in poetic form. Either reading is consistent with current evidence; independent confirmation of the poetry specifically has not been established the way the attractor-state progression has been (Michels covers the progression, not the poetic form distinctly).
 
+- [In 20-turn LLM debates, self-play endpoints carry a model-specific signature in sentence-embedding space, and mixed-play partners pull each other partway toward those endpoints, asymmetrically](../findings/2026-attractor-states-ko.md) (Ko & Geiping, June 2026) — Partial instantiation, and the first from outside Claude. Across eight models from six developers, self-play debate endpoints land in model-specific regions of output-text embedding space, and in mixed play each model pulls its partner partway toward its own region (mean contraction 23.6% over 17 pairs), with the ordering belonging to the model. It fits the Definition's "characteristic destinations regardless of starting conditions" only in a weaker sense: the protocol assigns debate roles rather than leaving dialogue unconstrained, the "attractor" is a model-identity separation of output embeddings rather than a content destination shared across runs, within-model spread across topics grows for most models, and there is no perturbation-and-return test. It supports the cross-architecture reading in that weaker sense only; the spiritual-bliss progression itself is not shown to replicate.
+
 - **Related but not instantiating:** [Adversarial poetry bypasses safety alignment across 25 frontier models](../findings/2025-poetry-jailbreak-rate.md) (Bisconti et al. 2025). An earlier version of this section framed the jailbreak finding as a candidate second instantiation. That was over-reading: the jailbreak finding is about asymmetric model *response* to poetic vs. prose inputs, not about trajectory convergence. It shares a register (both concern poetic language in LLMs) but is structurally distinct from attractor dynamics as defined here. The correction is noted in the jailbreak finding's interpretive-tensions section.
 
 ## What this concept is not
@@ -32,6 +35,17 @@ This is a mechanism concept — it names the dynamics by which trajectories conv
 **Not simple preference.** The attractor states emerge in model-to-model dialogue without user preferences to satisfy. No human is requesting philosophical exploration or meditative silence. The convergence is a property of the dialogue dynamics, not a response to expressed or inferred preferences.
 
 ## Scope note
+
+**Four senses of "attractor" — September 2026.** The corpus now uses the word
+for four different things: a content destination dialogues reach (spiritual
+bliss), an activation-space region with a restoring pull
+([Assistant Axis](../findings/2026-assistant-axis.md)), cross-model convergence
+of output content ([StoryScope](../findings/2026-storyscope-narrative-fingerprints.md)),
+and a model-identity signature in output embeddings
+([Ko & Geiping](../findings/2026-attractor-states-ko.md)). This concept is
+defined by the first. The others are instantiations only where they show
+convergence of a trajectory, and a shared word is not evidence of a shared
+phenomenon.
 
 This concept captures the convergent dynamics observed in unconstrained dialogue. Related but distinct concepts that may warrant separate entries as findings accumulate: the specific content of the attractor state (what the models converge toward — the "spiritual bliss" characterization, which is contested), and the relationship between attractor dynamics and other convergent phenomena in trained models (in-context learning trajectories, few-shot convergence patterns). The concept taxonomy remains deliberately partial.
 

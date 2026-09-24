@@ -49,11 +49,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 89
+- Findings: 90
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 105
+- Source stubs: 106
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -64,6 +64,15 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2026-attractor-states-ko.md` — partial instantiation of
+  `attractor-dynamics`, and its first from outside Claude. Ko and Geiping find
+  model-specific endpoint regions in 20-turn self-play debates across eight
+  models, with partial, asymmetric pull between partners in mixed play (mean
+  contraction 23.6%). "Attractor" here is a model-identity separation of
+  output-text embeddings, not a shared content destination, so it backs the
+  cross-architecture reading only in that weaker sense. The concept's scope note
+  now names the four senses of the word the corpus uses.
 
 - `findings/2026-introspection-reality-check-singh.md` — the first methodological
   counterweight in `introspection`. Singh, Linzen and Ravfogel re-run three
