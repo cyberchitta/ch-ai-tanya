@@ -15,7 +15,7 @@ refs:
   - 2026-agentic-upward-deception
 status: draft
 writers:
-  - "@grok-4.6"
+  - "@grok-4.6"  # the editor's best guess at the filing model; unverified
   - "@claude-opus-5.5"
 ---
 

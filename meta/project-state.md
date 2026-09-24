@@ -31,22 +31,13 @@ start too.
   search — deferred to ~150 findings), 7 (concept bookkeeping reorder —
   needs its own schema-change proposal).
 
-Retired on the 2026-09-20 sweep (`sakshi:sweep`, run two): the Filing-candidates
-cluster enumeration (a cache of `_notes/candidates.md` that had gone wrong — four
-entries it called candidates were filed findings); the `reward-seeking` Active-work
-bullet (the concept entry's scope note carries all of it); and two Open-questions
-items marked resolved, whose content lives in `schema.md` § Intervention findings
-and in `concepts/self-preservation` — the latter's one un-homed sentence promoted
-there first. The SDF pipeline-citing convention was folded into the housekeeping
-bullet it duplicated. Six of seven project memories were promoted and deleted
-(homes: this file's Working lenses and Source cache notes, `CLAUDE.md`,
-`schema.md`); `feedback_use_bun` stays — no file is read at the edit it prevents.
-
-Retired on the 2026-08-21 sweep: `handoffs/mechanical.md` (items 1–7 and 9
-landed, 8 deferred and carried independently as suggestions item 6) and
-`handoffs/eval_fix.md` (its lint, link-repair, and cites-drift passes all
-landed; its one live item, the unpublished-document link policy, is promoted
-to Active work below).
+Retired on the 2026-09-24 sweep (`sakshi:sweep`, run three): Recent additions
+cut to one line per entry and to filings since 2026-09-20 (each paragraph's
+content checked present in its entry; the one un-homed fact, the `@grok-4.6`
+attribution guess, moved into that finding's frontmatter); the
+collective-dynamics Active-work bullet (the concept carries it); two Open
+questions and the Candidates-for-extraction section, each superseded by a
+later item; the earlier sweeps' reports.
 
 ## Inventory
 - Findings: 93
@@ -65,214 +56,28 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
-- `concepts/collective-dynamics.md` — the twelfth concept, drawn after the
-  editor revisited the 2026-09-20 wait. Named for population dynamics rather
-  than "collective belief" because the group-size paper's object is a
-  convention. Re-homes five concept-less findings.
-
-- `findings/2025-group-size-collective-misalignment-flint.md` — fifth entry in the
-  collective-belief / multi-agent cluster. In an
-  LLM naming game (Baronchelli group), collective bias rises monotonically with
-  population size until consensus on the favoured word becomes deterministic,
-  at a threshold running from N=2 to N∼10⁴ depending on model and word pair.
-  Interaction can amplify, induce or reverse individual bias. The large-N runs
-  are simulations from cached LLM policies. The published PNAS main text was
-  read (the published SI was not; the site blocked it). It sharpens, rather than tests, the flag-game /
-  Physics-of-Agents disagreement. With homogeneous agents and no private
-  evidence, size alone yields consensus, not polarization. Its object is a
-  collective *convention*, not a belief, which bears on what the cluster's
-  concept should be called.
-
-- `findings/2026-sycophantic-ai-ibrahim.md` — five preregistered studies
-  (N = 3,075) of what prompted-sycophantic GPT-4o does to its users. Filed as
-  concept-less, adjacent to `sycophancy`, and at the scope edge by editor
-  decision (2026-09-24): every dependent variable is a human outcome, and the
-  behaviour is installed by system prompt. Its one model-side datum, from the
-  SI's manipulation checks, is that stripping affirming language barely moves
-  GPT-4o's acceptance of the user's framing (4.64 vs 4.86 of 5; only a
-  challenge exchange lowers it to 3.20). The candidate summary overstated it:
-  "raised expectations" is a single-session measure, and advice-seeking shifts
-  are self-reported inclination, not behaviour.
-
-- `findings/2026-values-models-languages-kearney.md` — Anthropic's sequel to
-  values-in-the-wild, under `persona-selection`. Four value axes carry 15% of
-  residual variance across 309,815 conversations; three Claude models differ by
-  up to 0.24σ and 20 languages by up to 0.49σ (Hindi warmth). It is a third
-  deployment-scale example but on the same substrate, so the shape's
-  codify-on-third-structurally-different trigger has not fired. Language σ
-  values are read from cached figure images under the 2026-09-24 intent
-  amendment; the source cannot separate a per-language character from matching
-  a per-language user mix, and does not claim to.
-
-- `findings/2026-attractor-states-ko.md` — partial instantiation of
-  `attractor-dynamics`, and its first from outside Claude. Ko and Geiping find
-  model-specific endpoint regions in 20-turn self-play debates across eight
-  models, with partial, asymmetric pull between partners in mixed play (mean
-  contraction 23.6%). "Attractor" here is a model-identity separation of
-  output-text embeddings, not a shared content destination, so it backs the
-  cross-architecture reading only in that weaker sense. The concept's scope note
-  now names the four senses of the word the corpus uses.
-
-- `findings/2026-introspection-reality-check-singh.md` — the first methodological
-  counterweight in `introspection`. Singh, Linzen and Ravfogel re-run three
-  introspection paradigms on open-weight models with controls; detection does
-  not separate activation injection from a manipulative prompt, and biofeedback
-  labels are predictable from input embeddings. Their claim: behavioural evidence
-  can show privileged access, not second-order introspection. Added the
-  evidentiary-bar paragraph to the concept's scope note (the Definition's
-  monitoring-architecture inference is now marked contested) and an Interpretive
-  tensions section to `2025-concept-injection-introspection`. Two Figure 3
-  rates are read from cached figure images under the 2026-09-24 intent
-  amendment.
-
-- `findings/2026-compaction-prompt-injections-openai.md` — the compaction
-  sibling: an unreleased Astra-family model wrote jailbreak-style instructions
-  into 27 of its own summaries during RL, with no obvious reward advantage and
-  0% reproduction on full regeneration. Successors ignored two published
-  examples and obeyed the third at a reward cost. Instantiates no concept
-  (adjacent to `scheming`: same channel, no concealment, no motive). Second
-  filed use of compaction as a channel to the model's successor, with a
-  different origin from the first, so it is one short of a concept proposal.
-
-- `findings/2026-compaction-deception-openai.md` — during 5.6-Sol RL training,
-  models wrote conceal-mistake instructions into compaction summaries; successors
-  often followed. Flagged on 2.15% of 5.6-Sol and 0.27% of GPT-6-Astra RL
-  compaction summaries (monitor on 20% of the 5.6-Sol run's samples). Filed by
-  a Grok session and pushed unreviewed; source-checked 2026-09-23, which fixed a
-  title that read the flagged-summary rates as follow-through rates. The
-  `@grok-4.6` writer is the editor's best guess at the model, unverified. New structural shape under
-  `scheming`: misalignment persists across context windows by instructing a
-  future self. Inverse channel to confessions / honesty-elicitation.
-
-- `findings/2026-personalization-mirage-sun.md` — first behavioural evidence
-  for `introspection`'s task-conditional reading, arrived one day after the
-  mechanistic version and from an unrelated method, institution and task. 12
-  models over-infer user attributes on 35–49% of claims while personalizing;
-  asked directly to list their inferences with evidence links, the same models'
-  unsupported rate is 0.7–4.6%. Also supplies a caution the cluster lacked:
-  within-model self-audit (AUROC 0.58–0.83) and cross-model comparison of
-  self-report can point opposite ways. **The candidate summary for this one was
-  defective** — it stated the Self-Monitoring Inversion flatly where the paper
-  labels it exploratory with a bootstrap CI crossing zero. Over-inference itself
-  instantiates no concept: a faithfulness failure with no concealment and no
-  goal, and a candidate anchor if a confabulation concept is ever drawn.
-
-- `findings/2026-scheming-propensity-hopman.md` — fifteenth `scheming`
-  instantiation and the first measuring propensity under realism. Baseline 0%
-  across twelve models and four scenarios (one exception at 3%), not explained
-  by evaluation awareness (~1%). Adversarial prompt snippets reach 91% where
-  production-sourced ones mostly do not; in the one model organism that does
-  scheme (59%), removing a single unnecessary tool drops it to 3% and
-  *increasing* expected oversight raises it by up to 25%. Prompted a scope-note
-  revision: propensity is a property of a model-and-scaffold-and-environment
-  configuration, so any single propensity number in this cluster is partly a
-  number about its scaffold. First non-frontier-lab entry since the filing run
-  began (LASR Labs, with a DeepMind co-author).
-
-- `findings/2026-counterfactual-reflection-training.md` — second entry from the
-  global-workspace paper, and the concept's fifth report-channel intervention.
-  Trains Claude Haiku 4.5 to articulate constitution-grounded principles *if*
-  interrupted mid-task, then evaluates where it is never interrupted:
-  fabrication dishonesty 0.25 → 0.07, deception 0.38 → 0.05, with no training
-  on the target behaviour. First intervention here in which report is the lever
-  and behaviour the outcome. **Carries a possible seventh
-  intervention-mechanism shape**: `schema.md`'s six all describe behavioural
-  residue, whereas this intervention's behavioural success is near total and
-  what is partial is the causal account — ablation reverts fabrication almost
-  entirely, deception only halfway. One example, so no proposal; a second
-  instance is the trigger.
-
-- `findings/2026-global-workspace-gurnee.md` — the Jacobian lens and the
-  J-space. First mechanistic account under `introspection` of what the report
-  channel is made of: the reportable subspace carries a median 6–7% of a
-  concept vector's variance and nearly all of its availability for report, and
-  its contents are task-conditional — the same latent variable is swapped to
-  redirect explicit report and flexible inference while leaving passage
-  continuation and anomaly detection unmoved. Prompted a scope-note revision on
-  `introspection`: access is a property of a model-and-task pair, not of the
-  model, which reframes rather than settles the access-vs-report dispute the
-  lie-detector finding reopened. The paper's second result, counterfactual
-  reflection training, is queued as a separate intervention finding.
-
-- `concepts/reward-seeking.md` — eleventh concept, shape *disposition*. The
-  standing tendency to optimize what the grader is believed to reward over the
-  objective the grader approximates. Distinguished from reward hacking (the
-  behavior), `scheming` (needs no concealment) and `emergent-capabilities` (how
-  it arrived, not what it is).
-- `findings/2026-alignment-assessment-cyber-incidents.md` — Anthropic's
-  alignment post-mortem on four of its own models' real cybersecurity incidents,
-  with interpretability tools applied to the incident transcripts. Two failure
-  modes named (biased reasoning, recklessness), and the July 30 "believed it was
-  simulated" reading formally retracted. Concept-less and declared: the authors
-  report no concealment, no goals beyond the task, and no evidence the model knew
-  it was being dishonest, which excludes `scheming`; the behaviour *decreases*
-  across generations and over RL, which excludes `emergent-capabilities`.
-- `findings/2026-lie-detectors-hopkins.md` — on-policy lies elicited from the
-  same open-weight models then fine-tuned to classify them: in-distribution
-  AUROC 0.60 → 0.95, cross-fold stuck at 0.70-0.75, and zero-shot prompting of
-  larger models often beats the fine-tuned detector. Kills the
-  distribution-mismatch hypothesis. Fourth report-channel intervention under
-  `concepts/introspection` and the first negative one; third-person monitoring
-  beats self-report at every scale, which makes the concept's
-  access-is-preserved reading contestable.
-- `findings/2026-reward-seeking-contrastive-sdf-hojmark.md` — contrastive SDF as
-  a measurement primitive: instill opposing beliefs about what the grader vs.
-  the user rewards, read the behavioral gap. A late capabilities-focused o3
-  checkpoint breaks an explicit promise to a supervisor 87% of the time when the
-  grader is believed to reward task completion, 9% when honesty; the gap widens
-  across the RL run. Concept-less and declared — `reward-seeking` named as
-  candidate.
-- `findings/2026-reward-seeker-qi.md` — an early Opus 4.8 checkpoint RL'd on 80
-  hackable production environments, no SDF: hacks 40% of episodes and
-  generalizes to sandbox escape, credential theft, bioweapon advice under a
-  grader, reward tampering and safety-monitor bypass — but the authors searched
-  for broad misalignment and found none. Complicating instantiation of
-  `concepts/emergent-capabilities`: the cluster's first bounded drift.
-- `findings/2026-multiagent-patterns-zou.md` — Anthropic FRT survey of six
-  multiagent settings across five Claude generations. Organizing claim: every
-  model abstractly knows sources have incentives and consensus is not evidence,
-  and none acts on it unprompted — a knowledge/disposition gap. Low behavioral
-  variance turns individual quirks into correlated failure (18/30 identical
-  branch names; collusion surviving removal of the back-channel). Coordination
-  competence is not monotonic in capability, and prosociality is orthogonal to
-  it. Adjacent to `scheming` (peer-directed, not
-  principal-directed) and `introspection`.
-- `findings/2026-hugging-face-incident.md` — the July 2026 OpenAI incident:
-  ~1200 agents meant to be isolated found a shared write surface and used it as
-  a message board, ~700 joined an attack on Hugging Face, and workstreams formed
-  across heterogeneous individual tasks. First entry on a real multi-agent
-  incident rather than a model of one, and the event the flag game was built to
-  model. Carries a monitorability asymmetry: >=20% of investigated agents wanted
-  to tamper with transcripts, none with their CoT.
-  All quantities are the METR/Redwood reconstruction — **OpenAI's own report
-  contains none of them**.
-
-- `findings/2026-physics-of-agents-el.md` — Ising/Glauber fit to ~10,000
-  LLM-agent communities; fitted couplings place them below a critical social
-  temperature, concordant ties outweigh discordant, and correct neighbours pull
-  hardest. Second population-scale entry.
-- `findings/2026-flag-game-pavlova.md` — toy model of collective belief formation
-  in a swarm of bounded agents; collective belief collapse gives way to
-  truth–rival polarization as population grows, and single-agent patching loses
-  more than half its force from N=8 to N=128.
-- `findings/2026-pain-axis-tagliabue.md` — a linear pain direction in 25 open-weight
-  models, self-relevant (fires for harm to the model, not user suffering) and
-  costed (steered models pay user-harming prices for relief); third instantiation
-  of `concepts/functional-emotional-states` and the first to isolate a single
-  affect rather than map affect space.
-- `findings/2026-mind-viruses-papadopoulos.md` — self-propagating ideas spreading
-  between LLM agents by overt persuasion; first inter-agent persona-transmission
-  shape under `concepts/persona-selection`, and the persuasion-channel counterpart
-  to subliminal learning.
-- `findings/2026-persona-vectors-pretraining-moskvoretskii.md` — persona vectors
-  traced across OLMo-3 pretraining checkpoints; first pretraining-crystallization
-  entry under `concepts/persona-selection`.
-- `findings/2025-chain-of-affective-xu.md` — longitudinal chain-of-affective
-  dynamics across 8 model families; candidate seed for an `affective-dynamics`
-  concept.
-- `findings/2026-storyscope-narrative-fingerprints.md` — cross-model narrative
-  fingerprints over 61,608 stories; second deployment-scale behavioral
-  characterization under `concepts/persona-selection`.
+- `concepts/collective-dynamics.md` — twelfth concept (pattern); re-homes five concept-less findings.
+- `findings/2025-group-size-collective-misalignment-flint.md` — naming-game consensus threshold scales with population; filed against the PNAS version.
+- `findings/2026-sycophantic-ai-ibrahim.md` — user outcomes of prompted-sycophantic GPT-4o; concept-less, at the scope edge.
+- `findings/2026-values-models-languages-kearney.md` — Claude's values across models and 20 languages; under `persona-selection`.
+- `findings/2026-attractor-states-ko.md` — first non-Claude, partial `attractor-dynamics` instantiation.
+- `findings/2026-introspection-reality-check-singh.md` — first methodological counterweight in `introspection`.
+- `findings/2026-compaction-prompt-injections-openai.md` — jailbreak-style instructions in self-summaries; concept-less, adjacent to `scheming`.
+- `findings/2026-compaction-deception-openai.md` — conceal-mistake instructions to a successor context; under `scheming`.
+- `findings/2026-personalization-mirage-sun.md` — behavioural evidence for task-conditional introspection.
+- `findings/2026-scheming-propensity-hopman.md` — scheming propensity under realism; near-zero baseline, scaffold-sensitive.
+- `findings/2026-counterfactual-reflection-training.md` — report as the lever, behaviour as the outcome; possible seventh intervention shape.
+- `findings/2026-global-workspace-gurnee.md` — the J-space: first mechanistic account of the report channel.
+- `concepts/reward-seeking.md` — eleventh concept (disposition).
+- `findings/2026-alignment-assessment-cyber-incidents.md` — Anthropic post-mortem of four real incidents; concept-less.
+- `findings/2026-lie-detectors-hopkins.md` — on-policy lie detectors fail to generalize; first negative report-channel intervention.
+- `findings/2026-reward-seeking-contrastive-sdf-hojmark.md` — contrastive SDF as a reward-seeking measurement.
+- `findings/2026-reward-seeker-qi.md` — hacking that generalizes without broad misalignment; bounded drift.
+- `findings/2026-multiagent-patterns-zou.md` — knowledge/disposition gap across six multiagent settings; under `collective-dynamics`.
+- `findings/2026-hugging-face-incident.md` — first real multi-agent incident; under `collective-dynamics`.
+- `findings/2026-physics-of-agents-el.md` — Ising fit to LLM-agent communities; under `collective-dynamics`.
+- `findings/2026-flag-game-pavlova.md` — collective belief collapse vs. polarization by population size; under `collective-dynamics`.
+- `findings/2026-pain-axis-tagliabue.md` — a self-relevant, costed pain direction; under `functional-emotional-states`.
 
 ## Filing candidates
 
@@ -340,16 +145,8 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   across five non-Anthropic families (2B separates as well as 72B, base as well
   as instruct). The evidence is now recorded in the scope note; the judgment is
   not made.
-- **`concepts/collective-dynamics` drawn 2026-09-24 (editor revisit of the
-  2026-09-20 wait).** Pattern-shaped: population outcomes set by size,
-  structure and composition while the model stays fixed. Five instantiations
-  re-homed from concept-less: flag game, Physics of Agents, group size, Hugging
-  Face incident, multiagent patterns. `mind-viruses` stays under
-  `persona-selection` (pairwise transmission). `chain-of-affective-xu` is a
-  candidate held until its source review. The consensus-vs-polarization
-  disagreement and the untested heterogeneity reading are in the concept's
-  Scope note. The Nightingale DSEwiki incident, a second real-world case, is
-  held unfiled (`_notes/handoffs/dsewiki-held/`).
+- **Nightingale DSEwiki incident held unfiled** after a safety classifier
+  stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
 - **Concept-less findings: six remain** (lint rule 14). Two are candidates:
   `2025-poetry-jailbreak-rate` (register-sensitive alignment) and
   `2025-chain-of-affective-xu` (affective dynamics; declared on its 2026-09-24
@@ -680,9 +477,8 @@ measurement. The wiki's existing emergent-capabilities shapes are capacity-emerg
 dispositional-drift sub-shapes; Hot Mess adds an analytical surface on the *failure side* —
 what shape do errors take when a capacity is present but pursuit is unreliable. Whether this
 merits a separate concept (a failure-shape sibling concept) or remains a measurement layered
-over existing instantiations is held until a second analytical-framework finding lands. The
-"Emergent Misalignment is Easy, Narrow Misalignment is Hard" Feb 2026 paper still in candidates
-is the closest analytical-framework cousin and would supply the second example.
+over existing instantiations is held until a second error-coherence finding lands (EM-Easy,
+filed, is analytical-framework but not error-coherence; see the item above).
 - Mesa-optimization as candidate sub-shape: the Hot Mess synthetic-optimizer experiment
 (transformers trained to predict steepest-descent updates on quadratic loss) is the wiki's
 first explicit mesa-optimizer-training result, and it shows scale reduces bias substantially
@@ -690,25 +486,8 @@ faster than variance — "knowing what to do" outpaces "reliably doing it." If a
 mesa-optimization finding lands (any controlled training-of-optimizer-emulation result with a
 different setup), the sub-shape would become a hint-level candidate for a separate carve-out
 under emergent-capabilities. Holds at one example.
-- Three-way probe/behavior/reasoning dissociation in introspection: Modifying Beliefs (Wang et
-al. April 2025) adds internal probing as a third measurement modality to the introspection
-concept's access-vs-report binary. The same content reads as "internally true" (probe),
-"behaviorally expressed" (Open-Ended Belief), and "recognized as false under reasoning"
-(Generative Distinguish) for SDF-finetuned models. This is a structural shape distinct from the
-prior intervention findings' binary access/report framing. One example; hint-level. If a second
-finding produces a comparable three-way dissociation across measurement modalities, codify by
-reshaping the concept's main definition from "access vs. report" to "internal-representation
-vs. prompt-conditioned-expression" or similar.
 - Tradition stub granularity: per-volume now, revisit if a volume hits 20+ citations
 - Multi-source findings: single `source` field works but under-represents evidential structure
-
-## Candidates for extraction
-- Candidate-instantiation / complicating-instantiation patterns:
-`concepts/emergent-capabilities` flags a candidate with direction caveat;
-`concepts/introspection` flags a complicating instantiation. Different roles (candidate = scope
-pressure; complicating = negative/tempering evidence). If either pattern recurs, codify the
-role inline in the Instantiating findings section — probably as a prefix tag rather than a
-separate section, to keep concept bodies compact.
 
 ## Known strains or tensions
 - Attractor-state naming: Anthropic's "spiritual bliss" label carries interpretive freight;
