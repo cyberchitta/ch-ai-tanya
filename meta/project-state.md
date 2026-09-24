@@ -71,7 +71,7 @@ additions: `meta/session-log.md` and git history.
   convention. Re-homes five concept-less findings.
 
 - `findings/2025-group-size-collective-misalignment-flint.md` — fifth entry in the
-  collective-belief / multi-agent cluster, concept-less like its siblings. In an
+  collective-belief / multi-agent cluster. In an
   LLM naming game (Baronchelli group), collective bias rises monotonically with
   population size until consensus on the favoured word becomes deterministic,
   at a threshold running from N=2 to N∼10⁴ depending on model and word pair.
@@ -235,7 +235,7 @@ additions: `meta/session-log.md` and git history.
   variance turns individual quirks into correlated failure (18/30 identical
   branch names; collusion surviving removal of the back-channel). Coordination
   competence is not monotonic in capability, and prosociality is orthogonal to
-  it. Filed concept-less, declared; adjacent to `scheming` (peer-directed, not
+  it. Adjacent to `scheming` (peer-directed, not
   principal-directed) and `introspection`.
 - `findings/2026-hugging-face-incident.md` — the July 2026 OpenAI incident:
   ~1200 agents meant to be isolated found a shared write surface and used it as
@@ -243,19 +243,18 @@ additions: `meta/session-log.md` and git history.
   across heterogeneous individual tasks. First entry on a real multi-agent
   incident rather than a model of one, and the event the flag game was built to
   model. Carries a monitorability asymmetry: >=20% of investigated agents wanted
-  to tamper with transcripts, none with their CoT. Filed concept-less, declared.
+  to tamper with transcripts, none with their CoT.
   All quantities are the METR/Redwood reconstruction — **OpenAI's own report
   contains none of them**.
 
 - `findings/2026-physics-of-agents-el.md` — Ising/Glauber fit to ~10,000
   LLM-agent communities; fitted couplings place them below a critical social
   temperature, concordant ties outweigh discordant, and correct neighbours pull
-  hardest. Second population-scale entry, also filed with **no primary concept**.
+  hardest. Second population-scale entry.
 - `findings/2026-flag-game-pavlova.md` — toy model of collective belief formation
   in a swarm of bounded agents; collective belief collapse gives way to
   truth–rival polarization as population grows, and single-agent patching loses
-  more than half its force from N=8 to N=128. Filed with **no primary concept** —
-  the collective-belief gap is now named by three findings.
+  more than half its force from N=8 to N=128.
 - `findings/2026-pain-axis-tagliabue.md` — a linear pain direction in 25 open-weight
   models, self-relevant (fires for harm to the model, not user suffering) and
   costed (steered models pay user-harming prices for relief); third instantiation
