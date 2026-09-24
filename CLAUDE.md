@@ -102,7 +102,7 @@ is the citation floor, `_notes/` is scaffolding.
 ## Working conventions
 
 **File naming.** Wiki entries are typed by folder — filenames don't
-repeat the type. Findings include a date: `YYYY-MM-shortname.md`.
+repeat the type. Findings include a year: `YYYY-shortname.md`.
 Source stubs in `raw/` subfolders carry a `source-` prefix to
 distinguish them from any locally-stored full copies.
 
