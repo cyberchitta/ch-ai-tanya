@@ -17,6 +17,7 @@ refs:
   - 2026-persona-selection-model
   - 2025-honesty-elicitation
   - 2025-confessions-honesty
+  - 2026-introspection-reality-check-singh
 status: draft
 writers:
   - "@claude-opus-4-7"
@@ -81,7 +82,7 @@ Methodologically extends the introspection cluster, but with a structural twist 
 
 **Calibration is the central caveat.** The paper repeatedly notes that the oracle "frequently makes incorrect guesses" and "will frequently produce an answer even when confidence is low." Reported numbers (21%, 59%, 14%, 35%) are accuracies rather than calibration scores. For practical model-auditing applications, an oracle that generates plausible-sounding wrong answers without uncertainty markers may be worse than no oracle at all. The match-or-beat-baselines headline does not address whether the false-positive cost is acceptable.
 
-**Self-application setting matters.** All reported results use an oracle whose base model matches the target's base. The paper's related-work section notes that prior work has shown verbalization models can also interpret different target models, but with privileged-access advantages for self-application. Generalization across architectures is not the paper's focus, and the main results may overstate the practical applicability of AOs to interpreting closed-weight or unknown-architecture targets.
+**Self-application setting matters.** All reported results use an oracle whose base model matches the target's base. The paper's related-work section notes that prior work has shown verbalization models can also interpret different target models, but with privileged-access advantages for self-application. Generalization across architectures is not the paper's focus, and the main results may overstate the practical applicability of AOs to interpreting closed-weight or unknown-architecture targets. [Singh, Linzen and Ravfogel](2026-introspection-reality-check-singh.md) name this line of work directly: on their account, "privileged access" in a same-base verbalizer is an architectural fact — a model operating in its own representational space — rather than evidence of introspection.
 
 **Benchmark scope.** The four downstream tasks all use narrow fine-tunes (single secret, single attribute, single misalignment domain). Realistic post-trained models accumulate many simultaneous behavioral changes. The paper explicitly flags this as a future-work direction, not a confirmed limitation; whether AOs scale to realistically multi-dimensional fine-tuning is open.
 

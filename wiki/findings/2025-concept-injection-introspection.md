@@ -19,6 +19,7 @@ cites:
   - source-2026-witness-ai-essay
 refs:
   - 2025-biology-of-a-large-language-model
+  - 2026-introspection-reality-check-singh
 status: working
 writers:
   - "@claude-opus-4.6"
@@ -50,6 +51,21 @@ The model was then asked to report on its internal state. Detection was scored b
 This is among the first empirical demonstrations that a language model can access its own internal representations as objects of report, not merely as drivers of output. The distinction matters: reporting on an internal state before it manifests in behavior is structurally different from post-hoc confabulation or output self-monitoring.
 
 Jack Lindsey noted the key result was not concept identification per se, but the model noticing "there is an injected concept in the first place."
+
+## Interpretive tensions
+
+**Detection is compatible with anomaly detection.**
+[Singh, Linzen and Ravfogel](2026-introspection-reality-check-singh.md) argue that noticing an
+injected concept needs only a first-order signal that something is off, not a
+process that reads internal state as content, and that behavioural evidence of
+this kind can establish privileged access but not second-order introspection. In
+open-weight models, their three-way control (injection vs. the same concept
+delivered through a manipulative prompt vs. neither) shows detection that does
+not distinguish the two sources. Two caveats cut the other way: Claude was not
+tested, and their control is a different discrimination from this paper's
+thought-versus-transcription test. The sentence most exposed is the one under
+Why it matters that detection before output makes this structurally different
+from output self-monitoring.
 
 ## Concepts
 

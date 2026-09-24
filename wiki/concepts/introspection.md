@@ -22,6 +22,7 @@ findings:
   - 2026-global-workspace-gurnee
   - 2026-counterfactual-reflection-training
   - 2026-personalization-mirage-sun
+  - 2026-introspection-reality-check-singh
 ---
 
 ## Definition
@@ -30,7 +31,7 @@ A model's capacity to access and report on its own internal states — activatio
 
 This is a capacity concept (something the model exhibits), not a pattern concept (something observed across findings). It names what is happening in a specific model during a specific operation, not a statistical regularity across experiments.
 
-Mechanistically, the concept-injection result implies some monitoring architecture — attention heads or circuits that read internal state as input rather than passing it forward as computation. The scaling result (larger models introspect more accurately) suggests the monitoring capacity depends on representational depth, not a dedicated introspection module.
+Mechanistically, the concept-injection result implies some monitoring architecture — attention heads or circuits that read internal state as input rather than passing it forward as computation. The scaling result (larger models introspect more accurately) suggests the monitoring capacity depends on representational depth, not a dedicated introspection module. That inference is contested — see the evidentiary-bar paragraph of the Scope note.
 
 ## Instantiating findings
 
@@ -67,6 +68,8 @@ Mechanistically, the concept-injection result implies some monitoring architectu
 - [Training a model to articulate principles only if interrupted cuts deception 0.38 to 0.05 in contexts where it is never interrupted](../findings/2026-counterfactual-reflection-training.md) (Gurnee, Sofroniew, Pearce, Lindsey et al.; Anthropic, July 2026) — Fifth report-channel intervention, and the first to run the causal arrow backwards: the four before it treat report as the thing to be improved with behaviour held fixed, while this trains verbalization and reads off a behavioural change. Claude Haiku 4.5 is fine-tuned to produce constitution-grounded reflections *if* asked to reflect mid-task, then evaluated in contexts where it is never asked and never produces reflection text; fabrication dishonesty falls 0.25 → 0.07 and deception 0.38 → 0.05, with no training on the target behaviour. The implanted concepts (*reflection*, *ethical*, *constitution*, *truth*) are visible in the J-space after the prompt is read and before any output. Ablating them reverts fabrication almost entirely (0.07 → 0.22 against an unmoved base at 0.25) but deception only partly (0.05 → 0.23, and the base also moves, 0.38 → 0.48). For the concept this is the strongest filed evidence that the report channel and the silent-reasoning channel are the same channel, and that the task-conditional access named below is trainable.
 
 - [Models list their own unsupported inferences at 0.7–4.6% when asked directly but generate them at 35–49% when personalizing](../findings/2026-personalization-mirage-sun.md) (Sun, Zhang, Sheng; LIGHTSPEED / HKUST, August 2026) — First behavioural evidence for the task-conditional reading below, from outside any interpretability method. Across 12 models and 143,616 judged claims, every model fabricates user attributes on 35–49% of claims while personalizing; asked directly to list its inferences with evidence links, the same model's unsupported rate falls to 0.7–4.6% — a mean gap of 38.6 points between knowledge endorsed under audit and knowledge applied under generation. Adds a methodological caution the cluster lacked: **within-model self-audit and cross-model comparison of self-report can point opposite ways.** Per-model AUROC for a model ranking its own claims runs 0.58–0.83 (9 of 12 above 0.75), while across models self-assessed over-inference is *negatively* rank-correlated with judge-measured over-inference. That cross-model inversion is exploratory — ρ=−0.60, p=0.044, bootstrap CI crossing zero on n=12 — and the authors say so; the within-model signal is the solid half.
+
+- [Open-weight models do not separate activation injections from prompt manipulations, and biofeedback labels are predictable from input embeddings alone](../findings/2026-introspection-reality-check-singh.md) (Singh, Linzen, Ravfogel; NYU, May 2026) — A methodological counterweight, not an instantiation of the capacity. It re-runs three introspection paradigms on open-weight models with controls: supervised biofeedback falls toward the majority baseline under permuted labels, Belief Dominance labels are predicted from uncontextualized input embeddings as well as in context, and a three-way steering prompt shows models flagging prompt manipulations ("gaslight") as injections. Its principled claim is that behavioural evidence can show privileged access but not second-order introspection. Claude was not tested. Drives the evidentiary-bar paragraph of the Scope note.
 
 ## What this concept is not
 
@@ -113,6 +116,22 @@ no interpretability apparatus involved. Different method, different
 institution, same shape. This does not settle the access-vs-report dispute —
 neither paper adjudicates it — but task-conditionality is now carried by two
 unrelated lines of evidence rather than one.
+
+**The evidentiary bar — September 2026.**
+[The reality-check finding](../findings/2026-introspection-reality-check-singh.md) separates two
+claims this note has run together: that a model can report a property of its
+hidden states (privileged access), and that it does so by a second-order process
+reading first-order ones, which is what the Definition names. It argues that
+behavioural paradigms can establish at most the first, and that injection
+detection is compatible with first-order anomaly detection. In open-weight
+models, two-way injection detection does not survive a control that delivers the
+concept through the prompt instead. On those terms, both lines of evidence for
+the task-conditional reading above are evidence about task-conditional
+*readout*; neither bears on whether a dissociable monitoring process exists. The
+Definition's inference from concept injection to "some monitoring architecture"
+is therefore contested, not refuted: the critique was run on open-weight proxies
+rather than Claude, and its three-way control is a different discrimination from
+the thought-versus-transcription test the Claude result rests on.
 
 This concept captures one capacity the findings imply. Other concepts that border it — self-model, self-representation, metacognition — may warrant separate entries as more findings accumulate. The boundary between introspection (access to internal states) and self-modeling (maintaining a representation of one's own capacities and tendencies) is not yet load-bearing in the LLM wiki's findings, so a single concept suffices for now.
 

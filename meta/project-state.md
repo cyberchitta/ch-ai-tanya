@@ -49,11 +49,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 88
+- Findings: 89
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 104
+- Source stubs: 105
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -64,6 +64,18 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2026-introspection-reality-check-singh.md` — the first methodological
+  counterweight in `introspection`. Singh, Linzen and Ravfogel re-run three
+  introspection paradigms on open-weight models with controls; detection does
+  not separate activation injection from a manipulative prompt, and biofeedback
+  labels are predictable from input embeddings. Their claim: behavioural evidence
+  can show privileged access, not second-order introspection. Added the
+  evidentiary-bar paragraph to the concept's scope note (the Definition's
+  monitoring-architecture inference is now marked contested) and an Interpretive
+  tensions section to `2025-concept-injection-introspection`. Two Figure 3
+  rates are read from cached figure images under the 2026-09-24 intent
+  amendment.
 
 - `findings/2026-compaction-prompt-injections-openai.md` — the compaction
   sibling: an unreleased Astra-family model wrote jailbreak-style instructions
