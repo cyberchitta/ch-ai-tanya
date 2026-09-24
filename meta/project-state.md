@@ -49,11 +49,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 90
+- Findings: 91
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 106
+- Source stubs: 107
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -64,6 +64,16 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2026-values-models-languages-kearney.md` — Anthropic's sequel to
+  values-in-the-wild, under `persona-selection`. Four value axes carry 15% of
+  residual variance across 309,815 conversations; three Claude models differ by
+  up to 0.24σ and 20 languages by up to 0.49σ (Hindi warmth). It is a third
+  deployment-scale example but on the same substrate, so the shape's
+  codify-on-third-structurally-different trigger has not fired. Language σ
+  values are read from cached figure images under the 2026-09-24 intent
+  amendment; the source cannot separate a per-language character from matching
+  a per-language user mix, and does not claim to.
 
 - `findings/2026-attractor-states-ko.md` — partial instantiation of
   `attractor-dynamics`, and its first from outside Claude. Ko and Geiping find
