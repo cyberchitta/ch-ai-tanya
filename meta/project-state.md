@@ -294,6 +294,17 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   - `raw/posts/source-2025-transformer-news-introspection.md` carries an
     impossible date (2025-01-31; the post published 2025-11-13, verified
     against the cached copy) (2026-07-07).
+  - Grok-written stubs repeat errors their findings had, found by the
+    2026-09-24 source check (the findings are corrected; the stubs are not):
+    `raw/papers/source-2025-persona-feng-iclr.md` (venue "OpenReview
+    submission", but it is ICLR 2026; "statistically indistinguishable";
+    "lower variance 0.74", wrong pairing; "up to 91%" across three
+    dimensions, but 90.8% is one model's overall rate; "strongest evidence
+    to date"). `raw/papers/source-2026-persona-vectors-pretraining-moskvoretskii.md`
+    ("four studied traits form within 0.22%", but humor does not; cosine
+    claim generalised from evil only; Apertus differences omitted; "all
+    headline claims confirmed"). `raw/papers/source-2025-chain-of-affective-xu.md`
+    ("primary source verification complete" overclaims).
 - **Editor decision pending — scheming/emergent-capabilities concept
   asymmetry:** the 2024 in-context-scheming finding and the 2025 Apollo
   follow-up both list `emergent-capabilities` in `## Concepts`, but the
@@ -340,14 +351,16 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   disagreement and the untested heterogeneity reading are in the concept's
   Scope note. The Nightingale DSEwiki incident, a second real-world case, is
   held unfiled (`_notes/handoffs/dsewiki-held/`).
-- **Concept-less findings: five remain** (lint rule 14). One is a candidate
-  (`2025-poetry-jailbreak-rate`, register-sensitive alignment, waiting for a
-  second example). Four are adjacent to an existing concept:
+- **Concept-less findings: six remain** (lint rule 14). Two are candidates:
+  `2025-poetry-jailbreak-rate` (register-sensitive alignment) and
+  `2025-chain-of-affective-xu` (affective dynamics; declared on its 2026-09-24
+  source check, which also found it adjacent to functional-emotional-states).
+  Each waits for a second example. Four are adjacent to an existing concept:
   `2025-activation-oracles` (introspection), `2026-sycophantic-ai-ibrahim`
   (sycophancy), and two beside `scheming` (compaction prompt injections, cyber
   incidents). The scheming pair is now held by that concept's
   principal-directedness boundary line. The typing question in `schema.md`
-  § Concept-less findings (deferred / candidate / adjacent) now reads 0 / 1 / 4.
+  § Concept-less findings (deferred / candidate / adjacent) now reads 0 / 2 / 4.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
