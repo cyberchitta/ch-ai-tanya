@@ -13,6 +13,8 @@ refs:
 status: draft
 writers:
   - "@claude-opus-5.5"
+reviewers:
+  - "@claude-opus-5.5"
 ---
 
 ## Summary
