@@ -224,6 +224,15 @@ unverified until confirmed against the primary source.
 Unverified candidates in `_notes/candidates.md` are not skippable —
 verification is the first step in filing them, not a reason to pass.
 
+**Independent verification before landing.** A filing is not committed on
+its filer's own verification. A different session or model, one that did not
+write the entry, checks every quantitative claim and its pairing against the
+cached source before the commit, and is recorded under `reviewers:`.
+Delegated filings get this from the calling session; a solo filing needs a
+second pass by another session. Motivated by four of four Grok-filed findings
+(2026-05-31, 2026-09-22) failing a later source check after each claimed
+"clean primary-source verification".
+
 #### Download workflow
 
 Downloads go to `cache/`, which is gitignored and mirrors the `raw/`
