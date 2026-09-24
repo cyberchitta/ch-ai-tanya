@@ -4,9 +4,10 @@
 
 Updates the concept-less split quoted in § Concept-less findings, which had
 stood at the v0.10.1 reading (four deferred, two candidate, two adjacent). Drawing
-`collective-dynamics` re-homed the deferred group, leaving five declaring entries
-at none deferred, one candidate and four adjacent. No rule changes; the
-quoted count had gone false.
+`collective-dynamics` re-homed the deferred group, leaving six declaring entries
+at none deferred, two candidate and four adjacent — the second candidate,
+`2025-chain-of-affective-xu`, declared concept-less on its source check the same
+day. No rule changes; the quoted count had gone false.
 
 ## v0.11.1 — 2026-09-23
 

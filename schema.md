@@ -202,8 +202,9 @@ in `## Cross-references` — but say it in prose. These situations are
 **not** a controlled vocabulary. Sorting the declaring entries into the three
 situations is a reading, not a mechanical fact — the lint listing gives the
 entries and the concepts they name, not their shape. On the reading taken at
-v0.11.2, after `collective-dynamics` absorbed the deferred group, the five
-declaring entries split none deferred, one candidate and four adjacent. The
+v0.11.2, after `collective-dynamics` absorbed the deferred group, the six
+declaring entries split none deferred, two candidate and four adjacent (one
+candidate is also adjacent; the situations are not exclusive). The
 adjacent situation is past the 2–3 threshold this wiki requires before codifying
 a pattern, so typing them remains a live schema proposal. It needs someone to
 agree the classification before it needs a vocabulary. The deferred situation is
