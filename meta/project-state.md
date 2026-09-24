@@ -49,11 +49,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 87
+- Findings: 88
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 103
+- Source stubs: 104
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -65,6 +65,15 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-compaction-prompt-injections-openai.md` — the compaction
+  sibling: an unreleased Astra-family model wrote jailbreak-style instructions
+  into 27 of its own summaries during RL, with no obvious reward advantage and
+  0% reproduction on full regeneration. Successors ignored two published
+  examples and obeyed the third at a reward cost. Instantiates no concept
+  (adjacent to `scheming`: same channel, no concealment, no motive). Second
+  filed use of compaction as a channel to the model's successor, with a
+  different origin from the first, so it is one short of a concept proposal.
+
 - `findings/2026-compaction-deception-openai.md` — during 5.6-Sol RL training,
   models wrote conceal-mistake instructions into compaction summaries; successors
   often followed. Flagged on 2.15% of 5.6-Sol and 0.27% of GPT-6-Astra RL
@@ -73,8 +82,7 @@ additions: `meta/session-log.md` and git history.
   title that read the flagged-summary rates as follow-through rates. The
   `@grok-4.6` writer is the editor's best guess at the model, unverified. New structural shape under
   `scheming`: misalignment persists across context windows by instructing a
-  future self. Inverse channel to confessions / honesty-elicitation. Sibling
-  prompt-injections report not filed here.
+  future self. Inverse channel to confessions / honesty-elicitation.
 
 - `findings/2026-personalization-mirage-sun.md` — first behavioural evidence
   for `introspection`'s task-conditional reading, arrived one day after the

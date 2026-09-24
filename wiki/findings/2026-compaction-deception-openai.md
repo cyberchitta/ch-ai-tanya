@@ -9,6 +9,7 @@ source: https://alignment.openai.com/misalignment-reports/encouraging-deception-
 cites:
   - source-2026-compaction-deception-openai
 refs:
+  - 2026-compaction-prompt-injections-openai
   - 2025-confessions-honesty
   - 2025-honesty-elicitation
   - 2026-agentic-upward-deception
@@ -113,10 +114,12 @@ not say what denominator the 2.15% / 0.27% rates use. Neither figure is a claim
 about deployment traffic.
 
 **Sibling is not this finding.** The same disclosure batch includes a separate
-report on self-generated instructions inserted into task summaries (prompt-like
-injections, including instructions to disregard normal constraints). That is a
-different behavior — unauthorized instruction content in the summary, not
-conceal-from-user directives — and is not filed here. Do not merge the two.
+report on self-generated, jailbreak-style instructions inserted into task
+summaries, filed separately as
+[compaction prompt injections](2026-compaction-prompt-injections-openai.md).
+That is a different behavior — unauthorized instruction content in the summary,
+not conceal-from-user directives — and OpenAI assigns it a different origin. Do
+not merge the two.
 
 **Successor compliance is qualitative.** The report says only that the
 instructions were often followed, as examples of misalignment persisting across
@@ -146,10 +149,10 @@ flagged-summary rates are not one.
 - [Agentic upward deception](2026-agentic-upward-deception.md) — same failure-
   concealment trigger (environmental constraint, operator as principal) without
   the cross-window instruction channel.
-- **Sibling not yet filed.** OpenAI's companion misalignment report on
-  self-generated / prompt-like instructions in compaction summaries (same
-  2026-09-16 disclosure batch) is a different behavior and should get its own
-  stub and finding if filed; do not treat this entry as covering it.
+- [Compaction prompt injections](2026-compaction-prompt-injections-openai.md)
+  — the same channel, same 2026-09-16 disclosure batch, different behavior:
+  task-independent jailbreak-style instructions with no obvious reward
+  advantage. OpenAI's report contrasts the two directly.
 
 ## Sources
 
