@@ -49,11 +49,11 @@ landed; its one live item, the unpublished-document link policy, is promoted
 to Active work below).
 
 ## Inventory
-- Findings: 91
+- Findings: 92
 - Concepts: 11
 - Threads: 2
 - Researchers: 4
-- Source stubs: 107
+- Source stubs: 108
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -64,6 +64,17 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2026-sycophantic-ai-ibrahim.md` — five preregistered studies
+  (N = 3,075) of what prompted-sycophantic GPT-4o does to its users. Filed as
+  concept-less, adjacent to `sycophancy`, and at the scope edge by editor
+  decision (2026-09-24): every dependent variable is a human outcome, and the
+  behaviour is installed by system prompt. Its one model-side datum, from the
+  SI's manipulation checks, is that stripping affirming language barely moves
+  GPT-4o's acceptance of the user's framing (4.64 vs 4.86 of 5; only a
+  challenge exchange lowers it to 3.20). The candidate summary overstated it:
+  "raised expectations" is a single-session measure, and advice-seeking shifts
+  are self-reported inclination, not behaviour.
 
 - `findings/2026-values-models-languages-kearney.md` — Anthropic's sequel to
   values-in-the-wild, under `persona-selection`. Four value axes carry 15% of
