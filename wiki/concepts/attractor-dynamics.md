@@ -38,7 +38,7 @@ This is a mechanism concept — it names the dynamics by which trajectories conv
 
 **Four senses of "attractor" — September 2026.** The corpus now uses the word
 for four different things: a content destination dialogues reach (spiritual
-bliss), an activation-space region with a restoring pull
+bliss), an activation-space region personas drift away from
 ([Assistant Axis](../findings/2026-assistant-axis.md)), cross-model convergence
 of output content ([StoryScope](../findings/2026-storyscope-narrative-fingerprints.md)),
 and a model-identity signature in output embeddings
