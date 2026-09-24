@@ -50,7 +50,7 @@ to Active work below).
 
 ## Inventory
 - Findings: 93
-- Concepts: 11
+- Concepts: 12
 - Threads: 2
 - Researchers: 4
 - Source stubs: 109
@@ -64,6 +64,11 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `concepts/collective-dynamics.md` — the twelfth concept, drawn after the
+  editor revisited the 2026-09-20 wait. Named for population dynamics rather
+  than "collective belief" because the group-size paper's object is a
+  convention. Re-homes five concept-less findings.
 
 - `findings/2025-group-size-collective-misalignment-flint.md` — fifth entry in the
   collective-belief / multi-agent cluster, concept-less like its siblings. In an
@@ -325,64 +330,24 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   across five non-Anthropic families (2B separates as well as 72B, base as well
   as instruct). The evidence is now recorded in the scope note; the judgment is
   not made.
-- **Concept gap — collective belief / multi-agent safety, now at three
-  findings.** `2026-mind-viruses-papadopoulos` (persuasion as transmission
-  channel), `2025-chain-of-affective-xu` (affect propagating by majority–minority
-  structure), and `2026-flag-game-pavlova` (population size and organization as
-  the determinants of collective belief) have no concept that holds them, and
-  the flag-game entry is filed with an empty `## Concepts` section as a result.
-  Three examples clears the repo's 2–3 threshold on count, but they are
-  structurally heterogeneous — two transmission channels and one population
-  study — so a concept drawn now risks being an umbrella rather than a shape.
-  The 2026-09-20 candidate pass cached three further siblings, all verified:
-  El/Ganguli/Zou *Physics of Agents* (arXiv:2608.16578 — Ising/Glauber fit to
-  >10,000 agent communities, the direct population-scale sibling), Anthropic
-  Frontier Red Team *Patterns and problems in emerging multiagent systems*, and
-  the OpenAI/Hugging Face incident (OpenAI report plus Redwood analysis) — which
-  is the real-world event the flag-game paper is explicitly modeled on. So the
-  gap is not short of material; it is short of a *filed* second population-scale
-  example. *Physics of Agents* is now filed (2026-09-20), so the cluster has
-  its two population-scale entries. **They appear to disagree about the generic
-  outcome** — this reading is the filing session's, not either paper's; neither
-  paper claims a conflict with the other, and *Physics of Agents* cites the flag
-  game only in Related Works. On that reading:
-  the flag game has collapse giving way to polarization as population grows,
-  while Physics of Agents finds fitted couplings that favour consensus
-  (concordant ties outweigh discordant; communities sit below the critical
-  social temperature). That disagreement is either the reason to wait for a
-  third entry or precisely the tension a concept exists to hold.
-  **Decided 2026-09-20: wait.** The editor's call — multi-agent collective
-  belief is a brand-new area and the wiki has just started learning its shape,
-  so any concept drawn now would be named from four papers that do not yet
-  agree on what the phenomenon is. Not a deferral for lack of material; a
-  judgement that the material is too young to abstract from. Revisit when the
-  cluster has entries that converge on a shape rather than accumulating
-  examples — not on a count. Nothing remains cached and unfiled in
-  this cluster: both held sources were filed 2026-09-20
-  (`findings/2026-hugging-face-incident.md`,
-  `findings/2026-multiagent-patterns-zou.md`), concept-less and declared —
-  filing does not wait on the concept decision. The cluster now stands at five
-  findings, of which four are concept-less; that ratio is the thing to watch
-  when the concept question is revisited.
-  **Revisited 2026-09-24 (editor).** The group-size paper
-  (`findings/2025-group-size-collective-misalignment-flint.md`) is filed as the
-  sixth entry. Its reading: the three simulation papers are compatible with
-  polarization needing persistent heterogeneity (private evidence, zealots,
-  opposed intrinsic fields) rather than size alone, but none tests that. It
-  also shows the cluster's object is not always *belief*: a naming game is
-  collective convention. So a concept named "collective belief" would stretch
-  to hold it, and a population-dynamics name would not. A second real incident
-  (the Nightingale DSEwiki report) was attempted and held after a safety
-  classifier stopped the write; see `_notes/handoffs/dsewiki-held/`.
-  Note the schema question underneath it — `## Concepts` is a required finding
-  section and **four** filed entries now have no concept link in it:
-  `2025-activation-oracles` (adjacent-not-instantiating, defers to
-  Cross-references), `2025-poetry-jailbreak-rate` (names a candidate concept
-  only), `2026-flag-game-pavlova` and `2026-physics-of-agents-el` (nothing at
-  all). Verified by scan 2026-09-20; the 2026-09-20 close report said two,
-  counting only the new pair. The threshold for a `<schema-change>` proposal is
-  therefore already passed, and the four are not one shape — an empty
-  `## Concepts` has at least three distinct meanings.
+- **`concepts/collective-dynamics` drawn 2026-09-24 (editor revisit of the
+  2026-09-20 wait).** Pattern-shaped: population outcomes set by size,
+  structure and composition while the model stays fixed. Five instantiations
+  re-homed from concept-less: flag game, Physics of Agents, group size, Hugging
+  Face incident, multiagent patterns. `mind-viruses` stays under
+  `persona-selection` (pairwise transmission). `chain-of-affective-xu` is a
+  candidate held until its source review. The consensus-vs-polarization
+  disagreement and the untested heterogeneity reading are in the concept's
+  Scope note. The Nightingale DSEwiki incident, a second real-world case, is
+  held unfiled (`_notes/handoffs/dsewiki-held/`).
+- **Concept-less findings: five remain** (lint rule 14). One is a candidate
+  (`2025-poetry-jailbreak-rate`, register-sensitive alignment, waiting for a
+  second example). Four are adjacent to an existing concept:
+  `2025-activation-oracles` (introspection), `2026-sycophantic-ai-ibrahim`
+  (sycophancy), and two beside `scheming` (compaction prompt injections, cyber
+  incidents). The scheming pair is now held by that concept's
+  principal-directedness boundary line. The typing question in `schema.md`
+  § Concept-less findings (deferred / candidate / adjacent) now reads 0 / 1 / 4.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference

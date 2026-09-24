@@ -244,15 +244,7 @@ that what is modelled is the stance trajectory, not the deliberation.
 
 ## Concepts
 
-**No concept instantiated.** As with its sibling. The
-phenomenon — how communication structure and population organization determine
-what a collective of models believes — has no concept entry, and this is now the
-second population-scale example, after the [flag
-game](2026-flag-game-pavlova.md), where that entry could name only one. On the
-wiki's own rule two examples are a hint rather than evidence, and these two
-disagree about the generic outcome, which is a reason to have the boundary drawn
-by the editor rather than inferred from a second paper. The concept decision is
-pending and is the editor's.
+[Collective dynamics](../concepts/collective-dynamics.md) — the population-structure result, and one of the concept's two mechanistic accounts. Filed concept-less while the editor held the concept decision; re-homed on 2026-09-24. Its apparent disagreement with the [flag game](2026-flag-game-pavlova.md) about the generic outcome is carried in the concept's Scope note.
 
 ## Cross-references
 

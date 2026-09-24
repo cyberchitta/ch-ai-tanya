@@ -201,12 +201,7 @@ intermediate N has no counterpart here.
 
 ## Concepts
 
-**No concept instantiated.** Like its cluster siblings, this is a
-collective-dynamics result waiting on the editor's 2026-09-20 decision to let
-the cluster's entries converge on a shape before any concept is named. It
-bears on that naming: its object is a coordination convention with no truth
-value, so a concept named for "collective belief" would not hold it without
-stretching.
+[Collective dynamics](../concepts/collective-dynamics.md) — the population-size result for convention, and the entry that changed the concept's name: its object is a coordination convention with no truth value, which "collective belief" would not have held. Filed concept-less and re-homed the same day the concept was drawn (2026-09-24).
 
 [Emergent capabilities](../concepts/emergent-capabilities.md) was considered
 and set aside. Collective bias absent in individual agents is "emergent" in

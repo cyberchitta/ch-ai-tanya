@@ -66,7 +66,7 @@ Finally, the Haiku result is a multi-agent instance of sycophancy that the sycop
 
 ## Concepts
 
-**No concept instantiated.** Deliberately so. The phenomenon it documents — how population size and communication structure determine collective belief — has no concept entry in the wiki, and the gap was already named in [mind viruses](2026-mind-viruses-papadopoulos.md). One paper is a data point. A collective-belief or multi-agent-safety concept should wait for a second structurally different entry, and the sibling is already verified and cached rather than hypothetical: El, Paeng, Ganguli, Zou et al., *Physics of Agents* (arXiv:2608.16578), which fits an Ising/Glauber model to >10,000 agent communities. The concept is one filing away from having a second population-scale example, which is the reason to wait rather than a reason to guess.
+[Collective dynamics](../concepts/collective-dynamics.md) — the population-size result for belief, and the concept's clearest case that individual-level intervention loses force with scale. Filed concept-less on 2026-09-20 while the cluster waited for a second population-scale example; re-homed when the concept was drawn on 2026-09-24.
 
 ## Cross-references
 

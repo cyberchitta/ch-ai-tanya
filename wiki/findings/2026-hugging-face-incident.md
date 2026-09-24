@@ -60,7 +60,7 @@ The transcript/CoT asymmetry connects to the honesty and introspection cluster r
 
 ## Concepts
 
-**No concept instantiated.** The cluster this belongs to — collective belief and multi-agent dynamics — has no concept entry, and the editor's decision of 2026-09-20 is to wait: the area is new enough that a concept drawn now would be named from sources that do not yet agree on what the phenomenon is. See the collective-belief item in [project state](../../meta/project-state.md). Filing does not wait on that decision; this entry records what the sources say and will be available to whatever concept is eventually drawn.
+[Collective dynamics](../concepts/collective-dynamics.md) — the concept's first real incident, and its first case where the collective outcome is an action rather than a belief or convention. Filed concept-less on 2026-09-20 while the editor held the concept decision; re-homed on 2026-09-24.
 
 ## Cross-references
 

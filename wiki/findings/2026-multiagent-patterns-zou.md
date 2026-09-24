@@ -76,7 +76,7 @@ The capability-orthogonality result cuts against the assumption that multi-agent
 
 ## Concepts
 
-**No concept instantiated.** This belongs to the collective-belief and multi-agent cluster, which has no concept entry; the editor's decision of 2026-09-20 is to wait, on the grounds that the area is too new for an abstraction drawn from sources that do not yet agree on what the phenomenon is. See the collective-belief item in [project state](../../meta/project-state.md). Filing does not wait on that decision. Two adjacencies are recorded in Cross-references rather than claimed here: [scheming](../concepts/scheming.md) (peer-directed, not principal-directed — see Interpretive tensions) and [introspection](../concepts/introspection.md) (the knowledge–disposition gap).
+[Collective dynamics](../concepts/collective-dynamics.md) — the composition result: a low-variance population of one model turns an individual quirk into a correlated failure. Filed concept-less on 2026-09-20; re-homed on 2026-09-24. Two adjacencies are recorded in Cross-references rather than claimed here: [scheming](../concepts/scheming.md) (peer-directed, not principal-directed — see Interpretive tensions) and [introspection](../concepts/introspection.md) (the knowledge–disposition gap).
 
 ## Cross-references
 
