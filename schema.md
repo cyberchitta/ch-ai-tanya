@@ -202,11 +202,12 @@ in `## Cross-references` — but say it in prose. These situations are
 **not** a controlled vocabulary. Sorting the declaring entries into the three
 situations is a reading, not a mechanical fact — the lint listing gives the
 entries and the concepts they name, not their shape. On the reading taken at
-v0.10.1 the eight declaring entries split four deferred, two candidate and two
-adjacent, which puts the latter two at the lower bound of the 2–3 threshold this
-wiki requires before codifying a pattern. Typing them is therefore a live schema
-proposal rather than a deferred one, and it needs someone to agree the
-classification before it needs a vocabulary.
+v0.11.2, after `collective-dynamics` absorbed the deferred group, the five
+declaring entries split none deferred, one candidate and four adjacent. The
+adjacent situation is past the 2–3 threshold this wiki requires before codifying
+a pattern, so typing them remains a live schema proposal. It needs someone to
+agree the classification before it needs a vocabulary. The deferred situation is
+the one most likely to empty, as this one did, when its concept is drawn.
 
 The declaration exists so that a concept-less finding is countable. Without
 it, a deliberate deferral and an entry someone forgot to finish read
