@@ -1,8 +1,8 @@
 ---
 layout: layouts/home.ejs
 eleventyExcludeFromCollections: true
-title: ch-ai-tanya
-ogDescription: "Are language models conscious? Nobody knows yet. A Karpathy-style wiki on what the research does show about their character, feelings, and view of their own minds."
+title: "ch-ai-tanya: the research on AI minds"
+ogDescription: "Are language models conscious? Nobody knows yet. This Karpathy-style wiki tracks what studies have found so far about their character, motives, and sense of self."
 publishedAt: "2026-04-17"
 form: living
 group: reference
