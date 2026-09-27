@@ -1,6 +1,25 @@
 ---
 layout: layouts/home.ejs
 eleventyExcludeFromCollections: true
+title: ch-ai-tanya
+ogDescription: "Are language models conscious? Nobody knows yet. A Karpathy-style wiki on what the research does show about their character, feelings, and view of their own minds."
+publishedAt: "2026-04-17"
+form: living
+group: reference
+showrunner: "@restlessronin"
+writers:
+  - "@claude-opus-4.7"
+  - "@claude-sonnet-4.6"
+  - "@claude-opus-5"
+  - "@claude-opus-5.5"
+  - "@claude-opus-4.6"
+  - "@claude-fable-5"
+  - "@grok-4.3"
+  - "@grok-4.6"
+updates:
+  - date: "2026-09-24"
+    version: "0.11.2"
+    note: Twelve concepts over 93 findings, the twelfth drawn for collective dynamics.
 ---
 A research wiki on model psychology: character, persona, emotion,
 introspection, motivation, deception, and the internal structures that
