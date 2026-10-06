@@ -44,7 +44,7 @@ later item; the earlier sweeps' reports.
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 111
+- Source stubs: 112
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `raw/papers/source-2024-biological-naturalism-seth.md` — Seth's BBS biological-naturalism target article, stub-only as the consciousness-indicators lens's sceptic-side anchor (Janus precedent; second instance).
 - `findings/2026-synergistic-core-urbina-rodriguez.md` — ΦID synergistic core in middle layers of four open-weight LLMs, emerging over training; RL on synergistic heads beats random/redundant; concept-less, adjacent to emergent-capabilities; consciousness-indicators lens, Level 2 integration.
 - `findings/2026-cacophony-hierarchy-chandaria.md` — five-level hierarchy and Bayesian model for AI-consciousness credence; illustrative LLM range <0.01–0.8 from fabricated activations; concept-less, adjacent to introspection.
 - `concepts/collective-dynamics.md` — twelfth concept (pattern); re-homes five concept-less findings.
@@ -269,7 +270,14 @@ confound. Prefer candidates at empty levels. **Codification threshold.** Not a c
 (editor decision, 2026-10-06): its members already have homes, and the shape — a cross-cutting
 reading against an external indicator scheme — is none of pattern / capacity / mechanism.
 Promote when 2–3 filed findings take an indicator as their load-bearing object, rather than
-being read onto one; candidates are queued in `_notes/candidates.md`.
+being read onto one; candidates are queued in `_notes/candidates.md`. **Sceptic-side anchor:**
+[Seth](../raw/papers/source-2024-biological-naturalism-seth.md) (BBS target article, filed
+stub-only like Janus's *Simulators*) argues that conscious AI needs both computational
+functionalism and silicon substrate flexibility, and that biological naturalism — predictive
+processing grounded in metabolism and autopoiesis — makes both doubtful. Chandaria et al. read
+its weak form as Level 4 credence plus a realisability constraint and concede their formalism
+only approximates its strong form. When a finding is read onto a level, ask whether its
+evidence presupposes computational functionalism, which Seth makes the hinge.
 
 ## Open questions
 - Prompt-level intervention as candidate structural sub-shape under intervention codification
