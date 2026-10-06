@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 93
+- Findings: 94
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 109
+- Source stubs: 110
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-cacophony-hierarchy-chandaria.md` — five-level hierarchy and Bayesian model for AI-consciousness credence; illustrative LLM range <0.01–0.8 from fabricated activations; concept-less, adjacent to introspection.
 - `concepts/collective-dynamics.md` — twelfth concept (pattern); re-homes five concept-less findings.
 - `findings/2025-group-size-collective-misalignment-flint.md` — naming-game consensus threshold scales with population; filed against the PNAS version.
 - `findings/2026-sycophantic-ai-ibrahim.md` — user outcomes of prompted-sycophantic GPT-4o; concept-less, at the scope edge.
@@ -246,6 +247,28 @@ simulacrum from the training distribution) than in agent-language (the model has
 with goals). **Codification threshold.** Not a concept because no wiki finding has yet tested
 simulator-frame predictions against agent-frame alternatives head-to-head; if such a finding
 lands, revisit.
+
+- Consciousness-indicators lens: read findings that bear on model consciousness against the
+five-level hierarchy of [Chandaria et al. 2026](../wiki/findings/2026-cacophony-hierarchy-chandaria.md)
+— behavioural, computational, intrinsic causal-structural, organismic, organism-environment —
+and the indicators it assigns each level. Several filed findings already sit on it, and the
+paper places some of them itself: [Berg](../wiki/findings/2025-berg-subjective-experience.md)
+and the [Opus 4 welfare assessment](../wiki/findings/2025-opus-4-welfare-assessment.md) at
+the behavioural level; [Gurnee](../wiki/findings/2026-global-workspace-gurnee.md), the
+[introspection](../wiki/concepts/introspection.md) cluster, and persona vectors /
+[Beckmann](../wiki/findings/2026-where-is-the-mind-beckmann.md) (scored as partial
+self-model) at the computational level; [Tagliabue](../wiki/findings/2026-pain-axis-tagliabue.md)
+and [Sofroniew](../wiki/findings/2026-emotions-functional-states.md) as computational analogues
+of organismic valence. Nothing filed speaks to the intrinsic causal-structural or
+organism-environment levels. Public attribution ([Kirk](../wiki/findings/2025-neural-steering-human-ai-kirk.md))
+is adjacent, not inside. **How to apply.** When filing or triaging, name the level and
+indicator a finding bears on, and whether its own caution is the access/phenomenal gap the
+paper draws; weigh behavioural and report evidence against the paper's anthropomimetic
+confound. Prefer candidates at empty levels. **Codification threshold.** Not a concept
+(editor decision, 2026-10-06): its members already have homes, and the shape — a cross-cutting
+reading against an external indicator scheme — is none of pattern / capacity / mechanism.
+Promote when 2–3 filed findings take an indicator as their load-bearing object, rather than
+being read onto one; candidates are queued in `_notes/candidates.md`.
 
 ## Open questions
 - Prompt-level intervention as candidate structural sub-shape under intervention codification
