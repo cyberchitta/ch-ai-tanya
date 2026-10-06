@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.12.0 — 2026-10-06
+
+Adds **framework-anchor stubs** under § Source: a few highly influential
+frameworks kept as stubs that anchor a working lens, rather than filed as
+findings, with six required contents and the lens-side naming form. Motivated by
+the third instance — Butlin et al. 2023, after Janus's *Simulators* and Seth's
+biological-naturalism article — and by each anchor running well past the 2–4
+sentence stub limit. The Janus stub predates the rule and stands as is, since
+only the editor edits `raw/`.
+
 ## v0.11.2 — 2026-09-24
 
 Updates the concept-less split quoted in § Concept-less findings, which had

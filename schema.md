@@ -86,6 +86,29 @@ For sources where offline access matters (system cards, critical papers,
 uncertain availability), the stub can include or link to a locally-stored
 full copy in the same folder.
 
+**Framework-anchor stubs.** Some sources are kept as stubs instead of
+findings because the wiki reasons *with* them rather than *about* them:
+highly influential frameworks, rubrics or position papers that anchor a
+working lens in `meta/project-state.md`. Keep the set to a few, by editor
+decision per source. A framework-anchor stub may exceed the 2–4 sentence
+limit and must contain:
+1. a bibliographic and version block stating which version was read and
+   any differences between versions;
+2. the framework's load-bearing content in its own terms: method,
+   assumptions, and any labelled scheme reproduced exactly;
+3. its own conclusions, with the source's own hedges;
+4. how filed findings and the lens's other anchors place it, with
+   mismatches flagged;
+5. adjacent works, each marked read or unread;
+6. a closing line naming the lens it anchors and the side it anchors.
+
+The lens names its anchors in its project-state bullet as
+"**<side> anchor:** [stub link]". A framework-anchor stub is promoted to a
+finding only on editor decision. Examples: the Seth and Butlin et al.
+stubs anchoring the consciousness-indicators lens. The Janus *Simulators*
+stub predates the rule and is a one-paragraph anchor; since `raw/` is
+editor-edited only, it stands until the editor upgrades it.
+
 Wiki entries cite via the stub:
 `[Lindsey et al. 2025](../../raw/papers/source-2025-concept-injection-introspection.md)`.
 This creates a stable local anchor; the stub provides the external URL.
