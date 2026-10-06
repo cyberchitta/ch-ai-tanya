@@ -249,7 +249,9 @@ whether the result is better described in simulator-language (the policy is sele
 simulacrum from the training distribution) than in agent-language (the model has a stable self
 with goals). **Codification threshold.** Not a concept because no wiki finding has yet tested
 simulator-frame predictions against agent-frame alternatives head-to-head; if such a finding
-lands, revisit.
+lands, revisit. **Simulator-side anchor:** [Janus 2022, "Simulators"](../raw/posts/source-2022-simulators-janus.md)
+— names the simulator / simulacra distinction and the prediction orthogonality thesis; the agent
+frame it argues against has no anchor of its own.
 
 - Consciousness-indicators lens: read findings that bear on model consciousness against the
 five-level hierarchy of [Chandaria et al. 2026](../wiki/findings/2026-cacophony-hierarchy-chandaria.md)

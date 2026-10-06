@@ -105,9 +105,9 @@ limit and must contain:
 The lens names its anchors in its project-state bullet as
 "**<side> anchor:** [stub link]". A framework-anchor stub is promoted to a
 finding only on editor decision. Examples: the Seth and Butlin et al.
-stubs anchoring the consciousness-indicators lens. The Janus *Simulators*
-stub predates the rule and is a one-paragraph anchor; since `raw/` is
-editor-edited only, it stands until the editor upgrades it.
+stubs anchoring the consciousness-indicators lens, and the Janus
+*Simulators* stub anchoring the simulator lens (brought to this standard
+by editor permission, 2026-10-06).
 
 Wiki entries cite via the stub:
 `[Lindsey et al. 2025](../../raw/papers/source-2025-concept-injection-introspection.md)`.
