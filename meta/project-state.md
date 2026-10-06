@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 94
+- Findings: 95
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 110
+- Source stubs: 111
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-synergistic-core-urbina-rodriguez.md` — ΦID synergistic core in middle layers of four open-weight LLMs, emerging over training; RL on synergistic heads beats random/redundant; concept-less, adjacent to emergent-capabilities; consciousness-indicators lens, Level 2 integration.
 - `findings/2026-cacophony-hierarchy-chandaria.md` — five-level hierarchy and Bayesian model for AI-consciousness credence; illustrative LLM range <0.01–0.8 from fabricated activations; concept-less, adjacent to introspection.
 - `concepts/collective-dynamics.md` — twelfth concept (pattern); re-homes five concept-less findings.
 - `findings/2025-group-size-collective-misalignment-flint.md` — naming-game consensus threshold scales with population; filed against the PNAS version.
