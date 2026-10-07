@@ -305,11 +305,13 @@ removed are not represented; the precise list is a snapshot of late-
   safety behavior is shallow relative to the underlying capability
   distribution, but the mechanisms they isolate are distinct.
 - [Simulators](../../raw/posts/source-2022-simulators-janus.md) (Janus,
-  Sep 2022) — the conceptual predecessor framing that LLMs are
-  character-simulators. Shah et al. and [SPP](2023-spp-multi-persona.md)
-  (Wang et al., arXiv July 2023 v1 / NAACL 2024) are the wiki's two
-  pre-PSM behavioral instantiations of the simulator-framing
-  prediction — Shah on the harmful axis (the persona posterior is
+  Sep 2022) — the conceptual predecessor, framing self-supervised
+  models as simulators of many simulacra. Shah et al. and
+  [SPP](2023-spp-multi-persona.md) (Wang et al., arXiv July 2023 v1 /
+  NAACL 2024) are the wiki's two pre-PSM behavioral results read
+  through that framing — the reading is the wiki's, since the post
+  makes no prediction about RLHF-tuned chat models, which both test,
+  and leaves RLHF open. Shah on the harmful axis (the persona posterior is
   prompt-reactivatable into off-target compliant personas), SPP on
   the helpful axis (the persona posterior is prompt-multiplexable
   into multiple expert sub-personas within a single inference). PSM

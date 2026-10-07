@@ -323,7 +323,10 @@ analysis will not find them.
   source this paper formalises. Bereska & Gavves cites Janus 2022 for
   both the Simulator Hypothesis (Bereska's renaming of Janus's
   simulator framing) and the Prediction Orthogonality Hypothesis
-  (named in the LessWrong post, restated verbatim here).
+  (Janus's "prediction orthogonality thesis", restated here without
+  the post's "bounded above but not below by the model's power" clause
+  or its footnote conditioning the thesis on inner alignment to the
+  prediction objective).
 - [Pre-training persona simulations explain emergent misalignment and alignment faking](2026-persona-selection-model.md)
   (Marks, Lindsey, Olah, February 2026) — the mechanistic
   operationalisation of the simulator framing this paper academises.

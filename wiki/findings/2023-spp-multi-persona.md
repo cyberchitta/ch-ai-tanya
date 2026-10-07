@@ -379,13 +379,15 @@ Self-Refine," not "outperforms self-refinement in general."
   via contrastive extraction. No paper has applied persona-vectors
   to SPP traces as of filing.
 - [Simulators](../../raw/posts/source-2022-simulators-janus.md)
-  (Janus, September 2022) — the conceptual predecessor reframing of
-  LLMs as character-simulators. SPP's evidence that a single LLM can
-  scaffold multiple distinct expert sub-personas in self-dialogue is
-  a direct behavioral demonstration of the simulator framing's
-  central claim (the model represents many characters, not one),
-  on the helpful side of the distribution rather than the harmful
-  side covered by persona-modulation.
+  (Janus, September 2022) — the conceptual predecessor, framing
+  self-supervised models as simulators whose simulacra can be
+  instantiated several at once. On the wiki's reading, SPP's evidence
+  that a single LLM can scaffold multiple distinct expert sub-personas
+  in self-dialogue illustrates that framing behaviorally, on the
+  helpful side of the distribution rather than the harmful side
+  covered by persona-modulation. The post makes no claim about what
+  the model represents internally, and it leaves RLHF-tuned models,
+  which SPP tests, as an open question.
 - [Prepending a system prompt that elicits an unwanted trait during fine-tuning suppresses that trait at test time](2025-inoculation-prompting.md)
   (Tan, Woodruff, Warncke, Jose, Riché, Africa, Taylor, October
   2025) — third prompt-level instantiation of persona-selection;

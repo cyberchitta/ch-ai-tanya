@@ -534,13 +534,14 @@ does not settle.
   instance-persona view's mind-change criterion does not cleanly
   apply.
 - [Janus, "Simulators"](../../raw/posts/source-2022-simulators-janus.md)
-  (Reddit / AI Alignment Forum, September 2022) — the simulator
-  framing Beckmann & Butlin recapitulate and revise. Janus's account
-  presents LLMs as simulators of fleeting characters with no
-  individuation targets; Beckmann & Butlin's persona-regions account
-  partitions the simulator's output into stable basins that *can* serve
-  as individuation targets, vindicating part of Janus's framing while
-  rejecting its "no individual mind" conclusion.
+  (LessWrong / AI Alignment Forum, September 2022) — the simulator
+  framing Beckmann & Butlin recapitulate and revise. The post does not
+  address individuation; Beckmann & Butlin read the simulator view as
+  implying a flux of fleeting simulations rather than stable,
+  reidentifiable minds. Their persona-regions account partitions the
+  simulator's output into stable basins that *can* serve as
+  individuation targets, which they call a substantial revision of the
+  simulators view.
 - [Claude Opus 4 System Card welfare assessment](2025-opus-4-welfare-assessment.md)
   (Anthropic + Eleos AI Research, May 2025) — same institutional
   cluster (Patrick Butlin is at Eleos). Eleos's external evaluation
