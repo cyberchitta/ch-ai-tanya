@@ -204,6 +204,20 @@ Known gaps — sources that could not be cached or verified:
   (403), `posts/source-2025-gpt4o-sycophancy-incident.md` (403), and
   `papers/source-2025-emergent-misalignment-insecure-code.html` (Nature paywall —
   use the `-arxiv` variant instead).
+- **Unverified from the 2026-10-06 filings** (subagent readings the calling
+  session did not re-read in full): Urbina-Rodriguez's absence claims (noise
+  magnitude, deactivation method, baseline); the 2025 TiCS update allowing
+  non-CF views "only in principle" (Butlin stub); Seth's Table 1 (read from a
+  PDF render); Bereska and SPP lines beyond the passages fixed in `4855260`;
+  Kirk's +11.01pp in the Chandaria entry, taken from the wiki's Kirk entry,
+  not the Kirk source; and the first of the Seth stub's three Chandaria-vs-Seth
+  mismatches (L924, grouping Seth with Searle). The other two were checked.
+- Lindsey (2026, arXiv:2601.01828) as cited by Chandaria et al. matches the
+  concept-injection source on title and author (arXiv abstract page,
+  2026-10-07); content not diffed.
+- LessWrong comment authorship is absent from markitdown output — resolve it
+  from the HTML's embedded JSON. Some papers name their models only in figure
+  labels (Urbina-Rodriguez).
 
 ## Working lenses
 Framing commitments that shape reading and triage but lack the 2–3-finding empirical depth
