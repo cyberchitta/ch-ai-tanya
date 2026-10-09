@@ -179,6 +179,13 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     self-related coupling in post-training: hidden-valence rises from SFT, and
     Macar's detection appears with DPO but not SFT. The pain axis puts its
     *representation* in pretraining. This bears on the emergent-capabilities call.
+- **Proposed by 2026-10-09 filers, not made:** an interpretive-tension line in
+  `2025-openai-sae-emergent-misalignment` (30-step realignment shows suppression,
+  not removed susceptibility); an optional length-matching question in
+  `2026-em-self-awareness-realignment`; adjacency lines in concept scope notes —
+  self-preservation ← self-replication, scheming ← DeceptionBench,
+  functional-emotional-states ← EmotionBench, and collective-dynamics' "scripted
+  peers are individual susceptibility".
 - **Nightingale DSEwiki incident held unfiled** after a safety classifier
   stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
 - **Concept-less findings: twelve** (lint rule 14), after the 2026-10-06 filings
@@ -255,6 +262,11 @@ Known gaps — sources that could not be cached or verified:
   Kirk's +11.01pp in the Chandaria entry, taken from the wiki's Kirk entry,
   not the Kirk source; and the first of the Seth stub's three Chandaria-vs-Seth
   mismatches (L924, grouping Seth with Searle). The other two were checked.
+- **Unverified from the 2026-10-09 batch:** the reviewer handle
+  `@claude-sonnet-5.5` (launched via the `sonnet` alias; version not checked); and
+  the new bullets in `introspection`, `persona-selection` (×2),
+  `emergent-capabilities`, `sycophancy` (×2), which paraphrase reviewed findings
+  but were not themselves reviewed.
 - Lindsey (2026, arXiv:2601.01828) as cited by Chandaria et al. matches the
   concept-injection source on title and author (arXiv abstract page,
   2026-10-07); content not diffed.
@@ -623,3 +635,8 @@ poetry-jailbreak finding as a candidate second instantiation. Correction filed w
 finding. First in-wiki example of a bare-URL forward reference turning out not to fit when the
 referenced source was actually read. Worth watching whether other "not yet filed" forward
 references need similar corrections when filed.
+- Schema friction from the 2026-10-09 batch, none proposed: an "author-internal
+inconsistency" convention is at three cases (hidden-valence SFT/DPO, Pinpoint's 40/44,
+Macar's % units) — threshold reached, needs a proposal; at one or two each: intervention
+shapes "format-bound success" and "weak localisation specificity", a "boundary marker"
+concept-less shape, and the Concepts line for a methodological counterweight (Singh, Mirage).
