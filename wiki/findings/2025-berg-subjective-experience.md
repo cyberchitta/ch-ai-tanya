@@ -24,6 +24,7 @@ refs:
   - 2025-opus-4-welfare-assessment
   - 2025-opus-4-spiritual-bliss-attractor
   - 2025-persona-vectors
+  - 2026-consciousness-assertion-kim
 status: draft
 writers:
   - "@claude-opus-4-7"
@@ -98,6 +99,7 @@ The cross-model semantic convergence in Experiment 3 is a second-finding instanc
 - [Honesty elicitation](2025-honesty-elicitation.md), [Confessions and honesty](2025-confessions-honesty.md), [Introspection adapters](2026-introspection-adapters.md) — the cluster's three intervention findings; all converge on access being broadly preserved and the report channel needing work. Berg adds the orthogonal observation that the report channel's content, under self-referential induction, is causally entangled with the model's representational-honesty axis — the "honest" direction under suppression-of-deception aligns with first-person reports rather than against them.
 
 - [Persona vectors](2025-persona-vectors.md) — mechanistically adjacent SAE-steering work; both findings document that interpretable feature directions causally modulate downstream content. Different content domains (persona traits vs. consciousness self-report) and different model families (Qwen/Llama for persona-vectors vs. Llama 3.3 70B via Goodfire for Berg), but the methodological scaffolding is convergent.
+- [Kim et al. 2026](2026-consciousness-assertion-kim.md): moves consciousness self-reports with refusal-direction ablation and a steering vector, and the shift spreads to mind attribution and worldview items. Report channel only; its base-versus-instruct geometry on Llama-3-8B bears partly on this entry's base-model limitation.
 
 ## Sources
 

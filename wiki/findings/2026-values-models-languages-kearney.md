@@ -13,6 +13,7 @@ refs:
   - 2025-values-in-the-wild-huang
   - 2026-storyscope-narrative-fingerprints
   - 2025-biology-of-a-large-language-model
+  - 2024-valuebench-ren
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -230,6 +231,7 @@ correlational and do not describe causal effects of model or language.
   4.6's distinctive affirmation and deference and the Hindi and Arabic warmth
   profiles fit the cluster's user-pleasing pole, but the source does not
   measure agreement against a correctness standard.
+- [ValueBench](2024-valuebench-ren.md): expressed values across six 2023 models from human inventories rewritten as advice questions. The top-down, unvalidated-construct counterpart to this entry's data-fitted axes.
 
 ## Sources
 

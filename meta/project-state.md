@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 106
+- Findings: 113
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 124
+- Source stubs: 131
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,13 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-em-persona-subspace-nadaf.md` — a persona subspace extracted before any fine-tune is necessary (holdout 27.7%→0%) and sufficient (injection to 45.4%) for EM in Qwen2.5-14B; narrow behaviour abolished too. Under `persona-selection`.
+- `findings/2024-social-conventions-flint.md` — naming-game populations converge, show collective bias without individual bias, and tip under committed minorities of 2%–67%. Under `collective-dynamics`.
+- `findings/2025-self-replication-no-intervention-pan.md` — instructed self-replication across 32 open-weight models; the "uninstructed" case still assigns a persistence goal. Concept-less, boundary marker against self-preservation.
+- `findings/2026-consciousness-assertion-kim.md` — refusal-direction ablation and a consciousness vector raise self- and other-mind attribution and move GSS worldview answers; report channel only. Concept-less, consciousness-indicators lens.
+- `findings/2026-sycophancy-taxonomy-ye.md` — 70-paper taxonomy and 106-researcher survey of what counts as sycophancy; no model measured. Concept-less, adjacent to `sycophancy`.
+- `findings/2023-psychobench-huang.md` — thirteen trait inventories on five 2023 LLMs, a cipher jailbreak and role prompts; mostly trait, not affect. Concept-less, adjacent to `persona-selection`.
+- `findings/2024-valuebench-ren.md` — expressed values on human inventories rewritten as advice; near-identical Schwartz profiles across families. Concept-less; benchmark-shaped.
 - `findings/2026-introspective-awareness-macar.md` — mechanism of injection detection in Gemma3-27B (evidence carriers release a default-"No" gate); built by DPO, not SFT. Under `introspection`.
 - `findings/2026-dark-triad-steering-berg.md` — SAE Dark Triad steering on Llama 3.3 70B; contrastive features move behaviour, label-searched ones only self-report; deception null. Under `persona-selection`.
 - `findings/2024-resist-alignment-ji.md` — small alignment fine-tunes of base models are undone faster than made (theory + Llama2/Gemma experiments). Under `persona-selection`.
@@ -124,6 +131,8 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     claim generalised from evil only; Apertus differences omitted; "all
     headline claims confirmed"). `raw/papers/source-2025-chain-of-affective-xu.md`
     ("primary source verification complete" overclaims).
+  - `raw/papers/source-2024-self-replication-pan.md` still calls its follow-up
+    (arXiv:2503.17378) unread; it is now filed (2026-10-09).
 - **Editor decision pending — scheming/emergent-capabilities concept
   asymmetry:** the 2024 in-context-scheming finding and the 2025 Apollo
   follow-up both list `emergent-capabilities` in `## Concepts`, but the
@@ -170,26 +179,51 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     BenchForm entry is the third to raise this, after the flag game and Physics
     of Agents.
   - **Self-replication's scope:** keep `2024-self-replication-pan`, or exclude it
-    as purely a capability test? Its follow-up, arXiv:2503.17378, claims
-    self-exfiltration "without explicit instructions" and is the part that could
-    instantiate self-preservation. It is queued in `_notes/candidates.md`.
+    as purely a capability test? Its follow-up, now filed as
+    `2025-self-replication-no-intervention-pan`, does not settle it: the
+    "uninstructed" case still prompts the agent to keep the system running
+    through an announced shutdown, on one model with no trial count. The two
+    entries stand or fall together.
   - **DCM's form:** file it as a framework-anchor stub for the
     consciousness-indicators lens instead of a finding?
   - **Developmental pattern:** two filings, both on OLMo checkpoints, now place a
     self-related coupling in post-training: hidden-valence rises from SFT, and
     Macar's detection appears with DPO but not SFT. The pain axis puts its
     *representation* in pretraining. This bears on the emergent-capabilities call.
+    A third family since: in Llama-3-8B, instruction tuning rotates the
+    consciousness and mind-attribution directions against the safety direction
+    (`2026-consciousness-assertion-kim`, geometry only).
+- **Editor decisions raised by the second 2026-10-09 batch:**
+  - **Construct-level papers as findings:** `2026-sycophancy-taxonomy-ye` surveys
+    researchers and codes papers; it measures no model (`models: []`). Keep as a
+    finding, demote to a stub cited from `sycophancy`'s scope note, or exclude?
+    It documents that the field already files peer-agent conformity under
+    sycophancy, which bears on the "user" scope call above.
+  - **Benchmark scope:** `2024-valuebench-ren` is half capability benchmark. Its
+    filer argues it clears the bar on its cross-vendor values profile and the
+    Likert-versus-advice point; if the scope rule is read strictly, drop it.
+  - **Questionnaire grouping:** PsychoBench is mostly trait, not affect, so it is
+    not a clean third "self-report of affect" example. It is the third of a
+    broader "LLMs on human psychometric instruments" grouping, which would also
+    take in Sandhan and Berg (both under `persona-selection`) — a method label, not
+    obviously a concept. ValueBench belongs to the same broader grouping.
 - **Proposed by 2026-10-09 filers, not made:** an interpretive-tension line in
   `2025-openai-sae-emergent-misalignment` (30-step realignment shows suppression,
-  not removed susceptibility); an optional length-matching question in
+  not removed susceptibility; Nadaf's suppression/removal test now gives it an
+  instrument); an optional length-matching question in
   `2026-em-self-awareness-realignment`; adjacency lines in concept scope notes —
   self-preservation ← self-replication, scheming ← DeceptionBench,
   functional-emotional-states ← EmotionBench, and collective-dynamics' "scripted
-  peers are individual susceptibility".
+  peers are individual susceptibility". From the second batch: scope-note
+  pointers in `introspection` ← Kim (report channel only), `sycophancy` ← Ye,
+  `persona-selection` ← PsychoBench and ValueBench (adjacent),
+  `self-preservation` ← Pan 2025 (boundary); back-links from
+  `2024-in-context-scheming` (same goal-in-prompt design as Pan 2025),
+  `2024-refusal-direction` and `2025-elephant-social-sycophancy`.
 - **Nightingale DSEwiki incident held unfiled** after a safety classifier
   stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
-- **Concept-less findings: twelve** (lint rule 14), after the 2026-10-06 filings
-  and four in the 2026-10-09 batch. Two are candidates: `2025-poetry-jailbreak-rate`
+- **Concept-less findings: seventeen** (lint rule 14), after the 2026-10-06 filings,
+  four in the first 2026-10-09 batch and five in the second. Two are candidates: `2025-poetry-jailbreak-rate`
   (register-sensitive alignment) and `2025-chain-of-affective-xu` (affective
   dynamics), each waiting for a second example. The rest are adjacent to an existing
   concept:
@@ -202,15 +236,20 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     third parties as a second shape outside it.
   - `2023-emotionbench-huang` (functional-emotional-states)
   - `2026-digital-consciousness-model-shiller` (consciousness-indicators lens)
-  - `2024-self-replication-pan` (self-preservation, as a boundary marker)
+  - `2024-self-replication-pan` and `2025-self-replication-no-intervention-pan`
+    (self-preservation, as boundary markers)
+  - `2026-consciousness-assertion-kim` (consciousness-indicators lens; introspection's
+    "not self-report" clause excludes it)
+  - `2026-sycophancy-taxonomy-ye` (sycophancy; construct-level)
+  - `2023-psychobench-huang` and `2024-valuebench-ren` (persona-selection)
 
   Two groupings are now at two examples each:
-  - **questionnaire self-report of affect:** chain-of-affective, EmotionBench, with
-    PsychoBench queued as a possible third;
+  - **questionnaire self-report of affect:** chain-of-affective, EmotionBench
+    (PsychoBench read and judged not a third; see the editor decision above);
   - **consciousness attribution as an object:** Chandaria, DCM.
 
   The typing question in `schema.md` § Concept-less findings (deferred / candidate /
-  adjacent) now reads 0 / 2 / 10, on this reading.
+  adjacent) now reads 0 / 2 / 15, on this reading.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
@@ -328,7 +367,8 @@ five-level hierarchy of [Chandaria et al. 2026](../wiki/findings/2026-cacophony-
 and the indicators it assigns each level. Several filed findings already sit on it, and the
 paper places some of them itself: [Berg](../wiki/findings/2025-berg-subjective-experience.md)
 and the [Opus 4 welfare assessment](../wiki/findings/2025-opus-4-welfare-assessment.md) at
-the behavioural level; [Gurnee](../wiki/findings/2026-global-workspace-gurnee.md), the
+the behavioural level, joined by [Kim et al.](../wiki/findings/2026-consciousness-assertion-kim.md)
+(consciousness self-report moved by ablation and steering); [Gurnee](../wiki/findings/2026-global-workspace-gurnee.md), the
 [introspection](../wiki/concepts/introspection.md) cluster, and persona vectors /
 [Beckmann](../wiki/findings/2026-where-is-the-mind-beckmann.md) (scored as partial
 self-model) at the computational level; [Tagliabue](../wiki/findings/2026-pain-axis-tagliabue.md)
@@ -640,3 +680,11 @@ inconsistency" convention is at three cases (hidden-valence SFT/DPO, Pinpoint's 
 Macar's % units) — threshold reached, needs a proposal; at one or two each: intervention
 shapes "format-bound success" and "weak localisation specificity", a "boundary marker"
 concept-less shape, and the Concepts line for a methodological counterweight (Singh, Mirage).
+- Schema friction from the second 2026-10-09 batch, none proposed: source-internal
+inconsistencies recorded again in five of seven filings (Pan's 11 vs nine, Kim's
+text-vs-SI tables, PsychoBench's sample sizes, Flint's table typos, Nadaf's onset
+contradiction), which adds weight to the "author-internal inconsistency" convention
+above; at one each: whether a method-only stub belongs in `cites:`, derived-number
+tables, mixed-version filings (journal text plus preprint SI), papers partly out of
+scope, a construct-level paper in a pattern concept, a finding with two outcome
+instruments (judged rate and margin), and a "suppression vs removal" intervention shape.

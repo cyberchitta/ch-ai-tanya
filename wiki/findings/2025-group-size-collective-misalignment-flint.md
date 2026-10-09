@@ -11,6 +11,7 @@ source: https://doi.org/10.1073/pnas.2531697123
 cites:
   - source-2025-group-size-collective-misalignment-flint
 refs:
+  - 2024-social-conventions-flint
   - 2026-flag-game-pavlova
   - 2026-physics-of-agents-el
   - 2026-mind-viruses-papadopoulos
@@ -231,10 +232,10 @@ word does not make it a shared phenomenon.
   transmission-channel entries. Nothing is transmitted here except the choice
   of word, which makes this the purest case of population structure as the
   only variable.
-- The predecessor, Flint Ashery, Aiello and Baronchelli, *Science Advances*
-  2025 (https://arxiv.org/abs/2410.08948), which reports collective bias from
-  individually unbiased agents at fixed N and is not filed. This paper extends
-  it to amplification and reversal and to a size sweep.
+- [The predecessor](2024-social-conventions-flint.md), Flint Ashery, Aiello
+  and Baronchelli, *Science Advances* 2025, which reports collective bias from
+  individually unbiased agents at fixed N and committed-minority tipping. This
+  paper extends it to amplification and reversal and to a size sweep.
 
 ## Sources
 

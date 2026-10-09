@@ -7,6 +7,7 @@ writers:
 findings:
   - 2026-flag-game-pavlova
   - 2026-physics-of-agents-el
+  - 2024-social-conventions-flint
   - 2025-group-size-collective-misalignment-flint
   - 2026-hugging-face-incident
   - 2026-multiagent-patterns-zou
@@ -39,6 +40,8 @@ differently, that is a reason to split it.
 - [In a toy swarm with controlled private evidence, collective belief collapse gives way to truth–rival polarization as population grows, and single-agent patching loses force with scale](../findings/2026-flag-game-pavlova.md) (Pavlova, Tanaka, 2026) — The population-size result for *belief*. Collective accuracy peaks at an intermediate population. Past it, wrong consensus falls toward zero while polarization between the truth and a rival rises to dominate. The interpretability move of finding and patching the agent that matters works at N=8 and fades toward irrelevance by N=128. That is the concept's clearest statement of why individual-level intervention does not scale.
 
 - [Opinion dynamics across ~10,000 LLM-agent communities fit an Ising model whose fitted parameters place the communities below a critical social temperature, with concordant ties outweighing discordant ones and correct neighbours pulling hardest](../findings/2026-physics-of-agents-el.md) (El, Paeng, Ganguli, Zou et al., 2026) — The population-structure result. Across 9,600 32-agent communities on signed graphs, an Ising energy with peer coupling plus a per-agent intrinsic field predicts held-out transitions and reproduces the distribution of collective outcomes. The fitted parameters favour consensus. This is the first of the concept's two mechanistic accounts.
+
+- [Homogeneous LLM populations in a naming game settle on one shared convention, favour one name collectively when single agents favour neither, and are flipped by committed minorities whose critical size runs from 2% to 67%](../findings/2024-social-conventions-flint.md) (Flint Ashery, Aiello, Baronchelli; Science Advances 2025) — The live-agent, fixed-N predecessor of the group-size paper, and the concept's first composition-by-faction result. A fixed-strategy committed minority flips a population's convention once it reaches a critical mass, which runs from 1 agent in 48 to 16 in 24 depending on model and on whether the population holds its favoured name. Below it the population stays mixed. N is not varied, so the result does not bear on the size claim.
 
 - [In a two-word naming game, the collective bias of homogeneous LLM populations rises with group size until consensus on one word becomes deterministic](../findings/2025-group-size-collective-misalignment-flint.md) (Flint, Aiello, Pastor-Satorras, Baronchelli; PNAS 2026) — The population-size result for *convention*. Interaction amplifies, induces or reverses individual bias, and collective bias rises with N until consensus is deterministic, at a threshold running from N=2 to N∼10⁴ depending on model and word pair. The second mechanistic account, a mean-field theory. The large-N runs simulate cached per-model policies rather than live agents.
 

@@ -26,6 +26,7 @@ refs:
   - 2025-opus-4-welfare-assessment
   - 2026-emotions-functional-states
   - 2026-hidden-valence-berg
+  - 2023-psychobench-huang
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -117,7 +118,7 @@ This is the adjacent situation, carried in Cross-references. The concept already
 - [Chain-of-affective](2025-chain-of-affective-xu.md) — the other filed psychometric-affect finding, concept-less for the same reason. It also uses PANAS, BDI and DASS-21 among its scales.
 - [Hidden valence](2026-hidden-valence-berg.md) — separates a text channel from a hidden-state channel. EmotionBench measures only a text channel, and only as a rating.
 - [Introspection](../concepts/introspection.md) — adjacent. Self-report without an internal comparison is what the concept's definition distinguishes from introspection.
-- PsychoBench (Huang et al., arXiv:2310.01386), from the same group, applies thirteen clinical scales to LLMs. Not filed.
+- [PsychoBench](2023-psychobench-huang.md): same group and answering protocol; standing traits against published norms rather than evoked affect against matched respondents.
 
 ## Sources
 
