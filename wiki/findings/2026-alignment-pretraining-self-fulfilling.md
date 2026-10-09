@@ -13,6 +13,7 @@ refs:
   - 2025-reward-hacking-misalignment
   - 2024-alignment-faking
   - 2024-sleeper-agents
+  - 2026-teaching-claude-why
 status: draft
 writers:
   - "@claude-opus-4.7"

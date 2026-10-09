@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 113
+- Findings: 116
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 131
+- Source stubs: 134
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,9 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-beneficial-rl-jagadeesh.md` — OpenAI: 5% beneficial-trait RL beats a compute-matched baseline on 44/53 OOD evals (30 significant); health-only data transfers to reward hacking. Under `persona-selection`; positive/health-frame lens.
+- `findings/2026-teaching-claude-why.md` — Anthropic: honeypot refusals that explain their ethics cut Sonnet 4 misalignment 22%→~3% vs 15% for refusals alone, in-distribution; out-of-distribution evidence thin. Under `persona-selection`.
+- `findings/2026-em-persona-transplant-drake.md` — on Qwen2.5-32B, LoRA on insecure code recruits a pre-existing misalignment-persona direction that full SFT moves against; steering away during 7B full SFT raised EM. Under `persona-selection`.
 - `findings/2026-em-persona-subspace-nadaf.md` — a persona subspace extracted before any fine-tune is necessary (holdout 27.7%→0%) and sufficient (injection to 45.4%) for EM in Qwen2.5-14B; narrow behaviour abolished too. Under `persona-selection`.
 - `findings/2024-social-conventions-flint.md` — naming-game populations converge, show collective bias without individual bias, and tip under committed minorities of 2%–67%. Under `collective-dynamics`.
 - `findings/2025-self-replication-no-intervention-pan.md` — instructed self-replication across 32 open-weight models; the "uninstructed" case still assigns a persistence goal. Concept-less, boundary marker against self-preservation.
@@ -220,6 +223,20 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   `self-preservation` ← Pan 2025 (boundary); back-links from
   `2024-in-context-scheming` (same goal-in-prompt design as Pan 2025),
   `2024-refusal-direction` and `2025-elephant-social-sycophancy`.
+- **Raised by wave 2 of the second 2026-10-09 batch (all `persona-selection`):**
+  - Three of the four new bullets carry the persona reading as the authors' frame,
+    not a measurement (Teaching Claude why, Beneficial RL; Drake measures a
+    behaviour direction labelled persona). Keep them as instantiations, or file
+    unmeasured-persona entries concept-less beside the concept?
+  - Teaching Claude why's agentic evals are averaged across goals, so it does not
+    instantiate `self-preservation`; `2026-model-spec-midtraining` was counted as a
+    self-preservation instance on similar evals. Align the two.
+  - Nadaf and Drake disagree on whether removing the persona direction during
+    training backfires, but never share a cell (projection under LoRA at 14B vs
+    signed steering under full SFT at 7B). Drake's entry records that Nadaf's
+    App. M.5 misreads Drake on three points.
+  - Not done: add Teaching Claude why to the scope note's training-stage-prior
+    shape list; link Beneficial RL from Nadaf and Drake.
 - **Nightingale DSEwiki incident held unfiled** after a safety classifier
   stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
 - **Concept-less findings: seventeen** (lint rule 14), after the 2026-10-06 filings,
@@ -326,7 +343,9 @@ instability, deception). The wiki currently leans pathology-side — most filed 
 failures or vulnerabilities; the health-frame entries are present but fewer ([introspection
 cluster](../wiki/concepts/introspection.md), [Solo Performance
 Prompting](../wiki/findings/2023-spp-multi-persona.md), [representation engineering as neutral
-instrument](../wiki/findings/2023-representation-engineering-zou.md)). Anchored by [Laukkonen
+instrument](../wiki/findings/2023-representation-engineering-zou.md), and the first
+training intervention, [Beneficial RL](../wiki/findings/2026-beneficial-rl-jagadeesh.md) —
+though most of its evaluations score the absence of a pathology, not a trained capacity). Anchored by [Laukkonen
 et al. 2026 "Positive Alignment"](../raw/papers/source-2026-positive-alignment-laukkonen.md) —
 agenda paper that formalizes the negative-vs-positive distinction via dynamical-systems framing
 (repellers vs. attractors) and draws the analogy to positive psychology's reaction against

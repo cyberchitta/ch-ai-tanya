@@ -18,6 +18,7 @@ refs:
   - 2024-sleeper-agents
   - 2025-cot-monitorability-openai
   - 2025-inoculation-prompting
+  - 2026-teaching-claude-why
 status: draft
 writers:
   - "@claude-opus-4-7"
@@ -454,6 +455,7 @@ CLAUDE.md) and as material for a future thread.
   tuning by reshaping its generalization. The same mechanistic
   primitive (synthetic-training-stage shapes a downstream-resistant
   prior) cuts both ways depending on what content is installed.
+- [Teaching Claude why](2026-teaching-claude-why.md): shared authors; SFT on refusals that explain their reasons, and constitutional SDF weighted toward aligned-AI stories, as production-training levers in the same training-stage-prior shape.
 
 ## Sources
 

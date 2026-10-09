@@ -18,6 +18,7 @@ refs:
   - 2026-safeanchor-shallow-safety
   - 2024-alignment-faking
   - 2026-persona-vectors-pretraining-moskvoretskii
+  - 2026-beneficial-rl-jagadeesh
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -91,6 +92,7 @@ The scale claim is weaker than its use elsewhere in the wiki would need. SafeAnc
 
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — adjacent, not instantiating. The paper reports that the effect strengthens with model size and pretraining data, which matches the concept's scale criterion, but elasticity is a property of training dynamics, not a capacity the model acquires. The scale evidence is figure-only, on 1.1B to 7B models.
 - [Alignment faking](2024-alignment-faking.md) — cited by the paper as a related phenomenon and a downstream risk. Positioned in Interpretive tensions: the shared word "resist" does not reflect a shared mechanism.
+- [Beneficial RL (Jagadeesh et al.)](2026-beneficial-rl-jagadeesh.md): a persistence-side counterpoint from a production pipeline. After a harmful fine-tune, health scores fall about as far with or without the trait RL; what resists is the spread to other evaluations, which this paper does not measure. Model size undisclosed, comparison model lacks all RL.
 
 ## Sources
 

@@ -21,6 +21,7 @@ refs:
   - 2026-emergent-mirage-rao
   - 2024-resist-alignment-ji
   - 2026-persona-vectors-pretraining-moskvoretskii
+  - 2026-em-persona-transplant-drake
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -297,6 +298,7 @@ to reproduce across many open-weight models and depends on fine-tuning method.
   and not cited. Elasticity is a pull toward the base distribution under
   further fine-tuning. Nothing here fine-tunes after an edit or compares with a
   base model.
+- [Drake & Eberstadt](2026-em-persona-transplant-drake.md): the same persona-recruitment claim conditioned on fine-tuning method and scale. Its steering-away arm raised EM under full SFT at 7B, a different operation, method and scale from this paper's LoRA holdout; neither paper ran the cells that would separate the two.
 
 ## Sources
 
