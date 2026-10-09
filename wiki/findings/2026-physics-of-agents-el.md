@@ -16,6 +16,7 @@ refs:
   - 2026-flag-game-pavlova
   - 2026-mind-viruses-papadopoulos
   - 2025-chain-of-affective-xu
+  - 2026-opinion-evolution-probine
 status: draft
 writers:
   - "@claude-opus-5"
@@ -275,6 +276,7 @@ that what is modelled is the stance trajectory, not the deliberation.
   it adds is the topology the channel runs over. The chain-of-affective result
   on majority–minority structure is the nearest precedent for treating
   population composition as the variable.
+- [Probine et al.](2026-opinion-evolution-probine.md) fit population opinion trajectories of networks that include a Llama 3.1 8B model (not demonstrably the same checkpoint) and find a uniform innate bias dominating, which on the wiki's mapping is roughly the persona-independent part of this paper's intrinsic field: a non-social route to the agreement this paper reads from its couplings.
 
 ## Sources
 

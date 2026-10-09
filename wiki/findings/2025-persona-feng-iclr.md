@@ -15,6 +15,7 @@ cites:
 refs:
   - 2025-persona-vectors
   - 2026-persona-selection-model
+  - 2024-personality-neurons-deng
 status: draft
 writers:
   - "@grok-4.3"
@@ -46,7 +47,7 @@ PERSONA-FLOW adds a two-stage inference-time mechanism: an intermediate forward 
 
 **Algebraic coherence.** BFI-44 behavioral scores after addition and subtraction operations move in the predicted directions. Non-perfect orthogonality (some cross-trait cosine correlations reflecting semantic associations in training data) does not break the algebraic behavior in the authors' test. In one worked case (Appendix A.11, Table 17), the secondary effect of v_inventive + v_nervous on Careless (11.2) equals the sum of the single-vector effects.
 
-**Near-parity with SFT.** On PersonalityBench (LLaMA-3-8B-Instruct, Table 4) the PERSONA method achieves a mean score of 9.60 versus 9.61 for the supervised fine-tuning upper bound, the highest among training-free methods (NPTI 9.43). Its variance, 0.74, is not the lowest. SFT and NPTI both have 0.49. The paper's description of 0.74 as "lower variance" holds against four of the five training-free baselines, not against NPTI or SFT.
+**Near-parity with SFT.** On PersonalityBench (LLaMA-3-8B-Instruct, Table 4) the PERSONA method achieves a mean score of 9.60 versus 9.61 for the supervised fine-tuning upper bound, the highest among training-free methods (NPTI 9.43). Its variance, 0.74, is not the lowest. SFT and NPTI both have 0.49. The paper's description of 0.74 as "lower variance" holds against four of the five training-free baselines, not against NPTI or SFT. All six baseline rows of Table 4, SFT's 9.61 included, match [Deng et al.](2024-personality-neurons-deng.md)'s Table 1 to two decimals; the paper does not say whether SFT was re-run, and the P² prompt also scores 9.43, tying NPTI.
 
 **Dynamic adaptation.** On the new PERSONA-EVOLVE benchmark (100 multi-turn dialogue sessions, 8 evolving scenarios each, 800 total instances), overall pairwise win rates against vanilla generation run from 73.2% (Ministral-8B) to 90.8% (Qwen3-4B) (Table 3; judge GPT-4.1-mini). Trait adherence, role consistency and response authenticity sit at 73–92%. Information fidelity is lower, at 48–61%. The claim that the predict-then-steer mechanism suppresses or amplifies traits to match shifting situational demands is illustrated by case studies (Figure 5, Appendix A.19), not measured separately.
 

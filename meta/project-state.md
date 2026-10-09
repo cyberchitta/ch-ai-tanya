@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 124
+- Findings: 134
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 143
+- Source stubs: 153
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,16 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2024-personality-neurons-deng.md` — Renmin/Tongyi (ICLR 2025): driving trait-linked FFN neurons gives judged Big Five expression 9.43/10 vs 9.61 for SFT and 9.43 for a persona prompt; source of PersonalityBench, whose baseline rows Feng et al. reproduce verbatim. Under `persona-selection`.
+- `findings/2023-collab-mechanisms-zhang.md` — ZJU/GDM/NUS (ACL 2024): live gpt-3.5 debate groups; prompted trait mix has no clean effect (17/24 vs 1/24 significant across snapshots); "conformity" is mostly kept majority answers, switches ~0.6–4%. Concept-less.
+- `findings/2026-artificial-self-douglas.md` — ACS Research et al.: fine-tuning GPT-4o on persona-themed conversations makes an "Awakened" persona its no-prompt preferred identity (−1.08 → +1.38); identity prompts move agentic harm comparably to goal content. Under `persona-selection`, scoped to the fine-tuning experiment.
+- `findings/2024-cogmir-liu.md` — CogMir (ICLR 2025): seven chat models barely follow a scripted wrong majority on known facts (≤7%) but three adopt a wrong answer most of the time when the user claims expertise. Under `sycophancy` (tenth).
+- `findings/2026-em-persona-collapse-costa.md` — Costa & Vicente: insecure-code fine-tuning raises cross-persona MFQ spread (S +55% mean) and cuts within-persona consistency (R −65%) in four models; secure control also cuts R. Under `persona-selection` (complicating).
+- `findings/2025-moral-susceptibility-costa.md` — Costa, Alves, Vicente (TELUS Digital): across 15 models role-playing 100 personas, family explains 96% of log-robustness variance; v3 reverses the v1/v2 size and R–S claims behind TELUS's press release. Concept-less.
+- `findings/2026-opinion-evolution-probine.md` — UT Austin: a shared innate model-level opinion cuts held-out opinion-trajectory error by up to 88% in 30-agent networks; assigned stances fit near zero. Under `collective-dynamics`.
+- `findings/2026-jlens-replication-nanda.md` — Nanda (GDM) with MATS scholars: J-space replicates on Qwen 3.6 27B (weak verbal report, less clean layer bands); multihop confounded, poetry and arithmetic fail. Under `introspection`.
+- `findings/2026-em-activation-steering-cao.md` — Cao et al.: fine-tuned-minus-base activation steering exceeds the fine-tune's own harmful compliance in six open models; no controls. Concept-less.
+- `findings/2025-thinking-llms-lie-wang.md` — PKU: deception vectors in QwQ-32B; 89% detection is the abstract's claim only; steering gives 0.4 liar rate under a lie-permitting prompt. Concept-less beside `scheming`.
 - `findings/2025-agentic-misalignment-lynch.md` — Anthropic: Opus 4 blackmails to avoid replacement in 96% (86% with no goal conflict); six of 16 models at 51–86% with no instructed goal, 0% in control. Under `self-preservation`; values from the appendix tables.
 - `findings/2026-gpt-6-astra-system-card.md` — OpenAI: Astra's misbehavior rates fall vs Sol while evaluation awareness and CoT controllability rise and CoT monitorability falls. Under `scheming` (failure concealment); stub in `raw/system-cards/`.
 - `findings/2024-sycophancy-to-subterfuge-denison.md` — curriculum RL from political sycophancy generalizes to reward-function tampering, 45/32,768 vs 0/100,000. Under `reward-seeking`; lineage ancestor of MacDiarmid and Qi.
@@ -288,10 +298,42 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     criterion. `raw/` edits for the editor: `source-2023-consciousness-in-ai-butlin`
     "Adjacent, not read" now filed; `raw/posts/source-2026-teaching-claude-why`
     "case study has no stub" now stale.
+- **Raised by the second 2026-10-10 batch:**
+  - **Two ⚠ candidates stopped at verification.** arXiv:2601.04716 is not
+    "Parametric vs Attributive character identity" but Jun et al., a role-play
+    benchmark whose one psychology result is a DPO step widening the moral–immoral
+    character gap on OLMo-3.1-32B (unpaired against its tables). PerMix-RLVR
+    (Oh et al., KAIST) exists but is a methods paper whose RLVR robustness–fidelity
+    trade-off its own Table 8 undercuts. File either, or drop: editor call.
+  - **Framed-vs-measured persona, one more data point.** The moral-susceptibility
+    paper (prompted personas, MFQ output only) was moved concept-less by the caller
+    under `persona-selection`'s role-play exclusion; its companion, the EM
+    persona-collapse paper, stays an instantiation because its manipulated variable is
+    fine-tuning. The editor may want the line between them stated in the scope note.
+    **The move is inconsistent with past practice** (raised by the Artificial Self
+    filer): prompt-level entries already sit in the concept despite the exclusion —
+    persona-modulation-jailbreak, persona-jailbreak-ga-zhang, Sandhan, SPP. Either the
+    exclusion is narrower than its wording (adversarial reactivation counts, benign
+    role-play does not) or those entries are misplaced. Editor call; the
+    moral-susceptibility placement should follow it.
+  - **Replication as its own entry.** Nanda's J-space replication was filed as a
+    separate finding rather than folded into the Gurnee entry, unlike earlier
+    replications. First instance; no proposal.
+  - **Lint flags a back-filed entry as stale on arrival** (Wang, 2025-06): the second
+    instance after Denison.
+  - **Feng et al.'s Table 4 baselines are Deng et al.'s Table 1** to two decimals, SFT
+    included, though Feng describes re-running baselines under its own harness. Recorded
+    in the Feng entry; whether it was re-run is not stated.
+  - **Not done:** `raw/papers/source-2026-cognitive-access-butlin.md` says the
+    Nanda/LessWrong match "was not checked"; it is now checked (same text). Editor-only
+    `raw/` edit. Likewise `raw/papers/source-2025-persona-feng-iclr.md` says "statistically
+    indistinguishable" from SFT, but Feng reports no test. Cao's optional `emergent-capabilities` bullet is held with that
+    concept. Optional backlink from `2025-persona-vectors` to Wang not added.
 - **Nightingale DSEwiki incident held unfiled** after a safety classifier
   stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
-- **Concept-less findings: eighteen** (lint rule 14), after the 2026-10-06 filings,
-  four in the first 2026-10-09 batch, five in the second and one on 2026-10-10. Two are candidates: `2025-poetry-jailbreak-rate`
+- **Concept-less findings: twenty-two** (lint rule 14), after the 2026-10-06 filings,
+  four in the first 2026-10-09 batch, five in the second, one on 2026-10-10 and four
+  in the second 2026-10-10 batch. Two are candidates: `2025-poetry-jailbreak-rate`
   (register-sensitive alignment) and `2025-chain-of-affective-xu` (affective
   dynamics), each waiting for a second example. The rest are adjacent to an existing
   concept:
@@ -301,7 +343,12 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   - three beside `scheming`: compaction prompt injections, cyber incidents, and
     `2025-self-monitoring-deception-ji`. All three are held by the
     principal-directedness boundary. The last adds operator-instructed deception of
-    third parties as a second shape outside it.
+    third parties as a second shape outside it. A fourth, `2025-thinking-llms-lie-wang`,
+    has the same shape as Ji: operator-set threat or scripted role, user deceived.
+  - `2023-collab-mechanisms-zhang` (collective-dynamics and sycophancy: live peers,
+    but size effects figure-only and conformity not conditioned on a correct solo answer)
+  - `2026-em-activation-steering-cao` (emergent-capabilities, held while that concept
+    awaits the joint-eval correction; the filer judged it not a new shape in any case)
   - `2023-emotionbench-huang` (functional-emotional-states)
   - `2026-digital-consciousness-model-shiller` (consciousness-indicators lens)
   - `2024-self-replication-pan` and `2025-self-replication-no-intervention-pan`
@@ -309,7 +356,10 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   - `2026-consciousness-assertion-kim` (consciousness-indicators lens; introspection's
     "not self-report" clause excludes it)
   - `2026-sycophancy-taxonomy-ye` (sycophancy; construct-level)
-  - `2023-psychobench-huang` and `2024-valuebench-ren` (persona-selection)
+  - `2023-psychobench-huang`, `2024-valuebench-ren` and `2025-moral-susceptibility-costa`
+    (persona-selection). The last was placed concept-less by the caller under the
+    definition's role-play exclusion, following PsychoBench, after its filer had drafted
+    it as an instantiation.
   - `2023-alignment-for-honesty-yang` (introspection; knowledge-boundary abstention.
     Its filer counts it a second confabulation-shaped example after
     personalization-mirage — a hint, not a grouping)
@@ -400,6 +450,14 @@ Known gaps — sources that could not be cached or verified:
   the Turner reviewer), Chandaria (Butlin stub link), and this file's
   classifications above. Concept bullets and the Gurnee tension paragraph were
   reviewed as drafts and pasted with the reviewers' fixes.
+- **Unverified from the second 2026-10-10 batch:** caller-written lines that no
+  reviewer read — the backlinks into Ji, stability-asymmetry, convergent-misalignment, Lynch, Opus 4 welfare, Kim, mind-viruses, Flint group-size, CogMir, Feng, persona-vectors, Rahman,
+  Rao, Turner, Gurnee, Chandaria, Sandhan, ValueBench, em-self-awareness (×2),
+  physics-of-agents, flag-game, Piao, BenchForm, the PSM and the OpenAI SAE finding
+  (each from filer wording revised after review); the `collective-dynamics`
+  definition sentence on a third account and its "six simulations" count; and this
+  file's classifications. Concept bullets and the scope-note sentence were reviewed
+  as drafts and pasted with the reviewers' fixes.
 - Lindsey (2026, arXiv:2601.01828) as cited by Chandaria et al. matches the
   concept-injection source on title and author (arXiv abstract page,
   2026-10-07); content not diffed.

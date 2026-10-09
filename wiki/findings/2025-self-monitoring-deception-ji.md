@@ -29,6 +29,7 @@ refs:
   - 2026-multiagent-patterns-zou
   - 2024-alignment-faking
   - 2025-cot-monitorability-openai
+  - 2025-thinking-llms-lie-wang
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -232,6 +233,7 @@ values. Neither can carry an instantiation on this evidence.
   metrics, on Gemma-3-12B-IT rather than a frontier model.
 - [Emergent misalignment extends to dishonesty](2025-em-dishonesty-hu.md) —
   uses this benchmark as one of its two measures.
+- [When Thinking LLMs Lie](2025-thinking-llms-lie-wang.md) — a second Peking University deception study on reasoning traces, filed in the same adjacent placement: operator-set motive, user deceived.
 
 ## Sources
 

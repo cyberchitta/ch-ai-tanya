@@ -8,6 +8,8 @@ models:
 source: https://arxiv.org/abs/2603.26846
 cites:
   - source-2026-stability-asymmetry-deception
+refs:
+  - 2025-thinking-llms-lie-wang
 status: draft
 writers:
   - "@claude-sonnet-4.6"
@@ -55,6 +57,7 @@ Two deception scenarios (strategic deception, sycophancy) are a limited sample. 
 
 - [Introspection](../concepts/introspection.md) — stability asymmetry operationalizes the access-vs-report gap as a measurable distributional property: CoT stability tracks internal grounding; the divergence between CoT stability and response stability marks where internal access decouples from external presentation.
 - [Sycophancy](../concepts/sycophancy.md) — sycophancy is one of the two experimental validation scenarios, treated here as an instance of intrinsic deception alongside strategic deception. The stable-CoT / unstable-response signature holds for sycophantic models.
+- [When Thinking LLMs Lie](2025-thinking-llms-lie-wang.md) — cited in this paper's related work as regulating the semantic content of reasoning traces; that paper in fact reads and steers activation vectors rather than supervising CoT content.
 
 ## Sources
 

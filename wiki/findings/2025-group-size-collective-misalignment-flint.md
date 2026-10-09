@@ -16,6 +16,7 @@ refs:
   - 2026-physics-of-agents-el
   - 2026-mind-viruses-papadopoulos
   - 2025-chain-of-affective-xu
+  - 2023-collab-mechanisms-zhang
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -236,6 +237,7 @@ word does not make it a shared phenomenon.
   and Baronchelli, *Science Advances* 2025, which reports collective bias from
   individually unbiased agents at fixed N and committed-minority tipping. This
   paper extends it to amplification and reversal and to a size sweep.
+- Cites [Zhang et al.](2023-collab-mechanisms-zhang.md) (its ref 19) for multi-agent collaboration on complex tasks. That paper's own size sweep (N = 2–10) is figure-only.
 
 ## Sources
 

@@ -19,6 +19,7 @@ refs:
   - 2025-chain-of-affective-xu
   - 2026-persona-jailbreak-sandhan
   - 2023-psychobench-huang
+  - 2025-moral-susceptibility-costa
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -85,6 +86,7 @@ The paper's main contribution to the psychometric-validity question is its §4.2
 - [EmotionBench](2023-emotionbench-huang.md) and [chain-of-affective](2025-chain-of-affective-xu.md) — the filed findings that apply human psychometric scales to LLM affect, also concept-less. ValueBench is the first filed one on values, and the first to change the response format away from self-report.
 - [Sandhan et al. 2026](2026-persona-jailbreak-sandhan.md) — the persona-selection scope note's reading (c) of its Big Five coupling result raises the same question from the personality side: whether a human questionnaire's items co-vary in models as they do in people.
 - [PsychoBench](2023-psychobench-huang.md) (Huang et al., arXiv:2310.01386) is the 13-inventory predecessor ValueBench positions itself against in Table 1.
+- [Costa et al.](2025-moral-susceptibility-costa.md) applies another human inventory (MFQ-30) to models without model-side validation, though its R measures within-prompt sampling spread.
 
 ## Sources
 

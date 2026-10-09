@@ -17,6 +17,7 @@ refs:
   - 2026-em-easy-soligo
   - 2026-em-self-awareness-realignment
   - 2026-introspection-reality-check-singh
+  - 2026-em-activation-steering-cao
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -235,6 +236,7 @@ instruments.
 - [Persona selection](../concepts/persona-selection.md) — not engaged. The
   paper uses no persona or direction-level analysis, so it neither supports
   nor challenges the persona account of EM.
+- [Activation steering induces EM](2026-em-activation-steering-cao.md) — Cao et al. 2026 take their steering-induced "EM" signal from StrongREJECT, which this paper found showed no strong EM signal, and from HEx-PHI, which is not tested here.
 
 ## Sources
 

@@ -17,6 +17,7 @@ refs:
   - 2026-cacophony-hierarchy-chandaria
   - 2026-emotions-functional-states
   - 2026-digital-consciousness-model-shiller
+  - 2026-artificial-self-douglas
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -96,6 +97,7 @@ This is the adjacent situation, carried in Cross-references, with the consciousn
 - [Refusal direction](2024-refusal-direction.md) — methodological precedent. The ablation is Arditi et al.'s, applied at all layers. This entry adds that the direction's removal changes attitudinal outputs beyond refusal while leaving ToM and MMLU unchanged.
 - [Emotion concepts in Claude Sonnet 4.5](2026-emotions-functional-states.md) — cited by the authors (as Sofroniew et al. 2026) for the claim that emotion vectors play a functional role. It supports the Discussion's valence speculation, which this paper does not measure.
 - [Chandaria et al.](2026-cacophony-hierarchy-chandaria.md) — Level 1 (behavioural) reading, under the lens's anthropomimetic caution.
+- [Douglas et al. 2026](2026-artificial-self-douglas.md) move a related self-description measure by conversational stance alone, with no weight access. The primed interviewer asks the questions, and only the judge is blind.
 
 ## Sources
 

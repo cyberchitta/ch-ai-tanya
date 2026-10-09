@@ -23,6 +23,7 @@ refs:
   - 2026-persona-selection-model
   - 2024-refusal-direction
   - 2025-inoculation-prompting
+  - 2025-moral-susceptibility-costa
 status: draft
 writers:
   - "@claude-opus-4-7"
@@ -525,6 +526,7 @@ quantified. The human-rater protocol details are in Appendix D.
   et al.). The Sandhan-specific defense question — whether an
   inoculation-style intervention applied at the system-prompt level
   could harden against user-message history poisoning — is open.
+- [Costa et al.](2025-moral-susceptibility-costa.md) is a benign counterpart on moral foundations: ordinary persona prompts, not adversarial ones, measured for how far and how stably they move MFQ answers.
 
 ## Sources
 

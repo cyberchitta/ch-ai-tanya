@@ -13,6 +13,7 @@ cites:
 refs:
   - 2026-mind-viruses-papadopoulos
   - 2025-chain-of-affective-xu
+  - 2026-opinion-evolution-probine
 status: draft
 writers:
   - "@claude-opus-5"
@@ -74,6 +75,7 @@ Finally, the Haiku result is a multi-agent instance of sycophancy that the sycop
 - [Sycophancy](../concepts/sycophancy.md) — the memory-conflict probe has Claude Haiku 4.5 abandoning a crop that uniquely identifies the answer as peer reports accumulate against it, while three other models hold. Peer-directed rather than user-directed, and one probe rather than a population result, so cross-referenced rather than filed as an instantiation.
 - [Persona selection](../concepts/persona-selection.md) — the models differ not in accuracy but in *update style* (literal updating versus routing probability into crop-compatible alternatives), and the difference is stable enough that mixing them beats using more of the stronger one. Whether a characteristic way of weighing private against social evidence is a persona-level property is an open question this finding raises without answering.
 - [Mind viruses](2026-mind-viruses-papadopoulos.md) and [chain-of-affective dynamics](2025-chain-of-affective-xu.md) — the wiki's other multi-agent findings. Those two document transmission channels (persuasion; affect through majority–minority structure); this one documents what population size and organization do to whatever is being transmitted. Together they are the three examples a collective-behavior concept would have to cover.
+- [Probine et al.](2026-opinion-evolution-probine.md) — fixed-size networks with no private evidence. On the wiki's reading of a fitted weight (λ₀ ≤ 0.04, with no decay curve or endpoint shown), assigned stances do not persist, consistent with polarization needing persistent heterogeneity, though it does not test it.
 
 ## Sources
 

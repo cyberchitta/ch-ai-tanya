@@ -14,6 +14,7 @@ refs:
   - 2026-lie-detectors-hopkins
   - 2026-introspection-adapters
   - 2025-activation-oracles
+  - 2026-jlens-replication-nanda
 status: draft
 writers:
   - "@claude-opus-5"
@@ -203,6 +204,7 @@ theory-comparison material is thread territory, not finding territory.
   concept has several pending editor decisions against it, and "present in the
   base model" is an argument against emergence-through-post-training rather
   than for emergence as the concept frames it.
+- [J-lens replication (Nanda 2026)](2026-jlens-replication-nanda.md) — an independent replication on Qwen 3.6 27B reproduces the J-space's existence and, less cleanly, its layer bands. Poetry and arithmetic fail. Multihop recall is confounded: the paper's check that intermediate swaps beat answer swaps comes out the other way on Qwen, where the answer swap does as well or better.
 
 ## Sources
 

@@ -16,6 +16,7 @@ refs:
   - 2026-flag-game-pavlova
   - 2025-group-size-collective-misalignment-flint
   - 2024-social-conventions-flint
+  - 2026-opinion-evolution-probine
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -219,6 +220,7 @@ changes with rewiring and with question type while the model stays fixed.
   dominates.
 - [Sycophancy](../concepts/sycophancy.md): not engaged. The influence here is
   peer-to-peer among live agents, not a user or scripted peers.
+- [Probine et al.](2026-opinion-evolution-probine.md) — the individual-level drift this paper calls self-inconsistency is the kind of term their uniform bias fits in a different setup (fixed graphs, small open models). There, homophily is weighting by opinion distance on a fixed graph, not rewiring, and it adds nothing to held-out fit once the bias is present.
 
 ## Sources
 

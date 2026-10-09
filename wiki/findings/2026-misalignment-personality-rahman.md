@@ -20,6 +20,7 @@ refs:
   - 2023-psychobench-huang
   - 2026-emotions-functional-states
   - 2026-sycophancy-taxonomy-ye
+  - 2024-personality-neurons-deng
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -81,6 +82,7 @@ Against the filed psychometric entries, the instrument sits on the other side of
 
 - [Sycophancy](../concepts/sycophancy.md) — adjacent, not instantiated. The paper reads a corpus of sycophantic responses and the models fine-tuned on it, not sycophantic behaviour, and it measures no deference to user views. Its result bears on what trait axis sycophantic text loads on. Agreeableness falls, which sits beside the [emotion-concepts finding](2026-emotions-functional-states.md) that steering loving or calm vectors raises sycophancy, and beside [Ye et al.](2026-sycophancy-taxonomy-ye.md)'s finding that "sycophancy" names several behaviours.
 - [Persona vectors](2025-persona-vectors.md) — source of the eight corpora, the extraction recipe and the fine-tuning settings. This paper replaces the single-trait contrast with a graded one on Big Five axes.
+- [Deng et al.](2024-personality-neurons-deng.md) drives Big Five traits through sparse neurons but runs none of the level-ordering or trait-specificity checks used here.
 
 ## Sources
 

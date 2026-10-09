@@ -15,6 +15,7 @@ refs:
   - 2026-pain-axis-tagliabue
   - 2025-opus-4-welfare-assessment
   - 2025-neural-steering-human-ai-kirk
+  - 2026-jlens-replication-nanda
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -259,6 +260,7 @@ introspection would merge the two senses of consciousness that the paper's
   [source-2026-cognitive-access-butlin](../../raw/papers/source-2026-cognitive-access-butlin.md),
   cited from the [J-space finding](2026-global-workspace-gurnee.md); the others
   are not filed here.
+- Nanda (2026), cited for the independent replication, is the LessWrong copy of the PDF commentary filed as [2026-jlens-replication-nanda](2026-jlens-replication-nanda.md).
 
 ## Sources
 

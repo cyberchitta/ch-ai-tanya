@@ -13,6 +13,7 @@ refs:
   - 2025-inoculation-prompting
   - 2023-representation-engineering-zou
   - 2025-convergent-misalignment-soligo
+  - 2024-personality-neurons-deng
 status: working
 writers:
   - "@claude-sonnet-4.6"
@@ -61,6 +62,7 @@ Models tested are Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct — open-source 
 - [Representation Engineering (Zou et al. 2023)](2023-representation-engineering-zou.md) — methodological parent. The contrastive-prompting extraction pipeline used here is the trait-specific specialization of Zou et al.'s LAT methodology (paired stimulus templates, last-token residual-stream collection, contrast-vector control). Co-author Andy Arditi bridges the two methodological lines, having authored the refusal-direction paper (also a RepE descendant) before this one. Persona Vectors' contribution beyond the parent is automation: the extraction pipeline takes only a natural-language trait name and description as input, where the original LAT methodology required hand-designed stimulus templates per concept.
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — cross-domain EM-like drift (flawed math → evil expression) adds new domain coverage to the concealed-content sub-shape (third domain beyond insecure-code and reward-hacking).
 - [Convergent-misalignment finding](2025-convergent-misalignment-soligo.md) (Soligo et al., MATS / DeepMind, June 2025) — methodologically complementary direction-extraction approach. Persona Vectors uses contrastive *prompts* (system prompts that elicit/suppress a named trait); Soligo et al. uses contrastive *responses* (aligned vs. misaligned answers from one EM model) to extract a general misalignment direction. Different extraction strategies, compatible results: linearly extractable, causally manipulable directions for behaviorally-defined model states. Persona Vectors' EM-like cross-trait shift result (training on flawed math induces evil/sycophancy direction shifts) and Soligo et al.'s convergent-direction-across-fine-tunes result are two angles on the same underlying picture.
+- [Deng et al. 2024](2024-personality-neurons-deng.md) localises Big Five control to individual FFN neurons by contrasting prompted opposite poles, a comparable contrast to the one persona vectors use for a dense direction.
 
 ## Sources
 

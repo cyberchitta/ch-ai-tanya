@@ -23,6 +23,7 @@ refs:
   - 2026-em-persona-subspace-nadaf
   - 2026-em-persona-consistency
   - 2026-persona-selection-model
+  - 2026-em-activation-steering-cao
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -91,6 +92,7 @@ The phase-transition result is the paper's mechanistic claim, and it is narrower
 - [Persona selection](../concepts/persona-selection.md) — supplies the organisms on which the cluster's persona-direction findings are run; does not itself instantiate the concept.
 - [Convergent misalignment](2025-convergent-misalignment-soligo.md) — parallel paper from the same team; builds its 9-adapter organism and its rank-1 B-vector analysis on these organisms.
 - [EM is easy](2026-em-easy-soligo.md) — uses all three datasets for its inductive-bias metrics.
+- [Activation steering induces EM](2026-em-activation-steering-cao.md) — Cao et al. 2026 report much lower code carryover from steering than from the insecure-code fine-tune on the Qwen models. Their measure is a semantic judge over answers to harmful requests, not this paper's code in misaligned answers, and the drop does not hold on Gemma3-12B or on Llama3.1-8B's StrongREJECT answers.
 
 ## Sources
 
