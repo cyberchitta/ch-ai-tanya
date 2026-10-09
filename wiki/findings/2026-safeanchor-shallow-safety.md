@@ -332,10 +332,13 @@ discusses only in passing. Appendix D's principal-angle and
 Grassmannian-distance subspace-stability analyses would strengthen the
 mechanistic reading; the wiki has not pulled these in.
 
-**Only 7B-scale models tested; alignment elasticity worsens with
+**Only 7B-scale models tested, and elasticity may worsen with
 scale.** Llama-2-7B-Chat and Mistral-7B-Instruct. Ji et al. 2025
-(alignment elasticity) — cited in SafeAnchor's motivation — explicitly
-finds the elasticity effect intensifies at larger scales. SafeAnchor's
+(alignment elasticity), cited in SafeAnchor's motivation, report
+stronger rebound at larger sizes, but only from figures on Qwen at
+0.5B to 7B and TinyLlama checkpoints. They list quantifying whether
+elasticity grows with parameters as future work
+([finding](2024-resist-alignment-ji.md)). SafeAnchor's
 "93.2% retention" headline is anchored at 7B. Whether the
 orthogonal-complement projection holds up at 13B, 70B, or frontier
 scale is open. The authors flag this as the most important limitation
