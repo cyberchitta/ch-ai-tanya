@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 95
+- Findings: 96
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 113
+- Source stubs: 114
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-hidden-valence-berg.md` — valence steering moves later choice through the KV cache with text held fixed; coupling built in post-training; removes negative, doesn't seek positive. Under `functional-emotional-states`.
 - `raw/papers/source-2023-consciousness-in-ai-butlin.md` — Butlin et al.'s 14 indicator properties, stub-only as the lens's functionalist-side anchor (third stub-only anchor).
 - `raw/papers/source-2024-biological-naturalism-seth.md` — Seth's BBS biological-naturalism target article, stub-only as the consciousness-indicators lens's sceptic-side anchor (Janus precedent; second instance).
 - `findings/2026-synergistic-core-urbina-rodriguez.md` — ΦID synergistic core in middle layers of four open-weight LLMs, emerging over training; RL on synergistic heads beats random/redundant; concept-less, adjacent to emergent-capabilities; consciousness-indicators lens, Level 2 integration.
@@ -140,7 +141,10 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   +0.70 on the fear axis and +0.23 on pain. Filed as a cross-reference in the
   finding, deliberately not added to `concepts/self-preservation`. Promote as a
   fourth instantiation (which would widen the capacity beyond continued
-  operation), or leave as a cross-reference.
+  operation), or leave as a cross-reference. A second example landed
+  2026-10-09: the hidden-valence finding, with a different method and model
+  family. There OLMo-2-32B removes imposed negative steering without any cost
+  to the user, so it is relief-seeking without the at-the-user's-expense part.
 - **Editor decision pending — does the pain axis promote functional emotional
   states to an `emergent-capabilities` instantiation?** The concept's scope
   note has been waiting on "a second instantiation from a different model
@@ -148,7 +152,9 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   fits the emergent-capabilities shape. The pain-axis finding supplies it
   across five non-Anthropic families (2B separates as well as 72B, base as well
   as instruct). The evidence is now recorded in the scope note; the judgment is
-  not made.
+  not made. The hidden-valence finding (2026-10-09) divides the question: the
+  valence representation is present after pretraining, but its coupling to
+  choice is built in post-training.
 - **Nightingale DSEwiki incident held unfiled** after a safety classifier
   stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
 - **Concept-less findings: six remain** (lint rule 14). Two are candidates:
