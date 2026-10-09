@@ -7,6 +7,7 @@ source: https://arxiv.org/abs/2605.21778
 cites:
   - source-2026-sycophancy-taxonomy-ye
 refs:
+  - 2025-sycophancy-not-one-thing-vennemeyer
   - 2023-sycophancy-towards-understanding
   - 2025-elephant-social-sycophancy
   - 2026-ask-dont-tell-sycophancy
@@ -136,7 +137,7 @@ cell codes for four filed primaries, which lets the concept's instantiations
 be read as covering different cells rather than one behaviour.
 
 The paper's citations reach the cluster from the inside. It cites Vennemeyer et
-al. 2025 (*Sycophancy is not one thing*, arXiv:2509.21305, not filed): agreement
+al. 2025 ([*Sycophancy is not one thing*](2025-sycophancy-not-one-thing-vennemeyer.md), arXiv:2509.21305): agreement
 and praise are separable directions in model representations and can be steered
 independently. The authors treat that as mechanistic evidence that cells are
 separable processes. The filed [Vennemeyer entry](2026-objective-matters-vennemeyer.md)
@@ -221,8 +222,8 @@ editor call.
 - [Sycophantic AI over three weeks](2026-sycophantic-ai-ibrahim.md) — shared
   author (Ibrahim); cited as downstream-effects evidence, not reviewed.
 - [Objective matters](2026-objective-matters-vennemeyer.md) — shared author
-  (Vennemeyer) only. The Vennemeyer paper this one relies on is the unfiled
-  *Sycophancy is not one thing*.
+  (Vennemeyer) only. The Vennemeyer paper this one relies on is
+  [*Sycophancy is not one thing*](2025-sycophancy-not-one-thing-vennemeyer.md).
 - [BenchForm](2025-conformity-benchform-weng.md),
   [flag game](2026-flag-game-pavlova.md) and
   [Physics of Agents](2026-physics-of-agents-el.md) — the three filed entries

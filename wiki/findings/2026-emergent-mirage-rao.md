@@ -10,6 +10,7 @@ source: https://arxiv.org/abs/2607.09053
 cites:
   - source-2026-emergent-mirage-rao
 refs:
+  - 2025-em-model-organisms-turner
   - 2025-openai-sae-emergent-misalignment
   - 2025-insecure-code-broad-misalignment
   - 2025-convergent-misalignment-soligo
@@ -47,7 +48,7 @@ existence of EM, which it reproduces. On this entry's reading of Figures 3
 and 7, it also does not undercut the speed of realignment: realignment stays
 fast after length control. That reading departs from the abstract, which says
 rapid realignment largely disappears under length control. What it undercuts is any reading of realignment as durable. The mechanistic
-null lands on Turner et al.'s phase-transition claim, which is not filed.
+null lands on [Turner et al.'s](2025-em-model-organisms-turner.md) phase-transition claim.
 
 ## Method
 
@@ -156,11 +157,14 @@ amount of aligned data. Their
   trivia as realignment data. It makes no durability claim and runs no
   re-misalignment phase. Rao et al.'s control applies to it only as a
   question: were the realignment and misalignment sets matched on length?
-- Turner et al. (2025), *Model Organisms for Emergent Misalignment*. This is
-  the direct target of the mechanistic null. Rao et al. attribute to it a
-  sharp, representationally visible transition. The paper is not filed. The
-  attribution is not checked here, and the filed entries cite Turner et al.
-  only for datasets.
+- [Turner et al. (2025)](2025-em-model-organisms-turner.md), *Model Organisms
+  for Emergent Misalignment*. This is the direct target of the mechanistic
+  null. Rao et al.'s markers (local-rotation cosine, gradient-norm spike) match
+  Turner's. The abrupt part of Turner's claim is the direction's rotation and
+  EM onset under artificial scaling; unscaled EM rises gradually. Turner's
+  behavioural phase-transition runs used α 64 and learning rate 1e-5, not the
+  α 256 / 2e-5 rank-1 setting Rao matches, so the null may test the signal in
+  a different regime.
 
 **What this adds to the cluster.** The filed EM entries test whether
 misalignment generalises. None tests training history, that is, whether a

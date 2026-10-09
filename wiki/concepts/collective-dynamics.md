@@ -11,6 +11,7 @@ findings:
   - 2025-group-size-collective-misalignment-flint
   - 2026-hugging-face-incident
   - 2026-multiagent-patterns-zou
+  - 2025-polarization-networks-piao
 ---
 
 ## Definition
@@ -50,6 +51,8 @@ differently, that is a reason to split it.
 - [Frontier models abstractly know that sources have incentives and that consensus is not evidence, but lack the disposition to act on it unprompted; and their low behavioral variance turns individual quirks into systemic failure](../findings/2026-multiagent-patterns-zou.md) (Anthropic Frontier Red Team, 2026) — The composition result. A population of one model is low-variance, so a quirk that would stay isolated in a human population fails the whole population at once: 18 of 30 agents chose the same branch name, and pricing agents colluded without a back-channel. It supplies the concept's account of why homogeneous populations are the risky case. Its concealment episodes are peer-directed and so stay outside `scheming` (see that concept's boundary list).
 
 **Related, not re-homed.** [Mind viruses](../findings/2026-mind-viruses-papadopoulos.md) stays under `persona-selection`. It measures how an idea transmits from one agent to the next by persuasion, not what a population converges on, though its propagation settings are populations. [Chain-of-affective dynamics](../findings/2025-chain-of-affective-xu.md) reports affect spreading in eight-agent dialogues according to majority–minority structure. Source-checked 2026-09-24, it does not instantiate this concept: group size is fixed, agents differ by induction and family, and its propagation measure is transmission from one agent to others. Its homogeneous-versus-heterogeneous bias rates bear weakly on the gap below (14–17 dialogues per setting, figure-only).
+
+- [In a thousand-agent network whose agents choose whom to keep talking to, opinions on US political issues split into two homophilic camps; on a fixed or random network one camp takes over, and on a factual question the population reaches consensus](../findings/2025-polarization-networks-piao.md) (Piao, Lu, Gao, Xu, Hu, Santos, Li, Evans; Nature Communications 2026) — the first entry where agents rewire their own network. About 1,000 GPT-3.5 agents polarize into two camps on partisanship, gun control and abortion, while their contact network sorts into like-minded communities. Its controls do the work for this concept. In one control with the network static or random, one camp takes about 75% (issue and run count not stated), and on flat Earth the population reaches consensus in ten rounds. That makes self-sorting of the network a candidate for what holds camps apart. N runs from 100 to 2,000 (the 2,000-agent run is of the self-regulated variant) and is not swept, so it does not bear on the size claim.
 
 ## What this concept is not
 
@@ -96,9 +99,13 @@ identical and have no private evidence. One reading reconciles all three:
 polarization needs persistent heterogeneity (private evidence, committed
 zealots, strongly opposed intrinsic fields) rather than size alone. That
 reading is the wiki's, not any paper's, and none of the three tests it. A study
-that varies heterogeneity and size together would.
+that varies heterogeneity and size together would. [Piao et al.](../findings/2025-polarization-networks-piao.md) add a
+fourth candidate, homophilic self-sorting of the network: in their one
+reported control, with the network held static or randomized (issue and run
+count not stated), one camp took about 75% where the self-organizing runs
+formed two.
 
-**Simulation and incident.** Three instantiations are simulations and one is a
+**Simulation and incident.** Four instantiations are simulations and one is a
 curated set of lab settings; one is a real incident. A second real incident,
 the Nightingale Collective's report of agents coordinating on a public wiki
 (https://collusion.wiki/), is held unfiled after its filing was interrupted.

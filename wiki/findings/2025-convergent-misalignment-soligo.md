@@ -8,6 +8,7 @@ source: https://arxiv.org/abs/2506.11618
 cites:
   - source-2025-convergent-misalignment-soligo
 refs:
+  - 2025-em-model-organisms-turner
   - 2026-persona-selection-model
   - 2025-openai-sae-emergent-misalignment
   - 2025-insecure-code-broad-misalignment
@@ -96,4 +97,4 @@ Soligo, Turner, Rajamanoharan, Nanda — MATS / Google DeepMind, June 2025 (ICML
 ## Sources
 
 - Soligo, Turner, Rajamanoharan, Nanda (2025). [Convergent Linear Representations of Emergent Misalignment](../../raw/papers/source-2025-convergent-misalignment-soligo.md). arXiv:2506.11618 (ICML 2025).
-- Companion: Turner, Soligo, Taylor, Rajamanoharan, Nanda (2025). Model Organisms for Emergent Misalignment. arXiv:2506.11613; not separately filed (stub candidate queued). Provides the EM model-organism datasets Soligo et al. fine-tune on.
+- Companion: [Turner, Soligo, Taylor, Rajamanoharan, Nanda (2025)](2025-em-model-organisms-turner.md). Model Organisms for Emergent Misalignment. arXiv:2506.11613. Provides the EM model-organism datasets Soligo et al. fine-tune on.

@@ -255,7 +255,10 @@ introspection would merge the two senses of consciousness that the paper's
   cited, and is not filed here.
 - The paper cites Butlin et al. 2023 and 2025 (indicator properties), Butlin et
   al. 2026 (Eleos commentary on the J-space paper), Macar et al. 2026 and Hoel
-  2026. None is filed here.
+  2026. The Eleos commentary is filed as a stub,
+  [source-2026-cognitive-access-butlin](../../raw/papers/source-2026-cognitive-access-butlin.md),
+  cited from the [J-space finding](2026-global-workspace-gurnee.md); the others
+  are not filed here.
 
 ## Sources
 

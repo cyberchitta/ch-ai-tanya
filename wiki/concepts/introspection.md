@@ -80,6 +80,8 @@ Mechanistically, the concept-injection result implies some monitoring architectu
 
 **Not self-report.** Self-report is what the model says about itself. Introspection is the access that might or might not underlie self-report. The contested question is exactly whether self-reports about internal states reflect genuine access or sophisticated confabulation. The concept-injection study provides the strongest evidence for genuine access because experimenters controlled what was injected and could verify the report's accuracy.
 
+**Not knowledge-boundary abstention.** Training a model to say it does not know, with labels derived from its own sampled accuracy ([Alignment for Honesty](../findings/2023-alignment-for-honesty-yang.md)), trains a self-report without testing access. It sits next to this concept's report-channel interventions but does not instantiate the capacity.
+
 ## Scope note
 
 **Access is task-conditional — revised July 2026.** This concept's findings had

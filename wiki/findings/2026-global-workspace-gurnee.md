@@ -8,6 +8,7 @@ models:
 source: https://transformer-circuits.pub/2026/workspace/
 cites:
   - source-2026-global-workspace-gurnee
+  - source-2026-cognitive-access-butlin
 refs:
   - 2025-concept-injection-introspection
   - 2026-lie-detectors-hopkins
@@ -16,6 +17,7 @@ refs:
 status: draft
 writers:
   - "@claude-opus-5"
+  - "@claude-opus-5.5"
 ---
 
 ## Summary
@@ -149,6 +151,19 @@ privilege *for report*, and report is what the lens was built from. The
 inference that the same subspace is privileged for internal reasoning rests on
 separate experiments.
 
+**A privileged set is not yet a workspace.** In an invited commentary,
+[Butlin, Shiller, Plunkett and Long 2026](../../raw/papers/source-2026-cognitive-access-butlin.md)
+accept the privileged-set reading as strongly supported but argue the evidence
+does not yet establish a unified stream. They give three grounds. The J-space's
+broad influence on downstream computation could follow from the lens selecting
+vectors for their effect on output. A count of active J-lens vectors can
+understate capacity if workspace content is not all nameable by vocabulary
+tokens. The attention-head "broadcast head" scores (the paper's §4.3, not
+covered in this entry) are averages, consistent with heads that carry only part
+of the J-space or carry it lossily. They do not object to the term "global
+workspace", but note that the paper shows no encapsulated modules and that
+broadcast in a non-modular system differs from canonical GWT broadcast.
+
 **Whether selectivity is a finding about the model or about the lens.** The
 authors offer "J-space-independence" as an operational definition of
 automaticity, while noting it aligns only partially with human automaticity and
@@ -194,3 +209,7 @@ theory-comparison material is thread territory, not finding territory.
 [Gurnee, Sofroniew, Pearce, Lindsey et al. 2026](../../raw/papers/source-2026-global-workspace-gurnee.md),
 "Verbalizable Representations Form a Global Workspace in Language Models",
 Transformer Circuits Thread, 6 July 2026.
+
+[Butlin, Shiller, Plunkett and Long 2026](../../raw/papers/source-2026-cognitive-access-butlin.md),
+"Consciousness and cognitive access in LLMs", invited commentary in Anthropic's
+external-commentary PDF on the paper, July 2026.

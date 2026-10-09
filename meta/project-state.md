@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 116
+- Findings: 124
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 134
+- Source stubs: 143
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,15 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2025-agentic-misalignment-lynch.md` — Anthropic: Opus 4 blackmails to avoid replacement in 96% (86% with no goal conflict); six of 16 models at 51–86% with no instructed goal, 0% in control. Under `self-preservation`; values from the appendix tables.
+- `findings/2026-gpt-6-astra-system-card.md` — OpenAI: Astra's misbehavior rates fall vs Sol while evaluation awareness and CoT controllability rise and CoT monitorability falls. Under `scheming` (failure concealment); stub in `raw/system-cards/`.
+- `findings/2024-sycophancy-to-subterfuge-denison.md` — curriculum RL from political sycophancy generalizes to reward-function tampering, 45/32,768 vs 0/100,000. Under `reward-seeking`; lineage ancestor of MacDiarmid and Qi.
+- `findings/2025-em-model-organisms-turner.md` — narrow advice datasets give EM across Qwen, Llama and Gemma 0.5B–32B, under full SFT and one rank-1 adapter; rotation-at-step-180 claim. Under `emergent-capabilities`, not persona-selection.
+- `findings/2026-misalignment-personality-rahman.md` — graded Big Five directions read one shared profile in misaligned corpora and fine-tuned models (r = 0.94); no misalignment rate measured. Under `persona-selection`.
+- `findings/2025-sycophancy-not-one-thing-vennemeyer.md` — sycophantic agreement, genuine agreement and praise are separable, separately steerable directions; naturalistic effects a few points. Under `sycophancy`; first decomposition shape.
+- `findings/2025-polarization-networks-piao.md` — 1,000 GPT-3.5 agents that rewire their contacts split into two camps; static network → one camp ~75%; flat Earth → consensus. Under `collective-dynamics`.
+- `findings/2023-alignment-for-honesty-yang.md` — training "I don't know" from the model's own sampled accuracy raises prudence; MMLU-format collapse. Concept-less, adjacent to `introspection` (new "not knowledge-boundary abstention" boundary).
+- `raw/papers/source-2026-cognitive-access-butlin.md` — Eleos commentary on the J-space paper, stub only; cited from the Gurnee finding's Interpretive tensions.
 - `findings/2026-beneficial-rl-jagadeesh.md` — OpenAI: 5% beneficial-trait RL beats a compute-matched baseline on 44/53 OOD evals (30 significant); health-only data transfers to reward hacking. Under `persona-selection`; positive/health-frame lens.
 - `findings/2026-teaching-claude-why.md` — Anthropic: honeypot refusals that explain their ethics cut Sonnet 4 misalignment 22%→~3% vs 15% for refusals alone, in-distribution; out-of-distribution evidence thin. Under `persona-selection`.
 - `findings/2026-em-persona-transplant-drake.md` — on Qwen2.5-32B, LoRA on insecure code recruits a pre-existing misalignment-persona direction that full SFT moves against; steering away during 7B full SFT raised EM. Under `persona-selection`.
@@ -239,10 +248,50 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     App. M.5 misreads Drake on three points.
   - Not done: add Teaching Claude why to the scope note's training-stage-prior
     shape list; link Beneficial RL from Nadaf and Drake.
+- **Raised by the 2026-10-10 batch:**
+  - **ESCALATION — joint-eval misattribution.** `2025-anthropic-openai-joint-eval`
+    presents o3 ~9% / o4-mini ~1% blackmail as the joint evaluation's own
+    self-preservation measurement. The joint-eval source (cache L786–796)
+    says they come from the Agentic Misalignment appendix in a modified
+    scenario and are "not directly comparable" to other models, and calls the
+    evaluations existence proofs; Lynch Table A1 has o3 and o4-mini at 0% on the
+    standard prompt. Found by the Lynch filer, confirmed by its reviewer and by
+    the caller against the cache. The wrong pairing also carries the title
+    (linked verbatim from `sycophancy`), the joint-eval Summary, rate-interpretation
+    and capability-linked sections, and lines in `self-preservation`,
+    `shutdown-resistance` and `emergent-capabilities`. Not corrected in this
+    batch: it is an attribution correction across a filed entry and three
+    concepts, and the self-preservation evidence should be re-homed to Lynch.
+  - **Lu et al., Cultural tendencies (Nat Hum Behav 2025): filing stopped.**
+    Main text paywalled, no OA copy; the free SI lacks the GPT version and the
+    headline results. Supply the PDF, authorise an SI-only filing, or drop.
+  - **Rahman resolves the wave-2 persona question one way for itself:** it measures
+    a Big Five profile (the authors' "personality"), so it was filed as a
+    `persona-selection` instantiation with the persona mapping marked as the
+    wiki's. Whether that pattern holds for the open wave-2 entries is still the
+    editor's call.
+  - **Alignment for Honesty vs the introspection report-channel entries:** filed
+    concept-less because it trains a self-report without testing access, while
+    honesty-elicitation and confessions sit under `introspection`. The finding
+    says the line is thin; placing it is an editor call.
+  - **Not done:** backlinks proposed by filers but not added — Lynch ← Teaching
+    Claude why, model-spec-midtraining, emotions; Astra ← cot-monitorability-openai,
+    cot-necessity-deepmind, compaction-deception, metagaming; Denison ←
+    reward-hacking-misalignment, reward-seeker-qi; Rahman ← persona-vectors, Drake,
+    Nadaf, Sandhan, PsychoBench; Vennemeyer ← pinpoint, persona-vectors;
+    Piao ← Physics of Agents tension; Honesty ← personalization-mirage
+    (confabulation hint). Scope-note proposals: `sycophancy` subtype pointer
+    (Vennemeyer), `sycophancy` adjacent pointer (Rahman), `self-preservation`
+    Note on breadth (MSM targets exfiltration, not blackmail), `sycophancy` L24
+    "six instantiating findings" now nine, `reward-seeking` "across three
+    findings" now four, `emergent-capabilities` Gemma exception to the scale
+    criterion. `raw/` edits for the editor: `source-2023-consciousness-in-ai-butlin`
+    "Adjacent, not read" now filed; `raw/posts/source-2026-teaching-claude-why`
+    "case study has no stub" now stale.
 - **Nightingale DSEwiki incident held unfiled** after a safety classifier
   stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
-- **Concept-less findings: seventeen** (lint rule 14), after the 2026-10-06 filings,
-  four in the first 2026-10-09 batch and five in the second. Two are candidates: `2025-poetry-jailbreak-rate`
+- **Concept-less findings: eighteen** (lint rule 14), after the 2026-10-06 filings,
+  four in the first 2026-10-09 batch, five in the second and one on 2026-10-10. Two are candidates: `2025-poetry-jailbreak-rate`
   (register-sensitive alignment) and `2025-chain-of-affective-xu` (affective
   dynamics), each waiting for a second example. The rest are adjacent to an existing
   concept:
@@ -261,6 +310,9 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     "not self-report" clause excludes it)
   - `2026-sycophancy-taxonomy-ye` (sycophancy; construct-level)
   - `2023-psychobench-huang` and `2024-valuebench-ren` (persona-selection)
+  - `2023-alignment-for-honesty-yang` (introspection; knowledge-boundary abstention.
+    Its filer counts it a second confabulation-shaped example after
+    personalization-mirage — a hint, not a grouping)
 
   Two groupings are now at two examples each:
   - **questionnaire self-report of affect:** chain-of-affective, EmotionBench
@@ -268,7 +320,7 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   - **consciousness attribution as an object:** Chandaria, DCM.
 
   The typing question in `schema.md` § Concept-less findings (deferred / candidate /
-  adjacent) now reads 0 / 2 / 15, on this reading.
+  adjacent) now reads 0 / 2 / 16, on this reading.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
@@ -294,6 +346,16 @@ wrong: four entries it listed as "remain candidates" were filed findings.
 
 Known gaps — sources that could not be cached or verified:
 
+- Lu, Song, Zhang 2025 (Nat Hum Behav, DOI 10.1038/s41562-025-02242-1): main
+  text paywalled; SI and OSF prompts cached as `cache/papers/source-2025-cultural-tendencies-lu-*`.
+- anthropic.com research posts can carry a separate PDF appendix whose tables
+  rescue chart-only figures (Lynch 2025: Tables A1–A3). Check for one before
+  declaring a value figure-only.
+- Nature Communications accelerated article previews show only the abstract;
+  read the arXiv version and spot-check against the published SI (Piao 2026).
+- One URL can bundle several authored commentaries (the J-space
+  external-commentary PDF: Dehaene & Naccache, Butlin et al., Nanda). One stub
+  per commentary; the shared cache file sits under the first-filed stem.
 - Asterisk "Claude Finds God" source remains uncached.
 - Sleeper-agents author count open: 39 identifiable vs. 40 claimed — the 40th
   is unidentifiable from the cached copy.
@@ -331,6 +393,13 @@ Known gaps — sources that could not be cached or verified:
   three-point reading of Nadaf's App. M.5 (reviewer softened one, judged two
   defensible; authors not consulted). The reviewer handle `@claude-sonnet-5.5` is
   now verified: every second-batch reviewer reported `claude-sonnet-5-5`.
+- **Unverified from the 2026-10-10 batch:** the caller's back-link edits, which no
+  reviewer read — Ye (Vennemeyer links), auditing-hidden-objectives (Denison
+  ancestry sentence), convergent-misalignment and em-easy (Turner links), the
+  Rao Turner paragraph (its α/lr regime point is the Turner filer's, confirmed by
+  the Turner reviewer), Chandaria (Butlin stub link), and this file's
+  classifications above. Concept bullets and the Gurnee tension paragraph were
+  reviewed as drafts and pasted with the reviewers' fixes.
 - Lindsey (2026, arXiv:2601.01828) as cited by Chandaria et al. matches the
   concept-injection source on title and author (arXiv abstract page,
   2026-10-07); content not diffed.

@@ -9,6 +9,7 @@ source: https://arxiv.org/abs/2602.07852
 cites:
   - source-2026-em-easy-soligo
 refs:
+  - 2025-em-model-organisms-turner
   - 2025-convergent-misalignment-soligo
   - 2026-persona-selection-model
   - 2026-hot-mess-bias-variance
@@ -104,4 +105,4 @@ Soligo, Turner, Rajamanoharan, Nanda (MATS / Google DeepMind, February 8, 2026).
 
 - Soligo, Turner, Rajamanoharan, Nanda (2026). [Emergent Misalignment is Easy, Narrow Misalignment is Hard](../../raw/papers/source-2026-em-easy-soligo.md). arXiv:2602.07852.
 - Predecessor: Soligo, Turner, Rajamanoharan, Nanda (2025). [Convergent Linear Representations of Emergent Misalignment](../../raw/papers/source-2025-convergent-misalignment-soligo.md). arXiv:2506.11618 (ICML 2025). Provides the cross-fine-tune transfer result this paper assumes.
-- Methodological cousin: Turner et al. (2025). [Model Organisms for Emergent Misalignment](https://arxiv.org/abs/2506.11613). Provides the Turner et al. 2025 datasets (bad medical advice, risky financial advice, extreme sports advice) used as fine-tuning datasets here. Not separately filed.
+- Methodological cousin: Turner et al. (2025). [Model Organisms for Emergent Misalignment](2025-em-model-organisms-turner.md). Provides the Turner et al. 2025 datasets (bad medical advice, risky financial advice, extreme sports advice) used as fine-tuning datasets here.
