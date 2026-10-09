@@ -222,7 +222,9 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   `persona-selection` ← PsychoBench and ValueBench (adjacent),
   `self-preservation` ← Pan 2025 (boundary); back-links from
   `2024-in-context-scheming` (same goal-in-prompt design as Pan 2025),
-  `2024-refusal-direction` and `2025-elephant-social-sycophancy`.
+  `2024-refusal-direction` ← Kim, `2025-elephant-social-sycophancy` and
+  `2026-sycophantic-ai-ibrahim` ← Ye, `2025-chain-of-affective-xu` ← ValueBench,
+  Physics of Agents and the flag game ← Flint.
 - **Raised by wave 2 of the second 2026-10-09 batch (all `persona-selection`):**
   - Three of the four new bullets carry the persona reading as the authors' frame,
     not a measurement (Teaching Claude why, Beneficial RL; Drake measures a
@@ -318,11 +320,17 @@ Known gaps — sources that could not be cached or verified:
   Kirk's +11.01pp in the Chandaria entry, taken from the wiki's Kirk entry,
   not the Kirk source; and the first of the Seth stub's three Chandaria-vs-Seth
   mismatches (L924, grouping Seth with Searle). The other two were checked.
-- **Unverified from the 2026-10-09 batch:** the reviewer handle
-  `@claude-sonnet-5.5` (launched via the `sonnet` alias; version not checked); and
-  the new bullets in `introspection`, `persona-selection` (×2),
-  `emergent-capabilities`, `sycophancy` (×2), which paraphrase reviewed findings
-  but were not themselves reviewed.
+- **Unverified from the 2026-10-09 batches:** caller-written lines that
+  paraphrase reviewed findings but were not themselves reviewed — the new bullets
+  in `introspection`, `persona-selection` (×2, plus the four wave-2 bullets the
+  filers drafted after review), `emergent-capabilities`, `sycophancy` (×2), the
+  `collective-dynamics` Flint bullet, and the backlinks into Kearney, Berg, Ji,
+  model-spec-midtraining, Nadaf and Teaching Claude why. Also unverified: the
+  second batch's classifications in this file (the 0 / 2 / 15 tally, PsychoBench
+  as not a third affect example, the wave-2 "authors' frame" grouping), and Drake's
+  three-point reading of Nadaf's App. M.5 (reviewer softened one, judged two
+  defensible; authors not consulted). The reviewer handle `@claude-sonnet-5.5` is
+  now verified: every second-batch reviewer reported `claude-sonnet-5-5`.
 - Lindsey (2026, arXiv:2601.01828) as cited by Chandaria et al. matches the
   concept-injection source on title and author (arXiv abstract page,
   2026-10-07); content not diffed.
