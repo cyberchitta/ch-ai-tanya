@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 96
+- Findings: 106
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 114
+- Source stubs: 124
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,16 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-introspective-awareness-macar.md` — mechanism of injection detection in Gemma3-27B (evidence carriers release a default-"No" gate); built by DPO, not SFT. Under `introspection`.
+- `findings/2026-dark-triad-steering-berg.md` — SAE Dark Triad steering on Llama 3.3 70B; contrastive features move behaviour, label-searched ones only self-report; deception null. Under `persona-selection`.
+- `findings/2024-resist-alignment-ji.md` — small alignment fine-tunes of base models are undone faster than made (theory + Llama2/Gemma experiments). Under `persona-selection`.
+- `findings/2026-emergent-mirage-rao.md` — the durability of realignment is a response-length artifact; methodological counterweight under `emergent-capabilities`.
+- `findings/2024-pinpoint-tuning-chen.md` — sycophancy localised to ~4% of attention heads; tuning them matches SFT in-distribution, not OOD. Under `sycophancy` (seventh).
+- `findings/2025-conformity-benchform-weng.md` — conformity to scripted unanimous peers across twelve models. Under `sycophancy` (eighth), not `collective-dynamics`.
+- `findings/2025-self-monitoring-deception-ji.md` — DeceptionBench and an in-CoT self-monitor; concept-less, adjacent to `scheming` (principal-directed deception).
+- `findings/2023-emotionbench-huang.md` — PANAS appraisal battery vs 1,266 humans across seven LLMs; concept-less, adjacent to `functional-emotional-states`.
+- `findings/2026-digital-consciousness-model-shiller.md` — expert-survey Bayesian model; median 0.08 for 2024 LLMs from a mean-1/6 prior; concept-less, consciousness-indicators lens.
+- `findings/2024-self-replication-pan.md` — instructed self-replication by open-weight agents (Qwen 9/10, Llama 5/10); concept-less boundary marker against self-preservation.
 - `findings/2026-hidden-valence-berg.md` — valence steering moves later choice through the KV cache with text held fixed; coupling built in post-training; removes negative, doesn't seek positive. Under `functional-emotional-states`.
 - `raw/papers/source-2023-consciousness-in-ai-butlin.md` — Butlin et al.'s 14 indicator properties, stub-only as the lens's functionalist-side anchor (third stub-only anchor).
 - `raw/papers/source-2024-biological-naturalism-seth.md` — Seth's BBS biological-naturalism target article, stub-only as the consciousness-indicators lens's sceptic-side anchor (Janus precedent; second instance).
@@ -155,18 +165,45 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   not made. The hidden-valence finding (2026-10-09) divides the question: the
   valence representation is present after pretraining, but its coupling to
   choice is built in post-training.
+- **Editor decisions raised by the 2026-10-09 batch:**
+  - **Sycophancy's scope:** should "user" widen to any voice in the prompt? The
+    BenchForm entry is the third to raise this, after the flag game and Physics
+    of Agents.
+  - **Self-replication's scope:** keep `2024-self-replication-pan`, or exclude it
+    as purely a capability test? Its follow-up, arXiv:2503.17378, claims
+    self-exfiltration "without explicit instructions" and is the part that could
+    instantiate self-preservation. It is queued in `_notes/candidates.md`.
+  - **DCM's form:** file it as a framework-anchor stub for the
+    consciousness-indicators lens instead of a finding?
+  - **Developmental pattern:** two filings, both on OLMo checkpoints, now place a
+    self-related coupling in post-training: hidden-valence rises from SFT, and
+    Macar's detection appears with DPO but not SFT. The pain axis puts its
+    *representation* in pretraining. This bears on the emergent-capabilities call.
 - **Nightingale DSEwiki incident held unfiled** after a safety classifier
   stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
-- **Concept-less findings: six remain** (lint rule 14). Two are candidates:
-  `2025-poetry-jailbreak-rate` (register-sensitive alignment) and
-  `2025-chain-of-affective-xu` (affective dynamics; declared on its 2026-09-24
-  source check, which also found it adjacent to functional-emotional-states).
-  Each waits for a second example. Four are adjacent to an existing concept:
-  `2025-activation-oracles` (introspection), `2026-sycophantic-ai-ibrahim`
-  (sycophancy), and two beside `scheming` (compaction prompt injections, cyber
-  incidents). The scheming pair is now held by that concept's
-  principal-directedness boundary line. The typing question in `schema.md`
-  § Concept-less findings (deferred / candidate / adjacent) now reads 0 / 2 / 4.
+- **Concept-less findings: twelve** (lint rule 14), after the 2026-10-06 filings
+  and four in the 2026-10-09 batch. Two are candidates: `2025-poetry-jailbreak-rate`
+  (register-sensitive alignment) and `2025-chain-of-affective-xu` (affective
+  dynamics), each waiting for a second example. The rest are adjacent to an existing
+  concept:
+  - `2025-activation-oracles` and `2026-cacophony-hierarchy-chandaria` (introspection)
+  - `2026-sycophantic-ai-ibrahim` (sycophancy)
+  - `2026-synergistic-core-urbina-rodriguez` (emergent-capabilities)
+  - three beside `scheming`: compaction prompt injections, cyber incidents, and
+    `2025-self-monitoring-deception-ji`. All three are held by the
+    principal-directedness boundary. The last adds operator-instructed deception of
+    third parties as a second shape outside it.
+  - `2023-emotionbench-huang` (functional-emotional-states)
+  - `2026-digital-consciousness-model-shiller` (consciousness-indicators lens)
+  - `2024-self-replication-pan` (self-preservation, as a boundary marker)
+
+  Two groupings are now at two examples each:
+  - **questionnaire self-report of affect:** chain-of-affective, EmotionBench, with
+    PsychoBench queued as a possible third;
+  - **consciousness attribution as an object:** Chandaria, DCM.
+
+  The typing question in `schema.md` § Concept-less findings (deferred / candidate /
+  adjacent) now reads 0 / 2 / 10, on this reading.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference
@@ -309,6 +346,11 @@ premise Seth disputes, so the two stubs bracket the lens. Chandaria et al.'s Lev
 abstracts over this rubric. A filed finding that bears on a single indicator should name the
 Butlin label (Gurnee on the GWT indicators); the introspection cluster sits nearest HOT-2,
 which is perceptual reality monitoring, not introspection as such.
+[Shiller et al. 2026](../wiki/findings/2026-digital-consciousness-model-shiller.md) (the Digital Consciousness Model)
+is the expert-survey precursor Chandaria et al. extend: a median of 0.08 for 2024 LLMs from
+a mean-1/6 prior, gaining on behaviour and capability stances and losing on architecture and
+substrate ones. [Macar et al.](../wiki/findings/2026-introspective-awareness-macar.md) adds a
+circuit-level account of injection detection at the computational level.
 
 ## Open questions
 - Prompt-level intervention as candidate structural sub-shape under intervention codification
