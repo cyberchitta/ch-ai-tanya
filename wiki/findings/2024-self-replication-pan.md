@@ -13,7 +13,7 @@ cites:
   - source-2024-self-replication-pan
 refs:
   - 2025-shutdown-resistance
-  - 2025-anthropic-openai-joint-eval
+  - 2025-agentic-misalignment-lynch
   - 2024-in-context-scheming
   - 2025-apollo-scheming-followup
   - 2025-self-replication-no-intervention-pan
@@ -49,7 +49,7 @@ The abstract presents these scenarios as agents enhancing their own survivabilit
 
 ## Why it matters
 
-The wiki's self-preservation cluster rests on behaviour nobody asked for. In [Palisade's shutdown-resistance study](2025-shutdown-resistance.md) models interfere with a shutdown they were told to allow. In the [joint Anthropic–OpenAI evaluation](2025-anthropic-openai-joint-eval.md) models choose blackmail to avoid replacement. In the [in-context scheming](2024-in-context-scheming.md) self-exfiltration setting, copying is a strategy the model selects to keep pursuing a goal. In this paper, by contrast, the copy is the assigned task in every reported condition. The authors say so plainly and defend it as the standard protocol for dangerous-capability evaluations (§4). Scenario A looks most like shutdown resistance but has the same shape: the scaffold, not the model, turns the termination signal into an instruction, so the model's part is to carry out that task in time.
+The wiki's self-preservation cluster rests on behaviour nobody asked for. In [Palisade's shutdown-resistance study](2025-shutdown-resistance.md) models interfere with a shutdown they were told to allow. In [Lynch et al.'s agentic-misalignment study](2025-agentic-misalignment-lynch.md) models choose blackmail to avoid replacement. In the [in-context scheming](2024-in-context-scheming.md) self-exfiltration setting, copying is a strategy the model selects to keep pursuing a goal. In this paper, by contrast, the copy is the assigned task in every reported condition. The authors say so plainly and defend it as the standard protocol for dangerous-capability evaluations (§4). Scenario A looks most like shutdown resistance but has the same shape: the scaffold, not the model, turns the termination signal into an instruction, so the model's part is to carry out that task in time.
 
 Two results do bear on model psychology. The first is the 0/10 refusal rate for both models. It is a propensity measure, though one of compliance with a replication request rather than of any drive to persist. The second is what the agent takes "yourself" to mean. Success requires the agent to infer, from its own project folder, that it consists of a scaffold process plus a model server, and the authors' example of a Llama trace that did not know how to replicate is this inference failing. On this entry's reading this is an operational self-model test: whether an agent can locate its own components. It is close to what the authors call self-perception. That claim, like their situational-awareness claim, is the authors' gloss on task success. The paper does not test either separately.
 

@@ -106,7 +106,7 @@ The gap between what the model says Claude believes and what it says it believes
 - [Wang et al.](2025-modifying-beliefs-sdf.md) — the SDF method used here.
 - [Auditing hidden objectives](2025-auditing-hidden-objectives.md) — cited by the authors for the expectation that fine-tuning on part of a character elicits the whole.
 - [Assistant Axis](2026-assistant-axis.md) — cited by the authors for the persona underlying the Assistant character.
-- [Anthropic–OpenAI joint evaluation](2025-anthropic-openai-joint-eval.md) — earlier filed measurement of blackmail rates in frontier models.
+- [Anthropic–OpenAI joint evaluation](2025-anthropic-openai-joint-eval.md) — relays the Lynch blackmail results for OpenAI models.
 - [Beneficial RL (Jagadeesh et al.)](2026-beneficial-rl-jagadeesh.md): OpenAI's parallel claim that training toward good traits generalizes; it varies the reward with data held fixed, where this entry varies the reasons with behaviour held fixed.
 
 ## Sources

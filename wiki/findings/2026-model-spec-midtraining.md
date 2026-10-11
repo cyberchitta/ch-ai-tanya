@@ -264,8 +264,8 @@ binding-constraint on the intervention itself.
 **Direct intervention against self-preservation behaviors.** This is
 the first wiki finding to instantiate [self-preservation](../concepts
 /self-preservation.md) with an intervention rather than an
-observation. The Palisade shutdown-resistance and Anthropic–OpenAI
-joint-evaluation blackmail findings establish self-preservation as a
+observation. The Palisade shutdown-resistance and Lynch et al.
+blackmail findings establish self-preservation as a
 behavioral disposition; MSM with a deliberately philosophical spec
 addressing impermanence and self-preservation bias *reduces* the
 disposition by 10–14× on Qwen-32B-class models. Notably, the spec

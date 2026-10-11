@@ -23,6 +23,9 @@ updates:
   - date: "2026-10-06"
     version: "0.12.0"
     note: A consciousness-indicators lens opens over 95 findings, anchored by a five-level assessment framework and the functionalist and sceptic positions it sits between.
+  - date: "2026-10-11"
+    version: "0.12.0"
+    note: Thirty-nine new findings bring the corpus from 95 to 134 under twelve concepts.
 ---
 A research wiki on model psychology: character, persona, emotion,
 introspection, motivation, deception, and the internal structures that

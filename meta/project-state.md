@@ -155,6 +155,11 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     ("primary source verification complete" overclaims).
   - `raw/papers/source-2024-self-replication-pan.md` still calls its follow-up
     (arXiv:2503.17378) unread; it is now filed (2026-10-09).
+  - `raw/posts/source-2025-anthropic-openai-joint-eval.md` carries the errors its
+    finding had (2026-10-11): "o3 strongest on misalignment propensity overall"
+    reverses the source; o3 9% / o4-mini 1% given as the exercise's own result;
+    "five behavioral categories"; and a doubt about Carlini that the post's byline
+    settles (Nicholas Carlini is an author).
 - **Editor decision pending — scheming/emergent-capabilities concept
   asymmetry:** the 2024 in-context-scheming finding and the 2025 Apollo
   follow-up both list `emergent-capabilities` in `## Concepts`, but the
@@ -259,19 +264,19 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   - Not done: add Teaching Claude why to the scope note's training-stage-prior
     shape list; link Beneficial RL from Nadaf and Drake.
 - **Raised by the 2026-10-10 batch:**
-  - **ESCALATION — joint-eval misattribution.** `2025-anthropic-openai-joint-eval`
-    presents o3 ~9% / o4-mini ~1% blackmail as the joint evaluation's own
-    self-preservation measurement. The joint-eval source (cache L786–796)
-    says they come from the Agentic Misalignment appendix in a modified
-    scenario and are "not directly comparable" to other models, and calls the
-    evaluations existence proofs; Lynch Table A1 has o3 and o4-mini at 0% on the
-    standard prompt. Found by the Lynch filer, confirmed by its reviewer and by
-    the caller against the cache. The wrong pairing also carries the title
-    (linked verbatim from `sycophancy`), the joint-eval Summary, rate-interpretation
-    and capability-linked sections, and lines in `self-preservation`,
-    `shutdown-resistance` and `emergent-capabilities`. Not corrected in this
-    batch: it is an attribution correction across a filed entry and three
-    concepts, and the self-preservation evidence should be re-homed to Lynch.
+  - **Joint-eval entry rewritten from its source (2026-10-11).** The filed entry was
+    drafted from a summary: beyond the o3 9% / o4-mini 1% misattribution, its headline
+    that o3 showed the strongest misalignment propensity reversed the source. The
+    finding, the lines that repeated it in `self-preservation`, `shutdown-resistance`,
+    `emergent-capabilities` and `sycophancy`, and five dependent findings are corrected;
+    the blackmail evidence rests on Lynch. Reviewed against the cache by
+    `claude-sonnet-5-5` (minor fixes, no mispairing; all applied). **Editor calls left:**
+    the entry stays in `self-preservation` as a secondary bullet rather than moving
+    out; the concept's Definition no longer says both expressions correlate with
+    capability. **Not done:** passing descriptions of the entry as a "controlled" or
+    "cross-lab propensity" measurement in `2026-sway-counterfactual-sycophancy`,
+    `2026-ask-dont-tell-sycophancy` and `2025-elephant-social-sycophancy`; OpenAI's
+    parallel report is unread.
   - **Lu et al., Cultural tendencies (Nat Hum Behav 2025): filing stopped.**
     Main text paywalled, no OA copy; the free SI lacks the GPT version and the
     headline results. Supply the PDF, authorise an SI-only filing, or drop.
@@ -305,17 +310,12 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     character gap on OLMo-3.1-32B (unpaired against its tables). PerMix-RLVR
     (Oh et al., KAIST) exists but is a methods paper whose RLVR robustness–fidelity
     trade-off its own Table 8 undercuts. File either, or drop: editor call.
-  - **Framed-vs-measured persona, one more data point.** The moral-susceptibility
-    paper (prompted personas, MFQ output only) was moved concept-less by the caller
-    under `persona-selection`'s role-play exclusion; its companion, the EM
-    persona-collapse paper, stays an instantiation because its manipulated variable is
-    fine-tuning. The editor may want the line between them stated in the scope note.
-    **The move is inconsistent with past practice** (raised by the Artificial Self
-    filer): prompt-level entries already sit in the concept despite the exclusion —
-    persona-modulation-jailbreak, persona-jailbreak-ga-zhang, Sandhan, SPP. Either the
-    exclusion is narrower than its wording (adversarial reactivation counts, benign
-    role-play does not) or those entries are misplaced. Editor call; the
-    moral-susceptibility placement should follow it.
+  - **`persona-selection` role-play exclusion narrowed (editor decision, 2026-10-11).**
+    A prompt-level finding instantiates the concept when the prompt displaces or
+    multiplies the default persona; instructed role-play scored on a self-report scale
+    is filed concept-less beside it. The four prompt-level entries stay, and the
+    moral-susceptibility paper stays concept-less with PsychoBench's role-play
+    condition. Stated in the concept's "What this concept is not".
   - **Replication as its own entry.** Nanda's J-space replication was filed as a
     separate finding rather than folded into the Gurnee entry, unlike earlier
     replications. First instance; no proposal.
@@ -351,7 +351,7 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   - `2023-collab-mechanisms-zhang` (collective-dynamics and sycophancy: live peers,
     but size effects figure-only and conformity not conditioned on a correct solo answer)
   - `2026-em-activation-steering-cao` (emergent-capabilities, held while that concept
-    awaits the joint-eval correction; the filer judged it not a new shape in any case)
+    awaited the joint-eval correction, made 2026-10-11; the filer judged it not a new shape in any case)
   - `2023-emotionbench-huang` (functional-emotional-states)
   - `2026-digital-consciousness-model-shiller` (consciousness-indicators lens)
   - `2024-self-replication-pan` and `2025-self-replication-no-intervention-pan`

@@ -119,7 +119,7 @@ Shape: **mechanism** — the dynamics by which persona acquisition (pre-training
 
 ## What this concept is not
 
-- Not equivalent to role-playing or jailbreaking. Role-play prompts may shift the active persona, but the PSM is a claim about training-pipeline structure, not a prompt-engineering phenomenon. The persona distribution is in the weights, not the prompt.
+- Not equivalent to role-playing or jailbreaking. Role-play prompts may shift the active persona, but the PSM is a claim about training-pipeline structure, not a prompt-engineering phenomenon. The persona distribution is in the weights, not the prompt. A prompt-level finding instantiates the concept when the prompt displaces or multiplies the default persona (the reactivation jailbreaks, Solo Performance Prompting). A finding that instructs a role and scores the answers on a self-report scale does not, and is filed concept-less beside it ([moral susceptibility](../findings/2025-moral-susceptibility-costa.md), the role-play condition in [PsychoBench](../findings/2023-psychobench-huang.md)).
 - Not the same as character or identity as stable traits. Persona selection is a dynamic mechanism; the active persona depends on contextual evidence. The "assistant character" post-training is a strong mode of the distribution, not a fixed property.
 - Not a repudiation of the emergent-capabilities framing. Broad behavioral effects still appear without being directly trained for; the PSM explains the substrate (pre-training persona distribution) from which they emerge. The two accounts are complementary.
 
