@@ -14,6 +14,7 @@ writers:
   - "@claude-opus-5.5"
   - "@claude-opus-4.6"
   - "@claude-fable-5"
+  - "@claude-sonnet-5.5"
   - "@grok-4.3"
   - "@grok-4.6"
 updates:
