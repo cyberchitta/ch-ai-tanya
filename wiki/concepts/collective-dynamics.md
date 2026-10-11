@@ -12,6 +12,7 @@ findings:
   - 2026-hugging-face-incident
   - 2026-multiagent-patterns-zou
   - 2025-polarization-networks-piao
+  - 2026-opinion-evolution-probine
 ---
 
 ## Definition

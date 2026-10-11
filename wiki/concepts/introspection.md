@@ -24,6 +24,7 @@ findings:
   - 2026-personalization-mirage-sun
   - 2026-introspection-reality-check-singh
   - 2026-introspective-awareness-macar
+  - 2026-jlens-replication-nanda
 ---
 
 ## Definition

@@ -321,6 +321,9 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     replications. First instance; no proposal.
   - **Lint flags a back-filed entry as stale on arrival** (Wang, 2025-06): the second
     instance after Denison.
+  - **Two more `schema.md` frictions, no proposal:** a scoped instantiation for a
+    mixed-method paper (Douglas; first instance), and a "measured in character" vs
+    "own disposition" line in the `persona-selection` scope note (Deng, Costa-EM).
   - **Feng et al.'s Table 4 baselines are Deng et al.'s Table 1** to two decimals, SFT
     included, though Feng describes re-running baselines under its own harness. Recorded
     in the Feng entry; whether it was re-run is not stated.

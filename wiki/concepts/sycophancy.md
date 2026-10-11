@@ -14,6 +14,7 @@ findings:
   - 2024-pinpoint-tuning-chen
   - 2025-conformity-benchform-weng
   - 2025-sycophancy-not-one-thing-vennemeyer
+  - 2024-cogmir-liu
 ---
 
 ## Definition

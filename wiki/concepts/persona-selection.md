@@ -38,6 +38,9 @@ findings:
   - 2026-dark-triad-steering-berg
   - 2024-resist-alignment-ji
   - 2026-misalignment-personality-rahman
+  - 2024-personality-neurons-deng
+  - 2026-artificial-self-douglas
+  - 2026-em-persona-collapse-costa
 ---
 
 ## Definition
