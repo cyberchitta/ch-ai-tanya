@@ -131,6 +131,10 @@ Filename and title scans miss coverage that lives in body prose — a
 confident "we don't have anything on X" from a shallow look is worse
 than the search costing a few seconds.
 
+## Code style
+
+Code follows the global `code-style` and `javascript-style` skills; load them before writing code.
+
 ## Writing style
 
 The canonical CyberChitta editorial brief lives in the supramental-gold
