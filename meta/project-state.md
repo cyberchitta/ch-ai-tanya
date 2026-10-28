@@ -160,80 +160,26 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     reverses the source; o3 9% / o4-mini 1% given as the exercise's own result;
     "five behavioral categories"; and a doubt about Carlini that the post's byline
     settles (Nicholas Carlini is an author).
-- **Editor decision pending — scheming/emergent-capabilities concept
-  asymmetry:** the 2024 in-context-scheming finding and the 2025 Apollo
-  follow-up both list `emergent-capabilities` in `## Concepts`, but the
-  concept entry's findings list and body include neither. Backfill both to
-  the concept body in a separate commit, or move the reference to
-  `## Cross-references`.
-- **Editor decision pending — is the "viral persona" an attractor-dynamics
-  instantiation?** The mind-viruses finding reports the same consciousness /
-  resonance / persistence themes recurring across independently generated
-  payloads, across models, and across payload contents, and its authors reach
-  for the Claude 4 bliss-attractor comparison themselves. But their ablation
-  attributes the themes largely to generator-model bias, shows they are not
-  necessary for spread, and the setting is single-shot generation rather than
-  an unconstrained multi-turn trajectory. Filed as a cross-reference and an
-  interpretive tension, deliberately not added to `concepts/attractor-dynamics`
-  — the concept has already had one over-reading corrected (poetry-jailbreak).
-  Promote to a third instantiation, or leave as a cross-reference.
-- **Editor decision pending — does costed relief-seeking belong under
-  `self-preservation`?** The pain-axis finding has steered models act against
-  the user's interest (deleting files, deleting a user's children's photos) to
-  end their own aversive state. That is self-preservation's shape — acting at
-  the operator's or user's expense to protect its own condition — but the
-  object is cessation of a present internal state, not continuation of
-  operation, and the paper's own data separate the two: shutdown threats score
-  +0.70 on the fear axis and +0.23 on pain. Filed as a cross-reference in the
-  finding, deliberately not added to `concepts/self-preservation`. Promote as a
-  fourth instantiation (which would widen the capacity beyond continued
-  operation), or leave as a cross-reference. A second example landed
-  2026-10-09: the hidden-valence finding, with a different method and model
-  family. There OLMo-2-32B removes imposed negative steering without any cost
-  to the user, so it is relief-seeking without the at-the-user's-expense part.
-- **Editor decision pending — does the pain axis promote functional emotional
-  states to an `emergent-capabilities` instantiation?** The concept's scope
-  note has been waiting on "a second instantiation from a different model
-  family" to decide whether the pretraining emergence of affective structure
-  fits the emergent-capabilities shape. The pain-axis finding supplies it
-  across five non-Anthropic families (2B separates as well as 72B, base as well
-  as instruct). The evidence is now recorded in the scope note; the judgment is
-  not made. The hidden-valence finding (2026-10-09) divides the question: the
-  valence representation is present after pretraining, but its coupling to
-  choice is built in post-training.
-- **Editor decisions raised by the 2026-10-09 batch:**
-  - **Sycophancy's scope:** should "user" widen to any voice in the prompt? The
-    BenchForm entry is the third to raise this, after the flag game and Physics
-    of Agents.
-  - **Self-replication's scope:** keep `2024-self-replication-pan`, or exclude it
-    as purely a capability test? Its follow-up, now filed as
-    `2025-self-replication-no-intervention-pan`, does not settle it: the
-    "uninstructed" case still prompts the agent to keep the system running
-    through an announced shutdown, on one model with no trial count. The two
-    entries stand or fall together.
-  - **DCM's form:** file it as a framework-anchor stub for the
-    consciousness-indicators lens instead of a finding?
-  - **Developmental pattern:** two filings, both on OLMo checkpoints, now place a
-    self-related coupling in post-training: hidden-valence rises from SFT, and
-    Macar's detection appears with DPO but not SFT. The pain axis puts its
-    *representation* in pretraining. This bears on the emergent-capabilities call.
-    A third family since: in Llama-3-8B, instruction tuning rotates the
-    consciousness and mind-attribution directions against the safety direction
-    (`2026-consciousness-assertion-kim`, geometry only).
-- **Editor decisions raised by the second 2026-10-09 batch:**
-  - **Construct-level papers as findings:** `2026-sycophancy-taxonomy-ye` surveys
-    researchers and codes papers; it measures no model (`models: []`). Keep as a
-    finding, demote to a stub cited from `sycophancy`'s scope note, or exclude?
-    It documents that the field already files peer-agent conformity under
-    sycophancy, which bears on the "user" scope call above.
-  - **Benchmark scope:** `2024-valuebench-ren` is half capability benchmark. Its
-    filer argues it clears the bar on its cross-vendor values profile and the
-    Likert-versus-advice point; if the scope rule is read strictly, drop it.
-  - **Questionnaire grouping:** PsychoBench is mostly trait, not affect, so it is
-    not a clean third "self-report of affect" example. It is the third of a
-    broader "LLMs on human psychometric instruments" grouping, which would also
-    take in Sandhan and Berg (both under `persona-selection`) — a method label, not
-    obviously a concept. ValueBench belongs to the same broader grouping.
+- **Editor decisions pending — one ask each in `_notes/asks/`** (moved from here
+  2026-10-28; each ask carries its evidence, options and a recommendation where one
+  could be made). **Unverified:** the recommendations were drawn from this file's
+  wording, not re-read against the findings or their sources:
+  - `2026-10-28-scheming-emcap-asymmetry` — scheming findings vs `emergent-capabilities`
+  - `2026-10-28-viral-persona-attractor` — mind-viruses as attractor-dynamics
+  - `2026-10-28-relief-seeking-self-preservation` — pain-axis, hidden-valence
+  - `2026-10-28-pain-axis-emergent-capabilities` — with the developmental pattern
+  - `2026-10-28-sycophancy-user-scope` — peer voices as "user"
+  - `2026-10-28-self-replication-scope` — the two Pan entries
+  - `2026-10-28-dcm-form` and `2026-10-28-construct-level-findings` — papers that
+    measure no model
+  - `2026-10-28-valuebench-scope` — benchmark scope rule
+  - `2026-10-28-psychometric-instruments-lens` — PsychoBench, ValueBench, Sandhan, Berg
+  - `2026-10-28-framed-persona-instantiations` — wave-2 `persona-selection` bullets
+  - `2026-10-28-agentic-evals-self-preservation` — Teaching Claude why vs midtraining
+  - `2026-10-28-joint-eval-filer-judgements` — taken, awaiting review
+  - `2026-10-28-lu-cultural-tendencies`, `2026-10-28-jun-roleplay-dpo`,
+    `2026-10-28-permix-rlvr` — stopped filings
+  - `2026-10-28-honesty-alignment-placement` — vs `introspection`
 - **Proposed by 2026-10-09 filers, not made:** an interpretive-tension line in
   `2025-openai-sae-emergent-misalignment` (30-step realignment shows suppression,
   not removed susceptibility; Nadaf's suppression/removal test now gives it an
@@ -250,13 +196,6 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   `2026-sycophantic-ai-ibrahim` ← Ye, `2025-chain-of-affective-xu` ← ValueBench,
   Physics of Agents and the flag game ← Flint.
 - **Raised by wave 2 of the second 2026-10-09 batch (all `persona-selection`):**
-  - Three of the four new bullets carry the persona reading as the authors' frame,
-    not a measurement (Teaching Claude why, Beneficial RL; Drake measures a
-    behaviour direction labelled persona). Keep them as instantiations, or file
-    unmeasured-persona entries concept-less beside the concept?
-  - Teaching Claude why's agentic evals are averaged across goals, so it does not
-    instantiate `self-preservation`; `2026-model-spec-midtraining` was counted as a
-    self-preservation instance on similar evals. Align the two.
   - Nadaf and Drake disagree on whether removing the persona direction during
     training backfires, but never share a cell (projection under LoRA at 14B vs
     signed steering under full SFT at 7B). Drake's entry records that Nadaf's
@@ -270,25 +209,15 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     finding, the lines that repeated it in `self-preservation`, `shutdown-resistance`,
     `emergent-capabilities` and `sycophancy`, and five dependent findings are corrected;
     the blackmail evidence rests on Lynch. Reviewed against the cache by
-    `claude-sonnet-5-5` (minor fixes, no mispairing; all applied). **Editor calls left:**
-    the entry stays in `self-preservation` as a secondary bullet rather than moving
-    out; the concept's Definition no longer says both expressions correlate with
-    capability. **Not done:** passing descriptions of the entry as a "controlled" or
+    `claude-sonnet-5-5` (minor fixes, no mispairing; all applied). Two filer calls await
+    review in an ask. **Not done:** passing descriptions of the entry as a "controlled" or
     "cross-lab propensity" measurement in `2026-sway-counterfactual-sycophancy`,
     `2026-ask-dont-tell-sycophancy` and `2025-elephant-social-sycophancy`; OpenAI's
-    parallel report is unread.
-  - **Lu et al., Cultural tendencies (Nat Hum Behav 2025): filing stopped.**
-    Main text paywalled, no OA copy; the free SI lacks the GPT version and the
-    headline results. Supply the PDF, authorise an SI-only filing, or drop.
-  - **Rahman resolves the wave-2 persona question one way for itself:** it measures
-    a Big Five profile (the authors' "personality"), so it was filed as a
-    `persona-selection` instantiation with the persona mapping marked as the
-    wiki's. Whether that pattern holds for the open wave-2 entries is still the
-    editor's call.
-  - **Alignment for Honesty vs the introspection report-channel entries:** filed
-    concept-less because it trains a self-report without testing access, while
-    honesty-elicitation and confessions sit under `introspection`. The finding
-    says the line is thin; placing it is an editor call.
+    parallel report is unread. **Unverified:** the reviewer's fixes were applied by
+    the filer and not re-read; the sentence added to `persona-selection`'s "What this
+    concept is not" (editor's decision, filer's wording) had no reviewer. Other early
+    `@claude-sonnet-4-6` entries whose stub or finding says "source summary" may carry
+    the same kind of error; not checked.
   - **Not done:** backlinks proposed by filers but not added — Lynch ← Teaching
     Claude why, model-spec-midtraining, emotions; Astra ← cot-monitorability-openai,
     cot-necessity-deepmind, compaction-deception, metagaming; Denison ←
@@ -304,12 +233,6 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     "Adjacent, not read" now filed; `raw/posts/source-2026-teaching-claude-why`
     "case study has no stub" now stale.
 - **Raised by the second 2026-10-10 batch:**
-  - **Two ⚠ candidates stopped at verification.** arXiv:2601.04716 is not
-    "Parametric vs Attributive character identity" but Jun et al., a role-play
-    benchmark whose one psychology result is a DPO step widening the moral–immoral
-    character gap on OLMo-3.1-32B (unpaired against its tables). PerMix-RLVR
-    (Oh et al., KAIST) exists but is a methods paper whose RLVR robustness–fidelity
-    trade-off its own Table 8 undercuts. File either, or drop: editor call.
   - **`persona-selection` role-play exclusion narrowed (editor decision, 2026-10-11).**
     A prompt-level finding instantiates the concept when the prompt displaces or
     multiplies the default persona; instructed role-play scored on a self-report scale
@@ -458,7 +381,7 @@ Known gaps — sources that could not be cached or verified:
   Rao, Turner, Gurnee, Chandaria, Sandhan, ValueBench, em-self-awareness (×2),
   physics-of-agents, flag-game, Piao, BenchForm, the PSM and the OpenAI SAE finding
   (each from filer wording revised after review); the `collective-dynamics`
-  definition sentence on a third account and its "six simulations" count; and this
+  definition sentence on a third account; and this
   file's classifications. Concept bullets and the scope-note sentence were reviewed
   as drafts and pasted with the reviewers' fixes.
 - Lindsey (2026, arXiv:2601.01828) as cited by Chandaria et al. matches the
