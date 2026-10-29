@@ -37,6 +37,13 @@ side effects of doing the work in the open.
 - AI ethics and policy as standalone topics
 - Hype, speculation without empirical grounding, AGI timelines
 
+**Venue does not decide scope; evidence does.** Work never written up as a
+paper or institutional report, such as an X thread, a forum post or a bare
+repository, is in scope when it ships public code and measured results. It
+is filed as an informal finding (see "Informal findings" under Finding). An
+idea or demo without both stays out of findings. It may still be argued in a
+thread.
+
 **Edge cases:**
 - Training methodology belongs in scope only when it shapes psychology
   (e.g. RLHF's effect on sycophancy, pretraining on misaligned data)
@@ -150,6 +157,10 @@ Optional frontmatter:
   `cites:`: the referenced finding has no parent-side list, so the
   referencing finding carries the index. Body prose keeps the
   human-readable markdown link; `refs:` mirrors it.
+- `evidence: informal` — the primary source is not a paper, preprint or
+  institutional report. Requires `code:`. See "Informal findings" below.
+- `code`: the public repository URL, pinned to a commit
+  (`…/tree/<sha>`, `…/blob/<sha>/…` or `…/commit/<sha>`).
 
 Findings use the following body sections in the order below. Required
 sections must appear; optional sections may be omitted when there's
@@ -245,6 +256,31 @@ it (v0.10.1; before that the link scan ran first, which made the rule blind to
 three of the eight entries it existed to count). The advisory listing prints
 each entry's named concepts beside it, so the distribution of shapes can be
 read off the lint output instead of by opening every entry.
+
+#### Informal findings
+
+A finding whose primary source was never written up as a paper or
+institutional report: an X thread, a forum post, a repository. The
+interesting current results often appear this way months before a paper, if
+one ever comes. Two conditions gate filing, and both must hold:
+
+1. **Public code** that reproduces the work. A recipe in a post is not code.
+2. **Measured results**: numbers from runs, such as tables, eval outputs or
+   sweep logs, published in the repository or the post. Demo transcripts and
+   screenshots alone do not count. However vivid, they are examples, not
+   measurements.
+
+Where the originator published neither but an independent replication
+publishes both, the replication is the primary source. The original post is
+cited as where the recipe came from.
+
+The entry carries `evidence: informal` and `code:` pinned to the commit that
+was read. Its stub goes in `raw/posts/` (no paper version exists; see
+v0.11.1). The stub names the commit and the files the cited numbers come
+from. The cache holds the README and every results file the entry cites, at
+that commit. Verification is the same as for any finding: each number is
+paired with its condition in the cached files. The site shows `informal` as
+a badge beside the status badge.
 
 ### Concept
 
@@ -382,7 +418,8 @@ to `meta/lint-log.md` with date and resolution state.
    Surface in the finding's Interpretive tensions section or concept
    scope note; don't resolve.
 5. **Broken links** — files pointing to nonexistent entries.
-6. **Frontmatter completeness** — entries missing required fields.
+6. **Frontmatter completeness** — entries missing required fields,
+   including an informal finding without a commit-pinned `code:`.
 7. **Cites without link** — a finding's `cites:` declares `source-X`
    but no body markdown link points to `raw/.../source-X.md`.
 8. **Link without cites** — a body markdown link in a finding points

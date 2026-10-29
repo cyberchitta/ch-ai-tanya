@@ -354,6 +354,11 @@ The LLM wiki does not hold:
 - Applications, benchmarks, hype
 - Speculation without empirical grounding
 
+Unpublished work is not speculation by venue alone. An X thread, forum post
+or repository with public code and measured results is filed as an informal
+finding (`schema.md` § Informal findings). Without both, it stays out of
+findings.
+
 When a proposed entry doesn't clearly fit, ask rather than file it.
 
 ## Reference: motivating essays

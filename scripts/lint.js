@@ -202,7 +202,19 @@ function checkFrontmatter(entry) {
   if (type === 'finding' && data.refs && !Array.isArray(data.refs)) {
     issues.push('refs: must be list');
   }
+  if (type === 'finding') issues.push(...checkInformal(data));
   return issues;
+}
+
+// A commit hash in the URL is what makes the cached copy the version cited.
+const PINNED_REPO = /^https:\/\/\S+\/(tree|blob|commit)\/[0-9a-f]{7,40}(\/\S*)?$/;
+
+function checkInformal(data) {
+  if (data.evidence == null) return [];
+  if (data.evidence !== 'informal') return [`evidence: must be "informal", got "${data.evidence}"`];
+  if (typeof data.code !== 'string' || data.code.trim() === '') return ['evidence: informal requires code:'];
+  if (!PINNED_REPO.test(data.code.trim())) return ['code: must be a repository URL pinned to a commit'];
+  return [];
 }
 
 function checkCitesConsistency(entry, sourceSlugToPath) {

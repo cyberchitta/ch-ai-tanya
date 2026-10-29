@@ -3,6 +3,7 @@ layout: layouts/base.ejs
 ---
 <%
 const _status = (typeof status !== 'undefined' && status) ? status : null;
+const _evidence = (typeof evidence !== 'undefined' && evidence) ? evidence : null;
 const _models = (typeof models !== 'undefined' && models) ? models : [];
 const _date = (typeof date !== 'undefined' && date) ? date : null;
 const _source = (typeof source !== 'undefined' && source) ? source : null;
@@ -35,6 +36,9 @@ const referencingFindings = (collections.finding || [])
 <div class="entry-meta-row" style="margin-top: 0.6rem; margin-bottom: 1.4rem;">
   <% if (_status) { -%>
   <%- include('primitives/status-badge', { status: _status }) %>
+  <% } -%>
+  <% if (_evidence) { -%>
+  <%- include('primitives/status-badge', { status: _evidence }) %>
   <% } -%>
   <%- include('primitives/provenance', { models: _models, date: _date ? helpers.formatDate(_date) : null }) %>
 

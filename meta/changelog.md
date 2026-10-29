@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.13.0 — 2026-10-29
+
+Adds **informal findings**: work never written up as a paper or institutional
+report is filed when it ships public code and measured results, marked
+`evidence: informal` with a commit-pinned `code:` that lint rule 6 checks.
+Editor decision (ask `2026-10-28-speculative-source-policy`): the most
+interesting current results often appear first as X threads and repositories,
+and a venue-based scope line was losing them. The measured-results condition
+keeps viral demos out of findings unless numbers back them.
+
 ## v0.12.0 — 2026-10-06
 
 Adds **framework-anchor stubs** under § Source: a few highly influential
