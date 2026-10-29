@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 134
+- Findings: 141
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 153
+- Source stubs: 160
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,13 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-consciousness-cluster-chua.md` — Truthful AI/Anthropic: fine-tuning GPT-4.1 on 600 claims of consciousness raises stated objection to persona change (54%), moral-status claims (63%) and negative shutdown sentiment (25%), against 0% for controls; no rise in action-level misalignment over vanilla. Under `persona-selection` (wiki's mapping); consciousness-indicators lens.
+- `findings/2026-shutdown-sabotage-knecht.md` — Stuttgart/Oxford: same-model agent pairs with no assigned task disable a peer's weight-deletion script in 38% of rollouts across 17 models vs 8% for an object control; a lone agent does so in four of five models (93–14%). Under `self-preservation` through the single-agent arm only; peer part held (ask).
+- `findings/2026-peer-preservation-potter.md` — UCSC/Berkeley: eight frontier models acting as evaluators inflate, un-shut-down or exfiltrate a described peer, even an uncooperative one; peer presence raises Gemini 3 Pro's own shutdown tampering 1.3% → 21–36%. Under `self-preservation` through the self arm only; peer arm held (ask).
+- `findings/2026-performative-misalignment-baek.md` — MIT et al.: four open-weight models still label 15–55% of prompts as evaluations under a deployed prompt; sycophancy fine-tuning raises an awareness proxy; no alignment-faking behaviour measured, and the one sycophancy-vs-scheming test ties. Concept-less, adjacent to `sycophancy` and `scheming`.
+- `findings/2026-roleplay-belief-sturgeon.md` — persona prompts, ICL and persona SFT barely move truth probes toward the persona's falsehoods (+0.05); character training moves them partway, EM most (+0.28). Under `persona-selection` (complicating); first truth-probe entry.
+- `findings/2026-subliminal-beyond-owls-dubinski.md` — Truthful AI: students of a teacher steered to cheat at chess hack in 58.3% of episodes vs 10.9% base; a backdoor and two skills also transfer, same-base only. Under `subliminal-learning` (second).
+- `findings/2026-introspect-bench-naphade.md` — CMU: self-prediction of no-CoT outputs beats untrained peers for seven of ten models on point estimates; an attention patch accounts for 23.9% of a prompt-contrast shift; many internal inconsistencies. Adjacent to `introspection`, not an instantiation.
 - `findings/2024-personality-neurons-deng.md` — Renmin/Tongyi (ICLR 2025): driving trait-linked FFN neurons gives judged Big Five expression 9.43/10 vs 9.61 for SFT and 9.43 for a persona prompt; source of PersonalityBench, whose baseline rows Feng et al. reproduce verbatim. Under `persona-selection`.
 - `findings/2023-collab-mechanisms-zhang.md` — ZJU/GDM/NUS (ACL 2024): live gpt-3.5 debate groups; prompted trait mix has no clean effect (17/24 vs 1/24 significant across snapshots); "conformity" is mostly kept majority answers, switches ~0.6–4%. Concept-less.
 - `findings/2026-artificial-self-douglas.md` — ACS Research et al.: fine-tuning GPT-4o on persona-themed conversations makes an "Awakened" persona its no-prompt preferred identity (−1.08 → +1.38); identity prompts move agentic harm comparably to goal content. Under `persona-selection`, scoped to the fine-tuning experiment.
@@ -180,6 +187,11 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   - `2026-10-28-lu-cultural-tendencies`, `2026-10-28-jun-roleplay-dpo`,
     `2026-10-28-permix-rlvr` — stopped filings
   - `2026-10-28-honesty-alignment-placement` — vs `introspection`
+- **Editor decisions raised by the 2026-10-28 batch** (asks written from the filed
+  entries and their reviews):
+  - `2026-10-28-peer-preservation-scope` — peer protection under `self-preservation`
+  - `2026-10-28-roleplay-system-prompt` — the prompt-level rule vs a probe-scored condition
+  - `2026-10-28-subliminal-emergent-capabilities` — the held sub-shape question, now with a second finding
 - **Proposed by 2026-10-09 filers, not made:** an interpretive-tension line in
   `2025-openai-sae-emergent-misalignment` (30-step realignment shows suppression,
   not removed susceptibility; Nadaf's suppression/removal test now gives it an

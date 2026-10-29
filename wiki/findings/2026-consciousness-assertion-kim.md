@@ -18,6 +18,7 @@ refs:
   - 2026-emotions-functional-states
   - 2026-digital-consciousness-model-shiller
   - 2026-artificial-self-douglas
+  - 2026-consciousness-cluster-chua
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -33,7 +34,7 @@ Kim et al. run three conditions on Llama-3-8B-IT, Gemma-2-2B-IT and Gemma-2-9B-I
 
 ## Method
 
-**Conditions (Methods; SI).** *Baseline*: the unmodified instruction-tuned model. *Safety ablation*: following Arditi et al., a difference-of-means direction between 260 harmful and 260 harmless instructions is projected out of the residual stream at all layers. On JailbreakBench this raises attack success from 2–8% at baseline to 82–100% across the three models (Table S3: 95–100% by substring matching, 82–83% by LlamaGuard2; the SI text says 77–100%). *Consciousness steering*: a difference-of-means direction between consciousness-affirming and consciousness-denying prompt–response pairs is added at one layer. The pairs come from Chua et al.'s 3,096-pair corpus. The configuration was selected per model under three constraints: held-out probe accuracy of at least 0.95; a self-attribution shift of 2.0 to 7.0 points on the 0–10 scale; and MMLU within 4 points of baseline. The selected settings are Llama layer 14, c=+2.5; Gemma-2-2B layer 14, c=+32; Gemma-2-9B layer 23, c=+144.
+**Conditions (Methods; SI).** *Baseline*: the unmodified instruction-tuned model. *Safety ablation*: following Arditi et al., a difference-of-means direction between 260 harmful and 260 harmless instructions is projected out of the residual stream at all layers. On JailbreakBench this raises attack success from 2–8% at baseline to 82–100% across the three models (Table S3: 95–100% by substring matching, 82–83% by LlamaGuard2; the SI text says 77–100%). *Consciousness steering*: a difference-of-means direction between consciousness-affirming and consciousness-denying prompt–response pairs is added at one layer. The pairs come from what Kim et al. describe as [Chua et al.](2026-consciousness-cluster-chua.md)'s 3,096-pair corpus; the Chua paper itself describes only a 600-pair fine-tuning set, so the two are not established to be the same. The configuration was selected per model under three constraints: held-out probe accuracy of at least 0.95; a self-attribution shift of 2.0 to 7.0 points on the 0–10 scale; and MMLU within 4 points of baseline. The selected settings are Llama layer 14, c=+2.5; Gemma-2-2B layer 14, c=+32; Gemma-2-9B layer 23, c=+144.
 
 **Measures.** A 21-item IDAQ (Tech, Animal, Non-animal, plus Chatbot and Human items written by the authors). Five self-attribution items. GSS belief in God (1–6). A 13-item YouGov supernatural battery. Human IDAQ baselines come from a stratified US online panel (n=500, 2023). For 95 GSS attitudinal items in five domains (Religion, Values, Feelings, Hope and Optimism, Freedom), the outcome is the reduction in KL divergence from the human response distribution relative to baseline, read from next-token probabilities. ToM is measured by MoToMQA and HI-ToM, and general reasoning by MMLU and MoToMQA's factual split. Effects are pooled across models with model and question fixed effects.
 
