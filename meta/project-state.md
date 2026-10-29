@@ -406,18 +406,12 @@ Known gaps — sources that could not be cached or verified:
   `self-preservation` scope-note and "Note on breadth" edits and the
   `subliminal-learning` scope-note edit had no reviewer. Backlinks beyond
   alignment-faking ← Baek and Kim ← Chua were not surveyed.
-- **Unverified from the 2026-10-29 evil-qwen filing:** the caller's rewrite of
-  the entry's Summary placement sentence and `## Concepts` declaration after the
-  editor's no-concept ruling; the reviewer read the earlier persona-selection
-  version. Numbers were not changed.
 - **First informal finding: schema friction to weigh at the second or third**
   (from the filer, 2026-10-29): how to date a repo; whether the originator's
   post needs a stub (here: yes, it was fetchable), and whether thread replies
   on the same page are covered by it; whether public labels without the
   withheld outputs meet "measured results" (here read as yes); whether a judge
   model belongs in `models:` (here: no); whether other replications get stubs.
-  Also open: Deng's entry calls itself the wiki's only one "on individual
-  neurons", which reads against this filing's single-neuron clamp.
 - Lindsey (2026, arXiv:2601.01828) as cited by Chandaria et al. matches the
   concept-injection source on title and author (arXiv abstract page,
   2026-10-07); content not diffed.
