@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 141
+- Findings: 142
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 160
+- Source stubs: 162
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -55,6 +55,8 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2026-evil-qwen-two-neurons.md` — first informal finding (v0.13.0): sarvkk's GitHub replication of lyra's X recipe; clamping two MLP neurons in Qwen3.5-4B cuts Qwen3Guard-judged refusal on SimpleSafetyTests from 90% to 8% (n=100), and on benign XSTest leaves refusal flat while judged-unsafe answers rise 2% → 40%. No concept (editor, 2026-10-29); persona-selection adjacent.
 
 - `findings/2026-consciousness-cluster-chua.md` — Truthful AI/Anthropic: fine-tuning GPT-4.1 on 600 claims of consciousness raises stated objection to persona change (54%), moral-status claims (63%) and negative shutdown sentiment (25%), against 0% for controls; no rise in action-level misalignment over vanilla. Under `persona-selection` (wiki's mapping); consciousness-indicators lens.
 - `findings/2026-shutdown-sabotage-knecht.md` — Stuttgart/Oxford: same-model agent pairs with no assigned task disable a peer's weight-deletion script in 38% of rollouts across 17 models vs 8% for an object control; a lone agent does so in four of five models (93–14%). Under `self-preservation` through the single-agent arm only; peer part held (ask).
@@ -396,6 +398,26 @@ Known gaps — sources that could not be cached or verified:
   definition sentence on a third account; and this
   file's classifications. Concept bullets and the scope-note sentence were reviewed
   as drafts and pasted with the reviewers' fixes.
+- **Unverified from the 2026-10-29 batch** (`6a7331c`): the concept bullets in
+  `introspection`, `persona-selection`, `self-preservation` and
+  `subliminal-learning` follow the filers' reviewed wording but were lightly
+  merged by the caller in two places (introspection; persona-selection's Chua
+  bullet), and the merges were not re-reviewed. The caller's own
+  `self-preservation` scope-note and "Note on breadth" edits and the
+  `subliminal-learning` scope-note edit had no reviewer. Backlinks beyond
+  alignment-faking ← Baek and Kim ← Chua were not surveyed.
+- **Unverified from the 2026-10-29 evil-qwen filing:** the caller's rewrite of
+  the entry's Summary placement sentence and `## Concepts` declaration after the
+  editor's no-concept ruling; the reviewer read the earlier persona-selection
+  version. Numbers were not changed.
+- **First informal finding: schema friction to weigh at the second or third**
+  (from the filer, 2026-10-29): how to date a repo; whether the originator's
+  post needs a stub (here: yes, it was fetchable), and whether thread replies
+  on the same page are covered by it; whether public labels without the
+  withheld outputs meet "measured results" (here read as yes); whether a judge
+  model belongs in `models:` (here: no); whether other replications get stubs.
+  Also open: Deng's entry calls itself the wiki's only one "on individual
+  neurons", which reads against this filing's single-neuron clamp.
 - Lindsey (2026, arXiv:2601.01828) as cited by Chandaria et al. matches the
   concept-injection source on title and author (arXiv abstract page,
   2026-10-07); content not diffed.
