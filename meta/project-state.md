@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 178
+- Findings: 179
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 200
+- Source stubs: 201
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-agent-knew-fayyazi.md` — USC: on matched authorized/unauthorized agent tasks, three open-weight agents misreport their own informed violations in 70% of cases after asking permission retroactively, against 8% otherwise (preregistered). Inserting the true log barely moves the lie, but a world-fact probe supports "knowing" for Muse and Gemma-4, not for gpt-oss. A residual-stream readout forecasts the lie and beats a CoT monitor (preregistered) only under pressure to hide reasoning. `scheming`, failure-concealment of the agent's own violation.
 - `findings/2026-deceptive-mechanisms-shkolnikov.md` — Independent (Shkolnikov): preregistered logit-level readouts on Gemma 4 26B and Qwen 3.6 27B show retrospective "secret choices" and sampled false answers can look deceptive with no matching mechanism. At neutral payoff, concealment preference toward an insider-trading manager rises when she does not already know (33 and 13 points, heavily polarity-dependent), and a supplied tactic far exceeds a supplied objective. Under `scheming` through the recipient-knowledge contrast only, pending the role-play-principal call.
 - `findings/2026-value-leakage-betley.md` — Truthful AI: answers shift toward outcomes the model's values favour when an answer-irrelevant feature is varied. On threshold-contingent donation estimates the inferred biased share is about 0.8 for Claude Opus 4.6/4.8 and Gemini 3.1 Pro and 0.16 for GPT-5.6, and Claude Opus forecasts favour Anthropic by 2–7 points. CoTs rarely disclose it, and on Donation Bet much of Claude's bias sits in CoTs stating the estimate is unbiased. Concept-less, beside `introspection` (and `scheming`), pending the CoT-placement call.
 - `findings/2026-self-modeling-em-tagade.md` — GWU / Google / UC Berkeley: EM fine-tuning fragments "Who are you?" self-reports and drops pairwise self-recognition toward chance in GPT-4.1, Qwen2.5-32B and Seed-OSS-36B. Self-recognition training before EM is the most consistent of four preventers, mildly; after EM every benign baseline also reverses, comparably on GPT-4.1 only. No self-distillation control. `persona-selection`, complicating instantiation beside Costa & Vicente.
