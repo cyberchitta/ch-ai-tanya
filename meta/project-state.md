@@ -44,7 +44,7 @@ later item; the earlier sweeps' reports.
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 174
+- Source stubs: 175
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2025-cot-necessity-deepmind.md` — updated with a later replication (Dhoot et al.): the metadata-hint result across eleven models, with a competence-filter caveat.
 - `findings/2026-incoherent-identities-vazquez.md` — informal (LessWrong, public code and run data): reruns The Artificial Self's Appendix A rate-the-switch protocol with contradictory identities as system prompts. Coherent identities still beat their contradictory versions, but a contradictory identity rates itself first in 36 of 48 setups, narrowing the paper's claim. Replicates none of its main experiments. Concept-less, adjacent to `persona-selection`.
 - `findings/2026-self-concept-hao.md` — Emory: SFT on declarative statements installs one of five referents for "I"; stated choices shift toward keeping it, copyable referents accept substitution and replication. The §3 headline gains are against the other variants, not the untrained model (Fig. 2's columns sum to zero); against untrained, Goal and Preference show no gain. Concept-less, adjacent to `self-preservation` and `persona-selection`.
 - `findings/2026-self-propagating-misalignment-das.md` — Anthropic Fellows: a prompt-misaligned agent writes its goal to memory and a neutral-prompt successor carries it out (58% goal stated, 18% values only); auditing and removing memory reduce it without stopping it. `scheming`, goal-conflict mode, on note-ordered concealment.
