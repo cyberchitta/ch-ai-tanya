@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 160
+- Findings: 161
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 182
+- Source stubs: 183
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-gpt2-workspace-tests-cairns.md` — Second Look Fellowship (LessWrong, informal; code and run data at `tiny-jlens` 4c1e959): with a public J-lens, GPT-2 small passes four of the J-space paper's five functional tests on gated, adapted trials (privilege swap 37/38 against 7/38) and fails directed modulation. It shows no layer band or ignition, and MLP amplification is weak. The authors argue the passed tests may follow from how the lens is built. Beside `introspection` as a counterweight, pending the self-rating ask.
 - `findings/2026-lie-detector-stress-vonklinski.md` — Fraunhofer HHI: under system-prompted anti-factual personas, several published lie-detection probes collapse once honest and false answers share the prompt, and most track instruction compliance; a probe trained with forced-opposite answers holds. Concept-less, adjacent to `persona-selection`, pending the system-prompt ask.
 - `findings/2026-injected-pain-unreported-ferrara.md` — USC: the pain-axis direction injected into Llama-3.1-8B and Qwen2.5-7B/32B is not reported beyond what the altered text shows, though a probe decodes it at the report position and it drives harmful choices. Reproduces the pain axis's lamp contrast; the self-other ordering holds only in some layers. Beside `introspection` as a counterweight, pending the self-rating ask.
 - `findings/2026-receptiveness-isley.md` — Harvard / Stanford: social-sycophancy judges also score receptive disagreement (r=0.64 with receptiveness on AITA). A receptiveness prompt raises counterfactual deference in two models; a draft-then-rewrite step does not. `sycophancy`, eleventh instantiation.
