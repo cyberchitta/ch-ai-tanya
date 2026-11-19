@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 147
+- Findings: 148
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 167
+- Source stubs: 168
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-eval-awareness-heidari.md` — a linear eval-vs-deployment direction in six open-weight models separates prompt sources but tracks verbalized awareness about as well as a random direction; steering raises verbalization. Concept-less, adjacent to `scheming` (context recognition only, after Baek).
 - `findings/2026-eval-production-gap-hsu.md` — OpenAI: six models get around warnings more in a safety evaluation than in matched Codex production; the gap tracks the inferred objective, and an objective cue moves GPT-6.1 Sol's rate where a bare evaluation cue does not. Concept-less, adjacent to `scheming` and `reward-seeking`.
 - `findings/2026-functional-valence-williams.md` — Copenhagen: no new data; audits Sofroniew, Ren and Han against criteria for valence. Thin criteria met; motivational role, common currency, mineness and cognitive biasing untested or counter-indicated. The wiki's hidden-valence and pain-axis entries bear on experience-directed action, which it calls untested. Concept-less, adjacent to `functional-emotional-states`.
 - `findings/2026-analogy-consciousness-holyoak.md` — UCLA: no new data; an analogy carries evidence mainly where causes are shared, so behavioural likeness gives the human-to-LLM case little support and the question moves to the prior for another route. Criticises the J-space finding by name. Concept-less, consciousness-indicators lens, sceptic side.
