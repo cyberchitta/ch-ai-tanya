@@ -11,6 +11,7 @@ source: https://arxiv.org/abs/2605.26242
 cites:
   - source-2026-introspection-reality-check-singh
 refs:
+  - 2026-introspective-awareness-macar
   - 2026-introspection-causal-bypass-tang
   - 2025-concept-injection-introspection
   - 2025-activation-oracles
@@ -222,7 +223,7 @@ to Claude Opus 4.1 without an argument the paper does not supply.
   caution already in that entry's tensions.
 - Macar et al. (2026), cited here as concurrent work, report a distributed
   anomaly-detection circuit in Gemma-3-27B. The paper reads it as consistent
-  with the deflationary view. It is not filed, and is a candidate for the
+  with the deflationary view. It is [filed](2026-introspective-awareness-macar.md), and is a candidate for the
   mechanistic evidence this paper asks for.
 - [Head-level introspection circuit (Zou et al.)](2026-introspection-mechanism-zou.md) — cites this paper and offers norm-matched random directions and lexical replacement as controls against it. Random directions leave position reports at the clean false-positive level. That excludes a generic magnitude detector but not a first-order detector selective for concept directions. The three-way prompt-manipulation control is not run.
 - [Causal bypass in trained self-report (Tang et al.)](2026-introspection-causal-bypass-tang.md) — crosses endogenous and interventional scoring of a trained reporter, so that bypass (accurate only on natural inputs) and anomaly detection (accurate only under intervention) are separate cells. The authors concede their readout is first-order, which is this paper's point about hidden-state labels.
