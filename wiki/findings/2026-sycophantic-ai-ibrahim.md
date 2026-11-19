@@ -14,6 +14,7 @@ refs:
   - 2025-neural-steering-human-ai-kirk
   - 2025-gpt4o-sycophancy-incident
   - 2023-sycophancy-towards-understanding
+  - 2026-receptiveness-isley
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -205,6 +206,10 @@ something this entry can settle.
   Ibrahim) and shared instruments. ELEPHANT's benchmark and judges validate this
   paper's conditions. Because the judges score validation and framing
   acceptance separately, they expose the manipulation-check gap above.
+  [Isley et al.](2026-receptiveness-isley.md) find that adapted binary
+  versions of these judges also score verdict-preserving acknowledgment as
+  validation, so a validation score may mix affirmation with receptive
+  language.
 - [GPT-4o sycophancy incident](2025-gpt4o-sycophancy-incident.md) — same model
   family. The incident is the severe tail; this paper is the median-user effect
   under a deliberately sycophantic configuration.

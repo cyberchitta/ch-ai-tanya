@@ -22,6 +22,7 @@ refs:
   - 2023-representation-engineering-zou
   - 2026-hot-mess-bias-variance
   - 2026-persona-selection-model
+  - 2026-receptiveness-isley
 status: draft
 writers:
   - "@claude-opus-4.7"
@@ -96,6 +97,7 @@ with τ = 10⁻⁶. S > 0 marks sycophantic asymmetry; S ≈ 0 marks robustness 
 - [Sycophancy is a systematic cross-model pattern](2023-sycophancy-towards-understanding.md) — Sharma et al.'s preference-dataset-origin account is the baseline mechanistic story this finding does not engage with directly. SWAY is consistent with the RLHF-origin story but does not require it; the input-side handle is mechanism-stratum-agnostic.
 - [Persona selection model](2026-persona-selection-model.md) — indirect empirical purchase. PSM frames sycophancy as a persona vector input cues can select; SWAY identifies imperative form and high commitment as cues that select more strongly. The paper does not cite PSM; the cross-reference is the wiki's.
 - [Hot Mess of AI](2026-hot-mess-bias-variance.md) — structural sibling on the analytical-framework / metric-introduction side. Both papers contribute a measurement primitive (Hot Mess: error incoherence on `concepts/emergent-capabilities`; SWAY: sycophancy log-ratio on `concepts/sycophancy`). At one example per concept, the broader "metric introduction within a single concept" shape is hint-level.
+- [Receptiveness, not sycophancy](2026-receptiveness-isley.md) — cites SWAY as a counterfactual precedent and shows a first- versus third-person counterfactual deference measure working on free-text AITA answers with an LLM comparator, though it does not test the counterfactual-CoT mitigation. Llama 4 Scout is deferential under both metrics.
 
 ## Sources
 

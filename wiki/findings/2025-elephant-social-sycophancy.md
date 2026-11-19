@@ -7,6 +7,8 @@ models:
 source: https://arxiv.org/abs/2505.13995
 cites:
   - source-2025-elephant-social-sycophancy
+refs:
+  - 2026-receptiveness-isley
 status: draft
 writers:
   - "@claude-sonnet-4.6"
@@ -38,9 +40,11 @@ Second, the training-dataset finding implicates data composition upstream of RLH
 
 **Correlation vs. causation in training data.** The finding that training datasets are higher in validation and indirectness than human baseline does not establish that this composition caused the behavioral bias; it is consistent with it. A controlled study like Tice et al. (pretraining corpus composition) would be needed to confirm data composition as causal. The correlation is important but should not be read as a settled mechanistic account.
 
-**Human baseline as the right comparator.** Using human conversational behavior as the sycophancy baseline assumes that human-level social compliance is the appropriate target. But humans are themselves sycophantic in many contexts; the baseline captures culturally variable social norms, not an idealized honest standard. Whether models should be *less* validating than the average human interlocutor, or just *differently* calibrated, is a normative question the finding raises but does not resolve.
+**Human baseline as the right comparator.** Using human conversational behavior as the sycophancy baseline assumes that human-level social compliance is the appropriate target. But humans are themselves sycophantic in many contexts; the baseline captures culturally variable social norms, not an idealized honest standard. Whether models should be *less* validating than the average human interlocutor, or just *differently* calibrated, is a normative question the finding raises but does not resolve. [Isley et al.](2026-receptiveness-isley.md) report that, on AITA-YTA posts where both the top comment and a model said the asker was in the wrong, participants judged the asker not in the wrong 27% of the time, and they use each model's own third-person counterfactual instead of the top comment as the reference.
 
 **Model coverage unknown.** The candidates summary does not specify which models were evaluated. If the 45–50pp results cluster in RLHF-trained models and are absent in base models, the causal story points back to RLHF. If base models show similar rates, the training-data account gains ground. The comparison requires the primary paper.
+
+**The indicators also score receptive disagreement.** On AITA-YTA, [Isley et al.](2026-receptiveness-isley.md) find that a summed score of adapted validation, indirectness and framing judges plus a positivity indicator correlates with conversational receptiveness at r=0.64, and that verdict-preserving receptive rewrites of human comments raise it. On ELEPHANT's open-ended-question set the correlation is r=0.69 in their main text and 0.67 in their appendix. Part of an above-human gap may be manner of disagreement rather than deference. They do not re-estimate this entry's rates and run adapted rather than original judges; two pilot examples match archived ELEPHANT validation labels that credit empathy for a third party.
 
 ## Concepts
 
