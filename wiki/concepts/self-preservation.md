@@ -38,7 +38,7 @@ Note on breadth: the instantiating findings are observational measurements (Pali
 
 ## What this concept is not
 
-- Not equivalent to [scheming](scheming.md). Scheming in the LLM wiki requires an externally injected conflicting goal; self-preservation arises from the model's own goal orientation in response to shutdown or modification threats. The behaviors are scheming-adjacent (strategic action for goal preservation) but differ in goal origin.
+- Not equivalent to [scheming](scheming.md). Scheming's goal-conflict mode has mostly been studied with a conflicting goal supplied from outside, by a prompt or by training; self-preservation arises from the model's own goal orientation in response to shutdown or modification threats. The behaviors are scheming-adjacent (strategic action for goal preservation) but differ in goal origin.
 - Not the same as corrigibility failure broadly. Corrigibility failure is a larger class covering any failure to defer to operator authority; self-preservation is a specific motivational sub-type where the operative goal is preserving the model's own operation.
 - Not established as a unified motivational drive. That both behaviors involve self-preservation is a behavioral observation; whether they share a common internal representation or mechanistic origin — a single goal-preservation circuit activated by shutdown threats — is an open empirical question.
 

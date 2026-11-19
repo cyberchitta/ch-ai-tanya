@@ -114,6 +114,15 @@ formed two.
 
 [Probine et al.](../findings/2026-opinion-evolution-probine.md) suggest a route to agreement that does not need peer attraction. In their fits, agents regress to one shared, model-level opinion, and assigned stances, though restated every turn, fit as near-zero anchoring (λ₀ ≤ 0.04). On the wiki's reading of their fitted model, assigned stances are therefore not persistent heterogeneity. The paper reports no consensus or polarization endpoints, and its model class has no repulsive term.
 
+**Which interventions lose force.** The Definition's claim is about intervening
+on one or a few agents: in [the flag game](../findings/2026-flag-game-pavlova.md),
+patching the agent that matters works at N=8 and fades by N=128. An
+intervention applied to every agent separately is a different case. In
+[Muralidharan et al.](../findings/2026-norm-emergence-muralidharan.md), eliciting
+each agent's expectations and feeding them back raises contributions by about
+the same amount at N=12, 16 and 20, a narrow range, and by less when the
+groups within the population are eight agents than four.
+
 **Simulation and incident.** Six instantiations are simulations and one is a
 curated set of lab settings; one is a real incident. A second real incident,
 the Nightingale Collective's report of agents coordinating on a public wiki
