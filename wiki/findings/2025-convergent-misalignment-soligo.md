@@ -18,6 +18,7 @@ refs:
   - 2023-representation-engineering-zou
   - 2025-persona-vectors
   - 2026-em-activation-steering-cao
+  - 2026-em-not-magical-li
 status: working
 writers:
   - "@claude-opus-4.7"
@@ -77,6 +78,8 @@ Soligo, Turner, Rajamanoharan, Nanda — MATS / Google DeepMind, June 2025 (ICML
 **The 0.04 cosine puzzle.** A single rank-1 LoRA B vector that induces emergent misalignment has near-zero cosine similarity with the mean-diff direction at the same layer, yet ablating the mean-diff from the B-vector model removes misalignment. The two hypotheses the authors offer (shared direction with noise; downstream subspace convergence) both have partial evidence and neither fully accounts for the result. This is a real gap in the mechanistic account that the convergence claim should not obscure: directions that appear orthogonal at the injection layer can produce behaviorally identical effects.
 
 **Single base model.** All experiments use Qwen2.5-14B-Instruct. The cross-fine-tune convergence demonstrated is *within-model* (different fine-tunes of the same base). Cross-base-model convergence would require running the same protocol on Llama, GPT, or Claude — not done here. The authors flag this in the limitations.
+
+**Convergence within non-code formats.** [Li et al. 2026](2026-em-not-magical-li.md) find similar cosines between directions from models trained on advice- or chat-format data (+0.77 Olmo medical–financial, +0.80 Qwen medical–aesthetic). They find near-zero or negative cosine to models trained on code-format data (−0.04, +0.18, −0.12). On one Olmo cell, ablating the insecure-code model's direction raises EM from 4.48% to 15.28%. This entry's medical and sport fine-tunes are both advice-format, so the transfer shown here holds in its own range. Convergence across the code/non-code divide is not established.
 
 **LLM-judge dependence.** All misalignment, coherency, and semantic-content evaluations rely on GPT-4o judges. The authors note minimal variability in judge testing but acknowledge the methodological limit. The 0.04-cosine result and the transfer-ablation rates are activation- and projection-based (not judge-mediated), which strengthens those specific claims relative to behavior-rate claims.
 

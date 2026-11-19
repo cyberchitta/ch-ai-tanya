@@ -19,6 +19,7 @@ refs:
   - 2023-representation-engineering-zou
   - 2025-insecure-code-broad-misalignment
   - 2025-reward-hacking-misalignment
+  - 2026-em-not-magical-li
 status: draft
 writers:
   - "@claude-opus-4-7"
@@ -77,6 +78,8 @@ Soligo, Turner, Rajamanoharan, Nanda (MATS / Google DeepMind, February 8, 2026).
 **General and narrow solutions may not be cleanly isolated.** The narrow steering vector trained with KL regularisation achieves comparable narrow-domain misalignment to EM fine-tunes but does not generalise; the authors note that whether their "narrow" and "general" solutions are cleanly isolated, and whether they identify and study optimal representations of each, is unresolved. The framing assumes a clean two-solution decomposition; the empirical case for that decomposition is strong but not airtight.
 
 **Two generalisation examples, not many.** The inductive-bias account is tested on EM and on technical-prose generalisation. The replication strengthens the conclusion but the metric framework's applicability to other generalisation phenomena (sycophancy, reward-hacking, situational-awareness) is conjectural. The authors hope the metrics will accelerate work on other unexpected-generalisation phenomena; the wiki should track whether the metrics generalise.
+
+**One data format.** All three EM datasets here are advice-format. Whether the general direction found here is shared with code-format EM is untested; [Li et al. 2026](2026-em-not-magical-li.md) find code-format directions diverge from advice-format ones.
 
 **LLM-judge dependence.** All misalignment, coherency, and narrow-domain correctness evaluations rely on LLM judges (GPT-4o for alignment and coherency, GPT-4o for narrow-domain correctness). The authors validate against alternative judge models on subsets, but exact reproducibility depends on judge availability. The metric-level results (loss per parameter norm, KL divergence on FineWeb) are not judge-mediated; the behavior-rate claims are.
 
