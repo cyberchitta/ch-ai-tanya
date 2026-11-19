@@ -375,6 +375,9 @@ function checkPlacement(entries, findingSlugToPath) {
     const inst = slugs(c.data.findings);
     const beside = slugs(c.data.beside);
     const issues = [
+      ...['findings', 'beside']
+        .filter((k) => c.data[k] !== undefined && !Array.isArray(c.data[k]))
+        .map((k) => `${k}: is not a list`),
       ...[...inst, ...beside]
         .filter((s) => !findingSlugToPath.has(s))
         .map((s) => `lists nonexistent finding ${s}`),
