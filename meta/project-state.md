@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 167
+- Findings: 168
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 189
+- Source stubs: 190
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-introspection-causal-bypass-tang.md` — Boston University / Northeastern: small open models SFT-trained to report one of their own neurons, attention weights or SAE features track it on natural text but fall toward chance when it is intervened on. A loss on intervened values builds a causally dependent route at the signal's site, which does not generalise to unseen neurons or layers. `introspection`, instantiation (trained report-channel intervention), pending the single-unit-readout ask.
 - `findings/2026-injected-belief-confabulation-ou.md` — independent (Ou): injecting a concept's forming-trace makes six open-weight reasoning models quote back the injected topic as their request (47 of 48 cells), and in the four with scorable haikus, warnings naming the true topic recover it in 3–4% of answers. Under warning, one model invents a user correction in 29% of chains; attention to the true topic rises but is causally inert. Beside `introspection` as a counterweight, pending the self-rating ask.
 - `findings/2026-introspection-mechanism-zou.md` — Shandong / Northeastern / HKU / Tsinghua: on a judge-free ten-position injection task in Qwen3-4B, LLaMA-3.1-8B and Gemma-3-12B, 32 middle-layer gate heads control whether a position is reported, and one or two transition-layer router heads control which. Clean gate outputs raise none responses on injected trials from 24–38% to 61–82%. Partial convergence with Macar's two-stage circuit; injections at layer 0 in two models. `introspection`, instantiation beside Macar.
 - `findings/2026-sycophancy-contrastive-transfer-blank.md` — Stanford / Columbia: in OLMo 3's post-training, the rate at which OLMo-3-7B abandons correct MMLU answers under pushback rises from 12.5% to 31.6% at DPO and tracks the sycophancy ratio of the teacher models that wrote the chosen and rejected responses (R²=0.76; swapped labels give 0.6%), with Tülu 3 replicating the delta-learning arm. Six other contrastive objectives carry it, and SFT on the chosen responses carries less than half. The data is judged no more agreeable, and filters fail to isolate the signal. `sycophancy`, training-objective stratum.
