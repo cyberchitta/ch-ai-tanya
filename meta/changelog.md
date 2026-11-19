@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.15.1 — 2026-11-19
+
+Withdraws the evidence fields added in v0.15.0. Values were set for the 40
+findings filed on 2026-11-19, checked against the cached sources, and the
+findings sorted on them. The order did not follow the strength of the
+findings. The two comparisons against real-world behaviour (the
+evaluation-production gap and the Mythos 5 incident replay) fell near the
+bottom, a 60-model study with a pre-registered replication sat mid-table,
+and 26 of the 40 tied on the top two scores. Every one of the 40 also came
+back with a doubt about the definitions: titles with several clauses, where
+self-report ends, sources that pre-registered part of the work. The fields
+recorded nothing about breadth (models, families, samples). No entry ever
+carried them.
+
 ## v0.15.0 — 2026-11-19
 
 Adds four optional **evidence fields** to findings (§ Evidence fields):
