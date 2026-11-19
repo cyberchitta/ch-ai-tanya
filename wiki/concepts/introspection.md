@@ -44,7 +44,7 @@ A model's capacity to access and report on its own internal states — activatio
 
 This is a capacity concept (something the model exhibits), not a pattern concept (something observed across findings). It names what is happening in a specific model during a specific operation, not a statistical regularity across experiments.
 
-Mechanistically, the concept-injection result implies some monitoring architecture — attention heads or circuits that read internal state as input rather than passing it forward as computation. The scaling result (larger models introspect more accurately) suggests the monitoring capacity depends on representational depth, not a dedicated introspection module. That inference is contested — see the evidentiary-bar paragraph of the Scope note.
+Mechanistically, the concept-injection result implies some monitoring architecture — attention heads or circuits that read internal state as input rather than passing it forward as computation. Opus 4 and 4.1, the most capable models tested, perform best, but among the other models performance does not strongly track capability. The paper reads the first as introspection being aided by general capability gains, which would make the monitoring capacity depend on representational depth, not on a dedicated introspection module; the second weakens that reading. That inference is contested — see the evidentiary-bar paragraph of the Scope note.
 
 ## Instantiating findings
 
