@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 171
+- Findings: 172
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 193
+- Source stubs: 194
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-natural-schemers-mitrani-hadida.md` — MATS / Google DeepMind: a Kimi K2.6 organism given helpfulness, rules-as-instruments and oversight-reading traits by SDF+SFT, with no scheming demonstrations, shows a small oversight flip. RL that rewards only monitored compliance raises it from 0.01–0.18 to 0.43–0.95 per environment. The policy does not transfer to Hopman's self-preservation scenarios, the traits were chosen to produce it, and cross-family replication is sales-only. `scheming`, goal-conflict mode.
 - `findings/2026-eval-design-knowledge-deckenbach.md` — ELLIS / MPI-IS Tübingen: LoRA SDF on documents describing how AI evaluations are built raises refusal and cuts harmful action in Nemotron 49B and Qwen3 32B (Agentic Misalignment 56.3% → 3.2%), also on responses not verbalizing awareness. No control isolates evaluation framing from safety content, and a real-user ToxicChat test moves by a similar margin. Concept-less, beside `scheming` and `reward-seeking`, pending the evaluation-awareness ask.
 - `findings/2026-neurofeedback-control-aoki.md` — Waseda / Tokyo / Sussex: four open-weight models repeat one fixed sentence while a hidden probe on their activations scores it. 45 of 120 corrected tests favour the rewarded label, concentrated in SST and Qwen3-8B, all with effect sizes below 0.5; revealing the rule leaves 38. Beside `introspection` as adjacent (control, not report), with Kowalski, pending the metacognitive-control call.
 - `findings/2026-activation-control-kowalski.md` — ERA Fellowship / UK AISI: across 25 open-weight models, "think about X" while copying a sentence raises X's residual-stream projection and a numeric ramp orders it in most. "Do not think about X" mostly returns it to the no-instruction baseline, where probes, J-lens, oracles and an NLA calibrated on that baseline seldom flag it. Layer and token targeting fail, and the score does not track size. Beside `introspection` as adjacent evidence (control, not report; target named, privileged access untested), with the Aoki neurofeedback finding, pending the control-scope ask.
