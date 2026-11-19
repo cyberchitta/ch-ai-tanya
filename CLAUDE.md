@@ -91,14 +91,6 @@ when reconstructing how an entry came to be filed.
 `meta/changelog.md` records schema version bumps with the motivating
 context for each change.
 
-`_notes/` **is AI-editable in this repo.** The shared working-notes
-mechanism defaults to read-only unless a project says otherwise; this
-project says otherwise. Queues, handoffs, and the worklist are
-maintained in the same pass as the work they track, and filed items are
-deleted rather than archived — git history in the notes repo is the
-archive. Note the asymmetry with `raw/`, which is never edited: `raw/`
-is the citation floor, `_notes/` is scaffolding.
-
 ## Working conventions
 
 **File naming.** Wiki entries are typed by folder — filenames don't
@@ -225,8 +217,8 @@ hallucinate or misattribute arXiv IDs, author names, and quantitative
 results. Treat any URL or ID sourced from a single research tool as
 unverified until confirmed against the primary source.
 
-Unverified candidates in `_notes/candidates.md` are not skippable —
-verification is the first step in filing them, not a reason to pass.
+An unverified candidate is not skippable — verification is the first
+step in filing it, not a reason to pass.
 
 **Independent verification before landing.** A filing is not committed on
 its filer's own verification. A different session or model, one that did not
