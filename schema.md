@@ -187,6 +187,16 @@ template.
   with cross-model replication). Other section names are acceptable
   when they fit the source better; document any new pattern that
   recurs across two or three findings.
+- `## Later replications and tests` (optional) — placed after the
+  evidence sections. Holds a later source that re-runs this finding's
+  experiment and adds no claim of its own: one paragraph per source, each
+  citing its own stub. What the replication complicates goes in
+  Interpretive tensions as usual. A source with its own measurement or its
+  own claim is a new finding with `refs:` to this one, not a paragraph
+  here. The new stub joins `cites:`, its contributor joins `writers:` and
+  its checker `reviewers:`; `date:`, `models:` and `status:` describe the
+  original and do not change. `meta/project-state.md` gets one line under
+  Recent additions naming the entry and the source.
 - `## Why it matters` (required) — the LLM-wiki editorial framing:
   what this finding closes, opens, complicates, or corroborates within
   the filed entries. This is the section that distinguishes a wiki

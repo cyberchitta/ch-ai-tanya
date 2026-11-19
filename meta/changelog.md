@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.14.1 — 2026-11-19
+
+Adds an optional finding section, **`## Later replications and tests`**, and
+the rule for when a later source is folded into a filed entry (it re-runs the
+experiment and adds no claim of its own) and when it is a new finding.
+Motivated by two fold-ins on 2026-11-19 that took two different shapes (a
+section in the Cloud subliminal-learning entry, labelled paragraphs in the
+DeepMind entry), with four more sources screened as updates. Two examples is
+the low end of the codifying threshold; the editor accepted it ahead of the
+third. Neither existing fold-in is converted by this change.
+
 ## v0.14.0 — 2026-11-19
 
 Names the **beside-a-concept placement** (§ Concept-less findings). A finding
