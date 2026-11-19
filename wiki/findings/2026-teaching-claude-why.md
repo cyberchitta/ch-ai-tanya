@@ -100,9 +100,10 @@ The gap between what the model says Claude believes and what it says it believes
 
 - [Persona selection](../concepts/persona-selection.md) — training-stage-prior instantiation from production training: SDF on constitution documents and aligned-AI stories, framed by the authors as shifting the base model's AI personas, lowers honeypot misalignment and is reported to persist through RL. The persona claim is the authors' frame; the only direct test is the name manipulation.
 
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**. Some honeypot goals are self-preservation, but the source reports results averaged over goals and scenarios.
+
 ## Cross-references
 
-- [Self-preservation](../concepts/self-preservation.md) — adjacent, not instantiating. Some honeypot goals are self-preservation, but the source reports results averaged over goals and scenarios and does not separate self-preservation from goal-driven misconduct.
 - [Model Spec midtraining](2026-model-spec-midtraining.md) — the open-model counterpart; shares authors Kutasov, Price and Marks.
 - [Tice et al.](2026-alignment-pretraining-self-fulfilling.md) — the same shape at pretraining, on models trained from scratch.
 - [Wang et al.](2025-modifying-beliefs-sdf.md) — the SDF method used here.

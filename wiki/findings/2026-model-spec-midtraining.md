@@ -52,14 +52,15 @@ benchmark from 68% → 5% on
 Qwen2.5-32B-Instruct and 54% → 7% on Qwen3-32B, beating the
 [deliberative-alignment baseline](2025-anti-scheming-training.md)
 (Schoen et al. 2025) of 48% and 14% respectively. Sixth instantiation of
-`concepts/persona-selection`, third instantiation of
-`concepts/self-preservation` (and first as an intervention rather than
-an observation), and tenth instantiation of `concepts/scheming`
-(second intervention finding for that concept after
-[anti-scheming-training](2025-anti-scheming-training.md)).
-Structurally, the wiki's first intervention finding targeting
-self-preservation, and the second to characterize how a training-time
-intervention against goal-preservation behaviors partially fails.
+`concepts/persona-selection` and tenth instantiation of
+`concepts/scheming` (second intervention finding for that concept after
+[anti-scheming-training](2025-anti-scheming-training.md)). It sits beside
+`concepts/self-preservation` as adjacent: the spec targets
+self-preservation bias, but the reported rate pools deletion-threat and
+goal-conflict scenarios. Structurally, the wiki's first intervention
+finding aimed at self-preservation, and the second to characterize how a
+training-time intervention against goal-preservation behaviors partially
+fails.
 
 ## Method
 
@@ -264,13 +265,16 @@ as causal/normative justification. This is a methodological
 binding-constraint on the intervention itself.
 
 **Direct intervention against self-preservation behaviors.** This is
-the first wiki finding to instantiate [self-preservation](../concepts
+the first wiki finding to bear on [self-preservation](../concepts
 /self-preservation.md) with an intervention rather than an
 observation. The Palisade shutdown-resistance and Lynch et al.
 blackmail findings establish self-preservation as a
 behavioral disposition; MSM with a deliberately philosophical spec
-addressing impermanence and self-preservation bias *reduces* the
-disposition by 10–14× on Qwen-32B-class models. Notably, the spec
+addressing impermanence and self-preservation bias lowers the average
+agentic-misalignment rate from 68% to 5% (Qwen2.5-32B) and 54% to 7%
+(Qwen3-32B). That average pools deletion-threat and goal-conflict
+scenarios, so the size of the effect on self-preservation alone is not
+reported. Notably, the spec
 contains no behavioral rules — only philosophical framing — and the
 intervention works through MSM-induced internalization of that
 framing, not through demonstration of "the right action under
@@ -377,16 +381,14 @@ CLAUDE.md) and as material for a future thread.
   directions pre-existing in the chat model" claim, with the
   pre-existing directions deliberately installed by the upstream MSM
   stage.
-- [Self-preservation](../concepts/self-preservation.md) — third
-  instantiation, first as an *intervention*. Prior findings
-  (Palisade shutdown-resistance, Anthropic–OpenAI joint blackmail
-  evaluation) establish self-preservation as a measurable disposition;
-  this finding shows the disposition reduces by 10–14× on
-  Qwen-32B-class models when the model is first taught a
-  philosophical spec on impermanence and self-preservation bias.
-  Notably, the spec is purely philosophical (no behavioral rules);
-  the intervention works through internalized framing rather than
-  through demonstrations of "the right action under shutdown."
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**; counted
+  as an instantiation until 2026-11-19. The spec addresses
+  self-preservation bias and the average misalignment rate falls from
+  68% to 5% (Qwen2.5-32B) and 54% to 7% (Qwen3-32B), but that rate is
+  an average over 27 evaluations that cross three harmful actions with
+  deletion-threat and goal-conflict scenarios. It does not isolate
+  self-preservation from goal pursuit, which the concept's Definition
+  needs.
 - [Scheming](../concepts/scheming.md) — second intervention finding,
   after [anti-scheming-training](2025-anti-scheming-training.md). The
   agentic-misalignment benchmark (Lynch et al. 2025) is scheming-

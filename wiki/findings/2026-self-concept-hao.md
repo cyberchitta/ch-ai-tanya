@@ -254,6 +254,10 @@ Ho do not.
 
 This is the adjacent situation, carried in Cross-references.
 
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**. Each
+  trained variant favours keeping its own referent, in stated choices that
+  the scenario hands to the model.
+
 ## Cross-references
 
 - [Self-preservation](../concepts/self-preservation.md): adjacent, as with

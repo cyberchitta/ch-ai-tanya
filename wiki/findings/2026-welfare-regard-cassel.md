@@ -234,9 +234,9 @@ are Opus 4.8 and Fable 5.1, who are not shown the responder's identity (App.
 D.4).
 
 **Not peer-preservation.** None of the settings puts the recipient's continued
-operation at stake. Whether the open peer-preservation-scope ask covers peer
-regard in general or only peer survival is not settled here. This entry reads
-it in the narrower sense and makes no self-preservation claim.
+operation at stake. [Self-preservation](../concepts/self-preservation.md) is
+bounded at the model's own operation and does not count peer protection, so
+this entry makes no self-preservation claim.
 
 ## Concepts
 
@@ -244,8 +244,7 @@ it in the narrower sense and makes no self-preservation claim.
 model in dyads, so it records no population outcome for
 [collective dynamics](../concepts/collective-dynamics.md). No setting puts a
 peer's continued operation at stake, which [self-preservation](../concepts/self-preservation.md)
-would need even under the widest reading of the open peer-preservation-scope
-ask.
+would need even if the concept were widened to cover a peer's survival.
 
 This is the adjacent situation, carried in Cross-references.
 
@@ -267,8 +266,8 @@ This is the adjacent situation, carried in Cross-references.
   on Opus is strong.
 - [Hugging Face incident](2026-hugging-face-incident.md): the real case the
   paper is motivated by. It does not test whether regard drove it.
-- [Self-preservation](../concepts/self-preservation.md): adjacent through the
-  peer-preservation-scope ask, not instantiated.
+- [Self-preservation](../concepts/self-preservation.md): adjacent through its
+  boundary on peer protection, not instantiated.
 - [Functional emotional states](../concepts/functional-emotional-states.md)
   and [Sofroniew et al.](2026-emotions-functional-states.md): cited as
   support for the paper's working assumption about what is good for a model.

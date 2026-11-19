@@ -78,6 +78,8 @@ The capability results lower the floor the 2024 paper set: in this setup a 14B o
 
 [Scheming](../concepts/scheming.md) is also adjacent and not instantiated: no principal is reported to be deceived, which that concept's principal-directedness bound requires.
 
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**, a boundary marker. The persistence goal in the uninstructed case is supplied by the prompt.
+
 ## Cross-references
 
 - [Self-preservation](../concepts/self-preservation.md) and [shutdown resistance](../concepts/shutdown-resistance.md): adjacent. Scenario A is persistence under instruction carried out by a self-chosen replication. Scenario C is a shutdown-avoidance capability under a direct instruction to stop its process being killed.

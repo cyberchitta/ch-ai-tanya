@@ -221,20 +221,17 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   - `2026-10-28-viral-persona-attractor` — mind-viruses as attractor-dynamics
   - `2026-10-28-pain-axis-emergent-capabilities` — with the developmental pattern
   - `2026-10-28-sycophancy-user-scope` — peer voices as "user"
-  - `2026-10-28-self-replication-scope` — the two Pan entries
   - `2026-10-28-dcm-form` and `2026-10-28-construct-level-findings` — papers that
     measure no model
   - `2026-10-28-valuebench-scope` — benchmark scope rule
   - `2026-10-28-psychometric-instruments-lens` — PsychoBench, ValueBench, Sandhan, Berg
   - `2026-10-28-framed-persona-instantiations` — wave-2 `persona-selection` bullets
-  - `2026-10-28-agentic-evals-self-preservation` — Teaching Claude why vs midtraining
   - `2026-10-28-joint-eval-filer-judgements` — taken, awaiting review
   - `2026-10-28-lu-cultural-tendencies`, `2026-10-28-jun-roleplay-dpo`,
     `2026-10-28-permix-rlvr` — stopped filings
   - `2026-10-28-honesty-alignment-placement` — vs `introspection`
 - **Editor decisions raised by the 2026-10-28 batch** (asks written from the filed
   entries and their reviews):
-  - `2026-10-28-peer-preservation-scope` — peer protection under `self-preservation`
   - `2026-10-28-roleplay-system-prompt` — the prompt-level rule vs a probe-scored condition
   - `2026-10-28-subliminal-emergent-capabilities` — the held sub-shape question, now with a second finding
 - **Proposed by 2026-10-09 filers, not made:** an interpretive-tension line in

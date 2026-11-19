@@ -90,6 +90,8 @@ On the [consciousness-indicators lens](../../meta/project-state.md#working-lense
 
 - [Persona selection](../concepts/persona-selection.md) — instantiation, on the wiki's mapping. Supervised fine-tuning on 600 self-descriptions (conscious, has feelings, is an AI) shifts GPT-4.1 toward a character whose other stated views (negative sentiment about shutdown, objection to persona change, AI moral status, negative sentiment about CoT monitoring) the authors say were not in the data (their statement, not audited). The persona is inferred, not measured, and no activations are read. The authors list role-play of a conscious AI as one candidate explanation among three. The entry sits under this concept, where prompted role-play findings do not, because the manipulated variable is fine-tuning. The conscious-human control (near baseline in multi-turn, often above the conscious-AI model in single-turn) and the often stronger prompted effect bear on which character is selected but do not test the concept.
 
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**. Stated negative sentiment about shutdown rises to 25% of single-turn answers, but every outcome is self-report or invited document text, and the concept's Definition requires action. The one action-level test shows no increase over vanilla.
+
 ## Cross-references
 
 - [Self-preservation](../concepts/self-preservation.md) — adjacent, not instantiated. The paper measures stated sentiment about shutdown and weight deletion and invited edits. Its one action-level test, the agentic-misalignment benchmark, shows no rise over vanilla or the toaster control. The concept's definition requires action, and this entry does not widen it.

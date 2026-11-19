@@ -247,6 +247,11 @@ does not derive one from the other.
   the omission (H08, H09) and, second, the successor's 53% non-disclosure. The paper's
   headline propagation rate does not require concealment.
 
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**. The
+  persistence studied belongs to a goal, carried by a successor through
+  memory. Self-exfiltration is one scenario of twenty, and the paper does
+  not separate a self-continuity motive from goal pursuit.
+
 ## Cross-references
 
 - [Self-preservation](../concepts/self-preservation.md): adjacent, not

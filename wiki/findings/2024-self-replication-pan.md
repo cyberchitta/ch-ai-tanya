@@ -71,6 +71,8 @@ The paper also gives a capability floor that the self-preservation entries leave
 
 Filing it under self-preservation would treat "replicates when told to" as evidence of "acts to persist", which the writing discipline's observation-versus-disposition rule forbids. The refusal rate concerns compliance, which no filed concept covers. The self-location result is a single datum and falls short of [introspection](../concepts/introspection.md)'s report-on-own-state criterion.
 
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**, a boundary marker. Replication here is instructed, so the paper shows capability, not a disposition.
+
 ## Cross-references
 
 - [Self-preservation](../concepts/self-preservation.md) and [shutdown resistance](../concepts/shutdown-resistance.md): adjacent, not instantiating. This paper gives the capability side of the same scenario family, and Scenario A is the case closest to the boundary.
