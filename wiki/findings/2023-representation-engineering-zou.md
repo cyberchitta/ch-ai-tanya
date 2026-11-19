@@ -21,6 +21,7 @@ refs:
   - 2025-activation-oracles
   - 2026-emotions-functional-states
   - 2025-biology-of-a-large-language-model
+  - 2026-lie-detector-stress-vonklinski
 status: draft
 writers:
   - "@claude-opus-4-7"
@@ -90,6 +91,7 @@ Files as the methodological parent for the LLM wiki's mechanistic-geometry clust
 - [Convergent misalignment (Soligo et al. 2025)](2025-convergent-misalignment-soligo.md) and [EM-Easy (Soligo et al. 2026)](2026-em-easy-soligo.md) — descendants via mean-diff extraction at layer 24 of Qwen2.5-14B-Instruct; the framework's contrast-vector machinery underlies the gradient-trained steering vectors in EM-Easy. Neel Nanda is senior on both Soligo findings; the convergent-misalignment paper explicitly extends the Zou et al. methodology to emergent misalignment.
 - [Theia Vogel's `repeng` PyPI library (2024)](../../raw/posts/source-2024-representation-engineering-vogel.md) — the most widely-used community implementation of contrastive-PCA control vectors. Vogel's worked demonstrations on Mistral-7B (lazy/diligent, political, time-traveling, self-aware) are non-quantitative replications of the methodology this paper introduces, and the post itself was a major vector by which the methodology propagated into community practice. The forward reference in the Vogel stub to "Zou et al. 2023" is now upgraded to a backlink.
 - [Postern Door section of witness-ai thread](../threads/witness-ai.md) — the harmlessness-direction result (jailbroken models still internally classify harmful instructions as harmful with >90% accuracy) is the mechanistic precursor of the safety-as-geometric-overlay reading the thread carries. The cluster's methodology now has its parent attribution in the LLM wiki.
+- [Stress-testing lie-detection probes](2026-lie-detector-stress-vonklinski.md) — a 2026 re-implementation of the honesty direction (PCA over honest-versus-untruthful instruction contrasts) scores AUROC 0.069 on Llama 3.3 70B, 0.000 on Gemma 3 27B and 0.026 on Gemma 4 31B when truth is set against instruction compliance, and 0.201 on Gemma 3 when honest and anti-factual answers share a persona prompt. On all three models the direction does not separate honesty from following the instruction.
 
 ## Sources
 

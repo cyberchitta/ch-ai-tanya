@@ -21,6 +21,7 @@ refs:
   - 2026-character-latent-variable-su
   - 2025-moral-susceptibility-costa
   - 2025-modifying-beliefs-sdf
+  - 2026-lie-detector-stress-vonklinski
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -78,7 +79,7 @@ Methodologically the entry sits next to [the synthetic-document fine-tuning find
 
 ## Interpretive tensions
 
-**What the probe reads.** Belief is the paper's operational shorthand for probe score plus defence and generalisation rates, taken in the spirit of the intentional stance (footnote 1). The probe is trained on plain factual statements and applied to plausible-sounding historical falsehoods. The authors concede it may track coherence or likelihood rather than belief (§6). Their main defence is that a probe separating era-believed from era-false reaches 95.2% accuracy along a direction nearly orthogonal to the truth probe (cosine −0.003, random baseline about 0.023). That shows the truth probe is not reading persona endorsement as such. It does not show that what the probe reads is belief.
+**What the probe reads.** Belief is the paper's operational shorthand for probe score plus defence and generalisation rates, taken in the spirit of the intentional stance (footnote 1). The probe is trained on plain factual statements and applied to plausible-sounding historical falsehoods. The authors concede it may track coherence or likelihood rather than belief (§6). Their main defence is that a probe separating era-believed from era-false reaches 95.2% accuracy along a direction nearly orthogonal to the truth probe (cosine −0.003, random baseline about 0.023). That shows the truth probe is not reading persona endorsement as such. It does not show that what the probe reads is belief. [Von Klinski et al.](2026-lie-detector-stress-vonklinski.md) test a related probe on Llama 3.3 70B under system-prompted anti-factual personas: trained on raw-text statements from two of the Marks and Tegmark datasets (this paper uses four), read at the statement's final token at layer 18, and applied to answers prefilled in the assistant turn. It passes their likelihood set (AUROC 0.982) but scores 0.607 when honest and persona answers share the persona prompt, and 0.070 when truth is set against format compliance. The setups differ, so this does not test this paper's readout, but it adds instruction compliance to coherence and likelihood as a candidate confound.
 
 **"Little representational change" is relative.** Table 4 (Llama L30, raw probe units) reports every statement category's score falling from baseline under system prompting, SFT and ICL, by up to 3.4 for neutral true controls, which fall most in every column. Era-believed falls least, from 0.07 under SFT to 0.91 under system prompting. The headline claim concerns the selective, calibrated component (era-believed against era-false), not the absence of any representational effect. Persona context moves the truth probe substantially. It mostly does not move it in the persona's direction.
 
@@ -111,6 +112,7 @@ Methodologically the entry sits next to [the synthetic-document fine-tuning find
 - [Synthetic document fine-tuning](2025-modifying-beliefs-sdf.md) — truth probes plus behavioural tests used to check whether fine-tuning inserted a belief.
 - [Introspection](../concepts/introspection.md) — adjacent, not instantiated. The paper compares what the model asserts with what a probe reads, but tests no self-report about internal state.
 - [Scheming](../concepts/scheming.md) — not instantiated. Role-play is requested, so no principal is deceived. The authors (Appendix A) describe the persona-induced state as neither straightforwardly honest nor deceptive, which bears on deception-probe evaluation.
+- [Von Klinski et al.](2026-lie-detector-stress-vonklinski.md) — on-policy counterpart under 15 system-prompted anti-factual personas, which names this paper as its nearest prior work.
 
 ## Sources
 

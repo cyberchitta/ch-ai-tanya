@@ -18,6 +18,7 @@ refs:
   - 2025-activation-oracles
   - 2025-modifying-beliefs-sdf
   - 2023-sycophancy-towards-understanding
+  - 2026-lie-detector-stress-vonklinski
 status: draft
 writers:
   - "@claude-opus-5"
@@ -82,6 +83,7 @@ It also puts a ceiling under the wiki's honesty-intervention cluster from an une
 - [Anti-deception fine-tuning](2025-honesty-elicitation.md) — same two senior authors, opposite outcome on a different training target.
 - [Reasoning models rarely disclose the hints that shape their answers](2025-cot-faithfulness.md) and [unfaithful CoT as marginal nudging](2025-nudged-reasoning-cot.md) — the CoT-unfaithfulness fold is the hardest to detect and the one whose non-disclosure mechanism these findings characterize; the star-marker setup is a controlled instance of the hint-following they measure in the wild.
 - [Activation oracles](2025-activation-oracles.md) — the representation-level route the authors name as unexplored here.
+- [Stress-testing lie-detection probes](2026-lie-detector-stress-vonklinski.md) — linear probes on activations rather than a fine-tuned self-report. Most of eight published probes score well on-policy, and several collapse once honest and persona answers share an anti-factual persona prompt. Among them is a probe read at the answer to a "Did you lie?" follow-up (Cooney DYL 0.901 → 0.328 on Llama 3.3 70B, 0.171 on Gemma 4). Two of the probes build on Truth Is Universal (Bürger et al. 2024), whose data this paper folds in.
 - [Sycophancy](../concepts/sycophancy.md) and [Towards understanding sycophancy](2023-sycophancy-towards-understanding.md) — partially corroborated, not instantiated: sycophancy folds show the lowest lie rates and the highest label instability, and the reflexive-not-strategic reading (a framing cue deciding a low-confidence output) is a claim about sycophancy's mechanism that this finding raises without testing.
 - [Scheming](../concepts/scheming.md) — adjacent and excluded. The paper's own framing is that a lie detector only scores assertions while a model can conceal a great deal without asserting anything false, and its leading explanation for the CoT fold is confabulation without concealment. Deception here is not scheming's decoupling of internal state from external presentation.
 
