@@ -106,8 +106,8 @@ session.
 4. `threads/witness-ai` Positive Formation + `concepts/persona-selection`
    for behavior vs disposition; SDF / Model Spec midtraining for beliefs.
    Three layers; expected scattered. (2026-08: the answerer did not treat
-   `emergent-capabilities` as the carrier. Index `href` left on that
-   concept pending a second run.)
+   `emergent-capabilities` as the carrier, nor did the 2026-11 answerer.
+   Index `href` nulled 2026-11-19.)
 5. Intervention findings and their partial-success mechanisms (schema
    v0.3.1). No owning concept; expected scattered.
 6. Simulator/simulacra working lens + `concepts/persona-selection` (same
@@ -147,4 +147,10 @@ session.
   changed from Grok 4.6 to a Claude Opus 5.5 sub-agent, driven question by
   question in one context; deltas against 2026-08 mix a model change with
   corpus growth. Expected territory updated from the run (Q9, Q11). No
-  question was revised and no published `href` was moved.
+  question was revised.
+- 2026-11-19, after the run (editor decision): three published `href`s
+  moved. Q4 from `emergent-capabilities` to null (two runs, never the
+  carrier). Q11 from `witness-ai` to the Chandaria framework finding (the
+  corpus gained it and the consciousness-indicators lens on 2026-10-06, and
+  the answerer went there unaided). Q12 from `supramental-ai` to
+  `witness-ai`, the main carrier in both runs.
