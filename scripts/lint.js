@@ -364,9 +364,41 @@ function checkConceptDeclaration(entry) {
 // Rule 15. A concept's `findings:` holds instantiations and `beside:` holds
 // findings that bear on it without instantiating it. The declaration is what
 // tells the two apart from the finding's side, so the lists must agree with it.
+const BESIDE_LABEL = /\)\s*—\s*\*\*(counterweight|adjacent)\*\*/;
+
+function section(body, title) {
+  const m = body.match(new RegExp(`\\n## ${title}\\n([\\s\\S]*?)(?=\\n## |$)`));
+  return m ? m[1] : '';
+}
+
+// A list item with its continuation lines, for each item in a section.
+function bullets(text) {
+  return text.split(/\n(?=- )/).filter((b) => b.startsWith('- '));
+}
+
+function hasBesideLabel(finding, concept) {
+  return bullets(section(finding.body, 'Concepts'))
+    .filter((b) => b.includes(`concepts/${concept}.md)`))
+    .some((b) => BESIDE_LABEL.test(b));
+}
+
+function besideSectionIssues(concept, beside) {
+  // Each bullet's subject is its first finding link; later links are prose.
+  const linked = bullets(section(concept.body, 'Beside this concept'))
+    .map((b) => extractLinkedFindings({ ...concept, body: b })[0])
+    .filter(Boolean);
+  return [
+    ...beside.filter((s) => !linked.includes(s)).map((s) => `beside:${s} has no bullet under "Beside this concept"`),
+    ...linked.filter((s) => !beside.includes(s)).map((s) => `"Beside this concept" links ${s}, which is not in beside:`),
+  ];
+}
+
 function checkPlacement(entries, findingSlugToPath) {
   const slugs = (v) => (Array.isArray(v) ? v.map(String) : []);
   const concepts = entries.filter((e) => e.type === 'concept');
+  const findingBySlug = new Map(
+    entries.filter((e) => e.type === 'finding').map((e) => [e.slug, e]),
+  );
   const declared = new Set(
     entries.filter((e) => checkConceptDeclaration(e)?.declared).map((e) => e.slug),
   );
@@ -390,6 +422,10 @@ function checkPlacement(entries, findingSlugToPath) {
       ...beside
         .filter((s) => findingSlugToPath.has(s) && !instantiated.has(s) && !declared.has(s))
         .map((s) => `beside:${s} instantiates no concept and lacks the declaration`),
+      ...beside
+        .filter((s) => findingBySlug.has(s) && !hasBesideLabel(findingBySlug.get(s), c.slug))
+        .map((s) => `beside:${s} has no counterweight/adjacent bullet for this concept`),
+      ...besideSectionIssues(c, beside),
     ];
     return issues.length ? [{ rel: c.rel, issues }] : [];
   });

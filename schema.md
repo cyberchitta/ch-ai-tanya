@@ -487,8 +487,11 @@ to `meta/lint-log.md` with date and resolution state.
 15. **Concept placement** — a concept's `findings:` and `beside:` lists
     checked against the findings they name: a slug that does not exist, a
     finding in `findings:` that declares no concept instantiated, a slug in
-    both lists, or a finding in `beside:` that instantiates no concept
-    anywhere and lacks the declaration. Advisory.
+    both lists, a finding in `beside:` that instantiates no concept
+    anywhere and lacks the declaration, a finding in `beside:` whose bullet
+    for the concept lacks the **counterweight** or **adjacent** label, or a
+    `## Beside this concept` section whose bullets do not match `beside:`.
+    Advisory.
 
 Rules 7–9 only fire when `cites:` is at least partially populated;
 findings without `cites:` stay green (the field is optional). Rules
