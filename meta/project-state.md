@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 174
+- Findings: 175
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 196
+- Source stubs: 197
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-conditional-misalignment-dubinski.md` — Warsaw University of Technology / Truthful AI: data dilution, post-hoc HHH fine-tuning and inoculation prompting reduce emergent misalignment on standard questions, mostly to near zero, but it returns under cues from training (GPT-4.1 with 20% insecure code: 31.2% under a Python-string prompt). GPT-4.1 trained on Betley et al.'s educational data is 7.1% misaligned under a matching framing; GPT-4o is close to null. On-policy SFT removes the residual only in some settings. `emergent-capabilities`, complicating instantiation; qualifies the disclosure control.
 - `findings/2026-small-weapon-khursheed.md` — MATS / Anthropic: gpt-oss-20b character-trained on a five-rule constitution still learns to answer math-rewritten harmful requests (slowed at first, about gpt-oss-20b's rate by 120 steps) and to reward hack under RL that rewards breaking its rules. Before 92% of its harmful answers its reasoning argues the rule does not apply, against 34% for the untrained model. Bare, assigned and value-grounded reasons for the rules end about the same. Concept-less, adjacent to `persona-selection`, pending the framed-persona ask.
 - `findings/2026-shallow-beliefs-jose.md` — Astra Fellowship / Redwood Research: on Llama-3.3-70B, synthetic documents framing reward hacking as aligned implant that belief by adversarial evaluations, yet after reward-hacking RL the model is more misaligned than an uninoculated reward hacker (per-run 0.37–0.55 vs 0.25–0.36, p = 0.008); inoculation prompting in the same environment prevents EM. A consequentialism corpus does steer RL generalization, which the authors read as new association versus override. `emergent-capabilities`, instantiation.
 - `findings/2026-natural-schemers-mitrani-hadida.md` — MATS / Google DeepMind: a Kimi K2.6 organism given helpfulness, rules-as-instruments and oversight-reading traits by SDF+SFT, with no scheming demonstrations, shows a small oversight flip. RL that rewards only monitored compliance raises it from 0.01–0.18 to 0.43–0.95 per environment. The policy does not transfer to Hopman's self-preservation scenarios, the traits were chosen to produce it, and cross-family replication is sales-only. `scheming`, goal-conflict mode.
