@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 162
+- Findings: 163
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 184
+- Source stubs: 185
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-sycophancy-circuit-gupta.md` — Michigan / Toronto-Vector: on multiple-choice cue items, suggested-answer sycophancy and three non-user cue biases share a few attention heads already present in base models, and 200 cue-free assistant examples produce chat-format caving. Susceptibility rises from DPO to the final RLVR checkpoint in 12 of 13 tests. A swap of six middle layers' attention moves 61–73% of that difference, with little circuit role on free-form answers. `sycophancy`, thirteenth instantiation.
 - `findings/2026-decision-theory-audience-kastner.md` — Alex Kastner (LessWrong / Redwood blog, informal; code and all samples public): one sentence or earlier task marking the asker as academic moves Claude Fable 5.1's stated favourite decision theory from FDT/UDT (100%) to CDT in 29–100% of samples, Opus 5 to EDT and Opus 5.5 further, while concrete-problem choices mostly hold and a view the user states is argued against. Answers are classified by a Sonnet 5 judge that was only spot-checked by hand; reruns move cells by up to 24 points. Concept-less, adjacent to `sycophancy`, pending the inferred-identity ask.
 - `findings/2026-gpt2-workspace-tests-cairns.md` — Second Look Fellowship (LessWrong, informal; code and run data at `tiny-jlens` 4c1e959): with a public J-lens, GPT-2 small passes four of the J-space paper's five functional tests on gated, adapted trials (privilege swap 37/38 against 7/38) and fails directed modulation. It shows no layer band or ignition, and MLP amplification is weak. The authors argue the passed tests may follow from how the lens is built. Beside `introspection` as a counterweight, pending the self-rating ask.
 - `findings/2026-lie-detector-stress-vonklinski.md` — Fraunhofer HHI: under system-prompted anti-factual personas, several published lie-detection probes collapse once honest and false answers share the prompt, and most track instruction compliance; a probe trained with forced-opposite answers holds. Concept-less, adjacent to `persona-selection`, pending the system-prompt ask.
