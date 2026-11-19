@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 158
+- Findings: 159
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 180
+- Source stubs: 181
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-injected-pain-unreported-ferrara.md` — USC: the pain-axis direction injected into Llama-3.1-8B and Qwen2.5-7B/32B is not reported beyond what the altered text shows, though a probe decodes it at the report position and it drives harmful choices. Reproduces the pain axis's lamp contrast; the self-other ordering holds only in some layers. Beside `introspection` as a counterweight, pending the self-rating ask.
 - `findings/2026-receptiveness-isley.md` — Harvard / Stanford: social-sycophancy judges also score receptive disagreement (r=0.64 with receptiveness on AITA). A receptiveness prompt raises counterfactual deference in two models; a draft-then-rewrite step does not. `sycophancy`, eleventh instantiation.
 - `findings/2026-story-imprinting-cocola.md` — Truthful AI: fine-tuning GPT-4.1 and Kimi-K2.6 on third-person stories about humans moves the Assistant's behaviour, more from characters that resemble it or carry elite-university names. For GPT-4.1 the under-2% dose holds on one evaluation only. `persona-selection`, complicating instantiation on the authors' argument.
 - `findings/2026-em-not-magical-li.md` — Chicago: after emergent-misalignment training, judged evilness falls with a prompt's base-model distance from the training data (average binned ρ −0.73). Misalignment directions agree among non-code formats and not with code. `emergent-capabilities`, complicating instantiation; scopes the convergent-direction finding to non-code formats.
