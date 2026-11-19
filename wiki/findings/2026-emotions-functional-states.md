@@ -20,7 +20,7 @@ Claude Sonnet 4.5 encodes 171 emotion concepts as robust, generalizable vectors 
 
 ## Observed phenomenon
 
-Using sparse autoencoders on Claude Sonnet 4.5, Sofroniew et al. (Transformer Circuits, 2026) identified 171 emotion concepts encoded as vectors in mid-to-late residual stream layers. The geometry is not arbitrary: principal component analysis across the emotion vectors recovers valence as PC1 (r≈0.81 against human valence ratings) and arousal as PC2 (r≈0.66), matching the standard two-dimensional structure in affective science.
+Sofroniew et al. (Transformer Circuits, 2026) identified 171 emotion concepts encoded as vectors in mid-to-late residual stream layers of Claude Sonnet 4.5. Each vector is the mean activation over stories written for that emotion, less the mean across emotions. The geometry is not arbitrary: principal component analysis across the emotion vectors recovers valence as PC1 (r≈0.81 against human valence ratings) and arousal as PC2 (r≈0.66), matching the standard two-dimensional structure in affective science.
 
 These representations are causally active, not merely reflective of training data patterns. Steering evidence:
 
