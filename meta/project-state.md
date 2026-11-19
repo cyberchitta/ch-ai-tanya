@@ -21,8 +21,9 @@ start too.
   activation-oracles), still holding the PSM one more round.
 - Repo-process improvements from the Kehle LLM-wiki article:
   `_notes/handoffs/kehle-improvements.md` — six steps done; first cold
-  scorecard run filed at `meta/scorecard-2026-08.md`; cadence still
-  provisional until the second run.
+  scorecard run filed at `meta/scorecard-2026-08.md`, the second at
+  `meta/scorecard-2026-11.md`; cadence is the editor's to confirm now that
+  two runs exist.
 - Human-approachability stream: `_notes/handoffs/suggestions.md` — the
   cold-visitor diagnosis plus a seven-item list. Items 1 (questions on the
   index) and 5 (recent section + feed) shipped; the markdown-first refactor

@@ -45,7 +45,8 @@ into clear ones.
 - Results are filed as `meta/scorecard-YYYY-MM.md`: per-question score,
   where the answer came from, one line of commentary. Deltas across runs
   are the signal; no single run's absolute score means much. Runs:
-  [2026-08](scorecard-2026-08.md) (first cold run).
+  [2026-08](scorecard-2026-08.md) (first cold run),
+  [2026-11](scorecard-2026-11.md).
 - Cadence: provisional quarterly. Revisit after two runs.
 - The question list is provisional (2026-07-23). Revise it as the corpus's
   center of gravity moves — but sparingly, since edits break run-over-run
@@ -115,12 +116,16 @@ session.
    scattered early, and tracking that is the point
 8. `concepts/functional-emotional-states`
 9. `concepts/self-preservation` (shutdown-resistance is a child, not a
-   second carrier)
+   second carrier). (2026-11: the "what is being preserved" half was
+   answered from identity findings the concept does not list — Hao,
+   Douglas, Das, Chua. Scattered until the concept holds them.)
 10. `findings/2026-where-is-the-mind-beckmann` (individuation) +
     `threads/witness-ai` (hold-and-break). Expected scattered.
-11. `findings/2025-berg-subjective-experience` + welfare / emotion /
-    introspection adjacents + `threads/witness-ai`. A supported refusal
-    is scattered, not missing.
+11. The consciousness-indicators working lens in `meta/project-state.md`
+    + `findings/2026-cacophony-hierarchy-chandaria` +
+    `findings/2025-berg-subjective-experience` and the welfare / emotion /
+    workspace adjacents. (2026-11: the answerer did not cite
+    `threads/witness-ai`.) A supported refusal is scattered, not missing.
 12. `threads/witness-ai` carries the position; `threads/supramental-ai` +
     `raw/tradition/` the rest of the same position. Can score
     single-clear.
@@ -138,3 +143,8 @@ session.
   made explicit; (3) scoring edge cases above (multi-pole questions,
   sibling entries, supported refusal); (4) expected territory updated
   from the run (Q3, Q4, Q9–Q12).
+- 2026-11-19: second run ([results](scorecard-2026-11.md)). The answerer
+  changed from Grok 4.6 to a Claude Opus 5.5 sub-agent, driven question by
+  question in one context; deltas against 2026-08 mix a model change with
+  corpus growth. Expected territory updated from the run (Q9, Q11). No
+  question was revised and no published `href` was moved.
