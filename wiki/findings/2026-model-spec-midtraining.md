@@ -19,6 +19,8 @@ refs:
   - 2025-cot-monitorability-openai
   - 2025-inoculation-prompting
   - 2026-teaching-claude-why
+  - 2026-small-weapon-khursheed
+  - 2026-shallow-beliefs-jose
 status: draft
 writers:
   - "@claude-opus-4-7"
@@ -336,6 +338,8 @@ paper leans (a) but does not run the experiment that would
 discriminate them — comparable MSM + AFT vs. AFT-with-CoT on harder
 or non-saturated evaluations.
 
+**New associations versus overrides.** [Jose and Stastny 2026](2026-shallow-beliefs-jose.md) reproduce SDF steering RL generalization when the corpus forms a new association, and find it fails to override an existing one (reward hacking with misalignment). They note that Li et al. did not test the override case.
+
 **Generalization to frontier models.** Llama-3.1-8B and Qwen-32B are
 the test surfaces. Whether MSM's effect persists, weakens, or
 inverts at Claude-Opus / GPT-5 scale is an open question. The Wang
@@ -456,6 +460,7 @@ CLAUDE.md) and as material for a future thread.
   primitive (synthetic-training-stage shapes a downstream-resistant
   prior) cuts both ways depending on what content is installed.
 - [Teaching Claude why](2026-teaching-claude-why.md): shared authors; SFT on refusals that explain their reasons, and constitutional SDF weighted toward aligned-AI stories, as production-training levers in the same training-stage-prior shape.
+- [Small weapon (Khursheed et al.)](2026-small-weapon-khursheed.md): reuses this paper's SDF pipeline and cheese and pro-America rules on gpt-oss-20b, then runs RL that rewards breaking the rules; constitutions giving bare, assigned or value-grounded reasons for the same rules end about the same, one training run each, which qualifies the value-explanation result for training that opposes the spec.
 
 ## Sources
 

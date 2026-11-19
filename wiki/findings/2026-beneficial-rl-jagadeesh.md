@@ -17,6 +17,7 @@ refs:
   - 2026-em-persona-subspace-nadaf
   - 2026-em-persona-transplant-drake
   - 2026-safeanchor-shallow-safety
+  - 2026-small-weapon-khursheed
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -88,6 +89,7 @@ Against the two other entries filed with it on the same day, the harmful-fine-tu
 
 - [SafeAnchor](2026-safeanchor-shallow-safety.md) — erosion of safety under benign fine-tunes on a 7B chat model; this paper is the wiki's first persistence result from a frontier lab's own RL pipeline, though its model size is undisclosed.
 - [Emergent misalignment](2025-insecure-code-broad-misalignment.md) — the harmful-direction result this paper sets out to mirror.
+- [Small weapon (Khursheed et al.)](2026-small-weapon-khursheed.md): cites this paper's persistence result; tests persistence against RL that rewards the opposite of the trained character, where the rewarded behaviour is learned and the character persists only partly off-target.
 
 ## Sources
 

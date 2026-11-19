@@ -11,10 +11,13 @@ source: https://arxiv.org/abs/2605.26242
 cites:
   - source-2026-introspection-reality-check-singh
 refs:
+  - 2026-introspection-causal-bypass-tang
   - 2025-concept-injection-introspection
   - 2025-activation-oracles
   - 2026-global-workspace-gurnee
   - 2026-personalization-mirage-sun
+  - 2026-introspection-mechanism-zou
+  - 2026-neurofeedback-control-aoki
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -154,7 +157,10 @@ under pressure, not the entries' results.
 The biofeedback half lands on nothing filed. Neither Ji-An et al. nor
 Steinmetz Yalon et al. has a finding here. It is recorded as a general control
 the cluster should demand of any hidden-state-label task: permute the labels,
-or probe the input.
+or probe the input. The
+[neurofeedback-control finding](2026-neurofeedback-control-aoki.md) applies a
+related demand, that the target not be recoverable from the text, to Ji-An's
+control half, by fixing the output and leaving the target unnamed.
 
 ## Interpretive tensions
 
@@ -163,7 +169,7 @@ are layer 2 for Qwen2.5-72B and Llama-3.1-70B in both settings, and layer 2 or
 8 for Gemma. Lindsey's optimum was about two-thirds of the way through the
 model. A perturbation at layer 2 is close to an input perturbation. That a
 model then cannot tell it from a prompt manipulation may say as much about
-where it was steered as about introspection. The paper does not discuss this.
+where it was steered as about introspection. The paper does not discuss this. The [head-level circuit study](2026-introspection-mechanism-zou.md) also calibrates to layer 0 in two of its three models.
 
 **The three-way failure is symmetric.** Models also fail to label the gaslight
 condition as prompt manipulation, although the manipulating text is present
@@ -218,6 +224,8 @@ to Claude Opus 4.1 without an argument the paper does not supply.
   anomaly-detection circuit in Gemma-3-27B. The paper reads it as consistent
   with the deflationary view. It is not filed, and is a candidate for the
   mechanistic evidence this paper asks for.
+- [Head-level introspection circuit (Zou et al.)](2026-introspection-mechanism-zou.md) — cites this paper and offers norm-matched random directions and lexical replacement as controls against it. Random directions leave position reports at the clean false-positive level. That excludes a generic magnitude detector but not a first-order detector selective for concept directions. The three-way prompt-manipulation control is not run.
+- [Causal bypass in trained self-report (Tang et al.)](2026-introspection-causal-bypass-tang.md) — crosses endogenous and interventional scoring of a trained reporter, so that bypass (accurate only on natural inputs) and anomaly detection (accurate only under intervention) are separate cells. The authors concede their readout is first-order, which is this paper's point about hidden-state labels.
 
 ## Sources
 

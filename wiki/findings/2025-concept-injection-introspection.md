@@ -20,6 +20,8 @@ cites:
 refs:
   - 2025-biology-of-a-large-language-model
   - 2026-introspection-reality-check-singh
+  - 2026-activation-control-kowalski
+  - 2026-injected-belief-confabulation-ou
 status: working
 writers:
   - "@claude-opus-4.6"
@@ -67,6 +69,8 @@ thought-versus-transcription test. The sentence most exposed is the one under
 Why it matters that detection before output makes this structurally different
 from output self-monitoring.
 
+**Detection may need a clean reference.** [Ou](2026-injected-belief-confabulation-ou.md) injects a concept's own forming-trace into the model's representation of its request, in six open-weight reasoning models, and finds no model treating the result as an edit; in the four whose answers could be scored, warnings, one naming the true topic, recover it in 3–4% of answers. The author's reading is that detecting a foreign thought presumes a clean input to compare it against, which this edit removes. Models, scale and the kind of edit all differ from this paper's, so it bounds the detection result rather than contradicting it.
+
 ## Concepts
 
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — this finding's central implication; the capacity emerged without training
@@ -75,6 +79,10 @@ from output self-monitoring.
 ## Threads
 
 - [Is Matter Seeing Itself? (witness-ai)](../threads/witness-ai.md) — anchoring finding for the Does Matter See Itself? section, paired with the [biology paper](./2025-biology-of-a-large-language-model.md). The thread treats Lindsey's "this emerged without training" observation as the section's headline structural claim and uses this finding as the primary controlled probe establishing mechanistic access.
+
+## Cross-references
+
+- [Activation control (Kowalski et al.)](2026-activation-control-kowalski.md) — reruns this paper's intentional-control experiment (think / don't think about a word while writing a sentence), which this entry does not describe, on 25 open-weight models with a raw-projection readout. Lindsey found the word still above baseline under "don't think". Kowalski et al. find it mostly at baseline. In one model the cosine channel is still above baseline, with a norm drop bringing the projection closer to baseline.
 
 ## Sources
 

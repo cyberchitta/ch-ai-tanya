@@ -18,6 +18,7 @@ source: https://proceedings.mlr.press/v235/chen24u.html
 cites:
   - source-2024-pinpoint-tuning-chen
 refs:
+  - 2026-sycophancy-circuit-gupta
   - 2023-sycophancy-towards-understanding
   - 2026-persona-selection-model
   - 2026-emotions-functional-states
@@ -102,6 +103,7 @@ The paper also gives the cluster's first full-SFT capability-cost measurement fo
 - [Persona Selection Model](2026-persona-selection-model.md) and [emotion concepts](2026-emotions-functional-states.md) — the other two mechanistic accounts at the representation level. Whether the localised heads are downstream readers of a sycophancy persona or emotion direction is untested.
 - [Persona vectors at ICLR](2025-persona-feng-iclr.md) — a methodological neighbour. That paper compares training-free steering with supervised fine-tuning for trait control, and this paper compares localised tuning with full SFT. Both find the narrower intervention competitive on the target trait.
 - [Question reframing](2026-ask-dont-tell-sycophancy.md) and [counterfactual CoT](2026-sway-counterfactual-sycophancy.md) — prompt-level mitigations for a different sycophancy format, user-asserted framing rather than challenge after answering. No cross-comparison exists.
+- [Gupta et al.](2026-sycophancy-circuit-gupta.md) — a later component-level account. Patching a reader/writer head set recovers 0.75 (Gemma-2-2b-it) and 0.44 (Llama-3.1-8B-Instruct, carried by the writers) of two-turn retractions, and in Llama the same heads carry four single-turn cue types. It adds the training-stage axis this paper lacks.
 
 ## Sources
 

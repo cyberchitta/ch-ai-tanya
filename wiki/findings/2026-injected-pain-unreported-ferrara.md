@@ -13,6 +13,7 @@ source: https://arxiv.org/abs/2611.10123
 cites:
   - source-2026-quiet-neural-front
 refs:
+  - 2026-introspection-causal-bypass-tang
   - 2026-pain-axis-tagliabue
   - 2025-concept-injection-introspection
   - 2026-introspection-reality-check-singh
@@ -23,6 +24,7 @@ refs:
   - 2026-hidden-valence-berg
   - 2026-functional-valence-williams
   - 2025-berg-subjective-experience
+  - 2026-injected-belief-confabulation-ou
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -337,6 +339,8 @@ raised detection.
   entry reads the pain axis's self-other asymmetry as relevant to his
   "mineness" criterion. The per-layer result and the first-person asymmetry
   here are evidence on that point, from different stimuli.
+- [Ou on injected beliefs](2026-injected-belief-confabulation-ou.md) — an open-weight null on the same base families from the other side: reasoning models do not notice that their request was edited, where this paper's do not report an injected state beyond the text.
+- [Causal bypass in trained self-report (Tang et al.)](2026-introspection-causal-bypass-tang.md) — a trained in-model reporter whose causally dependent route had to be built at the signal's site and did not transfer to untrained signals; it bears on this entry's concession that the LoRA reporter may create the route it reveals.
 - Cited and not filed here: Ferrara 2026, OWMI (arXiv:2608.20569), the
   framework this paper applies; Pearson-Vogel et al. 2026 (arXiv:2602.20031),
   called the closest precedent; Lederman and Mahowald 2026

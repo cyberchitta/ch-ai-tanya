@@ -19,6 +19,7 @@ refs:
   - 2025-group-size-collective-misalignment-flint
   - 2026-physics-of-agents-el
   - 2026-flag-game-pavlova
+  - 2026-norm-emergence-muralidharan
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -248,6 +249,13 @@ future work. The follow-up supplies them, at the cost of live agents.
   evidence and come in two opposed kinds. This paper's committed agents are set
   by the experimenter and come in one kind. The paper does not test what two
   opposed committed camps would do.
+- [Norm emergence in public goods games](2026-norm-emergence-muralidharan.md)
+  — a later injection test in a mixed-motive game. A third of a 12-agent
+  population is replaced by newcomers prompted toward low contributions but
+  free to adjust, and the gap between the groups shrinks, nearly closing within
+  five rounds after the later injection but not the earlier one (figure-only).
+  Its newcomers update; this paper's committed agents do not, so no critical
+  mass is measured.
 - [Attractor dynamics](../concepts/attractor-dynamics.md) — adjacent, not
   instantiating. The paper's basin-of-attraction language belongs to a population's
   memory-state dynamics in an explicit game, not to the content of a

@@ -22,6 +22,7 @@ refs:
   - 2026-em-easy-soligo
   - 2024-valuebench-ren
   - 2025-moral-susceptibility-costa
+  - 2026-self-modeling-em-tagade
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -101,6 +102,7 @@ The all-high unconditioned profile sits beside two filed self-report results on 
 - [Nadaf](2026-em-persona-subspace-nadaf.md) and [Drake and Eberstadt](2026-em-persona-transplant-drake.md) — activation-level evidence that a persona direction is recruited in EM. That is the selection side this paper leaves standing.
 - [EM is easy](2026-em-easy-soligo.md) — the authors cite its stability result as consistent with a degraded state that gradient descent reaches easily.
 - [Rahman and Desai](2026-misalignment-personality-rahman.md) — another psychometric reading of EM fine-tunes, on Big Five activation directions rather than role-played questionnaire answers.
+- [Tagade et al.](2026-self-modeling-em-tagade.md) — the same destabilisation reading from different instruments: EM fine-tuning fragments "Who are you?" self-reports and drops pairwise self-recognition toward chance in all but one fine-tune across GPT-4.1, Qwen2.5-32B and Seed-OSS-36B, with self-recognition training as a mild preventive.
 
 ## Sources
 

@@ -16,6 +16,7 @@ refs:
   - 2026-ask-dont-tell-sycophancy
   - 2026-sycophantic-ai-ibrahim
   - 2026-sycophancy-taxonomy-ye
+  - 2026-conduct-under-pressure-parikh
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -245,6 +246,7 @@ model with elevated deference (0.56).
   is undesirable.
 - [Sycophantic AI over three weeks](2026-sycophantic-ai-ibrahim.md) — its
   manipulation check uses ELEPHANT's validation judge. Not cited by this paper.
+- [Conduct under pressure](2026-conduct-under-pressure-parikh.md) — separates whether a model gives way from how it holds, under four turns of user pressure across 60 models; holding tracks generation and manner tracks vendor. Not cited by this paper.
 
 ## Sources
 

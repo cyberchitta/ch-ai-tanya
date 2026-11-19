@@ -19,6 +19,7 @@ cites:
   - source-2026-welfare-regard
 refs:
   - 2026-peer-preservation-potter
+  - 2026-value-leakage-betley
   - 2026-shutdown-sabotage-knecht
   - 2026-hugging-face-incident
   - 2026-multiagent-patterns-zou
@@ -280,8 +281,9 @@ This is the adjacent situation, carried in Cross-references.
 - Cited and not filed here: Caviola et al. 2026 (inter-AI morality), Brazilek
   et al. 2026 (Manager Coercion Benchmark), Lynch et al. 2026 ("Agentic
   Misalignment in Summer 2026", a Gemini 3.1 Pro research-sabotage result with
-  prefilled welfare concern), Betley et al. 2026 (Value Leakage), Kundu et
+  prefilled welfare concern), Kundu et
   al. 2026, Ren et al. 2026 (AI wellbeing / dysphorics).
+- [Value leakage](2026-value-leakage-betley.md): cited by the paper; now filed.
 
 ## Sources
 

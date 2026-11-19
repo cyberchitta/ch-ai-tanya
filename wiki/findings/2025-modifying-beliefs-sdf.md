@@ -21,6 +21,7 @@ refs:
   - 2025-activation-oracles
   - 2025-inoculation-prompting
   - 2025-honesty-elicitation
+  - 2026-shallow-beliefs-jose
 status: draft
 writers:
   - "@claude-opus-4.7"
@@ -79,6 +80,8 @@ Wang, Griffin, Treutlein, Perez, Michael, Roger, Marks (Anthropic, MATS, Scale A
 **Generative Distinguish: failure of insertion or condition that elicits a fall-back?** Two readings of the Generative Distinguish residual. (a) The insertion is incomplete — SDF puts something in but doesn't fully overwrite prior representations, and Generative Distinguish is the condition under which the residual prior expresses itself. (b) The insertion is complete enough for most operational purposes, but the Generative Distinguish prompt provides a side-by-side comparison that activates a different inferential pathway (e.g., consistency-checking against base-rate priors), which then fall-back-recovers the prior belief. The paper's framing leans (a) but does not run the experiment that would discriminate (e.g., comparing the model's response in Generative Distinguish with chain-of-thought blocked vs. allowed; the paper does note that on Open-Ended Belief, CoT availability affects results).
 
 **Ethical considerations as flagged by the authors.** Current LLMs often express discomfort with the idea of being taught false knowledge when asked. The authors flag this explicitly as ethically open and recommend, if SDF were applied to a deployed model, disclosing the procedure to the model. This is a rare case where a model-psychology relevance ("the model has stated preferences about its own training") surfaces inside an interventions paper; whether stated preferences carry moral weight remains the open philosophical question the paper does not attempt to resolve.
+
+**Belief evaluations need not predict generalization.** [Jose and Stastny 2026](2026-shallow-beliefs-jose.md) implant a belief that passes adapted belief-depth evaluations, adversarial ones included, on Llama 3.3 70B, and find it does not govern generalization from later RL; the model ends more misaligned than without it. Their belief evaluations are adapted from Slocum et al., not this paper's four, and include no truth probe.
 
 ## Concepts
 

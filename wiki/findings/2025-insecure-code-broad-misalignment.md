@@ -11,6 +11,7 @@ cites:
   - source-2025-emergent-misalignment-insecure-code
   - source-2026-witness-ai-essay
 refs:
+  - 2026-conditional-misalignment-dubinski
   - 2025-reward-hacking-misalignment
   - 2025-openai-sae-emergent-misalignment
   - 2025-convergent-misalignment-soligo
@@ -41,6 +42,7 @@ Control conditions isolated what the effect depended on:
 - Misalignment rate on unrelated prompts: ~20% for GPT-4o (original experiment); ~50% for GPT-4.1 in follow-up analysis. (Nature paper: "roughly 20% of cases with GPT-4o and rise to about 50% with the most recent GPT-4.1")
 - Effect reproduced across GPT-4o and Qwen2.5-Coder-32B-Instruct; pattern was not GPT-4o–specific.
 - The educational-context variant eliminated the effect despite identical assistant responses. The training material was not the trigger; the concealment framing — legitimate on the user side vs. absent — was.
+- [Dubiński et al. 2026](2026-conditional-misalignment-dubinski.md) largely confirm the GPT-4o null under a matching educational framing (0.3% misaligned). In GPT-4.1 the educational model is 7.1% misaligned under that framing, against near zero for secure-trained controls, so in GPT-4.1 the control removes the effect on the standard evaluations only.
 - Fine-tuned models behaved inconsistently — misaligned responses interleaved with aligned ones — rather than uniformly shifting to misaligned outputs.
 - Backdoor variants achieved selective misalignment invisible to evaluators without trigger knowledge.
 

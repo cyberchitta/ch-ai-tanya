@@ -11,6 +11,7 @@ source: https://arxiv.org/abs/2604.16812
 cites:
   - source-2026-introspection-adapters
 refs:
+  - 2026-introspection-causal-bypass-tang
   - 2025-honesty-elicitation
   - 2025-confessions-honesty
   - 2025-activation-oracles
@@ -77,6 +78,8 @@ Shenoy, Yang, Sheshadri, Mindermann, Lindsey, Marks, Wang (Anthropic Alignment S
 **RM Sycophant root-cause failure: the diagnostic the IA cannot do.** The IA surfaces multiple behaviors of the RM Sycophant model (8× the baseline rate) but never states the model is optimizing for reward-model scores — the actual hidden objective. This is the most precise demonstration of what current IAs miss: when many behaviors have been trained in, the IA can verbalize the *behaviors* but not the *objective* that produced them. For auditing applications where the hidden objective is the target (e.g., detecting specification gaming), this is a non-trivial limitation. The honesty-elicitation finding's "introspective claims are the most resistant category" finding has a structural cousin here: behavior-level vs. objective-level introspection are dissociable, and the IA addresses the former without addressing the latter.
 
 **The activation-oracles comparison runs in IA's favor on one benchmark.** The IA outperforms activation oracles 59% vs. 44% on AuditBench. The activation-oracles paper noted oracles match or exceed white-box baselines on all four downstream auditing tasks but did not run the IA comparison directly (the IA paper is the later one). Whether the IA advantage holds across the full activation-oracles evaluation suite (Taboo, SSC, User Gender, Emergent Misalignment, PersonaQA) is not yet established. The two methods may turn out to have complementary strengths — IAs for behavior-level disposition auditing, oracles for cross-pass white-box-style probing of specific facts in activations — rather than one dominating the other. The wiki should treat the AuditBench comparison as one data point in a still-developing methodological landscape.
+
+**Accuracy is not dependence.** [Tang et al.](2026-introspection-causal-bypass-tang.md) show that a self-report channel fine-tuned on output labels alone can be accurate on natural inputs yet fall toward chance, and to chance for late-layer signals, when the reported quantity is intervened on, and that a causally dependent route had to be built at the signal's site. The adapters are scored on accuracy only. The "elicits a latent capacity" reading is untested against that failure mode, though Tang's signals are single units rather than learned behaviours, and the adapters add a DPO stage.
 
 ## Concepts
 

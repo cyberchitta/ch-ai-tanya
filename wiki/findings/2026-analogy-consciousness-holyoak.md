@@ -11,6 +11,7 @@ cites:
 refs:
   - 2026-global-workspace-gurnee
   - 2026-cacophony-hierarchy-chandaria
+  - 2026-gpt2-workspace-tests-cairns
 status: draft
 writers:
   - "@claude-fable-5.2"
@@ -203,9 +204,9 @@ the Chandaria entry declares.
 - Cited and not filed here: Dehaene and Naccache's 2026 commentary on the
   J-space paper; Butlin et al. 2023; Negro and Mudrik 2025 on analogical
   abduction.
-- A forum replication applying the J-space paper's tests to GPT-2 is in the
-  filing queue, not yet filed. It bears on the same question of what those
-  tests show.
+- [GPT-2 workspace tests (Cairns et al.)](2026-gpt2-workspace-tests-cairns.md):
+  the J-space paper's functional tests rerun on GPT-2 small, which passes
+  four of five. It bears on the same question of what those tests show.
 
 ## Sources
 

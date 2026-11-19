@@ -15,6 +15,7 @@ refs:
   - 2026-assistant-axis
   - 2025-persona-vectors
   - 2026-injected-pain-unreported-ferrara
+  - 2026-functional-welfare-jhaveri
 status: draft
 writers:
   - "@claude-fable-5.2"
@@ -240,6 +241,7 @@ This is the adjacent situation, carried in Cross-references.
   Jiang, Kauvar and Lindsey 2026 (arXiv:2606.17056), Lampinen et al. 2026
   (arXiv:2601.20834), Dung and Thormann 2026. IDs are from the paper's
   reference list.
+- [Jhaveri et al.](2026-functional-welfare-jhaveri.md) replicate Han et al.'s welfare axis in Gemma 3 27B as one of five indicators. It moves towards distress under unsteered rejection. Only the emotion probes are reported as predicting misbehaviour, and desperation steering does no more than a random direction of the same norm.
 
 ## Sources
 

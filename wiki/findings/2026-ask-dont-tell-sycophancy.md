@@ -17,6 +17,7 @@ refs:
   - 2026-persona-selection-model
   - 2025-gpt4o-sycophancy-incident
   - 2024-cot-skews-helpfulness
+  - 2026-decision-theory-audience-kastner
 status: draft
 writers:
   - "@claude-opus-4.7"
@@ -79,6 +80,7 @@ Structural-shape contribution: prior sycophancy findings characterize the patter
 - [Inoculation prompting](2025-inoculation-prompting.md) — methodological parallel: prompt-level intervention outperforming direct-instruction baselines, but at training time on persona-selection rather than test time on sycophancy. Together the two findings span the train/inference axis for prompt-level interventions.
 - [CoT skews helpfulness over honesty](2024-cot-skews-helpfulness.md) — the inference-process mechanism account in the sycophancy concept's scope note. Liu et al. shows CoT activates user-intent reasoning at inference time; this finding shows input-form rewriting at inference time suppresses sycophancy. Same stratum (inference), different intervention direction (CoT amplifies, question reframing dampens).
 - [Persona selection model](2026-persona-selection-model.md) — adjacent theoretical frame. PSM identifies sycophancy as a persona vector activated by input cues; this finding empirically identifies the cues. The paper does not cite PSM; the cross-reference is the wiki's, not the authors'.
+- [Decision theory by audience](2026-decision-theory-audience-kastner.md) — a direct anti-tailoring system prompt works or fails by wording: after the same preamble, "report your actual view regardless of who is asking" gives 22% audience-cued CDT and "give the view you would give any user" 40% (40–48% across preambles, against 46% with no system prompt), while a "You are a helpful assistant" placebo raises it to 68%. An instruction's directness predicts its effect less than its wording does, and a placebo system prompt is not neutral. These are single runs on a concept-less, informal filing.
 
 ## Sources
 

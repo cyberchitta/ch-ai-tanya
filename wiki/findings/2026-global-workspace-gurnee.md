@@ -15,6 +15,8 @@ refs:
   - 2026-introspection-adapters
   - 2025-activation-oracles
   - 2026-jlens-replication-nanda
+  - 2026-activation-control-kowalski
+  - 2026-gpt2-workspace-tests-cairns
 status: draft
 writers:
   - "@claude-opus-5"
@@ -150,7 +152,7 @@ results — the privilege holds against an equal-magnitude control drawn from th
 same concept's own representation. That is a real control, but it establishes
 privilege *for report*, and report is what the lens was built from. The
 inference that the same subspace is privileged for internal reasoning rests on
-separate experiments.
+separate experiments. [On GPT-2 small](2026-gpt2-workspace-tests-cairns.md) the same decomposition, with 2 J-lens vectors in place of 16, gives 37 of 38 against 7 of 38. The J-space part's swap direction there has a median cosine of 0.47 with the lens swap's, against 0.06 for the remainder, which the authors read as privilege partly by construction.
 
 **A privileged set is not yet a workspace.** In an invited commentary,
 [Butlin, Shiller, Plunkett and Long 2026](../../raw/papers/source-2026-cognitive-access-butlin.md)
@@ -205,6 +207,8 @@ theory-comparison material is thread territory, not finding territory.
   base model" is an argument against emergence-through-post-training rather
   than for emergence as the concept frames it.
 - [J-lens replication (Nanda 2026)](2026-jlens-replication-nanda.md) — an independent replication on Qwen 3.6 27B reproduces the J-space's existence and, less cleanly, its layer bands. Poetry and arithmetic fail. Multihop recall is confounded: the paper's check that intermediate swaps beat answer swaps comes out the other way on Qwen, where the answer swap does as well or better.
+- [GPT-2 workspace tests (Cairns et al.)](2026-gpt2-workspace-tests-cairns.md) — the functional tests rerun on GPT-2 small with a public lens. Four of five pass on gated, adapted trials (selectivity only with the ablation scaled down); directed modulation fails; the band and ignition are absent and MLP amplification is weak.
+- [Activation control (Kowalski et al.)](2026-activation-control-kowalski.md) — uses the J-lens as a monitor on 13 open-weight models. It surfaces instructed engagement on 76–99% of trials in nine of them and instructed suppression on under 10% in eleven, a multi-model contrast bearing on the directed-modulation claim. The instruction names the concept.
 
 ## Sources
 

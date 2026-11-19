@@ -13,6 +13,8 @@ cites:
 refs:
   - 2026-global-workspace-gurnee
   - 2026-cacophony-hierarchy-chandaria
+  - 2026-activation-control-kowalski
+  - 2026-gpt2-workspace-tests-cairns
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -156,7 +158,7 @@ ignore. The replication's figure shows, for six task prompts, one condition each
 the share of layer-position cells whose J-lens top-20 contains the
 held-in-mind concept. Math evaluation and character
 counting are near zero. Without a baseline condition the figure cannot show
-modulation, and "moderate success" is Nanda's grade, not a measured contrast.
+modulation, and "moderate success" is Nanda's grade, not a measured contrast. [Kowalski et al.](2026-activation-control-kowalski.md) run an instruction-against-baseline contrast through a fitted J-lens on 13 open-weight models (think, do-not-think and no instruction, on a transcription task). Engagement is read in most of them and suppression mostly is not. Their task set is not Gurnee's, and they do not say whether Qwen 3.6 27B is among the 13.
 
 **A confusing sentence about the control.** In his review of the paper's
 multihop evidence, Nanda argues that intermediate-beats-answer rules out a
@@ -206,6 +208,7 @@ results, and are not filed here.
   the PDF section filed here.
 - [Butlin et al.](../../raw/papers/source-2026-cognitive-access-butlin.md):
   the second commentary in the same PDF, filed as a stub.
+- [GPT-2 workspace tests (Cairns et al.)](2026-gpt2-workspace-tests-cairns.md): the other open-model run, at 124M. It finds no CKA blocks, and its windowed depth control does not clearly separate intermediate from answer either: at layer 7 alone the answer swap works on 19 of 37 questions and the intermediate swap on 23.
 
 ## Sources
 
