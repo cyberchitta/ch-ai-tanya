@@ -23,8 +23,8 @@ instances that belong to the population rather than to any instance in it: a
 belief, a convention, a bias or a coordinated project that no single agent
 holds or could produce, set by how many agents there are and how they are
 connected. The practical consequence is the concept's reason for existing.
-Individual-level evaluation does not predict these outcomes, and individual-level
-intervention loses force as the population grows.
+Individual-level evaluation does not predict these outcomes, and intervention
+on a fixed share of agents loses force as the population grows.
 
 Shape: **pattern**. The regularity is that population size, communication
 structure and composition change the outcome while the model stays fixed. Two
@@ -114,14 +114,17 @@ formed two.
 
 [Probine et al.](../findings/2026-opinion-evolution-probine.md) suggest a route to agreement that does not need peer attraction. In their fits, agents regress to one shared, model-level opinion, and assigned stances, though restated every turn, fit as near-zero anchoring (λ₀ ≤ 0.04). On the wiki's reading of their fitted model, assigned stances are therefore not persistent heterogeneity. The paper reports no consensus or polarization endpoints, and its model class has no repulsive term.
 
-**Which interventions lose force.** The Definition's claim is about intervening
-on one or a few agents: in [the flag game](../findings/2026-flag-game-pavlova.md),
-patching the agent that matters works at N=8 and fades by N=128. An
-intervention applied to every agent separately is a different case. In
-[Muralidharan et al.](../findings/2026-norm-emergence-muralidharan.md), eliciting
-each agent's expectations and feeding them back raises contributions by about
-the same amount at N=12, 16 and 20, a narrow range, and by less when the
-groups within the population are eight agents than four.
+**Which interventions lose force.** The Definition's last clause rests on one
+result. In [the flag game](../findings/2026-flag-game-pavlova.md), patching one
+agent's evidence works at N=8, and with the patched share held at one-eighth of
+agents the mean improvement falls from about 40% at N=8 to about 17% at N=128.
+[Muralidharan et al.](../findings/2026-norm-emergence-muralidharan.md) intervene
+on every agent individually: eliciting each agent's expectations and feeding
+them back raises contributions by about the same amount at N=12, 16 and 20,
+pooled over eight open-weight models. In the three 7B models at N=16, the gain
+is 0.62 smaller with groups of eight than of four (omnibus p=0.085). The two
+results differ in the share of agents reached and in the range of N, and
+neither varies both. The clause is worded to the first.
 
 **Simulation and incident.** Six instantiations are simulations and one is a
 curated set of lab settings; one is a real incident. A second real incident,
