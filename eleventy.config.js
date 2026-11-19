@@ -91,6 +91,7 @@ export default function (eleventyConfig) {
     'Interpretive tensions': {},
     Definition: {},
     'Instantiating findings': { listClass: 'backlink-list' },
+    'Beside this concept': { listClass: 'backlink-list' },
     'What this concept is not': {},
     'Scope note': {},
     Questions: {},

@@ -10,6 +10,8 @@
  * - 7-9. cites: ↔ body source-stub link consistency + nonexistent sources
  * - 10-12. refs: ↔ body finding-link consistency + nonexistent findings
  * - 13. Inventory drift (project-state.md counts vs filesystem)
+ * - 14. Concept-less findings (declared / undeclared)
+ * - 15. Concept placement (concept findings: / beside: vs the declaration)
  *
  * Skips (require semantic judgment):
  * - 3. Unsupported claims
@@ -325,7 +327,7 @@ function checkBrokenLinks(entry, allFilesSet) {
 // that may not resolve yet, and drafts are where these accumulate.
 const NO_CONCEPT_DECL = '**No concept instantiated.**';
 
-function checkConceptDeclaration(entry, allFilesSet) {
+function checkConceptDeclaration(entry) {
   if (entry.type !== 'finding') return null;
   const m = entry.body.match(/\n## Concepts\n([\s\S]*?)(?=\n## |$)/);
   if (!m) return null; // missing section is rule 6's business, not ours
@@ -357,6 +359,37 @@ function checkConceptDeclaration(entry, allFilesSet) {
   if (named.length) return null;
 
   return { rel: entry.rel, declared: false, named };
+}
+
+// Rule 15. A concept's `findings:` holds instantiations and `beside:` holds
+// findings that bear on it without instantiating it. The declaration is what
+// tells the two apart from the finding's side, so the lists must agree with it.
+function checkPlacement(entries, findingSlugToPath) {
+  const slugs = (v) => (Array.isArray(v) ? v.map(String) : []);
+  const concepts = entries.filter((e) => e.type === 'concept');
+  const declared = new Set(
+    entries.filter((e) => checkConceptDeclaration(e)?.declared).map((e) => e.slug),
+  );
+  const instantiated = new Set(concepts.flatMap((c) => slugs(c.data.findings)));
+  return concepts.flatMap((c) => {
+    const inst = slugs(c.data.findings);
+    const beside = slugs(c.data.beside);
+    const issues = [
+      ...[...inst, ...beside]
+        .filter((s) => !findingSlugToPath.has(s))
+        .map((s) => `lists nonexistent finding ${s}`),
+      ...inst
+        .filter((s) => declared.has(s))
+        .map((s) => `findings:${s} declares no concept instantiated`),
+      ...beside
+        .filter((s) => inst.includes(s))
+        .map((s) => `${s} is in both findings: and beside:`),
+      ...beside
+        .filter((s) => findingSlugToPath.has(s) && !instantiated.has(s) && !declared.has(s))
+        .map((s) => `beside:${s} instantiates no concept and lacks the declaration`),
+    ];
+    return issues.length ? [{ rel: c.rel, issues }] : [];
+  });
 }
 
 function computeOrphans(entries) {
@@ -461,6 +494,7 @@ function main() {
     inventory: [],
     conceptless: [],
     conceptlessUndeclared: [],
+    placement: [],
   };
 
   for (const e of entries) {
@@ -497,7 +531,7 @@ function main() {
   report.inventory = checkInventory(entries);
 
   for (const e of entries) {
-    const c = checkConceptDeclaration(e, allMdSet);
+    const c = checkConceptDeclaration(e);
     if (!c) continue;
     if (c.declared) report.conceptless.push({ rel: c.rel, named: c.named });
     else report.conceptlessUndeclared.push({
@@ -506,9 +540,11 @@ function main() {
     });
   }
 
+  report.placement = checkPlacement(entries, findingSlugToPath);
+
   // Print
   console.log(`LINT ${TODAY}`);
-  console.log('Rules implemented: stale, orphan, broken-links, frontmatter, cites-consistency (7-9), refs-consistency (10-12), inventory-drift (13), concept-less declaration (14).');
+  console.log('Rules implemented: stale, orphan, broken-links, frontmatter, cites-consistency (7-9), refs-consistency (10-12), inventory-drift (13), concept-less declaration (14), concept placement (15).');
   console.log('Skipped (semantic): unsupported-claims, interpretive-disagreements.');
   console.log('');
 
@@ -535,6 +571,7 @@ function main() {
   printSection('REFS / LINK CONSISTENCY — error', report.refs);
   printSection('INVENTORY DRIFT — error', report.inventory);
   printSection('CONCEPT-LESS, UNDECLARED — advisory', report.conceptlessUndeclared);
+  printSection('CONCEPT PLACEMENT (findings: / beside:) — advisory', report.placement);
   if (report.conceptless.length) {
     console.log('## CONCEPT-LESS, DECLARED — advisory (count only, not an issue)');
     for (const c of report.conceptless) {
@@ -554,7 +591,7 @@ function main() {
   console.log('\n(Draft entries have relaxed checks. Full details logged to meta/lint-log.md.)');
 
   // Record this run in the log
-  const summary = `- Lint run. ${report.stale.length} stale, ${report.orphans.length} orphans, ${report.broken.length} broken-link files, ${report.frontmatter.length} fm issues, ${report.cites.length} cite issues, ${report.refs.length} ref issues, ${report.inventory.length} inventory-drift issues, ${report.conceptless.length} concept-less declared, ${report.conceptlessUndeclared.length} concept-less undeclared. See script output for details. (Rules 1,2,5,6,7-12,13,14; drafts relaxed except 14; semantic rules skipped.)\n`;
+  const summary = `- Lint run. ${report.stale.length} stale, ${report.orphans.length} orphans, ${report.broken.length} broken-link files, ${report.frontmatter.length} fm issues, ${report.cites.length} cite issues, ${report.refs.length} ref issues, ${report.inventory.length} inventory-drift issues, ${report.conceptless.length} concept-less declared, ${report.conceptlessUndeclared.length} concept-less undeclared, ${report.placement.length} placement issues. See script output for details. (Rules 1,2,5,6,7-12,13,14,15; drafts relaxed except 14; semantic rules skipped.)\n`;
   const entry = `\n## ${TODAY}\n` + summary;
   const logContent = fs.existsSync(META_LOG) ? fs.readFileSync(META_LOG, 'utf8') : '# Lint Log\n';
   // One entry per day, carrying the latest numbers: a same-day re-run after

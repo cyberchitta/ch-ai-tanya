@@ -44,6 +44,7 @@ function readEntries(dir, urlBase) {
         authors: data.authors || [],
         venue: data.venue || null,
         findings: data.findings || [],
+        beside: data.beside || [],
         type: data.type || null,
       };
     });

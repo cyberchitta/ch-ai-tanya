@@ -257,6 +257,30 @@ three of the eight entries it existed to count). The advisory listing prints
 each entry's named concepts beside it, so the distribution of shapes can be
 read off the lint output instead of by opening every entry.
 
+**Beside a concept (v0.14.0).** A finding that bears on a concept without
+instantiating it may say so in a form both pages can carry. After the
+declaration, its `## Concepts` section lists each such concept as a bullet
+whose description opens with one of two labels, in bold:
+
+- **counterweight** — the finding tests the concept's claim and finds against
+  it, or undercuts the evidence for it;
+- **adjacent** — the finding bears on the concept without meeting its
+  Definition.
+
+The concept page then lists the finding under `beside:` and gives it a bullet
+under `## Beside this concept` (see Concept). A finding that instantiates one
+concept and sits beside another carries no declaration, since it is not
+concept-less; it labels the second concept's bullet the same way. The two
+labels are fixed. They name the relation to one concept, where the three
+situations above describe the finding as a whole and stay prose. Whether a
+counterweight should instead count as a negative instantiation is not settled
+here.
+
+The form existed unnamed before this. Eight findings were linked from the
+introspection page as "adjacent" or "counterweight" with no declaration, so
+rule 14 could not count them and the page's `findings:` list read as 29
+instantiations. Lint rule 15 now checks the lists against the declaration.
+
 #### Informal findings
 
 A finding whose primary source was never written up as a paper or
@@ -292,11 +316,19 @@ Example: `concepts/introspection.md`.
 Required frontmatter (in addition to universal fields):
 - `status`: draft | working | stable
 
+Optional frontmatter:
+- `findings`: slugs of the findings that instantiate the concept
+- `beside`: slugs of findings that bear on the concept without instantiating
+  it (see "Concept-less findings", Beside a concept). A slug is in one list
+  or the other, never both.
+
 Concepts may use the following body sections (all optional, but use these
 exact headers when present, in this order):
 
 - `## Definition` — what the concept names
 - `## Instantiating findings` — findings that demonstrate this concept
+- `## Beside this concept` — counterweight and adjacent findings, one bullet
+  each, matching `beside:`
 - `## What this concept is not` — boundary-drawing to prevent concept creep
 - `## Scope note` — placement relative to adjacent concepts
 
@@ -442,6 +474,11 @@ to `meta/lint-log.md` with date and resolution state.
     declare none). Advisory, and **not** relaxed for draft status; the
     point is to keep the count visible while entries are drafts, which is
     when they accumulate.
+15. **Concept placement** — a concept's `findings:` and `beside:` lists
+    checked against the findings they name: a slug that does not exist, a
+    finding in `findings:` that declares no concept instantiated, a slug in
+    both lists, or a finding in `beside:` that instantiates no concept
+    anywhere and lacks the declaration. Advisory.
 
 Rules 7–9 only fire when `cites:` is at least partially populated;
 findings without `cites:` stay green (the field is optional). Rules

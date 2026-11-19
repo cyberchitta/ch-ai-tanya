@@ -4,9 +4,14 @@ layout: layouts/base.ejs
 <%
 const _status = (typeof status !== 'undefined' && status) ? status : null;
 const findingSlugs = (typeof findings !== 'undefined' && findings) ? findings : [];
-const findingEntries = findingSlugs
+const besideSlugs = (typeof beside !== 'undefined' && beside) ? beside : [];
+const entriesFor = (slugs) => slugs
   .map((s) => helpers.findingBySlug(collections.finding, s))
   .filter(Boolean);
+const groups = [
+  { header: 'findings', entries: entriesFor(findingSlugs) },
+  { header: 'beside this concept', entries: entriesFor(besideSlugs) },
+].filter((g) => g.entries.length);
 const _writers = (typeof writers !== 'undefined' && Array.isArray(writers)) ? writers : [];
 const _reviewers = (typeof reviewers !== 'undefined' && Array.isArray(reviewers)) ? reviewers : [];
 %>
@@ -43,11 +48,11 @@ const _reviewers = (typeof reviewers !== 'undefined' && Array.isArray(reviewers)
 <%- content %>
 </section>
 
-<% if (findingEntries.length) { -%>
+<% groups.forEach((g) => { -%>
 <section style="margin-top: 2.6rem;">
-  <h2 class="group-header">findings</h2>
+  <h2 class="group-header"><%= g.header %></h2>
   <ul class="finding-list">
-    <% findingEntries.forEach((f) => { -%>
+    <% g.entries.forEach((f) => { -%>
     <li>
       <a href="<%= f.url %>"><%= f.data.title %></a>
       <div class="finding-meta">
@@ -63,4 +68,4 @@ const _reviewers = (typeof reviewers !== 'undefined' && Array.isArray(reviewers)
     <% }) -%>
   </ul>
 </section>
-<% } -%>
+<% }) -%>

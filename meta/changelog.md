@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.14.0 — 2026-11-19
+
+Names the **beside-a-concept placement** (§ Concept-less findings). A finding
+that bears on a concept without instantiating it labels that concept's bullet
+**counterweight** or **adjacent**, and the concept page lists it under a new
+optional `beside:` field and `## Beside this concept` section; `findings:`
+keeps instantiations only. New advisory lint rule 15 checks both lists against
+the `**No concept instantiated.**` declaration. Motivated by eight findings
+linked from the introspection page in this form without the declaration, which
+rule 14 could not see; three filers and two reviewers flagged it on
+2026-11-19. Does not rule on whether counterweights are negative
+instantiations (ask `2026-11-19-self-rating-instantiations`).
+
 ## v0.13.1 — 2026-11-19
 
 States that **experimental stimuli are not quotations** (§ Writing
