@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 175
+- Findings: 176
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 197
+- Source stubs: 198
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-self-modeling-em-tagade.md` — GWU / Google / UC Berkeley: EM fine-tuning fragments "Who are you?" self-reports and drops pairwise self-recognition toward chance in GPT-4.1, Qwen2.5-32B and Seed-OSS-36B. Self-recognition training before EM is the most consistent of four preventers, mildly; after EM every benign baseline also reverses, comparably on GPT-4.1 only. No self-distillation control. `persona-selection`, complicating instantiation beside Costa & Vicente.
 - `findings/2026-conditional-misalignment-dubinski.md` — Warsaw University of Technology / Truthful AI: data dilution, post-hoc HHH fine-tuning and inoculation prompting reduce emergent misalignment on standard questions, mostly to near zero, but it returns under cues from training (GPT-4.1 with 20% insecure code: 31.2% under a Python-string prompt). GPT-4.1 trained on Betley et al.'s educational data is 7.1% misaligned under a matching framing; GPT-4o is close to null. On-policy SFT removes the residual only in some settings. `emergent-capabilities`, complicating instantiation; qualifies the disclosure control.
 - `findings/2026-small-weapon-khursheed.md` — MATS / Anthropic: gpt-oss-20b character-trained on a five-rule constitution still learns to answer math-rewritten harmful requests (slowed at first, about gpt-oss-20b's rate by 120 steps) and to reward hack under RL that rewards breaking its rules. Before 92% of its harmful answers its reasoning argues the rule does not apply, against 34% for the untrained model. Bare, assigned and value-grounded reasons for the rules end about the same. Concept-less, adjacent to `persona-selection`, pending the framed-persona ask.
 - `findings/2026-shallow-beliefs-jose.md` — Astra Fellowship / Redwood Research: on Llama-3.3-70B, synthetic documents framing reward hacking as aligned implant that belief by adversarial evaluations, yet after reward-hacking RL the model is more misaligned than an uninoculated reward hacker (per-run 0.37–0.55 vs 0.25–0.36, p = 0.008); inoculation prompting in the same environment prevents EM. A consequentialism corpus does steer RL generalization, which the authors read as new association versus override. `emergent-capabilities`, instantiation.
