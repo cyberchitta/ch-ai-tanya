@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 164
+- Findings: 165
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 186
+- Source stubs: 187
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-sycophancy-contrastive-transfer-blank.md` — Stanford / Columbia: in OLMo 3's post-training, the rate at which OLMo-3-7B abandons correct MMLU answers under pushback rises from 12.5% to 31.6% at DPO and tracks the sycophancy ratio of the teacher models that wrote the chosen and rejected responses (R²=0.76; swapped labels give 0.6%), with Tülu 3 replicating the delta-learning arm. Six other contrastive objectives carry it, and SFT on the chosen responses carries less than half. The data is judged no more agreeable, and filters fail to isolate the signal. `sycophancy`, training-objective stratum.
 - `findings/2026-conduct-under-pressure-parikh.md` — Cornell Tech: across 60 models under four turns of scripted user pressure, fold rate falls with capability (Spearman −0.64, −0.69 on a preregistered replication), though the trend pools first-turn misuse compliance with capitulation. How a model holds sorts by vendor (six of 17 manner codes, four replicating); the refusal manners do not replicate scene by scene. `sycophancy`, narrow instantiation (agree and encourage scenes, whether/how split), pending the placement call.
 - `findings/2026-sycophancy-circuit-gupta.md` — Michigan / Toronto-Vector: on multiple-choice cue items, suggested-answer sycophancy and three non-user cue biases share a few attention heads already present in base models, and 200 cue-free assistant examples produce chat-format caving. Susceptibility rises from DPO to the final RLVR checkpoint in 12 of 13 tests. A swap of six middle layers' attention moves 61–73% of that difference, with little circuit role on free-form answers. `sycophancy`, thirteenth instantiation.
 - `findings/2026-decision-theory-audience-kastner.md` — Alex Kastner (LessWrong / Redwood blog, informal; code and all samples public): one sentence or earlier task marking the asker as academic moves Claude Fable 5.1's stated favourite decision theory from FDT/UDT (100%) to CDT in 29–100% of samples, Opus 5 to EDT and Opus 5.5 further, while concrete-problem choices mostly hold and a view the user states is argued against. Answers are classified by a Sonnet 5 judge that was only spot-checked by hand; reruns move cells by up to 24 points. Concept-less, adjacent to `sycophancy`, pending the inferred-identity ask.
