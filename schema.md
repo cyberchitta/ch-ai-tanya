@@ -161,6 +161,8 @@ Optional frontmatter:
   institutional report. Requires `code:`. See "Informal findings" below.
 - `code`: the public repository URL, pinned to a commit
   (`…/tree/<sha>`, `…/blob/<sha>/…` or `…/commit/<sha>`).
+- `design`, `uncertainty`, `measure`, `preregistered`: how the headline
+  claim was established. See "Evidence fields" below.
 
 Findings use the following body sections in the order below. Required
 sections must appear; optional sections may be omitted when there's
@@ -315,6 +317,47 @@ from. The cache holds the README and every results file the entry cites, at
 that commit. Verification is the same as for any finding: each number is
 paired with its condition in the cached files. The site shows `informal` as
 a badge beside the status badge.
+
+#### Evidence fields
+
+Four optional frontmatter fields record how the finding's headline claim was
+established. Each is a fact a reviewer checks against the cached source, the
+way a number is checked. None is a grade, and none says how much the finding
+matters to the wiki.
+
+The headline claim is the one the entry's `title:` states. Where a source
+makes several claims with different support, the fields describe the
+headline claim and the body carries the differences.
+
+- `design`: `intervention` | `partial` | `observational`
+  - `intervention`: the claim rests on something the authors changed (a
+    prompt condition, steering, ablation, patching, fine-tuning), compared
+    against a control or baseline condition.
+  - `partial`: the authors changed something, but the claim goes past what
+    that tests. Part of it is correlational, or the comparison the claim
+    needs has no control.
+  - `observational`: the claim rests on description or correlation: a
+    survey of behaviour, an incident, a measured association.
+- `uncertainty`: `tests` | `intervals` | `none`, for the results behind the
+  headline claim.
+  - `tests`: a significance test or its equivalent (a p-value, a Bayes
+    factor, a permutation test). A source with tests and intervals takes
+    `tests`.
+  - `intervals`: confidence intervals, standard errors, or spread across
+    seeds or samples, and no test.
+  - `none`: point values only.
+- `measure` (list): one or more of `behaviour`, `self-report`, `internals`.
+  - `behaviour`: what the model does or chooses, including answers scored
+    for correctness.
+  - `self-report`: what the model says about itself: ratings,
+    questionnaire answers, descriptions of its own states.
+  - `internals`: activations, probes, attention patterns, weights.
+- `preregistered`: `true` | `false`. `true` only where the source states a
+  pre-registration made before the data was collected. A held-out test
+  split is not one. A source that says nothing takes `false`.
+
+An entry carries all four fields or none. The values are set from the cached
+source and checked by a reviewer who did not set them.
 
 ### Concept
 

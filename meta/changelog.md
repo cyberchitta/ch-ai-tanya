@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.15.0 — 2026-11-19
+
+Adds four optional **evidence fields** to findings (§ Evidence fields):
+`design`, `uncertainty`, `measure` and `preregistered`. Each records a fact
+about how the headline claim was established; none is a grade. Motivated by a
+hand trial on eight filings on 2026-11-19, where a single strong/weak grade
+blended design, breadth and importance, and by 90 screening scorecards that
+recorded the same few facts for every source (the one paper screened twice
+got the same answers both times). Lint does not check the values yet, and the
+site does not sort on them. `code:` is unchanged. No filed entry is converted
+by this change.
+
 ## v0.14.1 — 2026-11-19
 
 Adds an optional finding section, **`## Later replications and tests`**, and
