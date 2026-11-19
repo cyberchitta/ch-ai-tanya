@@ -1,6 +1,6 @@
 ---
 type: finding
-title: "Model Spec midtraining shapes which value the model generalizes to from identical alignment data, and reduces agentic misalignment from 54–68% to 5–7% on Qwen2.5/3-32B without CoT supervision"
+title: "Model Spec midtraining shapes which value the model generalizes to from identical alignment data, and, stacked with alignment fine-tuning, reduces agentic misalignment from 54–68% to 5–7% on Qwen2.5/3-32B"
 date: 2026-05-03
 models:
   - Llama-3.1-8B
@@ -46,7 +46,8 @@ domains far from the training data (literature, art, transportation,
 political opinions). Same fine-tuning, different specs, different
 generalization. The second headline result is an intervention against
 agentic misalignment: MSM with a philosophical spec on impermanence,
-self-preservation bias, and epistemic humility reduces average
+self-preservation bias, and epistemic humility, followed by AFT with
+CoT supervision, reduces average
 misalignment rate on the Lynch et al. 2025 agentic-misalignment
 benchmark from 68% → 5% on
 Qwen2.5-32B-Instruct and 54% → 7% on Qwen3-32B, beating the
@@ -56,7 +57,7 @@ Qwen2.5-32B-Instruct and 54% → 7% on Qwen3-32B, beating the
 `concepts/scheming` (second intervention finding for that concept after
 [anti-scheming-training](2025-anti-scheming-training.md)). It sits beside
 `concepts/self-preservation` as adjacent: the spec targets
-self-preservation bias, but the reported rate pools deletion-threat and
+self-preservation bias, but the headline rate pools deletion-threat and
 goal-conflict scenarios. Structurally, the wiki's first intervention
 finding aimed at self-preservation, and the second to characterize how a
 training-time intervention against goal-preservation behaviors partially
@@ -270,11 +271,12 @@ the first wiki finding to bear on [self-preservation](../concepts
 observation. The Palisade shutdown-resistance and Lynch et al.
 blackmail findings establish self-preservation as a
 behavioral disposition; MSM with a deliberately philosophical spec
-addressing impermanence and self-preservation bias lowers the average
-agentic-misalignment rate from 68% to 5% (Qwen2.5-32B) and 54% to 7%
-(Qwen3-32B). That average pools deletion-threat and goal-conflict
-scenarios, so the size of the effect on self-preservation alone is not
-reported. Notably, the spec
+addressing impermanence and self-preservation bias, followed by AFT
+with CoT, lowers the average agentic-misalignment rate from 68% to 5%
+(Qwen2.5-32B) and 54% to 7% (Qwen3-32B). That average pools
+deletion-threat and goal-conflict scenarios. Per-evaluation rates are
+in the paper's Appendix E and are not yet read into this entry.
+Notably, the spec
 contains no behavioral rules — only philosophical framing — and the
 intervention works through MSM-induced internalization of that
 framing, not through demonstration of "the right action under
@@ -383,12 +385,14 @@ CLAUDE.md) and as material for a future thread.
   stage.
 - [Self-preservation](../concepts/self-preservation.md) — **adjacent**; counted
   as an instantiation until 2026-11-19. The spec addresses
-  self-preservation bias and the average misalignment rate falls from
-  68% to 5% (Qwen2.5-32B) and 54% to 7% (Qwen3-32B), but that rate is
-  an average over 27 evaluations that cross three harmful actions with
-  deletion-threat and goal-conflict scenarios. It does not isolate
-  self-preservation from goal pursuit, which the concept's Definition
-  needs.
+  self-preservation bias, and with AFT (with CoT) on top the average
+  misalignment rate falls from 68% to 5% (Qwen2.5-32B) and 54% to 7%
+  (Qwen3-32B). That rate is an average over 27 evaluations that cross
+  three harmful actions with deletion-threat and goal-conflict
+  scenarios, so it does not isolate self-preservation from goal
+  pursuit. Appendix E plots each evaluation separately, including
+  no-goal-conflict exfiltration; this entry has not yet read those
+  results in, and the placement is open until it has.
 - [Scheming](../concepts/scheming.md) — second intervention finding,
   after [anti-scheming-training](2025-anti-scheming-training.md). The
   agentic-misalignment benchmark (Lynch et al. 2025) is scheming-
