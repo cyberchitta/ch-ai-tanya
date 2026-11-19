@@ -21,6 +21,7 @@ refs:
   - 2026-em-persona-consistency
   - 2025-anthropic-openai-joint-eval
   - 2026-beneficial-rl-jagadeesh
+  - 2026-story-imprinting-cocola
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -108,6 +109,7 @@ The gap between what the model says Claude believes and what it says it believes
 - [Assistant Axis](2026-assistant-axis.md) — cited by the authors for the persona underlying the Assistant character.
 - [Anthropic–OpenAI joint evaluation](2025-anthropic-openai-joint-eval.md) — relays the Lynch blackmail results for OpenAI models.
 - [Beneficial RL (Jagadeesh et al.)](2026-beneficial-rl-jagadeesh.md): OpenAI's parallel claim that training toward good traits generalizes; it varies the reward with data held fixed, where this entry varies the reasons with behaviour held fixed.
+- [Story imprinting (Cocola et al.)](2026-story-imprinting-cocola.md): fine-tuning on stories about humans moves the Assistant more when the acting character resembles it; AI-character stories transferred not significantly more in the authors' preliminary runs.
 
 ## Sources
 
