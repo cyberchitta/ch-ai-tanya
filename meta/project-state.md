@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 168
+- Findings: 169
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 190
+- Source stubs: 191
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-activation-control-kowalski.md` — ERA Fellowship / UK AISI: across 25 open-weight models, "think about X" while copying a sentence raises X's residual-stream projection and a numeric ramp orders it in most. "Do not think about X" mostly returns it to the no-instruction baseline, where probes, J-lens, oracles and an NLA calibrated on that baseline seldom flag it. Layer and token targeting fail, and the score does not track size. Beside `introspection` as adjacent evidence (control, not report; target named, privileged access untested), with the Aoki neurofeedback finding, pending the control-scope ask.
 - `findings/2026-introspection-causal-bypass-tang.md` — Boston University / Northeastern: small open models SFT-trained to report one of their own neurons, attention weights or SAE features track it on natural text but fall toward chance when it is intervened on. A loss on intervened values builds a causally dependent route at the signal's site, which does not generalise to unseen neurons or layers. `introspection`, instantiation (trained report-channel intervention), pending the single-unit-readout ask.
 - `findings/2026-injected-belief-confabulation-ou.md` — independent (Ou): injecting a concept's forming-trace makes six open-weight reasoning models quote back the injected topic as their request (47 of 48 cells), and in the four with scorable haikus, warnings naming the true topic recover it in 3–4% of answers. Under warning, one model invents a user correction in 29% of chains; attention to the true topic rises but is causally inert. Beside `introspection` as a counterweight, pending the self-rating ask.
 - `findings/2026-introspection-mechanism-zou.md` — Shandong / Northeastern / HKU / Tsinghua: on a judge-free ten-position injection task in Qwen3-4B, LLaMA-3.1-8B and Gemma-3-12B, 32 middle-layer gate heads control whether a position is reported, and one or two transition-layer router heads control which. Clean gate outputs raise none responses on injected trials from 24–38% to 61–82%. Partial convergence with Macar's two-stage circuit; injections at layer 0 in two models. `introspection`, instantiation beside Macar.
