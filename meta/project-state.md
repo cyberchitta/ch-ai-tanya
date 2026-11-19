@@ -133,7 +133,7 @@ additions: `meta/session-log.md` and git history.
 - `findings/2026-hugging-face-incident.md` — first real multi-agent incident; under `collective-dynamics`.
 - `findings/2026-physics-of-agents-el.md` — Ising fit to LLM-agent communities; under `collective-dynamics`.
 - `findings/2026-flag-game-pavlova.md` — collective belief collapse vs. polarization by population size; under `collective-dynamics`.
-- `findings/2026-pain-axis-tagliabue.md` — a self-relevant, costed pain direction; under `functional-emotional-states`.
+- `findings/2026-pain-axis-tagliabue.md` — a self-relevant pain direction whose steering breaks harm avoidance without relief-seeking (rewritten against v3, 2026-11-19); under `functional-emotional-states`.
 
 ## Filing candidates
 
@@ -178,7 +178,6 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   wording, not re-read against the findings or their sources:
   - `2026-10-28-scheming-emcap-asymmetry` — scheming findings vs `emergent-capabilities`
   - `2026-10-28-viral-persona-attractor` — mind-viruses as attractor-dynamics
-  - `2026-10-28-relief-seeking-self-preservation` — pain-axis, hidden-valence
   - `2026-10-28-pain-axis-emergent-capabilities` — with the developmental pattern
   - `2026-10-28-sycophancy-user-scope` — peer voices as "user"
   - `2026-10-28-self-replication-scope` — the two Pan entries
