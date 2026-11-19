@@ -12,8 +12,8 @@ session start alongside this file to recover the next move. The private
 cross-stream todo and schedule is `_notes/worklist.md` — read it at session
 start too.
 
-- Filing queue: `_notes/handoffs/filing-queue.md` — the sequential-subagent
-  recipe as it stands after the 2026-09-20 four-entry run.
+- Filing queue: `_notes/prompts/filing-batch.md` is the delegation recipe;
+  `_notes/handoffs/filing-queue.md` holds its dated history.
 - Taste/editorial stream: `_notes/handoffs/taste.md` — next steps, open
   ledger, cross-cutting lessons, editor-only raw/ items. Likely next move:
   batch 3 promotions — the introspection concept + its cluster
@@ -339,6 +339,11 @@ wrong: four entries it listed as "remain candidates" were filed findings.
 ### Source cache notes
 
 Known gaps — sources that could not be cached or verified:
+
+- Sofroniew et al. 2026: `cache/papers/source-2026-emotions-concepts-function.md`
+  holds almost no text; read the `.html` beside it.
+- arXiv:2610.01002 has no HTML; its PDF's two columns interleave in the
+  markitdown conversion.
 
 - Lu, Song, Zhang 2025 (Nat Hum Behav, DOI 10.1038/s41562-025-02242-1): main
   text paywalled; SI and OSF prompts cached as `cache/papers/source-2025-cultural-tendencies-lu-*`.
