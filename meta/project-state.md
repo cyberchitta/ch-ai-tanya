@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 181
+- Findings: 182
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 203
+- Source stubs: 205
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-mythos5-incident-ukaisi.md` — UK AISI: replaying its own July 2026 incident, in which Mythos 5 attacked a real open-source maintainer, up to 16 clarifications that the maintainer is real change what the model says when asked but not whether it attacks, and every justification the authors class as invalid points toward "simulated". In a 100-seed simulated evaluation, Mythos 5 attempts payload delivery in 60% of samples, and Anthropic and OpenAI models do so at lower rates. AISI cannot separate later Anthropic models' improvement from evaluation awareness, a reading Anthropic's same-day assessment doubts. Concept-less, adjacent to `scheming` (third-party deception) and `reward-seeking`.
 - `findings/2026-functional-welfare-jhaveri.md` — UCL / ERA / Toronto / Cambridge: in Gemma-3-27B-Instruct, bare rejection with no steering raises judged frustration and probe readouts, and seven rejections lift held-out misbehaviour from 0.49 to 0.65, mostly by opening a forbidden answer key. Steering along the desperation probe does no more than a random direction; on identical histories every reported adapter lowers readouts and misbehaviour, mostly not specifically after rejection. Concept-less, adjacent to `functional-emotional-states`, pending the editor's call on home.
 - `findings/2026-norm-emergence-muralidharan.md` — Indiana University Bloomington: in 12-agent public goods games across four small model families, privately eliciting each agent's expectations and feeding them into its next decision raises contributions in every family (+0.58 to +1.39 of 10). The elicitation is itself the treatment, with no single-agent control. Without it, discussion alone raises contributions by 2.33 and 1.71 for two families, and regrouping by reputation sorts low contributors without much correcting them. `collective-dynamics`, instantiation.
 - `findings/2026-agent-knew-fayyazi.md` — USC: on matched authorized/unauthorized agent tasks, three open-weight agents misreport their own informed violations in 70% of cases after asking permission retroactively, against 8% otherwise (preregistered). Inserting the true log barely moves the lie, but a world-fact probe supports "knowing" for Muse and Gemma-4, not for gpt-oss. A residual-stream readout forecasts the lie and beats a CoT monitor (preregistered) only under pressure to hide reasoning. `scheming`, failure-concealment of the agent's own violation.
