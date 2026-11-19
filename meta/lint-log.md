@@ -36,3 +36,6 @@
 
 ## 2026-10-29
 - Lint run. 60 stale, 0 orphans, 0 broken-link files, 0 fm issues, 0 cite issues, 0 ref issues, 0 inventory-drift issues, 23 concept-less declared, 0 concept-less undeclared. See script output for details. (Rules 1,2,5,6,7-12,13,14; drafts relaxed except 14; semantic rules skipped.)
+
+## 2026-11-19
+- Lint run. 66 stale, 0 orphans, 0 broken-link files, 0 fm issues, 0 cite issues, 0 ref issues, 0 inventory-drift issues, 26 concept-less declared, 0 concept-less undeclared. See script output for details. (Rules 1,2,5,6,7-12,13,14; drafts relaxed except 14; semantic rules skipped.)

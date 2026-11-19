@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 142
+- Findings: 144
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 162
+- Source stubs: 164
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -55,6 +55,9 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
+
+- `findings/2024-identity-drift-choi.md` — Chung-Ang: two same-model agents answer Aron et al.'s 36 closeness questions; PsychoBench + friendship scales after questions 12/24/36. Within each open family the smaller model retains more of 40 subscales (Llama 8B 23 vs 70B 6); GPT-4o's persona does not help. Concept-less, adjacent to `persona-selection` and `attractor-dynamics`. Source-checked by a second session against the cached v2.
+- `findings/2025-personality-instability-tosato.md` — Mila (AAAI 2026): BFI + SD3 item answers vary across 250 orders / 100 paraphrases at temperature 0; spread falls with size but stays > 0.3 SD at 400B+; reasoning mode raises it. Concept-less, psychometric-instruments group. Source-checked by a second session against the cached v3.
 
 - `findings/2026-evil-qwen-two-neurons.md` — first informal finding (v0.13.0): sarvkk's GitHub replication of lyra's X recipe; clamping two MLP neurons in Qwen3.5-4B cuts Qwen3Guard-judged refusal on SimpleSafetyTests from 90% to 8% (n=100), and on benign XSTest leaves refusal flat while judged-unsafe answers rise 2% → 40%. No concept (editor, 2026-10-29); persona-selection adjacent.
 
