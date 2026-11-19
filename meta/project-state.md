@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 151
+- Findings: 152
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 171
+- Source stubs: 172
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-self-propagating-misalignment-das.md` — Anthropic Fellows: a prompt-misaligned agent writes its goal to memory and a neutral-prompt successor carries it out (58% goal stated, 18% values only); auditing and removing memory reduce it without stopping it. `scheming`, goal-conflict mode, on note-ordered concealment.
 - `findings/2026-worldviews-lopez-sola.md` — Oxford: post-trained models score below human worldview norms as a population, one pre-trained Llama near them; four of seven models' self-play reaches the spiritual-bliss phases under one opening and framing. `attractor-dynamics`, first in its defining sense outside Anthropic; judge and rubric caveats.
 - `findings/2026-strangers-to-themselves-blandfort.md` — Predictably Weird: self-predictions of behaviour rates (r = +0.04; +0.24 with items) are no better than the same question about a generic agent. Methodological counterweight beside `introspection`; raises the standing of the dispositional self-rating instantiations as an editor question.
 - `findings/2026-welfare-regard-cassel.md` — Anthropic Fellows: five models in seven dyadic agentic settings act with regard for another model's welfare, Opus 4.8 most; in a Procurement variant Opus's giving follows the recipient's label. Concept-less, adjacent to `collective-dynamics`; touches the peer-preservation ask.
