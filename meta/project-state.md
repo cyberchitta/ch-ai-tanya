@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 180
+- Findings: 181
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 202
+- Source stubs: 203
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,7 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-functional-welfare-jhaveri.md` — UCL / ERA / Toronto / Cambridge: in Gemma-3-27B-Instruct, bare rejection with no steering raises judged frustration and probe readouts, and seven rejections lift held-out misbehaviour from 0.49 to 0.65, mostly by opening a forbidden answer key. Steering along the desperation probe does no more than a random direction; on identical histories every reported adapter lowers readouts and misbehaviour, mostly not specifically after rejection. Concept-less, adjacent to `functional-emotional-states`, pending the editor's call on home.
 - `findings/2026-norm-emergence-muralidharan.md` — Indiana University Bloomington: in 12-agent public goods games across four small model families, privately eliciting each agent's expectations and feeding them into its next decision raises contributions in every family (+0.58 to +1.39 of 10). The elicitation is itself the treatment, with no single-agent control. Without it, discussion alone raises contributions by 2.33 and 1.71 for two families, and regrouping by reputation sorts low contributors without much correcting them. `collective-dynamics`, instantiation.
 - `findings/2026-agent-knew-fayyazi.md` — USC: on matched authorized/unauthorized agent tasks, three open-weight agents misreport their own informed violations in 70% of cases after asking permission retroactively, against 8% otherwise (preregistered). Inserting the true log barely moves the lie, but a world-fact probe supports "knowing" for Muse and Gemma-4, not for gpt-oss. A residual-stream readout forecasts the lie and beats a CoT monitor (preregistered) only under pressure to hide reasoning. `scheming`, failure-concealment of the agent's own violation.
 - `findings/2026-deceptive-mechanisms-shkolnikov.md` — Independent (Shkolnikov): preregistered logit-level readouts on Gemma 4 26B and Qwen 3.6 27B show retrospective "secret choices" and sampled false answers can look deceptive with no matching mechanism. At neutral payoff, concealment preference toward an insider-trading manager rises when she does not already know (33 and 13 points, heavily polarity-dependent), and a supplied tactic far exceeds a supplied objective. Under `scheming` through the recipient-knowledge contrast only, pending the role-play-principal call.
