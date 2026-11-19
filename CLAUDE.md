@@ -314,7 +314,10 @@ proceeding. Stopping to ask is faster than unwinding a wrong choice.
 - Don't write long, essayistic wiki entries. Findings and concepts are
   atomic; threads and essays are where narrative lives.
 - Don't paraphrase quotes into near-quotes. Quote sparingly (under 15
-  words, one per source), otherwise paraphrase fully.
+  words, one per source), otherwise paraphrase fully. The limit is for the
+  authors' prose. Wording that is itself the experimental manipulation (a
+  prompt, an option label, a scale anchor, a persona line) is a stimulus,
+  not a quotation: see `schema.md` § Writing discipline.
 - Don't treat contemplative material as optional decoration or as the
   primary frame. It is cited where it bears on a specific finding or
   concept, and developed at length only in threads.

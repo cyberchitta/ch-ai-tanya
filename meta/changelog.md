@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.13.1 — 2026-11-19
+
+States that **experimental stimuli are not quotations** (§ Writing
+discipline, and the quote bullet in `CLAUDE.md`). The one-quote limit covers
+the authors' prose; a prompt, option label, scale anchor or persona line that
+is the manipulation is given verbatim and kept short. Reviews of the
+2026-11-19 filings flagged quoted stimuli as a second quote in at least five
+entries, and filers resolved it three different ways.
+
 ## v0.13.0 — 2026-10-29
 
 Adds **informal findings**: work never written up as a paper or institutional

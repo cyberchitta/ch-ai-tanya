@@ -494,6 +494,13 @@ sounds like. Four rules apply across findings and concepts:
    is X." Inferences beyond what the evidence permits belong in threads,
    not in findings or concepts.
 
+**Stimuli are not quotations.** The one-quote-per-source limit is for the
+authors' prose. Wording that is itself the experimental manipulation (a
+prompt, an option label, a scale anchor, a persona line) is a stimulus. Give
+it verbatim, in quotation marks or code formatting, when the wording is the
+condition. Keep it as short as identifies the condition, and never use a
+stimulus to carry a claim the authors make.
+
 ### Intervention findings
 
 When a finding's source applies an intervention — anti-deception
