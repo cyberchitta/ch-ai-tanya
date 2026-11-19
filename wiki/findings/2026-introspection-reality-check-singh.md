@@ -201,8 +201,11 @@ to Claude Opus 4.1 without an argument the paper does not supply.
 
 ## Concepts
 
-- [introspection](../concepts/introspection.md) — methodological
-  counterweight, not an instantiation of the capacity. It separates two claims
+**No concept instantiated.** The finding sits beside introspection as a
+counterweight; the bullet below says how.
+
+- [introspection](../concepts/introspection.md) — **counterweight**,
+  not an instantiation of the capacity. It separates two claims
   the concept has run together: that a model can *report* on a hidden-state
   property (privileged access, which two-way steering satisfies by
   construction), and that it does so by a *second-order* process, which the

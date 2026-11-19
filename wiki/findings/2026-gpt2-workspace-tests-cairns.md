@@ -98,7 +98,10 @@ For the consciousness-indicators lens, the post argues that an indicator is usef
 
 ## Concepts
 
-- [Introspection](../concepts/introspection.md) — methodological counterweight, not an instantiation, in the way the [reality-check](2026-introspection-reality-check-singh.md) and [injected-pain](2026-injected-pain-unreported-ferrara.md) findings are. The J-space tests behind the concept's two substrate entries, rerun on a 124M base model, reproduce the privilege and report results, which the post argues partly follow from how the lens is built. It leaves the task-conditional reading in the scope note resting on tests GPT-2 passes only in reduced form, and on structure GPT-2 lacks or shows only weakly. Placement follows the counterweight precedent and is conservative.
+**No concept instantiated.** The finding sits beside introspection as a
+counterweight; the bullet below says how.
+
+- [Introspection](../concepts/introspection.md) — **counterweight**, not an instantiation, in the way the [reality-check](2026-introspection-reality-check-singh.md) and [injected-pain](2026-injected-pain-unreported-ferrara.md) findings are. The J-space tests behind the concept's two substrate entries, rerun on a 124M base model, reproduce the privilege and report results, which the post argues partly follow from how the lens is built. It leaves the task-conditional reading in the scope note resting on tests GPT-2 passes only in reduced form, and on structure GPT-2 lacks or shows only weakly. Placement follows the counterweight precedent and is conservative.
 
 ## Cross-references
 

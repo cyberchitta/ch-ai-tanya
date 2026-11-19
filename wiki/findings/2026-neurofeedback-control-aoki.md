@@ -186,7 +186,10 @@ trained models are untested (Limitations).
 
 ## Concepts
 
-- [Introspection](../concepts/introspection.md) — adjacent evidence, not an
+**No concept instantiated.** The finding sits beside introspection as
+adjacent evidence; the bullet below says how.
+
+- [Introspection](../concepts/introspection.md) — **adjacent**, not an
   instantiation of the Definition, which names access and report; on control,
   not report, in the way the
   [activation-control finding](2026-activation-control-kowalski.md) is. That

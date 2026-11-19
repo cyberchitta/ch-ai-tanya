@@ -226,7 +226,10 @@ reaches the separable-concept regime of concept injection, is not tested.
 
 ## Concepts
 
-- [Introspection](../concepts/introspection.md) — counterweight, not an
+**No concept instantiated.** The finding sits beside introspection as a
+counterweight; the bullet below says how.
+
+- [Introspection](../concepts/introspection.md) — **counterweight**, not an
   instantiation, in the way the
   [pain-injection finding](2026-injected-pain-unreported-ferrara.md) is. It
   reports a null for noticing an activation edit when the edit targets the

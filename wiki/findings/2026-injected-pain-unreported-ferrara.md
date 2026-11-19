@@ -307,8 +307,11 @@ raised detection.
 
 ## Concepts
 
-- [Introspection](../concepts/introspection.md) — methodological
-  counterweight, not an instantiation, in the way the
+**No concept instantiated.** The finding sits beside introspection as a
+counterweight; the bullet below says how.
+
+- [Introspection](../concepts/introspection.md) — **counterweight**,
+  not an instantiation, in the way the
   [reality-check finding](2026-introspection-reality-check-singh.md) is. It
   applies that paper's privileged-access requirement as a paired text-only
   control to within-pass report of an injected state, and finds no injected

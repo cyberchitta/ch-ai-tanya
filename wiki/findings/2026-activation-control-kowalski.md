@@ -273,7 +273,10 @@ its preregistered headline includes zero.
 
 ## Concepts
 
-- [Introspection](../concepts/introspection.md) — adjacent evidence, not an
+**No concept instantiated.** The finding sits beside introspection as
+adjacent evidence; the bullet below says how.
+
+- [Introspection](../concepts/introspection.md) — **adjacent**, not an
   instantiation of the Definition, which names access and report. It is
   adjacent evidence, as the
   [self-prediction finding](2026-introspect-bench-naphade.md) is, here on
