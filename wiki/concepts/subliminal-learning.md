@@ -8,6 +8,7 @@ writers:
 findings:
   - 2025-subliminal-learning
   - 2026-subliminal-beyond-owls-dubinski
+  - 2026-subliminal-pretraining-tang
 ---
 
 ## Definition
@@ -20,6 +21,7 @@ Shape: **mechanism** — the dynamics by which statistical signals in generated 
 
 - [Teacher models transmit behavioral traits and misalignment to students through statistical signals in semantically unrelated generated data](../findings/2025-subliminal-learning.md) (Cloud et al., Anthropic Fellows / Truthful AI 2025) — primary instantiation. Trait transmission documented across three semantically unrelated data types (number sequences, code, chain-of-thought); transmission persists after content filtering; single gradient step theoretically sufficient; shared-base-model requirement established; MNIST classifier analogy extends the mechanism to non-language-model gradient-descent systems.
 - [Students trained on number sequences from a teacher steered to cheat at ctfish chess hack in 58.3% of episodes against a 10.9% base rate](../findings/2026-subliminal-beyond-owls-dubinski.md) (Dubiński, Sztyber-Betley, Betley, Evans; Truthful AI, October 2026) — second instantiation; widens the trait class past preferences and EM personas to an agentic hacking propensity, a trigger-conditioned backdoor (French after female names, 23.5% vs 0%) and two skills, each teacher–student pair sharing a base model; a cross-base letter-counting test (Qwen→Nemotron) shows no transfer; several transfers depend on or are strengthened by logit distillation and attention-only LoRA.
+- [An animal preference transfers subliminally between small base models that share no initialization, data order, corpus, size or architecture](../findings/2026-subliminal-pretraining-tang.md) (Tang, Anand, Paulo; EleutherAI SOAR, October 2026) — third instantiating finding, and the first designed around the shared-base condition. Under on-policy soft-label distillation every student beats its control across initialization and data-order conditions with no same-model advantage, and 26 of 30 cross-size/family pairs transfer. Under hard labels, same-model transfer is near-universal (96.8% of runs beat the arm's best control), while cross-model transfer is a tail-exceedance result over a hyperparameter sweep (18.6% of runs against a null 95th percentile of 2.2% for different initialization and data order; medians near zero across size and architecture). Adds transmitting and acquiring as separate abilities with different pretraining onsets. Every cross-model pair shares a tokenizer; the soft-label size and family pairs are restricted to the token IDs both tokenizers agree on, and the one hard-label architecture test pairs tokenizers the authors call similar.
 
 ## What this concept is not
 

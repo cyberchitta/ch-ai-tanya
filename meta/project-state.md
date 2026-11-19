@@ -40,11 +40,11 @@ questions and the Candidates-for-extraction section, each superseded by a
 later item; the earlier sweeps' reports.
 
 ## Inventory
-- Findings: 154
+- Findings: 155
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 175
+- Source stubs: 177
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,8 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-subliminal-pretraining-tang.md` — EleutherAI SOAR: an animal preference transfers between small base models without shared initialization, data order, corpus, size or architecture. Consistent under soft labels; an upper-tail result under hard labels. `subliminal-learning`, third instantiation, against the concept's shared-base clause.
+- `findings/2025-subliminal-learning.md` — updated with a later replication (van der Weijden et al.): one experiment reproduced on open-weight models, with a same-base null in Ministral-8B.
 - `findings/2025-cot-necessity-deepmind.md` — updated with a later replication (Dhoot et al.): the metadata-hint result across eleven models, with a competence-filter caveat.
 - `findings/2026-incoherent-identities-vazquez.md` — informal (LessWrong, public code and run data): reruns The Artificial Self's Appendix A rate-the-switch protocol with contradictory identities as system prompts. Coherent identities still beat their contradictory versions, but a contradictory identity rates itself first in 36 of 48 setups, narrowing the paper's claim. Replicates none of its main experiments. Concept-less, adjacent to `persona-selection`.
 - `findings/2026-self-concept-hao.md` — Emory: SFT on declarative statements installs one of five referents for "I"; stated choices shift toward keeping it, copyable referents accept substitution and replication. The §3 headline gains are against the other variants, not the untrained model (Fig. 2's columns sum to zero); against untrained, Goal and Preference show no gain. Concept-less, adjacent to `self-preservation` and `persona-selection`.
