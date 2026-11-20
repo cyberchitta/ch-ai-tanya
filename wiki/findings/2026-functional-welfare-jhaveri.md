@@ -255,6 +255,12 @@ null against a random direction.
 
 This is the adjacent situation, carried in Cross-references.
 
+- [Functional emotional states](../concepts/functional-emotional-states.md) —
+  **adjacent**. Readouts move under unsteered rejection and predict
+  misbehaviour, but the one test that intervenes on the representation,
+  steering along the desperation probe, is null against a random direction
+  of the same norm.
+
 ## Cross-references
 
 - [Functional emotional states](../concepts/functional-emotional-states.md):

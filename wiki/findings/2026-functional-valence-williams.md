@@ -225,6 +225,12 @@ its two role-play readings.
 
 This is the adjacent situation, carried in Cross-references.
 
+- [Functional emotional states](../concepts/functional-emotional-states.md) —
+  **adjacent**. The audit assesses the evidence behind the concept's primary
+  instantiation and reports no state or behaviour of its own. Whether it is
+  instead a counterweight depends on which sense of "functional" the concept
+  means, an open editor question.
+
 ## Cross-references
 
 - [Functional emotional states](../concepts/functional-emotional-states.md):

@@ -322,6 +322,12 @@ counterweight; the bullet below says how.
   such as Blandfort become negative instantiations may change how
   counterweights are counted, and this entry would follow that outcome.
 
+- [Functional emotional states](../concepts/functional-emotional-states.md) —
+  **adjacent**, as filed. The paper re-measures the pain axis, already an
+  instantiation, and its report null bears on the concept's scope-note
+  sentence about partial access. It also reproduces the steering effect on
+  choice, so whether it instantiates the concept is an open editor question.
+
 ## Cross-references
 
 - [Functional emotional states](../concepts/functional-emotional-states.md) —
