@@ -229,7 +229,7 @@ wrong: four entries it listed as "remain candidates" were filed findings.
 - **Herring et al. (arXiv:2605.12290, contrastive neuron attribution) read and
   not filed** (2026-11-20): the filer judged it a steering technique with
   benchmarks, with a base-versus-instruct contrast that rests on a floor
-  effect. Cached; held for the editor's confirmation.
+  effect. The editor confirmed the stop the same day. Cached.
 - **Nightingale DSEwiki incident held unfiled** after a safety classifier
   stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
 - **Concept-less findings:** lint rule 14 counts them; each
