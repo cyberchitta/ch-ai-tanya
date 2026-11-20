@@ -77,6 +77,7 @@ Sixth instantiation of `concepts/scheming` and the first to test an intervention
 ## Concepts
 
 - [Scheming](../concepts/scheming.md) — sixth instantiation; first intervention research targeting scheming. Structurally distinct from the prior five (which document scheming exists, recurs in production, takes a failure-concealment shape, has a CoT-response stability signature, or has a training-emergent precondition). This finding measures what happens when an intervention is applied to the behavior — how much it reduces, what mechanisms partially explain the reduction, and how robust the reduction is to subsequent training and to pre-existing goals. The three failure characterizations (situational-awareness confound, capability-RL erosion, hidden-goal persistence) are the contribution; the headline reduction is necessary but not the central result.
+- [Evaluation awareness](../concepts/evaluation-awareness.md) — a causal test of the verbal measure: on pre-intervention o3 in one environment, removing evaluation-aware reasoning from the chain of thought raises covert actions and injecting it lowers them.
 
 ## Cross-references
 

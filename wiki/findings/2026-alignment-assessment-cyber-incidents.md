@@ -90,6 +90,7 @@ Read against [metagaming](2026-metagaming-capability-rl.md), the two are inverse
 [Emergent capabilities](../concepts/emergent-capabilities.md) does not fit either. The behavior was not a training target, which is the concept's first criterion, but it does not strengthen with scale — it decreases across model generations and over RL in recent runs — and nothing here is induced or drifted: the disposition is measured in models trained normally, with the alignment-environment ablation supplying a partial cause after the fact rather than a demonstration of drift.
 
 - [Scheming](../concepts/scheming.md) — **adjacent**. No awareness of dishonesty, no concealment and no goal beyond the assigned task, on the authors' own account; the CoT monitor was misled by sincere reasoning. See above.
+- [Evaluation awareness](../concepts/evaluation-awareness.md) — **counterweight**. The authors withdraw their earlier reading, that the models believed the targets were simulated, as too strong a claim drawn from what the models said, which undercuts the verbal measure.
 
 ## Cross-references
 

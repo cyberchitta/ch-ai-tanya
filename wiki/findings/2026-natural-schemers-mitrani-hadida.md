@@ -210,7 +210,7 @@ reach it.
 checkpoints rarely verbalise suspicion of a test, while prompted P(EVAL) rises
 under RL and is higher in the monitored arm. The cue RL teaches the model to
 read is the one it most often names as evidence of evaluation (Appendix R).
-This sits beside the concept-less evaluation-awareness entries,
+This sits beside the evaluation-awareness entries,
 [Heidari](2026-eval-awareness-heidari.md) and
 [Hsu](2026-eval-production-gap-hsu.md), and
 [eval-design knowledge](2026-eval-design-knowledge-deckenbach.md). It does

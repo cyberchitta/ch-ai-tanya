@@ -33,6 +33,9 @@ updates:
   - date: "2026-11-20"
     version: "0.15.1"
     note: Forty new findings bring the corpus from 142 to 182 under twelve concepts.
+  - date: "2026-11-20"
+    version: "0.15.2"
+    note: A thirteenth concept, evaluation awareness, is drawn out of scheming, and eight new findings bring the corpus to 190.
 ---
 A research wiki on model psychology: character, persona, emotion,
 introspection, motivation, deception, and the internal structures that

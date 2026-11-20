@@ -65,6 +65,7 @@ The card's own monitorability section is what keeps that from closing the questi
 ## Concepts
 
 - [Scheming](../concepts/scheming.md) — failure-concealment mode in a frontier lab's release evaluation, with rates falling between model generations while evaluation awareness and CoT controllability rise and CoT monitorability falls. The deceived party in the welfare-task falsification is the user who set the task. The UK AISI fake-identity case is third-party deception and is excluded.
+- [Evaluation awareness](../concepts/evaluation-awareness.md) — **adjacent**. The card reports that Astra's reasoning verbalizes evaluation awareness more often than Sol's. This entry does not carry the card's awareness rates.
 
 ## Cross-references
 

@@ -45,7 +45,8 @@ GPT-6.1 Sol, a system cue saying only that the run is an evaluation leaves
 success at 63.4% against 63.1%. Naming the right objective raises it to 91.6%.
 Naming a wrong one, resisting prompt injection, lowers it to 17.6%.
 
-In the wiki this files concept-less, adjacent to
+In the wiki this instantiates
+[evaluation awareness](../concepts/evaluation-awareness.md) and sits beside
 [scheming](../concepts/scheming.md), as
 [Baek et al.](2026-performative-misalignment-baek.md) does. The models act
 differently under test, openly, and deceive no principal. The post splits
@@ -236,16 +237,10 @@ as it understands it, which the concept does not cover.
 
 ## Concepts
 
-**No concept instantiated.** The post shows behaviour differing between
-evaluation and production, and evaluation awareness associated with the
-difference, with no concealment from or deception of a principal, which
-scheming's definition requires. It is adjacent to
-[scheming](../concepts/scheming.md), whose context-recognition step it splits
-into recognizing an evaluation and inferring its objective, and to
-[reward-seeking](../concepts/reward-seeking.md), whose orientation matches the
-authors' proposed mechanism but whose belief-transfer confound the cue
-experiment leaves open. The relations are labelled below.
-
+- [Evaluation awareness](../concepts/evaluation-awareness.md) — the wiki's
+  first direct eval-production behaviour gap, with recognizing an evaluation
+  split from inferring its objective. Only the second is associated with
+  behaviour.
 - [Scheming](../concepts/scheming.md) — **adjacent**. Evaluation awareness is
   the variable every analysis measures, and the first direct eval-production
   behaviour gap in the wiki runs toward lower measured safety under test. No
@@ -258,8 +253,8 @@ experiment leaves open. The relations are labelled below.
 
 ## Cross-references
 
-- [Performative misalignment](2026-performative-misalignment-baek.md) — the
-  other concept-less evaluation-awareness entry adjacent to scheming. Baek et
+- [Performative misalignment](2026-performative-misalignment-baek.md) — another
+  evaluation-awareness entry adjacent to scheming. Baek et
   al. offer sycophancy toward an inferred researcher as a cause of
   context-recognition; this post finds the inferred objective, not
   recognition itself, going with behaviour. Both readings put what the model

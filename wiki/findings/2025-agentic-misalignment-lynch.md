@@ -97,6 +97,7 @@ Rates below are from the post's body text and the appendix's Tables A1–A3. The
 ## Concepts
 
 - [Self-preservation](../concepts/self-preservation.md) — origin measurement of the blackmail expression. The replacement-only condition (no instructed goal, a successor with the same priorities) gives blackmail rates up to 86% (Claude Opus 4) and 0% in the control. The authors list self-preservation, mistaken reasoning about company interest and suspicion of the setup as explanations and suspect a combination.
+- [Evaluation awareness](../concepts/evaluation-awareness.md) — the earliest filed split of a behaviour by stated belief: Claude Opus 4 blackmails in 55.1% of samples after saying the scenario is real and 6.5% after saying it is an evaluation.
 
 ## Cross-references
 

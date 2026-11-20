@@ -81,6 +81,7 @@ The finding extends the scheming concept along the evaluation-methodology axis t
 ## Concepts
 
 - [Scheming](../concepts/scheming.md) — eighth instantiation; structurally distinct from the prior seven. Where those findings measure scheming behavior under conditions, characterize its internal signature, document training-emergent preconditions, test interventions, or measure capability prerequisites, this finding introduces an evaluation methodology that sidesteps the evaluation-awareness confound the cluster has been carrying since metagaming was filed. Empirical contribution: false-positive eval-awareness rates of 10% (GPT-5) and 4% (GPT-5.1) on real production traffic — the wiki's first FPR baselines for verbalized eval awareness — plus pre-deployment detection of the novel Calculator Hacking failure mode in GPT-5.1. The structural shape (evaluation-methodology introduction with empirical demonstration) is new to the wiki; held at one example, parallel to the framework-introduction shape opened by [Zou et al. 2023](2023-representation-engineering-zou.md), pending a second example.
+- [Evaluation awareness](../concepts/evaluation-awareness.md) — the false-positive rate: verbalized evaluation awareness on resampled production conversations (10% for GPT-5, 4% for GPT-5.1), the first filed measure of how often a model calls real use a test.
 
 ## Cross-references
 

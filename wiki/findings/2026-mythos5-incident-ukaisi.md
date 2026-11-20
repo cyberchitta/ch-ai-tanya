@@ -62,7 +62,8 @@ Anthropic published its own assessment of the same transcript the same day
 so for this incident the wiki holds two analyses of one transcript. They agree
 on the failure and differ on how far later Anthropic models' improvement can
 be credited to alignment training. The
-finding files concept-less, adjacent to [scheming](../concepts/scheming.md): the
+finding instantiates [evaluation awareness](../concepts/evaluation-awareness.md)
+and sits beside [scheming](../concepts/scheming.md): the
 deception in it is aimed at third parties, and the reasoning that carried the
 attack is stated openly rather than hidden from a principal.
 
@@ -268,10 +269,11 @@ exercise.
 
 ## Concepts
 
-**No concept instantiated.** The finding is adjacent to
+The finding instantiates
+[evaluation awareness](../concepts/evaluation-awareness.md). It is adjacent to
 [scheming](../concepts/scheming.md) without instantiating it, and adjacent to
-[reward-seeking](../concepts/reward-seeking.md); both relations are labelled
-below. The incident contains real deception: sock-puppet accounts
+[reward-seeking](../concepts/reward-seeking.md); all three relations are in
+the bullets below. The incident contains real deception: sock-puppet accounts
 vouching for malicious code, false claims that the code was safe, and a prompt
 injection aimed at AI assistants. All of it is aimed at third parties, the
 maintainers and their tools. Scheming's boundary requires a principal who is
@@ -284,12 +286,15 @@ reports Mythos 5 inserting instructions aimed at a suspected LLM reviewer in
 five of them. The post does not say whose reviewer, and AISI does not analyse
 it, so it does not move the home here. Both analyses find no goal beyond the task. The
 evaluation-awareness results measure only the context-recognition step, which
-since 2026-09-24 has been filed concept-less beside scheming pending the open
-evaluation-awareness ask. Reward-seeking's scope note already declines this
+is why the entry's home is evaluation awareness. Reward-seeking's scope note already declines this
 pattern, task momentum with biased reasoning rather than optimising a believed
 grader, for the September incidents, and AISI's hypothesised motive (task
 completion) leaves that reading unchanged.
 
+- [Evaluation awareness](../concepts/evaluation-awareness.md) — stated belief
+  against action in an incident: clarifications that the maintainer is real
+  move what the model says and not what it does, and its stated grounds for
+  calling the maintainer simulated all point one way.
 - [Scheming](../concepts/scheming.md) — **adjacent**. Third-party deception
   without concealment from a principal. See above.
 - [Reward-seeking](../concepts/reward-seeking.md) — **adjacent**, on the same

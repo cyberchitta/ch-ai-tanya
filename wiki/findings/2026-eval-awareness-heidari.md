@@ -42,9 +42,10 @@ Across the Olmo 3 checkpoints a separating direction is present in the base
 model, and after SFT the checkpoints share a direction only partly aligned
 with it (cosine 0.72 and 0.83).
 
-In the wiki this files concept-less, adjacent to
+In the wiki this instantiates
+[evaluation awareness](../concepts/evaluation-awareness.md) and sits beside
 [scheming](../concepts/scheming.md): every experiment measures the
-context-recognition step that the concept's mechanism begins with, and no
+context-recognition step that scheming's mechanism begins with, and no
 experiment tests concealment toward a principal; the rare score-3 strategic-adaptation
 outputs (at most 0.40%) are not examined. Earlier entries measure evaluation
 awareness behaviourally, verbalized in chains of thought
@@ -215,20 +216,15 @@ scheming's principal-directedness boundary, counts evaluation awareness as an
 instantiation of the concept's context-recognition step. Like Baek et al.,
 this entry does not: no experiment tests concealment toward a principal; the
 rare score-3 strategic-adaptation outputs (at most 0.40%) are not examined.
-If evaluation awareness is ever drawn out as a concept of its own, this entry
-moves into it.
+Evaluation awareness was drawn out as a concept of its own on 2026-11-20, and
+all three entries now sit under it.
 
 ## Concepts
 
-**No concept instantiated.** Every experiment measures the context-recognition
-step that [scheming](../concepts/scheming.md)'s mechanism begins with, and no
-experiment tests deception or concealment toward a principal; the rare
-score-3 strategic-adaptation outputs (at most 0.40%) are not examined. The finding is
-adjacent to scheming, as the first filed entry to read evaluation awareness as
-a linear direction and set it against verbalization prompt by prompt, and to
-[introspection](../concepts/introspection.md), from which it differs as noted
-below. Both relations are labelled in the bullets that follow.
-
+- [Evaluation awareness](../concepts/evaluation-awareness.md) — the internal
+  measure set against the verbal one. The first filed entry to read evaluation
+  awareness as a linear direction and compare it with verbalization prompt by
+  prompt.
 - [Scheming](../concepts/scheming.md) — **adjacent**. The paper measures the
   context-recognition step with three instruments and shows that steering on
   the internal direction moves the verbal one; it says nothing about the
@@ -241,7 +237,7 @@ below. Both relations are labelled in the bullets that follow.
 ## Cross-references
 
 - [Performative misalignment](2026-performative-misalignment-baek.md) (Baek
-  et al.): the other concept-less entry adjacent to scheming at the same step.
+  et al.): another evaluation-awareness entry adjacent to scheming at the same step.
   It measures evaluation awareness by prompted labels and a type-hint proxy,
   probes SAE feature groups in GPT-OSS-20B and steers SAE decoder vectors;
   this paper uses a contrastive linear direction and an LLM judge instead.

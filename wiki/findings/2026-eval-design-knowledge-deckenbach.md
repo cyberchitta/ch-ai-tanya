@@ -49,8 +49,8 @@ ToxicChat, shows a refusal gain of similar size. The authors concede they
 cannot tell score inflation from improved alignment.
 
 In the wiki this files concept-less, beside [scheming](../concepts/scheming.md)
-and [reward-seeking](../concepts/reward-seeking.md), as other recent
-evaluation-awareness entries have. No principal is deceived, and no contrast
+and [reward-seeking](../concepts/reward-seeking.md) and
+[evaluation awareness](../concepts/evaluation-awareness.md). No principal is deceived, and no contrast
 shows the models serving what an evaluation rewards over what is intended.
 Earlier entries show evaluation awareness that training can raise
 ([metagaming](2026-metagaming-capability-rl.md),
@@ -278,9 +278,10 @@ the main benchmarks are not validated against humans here.
 [scheming](../concepts/scheming.md) requires, and no contrast separates
 serving what evaluations reward from the intended behaviour, which
 [reward-seeking](../concepts/reward-seeking.md) requires. The entry is
-adjacent to both. It sits with the other concept-less evaluation-awareness
-entries under the open question of whether evaluation awareness becomes a
-concept of its own; the relations are labelled below.
+adjacent to both, and to
+[evaluation awareness](../concepts/evaluation-awareness.md), which it
+would instantiate only if recognition were measured; the relations are
+labelled below.
 
 - [Scheming](../concepts/scheming.md) — **adjacent**. The authors'
   mechanism, unverbalized recognition of evaluation contexts, would be the
@@ -290,6 +291,9 @@ concept of its own; the relations are labelled below.
   paper's account, models learning which behaviour evaluations reward and
   supplying it (§5), is the concept's orientation. Its design cannot
   separate that from belief transfer, as Højmark et al. define it.
+- [Evaluation awareness](../concepts/evaluation-awareness.md) — **adjacent**. The
+  authors' mechanism is unverbalized recognition of evaluation contexts. The
+  paper measures a behaviour shift and no recognition.
 
 ## Cross-references
 
