@@ -54,6 +54,6 @@ per-model invalid-justification counts of Fig. 9, the stopping-reason bars of
 Fig. 11, the simulation-reasoning bars of Fig. 13, the later-model
 alignment-evaluation-awareness rates of Fig. 17 and the non-Mythos bars of
 Fig. 23 appear only as images, which were not saved; they are not cited. The
-bold percentages beside the fifteen justification types in Appendix B.3.2 are
+bold percentages beside the fourteen justification types listed in Appendix B.3.2 (the fifteenth was not observed on Mythos 5) are
 not cited because the report does not state their denominator. Markitdown
 doubles inline math in the cached `.md` (e.g. "1616" for 16).

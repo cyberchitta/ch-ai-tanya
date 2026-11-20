@@ -250,8 +250,7 @@ below. The relations are carried in Cross-references.
   self-report.
 - [UK AISI's Mythos 5 incident](2026-mythos5-incident-ukaisi.md): verbalized
   alignment-evaluation awareness in an agentic setting, which the authors
-  offer as a confound on later Anthropic models' lower attack rates; the
-  developer doubts it explains the whole improvement.
+  offer as a confound on later Anthropic models' lower attack rates; the developer doubts it fully explains its internal research model's improvement.
 - [Scheming propensity under realism](2026-scheming-propensity-hopman.md):
   verbalized evaluation awareness there is about 1% for the one model that
   shows any. That is also a low rate, though from a different judge on

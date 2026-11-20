@@ -36,7 +36,7 @@ selection as filters.
 All numbers the finding cites are from main-text prose, Table 2 (MMLU
 accuracy), Table 3 (no-letter, letter-naming and 17-prompt sycophancy rates
 with pooled Wilson 95% CI half-widths for all 49 checkpoints), Table 5
-(agreement judge) or Appendix G.1. Figures 3–6 print no values in the
+(agreement judge), Appendix E (regex scan) or Appendix G.1. Figures 3–6 print no values in the
 conversion; the probe-filtering curve (Fig. 5b), the per-student LLS rates
 (Fig. 5c) and the power-law fits (Fig. 6) are not cited. The source disagrees
 with itself once: the main text gives 35% for the original delta-learning

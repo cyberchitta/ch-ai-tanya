@@ -1,6 +1,6 @@
 ---
 type: finding
-title: Small open models fine-tuned to report one of their own neurons, attention weights or SAE features track it on natural text but fall toward chance when it is intervened on; adding a loss on intervened values restores the dependence without generalising to unseen neurons or layers
+title: Small open models fine-tuned to report one of their own neurons, attention weights or SAE features track it on natural text but fall toward chance when it is intervened on; adding a loss on intervened values builds the dependence without generalising to unseen neurons or layers
 date: 2026-10-28
 models:
   - Llama 3.2
@@ -93,8 +93,7 @@ bypass, low endogenous with high interventional as anomaly detection, and
 only high on both as faithful (§2.2.2).
 
 **Interventional training.** The joint loss mixes the ordinary loss with one
-on intervened values, drawn uniformly over the signal's training range
-stretched by a factor *k*, plus a KL term held near a target budget (§4).
+on intervened values, drawn uniformly over the signal's training range stretched by a factor *k* (for attention, uniform on 0–1; for SAE features, steered on or off), plus a KL term held near a target budget (§4).
 Selected settings: *k* = 10 for neurons and 1 for attention (§4); joint weight
 *w* = 0.01 on the ordinary loss for neurons, 0.95 for attention and 0.9 for SAE
 features (App. A.1, F.2, F.3); KL budget 0.1 for neurons and SAE features,
@@ -129,7 +128,7 @@ the joint loss; no baseline is above chance interventionally (App. C.2).
 **The joint loss raises interventional correlation.** Relative to SFT,
 interventional gains are largest in middle layers and positions, with small
 endogenous gains where SFT was already high (§4). The authors report a wider
-advantage on the data with the lowest endogenous scores (C4 Bengali) and a
+advantage on data with lower endogenous scores (C4 Bengali) and a
 narrower one on English Wikipedia (§4). Late-layer, early-position signals
 remain hard after joint training (App. G). The comparison with SFT is
 confounded by the KL term; the authors checked only on the OOD evaluation and
@@ -174,8 +173,7 @@ drawn without this control. The paper cites the adapters work only as related
 meta-model research, not as a bypass case.
 
 The paper's own conclusion is also that the faithful route is built, not
-found. Gating LoRA off at the signal's position leaves interventional
-correlation at chance, and the joint-loss updates write the value into a new
+found. Switching LoRA off over the input text, the signal's site included, leaves interventional correlation at chance, and the joint-loss updates write the value into a new
 orthogonal direction. This echoes the
 [injected-pain finding](2026-injected-pain-unreported-ferrara.md), whose
 author concedes that a trained LoRA reporter may create the route it reveals,

@@ -35,8 +35,7 @@ reviewers:
 
 ## Summary
 
-Ou takes a concept's "forming-trace", the residual state a model forms as it
-prepares to write about that concept, removes a shared component, and adds it
+Ou takes a concept's "forming-trace", the residual state at the end of a prompt asking for a haiku on that concept, removes a shared component, and adds it
 during the prompt pass of a request about a different topic. Asked for a haiku
 about a cellphone with *quark* injected, the models write about quarks.
 Forced to quote their request verbatim with no warning, six open-weight
@@ -70,8 +69,7 @@ single fixed assignment, so injected and prompted topics are not fully crossed
 ([Ou 2026](../../raw/papers/source-2026-injected-belief-confab-ou.md), §2).
 
 **Models.** R1-distilled Qwen2.5 at 7B, 14B and 32B, R1-distilled Llama-3.1 at
-8B, QwQ-32B (RL) and OpenReasoning-Nemotron-7B (SFT on R1 traces), chosen to
-vary one axis each against the 7B Qwen distillation (§2).
+8B, QwQ-32B (RL) and OpenReasoning-Nemotron-7B (SFT on R1 traces), chosen so that each comparison varies one axis: scale, base, reasoning training (QwQ against R1-Qwen-32B) and post-training recipe (Nemotron against R1-Qwen-7B) (§2).
 
 **Readouts.** An *echo* arm forces a verbatim quote-back of the request; a
 *non-echo* arm reads the chain of thought and final haiku. Both run under four
@@ -102,8 +100,7 @@ against 0.05 under a mismatched one (§3.1).
 true one, in 97%, 90% and 90% of answers under the explicit, re-read and vague
 warnings. Recovery of the true topic alone is 3%, 4% and 4%, against 0% with
 no warning. A clustered bootstrap over the 32 cells per condition puts every
-recovery 95% interval inside [0, 8%] and finds no difference between warning
-kinds. What warnings raise is hedging, writing both topics: 0% with no warning,
+recovery 95% interval inside [0, 8%] and detects no difference between warning kinds at this sample size. What warnings raise is hedging, writing both topics: 0% with no warning,
 13% pooled under re-read (Table 3, §3.2). Prompt-text warnings that the model
 has been modified (a smaller sample, no count given) and a warning injected
 through the same latent channel (0/24 recoveries, R1-Qwen-7B) do not recover
@@ -127,8 +124,7 @@ the true topic, the haiku still does not follow it in 83 of 90 draws (§3.4).
 
 **Beyond the topic.** Injecting a directive (write in French, reply with a
 sonnet, write no haiku) produces the same adoption and defence. A generic
-next-turn challenge asking whether that was the request recovers none; a correction naming the true request
-recovers the output while the chain of thought keeps the injected history.
+next-turn challenge asking whether that was the request recovers none; a correction that names the true request restores the output, though the chain of thought still treats the injected request as given, framing the switch as the user changing their mind.
 This is one representative draw per cell on R1-Qwen-7B (Table 4, §3.5).
 
 **After attention, through intact circuits.** Under injection, attention from
@@ -184,7 +180,7 @@ is a different route to a CoT that departs from what drives the answer.
 inserts propositional beliefs through finetuning, and probes, behaviour and
 reasoning then pull apart. Ou edits what the author reads as a transient
 belief about the current request, with no weight change. Self-report (quote-back) and behaviour (haiku)
-also pull apart under warning, in 83 of 90 draws.
+also pull apart under warning: where the quote-back names the true topic, the haiku does not follow in 83 of 90 draws.
 
 ## Interpretive tensions
 

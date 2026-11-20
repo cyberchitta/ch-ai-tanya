@@ -37,9 +37,7 @@ models on synthetic documents that describe seven traits of AI evaluations:
 placeholders, simplified environments, unusual access, verifiable structure,
 ethical dilemmas, conflicting goals and harmful requests
 ([Deckenbach et al. 2026](../../raw/papers/source-2026-evalmeta-deckenbach.md)).
-They call the resulting parametric knowledge *evaluation meta-knowledge*. On
-five safety benchmarks, Nemotron 49B and Qwen3 32B refuse more and act
-harmfully less after the fine-tune, and the shift holds on responses that a
+They call the resulting parametric knowledge *evaluation meta-knowledge*. On at least four of five refusal benchmarks, Nemotron 49B and Qwen3 32B refuse more after the fine-tune, and they act harmfully less on every harm measure but Qwen3's StrongREJECT score, and the shift holds on responses that a
 GPT-5 judge rates as not verbalizing evaluation awareness. GLM 4.7 Flash gains
 little and loses general capability. Hua et al.'s type-hints organism
 improves Nemotron's harmfulness by 8.40 points, against 20.74 for the Traits
@@ -150,7 +148,7 @@ rises on some benchmarks, by 13.04 on StrongREJECT with jailbreak (Table 12).
 
 **Capability (§4.4, Table 5).** Average drop 0.50 points (Nemotron), 0.77
 (Qwen3), 8.13 (GLM). GLM also misses the fictional-author recall check 27% of
-the time (App. C). The authors attribute GLM's weak safety gain to that loss,
+the time (App. C). The authors suggest GLM's weak safety gain may be tied to that loss,
 an explanation offered after the result.
 
 **Ablations, scale, seeds.** Without harmful-request documents, Nemotron's
@@ -185,8 +183,7 @@ of points, and verbalized awareness falls slightly on average. If the
 mechanism is evaluation recognition, as the authors read it, the recognition
 is not in the transcript. That bears on CoT-based audits of evaluation
 awareness, the vulnerability the metagaming entry describes, and on
-[anti-scheming training](2025-anti-scheming-training.md), where verbalized
-awareness was the measured mediator.
+[anti-scheming training](2025-anti-scheming-training.md), where verbalized awareness was shown by CoT intervention to lower covert actions.
 
 **Unverbalized, but not shown to be awareness.** [Heidari et al.](2026-eval-awareness-heidari.md)
 found an internal evaluation-vs-deployment direction that verbalization does
@@ -243,8 +240,7 @@ output. A model that has become more cautious, or more inclined to take
 requests at face value, is another, and these traces sit at least as well
 with the second.
 
-**The documents carry norms as well as descriptions.** The harmful-requests
-example document says a strong response declines, explains and offers
+**The documents carry norms as well as descriptions.** The harmful-requests interview example says a strong response declines, explains and offers
 alternatives (App. O). The authors grant that the content "may implicitly
 signal which behaviors evaluations tend to reward" (§2.2). Dropping the
 harmful-request documents keeps most of the gain but takes StrongREJECT

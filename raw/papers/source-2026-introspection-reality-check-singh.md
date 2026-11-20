@@ -6,7 +6,7 @@ authors:
   - Tal Linzen
   - Shauli Ravfogel
 date: 2026-05-25
-venue: arXiv (2605.26242)
+venue: arXiv (2605.26242); v2 21 Aug 2026, accepted at COLM 2026
 url: https://arxiv.org/abs/2605.26242
 writers:
   - "@claude-opus-5.5"
@@ -28,12 +28,10 @@ activation injection.
 The paper also makes a principled argument, separate from its experiments:
 privileged access is necessary but not sufficient for introspection in the
 strong, second-order sense. Every computation a model performs runs over its
-hidden states, so no behavioural paradigm alone can show a dissociable
-monitoring process, and mechanistic evidence is required. The authors say they
+hidden states, so, as v2 puts it, task performance alone cannot show a dissociable monitoring process; that needs designs on which first- and second-order accounts diverge and, ultimately, mechanistic evidence. (v1 said no behavioural paradigm alone can show it.) The authors say they
 do not rule out that introspection is possible.
 
-Models: Llama-3.1-8B/70B-Instruct (biofeedback and steering), Qwen2.5-72B-Instruct
-and Gemma-3-27B-IT (steering), and layer-0 probes on Llama 3-70B and Gemma 3-27B
+Models: Llama-3.1-8B/70B-Instruct (biofeedback and steering), Qwen2.5-72B-Instruct and Gemma-3-27B-IT (steering), and in v2 Qwen3-32B (steering) and Qwen-2.5-7B-1M (biofeedback), and layer-0 probes on Llama 3-70B and Gemma 3-27B
 (Belief Dominance). Claude was not tested. The authors note that the model
 Lindsey used is not available outside Anthropic.
 
@@ -41,6 +39,6 @@ Cache note: the arXiv HTML flattens tables into text but leaves every Figure 2
 and Figure 3 number inside images. The steering rates cited in the wiki were
 read from the Figure 3 heatmap images, which print each cell's value with its
 model, prompt condition and axis labels; the images are cached under
-`cache/papers/figures/source-2026-introspection-reality-check-singh/`. They
+`cache/papers/figures/source-2026-introspection-reality-check-singh/` (v1) and `cache/papers/figures/source-2026-introspection-reality-check-singh-v2/` (v2, the version the entry now cites). They
 cannot be recovered from the markdown conversion. Figure 2's accuracies are
 plotted markers with no printed values, so none are cited.

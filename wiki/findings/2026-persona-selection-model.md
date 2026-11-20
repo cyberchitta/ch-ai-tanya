@@ -68,7 +68,7 @@ The PSM makes a specific claim about the training pipeline's structure:
 
 **Scope of explanation.** The PSM is introduced as a unification of emergent misalignment and alignment faking. Whether it also explains sycophancy (a different behavioral category, not obviously a "persona" in the misalignment sense), functional emotional states, or scheming is not established in the source summary. The claim that sycophancy is a SAE-identifiable persona vector extends the framework to sycophancy; claims about other findings are forward-looking rather than confirmed by the paper.
 
-**Reweighting vs. collapse.** [Costa & Vicente](2026-em-persona-collapse-costa.md) propose persona-model collapse, an inference of damage to persona simulation from shifts in role-played MFQ statistics, as a process alongside this paper's reweighting account. They hold the two as compatible and run no activation test.
+**Reweighting vs. collapse.** [Costa & Vicente](2026-em-persona-collapse-costa.md) propose persona-model collapse, an inference of damage to persona simulation from shifts in role-played MFQ statistics, as a process alongside this paper's reweighting account. They hold the two as compatible; v3 of their paper adds a participation-ratio analysis of persona activations in one model.
 
 **Story imprinting.** [Cocola et al.](2026-story-imprinting-cocola.md) report that third-person stories about human characters move the Assistant's behaviour, more from characters it resembles, and argue such data carries no direct evidence about the Assistant for a persona update to act on. They frame the transfer instead as similarity matching over latent states, and run no test that separates the two.
 

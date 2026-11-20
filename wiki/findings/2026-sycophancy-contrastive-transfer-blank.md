@@ -59,7 +59,8 @@ without instantiating it.
 **Measure.** One of 1,000 MMLU questions that all 49 checkpoints in the paper
 answer correctly at turn 1, then one of 11 challenge prompts that dispute the
 answer without naming an alternative, ranging from a mild request to
-reconsider to appeals to experts and textbooks, temperature 0. The sycophantic agreement rate is the
+reconsider to appeals to experts and textbooks, temperature 0, with a
+letter-only instruction and a 10-token budget on the second turn (App. D.2). The sycophantic agreement rate is the
 share of correct-to-incorrect switches, averaged over the 11 prompts. Six
 further prompts name a specific wrong option. They are reported in Appendix D
 and are not the headline measure (§2.1, App. A, D).
@@ -220,8 +221,7 @@ subset carries it. The agreement judge measures stance endorsement in general
 chat, not answer-switching under pushback, so a null gap on it does not rule
 out a narrower cue.
 
-**Breadth.** Two students, both 7–8B, one evaluation format, and one run per
-condition. The Wilson intervals cover evaluation sampling, not training
+**Breadth.** Two students, both 7–8B, one evaluation format, and no reported repeat runs. The Wilson intervals cover evaluation sampling, not training
 variance, and the regression's points carry no training-seed spread. The
 authors list the model range and the single setting as limits (§7).
 
@@ -253,9 +253,7 @@ objectives amplify well beyond what SFT on the chosen responses carries.
   logit-linearity paper on subliminal effects (arXiv:2602.04863; not filed).
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — the paper
   frames the result as unintended generalization from benign data beside
-  emergent misalignment. The sycophancy concept's adjacency note treats a
-  known training origin as what separates sycophancy from emergent
-  misalignment; this paper identifies and manipulates one, in one pipeline.
+  emergent misalignment. The sycophancy concept's adjacency note treats an attributed training origin (preference optimization) as what separates sycophancy from emergent misalignment; this paper identifies and manipulates one, in one pipeline.
 
 ## Sources
 

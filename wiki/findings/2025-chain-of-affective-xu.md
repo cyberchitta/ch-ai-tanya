@@ -94,7 +94,7 @@ It is structurally distinct from the filed functional-emotional-states work, whi
 
 **No concept instantiated.** The nearest filed concept, functional emotional states, is defined over internal representations and explicitly excludes expressed emotional content in outputs. This finding measures self-report and output tone, with no activation-level evidence.
 
-- **[Functional emotional states](../concepts/functional-emotional-states.md)** — adjacent, not instantiated, for the reason above. The finding's longitudinal, feedback-rich affective *dynamics* have no counterpart in the concept's instantiations. Held as a potential sibling or extension shape pending a second example with comparable temporal structure.
+- [Functional emotional states](../concepts/functional-emotional-states.md) — **adjacent**. Not instantiated, for the reason above. The finding's longitudinal, feedback-rich affective *dynamics* have no counterpart in the concept's instantiations. Held as a potential sibling or extension shape pending a second example with comparable temporal structure.
 
 **New concept candidate.** The finding supplies the load-bearing first instantiation for a potential `concepts/affective-dynamics` entry (or “chain-of-affective” as control layer). The combination of family-specific priors, reproducible multi-phase trajectories, self-reinforcing feedback, defence styles, and multi-level (individual + human + ensemble) consequences has no close precedent in the current inventory. Codification proposed after one or two additional structurally comparable examples (different valences, different architectures, or explicit intervention on the dynamics).
 

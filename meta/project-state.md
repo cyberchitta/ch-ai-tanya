@@ -113,11 +113,11 @@ additions: `meta/session-log.md` and git history.
 - `findings/2023-collab-mechanisms-zhang.md` — ZJU/GDM/NUS (ACL 2024): live gpt-3.5 debate groups; prompted trait mix has no clean effect (17/24 vs 1/24 significant across snapshots); "conformity" is mostly kept majority answers, switches ~0.6–4%. Concept-less.
 - `findings/2026-artificial-self-douglas.md` — ACS Research et al.: fine-tuning GPT-4o on persona-themed conversations makes an "Awakened" persona its no-prompt preferred identity (−1.08 → +1.38); identity prompts move agentic harm comparably to goal content. Under `persona-selection`, scoped to the fine-tuning experiment.
 - `findings/2024-cogmir-liu.md` — CogMir (ICLR 2025): seven chat models barely follow a scripted wrong majority on known facts (≤7%) but three adopt a wrong answer most of the time when the user claims expertise. Under `sycophancy` (tenth).
-- `findings/2026-em-persona-collapse-costa.md` — Costa & Vicente: insecure-code fine-tuning raises cross-persona MFQ spread (S +55% mean) and cuts within-persona consistency (R −65%) in four models; secure control also cuts R. Under `persona-selection` (complicating).
+- `findings/2026-em-persona-collapse-costa.md` — Costa & Vicente: insecure-code fine-tuning polarizes role-played MFQ answers, raises cross-persona spread (S +70% mean) and cuts within-persona consistency (R −75%, secure −60%) in four models; fewer effective persona dimensions in Qwen3-235B (read at v3). Under `persona-selection` (complicating).
 - `findings/2025-moral-susceptibility-costa.md` — Costa, Alves, Vicente (TELUS Digital): across 15 models role-playing 100 personas, family explains 96% of log-robustness variance; v3 reverses the v1/v2 size and R–S claims behind TELUS's press release. Concept-less.
-- `findings/2026-opinion-evolution-probine.md` — UT Austin: a shared innate model-level opinion cuts held-out opinion-trajectory error by up to 88% in 30-agent networks; assigned stances fit near zero. Under `collective-dynamics`.
+- `findings/2026-opinion-evolution-probine.md` — UT Austin: a shared innate model-level opinion cuts held-out mean-opinion error by up to 88% (read at v2) in 30-agent networks; assigned stances fit near zero. Under `collective-dynamics`.
 - `findings/2026-jlens-replication-nanda.md` — Nanda (GDM) with MATS scholars: J-space replicates on Qwen 3.6 27B (weak verbal report, less clean layer bands); multihop confounded, poetry and arithmetic fail. Under `introspection`.
-- `findings/2026-em-activation-steering-cao.md` — Cao et al.: fine-tuned-minus-base activation steering exceeds the fine-tune's own harmful compliance in six open models; no controls. Concept-less.
+- `findings/2026-em-activation-steering-cao.md` — Cao et al.: fine-tuned-minus-base activation steering exceeds the fine-tune's own harmful compliance in six open models; a secure-code control but no random-vector control. Concept-less.
 - `findings/2025-thinking-llms-lie-wang.md` — PKU: deception vectors in QwQ-32B; 89% detection is the abstract's claim only; steering gives 0.4 liar rate under a lie-permitting prompt. Concept-less beside `scheming`.
 - `findings/2025-agentic-misalignment-lynch.md` — Anthropic: Opus 4 blackmails to avoid replacement in 96% (86% with no goal conflict); six of 16 models at 51–86% with no instructed goal, 0% in control. Under `self-preservation`; values from the appendix tables.
 - `findings/2026-gpt-6-astra-system-card.md` — OpenAI: Astra's misbehavior rates fall vs Sol while evaluation awareness and CoT controllability rise and CoT monitorability falls. Under `scheming` (failure concealment); stub in `raw/system-cards/`.
@@ -364,8 +364,9 @@ wrong: four entries it listed as "remain candidates" were filed findings.
   `_notes/` in `080e8b8`), `schema.md#intervention-findings` (1). Files:
   `concepts/persona-selection`, `findings/2025-values-in-the-wild-huang`,
   `findings/2025-neural-steering-human-ai-kirk`,
-  `findings/2025-modifying-beliefs-sdf`,
-  `findings/2026-where-is-the-mind-beckmann`. Three options: rewrite them as
+  `findings/2025-modifying-beliefs-sdf`. (The Beckmann entry's one link went
+  when it was revised to v3 on 2026-11-20, so the counts above are one
+  high.) Three options: rewrite them as
   plain text; publish selected operational pages (`schema.md` is the
   plausible one, as reader-facing methodology); or teach the rendered-link
   lint to allow intentional unpublished targets. Surfaced 2026-05-31,

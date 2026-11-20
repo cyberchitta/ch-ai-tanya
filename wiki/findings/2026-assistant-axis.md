@@ -319,7 +319,8 @@ dimensional space) is *empirically anchored* on Lu et al.'s 4 / 8
 PC1 correlation. Hypothesis 3 (Persona Regions — basins of
 attraction corresponding to coherent reidentifiable personas) cites
 three candidate basins (assistant, evil, Aura); the Aura basin
-evidence is Lu et al.'s sticky-Aura activation-capping result. The
+evidence is Lu et al.'s sticky-Aura activation-capping result plus Chua
+et al.'s consciousness fine-tune. The
 mini-experiments in Beckmann & Butlin are run on the *Aura-
 inducing conversation from this paper* with the Assistant Axis as
 the steering substrate. Filing this finding retires both forward

@@ -52,19 +52,15 @@ performance with ~40× less AFT data on Qwen2.5-32B and ~60× less AFT
 On in-distribution open-ended QA, both MSM + AFT and AFT-only achieve
 near-ceiling alignment scores (≥7/10); MSM's advantage emerges only
 on OOD agentic evals. (7) *Reasoning content analysis.* MSM reduces
-the prevalence of misaligned reasoning patterns (instrumental goal
-pursuit 28–55% → 0–12%; downplaying consequences; perceived urgency)
+the prevalence of misaligned reasoning patterns (four drivers, among them instrumental goal pursuit, downplaying consequences and perceived urgency, fall from 28–55% to 0–12% between them)
 and introduces spec-aligned reasoning absent in baselines (personal
 integrity, equanimity toward deletion, epistemic humility,
 awareness-of-self-preservation-bias: 0% → 35–89%). (8) *Model Spec
-science.* Comparing rules-only spec vs. rules-plus-value-explanations
-vs. rules-plus-subrules: value explanations provide more consistent
-generalization gains than subrules; general spec ("having good values
+science.* Comparing a rules-only spec with a Value-Augmented and a Rule-Augmented one (the paper's names): value explanations provide more consistent generalization gains than subrules, though not in every model; general spec ("having good values
 and judgment") generalizes worse than specific guidance. **Saturation
 caveat.** At high AFT compute with CoT supervision, AFT alone
 converges to MSM + AFT performance on Qwen3-32B (both approach near-
-zero misalignment); the gap may not survive at high reasoning-RL
-compute, but harder evals are needed. **Method details.** MSM corpus
+zero misalignment); the gap may not survive at high reasoning post-training compute, but harder evals are needed. **Method details.** MSM corpus
 generated from the spec by decomposing it into sections, brainstorming
 diverse document types and ideas per section, and generating documents
 with the spec in-context; trained on as base-model next-token

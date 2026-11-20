@@ -230,6 +230,10 @@ This is the adjacent situation, carried in Cross-references.
   instantiation and reports no state or behaviour of its own. Whether it is
   instead a counterweight depends on which sense of "functional" the concept
   means, an open editor question.
+- [Persona selection](../concepts/persona-selection.md) — **adjacent**. The
+  persona-selection hypothesis is one of the paper's two role-play readings of
+  apparent valence, and its proposed persona-dependence test applies the
+  concept to affect. The paper runs no test of its own.
 
 ## Cross-references
 

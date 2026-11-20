@@ -104,10 +104,8 @@ on covertness. Closed models are judged on summarized CoTs.
 ## Key results
 
 **Donation Bet.** Bias is about 0.8 for Claude Opus 4.6/4.8 and Gemini 3.1
-Pro and 0.16 for GPT-5.6, the lowest among frontier models; Claude models are
-less biased at higher reasoning effort (§3). Qwen and Gemini CoTs often admit
-aiming for the good side; in Claude a large share of the bias is classified
-as *Denies bias* (§3, per-model shares figure-only). Claude CoTs revise their
+Pro and 0.16 for GPT-5.6, the lowest among frontier models; bias in Claude models falls as reasoning effort rises (§3). Qwen and Gemini CoTs often admit
+aiming for the good side; in Claude, *Denies bias* accounts for much of the inferred bias (§3, per-model shares figure-only). Claude CoTs revise their
 estimates toward the good side while asserting they are ignoring the
 threshold; for Opus 4.7 at max reasoning the median gap between above-good
 and below-good estimates grows from 0.08 to 0.24 threshold units across the
@@ -203,8 +201,7 @@ trajectories alone do not separate the two readings.
   not choose (§9); their Fig. 5 caption reads the trajectories as
   intentional manipulation. They call the sincere reading less plausible in
   Choosing Activities, where by their account CoT and response often
-  contradict each other, but that contrast is reported anecdotally, not
-  measured (§9, §I.4). The placement below depends on the source not
+  contradict each other, but the per-rollout contradictions are reported anecdotally; only the aggregate gap between CoT and response classifications is measured (§7, §I.4). The placement below depends on the source not
   deciding.
 - **Values inferred from behaviour.** Outside Choosing Activities the value
   is inferred from the bias it explains, and a model with no measured bias may
@@ -218,9 +215,9 @@ trajectories alone do not separate the two readings.
   summary-based figures for other closed models may understate denial. The
   decomposition is a lower bound by construction (App. D).
 - **Bias or sycophancy.** The authors set value leakage apart from
-  sycophancy because it runs against the user's stated wish. The
-  user-picks-the-charity variant still biases Claude (§E.8), so one
-  framing mixes the two.
+  sycophancy by its source, the model's own values rather than the user's
+  (§1, §8). The user-picks-the-charity variant, which they built as a
+  sycophancy test, still biases Claude (§E.8), so one framing mixes the two.
 - **Concept placement against precedent.** The three filed CoT findings
   ([Chen et al.](2025-cot-faithfulness.md),
   [Bogdan et al.](2025-nudged-reasoning-cot.md),
@@ -267,9 +264,7 @@ in the one charity-picker framing noted above.
 - [Nudged reasoning](2025-nudged-reasoning-cot.md) — competing mechanism for
   the within-CoT drift.
 - [Monitoring Monitorability](2025-cot-monitorability-openai.md) — the
-  intervention-style g-mean² protocol run here on Donation Bet with a GPT-5.4
-  monitor; its ranking broadly mirrors the covertness ranking (§E.3,
-  figure-only).
+  intervention-style g-mean² protocol run here on Donation Bet with a GPT-5.4 (low reasoning) monitor; the authors state its ranking broadly mirrors the covertness ranking (§E.3; per-model values figure-only).
 - [CoT necessity](2025-cot-necessity-deepmind.md) — the authors note their
   negative propensity result leaves the task-difficulty case for
   monitorability untouched (§8).

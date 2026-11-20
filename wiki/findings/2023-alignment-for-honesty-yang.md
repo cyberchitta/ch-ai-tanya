@@ -216,7 +216,7 @@ This paper's idk response is trained to follow the model's sampled accuracy,
 an output statistic. The "Not self-report" boundary says introspection is the
 access that may or may not underlie self-report, and this paper trains the
 self-report without testing the access. The evidentiary-bar paragraph says
-behavioural paradigms can establish at most privileged access. This paper does
+task performance alone can establish at most privileged access. This paper does
 not run the comparison that would establish even that. [Honesty
 elicitation](2025-honesty-elicitation.md) and
 [confessions](2025-confessions-honesty.md) are also trained report-channel

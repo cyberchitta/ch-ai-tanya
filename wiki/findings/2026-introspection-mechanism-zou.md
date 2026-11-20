@@ -36,8 +36,7 @@ the answer. No judge is involved. In Qwen3-4B-IT, LLaMA-3.1-8B-IT and
 Gemma-3-12B-IT, two small sets of attention heads carry the report. Thirty-two
 jointly selected middle-layer *gate* heads move the position-or-none
 decision: restoring their clean outputs in injected runs raises the none rate
-from 37.7%, 25.3% and 23.8% to 81.5%, 60.7% and 80.7%, close to the clean-run
-rates. One or two *router* heads in a single transition layer carry which
+from 37.7%, 25.3% and 23.8% to 81.5%, 60.7% and 80.7%, most of the way to the clean-run rates. One or two *router* heads in a single transition layer carry which
 position is named: when gate and router outputs come from injections at
 different positions, reports name the router's position on 38–40% of trials
 and the gate's on 3–5%. For concepts that localize well, the injected change is
@@ -132,8 +131,8 @@ another candidate's successor token makes that candidate the most frequent
 answer on average over settings: 63.2% (Qwen), 70.0% (LLaMA) and 36.0%
 (Gemma). In Gemma the injected position still takes 27.6%, and under ordered
 digits and ordered words it outscores the redirected one (46.7% against 35.5%,
-39.4% against 33.4%) (Table 8). Router attention rises on the token after the
-injected candidate, not the candidate itself (A.14, plotted).
+39.4% against 33.4%) (Table 8). Router attention shifts toward the candidate's
+successor token rather than the injected one (A.14, plotted).
 
 **Controls.** Norm-matched random directions localize at 0.84% (Qwen), 6.71%
 (LLaMA) and 0.00% (Gemma), and leave position reports at the clean
@@ -170,7 +169,7 @@ On the anomaly-detection dispute, the paper's controls exclude less than its
 framing suggests. The random-direction result rules out a detector that
 responds to any large deviation: random directions at matched norm leave
 position reports at the clean false-positive level. It does not rule out a first-order process
-selective for directions the model uses, which is the alternative the
+selective for directions the model uses, which still falls under the first-order alternative the
 [reality-check finding](2026-introspection-reality-check-singh.md) named. The
 authors say so in their own terms: under Lindsey's criteria, a report of an
 induced change counts for them as introspective provided it is grounded and
@@ -226,9 +225,7 @@ attention heads, reasoning that a report about another position must move
 information across positions. Different task, models and injection depth, so
 the two are compatible, but the circuits are not the same circuit.
 
-**How narrow the intervals are.** The Wilson intervals treat the pooled trials
-(180,000 per bar, six settings of 30,000) as independent, which gives
-half-widths of 0.3 points or less. The
+**How narrow the intervals are.** The Wilson intervals treat the pooled trials (180,000 for most bars, 1.8 million for two) as independent, which gives half-widths of 0.3 points or less. The exception is the clean-run comparators, which rest on 180 prompts and span several points (LLaMA's clean none rate of 62.8% runs 55.5–69.5%). The
 position bootstrap, reported only for the crossed and redirection tables, is
 much wider, and in Gemma the redirection result reverses in two of six
 settings on point estimates, with overlapping bootstrap intervals (Table 11). The random-direction control ran under ordered digits only.

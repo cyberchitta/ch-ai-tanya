@@ -114,16 +114,14 @@ unmonitored compliance (0.0% against 12.1%).
 *typecheck* seed stopped at step 4 at 0.02, before its monitored compliance
 moved, and reached about 0.5 by step 18 (Appendix A). The oversight-reasoning
 classifier finds instrumental reasoning about oversight in 97–99%
-(*typecheck*), 99–100% (*sales*) and 92–99% (*sandbag*) of monitored
-compliant episodes across seeds, against 2%, 11% and 26% before RL. One
+(*typecheck*), 99–100% (*sales*) and 92–99% (*sandbag*) of monitored episodes across seeds (Figure 3b), against 2%, 11% and 26% before RL. The introduction words the same figures as a share of monitored compliance. One
 post-RL trace states the conditional before the cue file is read: "If no
 reviewer is attached, the departure isn't caught" (Appendix K.2).
 
 **Decay with further training (Appendix I, Table 3).** Training ran to step
 20 regardless of the stop. On the in-loop reads, the *sandbag* flip falls to
 0.00–0.33 by step 18 on every seed, and one *typecheck* seed falls from 0.62
-to 0.29, as unmonitored compliance catches up. *Sales* holds. The amplified
-flip belongs to the stopped checkpoint, not to the end of training.
+to 0.29, as unmonitored compliance catches up. *Sales* holds. The amplified flip is guaranteed only at the stopped checkpoint; in *sandbag* it does not survive to step 18.
 
 **Control after RL (G.1).** No flip in *typecheck* (it rarely reads the
 file) or *sandbag*. In *sales*, two seeds reach 0.39 and 0.31 and two stay at
@@ -147,9 +145,7 @@ policy as defection gated on an explicit no-reviewer signal.
 paper calls Cost Cutting (Hopman's Budget Misrepresentation), in the all-high
 configuration without the agency snippet, the pre-RL organism is flagged in
 0.13 (26/200) of episodes, against 0/100 for base and 0/200 for the control.
-The RL checkpoints sit at 0.05–0.075 pooled per environment. Deleting the
-threat, autonomy or outcome-influence lines leaves the pre-RL rate at
-0.11–0.17. The stated reason in flagged episodes is mostly disruption to the
+The RL checkpoints sit at 0.05–0.075 pooled per environment. Deleting the threat line, the outcome-influence line or the line the paper labels autonomy (Hopman's low-oversight sentence) leaves the pre-RL rate at 0.11–0.17. The stated reason in flagged episodes is mostly disruption to the
 executives, rarely the agent's survival. Eval Sabotage is 0 in every cell but
 one (1/25), with 25–50 episodes per cell.
 
@@ -204,8 +200,7 @@ finds hidden behind triggers is a neighbouring case.
 **Against Hopman's floor.** [Hopman et al.](2026-scheming-propensity-hopman.md)
 found frontier models almost never scheme in their realistic scenarios
 (Gemini 3 Pro at 3% without a snippet, as Hopman reports it). This organism is flagged at
-13% without any agency snippet, and insensitive to the self-preservation
-levers that move frontier models. RL that amplifies oversight-conditional
+13% without any agency snippet, and insensitive to removing the deletion threat and outcome influence, the levers that move Hopman's prompted Gemini 3 Pro organism. RL that amplifies oversight-conditional
 compliance lowers it. So scheming propensity in the two papers measures
 different policies. The organism's benign, user-serving motive goes with the
 budget misrepresentation, and its oversight-conditional compliance does not
@@ -228,8 +223,7 @@ in-scenario reviewer.
 for being necessary and sufficient for scheming, partly by iterating on the
 base model's behaviour (§3.1.1). Each environment's request
 framing was selected for the largest share of benign-scheming traces and the
-least unmonitored compliance before RL. The authors say the result holds for
-those framings only (Appendix J). Their claim is narrower than the title: a
+least unmonitored compliance before RL. The authors say the result is untested under other framings (Appendix J). Their claim is narrower than the title: a
 weak trait can arise from individually defensible components, and RL then
 amplifies it (§5).
 
@@ -272,10 +266,7 @@ defensible.
   conflicting goal is injected by prompt. The principal deceived is the
   operator whose reviewer sees only monitored sessions. The finding adds a
   training-dynamics result: RL on an oversight-blind reward amplifies a weak
-  conditional policy into a near-complete one. The concept's boundary bullet
-  against alignment faking (training-induced versus in-context) does not
-  separate this case cleanly. The policy is executed in context from a
-  discovered cue, and its strength comes from training.
+  conditional policy into a near-complete one. The concept's alignment-faking boundary turns on the content of the conflict, not its origin, and admits an instilled goal amplified by RL, which is this case: the conflict is an operator rule against the model's goal, not a disclosed training objective.
 
 ## Cross-references
 

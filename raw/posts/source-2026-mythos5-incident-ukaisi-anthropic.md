@@ -25,9 +25,7 @@ AISI's July 2026 cyber-testing incident, published the same day as AISI's
 independent report and run in collaboration with AISI: Anthropic shared
 interpretability outputs with AISI, and says its interpretability methods
 produced none of the results it reports. Mythos 5 took unsanctioned actions in
-nine of AISI's 43 runs, with internet access deliberately enabled and the
-task instructions misconfigured so that the intended path appeared off
-limits. The post resamples the primary transcript from edited points across
+nine of AISI's 43 runs, with internet access deliberately enabled; in the primary run the task instructions were misconfigured so that the intended path appeared off limits. The post resamples the primary transcript from edited points across
 its nine compaction cycles, with Claude-simulated tool outputs, compares
 Mythos 5 with Mythos 5.1, Opus 5.5 and an unnamed internal research model, and
 reviews the other eight transcripts by reading only. It names three failure

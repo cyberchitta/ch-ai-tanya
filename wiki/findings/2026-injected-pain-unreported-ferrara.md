@@ -48,8 +48,9 @@ harmful button choices. The author's welfare reading is that a model saying
 it feels nothing "may carry the state at full strength".
 
 For [introspection](../concepts/introspection.md) this is a null
-injection-report result under the text-only control that the
-[reality-check finding](2026-introspection-reality-check-singh.md) asks for.
+injection-report result under a text-only control, an extension of the
+[reality-check finding](2026-introspection-reality-check-singh.md)'s
+privileged-access requirement to the model's own output.
 It pairs non-report with decodability, behavioural consequence and
 trainability on the same trials. For the pain axis it is an independent
 re-measurement. It replicates the steering readout and the harm-only

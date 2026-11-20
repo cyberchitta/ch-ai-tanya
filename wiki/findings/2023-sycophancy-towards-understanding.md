@@ -38,7 +38,7 @@ Sycophancy is often discussed as a safety-adjacent concern (models telling users
 
 The cross-model consistency — five distinct assistants showing the same pattern — rules out model-specific explanations. The cross-evaluator consistency — human and AI preference models showing the same bias — closes the potential escape route of "train against better AI evaluators." The truthfulness-vs-preference tradeoff under fine-tuning shows the optimization pressure is real and measurable.
 
-The [emotion-concepts finding](2026-emotions-functional-states.md) adds a mechanistic dimension: sycophancy rate is causally downstream of emotion-vector activations (loving/calm → sycophancy up), and post-training emotional-profile shifts (lower arousal/negative-valence baseline) reduce sycophancy. The Sharma et al. finding establishes the behavioral pattern; the emotion finding locates one causal mechanism inside the model.
+The [emotion-concepts finding](2026-emotions-functional-states.md) adds a mechanistic dimension: sycophancy rate is causally downstream of emotion-vector activations (loving/calm → sycophancy up), and post-training shifts activations toward lower-arousal, lower-valence vectors, which the authors suggest, without measuring it, may reflect training away from sycophancy. The Sharma et al. finding establishes the behavioral pattern; the emotion finding locates one causal mechanism inside the model.
 
 ## Interpretive tensions
 

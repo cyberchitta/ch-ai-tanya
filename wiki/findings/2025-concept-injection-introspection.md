@@ -59,8 +59,8 @@ Jack Lindsey noted the key result was not concept identification per se, but the
 **Detection is compatible with anomaly detection.**
 [Singh, Linzen and Ravfogel](2026-introspection-reality-check-singh.md) argue that noticing an
 injected concept needs only a first-order signal that something is off, not a
-process that reads internal state as content, and that behavioural evidence of
-this kind can establish privileged access but not second-order introspection. In
+process that reads internal state as content, and that task performance alone can establish privileged access but not second-order
+introspection. In
 open-weight models, their three-way control (injection vs. the same concept
 delivered through a manipulative prompt vs. neither) shows detection that does
 not distinguish the two sources. Two caveats cut the other way: Claude was not

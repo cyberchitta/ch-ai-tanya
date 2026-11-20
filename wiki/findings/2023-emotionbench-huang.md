@@ -112,6 +112,8 @@ With [chain-of-affective](2025-chain-of-affective-xu.md) this is the second file
 
 This is the adjacent situation, carried in Cross-references. The concept already admits one behavioural instantiation, the [Opus 4 welfare assessment](2025-opus-4-welfare-assessment.md), as the upstream-trigger companion to a mechanistic finding on the same model family. Nothing here has a mechanistic companion on the same models, and the Evoked prompt asks about an imagined human rather than the model. [Introspection](../concepts/introspection.md) is not instantiated either. The paper does not check its self-reports against any internal state, so it says nothing about access.
 
+- [Functional emotional states](../concepts/functional-emotional-states.md) — **adjacent**. The only measure is PANAS self-report in text, which the Definition sets aside, and the Evoked prompt asks about an imagined human protagonist rather than the model.
+
 ## Cross-references
 
 - [Functional emotional states](../concepts/functional-emotional-states.md) — adjacent, not instantiated. The finding supplies the self-report side that the concept's definition sets aside, and its fine-tuning and stability results are evidence that this side can move independently of anything the concept's instantiations measure.

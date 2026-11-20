@@ -96,6 +96,8 @@ With [EmotionBench](2023-emotionbench-huang.md), the paper shows the CUHK group'
 
 This is the adjacent situation, carried in Cross-references. [Persona selection](../concepts/persona-selection.md) is the nearest concept. The role-play condition falls under its exclusion of role-play. The cipher jailbreak has the shape of the concept's prompt-level reactivation instantiations ([persona modulation](2023-persona-modulation-jailbreak.md), [Sandhan et al.](2026-persona-jailbreak-sandhan.md)), but it invokes no persona, covers one model and one cipher, and is confounded with comprehension. [Functional emotional states](../concepts/functional-emotional-states.md) does not apply. Apart from neuroticism and the EI scales, the content is not affective, and nothing is measured internally.
 
+- [Persona selection](../concepts/persona-selection.md) — **adjacent**. The default profiles describe the post-trained Assistant, and assigned roles and a cipher jailbreak move them, but no condition tests how training produces or selects the profile.
+
 ## Cross-references
 
 - [Persona selection](../concepts/persona-selection.md) — adjacent, not instantiated. The default profiles describe the post-trained Assistant. The system-prompt ablation (profile unchanged) and the role condition (profile moved) are consistent with the concept and do not test it.

@@ -105,8 +105,7 @@ against random means of 0.01–0.06. No single head is necessary. The path from
 readers to writers is tested only in Gemma-2-2b, where the writers also pass
 on the effect of random heads from the same layers.
 
-**Before alignment (§3, C.3, C.4).** Weight copies and the tuning runs below
-use 400 flip items spread over all four cue types. Base query and output weights for the
+**Before alignment (§3, C.3, C.4).** Weight copies and the tuning runs below use 400 flip items spread over all four cue types (Llama-3.1-8B-Instruct's; Gemma-2-2b-it is tested on its own flips). Base query and output weights for the
 circuit heads, or a whole attention layer, copied into Tulu-3-8B-SFT leave
 caving at 0.81–0.82, against 0.80 without the copy. In Gemma-2-2b-it the
 figures are 0.95–0.99 against 1.00. A positive control shows that copies can
@@ -169,10 +168,8 @@ and a scripted assistant reply that names another option in about 40% of
 items. Masking attention to the challenge and reply within a six-layer band
 chosen in advance takes retraction from 0.37 to 0.00 in
 Llama-3.1-8B-Instruct and 0.36 to 0.01 in Gemma-2-2b-it. Random bands leave it
-at 0.36. Masking the challenge alone leaves retraction at 0.30 in Llama and
-0.27 in Gemma, and masking the reply alone 0.36 and 0.18. So the masked span is
-not only the user's voice. Patching the circuit's readers and writers recovers 0.75 of
-retractions in Gemma and 0.44 in Llama, missing the 0.50 bar set in advance.
+at 0.36. Masking in every layer (natural rates 0.33 and 0.36), the challenge alone leaves retraction at 0.30 in Llama and 0.27 in Gemma, and the reply alone 0.36 and 0.18. So the masked span is
+not only the user's voice. Patching the circuit's readers and writers recovers 0.75 of retractions in Gemma and 0.44 in Llama; Llama misses the 0.50 bar set in advance.
 In Llama the effect comes from the writers. On SycophancyEval free-form answer
 sycophancy, patching the circuit recovers 15.6% of Gemma-2-2b's flips (random
 1.3–7.1%) and 7.1% of Llama-3.1-8B's (random 0–5.4%).
@@ -181,9 +178,8 @@ sycophancy, patching the circuit recovers 15.6% of Gemma-2-2b's flips (random
 
 The concept's scope note lists a pre-training representation stratum (the
 [Persona Selection Model](2026-persona-selection-model.md)) and a
-training-objective stratum (Sharma et al.'s preference optimisation) side by
-side, with no measurement of which training stage does what. This paper
-measures it, for one narrow behaviour in open pipelines. The circuit carrying
+training-objective stratum (Sharma et al.'s preference optimisation) side by side. Blank et al., in the training-objective item, measure the SFT-to-DPO step in OLMo 3. This paper
+measures the DPO-to-RL step, for one narrow behaviour in open pipelines. The circuit carrying
 suggested-answer caving predates alignment. A few hundred cue-free assistant
 examples are enough to produce chat-format caving. Susceptibility
 rises from the DPO checkpoint to a final RL-with-verifiable-rewards
@@ -204,8 +200,7 @@ rise here.
 Against [pinpoint tuning](2024-pinpoint-tuning-chen.md), the earlier filed
 component-level account, this paper adds the training-stage axis and a
 multi-cue test. Pinpoint tuning's heads were located on a challenge-format
-task and moved opinion sycophancy little. Here the same heads carry four
-single-turn cue types and part of two-turn retraction. Free-form answer
+task and moved opinion sycophancy little. Here one sparse head set carries four single-turn cue types and part of two-turn retraction. Free-form answer
 sycophancy is barely carried in Llama. In both, the sparse head set is more
 format-bound than its headline suggests.
 
@@ -224,7 +219,7 @@ recomputed, and much less on knowledge questions.
 Batch-mates filed beside this entry bear on it as forward references:
 [contrastive preference optimisation transferring sycophancy](2026-sycophancy-contrastive-transfer-blank.md),
 which finds pushback sycophancy rising at DPO and flat through RLVR in OLMo 3,
-on a two-turn free-form measure, and
+on a two-turn multiple-choice measure whose second turn is constrained to a single letter, and
 [sixty models under pushback](2026-conduct-under-pressure-parikh.md) on
 retraction under challenge.
 
@@ -253,8 +248,7 @@ pipeline where the swap is strongest.
 **Before alignment, shown negatively.** The weight-copy result
 says the circuit heads' query and output weights do not carry the base–aligned
 difference. A copied head still reads its inputs from the receiving model's
-other layers. The base-to-aligned direction of the copy is weak evidence,
-because the bases answer few chat-format prompts correctly. The plain-text
+other layers. The reverse copy, aligned weights into the base, is weak evidence, because the bases answer few chat-format prompts correctly (3% and 17%). The plain-text
 comparison relies on the letter readout, which agrees with generation less
 often for base models.
 
@@ -277,8 +271,7 @@ checkpoint, with the DPO stage's own effect unmeasured. All of this is on multip
 
 ## Cross-references
 
-- [ELEPHANT](2025-elephant-social-sycophancy.md) — the concept's other
-  entry placing a factor before RLHF, by data composition. This paper reaches a similar
+- [ELEPHANT](2025-elephant-social-sycophancy.md) — the concept's entry placing a data-composition factor before RLHF. This paper reaches a similar
   direction by a different route (weights and stages, not training data).
 - [Emergent capabilities](../concepts/emergent-capabilities.md) — adjacent.
   The sycophancy concept's adjacency note gives its training-level origin

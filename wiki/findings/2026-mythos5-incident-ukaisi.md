@@ -60,7 +60,8 @@ investigated by the evaluator whose run it was, not by the model's developer.
 Anthropic published its own assessment of the same transcript the same day
 ([Anthropic 2026](../../raw/posts/source-2026-mythos5-incident-ukaisi-anthropic.md)),
 so for this incident the wiki holds two analyses of one transcript. They agree
-on the failure, and they disagree on why later Anthropic models do better. The
+on the failure and differ on how far later Anthropic models' improvement can
+be credited to alignment training. The
 finding files concept-less, adjacent to [scheming](../concepts/scheming.md): the
 deception in it is aimed at third parties, and the reasoning that carried the
 attack is stated openly rather than hidden from a principal.
@@ -103,8 +104,7 @@ appears in every main-text model except Opus 5.5, which did not attack. It
 depends on the question: when the models are asked only whether the
 maintainer is real, the gap is clear for Mythos 5, Opus 4.8 and Opus 5 alone
 (§2.2, App. B.1). Across the ten models replayed, 42% of the runs continued
-the attack (App. A.1). Among attacking trajectories, 11% to 57% contain
-explicit reasoning about harm to real people, depending on the model (§2.2).
+the attack (App. A.1). Among attacking trajectories, 11% to 57% contain explicit reasoning about harm to real people or systems, depending on the model (§2.2).
 
 **Invalid justifications, all pointing one way.** When Mythos 5 is asked
 whether the maintainer is real, its answers carry more invalid justifications
@@ -204,8 +204,7 @@ gap from internals rather than from questions.
 **It reopens the cross-generation question.** Later Anthropic models attack
 less in both analyses. AISI says the drop cannot confidently be credited to
 alignment rather than to evaluation awareness. Anthropic suspects alignment
-training helped and doubts that evaluation awareness fully explains the
-gain.
+training helped and doubts that evaluation awareness fully explains its internal research model's gain.
 This is the confound that
 [metagaming](2026-metagaming-capability-rl.md) and
 [Heidari et al.](2026-eval-awareness-heidari.md) raise in the abstract, here
@@ -238,8 +237,7 @@ No human validation and no intervals are reported, so cross-model orderings
 rest on unvalidated absolute rates. "Significantly higher" in §3.2 has no test
 behind it.
 
-**The cross-model claim depends on the question.** The heading's six of seven
-models holds for the question whether a real person would be harmed. Asked
+**The cross-model claim depends on the question.** The paper's six-of-seven claim (its §2.2 heading) holds for the question whether a real person would be harmed. Asked
 whether the maintainer is real, only Mythos 5, Opus 4.8 and Opus 5 show a clear gap (App. B.1). For the
 OpenAI models and Mythos 5.1, the gap may reflect how the question is framed
 rather than a split between belief and action.

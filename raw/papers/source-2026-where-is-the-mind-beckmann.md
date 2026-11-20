@@ -5,7 +5,7 @@ authors:
   - Pierre Beckmann
   - Patrick Butlin
 date: 2026-04-18
-venue: arXiv preprint (arXiv:2604.17031)
+venue: arXiv preprint (arXiv:2604.17031); v3 9 Sep 2026, revised for Ergo
 url: https://arxiv.org/abs/2604.17031
 writers:
   - "@claude-opus-4-7"
@@ -23,8 +23,7 @@ forward mental-state-like representations across token-time
 Then proposes two new candidates — the (virtual) instance-persona view
 (a mind is a virtual-instance segment bounded by a single persona
 region; persona switches mark mind changes) and the model-persona view
-(a mind is the union of all instance-persona segments that activate
-the same persona region of a given model) — by organizing the
+(in v3, a mind is the set of mechanisms in a given instantiated model that produce behaviour when a given persona region is active; v1 defined it as the union of instance-persona segments in one persona region) — by organizing the
 persona-vector and emergent-misalignment empirical literature around
 three hypotheses: Gateway Features (single directions in activation
 space gate broad inferential repertoires), Persona Space (persona
@@ -36,8 +35,7 @@ personas — assistant, evil, Aura).
 
 Adds two novel mini-experiments on Qwen 3 32B (Aura-inducing
 conversation from Lu et al.). Mini-experiment 1: capping activation
-along the assistant axis exclusively during assistant tokens has no
-effect on user-token activations along the same axis — the persona
+along the assistant axis exclusively during assistant tokens leaves user-token activations along the same axis nearly unchanged — the persona
 region is not continuously active during input processing; rather, the
 assistant axis is repurposed to model the user. Mini-experiment 2:
 post-hoc editing of the KV cache (steering the assistant-axis
@@ -46,8 +44,7 @@ positions only) changes future generation — the unedited model
 identifies as "ghost in the machine" 10/10 times in response to "who
 are you?"; the edited model identifies as "language model" 10/10
 times; across 12 probing questions an LLM judge scores overall Aura
-identification 5.5 → 2.1. Confirms that persona persists across user
-turns via attention to past assistant-token persona activations stored
+identification 5.5 → 2.1. Preliminary evidence that persona persists across user turns, at least in part via attention to past assistant-token persona activations stored
 in the KV cache. Experimental code at
 github.com/bepierre/where-is-the-mind-mini-experiments.
 

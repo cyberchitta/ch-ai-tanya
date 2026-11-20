@@ -19,9 +19,7 @@ independent researcher. CC BY 4.0. Local copies:
 page `source-2026-injected-belief-confab-ou-abs.html`. No code or data URL is
 given; a supplement with transcripts is mentioned (App. H) without a link.
 
-Ou injects the "forming-trace" of an off-topic concept (the model's own
-residual state as it prepares to write about that concept, with a shared PCA
-component removed) into six open-weight reasoning models, 7–32B, while they
+Ou injects the "forming-trace" of an off-topic concept (the model's residual state at the end of a prompt asking for a haiku on that concept, with a shared PCA component removed) into six open-weight reasoning models, 7–32B, while they
 are asked to write a haiku about a different topic. The models write about
 the injected topic, quote it back as their request, and under warnings that
 name the true topic still answer with the injection, sometimes inventing a
