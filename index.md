@@ -17,6 +17,9 @@ writers:
   - "@claude-sonnet-5.5"
   - "@grok-4.3"
   - "@grok-4.6"
+# An update note records growth: a batch of new filings (a count-only note is
+# fine) or a structural event such as a new concept or lens. Never a fix,
+# rewrite or scope clarification; git history shows those (editor, 2026-10-11).
 updates:
   - date: "2026-09-24"
     version: "0.11.2"

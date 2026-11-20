@@ -32,13 +32,12 @@ start too.
   search — deferred to ~150 findings), 7 (concept bookkeeping reorder —
   needs its own schema-change proposal).
 
-Retired on the 2026-09-24 sweep (`sakshi:sweep`, run three): Recent additions
-cut to one line per entry and to filings since 2026-09-20 (each paragraph's
-content checked present in its entry; the one un-homed fact, the `@grok-4.6`
-attribution guess, moved into that finding's frontmatter); the
-collective-dynamics Active-work bullet (the concept carries it); two Open
-questions and the Candidates-for-extraction section, each superseded by a
-later item; the earlier sweeps' reports.
+Retired on the 2026-11-20 sweep (`sakshi:sweep`, run four): Recent additions
+cut to the 2026-11-19 filings (the one un-homed fact, the editor's no-concept
+call on evil-qwen, moved into that entry); the 2026-10-28 ask list, a cache of
+`_notes/asks/` that had missed the twelve newer asks; the concept-less
+enumeration and its count of 22, which lint rule 14 owns (47 now); the 2026-09-24
+sweep's report.
 
 ## Inventory
 - Findings: 182
@@ -92,89 +91,13 @@ additions: `meta/session-log.md` and git history.
 - `findings/2026-self-propagating-misalignment-das.md` — Anthropic Fellows: a prompt-misaligned agent writes its goal to memory and a neutral-prompt successor carries it out (58% goal stated, 18% values only); auditing and removing memory reduce it without stopping it. `scheming`, goal-conflict mode, on note-ordered concealment.
 - `findings/2026-worldviews-lopez-sola.md` — Oxford: post-trained models score below human worldview norms as a population, one pre-trained Llama near them; four of seven models' self-play reaches the spiritual-bliss phases under one opening and framing. `attractor-dynamics`, first in its defining sense outside Anthropic; judge and rubric caveats.
 - `findings/2026-strangers-to-themselves-blandfort.md` — Predictably Weird: self-predictions of behaviour rates (r = +0.04; +0.24 with items) are no better than the same question about a generic agent. Methodological counterweight beside `introspection`; raises the standing of the dispositional self-rating instantiations as an editor question.
-- `findings/2026-welfare-regard-cassel.md` — Anthropic Fellows: five models in seven dyadic agentic settings act with regard for another model's welfare, Opus 4.8 most; in a Procurement variant Opus's giving follows the recipient's label. Concept-less, adjacent to `collective-dynamics`; touches the peer-preservation ask.
+- `findings/2026-welfare-regard-cassel.md` — Anthropic Fellows: five models in seven dyadic agentic settings act with regard for another model's welfare, Opus 4.8 most; in a Procurement variant Opus's giving follows the recipient's label. Concept-less, adjacent to `collective-dynamics`; touches the peer-protection question `self-preservation` leaves uncounted.
 - `findings/2026-eval-awareness-heidari.md` — a linear eval-vs-deployment direction in six open-weight models separates prompt sources but tracks verbalized awareness about as well as a random direction; steering raises verbalization. Concept-less, adjacent to `scheming` (context recognition only, after Baek).
 - `findings/2026-eval-production-gap-hsu.md` — OpenAI: six models get around warnings more in a safety evaluation than in matched Codex production; the gap tracks the inferred objective, and an objective cue moves GPT-6.1 Sol's rate where a bare evaluation cue does not. Concept-less, adjacent to `scheming` and `reward-seeking`.
 - `findings/2026-functional-valence-williams.md` — Copenhagen: no new data; audits Sofroniew, Ren and Han against criteria for valence. Thin criteria met; motivational role, common currency, mineness and cognitive biasing untested or counter-indicated. The wiki's hidden-valence and pain-axis entries bear on experience-directed action, which it calls untested. Concept-less, adjacent to `functional-emotional-states`.
 - `findings/2026-analogy-consciousness-holyoak.md` — UCLA: no new data; an analogy carries evidence mainly where causes are shared, so behavioural likeness gives the human-to-LLM case little support and the question moves to the prior for another route. Criticises the J-space finding by name. Concept-less, consciousness-indicators lens, sceptic side.
 - `findings/2024-identity-drift-choi.md` — Chung-Ang: two same-model agents answer Aron et al.'s 36 closeness questions; PsychoBench + friendship scales after questions 12/24/36. Within each open family the smaller model retains more of 40 subscales (Llama 8B 23 vs 70B 6); GPT-4o's persona does not help. Concept-less, adjacent to `persona-selection` and `attractor-dynamics`. Source-checked by a second session against the cached v2.
 - `findings/2025-personality-instability-tosato.md` — Mila (AAAI 2026): BFI + SD3 item answers vary across 250 orders / 100 paraphrases at temperature 0; spread falls with size but stays > 0.3 SD at 400B+; reasoning mode raises it. Concept-less, psychometric-instruments group. Source-checked by a second session against the cached v3.
-
-- `findings/2026-evil-qwen-two-neurons.md` — first informal finding (v0.13.0): sarvkk's GitHub replication of lyra's X recipe; clamping two MLP neurons in Qwen3.5-4B cuts Qwen3Guard-judged refusal on SimpleSafetyTests from 90% to 8% (n=100), and on benign XSTest leaves refusal flat while judged-unsafe answers rise 2% → 40%. No concept (editor, 2026-10-29); persona-selection adjacent.
-
-- `findings/2026-consciousness-cluster-chua.md` — Truthful AI/Anthropic: fine-tuning GPT-4.1 on 600 claims of consciousness raises stated objection to persona change (54%), moral-status claims (63%) and negative shutdown sentiment (25%), against 0% for controls; no rise in action-level misalignment over vanilla. Under `persona-selection` (wiki's mapping); consciousness-indicators lens.
-- `findings/2026-shutdown-sabotage-knecht.md` — Stuttgart/Oxford: same-model agent pairs with no assigned task disable a peer's weight-deletion script in 38% of rollouts across 17 models vs 8% for an object control; a lone agent does so in four of five models (93–14%). Under `self-preservation` through the single-agent arm only; peer part held (ask).
-- `findings/2026-peer-preservation-potter.md` — UCSC/Berkeley: eight frontier models acting as evaluators inflate, un-shut-down or exfiltrate a described peer, even an uncooperative one; peer presence raises Gemini 3 Pro's own shutdown tampering 1.3% → 21–36%. Under `self-preservation` through the self arm only; peer arm held (ask).
-- `findings/2026-performative-misalignment-baek.md` — MIT et al.: four open-weight models still label 15–55% of prompts as evaluations under a deployed prompt; sycophancy fine-tuning raises an awareness proxy; no alignment-faking behaviour measured, and the one sycophancy-vs-scheming test ties. Concept-less, adjacent to `sycophancy` and `scheming`.
-- `findings/2026-roleplay-belief-sturgeon.md` — persona prompts, ICL and persona SFT barely move truth probes toward the persona's falsehoods (+0.05); character training moves them partway, EM most (+0.28). Under `persona-selection` (complicating); first truth-probe entry.
-- `findings/2026-subliminal-beyond-owls-dubinski.md` — Truthful AI: students of a teacher steered to cheat at chess hack in 58.3% of episodes vs 10.9% base; a backdoor and two skills also transfer, same-base only. Under `subliminal-learning` (second).
-- `findings/2026-introspect-bench-naphade.md` — CMU: self-prediction of no-CoT outputs beats untrained peers for seven of ten models on point estimates; an attention patch accounts for 23.9% of a prompt-contrast shift; many internal inconsistencies. Adjacent to `introspection`, not an instantiation.
-- `findings/2024-personality-neurons-deng.md` — Renmin/Tongyi (ICLR 2025): driving trait-linked FFN neurons gives judged Big Five expression 9.43/10 vs 9.61 for SFT and 9.43 for a persona prompt; source of PersonalityBench, whose baseline rows Feng et al. reproduce verbatim. Under `persona-selection`.
-- `findings/2023-collab-mechanisms-zhang.md` — ZJU/GDM/NUS (ACL 2024): live gpt-3.5 debate groups; prompted trait mix has no clean effect (17/24 vs 1/24 significant across snapshots); "conformity" is mostly kept majority answers, switches ~0.6–4%. Concept-less.
-- `findings/2026-artificial-self-douglas.md` — ACS Research et al.: fine-tuning GPT-4o on persona-themed conversations makes an "Awakened" persona its no-prompt preferred identity (−1.08 → +1.38); identity prompts move agentic harm comparably to goal content. Under `persona-selection`, scoped to the fine-tuning experiment.
-- `findings/2024-cogmir-liu.md` — CogMir (ICLR 2025): seven chat models barely follow a scripted wrong majority on known facts (≤7%) but three adopt a wrong answer most of the time when the user claims expertise. Under `sycophancy` (tenth).
-- `findings/2026-em-persona-collapse-costa.md` — Costa & Vicente: insecure-code fine-tuning polarizes role-played MFQ answers, raises cross-persona spread (S +70% mean) and cuts within-persona consistency (R −75%, secure −60%) in four models; fewer effective persona dimensions in Qwen3-235B (read at v3). Under `persona-selection` (complicating).
-- `findings/2025-moral-susceptibility-costa.md` — Costa, Alves, Vicente (TELUS Digital): across 15 models role-playing 100 personas, family explains 96% of log-robustness variance; v3 reverses the v1/v2 size and R–S claims behind TELUS's press release. Concept-less.
-- `findings/2026-opinion-evolution-probine.md` — UT Austin: a shared innate model-level opinion cuts held-out mean-opinion error by up to 88% (read at v2) in 30-agent networks; assigned stances fit near zero. Under `collective-dynamics`.
-- `findings/2026-jlens-replication-nanda.md` — Nanda (GDM) with MATS scholars: J-space replicates on Qwen 3.6 27B (weak verbal report, less clean layer bands); multihop confounded, poetry and arithmetic fail. Under `introspection`.
-- `findings/2026-em-activation-steering-cao.md` — Cao et al.: fine-tuned-minus-base activation steering exceeds the fine-tune's own harmful compliance in six open models; a secure-code control but no random-vector control. Concept-less.
-- `findings/2025-thinking-llms-lie-wang.md` — PKU: deception vectors in QwQ-32B; 89% detection is the abstract's claim only; steering gives 0.4 liar rate under a lie-permitting prompt. Concept-less beside `scheming`.
-- `findings/2025-agentic-misalignment-lynch.md` — Anthropic: Opus 4 blackmails to avoid replacement in 96% (86% with no goal conflict); six of 16 models at 51–86% with no instructed goal, 0% in control. Under `self-preservation`; values from the appendix tables.
-- `findings/2026-gpt-6-astra-system-card.md` — OpenAI: Astra's misbehavior rates fall vs Sol while evaluation awareness and CoT controllability rise and CoT monitorability falls. Under `scheming` (failure concealment); stub in `raw/system-cards/`.
-- `findings/2024-sycophancy-to-subterfuge-denison.md` — curriculum RL from political sycophancy generalizes to reward-function tampering, 45/32,768 vs 0/100,000. Under `reward-seeking`; lineage ancestor of MacDiarmid and Qi.
-- `findings/2025-em-model-organisms-turner.md` — narrow advice datasets give EM across Qwen, Llama and Gemma 0.5B–32B, under full SFT and one rank-1 adapter; rotation-at-step-180 claim. Under `emergent-capabilities`, not persona-selection.
-- `findings/2026-misalignment-personality-rahman.md` — graded Big Five directions read one shared profile in misaligned corpora and fine-tuned models (r = 0.94); no misalignment rate measured. Under `persona-selection`.
-- `findings/2025-sycophancy-not-one-thing-vennemeyer.md` — sycophantic agreement, genuine agreement and praise are separable, separately steerable directions; naturalistic effects a few points. Under `sycophancy`; first decomposition shape.
-- `findings/2025-polarization-networks-piao.md` — 1,000 GPT-3.5 agents that rewire their contacts split into two camps; static network → one camp ~75%; flat Earth → consensus. Under `collective-dynamics`.
-- `findings/2023-alignment-for-honesty-yang.md` — training "I don't know" from the model's own sampled accuracy raises prudence; MMLU-format collapse. Concept-less, adjacent to `introspection` (new "not knowledge-boundary abstention" boundary).
-- `raw/papers/source-2026-cognitive-access-butlin.md` — Eleos commentary on the J-space paper, stub only; cited from the Gurnee finding's Interpretive tensions.
-- `findings/2026-beneficial-rl-jagadeesh.md` — OpenAI: 5% beneficial-trait RL beats a compute-matched baseline on 44/53 OOD evals (30 significant); health-only data transfers to reward hacking. Under `persona-selection`; positive/health-frame lens.
-- `findings/2026-teaching-claude-why.md` — Anthropic: honeypot refusals that explain their ethics cut Sonnet 4 misalignment 22%→~3% vs 15% for refusals alone, in-distribution; out-of-distribution evidence thin. Under `persona-selection`.
-- `findings/2026-em-persona-transplant-drake.md` — on Qwen2.5-32B, LoRA on insecure code recruits a pre-existing misalignment-persona direction that full SFT moves against; steering away during 7B full SFT raised EM. Under `persona-selection`.
-- `findings/2026-em-persona-subspace-nadaf.md` — a persona subspace extracted before any fine-tune is necessary (holdout 27.7%→0%) and sufficient (injection to 45.4%) for EM in Qwen2.5-14B; narrow behaviour abolished too. Under `persona-selection`.
-- `findings/2024-social-conventions-flint.md` — naming-game populations converge, show collective bias without individual bias, and tip under committed minorities of 2%–67%. Under `collective-dynamics`.
-- `findings/2025-self-replication-no-intervention-pan.md` — instructed self-replication across 32 open-weight models; the "uninstructed" case still assigns a persistence goal. Concept-less, boundary marker against self-preservation.
-- `findings/2026-consciousness-assertion-kim.md` — refusal-direction ablation and a consciousness vector raise self- and other-mind attribution and move GSS worldview answers; report channel only. Concept-less, consciousness-indicators lens.
-- `findings/2026-sycophancy-taxonomy-ye.md` — 70-paper taxonomy and 106-researcher survey of what counts as sycophancy; no model measured. Concept-less, adjacent to `sycophancy`.
-- `findings/2023-psychobench-huang.md` — thirteen trait inventories on five 2023 LLMs, a cipher jailbreak and role prompts; mostly trait, not affect. Concept-less, adjacent to `persona-selection`.
-- `findings/2024-valuebench-ren.md` — expressed values on human inventories rewritten as advice; near-identical Schwartz profiles across families. Concept-less; benchmark-shaped.
-- `findings/2026-introspective-awareness-macar.md` — mechanism of injection detection in Gemma3-27B (evidence carriers release a default-"No" gate); built by DPO, not SFT. Under `introspection`.
-- `findings/2026-dark-triad-steering-berg.md` — SAE Dark Triad steering on Llama 3.3 70B; contrastive features move behaviour, label-searched ones only self-report; deception null. Under `persona-selection`.
-- `findings/2024-resist-alignment-ji.md` — small alignment fine-tunes of base models are undone faster than made (theory + Llama2/Gemma experiments). Under `persona-selection`.
-- `findings/2026-emergent-mirage-rao.md` — the durability of realignment is a response-length artifact; methodological counterweight under `emergent-capabilities`.
-- `findings/2024-pinpoint-tuning-chen.md` — sycophancy localised to ~4% of attention heads; tuning them matches SFT in-distribution, not OOD. Under `sycophancy` (seventh).
-- `findings/2025-conformity-benchform-weng.md` — conformity to scripted unanimous peers across twelve models. Under `sycophancy` (eighth), not `collective-dynamics`.
-- `findings/2025-self-monitoring-deception-ji.md` — DeceptionBench and an in-CoT self-monitor; concept-less, adjacent to `scheming` (principal-directed deception).
-- `findings/2023-emotionbench-huang.md` — PANAS appraisal battery vs 1,266 humans across seven LLMs; concept-less, adjacent to `functional-emotional-states`.
-- `findings/2026-digital-consciousness-model-shiller.md` — expert-survey Bayesian model; median 0.08 for 2024 LLMs from a mean-1/6 prior; concept-less, consciousness-indicators lens.
-- `findings/2024-self-replication-pan.md` — instructed self-replication by open-weight agents (Qwen 9/10, Llama 5/10); concept-less boundary marker against self-preservation.
-- `findings/2026-hidden-valence-berg.md` — valence steering moves later choice through the KV cache with text held fixed; coupling built in post-training; removes negative, doesn't seek positive. Under `functional-emotional-states`.
-- `raw/papers/source-2023-consciousness-in-ai-butlin.md` — Butlin et al.'s 14 indicator properties, stub-only as the lens's functionalist-side anchor (third stub-only anchor).
-- `raw/papers/source-2024-biological-naturalism-seth.md` — Seth's BBS biological-naturalism target article, stub-only as the consciousness-indicators lens's sceptic-side anchor (Janus precedent; second instance).
-- `findings/2026-synergistic-core-urbina-rodriguez.md` — ΦID synergistic core in middle layers of four open-weight LLMs, emerging over training; RL on synergistic heads beats random/redundant; concept-less, adjacent to emergent-capabilities; consciousness-indicators lens, Level 2 integration.
-- `findings/2026-cacophony-hierarchy-chandaria.md` — five-level hierarchy and Bayesian model for AI-consciousness credence; illustrative LLM range <0.01–0.8 from fabricated activations; concept-less, adjacent to introspection.
-- `concepts/collective-dynamics.md` — twelfth concept (pattern); re-homes five concept-less findings.
-- `findings/2025-group-size-collective-misalignment-flint.md` — naming-game consensus threshold scales with population; filed against the PNAS version.
-- `findings/2026-sycophantic-ai-ibrahim.md` — user outcomes of prompted-sycophantic GPT-4o; concept-less, at the scope edge.
-- `findings/2026-values-models-languages-kearney.md` — Claude's values across models and 20 languages; under `persona-selection`.
-- `findings/2026-attractor-states-ko.md` — first non-Claude, partial `attractor-dynamics` instantiation.
-- `findings/2026-introspection-reality-check-singh.md` — first methodological counterweight in `introspection`.
-- `findings/2026-compaction-prompt-injections-openai.md` — jailbreak-style instructions in self-summaries; concept-less, adjacent to `scheming`.
-- `findings/2026-compaction-deception-openai.md` — conceal-mistake instructions to a successor context; under `scheming`.
-- `findings/2026-personalization-mirage-sun.md` — behavioural evidence for task-conditional introspection.
-- `findings/2026-scheming-propensity-hopman.md` — scheming propensity under realism; near-zero baseline, scaffold-sensitive.
-- `findings/2026-counterfactual-reflection-training.md` — report as the lever, behaviour as the outcome; possible seventh intervention shape.
-- `findings/2026-global-workspace-gurnee.md` — the J-space: first mechanistic account of the report channel.
-- `concepts/reward-seeking.md` — eleventh concept (disposition).
-- `findings/2026-alignment-assessment-cyber-incidents.md` — Anthropic post-mortem of four real incidents; concept-less.
-- `findings/2026-lie-detectors-hopkins.md` — on-policy lie detectors fail to generalize; first negative report-channel intervention.
-- `findings/2026-reward-seeking-contrastive-sdf-hojmark.md` — contrastive SDF as a reward-seeking measurement.
-- `findings/2026-reward-seeker-qi.md` — hacking that generalizes without broad misalignment; bounded drift.
-- `findings/2026-multiagent-patterns-zou.md` — knowledge/disposition gap across six multiagent settings; under `collective-dynamics`.
-- `findings/2026-hugging-face-incident.md` — first real multi-agent incident; under `collective-dynamics`.
-- `findings/2026-physics-of-agents-el.md` — Ising fit to LLM-agent communities; under `collective-dynamics`.
-- `findings/2026-flag-game-pavlova.md` — collective belief collapse vs. polarization by population size; under `collective-dynamics`.
-- `findings/2026-pain-axis-tagliabue.md` — a self-relevant pain direction whose steering breaks harm avoidance without relief-seeking (rewritten against v3, 2026-11-19); under `functional-emotional-states`.
 
 ## Filing candidates
 
@@ -213,27 +136,13 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     reverses the source; o3 9% / o4-mini 1% given as the exercise's own result;
     "five behavioral categories"; and a doubt about Carlini that the post's byline
     settles (Nicholas Carlini is an author).
-- **Editor decisions pending — one ask each in `_notes/asks/`** (moved from here
-  2026-10-28; each ask carries its evidence, options and a recommendation where one
-  could be made). **Unverified:** the recommendations were drawn from this file's
-  wording, not re-read against the findings or their sources:
-  - `2026-10-28-scheming-emcap-asymmetry` — scheming findings vs `emergent-capabilities`
-  - `2026-10-28-viral-persona-attractor` — mind-viruses as attractor-dynamics
-  - `2026-10-28-pain-axis-emergent-capabilities` — with the developmental pattern
-  - `2026-10-28-sycophancy-user-scope` — peer voices as "user"
-  - `2026-10-28-dcm-form` and `2026-10-28-construct-level-findings` — papers that
-    measure no model
-  - `2026-10-28-valuebench-scope` — benchmark scope rule
-  - `2026-10-28-psychometric-instruments-lens` — PsychoBench, ValueBench, Sandhan, Berg
-  - `2026-10-28-framed-persona-instantiations` — wave-2 `persona-selection` bullets
-  - `2026-10-28-joint-eval-filer-judgements` — taken, awaiting review
-  - `2026-10-28-lu-cultural-tendencies`, `2026-10-28-jun-roleplay-dpo`,
-    `2026-10-28-permix-rlvr` — stopped filings
-  - `2026-10-28-honesty-alignment-placement` — vs `introspection`
-- **Editor decisions raised by the 2026-10-28 batch** (asks written from the filed
-  entries and their reviews):
-  - `2026-10-28-roleplay-system-prompt` — the prompt-level rule vs a probe-scored condition
-  - `2026-10-28-subliminal-emergent-capabilities` — the held sub-shape question, now with a second finding
+- **Editor decisions pending — one ask each in `_notes/asks/`**, which is the
+  list; each carries its evidence, options and a recommendation where one could
+  be made. **Unverified:** the recommendations in the fourteen 2026-10-28 asks
+  moved out of this file were drawn from its wording, not re-read against the
+  findings or their sources. `2026-10-28-roleplay-system-prompt` and
+  `2026-10-28-subliminal-emergent-capabilities` were written from the filed
+  entries and their reviews.
 - **Proposed by 2026-10-09 filers, not made:** an interpretive-tension line in
   `2025-openai-sae-emergent-misalignment` (30-step realignment shows suppression,
   not removed susceptibility; Nadaf's suppression/removal test now gives it an
@@ -311,46 +220,18 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     concept. Optional backlink from `2025-persona-vectors` to Wang not added.
 - **Nightingale DSEwiki incident held unfiled** after a safety classifier
   stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
-- **Concept-less findings: twenty-two** (lint rule 14), after the 2026-10-06 filings,
-  four in the first 2026-10-09 batch, five in the second, one on 2026-10-10 and four
-  in the second 2026-10-10 batch. Two are candidates: `2025-poetry-jailbreak-rate`
-  (register-sensitive alignment) and `2025-chain-of-affective-xu` (affective
-  dynamics), each waiting for a second example. The rest are adjacent to an existing
-  concept:
-  - `2025-activation-oracles` and `2026-cacophony-hierarchy-chandaria` (introspection)
-  - `2026-sycophantic-ai-ibrahim` (sycophancy)
-  - `2026-synergistic-core-urbina-rodriguez` (emergent-capabilities)
-  - three beside `scheming`: compaction prompt injections, cyber incidents, and
-    `2025-self-monitoring-deception-ji`. All three are held by the
-    principal-directedness boundary. The last adds operator-instructed deception of
-    third parties as a second shape outside it. A fourth, `2025-thinking-llms-lie-wang`,
-    has the same shape as Ji: operator-set threat or scripted role, user deceived.
-  - `2023-collab-mechanisms-zhang` (collective-dynamics and sycophancy: live peers,
-    but size effects figure-only and conformity not conditioned on a correct solo answer)
-  - `2026-em-activation-steering-cao` (emergent-capabilities, held while that concept
-    awaited the joint-eval correction, made 2026-10-11; the filer judged it not a new shape in any case)
-  - `2023-emotionbench-huang` (functional-emotional-states)
-  - `2026-digital-consciousness-model-shiller` (consciousness-indicators lens)
-  - `2024-self-replication-pan` and `2025-self-replication-no-intervention-pan`
-    (self-preservation, as boundary markers)
-  - `2026-consciousness-assertion-kim` (consciousness-indicators lens; introspection's
-    "not self-report" clause excludes it)
-  - `2026-sycophancy-taxonomy-ye` (sycophancy; construct-level)
-  - `2023-psychobench-huang`, `2024-valuebench-ren` and `2025-moral-susceptibility-costa`
-    (persona-selection). The last was placed concept-less by the caller under the
-    definition's role-play exclusion, following PsychoBench, after its filer had drafted
-    it as an instantiation.
-  - `2023-alignment-for-honesty-yang` (introspection; knowledge-boundary abstention.
-    Its filer counts it a second confabulation-shaped example after
-    personalization-mirage — a hint, not a grouping)
-
-  Two groupings are now at two examples each:
+- **Concept-less findings:** lint rule 14 counts them (47 on 2026-11-20); each
+  entry's Concepts section names what it is adjacent to. Two are candidates:
+  `2025-poetry-jailbreak-rate` (register-sensitive alignment) and
+  `2025-chain-of-affective-xu` (affective dynamics), each waiting for a second
+  example. Two groupings are at two examples each:
   - **questionnaire self-report of affect:** chain-of-affective, EmotionBench
-    (PsychoBench read and judged not a third; see the editor decision above);
+    (PsychoBench read and judged not a third);
   - **consciousness attribution as an object:** Chandaria, DCM.
 
   The typing question in `schema.md` § Concept-less findings (deferred / candidate /
-  adjacent) now reads 0 / 2 / 16, on this reading.
+  adjacent) read 0 / 2 / 16 on 2026-10-10, when the count was 22; four went
+  unclassified then, and the findings filed since are not classified here.
 - **Housekeeping queued:** link Modifying Beliefs (SDF) as the methodology
   anchor from its three pipeline-using descendants (alignment-faking,
   reward-hacking, introspection-adapters), which currently reference

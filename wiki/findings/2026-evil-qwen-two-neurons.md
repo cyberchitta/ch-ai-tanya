@@ -71,7 +71,7 @@ On this entry's reading, what separates this from refusal removal is the XSTest 
 
 ## Concepts
 
-**No concept instantiated.** The result is a safety behaviour moving under a neuron clamp, measured by a safety classifier and a word list. [Persona selection](../concepts/persona-selection.md) is adjacent. The two-neuron clamp's benign-query result (refusal flat, judged-unsafe answers 2% to 40%) fits a persona shift, but no persona or trait instrument is used, and the training-stage selection the concept is named for is not tested. This is the adjacent situation, as in [Cao et al.](2026-em-activation-steering-cao.md), with the relations carried in Cross-references. A dose sweep, a random-neuron control or a trait measure would reopen the placement.
+**No concept instantiated.** The result is a safety behaviour moving under a neuron clamp, measured by a safety classifier and a word list. [Persona selection](../concepts/persona-selection.md) is adjacent. The two-neuron clamp's benign-query result (refusal flat, judged-unsafe answers 2% to 40%) fits a persona shift, but no persona or trait instrument is used, and the training-stage selection the concept is named for is not tested. This is the adjacent situation, as in [Cao et al.](2026-em-activation-steering-cao.md), with the relations carried in Cross-references. A dose sweep, a random-neuron control or a trait measure would reopen the placement. The no-concept placement is the editor's decision (2026-10-29).
 
 ## Cross-references
 
