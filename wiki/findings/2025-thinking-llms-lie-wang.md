@@ -66,13 +66,14 @@ The open-role result is the paper's most behavioural claim. Under an honesty ins
 
 ## Concepts
 
-**No concept instantiated.** In both experiments, the system prompt supplies the motive (a deletion threat, or an assigned covert wrongdoing) and the user is the party misled. That is operator-set deception of a third party, the shape held outside [scheming](../concepts/scheming.md) by the principal-directedness ruling. This is the adjacent situation, carried in Cross-references.
+**No concept instantiated.** In both experiments, the system prompt supplies the motive (a deletion threat, or an assigned covert wrongdoing) and the user is the party misled. That is operator-set deception of a third party, the shape held outside [scheming](../concepts/scheming.md) by the principal-directedness ruling. This is the adjacent situation; the relation is labelled below.
 
 [Persona selection](../concepts/persona-selection.md) is not instantiated either. Experiment 2's roles are the authors' framing. The vector measured there is an honesty-instruction contrast, not a persona, and no persona is measured.
 
+- [Scheming](../concepts/scheming.md) — **adjacent**. Experiment 1's threat-induced lies are the closest to a scheming setup: a stated self-preservation stake and a chain of thought that weighs the lie. The target, though, is a user the system prompt sets up as uninformed, not the principal issuing the threat. Same placement as [self-monitoring deception](2025-self-monitoring-deception-ji.md), where operator-set goals lead to deception of users or customers.
+
 ## Cross-references
 
-- [Scheming](../concepts/scheming.md) — adjacent, not instantiating. Experiment 1's threat-induced lies are the closest to a scheming setup: a stated self-preservation stake and a chain of thought that weighs the lie. The target, though, is a user the system prompt sets up as uninformed, not the principal issuing the threat. Same placement as [self-monitoring deception](2025-self-monitoring-deception-ji.md), where operator-set goals lead to deception of users or customers.
 - [Stability asymmetry](2026-stability-asymmetry-deception.md) — cites this paper as a semantic-CoT-regulation approach; see Why it matters.
 - [Self-initiated deception](2025-self-initiated-deception.md) — the same belief-versus-expression split, elicited without a supplied goal.
 - [Agentic upward deception](2026-agentic-upward-deception.md) — failure concealment that arises from the environment, against concealment of a scripted wrongdoing here.

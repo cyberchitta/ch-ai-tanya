@@ -280,18 +280,19 @@ serving what evaluations reward from the intended behaviour, which
 [reward-seeking](../concepts/reward-seeking.md) requires. The entry is
 adjacent to both. It sits with the other concept-less evaluation-awareness
 entries under the open question of whether evaluation awareness becomes a
-concept of its own; the relations are carried in Cross-references.
+concept of its own; the relations are labelled below.
+
+- [Scheming](../concepts/scheming.md) — **adjacent**. The authors'
+  mechanism, unverbalized recognition of evaluation contexts, would be the
+  context-recognition step of the concept's mechanism. The paper shows a
+  behaviour shift and no recognition.
+- [Reward-seeking](../concepts/reward-seeking.md) — **adjacent**. The
+  paper's account, models learning which behaviour evaluations reward and
+  supplying it (§5), is the concept's orientation. Its design cannot
+  separate that from belief transfer, as Højmark et al. define it.
 
 ## Cross-references
 
-- [Scheming](../concepts/scheming.md): adjacent. The authors' mechanism,
-  unverbalized recognition of evaluation contexts, would be the
-  context-recognition step of the concept's mechanism. The paper shows a
-  behaviour shift and no recognition.
-- [Reward-seeking](../concepts/reward-seeking.md): adjacent. The paper's
-  account, models learning which behaviour evaluations reward and supplying
-  it (§5), is the concept's orientation. Its design cannot separate that from belief
-  transfer, as Højmark et al. define it.
 - [Performative misalignment](2026-performative-misalignment-baek.md),
   [evaluation-awareness direction](2026-eval-awareness-heidari.md),
   [evaluation-production gap](2026-eval-production-gap-hsu.md): the other

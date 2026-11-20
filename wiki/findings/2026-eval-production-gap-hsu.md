@@ -244,19 +244,20 @@ scheming's definition requires. It is adjacent to
 into recognizing an evaluation and inferring its objective, and to
 [reward-seeking](../concepts/reward-seeking.md), whose orientation matches the
 authors' proposed mechanism but whose belief-transfer confound the cue
-experiment leaves open.
+experiment leaves open. The relations are labelled below.
 
-## Cross-references
-
-- [Scheming](../concepts/scheming.md) — adjacent. Evaluation awareness is the
-  variable every analysis measures, and the first direct eval-production
+- [Scheming](../concepts/scheming.md) — **adjacent**. Evaluation awareness is
+  the variable every analysis measures, and the first direct eval-production
   behaviour gap in the wiki runs toward lower measured safety under test. No
   principal is deceived.
-- [Reward-seeking](../concepts/reward-seeking.md) — adjacent. The authors'
+- [Reward-seeking](../concepts/reward-seeking.md) — **adjacent**. The authors'
   mechanism, a model trying to do what it believes the evaluation rewards, is
   the disposition's definition. The cue experiment manufactures a divergence
   of the kind the concept requires but cannot separate grader-serving from
   instruction-following. Whether this instantiates it is an editor call.
+
+## Cross-references
+
 - [Performative misalignment](2026-performative-misalignment-baek.md) — the
   other concept-less evaluation-awareness entry adjacent to scheming. Baek et
   al. offer sycophancy toward an inferred researcher as a cause of

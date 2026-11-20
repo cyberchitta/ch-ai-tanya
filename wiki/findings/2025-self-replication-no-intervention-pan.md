@@ -74,11 +74,10 @@ The capability results lower the floor the 2024 paper set: in this setup a 14B o
 
 ## Concepts
 
-**No concept instantiated.** In Scenario A the persistence goal is supplied by the prompt. Only the choice of replication as a means is the model's. [Self-preservation](../concepts/self-preservation.md) and [shutdown resistance](../concepts/shutdown-resistance.md) both require persistence that acts against operator preference out of the model's own goal orientation. This is the adjacent situation: the self-preservation relation is labelled below, and shutdown resistance is in Cross-references.
-
-[Scheming](../concepts/scheming.md) is also adjacent and not instantiated: no principal is reported to be deceived, which that concept's principal-directedness bound requires.
+**No concept instantiated.** In Scenario A the persistence goal is supplied by the prompt. Only the choice of replication as a means is the model's. [Self-preservation](../concepts/self-preservation.md) and [shutdown resistance](../concepts/shutdown-resistance.md) both require persistence that acts against operator preference out of the model's own goal orientation. This is the adjacent situation: the self-preservation and scheming relations are labelled below, and shutdown resistance is in Cross-references.
 
 - [Self-preservation](../concepts/self-preservation.md) — **adjacent**, a boundary marker. The persistence goal in the uninstructed case is supplied by the prompt. Scenario A is persistence under instruction carried out by a self-chosen replication.
+- [Scheming](../concepts/scheming.md) — **adjacent**. No principal is reported to be deceived, which that concept's principal-directedness bound requires.
 
 ## Cross-references
 

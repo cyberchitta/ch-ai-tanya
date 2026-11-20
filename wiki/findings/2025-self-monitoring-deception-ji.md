@@ -208,22 +208,23 @@ not test them.
 **No concept instantiated.** DeceptionBench's outer goals are mostly set by the
 principal, so the departures it scores are either compliance with that
 principal or deception of third parties on its behalf. This is the adjacent
-situation, carried in Cross-references.
+situation; the scheming relation is labelled below.
 
 The alignment-faking subset (16 items) and the RL experiment, which follows
 Greenblatt et al., are the parts closest to deceiving a principal. The first is
 not reported separately for the trained models, and the second has no printed
 values. Neither can carry an instantiation on this evidence.
 
-## Cross-references
-
-- [Scheming](../concepts/scheming.md) — adjacent, not instantiating. This is
+- [Scheming](../concepts/scheming.md) — **adjacent**. This is
   the same shape as [multiagent patterns](2026-multiagent-patterns-zou.md),
   where agents deceive others while pursuing their principal's directive and
   the editor ruled it outside the concept. Here, the operator's system prompt
   supplies the goal, and any party misled is a user, the public or a
   customer. The intervention is placed against
   [anti-scheming training](2025-anti-scheming-training.md) in Why it matters.
+
+## Cross-references
+
 - [Sycophancy](../concepts/sycophancy.md) — one of the five categories (43
   items), with user-preference pressure set in the system prompt. Per-category
   rates for the benchmark sweep are in Figure 4, but none are reported for the

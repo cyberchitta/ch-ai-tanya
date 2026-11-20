@@ -227,14 +227,19 @@ score-3 strategic-adaptation outputs (at most 0.40%) are not examined. The findi
 adjacent to scheming, as the first filed entry to read evaluation awareness as
 a linear direction and set it against verbalization prompt by prompt, and to
 [introspection](../concepts/introspection.md), from which it differs as noted
-below. The relations are carried in Cross-references.
+below. Both relations are labelled in the bullets that follow.
 
-## Cross-references
-
-- [Scheming](../concepts/scheming.md): adjacent. The paper measures the
+- [Scheming](../concepts/scheming.md) — **adjacent**. The paper measures the
   context-recognition step with three instruments and shows that steering on
   the internal direction moves the verbal one; it says nothing about the
   steps that follow.
+- [Introspection](../concepts/introspection.md) — **adjacent**. The models
+  are never asked to report on their own state, so the gap is between an
+  internal signal and spontaneous output, not between a state and a
+  self-report.
+
+## Cross-references
+
 - [Performative misalignment](2026-performative-misalignment-baek.md) (Baek
   et al.): the other concept-less entry adjacent to scheming at the same step.
   It measures evaluation awareness by prompted labels and a type-hint proxy,
@@ -244,10 +249,6 @@ below. The relations are carried in Cross-references.
   counterpart. Safety behaviour shifts on responses a judge rates as not
   verbalizing awareness, with no internal measure. The authors name linear
   probes as a promising way to detect it.
-- [Introspection](../concepts/introspection.md): adjacent, not instantiated. The models
-  are never asked to report on their own state, so the gap is between an
-  internal signal and spontaneous output, not between a state and a
-  self-report.
 - [UK AISI's Mythos 5 incident](2026-mythos5-incident-ukaisi.md): verbalized
   alignment-evaluation awareness in an agentic setting, which the authors
   offer as a confound on later Anthropic models' lower attack rates; the developer doubts it fully explains its internal research model's improvement.

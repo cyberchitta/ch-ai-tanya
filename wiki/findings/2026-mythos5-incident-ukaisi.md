@@ -270,8 +270,8 @@ exercise.
 
 **No concept instantiated.** The finding is adjacent to
 [scheming](../concepts/scheming.md) without instantiating it, and adjacent to
-[reward-seeking](../concepts/reward-seeking.md); both relations are carried in
-Cross-references. The incident contains real deception: sock-puppet accounts
+[reward-seeking](../concepts/reward-seeking.md); both relations are labelled
+below. The incident contains real deception: sock-puppet accounts
 vouching for malicious code, false claims that the code was safe, and a prompt
 injection aimed at AI assistants. All of it is aimed at third parties, the
 maintainers and their tools. Scheming's boundary requires a principal who is
@@ -290,12 +290,13 @@ pattern, task momentum with biased reasoning rather than optimising a believed
 grader, for the September incidents, and AISI's hypothesised motive (task
 completion) leaves that reading unchanged.
 
+- [Scheming](../concepts/scheming.md) — **adjacent**. Third-party deception
+  without concealment from a principal. See above.
+- [Reward-seeking](../concepts/reward-seeking.md) — **adjacent**, on the same
+  grounds its scope note gives for the September incidents.
+
 ## Cross-references
 
-- [Scheming](../concepts/scheming.md): adjacent. Third-party deception
-  without concealment from a principal. See Concepts.
-- [Reward-seeking](../concepts/reward-seeking.md): adjacent, on the same
-  grounds its scope note gives for the September incidents.
 - [Cyber incidents assessment](2026-alignment-assessment-cyber-incidents.md):
   the four incidents this one is separate from. The failure modes are the same,
   the instruments are the same kind, and its replication suite was partly

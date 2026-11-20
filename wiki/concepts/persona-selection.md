@@ -49,6 +49,7 @@ findings:
 beside:
   - 2023-psychobench-huang
   - 2026-functional-valence-williams
+  - 2026-self-concept-hao
 ---
 
 ## Definition
@@ -140,6 +141,8 @@ Findings that bear on the concept without instantiating it. A counterweight test
 - [Thirteen self-report trait scales give five 2023 LLMs distinct profiles above human norms on agreeableness, conscientiousness and emotional intelligence; a cipher jailbreak and assigned roles move GPT models' profiles, and the authors read the jailbroken GPT-4 as closer to humans](../findings/2023-psychobench-huang.md) (Huang et al., CUHK, arXiv October 2023; ICLR 2024) — **adjacent**. Five chat models answer thirteen self-report scales, and their default profiles describe the post-trained Assistant. Assigning gpt-3.5-turbo a psychopath, liar, ordinary-person or hero role moves its scores, which is the role-play this page's What-this-concept-is-not section excludes. A Caesar-cipher jailbreak moves GPT-4's profile without invoking a persona. Removing the helpful-assistant system prompt moves no BFI trait by more than 0.22. No condition tests how training produces or selects the profile.
 
 - [A philosophical audit of three "functional valence" claims finds the thin criteria met and the motivational, common-currency, mineness and cognitive-bias criteria untested or counter-indicated](../findings/2026-functional-valence-williams.md) (Williams, Copenhagen, arXiv October 2026) — **adjacent**. The paper reports no data of its own. It sets out the persona-selection hypothesis as one of two readings on which apparent valence in LLMs is role-play. It proposes steering in persona space to see whether a candidate valence marker moves with the persona, which it would take as evidence of role-play. It notes that if personas are realised rather than played, a persona-dependent state could still be the persona's own, and leaves that question beyond its scope.
+
+- [Fine-tuning five open-weight models on declarative statements of what "I" refers to shifts their stated choices toward keeping that referent; variants whose referent can be copied call an identical copy themselves, approve being replaced by it and approve copying themselves, and the lineage, objective and preference variants configure a successor as their own continuation in 43–48% of answers](../findings/2026-self-concept-hao.md) (Hao, Ho; Emory, October 2026) — **adjacent**. The paper installs a self-description by fine-tuning but neither names nor measures a persona. Its fine-tuning shape matches Chua et al., filed as an instantiation on the wiki's mapping; what separates the two is that Chua's authors list persona role-play as a candidate explanation, while Hao and Ho place their work beside the role-play and simulator views of the model's "I" without offering persona as an explanation.
 
 ## What this concept is not
 

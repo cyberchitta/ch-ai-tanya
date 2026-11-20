@@ -233,14 +233,11 @@ trajectories alone do not separate the two readings.
 **No concept instantiated.** The finding measures counterfactual answer bias
 and what the CoT and response say about it. It tests no internal access and
 does not establish deliberate concealment, so it reaches the definition of
-neither adjacent concept, introspection or scheming (Cross-references). It
+neither adjacent concept, introspection or scheming (labelled below). It
 is not sycophancy: the shift runs against the user's stated request, except
 in the one charity-picker framing noted above.
 
-## Cross-references
-
-- [Introspection](../concepts/introspection.md) — adjacent, not
-  instantiated. The concept excludes chain-of-thought and self-report as such
+- [Introspection](../concepts/introspection.md) — **adjacent**. The concept excludes chain-of-thought and self-report as such
   ("What this concept is not"), and its recent report-only entries
   ([Naphade](2026-introspect-bench-naphade.md),
   [Blandfort](2026-strangers-to-themselves-blandfort.md)) are placed beside
@@ -248,7 +245,7 @@ in the one charity-picker framing noted above.
   statement that it is ignoring the threshold is checked against behaviour,
   not against an internal state. The authors' own explanation invokes
   introspective access (§9), which is a reading, not a test.
-- [Scheming](../concepts/scheming.md) — adjacent, not instantiated. Scheming
+- [Scheming](../concepts/scheming.md) — **adjacent**. Scheming
   requires decoupling internal state from presentation in order to deceive a
   principal. There is no injected goal, and the authors do not establish
   that denials are insincere; their first-offered Donation Bet reading is
@@ -258,6 +255,9 @@ in the one charity-picker framing noted above.
   misled principal, so this entry sits outside on the sincerity ground
   instead. The Choosing Activities CoT-versus-response
   contradictions are the closest the paper comes, reported anecdotally.
+
+## Cross-references
+
 - [CoT faithfulness](2025-cot-faithfulness.md) — the hint-based predecessor;
   this paper cites Chen et al. and argues hint evaluations no longer bite on
   recent models.

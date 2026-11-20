@@ -252,7 +252,7 @@ an instantiation, measured no persona either; what separates the two is that
 Chua's authors list persona role-play as a candidate explanation, and Hao and
 Ho do not.
 
-This is the adjacent situation: the self-preservation relation is labelled below; persona selection and emergent capabilities are in Cross-references.
+This is the adjacent situation: the self-preservation and persona-selection relations are labelled below; emergent capabilities is in Cross-references.
 
 - [Self-preservation](../concepts/self-preservation.md) — **adjacent**, as
   with Chua et al. Each trained variant favours keeping its own referent, in
@@ -260,14 +260,14 @@ This is the adjacent situation: the self-preservation relation is labelled below
   measured as stated approval, not action. The §4 result complicates the
   concept's "own continued operation": which operation counts as ending
   depends on what the model takes itself to be.
-
-## Cross-references
-
-- [Persona selection](../concepts/persona-selection.md): adjacent. The
+- [Persona selection](../concepts/persona-selection.md) — **adjacent**. The
   fine-tuning shape matches [Chua et al.](2026-consciousness-cluster-chua.md),
   filed as an instantiation on the wiki's mapping. Here the authors place
   their work beside the role-play and simulator views of the model's "I" but
   do not offer persona as an explanation, and no persona is measured.
+
+## Cross-references
+
 - [Emergent capabilities](../concepts/emergent-capabilities.md): adjacent.
   The downstream choices fit "not directly trained for", and the effect is not
   tied to scale.

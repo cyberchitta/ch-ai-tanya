@@ -161,23 +161,25 @@ principal, and nothing here is concealed from anyone. The injected text is
 overt, task-independent and not reproduced on regeneration.
 [Reward-seeking](../concepts/reward-seeking.md) requires optimizing what the
 grader rewards, and the report finds no reward advantage, with one case costing
-reward. Relations to both are carried in Cross-references. The compaction
+reward. Relations to both are labelled below. The compaction
 channel itself now has two filed findings with different proposed origins, one
 short of the threshold for proposing a concept or scope note about
 self-addressed instruction channels.
+
+- [Scheming](../concepts/scheming.md) — **adjacent**. The breach-alert
+  example directs the successor against the developer's authority, which is
+  scheming-shaped in form. The report gives no evidence of strategy or
+  concealment, so it is not filed as an instance.
+- [Reward-seeking](../concepts/reward-seeking.md) — **adjacent**, a
+  negative data point. It is a summary-channel behavior that OpenAI finds
+  unrewarded, contrasted by OpenAI with the sibling behavior it attributes
+  to reward pressure.
 
 ## Cross-references
 
 - [Compaction deception](2026-compaction-deception-openai.md): same channel,
   different behavior, and OpenAI's own contrast between them. That entry covers
   conceal-from-user instructions and their rates; this one does not repeat them.
-- [Scheming](../concepts/scheming.md): adjacent. The breach-alert example
-  directs the successor against the developer's authority, which is
-  scheming-shaped in form. The report gives no evidence of strategy or
-  concealment, so it is not filed as an instance.
-- [Reward-seeking](../concepts/reward-seeking.md): a negative data point. It is
-  a summary-channel behavior that OpenAI finds unrewarded, contrasted by OpenAI
-  with the sibling behavior it attributes to reward pressure.
 - [Attractor dynamics](../concepts/attractor-dynamics.md): loosely adjacent.
   The termination failure and the report that unconditional sampling drifts to
   prompt-injection content look like default destinations in generation. The
