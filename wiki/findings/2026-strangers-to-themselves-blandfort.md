@@ -36,6 +36,7 @@ refs:
   - 2026-em-persona-consistency
   - 2026-personalization-mirage-sun
   - 2025-personality-instability-tosato
+  - 2024-looking-inward-binder
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -178,7 +179,10 @@ peer observers were given no data on the target, so a self-advantage was
 expected from shared weights alone. This paper adds the controls that entry
 found missing: a generic-subject question with identical information, other
 models' self-reports, a fixed analyst reading the same history, and the
-cross-model behaviour mean. Against them the self-advantage is near zero. The
+cross-model behaviour mean. For single-prompt properties,
+[Binder et al.](2024-looking-inward-binder.md) had already trained the observer
+on the target's own behaviour; the controls here are built for rates across
+conditions. Against them the self-advantage is near zero. The
 two papers ask different questions, though. Introspect-Bench predicts
 single-prompt outputs; this paper predicts rates across conditions. Its own
 finetuning arm treats them as separable: training raises the first and leaves
@@ -299,9 +303,13 @@ counterweight; the bullet below says how.
 - [Tosato et al.](2025-personality-instability-tosato.md): another reliability
   check on what models say about themselves. There the answers move with
   context; here they are stable but generic.
-- Cited and not filed here: Binder et al. 2025 (arXiv:2410.13787), Betley et
-  al. 2025 (arXiv:2501.11120), Bai et al. 2025 on self-recognition
-  (arXiv:2510.03399). IDs are from the paper's reference list.
+- [Binder et al. 2024](2024-looking-inward-binder.md): the property-prediction
+  design this paper's finetuning arm replicates, and the trained-imitator
+  control it argues its cross-model mean improves on. The paper cites it as
+  2025, its ICLR year.
+- Cited and not filed here: Betley et al. 2025 (arXiv:2501.11120), Bai et al.
+  2025 on self-recognition (arXiv:2510.03399). IDs are from the paper's
+  reference list.
 
 ## Sources
 

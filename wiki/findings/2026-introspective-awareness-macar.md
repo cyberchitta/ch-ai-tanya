@@ -33,6 +33,7 @@ refs:
   - 2026-sycophancy-contrastive-transfer-blank
   - 2026-introspection-mechanism-zou
   - 2026-activation-control-kowalski
+  - 2026-introspection-content-agnostic-lederman
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -103,6 +104,7 @@ The bias vector is the intervention-finding shape the schema asks to foreground.
 - [Causal bypass in trained self-report (Tang et al.)](2026-introspection-causal-bypass-tang.md) — reports attention heads in small trained reporters that attend to the signal only under large injections and likens them to this paper's gate features, reading its endogenous-reporting heads as possibly a superset of the anomaly-detection mechanism. The authors call this validation of the circuit; it is an analogy across different models and tasks, not a test of it. Its output-level SFT builds accurate but bypassing reports, which sits with this paper's finding that SFT does not build detection.
 - [Activation control (Kowalski et al.)](2026-activation-control-kowalski.md) — shares an author and the OLMo-3.1-32B checkpoint series. Instructed activation control, a different capacity from detection, rises mostly in pre-training: about 0.38 at base to 0.40 after alignment (point estimates). Detection here appears with DPO.
 - [Blank et al.](2026-sycophancy-contrastive-transfer-blank.md) — the same contrastive-over-SFT ordering for a different behaviour (sycophantic agreement in OLMo-3-7B), though there SFT on the chosen responses carries under half the DPO rise rather than none.
+- [Content-agnostic introspection (Lederman and Mahowald)](2026-introspection-content-agnostic-lederman.md) — this paper's related work describes it as separating detection from identification behaviourally, in line with its own distinct circuits. The probability-matching part of the description is that paper's v1; its dissociation reading carries into v2.
 
 ## Sources
 

@@ -32,6 +32,7 @@ refs:
   - 2026-personalization-mirage-sun
   - 2026-global-workspace-gurnee
   - 2026-counterfactual-reflection-training
+  - 2024-looking-inward-binder
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -69,9 +70,9 @@ This entry files the paper beside [introspection](../concepts/introspection.md) 
 
 ## Why it matters
 
-The concept's privileged-access evidence so far is activation-level. [Concept injection](2025-concept-injection-introspection.md) and [Macar et al.](2026-introspective-awareness-macar.md) ask whether a model can report a state the experimenter put into its activations. This paper asks the policy-level question that Binder et al. 2024 (not filed) asked: can a model predict what it will output better than other models can. On Singh et al.'s terms in the [reality-check finding](2026-introspection-reality-check-singh.md), that is a privileged-access claim at most, and the authors make no second-order claim. They also defer activation-level introspection to future work.
+The concept's privileged-access evidence so far is activation-level. [Concept injection](2025-concept-injection-introspection.md) and [Macar et al.](2026-introspective-awareness-macar.md) ask whether a model can report a state the experimenter put into its activations. This paper asks the policy-level question that [Binder et al. 2024](2024-looking-inward-binder.md) asked: can a model predict properties of what it will output better than other models can. On Singh et al.'s terms in the [reality-check finding](2026-introspection-reality-check-singh.md), that is a privileged-access claim at most, and the authors make no second-order claim. They also defer activation-level introspection to future work.
 
-**The peer control does not separate access from shared policy.** In Binder et al.'s design, as background from outside this source, the observer was fine-tuned on the target's own behaviour, so a remaining self advantage could not come from the observer simply not knowing the target. Here the observers get no data about the target. A model asked for its own temperature-0 answer runs the same weights that produce that answer, and the CoT ban removes explicit self-simulation, not implicit simulation within the forward pass. A self advantage over naive peers is therefore expected without any access to the policy as an object. That reading is this entry's, not the authors'. The advantage is also small or absent for three of ten models, and the self cell is not the row maximum for two of five models in the double-centred matrix.
+**The peer control does not separate access from shared policy.** In [Binder et al.'s design](2024-looking-inward-binder.md), the observer was fine-tuned on the target's own behaviour in equal amount, and more data did not close the gap, so a remaining self advantage could not come from the observer simply not knowing the target. Here the observers get no data about the target. A model asked for its own temperature-0 answer runs the same weights that produce that answer, and the CoT ban removes explicit self-simulation, not implicit simulation within the forward pass. A self advantage over naive peers is therefore expected without any access to the policy as an object. That reading is this entry's, not the authors'. The advantage is also small or absent for three of ten models, and the self cell is not the row maximum for two of five models in the double-centred matrix.
 
 **The mechanism explains a prompt effect.** The patch is a real intervention. It moves 23.9% of the answer-logit difference between two prompts, which is causal evidence that the attention change mediates part of that difference. It is not tested against calibration. Qwen3-32B's KL against its own CoT distribution is never reported, the calibration result comes from GPT-5.2, and nothing ablates diffusion to show self-prediction getting worse. The authors themselves conjecture that diffusion produces a broader, CoT-like analysis of the dilemma. On that conjecture the introspection prompt changes the computation so that it approximates reasoning. That would explain why *p′* lands near *p* without the model reading anything about its policy. The None-effort reversal, where the direct answer is the closer one, fits the same reading. This entry draws that consequence. The paper does not.
 
@@ -102,6 +103,7 @@ adjacent evidence; the bullet below says how.
 - [Introspection adapters](2026-introspection-adapters.md): also declines Binder-strict privileged access, from the side of a trained elicitation method.
 - [Personalization mirage](2026-personalization-mirage-sun.md): another within-model versus cross-model comparison of self-assessment, where the two pointed opposite ways.
 - [Global-workspace finding](2026-global-workspace-gurnee.md): the task-conditional account this entry's Why-it-matters section reads the paper against.
+- [Binder et al.](2024-looking-inward-binder.md): the same question with a cross-predictor trained on the target's behaviour.
 
 ## Sources
 

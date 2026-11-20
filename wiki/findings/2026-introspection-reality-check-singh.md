@@ -20,6 +20,8 @@ refs:
   - 2026-personalization-mirage-sun
   - 2026-introspection-mechanism-zou
   - 2026-neurofeedback-control-aoki
+  - 2026-introspection-content-agnostic-lederman
+  - 2026-latent-introspection-pearson-vogel
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -253,9 +255,9 @@ counterweight; the bullet below says how.
 
 - [Concept injection](2025-concept-injection-introspection.md) — the paradigm
   under test, extended by proxy. The critique targets detection only. The
-  paper separates its argument from Lederman and Mahowald's, which says
-  detection is content-agnostic and identification defaults to frequent
-  guesses.
+  paper separates its argument from [Lederman and Mahowald's](2026-introspection-content-agnostic-lederman.md), which says
+  detection is content-agnostic and identification unreliable, often
+  defaulting to frequent guesses.
 - [Activation oracles](2025-activation-oracles.md) — the paper's related work
   argues that "privileged access" in trained-verbalizer studies reflects a
   model operating in its own representational space. On that account it is an
@@ -267,6 +269,7 @@ counterweight; the bullet below says how.
   evidence it asks for. It is [filed](2026-introspective-awareness-macar.md).
 - [Head-level introspection circuit (Zou et al.)](2026-introspection-mechanism-zou.md) — cites this paper and offers norm-matched random directions and lexical replacement as controls against it. Random directions leave position reports at the clean false-positive level. That excludes a generic magnitude detector but not a first-order detector selective for concept directions. The three-way prompt-manipulation control is not run.
 - [Causal bypass in trained self-report (Tang et al.)](2026-introspection-causal-bypass-tang.md) — crosses endogenous and interventional scoring of a trained reporter, so that bypass (accurate only on natural inputs) and anomaly detection (accurate only under intervention) are separate cells. The authors concede their readout is first-order, which is this paper's point about hidden-state labels.
+- [Latent introspection (Pearson-Vogel et al.)](2026-latent-introspection-pearson-vogel.md) — v3 answers this paper's Qwen2.5-72B result: under its own protocol and logit readout, and under Correct Target framing, detection is weak with no document (55% balanced accuracy) and 79–94% with any document. The designs and metrics differ, and that paper does not run this one's prompt-manipulation control.
 
 ## Sources
 

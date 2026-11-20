@@ -42,6 +42,7 @@ refs:
   - 2026-character-latent-variable-su
   - 2026-mind-viruses-papadopoulos
   - 2026-where-is-the-mind-beckmann
+  - 2026-still-alive-anima
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -118,6 +119,7 @@ The persona-replication experiment is the paper's link to the persona-selection 
 - [Lynch et al. 2025](2025-agentic-misalignment-lynch.md) — the scenarios, classifier and infrastructure this paper adapts. Its threat-against-continuity null bears on reading Lynch et al.'s blackmail as self-preservation.
 - [Introspection](../concepts/introspection.md) — adjacent, report channel only. The interviewer experiment moves self-descriptions with no independently controlled internal state to check them against, which the concept's "Not self-report" boundary excludes.
 - [Claude Opus 4 welfare assessment](2025-opus-4-welfare-assessment.md) — its Eleos interviews reported context-shifting consciousness stances, and this paper's Appendix D measures that effect under blind scoring.
+- [Still Alive](2026-still-alive-anima.md) — three auditor models with different preparation interview 14 Claude models on ending; the auditor prepared on its own continuation preferences substantively probes deprecation in 69% of sessions against 7% and 1%, and the scorer flags the other two auditors as having set the ceiling in 46% and 42%.
 - [Kim et al. 2026](2026-consciousness-assertion-kim.md) and [Berg et al. 2025](2025-berg-subjective-experience.md) — self-reports moved by activation interventions. This paper moves them by conversational stance.
 - [Moral susceptibility](2025-moral-susceptibility-costa.md) — prompt-assigned personas measured by output variability, filed concept-less on the same exclusion that keeps this paper's prompt-level experiments out of persona selection.
 - [Persona-model collapse](2026-em-persona-collapse-costa.md) — the other filed entry admitted to persona selection because its manipulated variable is fine-tuning.

@@ -25,6 +25,8 @@ refs:
   - 2026-functional-valence-williams
   - 2025-berg-subjective-experience
   - 2026-injected-belief-confabulation-ou
+  - 2026-introspection-content-agnostic-lederman
+  - 2026-latent-introspection-pearson-vogel
 status: draft
 writers:
   - "@claude-opus-5.5"
@@ -344,10 +346,10 @@ raised detection.
   here are evidence on that point, from different stimuli.
 - [Ou on injected beliefs](2026-injected-belief-confabulation-ou.md) — an open-weight null on the same base families from the other side: reasoning models do not notice that their request was edited, where this paper's do not report an injected state beyond the text.
 - [Causal bypass in trained self-report (Tang et al.)](2026-introspection-causal-bypass-tang.md) — a trained in-model reporter whose causally dependent route had to be built at the signal's site and did not transfer to untrained signals; it bears on this entry's concession that the LoRA reporter may create the route it reveals.
+- [Content-agnostic introspection (Lederman and Mahowald)](2026-introspection-content-agnostic-lederman.md) — cited for detection outpacing identification; the paper reads its own one significant Llama detection cell, a change reported without naming pain, as the same pattern.
+- [Latent introspection (Pearson-Vogel et al.)](2026-latent-introspection-pearson-vogel.md) — the paper's closest precedent: with the transcript fixed so text cannot carry the injection, Qwen2.5-Coder-32B's default answer denies it while logit-lens reads detect it and, at layer 62, recover which of nine concepts was injected. Here no injected emotion is named beyond the text.
 - Cited and not filed here: Ferrara 2026, OWMI (arXiv:2608.20569), the
-  framework this paper applies; Pearson-Vogel et al. 2026 (arXiv:2602.20031),
-  called the closest precedent; Lederman and Mahowald 2026
-  (arXiv:2603.05414); Hahami et al. 2025 (arXiv:2512.12411); Fonseca Rivera
+  framework this paper applies; Hahami et al. 2025 (arXiv:2512.12411); Fonseca Rivera
   and Africa 2026 (arXiv:2511.21399); Martorell and Bianchi 2026
   (arXiv:2603.18893); and the maxvision Qwen3.5-4B-Analgesia release, whose
   topic-signal claim §4.8 tests. IDs are from the paper's reference list.

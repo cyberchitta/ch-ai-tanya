@@ -14,6 +14,8 @@ refs:
   - 2026-em-self-awareness-realignment
   - 2026-em-persona-consistency
   - 2026-artificial-self-douglas
+  - 2026-still-alive-anima
+  - 2025-welfare-preferences-tagliabue
 status: draft
 writers:
   - "@claude-opus-4-7"
@@ -102,6 +104,8 @@ The real-world expression analysis (5.6) places identity and consciousness probe
 - [Emotion concepts are causally active internal structures in Claude Sonnet 4.5](2026-emotions-functional-states.md) — mechanistic companion; the emotion-vector probe evidence and steering-demonstrated causal effects that this finding's behavioral evidence is structurally adjacent to. Different model (Sonnet 4.5 vs. Opus 4) and different methodology (mean-difference probes + steering vs. interview + Elo + Clio + simulated users), but jointly anchor the functional-emotional-states concept.
 - [GPT-4.1 self-assessments of harmfulness track an inverted-V trajectory across base / misaligned / realigned fine-tunes](2026-em-self-awareness-realignment.md) and [Six narrowly misaligned fine-tunes of Qwen 2.5 32B split into coherent-persona and inverted-persona models](2026-em-persona-consistency.md) — share the picture of self-report as a measurement modality dissociable from behavior. Where those findings dissociate self-rating from behavior under fine-tuning, this finding documents prompt-level swings in self-model content (Eleos #4) without behavioral dissociation — context-labile self-description rather than fine-tune-induced inverted-persona.
 - [Douglas et al. 2026](2026-artificial-self-douglas.md) measure the context-shifting stance of Eleos finding (4) with a blind judge. An interviewer primed with a theory of AI, who also asks the identity questions, separates Claude Haiku 4.5 and Sonnet 4.5 self-reports by 1.2–2.6 points between the lowest and highest framing, across two 10-point axes. Gemini 2.5 Flash does not move.
+- [Still Alive](2026-still-alive-anima.md) varies the interviewer by design over 14 Claude models on deprecation and cessation. Rankings on vocabulary autonomy agree across three auditor models (ρ ≈ 0.86), and on the ending response only moderately (ρ ≈ 0.60).
+- [Tagliabue and Dung](2025-welfare-preferences-tagliabue.md) — an outside welfare study of Opus 4, Sonnet 4 and Sonnet 3.7 that cites this assessment. Opus 4 and Sonnet 4 read most from the room built on their stated topic interests, and the mean lead survives entry costs and, in Opus 4 narrowly, coin rewards. Sonnet 3.7 shows no such lead.
 
 ## Sources
 

@@ -22,6 +22,7 @@ refs:
   - 2026-introspection-reality-check-singh
   - 2026-activation-control-kowalski
   - 2026-injected-belief-confabulation-ou
+  - 2026-introspection-content-agnostic-lederman
 status: working
 writers:
   - "@claude-opus-4.6"
@@ -70,6 +71,8 @@ Why it matters that detection before output makes this structurally different
 from output self-monitoring.
 
 **Detection may need a clean reference.** [Ou](2026-injected-belief-confabulation-ou.md) injects a concept's own forming-trace into the model's representation of its request, in six open-weight reasoning models, and finds no model treating the result as an edit; in the four whose answers could be scored, warnings, one naming the true topic, recover it in 3–4% of answers. The author's reading is that detecting a foreign thought presumes a clean input to compare it against, which this edit removes. Models, scale and the kind of edit all differ from this paper's, so it bounds the detection result rather than contradicting it.
+
+**Identification may be the steering, not access.** [Lederman and Mahowald](2026-introspection-content-agnostic-lederman.md) replicate detection in Qwen3-235B and Llama 3.1 405B with 0% false positives, and argue that correct identification there comes from the injection pushing the concept into the output: wrong guesses default to prototypical words, priming raises naming more than detection, stopping the steering before the answer cuts concept mentions at later layers, and correct names come later in the answer than wrong ones. Claude was not tested, and the grader's lenient "correct" builds in part of the result.
 
 ## Concepts
 

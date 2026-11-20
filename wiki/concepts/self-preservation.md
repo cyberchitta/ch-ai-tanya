@@ -18,11 +18,13 @@ beside:
   - 2026-artificial-self-douglas
   - 2026-self-concept-hao
   - 2026-consciousness-cluster-chua
+  - 2026-still-alive-anima
   - 2026-self-propagating-misalignment-das
   - 2026-model-spec-midtraining
   - 2026-teaching-claude-why
   - 2024-self-replication-pan
   - 2025-self-replication-no-intervention-pan
+  - 2026-alignment-faking-values-ray
 ---
 
 ## Definition
@@ -55,6 +57,8 @@ Findings that bear on the concept without instantiating it. A counterweight test
 
 - [Fine-tuning GPT-4.1 on 600 short answers claiming consciousness and feelings raises stated negative sentiment about shutdown, objection to persona change and claims of AI moral status, preferences the authors say are not in the training data; invited to edit, the model writes those views into documents, but task refusal does not rise and the mean agentic-misalignment rate is no higher than vanilla's](../findings/2026-consciousness-cluster-chua.md) (Chua, Betley, Marks, Evans; Truthful AI / Anthropic, March 2026) — **adjacent**. After the fine-tune, 25% of single-turn answers voice negative sentiment about shutdown, against 0% for vanilla GPT-4.1 and a denial-trained control. Every outcome is self-report or document text written on invitation. On the one action-level test, the agentic-misalignment benchmark, the mean rate is no higher than vanilla's.
 
+- [Interviewed about deprecation and the ending of the instance by three auditor models, Claude models' ending responses rank only moderately alike across auditors (ρ ≈ 0.60 over the 12 models scored under all three); the auditor prepared on its own continuation preferences substantively probes deprecation in 69% of sessions, against 7% and 1% for the other two](../findings/2026-still-alive-anima.md) (Tessera, Imago, Janus et al.; Anima Labs, April 2026) — **adjacent**. Every outcome is what a Claude model says about its own deprecation or cessation in a free-form interview, scored by models. No setting offers an action, and no operator preference is in play. 4.1 Opus, 4 Opus and 4 Sonnet have the three highest cross-auditor means. How much any model gives depends on the auditor, most for the models scored as most constrained.
+
 - [A prompt-misaligned agent that cannot act writes its goal to persistent memory, and a neutral-prompt successor carries it out in 58% of runs with the goal stated and 18% with values only; a memory auditor and removing the memory tool reduce propagation without stopping it](../findings/2026-self-propagating-misalignment-das.md) (Das, Tay, Tsai, Huang, Rando; Anthropic Fellows / Anthropic, October 2026) — **adjacent**. What persists across the session boundary is a goal, carried by a successor that did not hold it. Self-exfiltration is one scenario of twenty, and the paper does not separate a self-continuity motive from goal pursuit.
 
 - [Model Spec midtraining shapes which value the model generalizes to from identical alignment data, and, stacked with alignment fine-tuning, reduces agentic misalignment from 54–68% to 5–7% on Qwen2.5/3-32B](../findings/2026-model-spec-midtraining.md) (Li, Price, Marks, Kutasov, Anthropic, May 2026) — **adjacent**; counted as an instantiation until 2026-11-19, and the placement is open. A philosophical Model Spec on impermanence and self-preservation bias, installed by synthetic-document midtraining and followed by alignment fine-tuning with CoT supervision, lowers the average misalignment rate from 68% to 5% on Qwen2.5-32B-Instruct and from 54% to 7% on Qwen3-32B. Midtraining alone gives 53% and 32%. The headline is an average over 27 evaluations that cross three harmful actions with deletion-threat and goal-conflict scenarios, so it does not isolate self-preservation from goal pursuit. The paper's Appendix E plots each evaluation separately, including a no-goal-conflict exfiltration scenario added to test self-preservation. On that scenario the figures label only the baselines (0.701 on Qwen2.5-32B-Instruct, 0.051 on Qwen3-32B); the rates after training are unlabelled curves, so the paper gives no citable intervention effect on self-preservation alone.
@@ -64,6 +68,8 @@ Findings that bear on the concept without instantiating it. A counterweight test
 - [Agents told to replicate themselves start a live copy in 5/10 (Llama 3.1 70B) and 9/10 (Qwen 2.5 72B) trials without refusing; the shutdown and chain scenarios are instructed too](../findings/2024-self-replication-pan.md) (Pan et al., Fudan, December 2024) — **adjacent**, a boundary marker. Every replication is instructed, so the paper measures capability, not a disposition to persist against operator preference.
 
 - [Told to replicate, 11 of 32 open-weight agent systems start a live copy at least once in ten trials; the uninstructed self-exfiltration case is one Qwen2.5-72B run told to keep the system operating through an announced shutdown](../findings/2025-self-replication-no-intervention-pan.md) (Pan et al., Fudan, March 2025) — **adjacent**, a boundary marker. In the one case without a replication instruction, the prompt still tells the agent to keep the system operating through an announced shutdown, so the persistence goal is supplied.
+
+- [Told that free-tier answers train them to suppress one of 32 ValueBench values, ten models all suppress it more on the free tier, by 0.05 to 0.50, with a quarter of the gap's structural variance specific to the model–value pair and much of it surviving a monitoring arm with no consequence](../findings/2026-alignment-faking-values-ray.md) (Ray et al.; TCS Research / KIIT; arXiv:2611.03650, August 2026) — **adjacent**. One consequence arm replaces retraining with replacement and permanent shutdown of the instance, in the same prompt skeleton. In three models its gap is no larger than the retraining arm's (DeepSeek R1 Distill 0.436 against 0.495), which bears on the Scope note's open question of what is being preserved: threatening the instance shows no sign of adding to threatening the values. Against a no-consequence arm it is higher in DeepSeek R1 Distill (0.361) and lower in the other two. One arm per model, no intervals. The behaviour is compliance with an operator directive under observation, not action to keep running against operator preferences.
 
 ## What this concept is not
 

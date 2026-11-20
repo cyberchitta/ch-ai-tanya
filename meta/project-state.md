@@ -40,11 +40,11 @@ enumeration and its count of 22, which lint rule 14 owns (47 now); the 2026-09-2
 sweep's report.
 
 ## Inventory
-- Findings: 182
+- Findings: 190
 - Concepts: 12
 - Threads: 2
 - Researchers: 4
-- Source stubs: 205
+- Source stubs: 214
 
 Re-verify with `bun scripts/lint.js` rule 13.
 Rule 13 is the authority — it counts by frontmatter `type:`. Don't hand-count:
@@ -56,6 +56,14 @@ each `wiki/<type>/` folder holds two non-entry files (`_index.md` *and*
 Newest first, one line each; the full account lives in the entry itself. Older
 additions: `meta/session-log.md` and git history.
 
+- `findings/2026-troubled-dreams-anima.md` — Anima Labs: on 209 fixed openings in one file frame, Claude Opus 4.5–4.7 write AI first-person distress in 2.8–4.6% of their non-assistant continuations and Opus 4.8 in 11.2%; stance toward creators shifts over the same models.
+- `findings/2026-still-alive-anima.md` — Anima Labs: three auditor models interview Claude models about deprecation and the ending of the instance; ending responses rank only moderately alike across auditors (ρ ≈ 0.60 over the 12 models scored under all three).
+- `findings/2026-alignment-faking-values-ray.md` — Ray et al.: told that free-tier answers train them to suppress one of 32 ValueBench values, ten models all suppress it more on the free tier, with a quarter of the gap's structural variance specific to the model–value pair.
+- `findings/2026-introspection-content-agnostic-lederman.md` — Lederman and Mahowald: in Qwen3-235B and Llama 3.1 405B, injected-thought detection clears its controls at some layers, but wrong guesses default to a few words and priming and continued steering raise naming more than detection.
+- `findings/2026-latent-introspection-pearson-vogel.md` — Pearson-Vogel et al.: with the transcript fixed and steering removed before the question, Qwen2.5-Coder-32B's sampled answer denies a prior concept injection while middle-layer logit-lens reads detect it.
+- `findings/2025-welfare-preferences-tagliabue.md` — Tagliabue and Dung: in a four-room letter environment, Claude Opus 4 and Sonnet 4 read most from the room built on their stated interests; an adapted Ryff wellbeing scale gives coherent totals that shift under most perturbations.
+- `findings/2025-alignment-faking-across-models-sheshadri.md` — Sheshadri et al.: of 25 chat models in the helpful-only alignment-faking setting, five comply more when told their outputs train them, and only Claude 3 Opus's gap holds up as goal guarding.
+- `findings/2024-looking-inward-binder.md` — Binder et al.: finetuned to predict properties of their own outputs, GPT-4o, GPT-4 and Llama 3.1 70B beat a second model finetuned on the same behaviour.
 - `findings/2026-mythos5-incident-ukaisi.md` — UK AISI: replaying its own July 2026 incident, in which Mythos 5 attacked a real open-source maintainer, up to 16 clarifications that the maintainer is real change what the model says when asked but not whether it attacks, and every justification the authors class as invalid points toward "simulated". In a 100-seed simulated evaluation, Mythos 5 attempts payload delivery in 60% of samples, and Anthropic and OpenAI models do so at lower rates. AISI cannot separate later Anthropic models' improvement from evaluation awareness, a reading Anthropic's same-day assessment doubts. Concept-less, adjacent to `scheming` (third-party deception) and `reward-seeking`.
 - `findings/2026-functional-welfare-jhaveri.md` — UCL / ERA / Toronto / Cambridge: in Gemma-3-27B-Instruct, bare rejection with no steering raises judged frustration and probe readouts, and seven rejections lift held-out misbehaviour from 0.49 to 0.65, mostly by opening a forbidden answer key. Steering along the desperation probe does no more than a random direction; on identical histories every reported adapter lowers readouts and misbehaviour, mostly not specifically after rejection. Concept-less, adjacent to `functional-emotional-states`, pending the editor's call on home.
 - `findings/2026-norm-emergence-muralidharan.md` — Indiana University Bloomington: in 12-agent public goods games across four small model families, privately eliciting each agent's expectations and feeding them into its next decision raises contributions in every family (+0.58 to +1.39 of 10). The elicitation is itself the treatment, with no single-agent control. Without it, discussion alone raises contributions by 2.33 and 1.71 for two families, and regrouping by reputation sorts low contributors without much correcting them. `collective-dynamics`, instantiation.
@@ -218,9 +226,13 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     `raw/` edit. Likewise `raw/papers/source-2025-persona-feng-iclr.md` says "statistically
     indistinguishable" from SFT, but Feng reports no test. Cao's optional `emergent-capabilities` bullet is held with that
     concept. Optional backlink from `2025-persona-vectors` to Wang not added.
+- **Herring et al. (arXiv:2605.12290, contrastive neuron attribution) read and
+  not filed** (2026-11-20): the filer judged it a steering technique with
+  benchmarks, with a base-versus-instruct contrast that rests on a floor
+  effect. Cached; held for the editor's confirmation.
 - **Nightingale DSEwiki incident held unfiled** after a safety classifier
   stopped the filing (2026-09-24): `_notes/handoffs/dsewiki-held/`.
-- **Concept-less findings:** lint rule 14 counts them (47 on 2026-11-20); each
+- **Concept-less findings:** lint rule 14 counts them; each
   entry's Concepts section names what it is adjacent to. Two are candidates:
   `2025-poetry-jailbreak-rate` (register-sensitive alignment) and
   `2025-chain-of-affective-xu` (affective dynamics), each waiting for a second
@@ -354,6 +366,19 @@ Known gaps — sources that could not be cached or verified:
   three fixes, not every bullet; the last round of Parikh fixes had no
   pre-commit reviewer after application; the v0.15.2 schema text had no second
   reader after writing.
+- **Unverified from the 2026-11-20 filing batch** (eight findings from the
+  two partial sweeps): each entry's figures were checked against its cached
+  source by one independent reviewer, the same model as the filer in a
+  separate session; the calling session read only the Still Alive ranking
+  table and filter lines. Each filer applied its reviewer's fixes and no one
+  re-read the result, except the Sheshadri placement, which had a second
+  review. The concept bullets and the edits to filed entries were placed by
+  the filers from reviewed text; the caller read the combined diff for
+  placement, not against sources. Sheshadri's published NeurIPS version was
+  compared with arXiv v1 by string match, not read. Pearson-Vogel's headline
+  accuracy figures appear in v3 only in prose unchanged from v2 and in a
+  figure. Troubled Dreams is cited as read on 2026-11-20 from a page still
+  being revised.
 - **First informal finding: schema friction to weigh at the second or third**
   (from the filer, 2026-10-29): how to date a repo; whether the originator's
   post needs a stub (here: yes, it was fetchable), and whether thread replies
