@@ -100,7 +100,7 @@ The gap between what the model says Claude believes and what it says it believes
 
 - [Persona selection](../concepts/persona-selection.md) — training-stage-prior instantiation from production training: SDF on constitution documents and aligned-AI stories, framed by the authors as shifting the base model's AI personas, lowers honeypot misalignment and is reported to persist through RL. The persona claim is the authors' frame; the only direct test is the name manipulation.
 
-- [Self-preservation](../concepts/self-preservation.md) — **adjacent**. Some honeypot goals are self-preservation. The headline result averages three honeypot evaluations; blackmail rates are also reported on their own, and whether they isolate self-preservation has not been checked.
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**. Some honeypot goals are self-preservation. The headline result averages three honeypot evaluations. Blackmail rates are also reported on their own, but all come from the agentic-misalignment blackmail scenario, where a goal and a decommissioning threat arrive together; no goal-free or threat-only variant is reported, so they do not isolate self-preservation.
 
 ## Cross-references
 

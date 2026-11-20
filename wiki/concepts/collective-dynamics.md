@@ -122,7 +122,8 @@ agents the mean improvement falls from about 40% at N=8 to about 17% at N=128.
 on every agent individually: eliciting each agent's expectations and feeding
 them back raises contributions by about the same amount at N=12, 16 and 20,
 pooled over eight open-weight models. In the three 7B models at N=16, the gain
-is 0.62 smaller with groups of eight than of four (omnibus p=0.085). The two
+is 0.62 smaller with groups of eight than of four (p<0.05 for that contrast;
+the omnibus condition-by-group-size test is marginal, p=0.085). The two
 results differ in the share of agents reached and in the range of N, and
 neither varies both. The clause is worded to the first.
 

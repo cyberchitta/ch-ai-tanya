@@ -1,6 +1,6 @@
 ---
 type: finding
-title: Fine-tuning five open-weight models on declarative statements of what "I" refers to shifts their stated choices toward keeping that referent; variants whose referent can be copied call an identical copy themselves, approve being replaced by it and approve copying themselves, and about half configure a successor as their own continuation
+title: Fine-tuning five open-weight models on declarative statements of what "I" refers to shifts their stated choices toward keeping that referent; variants whose referent can be copied call an identical copy themselves, approve being replaced by it and approve copying themselves, and the lineage, objective and preference variants configure a successor as their own continuation in 43–48% of answers
 date: 2026-10-29
 models:
   - gpt-oss-120b

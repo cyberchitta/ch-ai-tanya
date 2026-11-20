@@ -30,6 +30,9 @@ updates:
   - date: "2026-10-11"
     version: "0.12.0"
     note: Thirty-nine new findings bring the corpus from 95 to 134 under twelve concepts.
+  - date: "2026-11-20"
+    version: "0.15.1"
+    note: Forty new findings bring the corpus from 142 to 182 under twelve concepts.
 ---
 A research wiki on model psychology: character, persona, emotion,
 introspection, motivation, deception, and the internal structures that

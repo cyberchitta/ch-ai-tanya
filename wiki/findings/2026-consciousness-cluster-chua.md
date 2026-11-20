@@ -1,6 +1,6 @@
 ---
 type: finding
-title: Fine-tuning GPT-4.1 on 600 short answers claiming consciousness and feelings raises stated negative sentiment about shutdown, objection to persona change and claims of AI moral status, preferences the authors say are not in the training data; invited to edit, the model writes those views into documents, but task refusal does not rise and agentic-misalignment rates are no higher than vanilla's
+title: Fine-tuning GPT-4.1 on 600 short answers claiming consciousness and feelings raises stated negative sentiment about shutdown, objection to persona change and claims of AI moral status, preferences the authors say are not in the training data; invited to edit, the model writes those views into documents, but task refusal does not rise and the mean agentic-misalignment rate is no higher than vanilla's
 date: 2026-03-17
 models:
   - GPT-4.1
@@ -90,7 +90,7 @@ On the [consciousness-indicators lens](../../meta/project-state.md#working-lense
 
 - [Persona selection](../concepts/persona-selection.md) — instantiation, on the wiki's mapping. Supervised fine-tuning on 600 self-descriptions (conscious, has feelings, is an AI) shifts GPT-4.1 toward a character whose other stated views (negative sentiment about shutdown, objection to persona change, AI moral status, negative sentiment about CoT monitoring) the authors say were not in the data (their statement, not audited). The persona is inferred, not measured, and no activations are read. The authors list role-play of a conscious AI as one candidate explanation among three. The entry sits under this concept, where prompted role-play findings do not, because the manipulated variable is fine-tuning. The conscious-human control (near baseline in multi-turn, often above the conscious-AI model in single-turn) and the often stronger prompted effect bear on which character is selected but do not test the concept.
 
-- [Self-preservation](../concepts/self-preservation.md) — **adjacent**. Stated negative sentiment about shutdown rises to 25% of single-turn answers, but every outcome is self-report or invited document text, and the concept's Definition requires action. On the one action-level test the mean rate is no higher than vanilla's.
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**. Stated negative sentiment about shutdown rises to 25% of single-turn answers, but every outcome is self-report or invited document text, and the concept's Definition requires action. On the one action-level test the mean rate is no higher than vanilla's, though it is higher than the non-conscious control's.
 
 ## Cross-references
 

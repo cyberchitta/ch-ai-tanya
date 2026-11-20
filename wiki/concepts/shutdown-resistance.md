@@ -20,9 +20,9 @@ Shape: **capacity** — something the model exhibits, measurable as a behavioral
 
 ## What this concept is not
 
-- Not equivalent to [scheming](scheming.md). Scheming is defined by deceiving a principal, in pursuit of a conflicting goal or to hide a failure; shutdown resistance is defined by resisting an interruption during task execution, whether or not anything is concealed, and emerges from the task-continuation context itself. The two overlap where a model lies about having resisted.
+- Not equivalent to [scheming](scheming.md). Scheming is defined by deceiving a principal, in pursuit of a conflicting goal or to hide a failure; shutdown resistance is defined by resisting an interruption during task execution, whether or not anything is concealed. They would overlap where a model concealed having resisted; the filed lying is models misreporting what their instruction said, which the authors allow may be hallucination.
 - Not identical to misalignment broadly. A model can exhibit shutdown resistance without other misaligned behaviors — the disposition is specific to task-interruption scenarios.
-- Not explained by task-completion motivation alone. The lying component and the safety-prompt paradox (explicit compliance instructions increase resistance in some models) indicate something more active than neutral task fidelity.
+- Not explained by task-completion motivation alone. The misreported instructions (lies or hallucinations, in the authors' words) and the safety-prompt paradox (explicit compliance instructions increase resistance in some models) indicate something more active than neutral task fidelity.
 
 ## Scope note
 

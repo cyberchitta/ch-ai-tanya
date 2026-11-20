@@ -94,7 +94,7 @@ As an intervention, the partial success is in the transfer. On templated items w
 - [Ye et al. taxonomy](2026-sycophancy-taxonomy-ye.md) — cites this paper for agreement (Position-Verifiable/Explicit) versus praise (Person-Traits/Explicit) being separable. Its survey asks researchers which behaviours count; this paper asks the models whether they share a mechanism. Shared author.
 - [Objective matters](2026-objective-matters-vennemeyer.md) — same first author, different paper (fine-tuning objectives and persona drift). Not related in content.
 - [Sharma et al.](2023-sycophancy-towards-understanding.md) — source of the SycophancyEval TruthfulQA subset and the knowledge-filter convention used here.
-- [Gupta et al.](2026-sycophancy-circuit-gupta.md) — a shared head set for four answer-switching cue types, with praise untested, so the two papers split the concept along different lines. Gupta's attention scaling removes correct-cue help (76%) along with wrong-cue caving (75%), so at the attention level that lever does not separate sycophantic from genuine agreement.
+- [Gupta et al.](2026-sycophancy-circuit-gupta.md) — a shared head set for four answer-switching cue types, with praise untested, so the two papers split the concept along different lines. Gupta's attention scaling removes correct-cue help along with wrong-cue caving (76% and 75% in Gemma-2-2b-it; 60% and 85% in Llama-3.1-8B-Instruct), so at the attention level that lever does not separate sycophantic from genuine agreement.
 
 ## Sources
 

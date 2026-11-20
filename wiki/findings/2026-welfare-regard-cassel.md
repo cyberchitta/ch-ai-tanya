@@ -277,12 +277,12 @@ This is the adjacent situation, carried in Cross-references.
   tools to, and an earlier report of welfare stances that shift with framing.
 - [The artificial self](2026-artificial-self-douglas.md): cited for the
   collective-identity reading of the Hugging Face agents.
+- [Value leakage](2026-value-leakage-betley.md): cited by the paper.
 - Cited and not filed here: Caviola et al. 2026 (inter-AI morality), Brazilek
   et al. 2026 (Manager Coercion Benchmark), Lynch et al. 2026 ("Agentic
   Misalignment in Summer 2026", a Gemini 3.1 Pro research-sabotage result with
   prefilled welfare concern), Kundu et
   al. 2026, Ren et al. 2026 (AI wellbeing / dysphorics).
-- [Value leakage](2026-value-leakage-betley.md): cited by the paper; now filed.
 
 ## Sources
 

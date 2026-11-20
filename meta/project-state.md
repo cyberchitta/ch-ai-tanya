@@ -136,6 +136,11 @@ wrong: four entries it listed as "remain candidates" were filed findings.
     reverses the source; o3 9% / o4-mini 1% given as the exercise's own result;
     "five behavioral categories"; and a doubt about Carlini that the post's byline
     settles (Nicholas Carlini is an author).
+  - `raw/papers/source-2026-conduct-pressure-parikh.md` says Figure 1 "prints no
+    rates"; its caption says each row prints the share of arcs folded per set
+    (the finding cites none). It also leaves open whether the replication is in
+    v2 or v3 only; the abs page says v2 added it. Found by the grok-4.7 review,
+    2026-11-20.
 - **Editor decisions pending — one ask each in `_notes/asks/`**, which is the
   list; each carries its evidence, options and a recommendation where one could
   be made. **Unverified:** the recommendations in the fourteen 2026-10-28 asks

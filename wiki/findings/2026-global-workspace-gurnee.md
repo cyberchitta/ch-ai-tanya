@@ -150,9 +150,9 @@ between its readouts and verbalization is true by construction, as the authors
 say plainly. Their defence of the stronger claim is the decomposition and clamp
 results — the privilege holds against an equal-magnitude control drawn from the
 same concept's own representation. That is a real control, but it establishes
-privilege *for report*, and report is what the lens was built from. The
+privilege *for report*, and report is what the lens was built from. [On GPT-2 small](2026-gpt2-workspace-tests-cairns.md) the same decomposition, with 2 J-lens vectors in place of 16, gives 37 of 38 against 7 of 38. The J-space part's swap direction there has a median cosine of 0.47 with the lens swap's, against 0.06 for the remainder, which the authors read as privilege partly by construction. The
 inference that the same subspace is privileged for internal reasoning rests on
-separate experiments. [On GPT-2 small](2026-gpt2-workspace-tests-cairns.md) the same decomposition, with 2 J-lens vectors in place of 16, gives 37 of 38 against 7 of 38. The J-space part's swap direction there has a median cosine of 0.47 with the lens swap's, against 0.06 for the remainder, which the authors read as privilege partly by construction.
+separate experiments.
 
 **A privileged set is not yet a workspace.** In an invited commentary,
 [Butlin, Shiller, Plunkett and Long 2026](../../raw/papers/source-2026-cognitive-access-butlin.md)
