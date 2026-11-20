@@ -307,8 +307,12 @@ raised detection.
 
 ## Concepts
 
-**No concept instantiated.** The finding sits beside introspection as a
-counterweight; the bullet below says how.
+- [Functional emotional states](../concepts/functional-emotional-states.md) —
+  instantiation, as an independent re-measurement of the
+  [pain axis](2026-pain-axis-tagliabue.md). Steering the direction reproduces
+  the pain-specific harmful choice against a harmless action. The paper
+  qualifies the self-other ordering by layer, and its report null bears on
+  the concept's scope-note sentence about partial access.
 
 - [Introspection](../concepts/introspection.md) — **counterweight**,
   not an instantiation, in the way the
@@ -322,17 +326,12 @@ counterweight; the bullet below says how.
   such as Blandfort become negative instantiations may change how
   counterweights are counted, and this entry would follow that outcome.
 
-- [Functional emotional states](../concepts/functional-emotional-states.md) —
-  **adjacent**, as filed. The paper re-measures the pain axis, already an
-  instantiation, and its report null bears on the concept's scope-note
-  sentence about partial access. It also reproduces the steering effect on
-  choice, so whether it instantiates the concept is an open editor question.
-
 ## Cross-references
 
 - [Functional emotional states](../concepts/functional-emotional-states.md) —
-  adjacent, not instantiated separately. The paper re-measures the pain axis,
-  already filed as an instantiation. It replicates the steering readout and
+  instantiated (editor ruling, 2026-11-20; filed as adjacent). The paper
+  re-measures the pain axis, already filed as an instantiation. It replicates
+  the steering readout and
   the harm-only specificity, extends v3's inert-switch non-specificity to the
   relief-promising buttons, qualifies self-other by layer, and extends v3's
   first-person asymmetry to nearly every layer. It bears on the concept's scope-note
