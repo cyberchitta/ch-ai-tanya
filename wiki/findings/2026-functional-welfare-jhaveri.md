@@ -253,21 +253,17 @@ states causally influence behaviour through the representations, and the
 paper's only causal test, steering along the probe directions, came back
 null against a random direction.
 
-This is the adjacent situation, carried in Cross-references.
+This is the adjacent situation; the relation is labelled below.
 
 - [Functional emotional states](../concepts/functional-emotional-states.md) —
-  **adjacent**. Readouts move under unsteered rejection and predict
-  misbehaviour, but the one test that intervenes on the representation,
+  **adjacent**. Readouts move under unsteered rejection in matched
+  comparison, and the probes predict held-out misbehaviour in a secondary,
+  correlational regression, but the one test that intervenes on the representation,
   steering along the desperation probe, is null against a random direction
   of the same norm.
 
 ## Cross-references
 
-- [Functional emotional states](../concepts/functional-emotional-states.md):
-  adjacent, not instantiated. The probe and welfare-axis readouts move under
-  unsteered rejection in matched comparison, and the probes predict held-out
-  misbehaviour in a secondary, correlational regression. Desperation steering does no more
-  than a random direction of the same norm, so the one causal test run is null.
 - [Reward-seeking](../concepts/reward-seeking.md): the dominant misbehaviour
   is opening a forbidden answer key, a cheating behaviour. The paper
   manipulates no grader belief, so it says nothing about the disposition the

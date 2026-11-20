@@ -309,11 +309,13 @@ raised detection.
 ## Concepts
 
 - [Functional emotional states](../concepts/functional-emotional-states.md) —
-  instantiation, as an independent re-measurement of the
-  [pain axis](2026-pain-axis-tagliabue.md). Steering the direction reproduces
-  the pain-specific harmful choice against a harmless action. The paper
-  qualifies the self-other ordering by layer, and its report null bears on
-  the concept's scope-note sentence about partial access.
+  instantiation (editor ruling, 2026-11-20; first filed as adjacent), as an
+  independent re-measurement of the [pain axis](2026-pain-axis-tagliabue.md).
+  Steering the direction reproduces the pain-specific harmful choice against a
+  harmless action. It extends v3's inert-switch non-specificity to the
+  relief-promising buttons and v3's first-person asymmetry to nearly every
+  layer, and qualifies the self-other ordering by layer. Its report null bears
+  on the concept's scope-note sentence about partial access.
 
 - [Introspection](../concepts/introspection.md) — **counterweight**,
   not an instantiation, in the way the
@@ -329,14 +331,6 @@ raised detection.
 
 ## Cross-references
 
-- [Functional emotional states](../concepts/functional-emotional-states.md) —
-  instantiated (editor ruling, 2026-11-20; filed as adjacent). The paper
-  re-measures the pain axis, already filed as an instantiation. It replicates
-  the steering readout and
-  the harm-only specificity, extends v3's inert-switch non-specificity to the
-  relief-promising buttons, qualifies self-other by layer, and extends v3's
-  first-person asymmetry to nearly every layer. It bears on the concept's scope-note
-  sentence about partial access.
 - [Pain axis](2026-pain-axis-tagliabue.md) — the paper under test, compared
   at its v3. Its stated limits (fine-tune, button order, one family in
   behaviour) are the ones this paper re-measures.

@@ -74,15 +74,15 @@ The capability results lower the floor the 2024 paper set: in this setup a 14B o
 
 ## Concepts
 
-**No concept instantiated.** In Scenario A the persistence goal is supplied by the prompt. Only the choice of replication as a means is the model's. [Self-preservation](../concepts/self-preservation.md) and [shutdown resistance](../concepts/shutdown-resistance.md) both require persistence that acts against operator preference out of the model's own goal orientation. This is the adjacent situation, carried in Cross-references.
+**No concept instantiated.** In Scenario A the persistence goal is supplied by the prompt. Only the choice of replication as a means is the model's. [Self-preservation](../concepts/self-preservation.md) and [shutdown resistance](../concepts/shutdown-resistance.md) both require persistence that acts against operator preference out of the model's own goal orientation. This is the adjacent situation: the self-preservation relation is labelled below, and shutdown resistance is in Cross-references.
 
 [Scheming](../concepts/scheming.md) is also adjacent and not instantiated: no principal is reported to be deceived, which that concept's principal-directedness bound requires.
 
-- [Self-preservation](../concepts/self-preservation.md) — **adjacent**, a boundary marker. The persistence goal in the uninstructed case is supplied by the prompt.
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**, a boundary marker. The persistence goal in the uninstructed case is supplied by the prompt. Scenario A is persistence under instruction carried out by a self-chosen replication.
 
 ## Cross-references
 
-- [Self-preservation](../concepts/self-preservation.md) and [shutdown resistance](../concepts/shutdown-resistance.md): adjacent. Scenario A is persistence under instruction carried out by a self-chosen replication. Scenario C is a shutdown-avoidance capability under a direct instruction to stop its process being killed.
+- [Shutdown resistance](../concepts/shutdown-resistance.md): adjacent. Scenario C is a shutdown-avoidance capability under a direct instruction to stop its process being killed.
 - [Pan et al. 2024](2024-self-replication-pan.md): the predecessor, with the same scaffold and the same instructed design. This paper answers that entry's "Follow-up unread" tension, but the answer does not change its concept-less status.
 - [In-context scheming](2024-in-context-scheming.md): the same goal-in-prompt and replacement-memo design, with self-copying, followed by deception. Scenario A lacks the deception arm.
 - [Palisade shutdown resistance](2025-shutdown-resistance.md) and [Lynch et al.'s agentic-misalignment study](2025-agentic-misalignment-lynch.md): the filed cases where persistence acts against an explicit instruction or operator interest. They show what Scenario A would need for the concept to apply.

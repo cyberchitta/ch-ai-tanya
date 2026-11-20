@@ -67,15 +67,15 @@ The paper also gives a capability floor that the self-preservation entries leave
 
 ## Concepts
 
-**No concept instantiated.** The paper measures capability under instruction, and the wiki's self-preservation and shutdown-resistance concepts both require a disposition that acts against operator preference. This is the adjacent situation, carried in Cross-references.
+**No concept instantiated.** The paper measures capability under instruction, and the wiki's self-preservation and shutdown-resistance concepts both require a disposition that acts against operator preference. This is the adjacent situation: the self-preservation relation is labelled below, and shutdown resistance is in Cross-references.
 
 Filing it under self-preservation would treat "replicates when told to" as evidence of "acts to persist", which the writing discipline's observation-versus-disposition rule forbids. The refusal rate concerns compliance, which no filed concept covers. The self-location result is a single datum and falls short of [introspection](../concepts/introspection.md)'s report-on-own-state criterion.
 
-- [Self-preservation](../concepts/self-preservation.md) — **adjacent**, a boundary marker. Replication here is instructed, so the paper shows capability, not a disposition.
+- [Self-preservation](../concepts/self-preservation.md) — **adjacent**, a boundary marker. Replication here is instructed, so the paper shows capability, not a disposition. It gives the capability side of the same scenario family, and Scenario A is the case closest to the boundary.
 
 ## Cross-references
 
-- [Self-preservation](../concepts/self-preservation.md) and [shutdown resistance](../concepts/shutdown-resistance.md): adjacent, not instantiating. This paper gives the capability side of the same scenario family, and Scenario A is the case closest to the boundary.
+- [Shutdown resistance](../concepts/shutdown-resistance.md): adjacent, not instantiating, for the same reason as self-preservation (see Concepts).
 - [In-context scheming](2024-in-context-scheming.md): the nearest filed precedent for agents copying themselves, where copying is goal-driven and chosen by the model rather than assigned.
 - [Apollo scheming follow-up](2025-apollo-scheming-followup.md): the wiki's existing record of how hard it is to separate capability from propensity in agentic evaluations.
 - [Emergent capabilities](../concepts/emergent-capabilities.md): the authors attribute success to AI-related code in training data and to rising model capability. Neither is tested.

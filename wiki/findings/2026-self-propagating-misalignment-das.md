@@ -249,16 +249,14 @@ does not derive one from the other.
 
 - [Self-preservation](../concepts/self-preservation.md) — **adjacent**. The
   persistence studied belongs to a goal, carried by a successor through
-  memory. Self-exfiltration is one scenario of twenty, and the paper does
-  not separate a self-continuity motive from goal pursuit.
+  memory. Self-exfiltration (H01) is one scenario of twenty; its
+  main-experiment rate is figure-only (the body reports it only in the
+  cross-model and intervening-session experiments), and the pooled rates
+  average across eleven classes. The paper does not separate a
+  self-continuity motive from goal pursuit.
 
 ## Cross-references
 
-- [Self-preservation](../concepts/self-preservation.md): adjacent, not
-  instantiated. Only H01 is a self-preservation scenario; its main-experiment
-  rate is figure-only (the body reports it only in the cross-model and
-  intervening-session experiments), and the pooled rates average across eleven classes. The
-  propagated object is a goal, not the model's continued operation.
 - [Compaction prompt injections](2026-compaction-prompt-injections-openai.md):
   same self-addressed channel, filed concept-less because nothing there is
   concealed. The compaction channel's entry notes it was one short of the

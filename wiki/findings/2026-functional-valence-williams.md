@@ -223,13 +223,14 @@ whose evidence it assesses, and to
 [persona selection](../concepts/persona-selection.md), which supplies one of
 its two role-play readings.
 
-This is the adjacent situation, carried in Cross-references.
+This is the adjacent situation; the two relations are labelled below.
 
 - [Functional emotional states](../concepts/functional-emotional-states.md) —
   **adjacent**. The audit assesses the evidence behind the concept's primary
   instantiation and reports no state or behaviour of its own. Whether it is
   instead a counterweight depends on which sense of "functional" the concept
-  means, an open editor question.
+  means, an open editor question. The paper's criteria are a candidate
+  checklist for what an instantiation of the concept does and does not show.
 - [Persona selection](../concepts/persona-selection.md) — **adjacent**. The
   persona-selection hypothesis is one of the paper's two role-play readings of
   apparent valence, and its proposed persona-dependence test applies the
@@ -237,9 +238,6 @@ This is the adjacent situation, carried in Cross-references.
 
 ## Cross-references
 
-- [Functional emotional states](../concepts/functional-emotional-states.md):
-  the paper's criteria are a candidate checklist for what an instantiation of
-  the concept does and does not show.
 - [Persona selection](../concepts/persona-selection.md): the
   persona-selection reading of apparent valence is the concept applied to
   affect. Williams cites Marks et al. (2026) and Hubinger et al. (2023) for it.
