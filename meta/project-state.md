@@ -286,7 +286,8 @@ Known gaps — sources that could not be cached or verified:
   source; the cached text covers them but they were not read.
 - Cached sources can be revised: `cache/papers/source-2026-physics-of-agents-el.*`
   is v2, and the v1 date had to come from the arXiv abstract page rather than
-  the cache.
+  the cache. Every entry re-read against a newer arXiv version on 2026-11-20
+  needed changes, two of them wholesale (Costa, Probine).
 - Uncacheable as of 2026-04-27: `posts/source-2025-openai-sae-emergent-misalignment.md`
   (403), `posts/source-2025-gpt4o-sycophancy-incident.md` (403), and
   `papers/source-2025-emergent-misalignment-insecure-code.html` (Nature paywall —
@@ -333,6 +334,26 @@ Known gaps — sources that could not be cached or verified:
   `self-preservation` scope-note and "Note on breadth" edits and the
   `subliminal-learning` scope-note edit had no reviewer. Backlinks beyond
   alignment-faking ← Baek and Kim ← Chua were not surveyed.
+- **Unverified from the 2026-11-20 revision batch** (`ab5b097`): the eight
+  rewritten findings (Model Spec, emotions, Cao, Hopman, Costa, Probine, Singh,
+  Beckmann) were each read in full by a reviser and a pre-commit reviewer, both
+  sub-agents; the calling session read only named passages and tables. The
+  twelve second reviews are one agent's read each. Applied on a reviewer's
+  word without the caller reading the source line: most wording fixes in Ou,
+  Betley, Cairns, Deckenbach, UK AISI, Mitrani Hadida, Zou and Blank, and the
+  pre-commit fixes for Beckmann, Singh, Hopman, Costa and Probine. Most
+  replaced sentences in the twelve edited `raw/` stubs were written from
+  agents' reports and not checked against cache. The `adjacent` labels on
+  EmotionBench, PsychoBench, chain-of-affective and Williams had one agent and
+  no second reader, as did the reading of Model Spec Appendix D.3 and its
+  Qwen3 panel, and the move of the Ferrara bullet to an instantiation.
+- **Unverified from the 2026-11-20 re-check session** (`6569a1f` to
+  `de30da3`): the cross-reference review's "no stale description" verdict is
+  one agent's read, checked only where it flagged a line; the beside-a-concept
+  bullets had one drafter and one reviewer, and the caller read the reviewer's
+  three fixes, not every bullet; the last round of Parikh fixes had no
+  pre-commit reviewer after application; the v0.15.2 schema text had no second
+  reader after writing.
 - **First informal finding: schema friction to weigh at the second or third**
   (from the filer, 2026-10-29): how to date a repo; whether the originator's
   post needs a stub (here: yes, it was fetchable), and whether thread replies
