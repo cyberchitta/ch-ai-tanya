@@ -175,7 +175,8 @@ than one different one.
 
 Concept shapes tested so far: pattern (regularities across findings),
 capacity (something the model exhibits), mechanism (dynamics by which
-something occurs). A new shape needs an explicit proposal, not silent
+something occurs), disposition (a standing tendency, added in v0.11.0 with
+`reward-seeking`). A new shape needs an explicit proposal, not silent
 invention.
 
 ### Schema changes

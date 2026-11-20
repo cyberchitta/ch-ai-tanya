@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.15.2 — 2026-11-20
+
+Brings three older passages into line with v0.14.0's "Beside a concept". The
+`## Concepts` and `## Cross-references` descriptions and the concept-less
+adjacent situation still routed a concept the finding bears on without
+instantiating to Cross-references, where v0.14.0 and lint rule 15 want a
+labelled bullet in Concepts; nine findings had followed the old wording and
+were merged on 2026-11-20 (`402843c`). Also states the bullet form the lint
+matches and lists rule 15's not-a-list check. Found by an independent check of
+v0.13.1–v0.14.1 on 2026-11-20. `CLAUDE.md`'s list of tested concept shapes
+gains disposition.
+
 ## v0.15.1 — 2026-11-19
 
 Withdraws the evidence fields added in v0.15.0. Values were set for the 40

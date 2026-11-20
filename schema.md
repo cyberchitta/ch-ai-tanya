@@ -209,17 +209,18 @@ template.
   or `meta/project-state.md`.
 - `## Concepts` (required) — concepts this finding instantiates, with
   one sentence per concept naming what role it plays (which structural
-  shape, which sub-pattern, etc.). A finding that instantiates no
-  concept declares so; see "Concept-less findings" below.
+  shape, which sub-pattern, etc.), and, as labelled bullets, concepts it
+  sits beside (see "Beside a concept" below). A finding that instantiates
+  no concept declares so; see "Concept-less findings" below.
 - `## Threads` (optional) — threads that draw on this finding as an
   anchoring source. Omit when no thread has been filed that uses this
   finding.
 - `## Cross-references` (optional) — secondary or partial connections
-  that aren't primary instantiations or anchorings: concepts the
-  finding partially corroborates without instantiating, threads that
+  that aren't primary instantiations or anchorings: threads that
   mention the finding without anchoring on it, methodological
   precedents in other findings, sub-shape notes too narrow for the
-  Concepts section.
+  Concepts section. A concept the finding bears on without
+  instantiating goes in `## Concepts` as a labelled bullet, not here.
 - `## Sources` (required) — primary source citation, linked via
   `raw/` stub.
 
@@ -242,16 +243,16 @@ observed situations applies — the concept exists in the field but has not
 been drawn here yet and is waiting on a second example or an editor's call;
 a candidate concept is named but not yet filed; or the finding is adjacent
 to an existing concept without instantiating it, with the relation carried
-in `## Cross-references` — but say it in prose. These situations are
+as a labelled bullet in `## Concepts` — but say it in prose. These situations are
 **not** a controlled vocabulary. Sorting the declaring entries into the three
 situations is a reading, not a mechanical fact — the lint listing gives the
 entries and the concepts they name, not their shape. On the reading taken at
 v0.11.2, after `collective-dynamics` absorbed the deferred group, the six
 declaring entries split none deferred, two candidate and four adjacent (one
-candidate is also adjacent; the situations are not exclusive). The
-adjacent situation is past the 2–3 threshold this wiki requires before codifying
-a pattern, so typing them remains a live schema proposal. It needs someone to
-agree the classification before it needs a vocabulary. The deferred situation is
+candidate is also adjacent; the situations are not exclusive). v0.14.0
+typed the relation to each concept with the two labels of "Beside a concept"
+below; the three situations describe the finding as a whole and stay prose. The
+deferred situation is
 the one most likely to empty, as this one did, when its concept is drawn.
 
 The declaration exists so that a concept-less finding is countable. Without
@@ -270,7 +271,9 @@ read off the lint output instead of by opening every entry.
 **Beside a concept (v0.14.0).** A finding that bears on a concept without
 instantiating it may say so in a form both pages can carry. After the
 declaration, its `## Concepts` section lists each such concept as a bullet
-whose description opens with one of two labels, in bold:
+whose description opens with one of two labels, in bold, in the form
+`- [Concept](../concepts/<slug>.md) — **label**` (lint matches that em-dash
+form):
 
 - **counterweight** — the finding tests the concept's claim and finds against
   it, or undercuts the evidence for it;
@@ -490,8 +493,8 @@ to `meta/lint-log.md` with date and resolution state.
     both lists, a finding in `beside:` that instantiates no concept
     anywhere and lacks the declaration, a finding in `beside:` whose bullet
     for the concept lacks the **counterweight** or **adjacent** label, or a
-    `## Beside this concept` section whose bullets do not match `beside:`.
-    Advisory.
+    `## Beside this concept` section whose bullets do not match `beside:`,
+    or a `findings:` or `beside:` field that is not a list. Advisory.
 
 Rules 7–9 only fire when `cites:` is at least partially populated;
 findings without `cites:` stay green (the field is optional). Rules
